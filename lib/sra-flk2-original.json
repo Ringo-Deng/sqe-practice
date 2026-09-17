@@ -1,0 +1,3377 @@
+[
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "criminal-practice",
+    "id": "sra-flk2-original-001",
+    "number": 1,
+    "sourcePages": [
+      3
+    ],
+    "stem": "A burglary takes place at a jewellery shop in the early hours of the morning. The police were called to the incident by the manager of a bar which is situated opposite the jewellery shop ten metres away. The manager of the bar viewed the burglary via the bar’s closed circuit television (CCTV) system, however no recording of the burglary is available because the CCTV system was faulty.\n\nThe manager gave a statement to the police indicating that, despite the poor street lighting, he recognised the offender as a man who used to work in the bar until one year ago. He names the man to the police.\n\nThe man, who has previous convictions for burglary, is arrested by the police. In his police interview under caution, the man agrees that he used to work in the bar, but denies that he committed the burglary. The police are considering whether to hold an identification procedure.",
+    "stemZh": "",
+    "ask": "Would an identification procedure serve a useful purpose in this case?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "Yes, because the manager viewed the burglary via a CCTV camera which failed to\n\nrecord the incident.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "No, because the man is known to the manager.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "Yes, because the man is known to the police.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "No, because the lighting at the time of the offence was poor.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "No, because the distance between the jewellery shop and the bar was too great.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "B",
+      "topic": "Criminal Law and Practice",
+      "en": "",
+      "zh": "正确答案是 B。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "criminal-practice",
+    "id": "sra-flk2-original-002",
+    "number": 2,
+    "sourcePages": [
+      4
+    ],
+    "stem": "A man was convicted in the Magistrates’ Court of theft four months ago. He received a suspended sentence order of six months’ custody. The operational period of the suspended sentence is 12 months. An unpaid work requirement was attached to the suspended sentence order and the man has completed the requirement.\n\nThe man has now been convicted in the Magistrates’ Court for an offence of criminal damage committed one month ago.",
+    "stemZh": "",
+    "ask": "Can the Magistrates’ Court now activate the custodial sentence?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "Yes, because the man has committed an offence during the operational period of the\n\nsuspended sentence order.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "No, because the new offence is non-imprisonable.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "No, because the man has completed the requirement attached to the suspended\n\nsentence order.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "No, because the operational period of the suspended sentence order is still running.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "Yes, because the man has committed an offence within the six month period of custody\n\nimposed.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "A",
+      "topic": "Criminal Law and Practice",
+      "en": "",
+      "zh": "正确答案是 A。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "trusts",
+    "id": "sra-flk2-original-003",
+    "number": 3,
+    "sourcePages": [
+      5
+    ],
+    "stem": "A man died leaving a will by which he left all his estate to three trustees to hold on trust for the four children of his best friend. The children are to inherit at the age of 18. Two of the children have reached the age of 18 and have received their share of the trust fund. The other two children are still under the age of 18. The trust fund comprises a portfolio of shares. One of the trustees has just died.",
+    "stemZh": "",
+    "ask": "Which of the following best describes whether it is necessary for a replacement trustee to be appointed?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "A replacement trustee must be appointed because some of the beneficiaries are still\n\nunder the age of 18.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "A replacement trustee must be appointed because three trustees were originally\n\nappointed and there are now only two trustees.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "There is no requirement to appoint a replacement trustee because the trust came into\n\neffect after the man’s death and not during his lifetime.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "There is no requirement to appoint a replacement trustee because there is no land in the\n\ntrust investments.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "There is no requirement to appoint a replacement trustee because there are two\n\nsurviving trustees.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "E",
+      "topic": "Trusts Law",
+      "en": "",
+      "zh": "正确答案是 E。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "wills",
+    "id": "sra-flk2-original-004",
+    "number": 4,
+    "sourcePages": [
+      6
+    ],
+    "stem": "A man died one month ago leaving a will by which he appointed his friend as his sole executor.\n\nThe executor has not yet applied for a grant of probate. He wishes to protect himself against claims of unknown creditors and has decided to place advertisements in the London Gazette, a newspaper circulating in the district in which any land forming part of the estate is situated and any other newspaper or publication he considers might be appropriate.",
+    "stemZh": "",
+    "ask": "Which of the following best describes how the executor can protect himself against claims from unknown creditors through advertising as above?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "He should place the advertisements and must wait for two months from the date of the\n\ngrant of probate before distributing the estate.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "He should place the advertisements and must wait for two months from the date of the\n\nadvertisements before distributing the estate.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "He should place the advertisements and must wait for two months from the date of\n\ndeath before distributing the estate.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "He should place the advertisements but must wait for two months from the date of death\n\nbefore doing so.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "He should place the advertisements but must wait for two months from the date of the\n\ngrant of probate before doing so.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "B",
+      "topic": "Wills and the Administration of Estates",
+      "en": "",
+      "zh": "正确答案是 B。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "wills",
+    "id": "sra-flk2-original-005",
+    "number": 5,
+    "sourcePages": [
+      7
+    ],
+    "stem": "By his will, a testator appointed his spouse, his friend and his adult son to be his executors. The testator and his wife divorced after the will was executed. The testator has now died. The son predeceased the testator and a grant of probate to the son’s estate was obtained by his nephew.\n\nThe testator left all of his estate to his niece who is 20 years of age.",
+    "stemZh": "",
+    "ask": "Who has the best right to apply for a grant of representation to the testator’s estate?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "The testator’s ex-spouse, the testator’s friend and the nephew of the son only.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "The testator’s friend and the testator’s niece only.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "The testator’s friend, the nephew of the son and the testator’s niece only.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "The testator’s friend only.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "The testator’s friend and the nephew of the son only.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Wills and the Administration of Estates",
+      "en": "",
+      "zh": "正确答案是 D。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "flk2-ethics",
+    "id": "sra-flk2-original-006",
+    "number": 6,
+    "sourcePages": [
+      8
+    ],
+    "stem": "A solicitor acts for a client who is found guilty of theft. The client asks the solicitor to present a plea in mitigation on her behalf. At the hearing the client gives the court a false address and date of birth in order to conceal the fact that she has previous convictions.",
+    "stemZh": "",
+    "ask": "Which of the following statements best describes what the solicitor should do?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "Cease to act immediately.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "Not refer to the client's character or previous convictions.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "Immediately correct the information about the client’s address and date of birth without\n\nfurther reference to the client.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "Not refer directly to the client's previous convictions but imply that she is of good\n\ncharacter.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "Ask the client to correct the information about her address and date of birth and, if she\n\nrefuses, cease to act.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "E",
+      "topic": "Ethics and Professional Conduct",
+      "en": "",
+      "zh": "正确答案是 E。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "property-practice",
+    "id": "sra-flk2-original-007",
+    "number": 7,
+    "sourcePages": [
+      9
+    ],
+    "stem": "Twelve years ago, a freeholder granted a 15 year commercial lease of a property to a newsagent.\n\nThe newsagent subsequently assigned the lease to a clothing retailer.\n\nThe clothing retailer assigned the lease to a chemist.\n\nThe chemist assigned the lease to a bookstore.\n\nAll the assignments were made with the landlord’s consent.\n\nFor the assignment to the clothing retailer, the freeholder required an authorised guarantee agreement from the newsagent.\n\nSimilarly, the freeholder required an authorised guarantee agreement from the chemist when the lease was assigned to the bookstore.\n\nThe bookstore has failed to pay the latest quarter’s rent.",
+    "stemZh": "",
+    "ask": "Apart from the bookstore, from whom can the freeholder recover the outstanding rent?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "The chemist, the clothing retailer and the newsagent.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "The chemist only.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "The clothing retailer only.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "The newsagent only.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "The chemist and the newsagent only.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "B",
+      "topic": "Property Law and Practice",
+      "en": "",
+      "zh": "正确答案是 B。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "property-practice",
+    "id": "sra-flk2-original-008",
+    "number": 8,
+    "sourcePages": [
+      10
+    ],
+    "stem": "A solicitor is acting for a tenant of business premises in connection with an application for the grant of a new tenancy, following service by the tenant of a request under s.26 of the Landlord and Tenant Act 1954 (Part II) (1954 Act).\n\nAlthough the landlord is not opposing the grant of a new tenancy, the tenant is concerned that they will not reach agreement on the terms of the new tenancy.\n\nThe solicitor advises the tenant that in default of agreement the court has the power to order the grant of a new tenancy for a new duration.\n\nThe tenant has asked for clarification on the extent of the court’s powers.",
+    "stemZh": "",
+    "ask": "If the landlord and tenant do not agree the terms of the new tenancy, what order can the court make?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "The court can only order the grant of a new tenancy on the same terms as the existing\n\ntenancy.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "The court can only order the grant of a new tenancy on the same terms as the existing\n\ntenancy except with regard to rent.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "The court can only order the grant of a new tenancy on the same terms as the existing\n\ntenancy for a term not exceeding 15 years.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "The court can only order the grant of a new tenancy on such terms as it determines\n\nunder the 1954 Act for a term not exceeding 15 years.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "The court can only order the grant of a new tenancy on the same terms as the existing\n\ntenancy and contracted out of the 1954 Act.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Property Law and Practice",
+      "en": "",
+      "zh": "正确答案是 D。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "trusts",
+    "id": "sra-flk2-original-009",
+    "number": 9,
+    "sourcePages": [
+      11
+    ],
+    "stem": "Under the terms of his will a company director’s estate is to be held on trust to pay the income to his daughter for her life and after her death to be divided between all the present and former employees of his company.\n\nThe daughter consults a solicitor to ask whether the gift is valid. The daughter objects to the terms of her father’s will and is also concerned that it is not workable. Although the daughter has a complete list of past and present employees of the company she is not sure that all of them can be traced.",
+    "stemZh": "",
+    "ask": "Which of the following statements provides the best advice regarding the gift?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "The gift is not valid because the class of beneficiaries is administratively unworkable.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "The gift is not valid because a company cannot be a beneficiary.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "The gift is valid because the company still exists.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "The gift is valid because there are a large number of employees of the company who\n\ncan benefit from it.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "The gift is valid because there is a complete record of past and present employees of\n\nthe company.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "E",
+      "topic": "Trusts Law",
+      "en": "",
+      "zh": "正确答案是 E。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "trusts",
+    "id": "sra-flk2-original-010",
+    "number": 10,
+    "sourcePages": [
+      12
+    ],
+    "stem": "A will trust contains the following provision:\n\n“My Trustees shall hold my property on trust to permit my mother to live in the property for the remainder of her life and after her death to hold the property upon trust for such of my nephew and niece as survive my mother and attain the age of 21 years in equal shares.”\n\nThe nephew is now aged 20 years and the niece is aged 22 years.",
+    "stemZh": "",
+    "ask": "Which of the following statements best describes the beneficial interests in the trust fund?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "The mother has a vested interest but the nephew and niece have contingent interests.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "The mother has a contingent interest but the nephew and niece have vested interests.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "The mother, nephew and niece all have contingent interests.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "The mother, nephew and niece all have vested interests.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "The mother and niece have vested interests but the nephew has a contingent interest.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "A",
+      "topic": "Trusts Law",
+      "en": "",
+      "zh": "正确答案是 A。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "property-practice",
+    "id": "sra-flk2-original-011",
+    "number": 11,
+    "sourcePages": [
+      13
+    ],
+    "stem": "A solicitor is acting for the purchaser of a property in England with registered title.\n\nThe purchaser is buying the property with the aid of a mortgage.\n\nContracts have been exchanged, the completion information and undertakings form (TA13) sent, and the solicitor has conducted an official search with priority (OS1).\n\nFollowing completion, the solicitor will need to deal with post-completion matters involving payment of Stamp Duty Land Tax (SDLT) to HM Revenue & Customs and registration of the dealing at the Land Registry.",
+    "stemZh": "",
+    "ask": "Registration at the Land Registry must take place within 30 working days of which date?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "The date contracts are exchanged, to avoid interest becoming payable on outstanding\n\nSDLT.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "The date of completion, to avoid interest becoming payable on outstanding completion\n\nmonies.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "The date of completion, to avoid the equitable title in the property reverting to the seller.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "The date of the result of the OS1, to avoid subsequent entries being made on the title\n\nwhich bind the purchaser.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "The date of completion, to avoid the mortgagee’s power of sale arising under the legal\n\ncharge.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Property Law and Practice",
+      "en": "",
+      "zh": "正确答案是 D。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "land",
+    "id": "sra-flk2-original-012",
+    "number": 12,
+    "sourcePages": [
+      14
+    ],
+    "stem": "A client has entered into a contract to sell her house.\n\nAfter exchange of contracts, the client seeks advice about whether she may keep the light fitting in the sitting room. This is held to the ceiling by three small screws and was made by the client’s late father.\n\nThe light fitting is not mentioned in the contract.",
+    "stemZh": "",
+    "ask": "May the client remove the light fitting before completion?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "No, because the light fitting is likely to be a fixture due to the high degree of attachment.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "No, because the removal constitutes a breach of an implied term of the contract as the\n\nroom will be unlit when the new owners move in.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "No, because any item within a property is permanently part of the land and must not be\n\nremoved.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "Yes, because the light fitting is likely to be a chattel due to the slight degree of\n\nattachment.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "Yes, because any item with sentimental value is always removable.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Land Law",
+      "en": "",
+      "zh": "正确答案是 D。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "property-practice",
+    "id": "sra-flk2-original-013",
+    "number": 13,
+    "sourcePages": [
+      15
+    ],
+    "stem": "A solicitor is acting for a client who is the sole owner of a freehold property.\n\nThe property is not a listed building and is vacant, but was used as office premises until five years ago.\n\nThe client plans to carry out internal non-structural works to the property so that she can let it as a nightclub (a sui generis use for planning law).\n\nShe has asked for the solicitor’s advice about whether her plans constitute ‘development’ and therefore whether she will need to obtain planning permission.",
+    "stemZh": "",
+    "ask": "Will the client require planning permission for her plans for the property?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "Yes, although she will not require planning permission for the internal works, she will\n\nrequire planning permission for the change of use.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "No, the internal works do not constitute development and nor does the change of use\n\nbecause the previous use was abandoned over four years ago.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "No, the internal works do not constitute development and nor does the change of use\n\nbecause it is a change to a sui generis use.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "Yes, she will require planning permission for both the internal works and the change of\n\nuse because they are developments which are not permitted.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "No, the internal works do not constitute development and nor does the change of use\n\nbecause the change is not material.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "A",
+      "topic": "Property Law and Practice",
+      "en": "",
+      "zh": "正确答案是 A。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "criminal-practice",
+    "id": "sra-flk2-original-014",
+    "number": 14,
+    "sourcePages": [
+      16
+    ],
+    "stem": "An adult man has been charged with assault occasioning actual bodily harm upon his girlfriend with whom he has a child. He has pleaded not guilty and the case has been adjourned for trial.\n\nThe man has a condition of bail not to contact his girlfriend. The police receive a report from his girlfriend’s mother to say that the man is at his girlfriend’s flat. When the police attend the flat they arrest the man on suspicion of breaching his bail condition.\n\nThe man admits visiting his girlfriend at her flat. He explains that his girlfriend telephoned him and asked him to visit because their child was ill. His girlfriend has confirmed that the man’s account is correct.\n\nThe police allege that the man has breached his bail condition.",
+    "stemZh": "",
+    "ask": "Which of the following statements best represents the position regarding the allegation that the man has breached his bail condition?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "The man is not in breach of his bail condition because contact was initiated by his\n\ngirlfriend. He will not face any consequences as a result of his visit to his girlfriend’s flat.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "The man is not in breach of his bail condition because he had good reason to be in\n\ncontact with his girlfriend. He will not face any consequences as a result of his visit to his girlfriend’s flat.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "The man is in breach of his bail condition. He may be charged with an offence of breach\n\nof bail condition.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "The man is in breach of his bail condition. He will be brought before the court for his bail\n\nto be reconsidered.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "The man is in breach of his bail condition. He will be remanded in custody until his case\n\ngoes to trial.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Criminal Law and Practice",
+      "en": "",
+      "zh": "正确答案是 D。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "wills",
+    "id": "sra-flk2-original-015",
+    "number": 15,
+    "sourcePages": [
+      17
+    ],
+    "stem": "A man died intestate a month ago. He had never been married or in a civil partnership. At the time of his death, the man was living with his partner, with whom he had been cohabiting for 20 years, and her daughter (aged 23 years). The partner’s daughter lived with the man and his partner throughout their relationship.\n\nThe man had a son (aged 25 years) from a previous relationship and a daughter (aged 19 years) whom he and his partner adopted ten years ago.",
+    "stemZh": "",
+    "ask": "Who is entitled to share in the distribution of the man’s estate?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "The partner, the son and the man’s daughter only.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "The son, the man’s daughter and the partner’s daughter only.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "The son and the man’s daughter only.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "The son only.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "The man’s daughter only.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "C",
+      "topic": "Wills and the Administration of Estates",
+      "en": "",
+      "zh": "正确答案是 C。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "criminal-practice",
+    "id": "sra-flk2-original-016",
+    "number": 16,
+    "sourcePages": [
+      18
+    ],
+    "stem": "A man has been charged with robbery. He was not represented at the police station because he declined legal advice. The man agreed to take part in a video identification procedure and was positively identified by one of the witnesses to the crime.\n\nThe man has a visible scar under his right eye which was mentioned by an eyewitness in their initial witness statement. No attempt was made by the identification officer to conceal the scar on the man’s face when his image was placed in the compilation of images for the video identification procedure.\n\nA solicitor has now been instructed to represent the man at his forthcoming trial in the Crown Court, where the man will plead not guilty. As part of the solicitor’s trial preparation, she has reviewed the images used in the video identification procedure and has noted that only two of the other eight images shown in the video identification procedure show similar looking males with a visible scar under their right eye.\n\nThe solicitor establishes that as a consequence there has been a provable breach of PACE 1984, Code D (‘Code D’).",
+    "stemZh": "",
+    "ask": "Which of the following statements best states whether evidence of the video identification procedure will be admitted in evidence at the man’s trial?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "The breach of Code D may lead the court to conclude that the evidence should be\n\nexcluded if its admission would be an abuse of process.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "The breach of Code D will compel the court to exclude the evidence because of its\n\nprejudicial effect.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "The breach of Code D may lead the court to conclude that the evidence should be\n\nexcluded if its admission would have an adverse effect on the fairness of the proceedings.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "The breach of Code D will not compel the court to exclude the evidence because its\n\nadmission would not have an adverse effect on the fairness of the proceedings.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "The breach of Code D will compel the court to conclude that the evidence should be\n\nexcluded and order that the breach must be cured by the police conducting a further video identification procedure in compliance with Code D.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "C",
+      "topic": "Criminal Law and Practice",
+      "en": "",
+      "zh": "正确答案是 C。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "criminal-liability",
+    "id": "sra-flk2-original-017",
+    "number": 17,
+    "sourcePages": [
+      19
+    ],
+    "stem": "A man attacks a victim at a nightclub, violently banging the victim's head backwards against a wall and intending to cause the victim really serious bodily harm. The victim is badly injured and goes to the doorman who works at the nightclub to ask for help. The doorman thinks the victim is drunk and throws her out of the building.\n\nSoon afterwards the victim is found lying on the pavement and is taken to hospital. Her condition is very serious due to massive brain damage, sustained as a result of the man’s actions together with some deterioration in her condition while she is lying on the pavement. She is placed on a life support machine which is switched off when it becomes clear she has suffered brain stem death.\n\nThe man is charged with murder.",
+    "stemZh": "",
+    "ask": "Which statement best explains the man’s potential liability for murder?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "He cannot be found guilty of murder because the doorman’s actions contributed to the\n\nvictim’s death.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "He cannot be found guilty of murder because death was not an inevitable consequence\n\nof his actions.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "He cannot be found guilty of murder because the victim only died as a result of the life\n\nsupport machine being switched off.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "He can be found guilty of murder because he is an accomplice to the doorman’s\n\nactions which resulted in the victim’s death.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "He can be found guilty of murder because his conduct was a substantial and operative\n\ncause of the victim’s death.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "E",
+      "topic": "Criminal Liability",
+      "en": "",
+      "zh": "正确答案是 E。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "criminal-liability",
+    "id": "sra-flk2-original-018",
+    "number": 18,
+    "sourcePages": [
+      20
+    ],
+    "stem": "A man finds a caravan in a field and decides to set fire to it. He gives no thought as to whether there is anyone inside the caravan before he sets fire to it.\n\nIn fact there is a woman inside the caravan who cannot escape because of the smoke and who is burnt to death when the caravan is destroyed by the fire. The man intended to unlawfully destroy property but not to harm anyone.",
+    "stemZh": "",
+    "ask": "Which of the following best describes the man's liability for unlawful act manslaughter?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "He is not guilty because the unlawful act of destroying the caravan was not itself\n\ndangerous to life.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "He is not guilty because he did not intend by destroying the caravan to endanger the life\n\nof anyone.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "He is guilty because he was grossly negligent about harming anyone who might be\n\ninside the caravan when he set fire to it.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "He is guilty because he has committed an unlawful and dangerous act that has killed the\n\nwoman.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "He is guilty because he was reckless about harming anyone who might be inside the\n\ncaravan when he set fire to it.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Criminal Liability",
+      "en": "",
+      "zh": "正确答案是 D。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "land",
+    "id": "sra-flk2-original-019",
+    "number": 19,
+    "sourcePages": [
+      21
+    ],
+    "stem": "A husband, wife, and the wife’s mother bought a house together 20 years ago.\n\nThe transfer deed stated that they held the property as joint tenants in law and equity.\n\nThe husband and wife separated a month ago, and the husband moved out of the house.\n\nLast week, the wife was killed in a car accident. A few days before her death, the wife had made a will leaving all her property to her new boyfriend.",
+    "stemZh": "",
+    "ask": "How is the title to the house now held?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "The husband and the wife’s mother are joint tenants in law and tenants in common in\n\nequity.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "The husband, the wife’s mother and the new boyfriend are joint tenants in law and\n\ntenants in common in equity.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "The wife’s mother and the new boyfriend are joint tenants in law and equity.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "The wife’s mother and the husband are joint tenants in law and equity.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "The wife’s mother and the new boyfriend are joint tenants in law and tenants in common\n\nin equity.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Land Law",
+      "en": "",
+      "zh": "正确答案是 D。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "wills",
+    "id": "sra-flk2-original-020",
+    "number": 20,
+    "sourcePages": [
+      22
+    ],
+    "stem": "A woman died leaving an estate comprising two bank accounts and a freehold property. Her will divided the residue of her estate equally between her son and her daughter.\n\nFive years ago the woman and her son (who was then 22) had a serious argument and her son left the family home. None of the family has seen him since. The personal representatives (PRs) have questioned other relatives and friends to attempt to ascertain the son’s whereabouts but with no success.\n\nThree months ago the PRs placed advertisements complying with s.27 of the Trustee Act 1925 in the London Gazette and in a local newspaper. The PRs have had no responses to these notices from either the woman’s son or anyone claiming to be a creditor of the estate. They propose to distribute the entire residue to the woman’s daughter and pay only the creditors they currently know about.",
+    "stemZh": "",
+    "ask": "Which of the following statements best describes the PRs’ protection from claims by creditors and beneficiaries as a result of the enquiries made and s.27 of the Trustee Act 1925 notices placed?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "The PRs will be protected from claims by new creditors and unknown beneficiaries but\n\nnot from a claim by the son.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "The PRs will be protected from claims by new creditors but not from unknown\n\nbeneficiaries or the son.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "The PRs will be protected from claims by new creditors, unknown beneficiaries and the\n\nson.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "The PRs will not be protected from claims by new creditors but will be protected from\n\nclaims by unknown beneficiaries and the son.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "The PRs will not be protected from claims by new creditors or unknown beneficiaries\n\nbut will be protected from a claim by the son.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "A",
+      "topic": "Wills and the Administration of Estates",
+      "en": "",
+      "zh": "正确答案是 A。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "wills",
+    "id": "sra-flk2-original-021",
+    "number": 21,
+    "sourcePages": [
+      23
+    ],
+    "stem": "A leasehold flat was owned by a brother and sister as tenants in common in equal shares. The sister died last month and under the terms of her will, the whole of her estate is given to her adult daughter absolutely. It is estimated that the flat is worth £200,000 as a very similar flat in the same block sold for that figure last month. The sister’s estate will be subject to Inheritance Tax (IHT).",
+    "stemZh": "",
+    "ask": "If the estimated worth of the flat is correct what will be the value of the sister’s half share for IHT purposes?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "£100,000 less a percentage discount to reflect the fact that the flat was co-owned at the\n\nsister’s death.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "£100,000 as no discount is available because of the application of the related property\n\nrules between a brother and sister.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "£100,000 as no discount is available because of the application of the related property\n\nrules between a mother and daughter.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "£100,000 as no discount is available because of the application of the related property\n\nrules which apply when more than two close relatives are connected with the ownership of a property.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "£100,000 as no discount is available because the flat is leasehold.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "A",
+      "topic": "Wills and the Administration of Estates",
+      "en": "",
+      "zh": "正确答案是 A。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "wills",
+    "id": "sra-flk2-original-022",
+    "number": 22,
+    "sourcePages": [
+      24
+    ],
+    "stem": "A man died on 4 May 2025. He left his entire estate to his nephew. He was a bachelor and did not make any lifetime gifts. His estate comprised a house free of mortgage worth £175,000 which he had lived in for over 20 years and bank and building society accounts with balances totalling £550,000. He also owned a house worth £170,000 free of mortgage which he inherited from his aunt and which has been rented out to tenants for the last 30 years. The man’s debts and funeral expenses totalled £9,000.\n\nIn the 2025/26 tax year the nil rate band is £325,000 and the main residence nil rate band is £175,000.",
+    "stemZh": "",
+    "ask": "How much Inheritance Tax will be payable on the man’s estate?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "£354,400",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "£224,400",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "£154,400",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "£152,000",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "£84,400",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "B",
+      "topic": "Wills and the Administration of Estates",
+      "en": "",
+      "zh": "正确答案是 B。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "criminal-liability",
+    "id": "sra-flk2-original-023",
+    "number": 23,
+    "sourcePages": [
+      25
+    ],
+    "stem": "A man squeezed superglue into the hard drive of his colleague’s computer. The man intended only to play a practical joke by making the computer temporarily unusable.\n\nHe foresaw that his actions could cause damage to the computer and it was, in the circumstances known to him, unreasonable to take this risk.\n\nHe did not foresee that damage was a virtually certain consequence of his actions. In fact the computer was damaged beyond repair and he ought to have foreseen that this was a virtual certainty. His actions were unreasonable.",
+    "stemZh": "",
+    "ask": "Can the man be guilty of criminal damage?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "No, because he did not intend to cause the damage.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "No, because he did not foresee that the damage was a virtually certain consequence of\n\nhis actions.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "No, because he was only negligent with respect to the damage.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "Yes, because he foresaw the risk of damage and it was, in the circumstances known to\n\nhim, unreasonable of him to take the risk.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "Yes, because he should have foreseen that the damage was a virtually certain\n\nconsequence of his actions and his actions were unreasonable.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Criminal Liability",
+      "en": "",
+      "zh": "正确答案是 D。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "land",
+    "id": "sra-flk2-original-024",
+    "number": 24,
+    "sourcePages": [
+      26
+    ],
+    "stem": "A client goes to see his solicitor because his neighbour’s roof has recently fallen into disrepair and he wants to see if he can do anything about it.\n\nHe shows his solicitor a deed in which the neighbour gave a covenant for the benefit of the client’s house: “not to let the roof fall into disrepair.”",
+    "stemZh": "",
+    "ask": "Which of the following best describes why the client is likely to be able to sue the neighbour under this covenant?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "Because the building scheme exception will apply.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "Because the doctrine of mutual benefit and burden will apply.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "Because it is a positive covenant.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "Because it is a restrictive covenant.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "Because the neighbour was the original party to the deed.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "E",
+      "topic": "Land Law",
+      "en": "",
+      "zh": "正确答案是 E。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "wills",
+    "id": "sra-flk2-original-025",
+    "number": 25,
+    "sourcePages": [
+      27
+    ],
+    "stem": "A testator died leaving a will by which all of his estate passed to his adult son and adult daughter in equal shares.\n\nThe estate assets included shares in a company quoted on the London Stock Exchange with a probate value of £100,000. Half of the shares were transferred to the son and the other half were transferred to the daughter. At the date of the transfer, the total value of the shares was £150,000.\n\nA month later the daughter sold all of her shares and the net sale proceeds were £85,000. Two months later the son sold all of his shares and the net sale proceeds were £45,000. The executor has not yet completed the administration of the estate.",
+    "stemZh": "",
+    "ask": "Which of the following statements best describes the Capital Gains Tax position on the shares sold during the administration period?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "The daughter will make a gain, the son will make a loss and the executor will make\n\nneither a loss nor a gain.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "The daughter will make a gain, the executor and the son will make neither a loss nor a\n\ngain.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "The executor and the daughter will make a gain, the son will make a loss.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "The executor will make a gain, the daughter and son will make neither a loss nor a gain.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "The executor and the daughter will make a gain, the son will make neither a loss nor a\n\ngain.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "A",
+      "topic": "Wills and the Administration of Estates",
+      "en": "",
+      "zh": "正确答案是 A。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "criminal-practice",
+    "id": "sra-flk2-original-026",
+    "number": 26,
+    "sourcePages": [
+      28
+    ],
+    "stem": "A woman has died. A few days after her body was found, her husband went to a bar and became very drunk. He admitted to a friend that he had killed his wife because he was jealous of her relationship with another man. This conversation was overheard by the manager of the bar.\n\nThe husband’s friend and the manager gave statements to the police detailing the husband’s admission. The husband has been arrested on suspicion of murder and interviewed under caution, during which he denied killing his wife and denied making the admission to his friend.",
+    "stemZh": "",
+    "ask": "Is the husband’s admission to his friend in the bar admissible at his trial as an exception to the rule against hearsay?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "No, because the admission was made outside his trial.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "No, because the admission was not confirmed by the husband in his interview under\n\ncaution.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "Yes, because the admission can be corroborated by more than one person.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "Yes, because it is an admission to an offence.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "No, because the husband was drunk when he made the admission.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Criminal Law and Practice",
+      "en": "",
+      "zh": "正确答案是 D。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "accounts",
+    "id": "sra-flk2-original-027",
+    "number": 27,
+    "sourcePages": [
+      29
+    ],
+    "stem": "A firm of solicitors is acting on behalf of a client who is selling his property and purchasing a new property. On exchange of contracts for the sale, the firm receives a deposit of £25,000 which is to be held as stakeholder.",
+    "stemZh": "",
+    "ask": "Which pair of double entries best shows how the receipt of the deposit should be recorded in the firm’s accounting records?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "Credit cash sheet client account\n\nDebit joint stakeholder ledger",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "Credit cash sheet business account\n\nDebit joint stakeholder ledger",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "Credit client ledger client account\n\nDebit joint stakeholder ledger",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "Credit joint stakeholder ledger\n\nDebit cash sheet client account",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "Credit cash sheet client account\n\nDebit client ledger client account",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Solicitors Accounts",
+      "en": "",
+      "zh": "正确答案是 D。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "flk2-ethics",
+    "id": "sra-flk2-original-028",
+    "number": 28,
+    "sourcePages": [
+      30
+    ],
+    "stem": "A solicitor has been contacted by a woman who asks him to represent her father by attending him at the police station. The father has been arrested on suspicion of attempted murder and is in custody at the police station.\n\nThe solicitor is fully aware of the circumstances of the allegation as he represented the woman’s brother several days ago when the brother was arrested for the same offence. The brother has now been charged with the offence. The firm will carry out the usual conflict of interest check.",
+    "stemZh": "",
+    "ask": "Does the SRA Code of Conduct for Solicitors, RELs, RFLs and RSLs permit the solicitor to represent the woman’s father at the police station?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "No, although the solicitor can accept instructions from a third party, he cannot accept\n\ninstructions from a close family member of the proposed client.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "No, the solicitor cannot accept instructions from a third party under any circumstances.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "Yes, the solicitor can accept instructions from the woman provided he is satisfied that\n\nthe woman has the authority to give instructions and that there is no conflict of interest or risk of conflict.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "Yes, the solicitor can accept instructions from the woman provided he is satisfied that\n\nthe woman has the authority to give instructions. A conflict of interest can never arise between close family members and there is no need to wait for the outcome of the conflict of interest check.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "Yes, the solicitor can accept instructions from the woman provided he is satisfied that\n\nthe woman has the authority to give instructions. A conflict of interest will not arise where close family members are implicated in the same offence and there is no need to wait for the outcome of the conflict of interest check.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "C",
+      "topic": "Ethics and Professional Conduct",
+      "en": "",
+      "zh": "正确答案是 C。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "trusts",
+    "id": "sra-flk2-original-029",
+    "number": 29,
+    "sourcePages": [
+      31
+    ],
+    "stem": "A woman died and was survived by her husband and son who is aged 30 years. Under the terms of her will, the woman created a trust fund of her residuary estate in the following terms:\n\n“to pay the income from my residuary estate to my husband for the remainder of his life and after his death I GIVE my residuary estate to my son if he survives my husband and attains the age of 25 years but if he does not so survive then to my sister absolutely.”\n\nThe husband is discussing the possibility of bringing the trust to an end with the trustees.",
+    "stemZh": "",
+    "ask": "Whose consent is required to bring the trust to an end now?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "The husband and the son.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "The husband, the son and the sister.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "The husband and the sister.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "The sister.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "The son and the sister.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "B",
+      "topic": "Trusts Law",
+      "en": "",
+      "zh": "正确答案是 B。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "trusts",
+    "id": "sra-flk2-original-030",
+    "number": 30,
+    "sourcePages": [
+      32
+    ],
+    "stem": "A woman died six months ago leaving an estate of £60,000 to be divided equally between her three children at the age of 21. Her son is 24 and her two daughters are 19 and 14. Her son is about to receive his share of the estate. The trustees have received a request to advance capital to help set up the elder daughter’s new catering business. The woman’s will does not extend the trustees’ powers of advancement.",
+    "stemZh": "",
+    "ask": "What is the maximum amount the trustees can apply in accordance with the request?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "£0",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "£10,000",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "£20,000",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "£30,000",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "£40,000",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "C",
+      "topic": "Trusts Law",
+      "en": "",
+      "zh": "正确答案是 C。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "criminal-liability",
+    "id": "sra-flk2-original-031",
+    "number": 31,
+    "sourcePages": [
+      33
+    ],
+    "stem": "A woman who is holding a laptop is walking home with her daughter when a man approaches them, points at the daughter and screams at the woman: “Give me your laptop or I’ll break the girl’s neck.” His intention is to cause them both to fear that he will use the violence he threatens and then steal the laptop. The woman throws the laptop at the man who takes it and the woman and her daughter run away. The man is later caught and charged with robbery.",
+    "stemZh": "",
+    "ask": "Can the man be guilty of robbery?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "No, as he did not use actual force on any person.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "No, as his threats were directed at the daughter and not the woman who was the person\n\nin possession of the laptop.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "Yes, as he has stolen the laptop and immediately before and in order to do so has\n\ncaused the woman and her daughter harassment, alarm or distress.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "Yes, as he has stolen the laptop and immediately before and in order to do so has put\n\nthe daughter in fear of being then and there subjected to force.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "No, as he did not have with him a firearm or offensive weapon.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Criminal Liability",
+      "en": "",
+      "zh": "正确答案是 D。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "property-practice",
+    "id": "sra-flk2-original-032",
+    "number": 32,
+    "sourcePages": [
+      34
+    ],
+    "stem": "A man owns the freehold of a commercial building and intends to grant a lease of the building to an insurance company.\n\nThe man is registered for Value Added Tax (VAT) and, prior to granting the lease, exercises an option to tax the building.\n\nThe insurance company makes only exempt supplies for the purposes of VAT in the course of its business.",
+    "stemZh": "",
+    "ask": "What effect does the man’s option to tax the building have on the rent payable to the man by the insurance company?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "The rent payable will not be subject to VAT.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "The rent payable will be subject to VAT at 0%.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "The rent payable will be subject to VAT at 20%, which will be recoverable by the\n\ninsurance company.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "The rent payable will be subject to VAT at 20%, which will be irrecoverable by the\n\ninsurance company.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "The rent payable will be discounted in the hands of the insurance company by 20%.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Property Law and Practice",
+      "en": "",
+      "zh": "正确答案是 D。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "criminal-liability",
+    "id": "sra-flk2-original-033",
+    "number": 33,
+    "sourcePages": [
+      35
+    ],
+    "stem": "A man was drinking in a public bar and became very intoxicated. He had an argument with another customer and suddenly smashed this other customer in the face with his empty glass causing a wound that amounted to grievous bodily harm. The man was so intoxicated that he did not know what he was doing. The man's intoxication was voluntary. The man was arrested by the police. He has been charged with wounding with intent to cause grievous bodily harm.",
+    "stemZh": "",
+    "ask": "Which of the following best describes the man's liability for wounding with intent to cause grievous bodily harm?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "He is not guilty because he was so intoxicated that he did not form the necessary\n\nintention for the offence.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "He is not guilty because intoxication provides a reasonable excuse for the attack.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "He is guilty because his voluntary intoxication is sufficiently reckless to satisfy the mens\n\nrea requirement for this offence.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "He is guilty because causing grievous bodily harm with intent is a crime of specific intent\n\nand intoxication is no defence to a crime of specific intent.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "He is guilty because causing grievous bodily harm with intent is a crime of basic intent\n\nand intoxication is no defence to a crime of basic intent.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "A",
+      "topic": "Criminal Liability",
+      "en": "",
+      "zh": "正确答案是 A。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "property-practice",
+    "id": "sra-flk2-original-034",
+    "number": 34,
+    "sourcePages": [
+      36
+    ],
+    "stem": "A freeholder (‘the Landlord’) granted a ten year headlease to a tenant.\n\nAfter a year, the tenant, with the Landlord’s consent, granted a sublease for a term of five years to a subtenant.\n\nTwo years later, the tenant surrendered its headlease to the Landlord.",
+    "stemZh": "",
+    "ask": "Which of the following statements best describes the position of the subtenant?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "The subtenant’s sublease is extinguished.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "The subtenant becomes the immediate tenant of the Landlord on the terms of the\n\nheadlease.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "The subtenant becomes the immediate tenant of the Landlord on the terms of the\n\nsublease.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "The subtenant becomes the immediate tenant of the Landlord on the terms of an\n\noverriding lease.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "The subtenant’s sublease is forfeited.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "C",
+      "topic": "Property Law and Practice",
+      "en": "",
+      "zh": "正确答案是 C。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "criminal-liability",
+    "id": "sra-flk2-original-035",
+    "number": 35,
+    "sourcePages": [
+      37
+    ],
+    "stem": "Three men and a woman enter an office where the woman works between 9am-5pm, Monday to Friday. The group enter the office at 10pm on a Saturday night to have a party. The woman lets them in using her keys.\n\nAfter half an hour they become bored and so one of the group suggests that they look around to see if there is any alcohol they can steal. Whilst inside the office the group search through the drawers and find some whisky which they drink. They also find £300 which they steal.",
+    "stemZh": "",
+    "ask": "Which of the following best describes whether they are guilty of burglary?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "They are all not guilty because they did not enter as trespassers as the woman works in\n\nthe office and has permission to enter.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "Only the men are guilty because the woman is not a trespasser as she works in the\n\noffice and has permission to enter.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "They are all guilty because they all entered as trespassers and then stole when inside\n\nthe office.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "They are all not guilty because they did not use any force to enter the office.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "They are all guilty as there was an intention to steal formed at the point of entry to the\n\noffice.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "C",
+      "topic": "Criminal Liability",
+      "en": "",
+      "zh": "正确答案是 C。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "land",
+    "id": "sra-flk2-original-036",
+    "number": 36,
+    "sourcePages": [
+      38
+    ],
+    "stem": "A solicitor is acting for the buyer of a freehold property with registered title.\n\nThe seller’s solicitor tells the buyer’s solicitor that the property benefits from a legal right of way on foot, across a neighbour’s registered freehold property, to reach a road.",
+    "stemZh": "",
+    "ask": "What will the buyer’s solicitor look for when examining the Land Registry official copy of the title to the property to confirm that the right of way is properly registered?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "An entry referring to an easement in the Property Register.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "An entry referring to an easement in the Proprietorship Register.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "An entry referring to an easement in the Charges Register.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "A restriction on dealings in the Proprietorship Register.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "An entry referring to a restrictive covenant in the Charges Register.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "A",
+      "topic": "Land Law",
+      "en": "",
+      "zh": "正确答案是 A。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "property-practice",
+    "id": "sra-flk2-original-037",
+    "number": 37,
+    "sourcePages": [
+      39
+    ],
+    "stem": "A freeholder (‘the Landlord’) has granted a commercial lease of a property to a tenant.\n\nThe lease provides that the property may not be used other than for retail purposes.\n\nThe tenant is a bookstore and requests Landlord’s consent to assign the lease to a supermarket. The bookstore is an independent trader that is finding it difficult to pay the rent. The supermarket is operated by a highly profitable national chain.\n\nThe Landlord wishes to withhold consent to the assignment because it operates another supermarket opposite the property and is concerned that the assignee will take trade away from its own business.\n\nThe relevant wording of the alienation covenant in the lease is as follows:\n\n“The Tenant shall not assign underlet or charge the Property without the prior written consent of the Landlord.”",
+    "stemZh": "",
+    "ask": "Can the Landlord lawfully withhold consent to the assignment on the basis of the assignee’s business?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "Yes, because a supermarket does not qualify as a retail purpose.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "Yes, because the Landlord does not have to act reasonably in withholding consent.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "Yes, because competition by the assignee with the Landlord’s business is a ground for\n\nreasonably withholding consent.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "No, because competition by the assignee with the Landlord’s business is not a ground\n\nfor reasonably withholding consent.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "No, because the supermarket is in a better financial position than the bookstore and\n\nconsent cannot be withheld if the assignee provides a stronger covenant.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "C",
+      "topic": "Property Law and Practice",
+      "en": "",
+      "zh": "正确答案是 C。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "property-practice",
+    "id": "sra-flk2-original-038",
+    "number": 38,
+    "sourcePages": [
+      40
+    ],
+    "stem": "A solicitor is acting for the seller of a freehold property with unregistered title.\n\nThe solicitor is preparing for deduction of title to the property to a solicitor acting for the buyer. He examines the deeds and documents relating to the property.",
+    "stemZh": "",
+    "ask": "Which of the following is the best candidate for a good root of title when deducing title to the property?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "A conveyance of the property, dated 10 March 1984.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "An assent of the property, dated 30 April 1988.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "A planning permission for the property, dated 15 May 2015.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "A will devising the property, dated 20 May 1984.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "A land charges search certificate, dated 8 March 1984.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "A",
+      "topic": "Property Law and Practice",
+      "en": "",
+      "zh": "正确答案是 A。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "flk2-ethics",
+    "id": "sra-flk2-original-039",
+    "number": 39,
+    "sourcePages": [
+      41
+    ],
+    "stem": "A solicitor supplements his income with buy-to-let flats. The solicitor decides to sell one of the flats and use the capital for another investment. One of the solicitor's clients offers the full asking price for the flat and the solicitor accepts his client's offer.\n\nIn the full knowledge that the solicitor is the seller, the client instructs the same solicitor in writing to act as his solicitor in the transaction. The solicitor accepts the instruction and prepares all the documents. The transfer is completed without complications.",
+    "stemZh": "",
+    "ask": "Were the solicitor's actions in accordance with the SRA Standards and Regulations?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "Yes, because a solicitor can act where there is an own interest conflict if he has received\n\nwritten consent from the client.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "Yes, because a solicitor can act where there is an own interest conflict if he is satisfied it\n\nis in his client's best interests.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "Yes, because a solicitor can act where there is an own interest conflict if the solicitor and\n\nthe client have a substantially common interest.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "No, because a solicitor cannot act if there is an own interest conflict unless the solicitor\n\nand the client are competing for the same objective.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "No, because a solicitor cannot act if there is an own interest conflict or a significant risk\n\nof an own interest conflict.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "E",
+      "topic": "Ethics and Professional Conduct",
+      "en": "",
+      "zh": "正确答案是 E。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "criminal-practice",
+    "id": "sra-flk2-original-040",
+    "number": 40,
+    "sourcePages": [
+      42
+    ],
+    "stem": "A man has been arrested on suspicion of common assault. He is a professional football player earning £180,000 per year. It is alleged that the man punched a photographer who was trying to take a picture of him whilst he was having a drink with a woman in a bar. The man has never been in trouble with the police before and has requested that he is represented by the duty solicitor while he is interviewed under caution at the police station.",
+    "stemZh": "",
+    "ask": "Will the man be entitled to publicly funded legal representation in connection with the defence of his case?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "The man will not be eligible for publicly funded legal representation by the duty solicitor\n\nat the police station because he will fail the means test.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "The man will be eligible for publicly funded legal representation by the duty solicitor at\n\nthe police station and at all hearings up to and including sentence.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "The man will be eligible for publicly funded legal representation by the duty solicitor at\n\nthe police station, limited to telephone advice only.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "The man will be eligible for publicly funded legal representation by the duty solicitor at\n\nthe police station. He will also be able to get a representation order in the Magistrates’ Court provided that he passes the interests of justice test, because there is no means test in the Magistrates’ Court.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "The man will be eligible for publicly funded legal representation by the duty solicitor at\n\nthe police station. He will not be able to get a representation order in the Magistrates’ Court, because even if he passes the interests of justice test, he will fail the means test which applies in the Magistrates’ Court.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "E",
+      "topic": "Criminal Law and Practice",
+      "en": "",
+      "zh": "正确答案是 E。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "wills",
+    "id": "sra-flk2-original-041",
+    "number": 41,
+    "sourcePages": [
+      43
+    ],
+    "stem": "A man died ten months ago domiciled in England and Wales. A grant of representation to his estate was issued seven months ago. By his will, the man left all of his estate to his favourite charity. The man’s widow is considering whether to bring a claim against his estate under the Inheritance (Provision for Family and Dependants) Act 1975 (‘the Act’). There are no circumstances in which a court would give permission for a late application to be made under the Act.",
+    "stemZh": "",
+    "ask": "Which of the following statements best explains whether the widow is able to bring a claim under the Act?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "The widow is able to bring a claim because the grant of representation was issued less\n\nthan two years ago.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "The widow is able to bring a claim because the grant of representation was issued less\n\nthan six months after the date of death.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "The widow is able to bring a claim because the man died less than two years ago.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "The widow is not able to bring a claim because the man died more than six months ago.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "The widow is not able to bring a claim because the grant of representation was issued\n\nmore than six months ago.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "E",
+      "topic": "Wills and the Administration of Estates",
+      "en": "",
+      "zh": "正确答案是 E。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "criminal-liability",
+    "id": "sra-flk2-original-042",
+    "number": 42,
+    "sourcePages": [
+      44
+    ],
+    "stem": "A woman was travelling on a train late at night when she was approached by a man holding a large knife. The woman ran away and fell, injuring her knee. The man had not intended to cause the woman any injury and had not realised that his actions created a risk of injury. The man did realise that his actions created a risk that the woman would fear that she would be subjected to immediate unlawful force.",
+    "stemZh": "",
+    "ask": "Can the man be guilty of assault occasioning actual bodily harm?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "No, because he did not realise that his actions created a risk of injury.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "No, because he did not intend to cause an injury.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "No, because injury was not a virtually certain consequence of his actions.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "Yes, because he realised that his actions created a risk that the woman would fear\n\nimmediate unlawful force and injury was caused.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "Yes, because a reasonable person would have realised that there was a risk of injury\n\nand injury was caused.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Criminal Liability",
+      "en": "",
+      "zh": "正确答案是 D。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "wills",
+    "id": "sra-flk2-original-043",
+    "number": 43,
+    "sourcePages": [
+      45
+    ],
+    "stem": "Under the terms of a man’s will, the whole of his estate was given to his daughter. The man had a serious disagreement with his daughter and decided that he no longer wanted her to be the beneficiary of his will. He tore his original will into four pieces.\n\nThe man and his daughter are now reconciled and the man regrets his decision to tear up his will. He wants his daughter to inherit the whole of his estate.",
+    "stemZh": "",
+    "ask": "Is the man’s will valid?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "No, because the will was revoked by destruction.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "Yes, because his daughter is the beneficiary named in the will and the man intends her\n\nto inherit the whole of his estate.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "No, because the will must be read as a whole and this is no longer possible.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "Yes, because a will must be revoked by a revocation clause in a new will executed in\n\naccordance with s.9 Wills Act 1837.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "Yes, because the doctrine of dependent relative revocation will apply.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "A",
+      "topic": "Wills and the Administration of Estates",
+      "en": "",
+      "zh": "正确答案是 A。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "property-practice",
+    "id": "sra-flk2-original-044",
+    "number": 44,
+    "sourcePages": [
+      46
+    ],
+    "stem": "The freeholder of a commercial building (‘the Landlord’) granted a lease of the whole building to a tenant.\n\nThe tenant is concerned that the building does not benefit from enough natural light and now wishes to create two new apertures in an external wall of the building to accommodate windows.\n\nThe tenant is seeking the consent of the Landlord to make these alterations.\n\nThe alterations covenant in the lease is as follows:\n\n“The Tenant may not make alterations to the Building save for non-structural alterations.”",
+    "stemZh": "",
+    "ask": "Can the Landlord withhold consent to the tenant’s proposed alterations without giving reasons?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "Yes, because the Landlord retains ownership of the external walls.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "Yes, because there is an absolute prohibition against structural alterations.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "No, because a proviso that Landlord’s consent is not to be unreasonably withheld is\n\nimplied into all absolute prohibitions on all alterations.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "No, because a proviso that Landlord’s consent is not to be unreasonably withheld is\n\nimplied into absolute prohibitions on structural alterations.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "No, because the proposed alterations are non-structural.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "B",
+      "topic": "Property Law and Practice",
+      "en": "",
+      "zh": "正确答案是 B。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk2-original",
+    "sourceTitle": "FLK2 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "accounts",
+    "id": "sra-flk2-original-045",
+    "number": 45,
+    "sourcePages": [
+      47
+    ],
+    "stem": "A firm of solicitors is acting on behalf of the executors of a will. The administration of the estate will be completed shortly and the executors have asked the firm to pay the legacies due under the will.\n\nAs a separate matter the firm also acts for one of the beneficiaries of the will in connection with the beneficiary’s purchase of a property. The beneficiary is entitled to a legacy of £20,000 from the will. The beneficiary gives written instructions to the firm to use this £20,000 legacy to repay the £2,000 the firm has already incurred in surveyor’s fees and searches (for which the firm has billed the beneficiary), and retain the balance of £18,000 and use it as part of the purchase price.",
+    "stemZh": "",
+    "ask": "Which of the following statements best explains the action the firm should take?",
+    "askZh": "",
+    "options": [
+      {
+        "id": "A",
+        "en": "The firm cannot transfer the funds from the executors’ client account ledger to the\n\nbeneficiary’s client account ledger. The firm should send a cheque to the beneficiary for £20,000.",
+        "zh": ""
+      },
+      {
+        "id": "B",
+        "en": "The firm can transfer £2,000 from the executors’ client account ledger to the firm’s\n\nbusiness bank account and should then send a cheque for £18,000 to the beneficiary.",
+        "zh": ""
+      },
+      {
+        "id": "C",
+        "en": "The firm can transfer £2,000 from the executors’ client account ledger to the firm’s\n\nbusiness bank account and should then transfer £18,000 to the beneficiary’s stakeholder account ledger.",
+        "zh": ""
+      },
+      {
+        "id": "D",
+        "en": "The firm can transfer £20,000 from the executors’ client account ledger to the\n\nbeneficiary’s client account ledger and should then transfer £2,000 to the firm’s business bank account.",
+        "zh": ""
+      },
+      {
+        "id": "E",
+        "en": "The firm can transfer £20,000 from the executors’ client account ledger to the\n\nbeneficiary’s client account ledger. The firm should not transfer £2,000 to the firm’s business bank account until the purchase of the property is completed.",
+        "zh": ""
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Solicitors Accounts",
+      "en": "",
+      "zh": "正确答案是 D。本题来自 SRA 官方样题，官方文件仅提供答案表，未提供逐项解析。",
+      "ruleEn": "",
+      "ruleZh": "",
+      "warning": "",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "B": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        },
+        "D": {
+          "en": "",
+          "zh": "SRA 官方正确答案。"
+        },
+        "E": {
+          "en": "",
+          "zh": "本选项不是 SRA 官方答案。"
+        }
+      },
+      "source": "SRA 官方答案表",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions"
+    }
+  }
+]

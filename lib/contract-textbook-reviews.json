@@ -1,0 +1,1057 @@
+{
+  "sra-flk1-original-001": {
+    "chapterId": "contract-01",
+    "topicTags": [
+      "Battle of the forms",
+      "Offer & acceptance",
+      "Incorporation"
+    ],
+    "explanation": {
+      "zh": "选 B。决定性事实是建筑师签回回执，明确同意按设计商的标准条款接受 £2,500 的报价。之前附过自己的条款，不会推翻这一次明确承诺。",
+      "reasoningSteps": [
+        {
+          "title": "先找真正可以接受的要约",
+          "detail": "宣传单是面向潜在客户的广告，本题应视为 **invitation to treat**。它邀请客户进一步接洽，不表示任何收到广告的人都能立即以承诺缔结合同。"
+        },
+        {
+          "title": "沿着文件往来看双方同意了什么",
+          "detail": "建筑师寄出自己的条款后，设计商给出具体报价；建筑师随后按设计商的条款签回回执。即使把建筑师先前的来信理解为要约，设计商提出不同条款也不是对来信的无条件承诺。"
+        },
+        {
+          "title": "用最后的明确承诺锁定合同",
+          "detail": "Revise 与 Prep Notes 将这种互发标准条款的情况放在 **battle of the forms** 下讨论。本题不必只靠“谁最后发文件”猜：回执已经明确说明接受的是设计商条款。"
+        }
+      ],
+      "textbookReferences": [
+        {
+          "book": "Revise SQE 2027 · Contract Law",
+          "chapter": "第1章",
+          "pages": "20、16–19",
+          "section": "Invitation to treat；acceptance；The battle of the forms",
+          "bookId": "revise-contract-2027",
+          "pageNumbers": [
+            20,
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "book": "SQE Prep Notes（30页版）",
+          "chapter": "主题笔记",
+          "pages": "3",
+          "section": "Counter-offer；Battle of the forms",
+          "bookId": "notes-contract-30",
+          "pageNumbers": [
+            3
+          ]
+        }
+      ],
+      "warning": "“最后发送文件”本身不够；必须有对方接受的依据。本题答案依据是签回表示同意的回执。",
+      "options": {
+        "A": {
+          "zh": "宣传单在本题是要约邀请；要求报价也不是接受其条款的无条件承诺。",
+          "en": ""
+        },
+        "B": {
+          "zh": "报价提出具体交易条件，签回回执明确接受设计商的标准条款；事实与规则都对应。",
+          "en": ""
+        },
+        "C": {
+          "zh": "与回执的明确措辞相反：建筑师接受的是设计商条款，不是自己先前寄出的条款。",
+          "en": ""
+        },
+        "D": {
+          "zh": "有不同标准条款时，回发报价不当然是对建筑师来信的无条件接受；最终形成合意的是签回回执。",
+          "en": ""
+        },
+        "E": {
+          "zh": "反要约须以一个既存要约为前提；宣传单在本题不是该要约，且这一选项也忽略了最终回执。",
+          "en": ""
+        }
+      }
+    },
+    "relatedChapterIds": [
+      "contract-06"
+    ],
+    "quickPoints": [
+      {
+        "term": "Battle of the forms",
+        "zh": "双方各自发送标准条款时，要看最后究竟接受了哪套条件。本题建筑师签回回执，明确接受设计商的报价及条款，因此采用设计商条款。",
+        "en": ""
+      }
+    ]
+  },
+  "sra-flk1-original-007": {
+    "chapterId": "contract-10",
+    "topicTags": [
+      "Cost of cure",
+      "Expectation interest",
+      "Reasonableness"
+    ],
+    "explanation": {
+      "zh": "选 C，修复费用（**cost of cure**）。店主要获得约定的希腊国旗瓷砖，合理更换瓷砖的费用最直接地补足这项履行利益。",
+      "reasoningSteps": [
+        {
+          "title": "确认合同承诺的具体结果",
+          "detail": "合同要的是带希腊国旗图案的瓷砖，实际却是乌拉圭国旗。瓷砖虽然仍能覆盖墙面，但没有交付约定的设计；餐厅的希腊主题使该设计具有实际意义。"
+        },
+        {
+          "title": "区分赔偿目标与计算方式",
+          "detail": "**Expectation interest** 是把受害方置于合同正确履行时的状态；**cost of cure** 是实现这一目标的一种具体算法。A 与 C 不是互相排斥的概念，但在要求选择最佳计算方式时，C 更准确。"
+        },
+        {
+          "title": "检查修复是否合理",
+          "detail": "法院不会因任何细小偏差都支持昂贵重建。本题未交代更换费用与利益严重失衡，且图案直接关系餐厅主题，所以合理更换费用最符合题意。"
+        }
+      ],
+      "textbookReferences": [
+        {
+          "book": "Revise SQE 2027 · Contract Law",
+          "chapter": "第10章",
+          "pages": "99",
+          "section": "Loss of expectation: cost of cure；Practice example 10.1",
+          "bookId": "revise-contract-2027",
+          "pageNumbers": [
+            99
+          ]
+        },
+        {
+          "book": "SQE Notes（16页版）",
+          "chapter": "主题笔记",
+          "pages": "15",
+          "section": "Expectation loss：difference in value、cost of cure、loss of amenity",
+          "bookId": "notes-contract-16",
+          "pageNumbers": [
+            15
+          ]
+        }
+      ],
+      "warning": "Cost of cure是实现履行利益的一种计算方法。题目同时给出一般的“履行利益”和更具体的“修复费用”时，应选择最准确对应事实的一项。",
+      "textbookExample": {
+        "title": "泳池深度不符 · Practice example 10.1",
+        "facts": "教材中，泳池比约定浅，但仍能按计划使用，市场价值也未降低。若要达到约定深度，必须拆掉重建，费用超过两万英镑。",
+        "lesson": "Revise 用 Ruxley 案说明：当重建成本与所得利益完全不成比例时，法院不会支持 cost of cure。",
+        "connection": "本题国旗图案是希腊餐厅约定设计的一部分，又没有给出过度修复成本的事实；不能机械搬用泳池例子的结论。"
+      },
+      "options": {
+        "A": {
+          "zh": "这是赔偿的总体目标，方向并非全错；但 C 给出本题更具体、最佳的计算方式。",
+          "en": ""
+        },
+        "B": {
+          "zh": "Reliance 主要补偿因信赖合同而浪费的支出。本题重心是取得约定瓷砖，合理修复可以实现该目标。",
+          "en": ""
+        },
+        "C": {
+          "zh": "合理更换为约定瓷砖的费用，可以使餐厅得到合同承诺的装修结果。",
+          "en": ""
+        },
+        "D": {
+          "zh": "Loss of amenity 不是所有规格不符题的答案；本题首先有合理更换这一直接补救方式。",
+          "en": ""
+        },
+        "E": {
+          "zh": "本题是商业装修中的履行缺陷，没有支持精神损害赔偿的特殊事实。",
+          "en": ""
+        }
+      }
+    },
+    "quickPoints": [
+      {
+        "term": "Cost of cure",
+        "zh": "合同要交付的是约定的希腊国旗设计。让店主有钱合理更换错误的瓷砖，才能补足他本来应得到的合同利益。",
+        "en": ""
+      },
+      {
+        "term": "Proportionality",
+        "zh": "修复费用仍须合理。如果重做的花费与实际获得的利益严重不相称，法院可能不按全部重做费用赔偿。",
+        "en": ""
+      }
+    ]
+  },
+  "sra-flk1-original-009": {
+    "chapterId": "contract-02",
+    "topicTags": [
+      "Sufficient ≠ adequate",
+      "Executory consideration"
+    ],
+    "explanation": {
+      "zh": "选 B。买方承诺支付 £25，已经提供法律认可的对价；不要求金额等于 £390 的市价，也不要求先把钱交出去，合同才成立。",
+      "reasoningSteps": [
+        {
+          "title": "先问有无交换，不先问是否划算",
+          "detail": "双方交换的是“交付自行车”的承诺与“支付 £25”的承诺。这种 **executory consideration** 可以支持合同成立，即使双方还没有完成履行。"
+        },
+        {
+          "title": "拆开 sufficient 与 adequate",
+          "detail": "**Sufficient** 问是否存在法律认可的价值；**adequate** 问经济上是否相当。£25 是有法律价值的付款承诺，价格偏低只说明不等价，不等于没有对价。"
+        },
+        {
+          "title": "识别题干里的干扰信息",
+          "detail": "自行车最初是赠与所得，只说明卖方此前如何取得它。本次买卖仍有独立的对价。卖方后来发现自己卖便宜了，单纯估价失误不会让本题合同自动失效。"
+        }
+      ],
+      "textbookReferences": [
+        {
+          "book": "Revise SQE 2027 · Contract Law",
+          "chapter": "第2章",
+          "pages": "27–28",
+          "section": "Introduction to consideration；sufficiency / adequacy；Practice example 2.1",
+          "bookId": "revise-contract-2027",
+          "pageNumbers": [
+            27,
+            28
+          ]
+        },
+        {
+          "book": "SQE Notes（16页版）",
+          "chapter": "主题笔记",
+          "pages": "3",
+          "section": "Executory consideration；sufficient but need not be adequate",
+          "bookId": "notes-contract-16",
+          "pageNumbers": [
+            3
+          ]
+        }
+      ],
+      "warning": "Executed表示相关行为已经做完；executory表示尚待履行。这里是付款承诺，不能用“已履行”来解释合同成立。",
+      "textbookExample": {
+        "title": "£5 卖出钻戒 · Practice example 2.1",
+        "facts": "Corinne 把钻戒以 £5 卖给典当商，后来认为钻戒价值远高于 £5，要求以缺少对价为由拿回来。",
+        "lesson": "教材的结论是不能仅因此反悔：法律通常不审查交易是否等价，£5 仍是对价。",
+        "connection": "自行车的 £25 与钻戒的 £5 一样：低价不等于无对价。本题另加“尚未付款”，用来测试承诺本身能否构成对价。"
+      },
+      "options": {
+        "A": {
+          "zh": "合同可以成立，但尚未付款，题干没有支持把对价称作 executed；理由错误。",
+          "en": ""
+        },
+        "B": {
+          "zh": "付款承诺具有法律价值，而且无需与自行车市价相当。",
+          "en": ""
+        },
+        "C": {
+          "zh": "把低价与法律上不足的对价混淆。£25 不会仅因明显低于市价而 insufficient。",
+          "en": ""
+        },
+        "D": {
+          "zh": "普通买卖不以对价 adequate、经济等价为成立条件。",
+          "en": ""
+        },
+        "E": {
+          "zh": "Executory consideration 指将来履行的承诺，仍可作为有效对价。",
+          "en": ""
+        }
+      }
+    },
+    "relatedChapterIds": [
+      "contract-08"
+    ],
+    "quickPoints": [
+      {
+        "term": "Sufficient consideration",
+        "zh": "£25即使远低于物品市价，仍有法律认可的价值。法院通常不检查这笔交易在经济上是否公平等值。",
+        "en": ""
+      },
+      {
+        "term": "Executory consideration",
+        "zh": "买方承诺将来付款，也可以构成对价。实际把钱付出去之前，合同仍可能已经成立。",
+        "en": ""
+      }
+    ]
+  },
+  "sra-flk1-original-027": {
+    "chapterId": "contract-10",
+    "topicTags": [
+      "Expectation damages",
+      "Return of advance payment",
+      "No double recovery"
+    ],
+    "explanation": {
+      "zh": "选 C，£30,000。它由两部分组成：已付 £20,000 的返还，加上合理替代采购比原合同多花的 £10,000。",
+      "reasoningSteps": [
+        {
+          "title": "建立“如约履行”的比较基准",
+          "detail": "若供应商正常履行，零售商以总支出 £60,000 取得合格箱子。其中 £20,000 已付，£40,000 原本应在之后支付。"
+        },
+        {
+          "title": "只赔额外采购成本",
+          "detail": "替代采购支出 £70,000，超出原合同价的部分是 £10,000。零售商本来就要花钱买箱子，不能把整个 £70,000 都视为违约额外造成的损失。"
+        },
+        {
+          "title": "把仍被原供应商占有的预付款单独加回",
+          "detail": "题干已经说明箱子被拒收，原供应商仍持有 £20,000。这笔应返还的预付款与 £10,000 差价不是同一损失。总请求为 £30,000；原合同未付的 £40,000 不应再重复计算。"
+        }
+      ],
+      "textbookReferences": [
+        {
+          "book": "Revise SQE 2027 · Contract Law",
+          "chapter": "第10章",
+          "pages": "98–100、102",
+          "section": "Expectation damages；mitigation；restitution（预付款返还示例）",
+          "bookId": "revise-contract-2027",
+          "pageNumbers": [
+            98,
+            99,
+            100,
+            102
+          ]
+        },
+        {
+          "book": "SQE Notes（16页版）",
+          "chapter": "主题笔记",
+          "pages": "15–16",
+          "section": "Expectation loss；mitigation；restitution",
+          "bookId": "notes-contract-16",
+          "pageNumbers": [
+            15,
+            16
+          ]
+        }
+      ],
+      "warning": "£30,000包括返还和赔偿两部分，不是£30,000的采购价差。",
+      "textbookExample": {
+        "title": "耳机交付一半，预付款如何处理",
+        "facts": "Revise 举例：买方付 £5,000 买 500 套耳机，却只收到 250 套。教材用返还未获对应给付部分的价款说明 restitution 的作用。",
+        "lesson": "追回被对方无依据保留的款项，与计算交易的额外损失是不同问题。不可因讨论损害赔偿就遗漏已付款项。",
+        "connection": "本题还额外发生替代采购差价，故要把 £20,000 返还与 £10,000 赔偿分别算出，再求和。"
+      },
+      "options": {
+        "A": {
+          "zh": "£70,000 是替代采购总价，未扣除正常履行本来也应承担的成本。",
+          "en": ""
+        },
+        "B": {
+          "zh": "£10,000 仅是价差，漏算原供应商持有的 £20,000 预付款。",
+          "en": ""
+        },
+        "C": {
+          "zh": "£20,000 返还 + (£70,000 − £60,000) 价差赔偿 = £30,000。",
+          "en": ""
+        },
+        "D": {
+          "zh": "£20,000 只退回预付款，未补偿额外采购支出。",
+          "en": ""
+        },
+        "E": {
+          "zh": "£60,000 是原合同价，并不是可追回金额的计算结果。",
+          "en": ""
+        }
+      }
+    },
+    "relatedChapterIds": [
+      "contract-09"
+    ],
+    "quickPoints": [
+      {
+        "term": "Return of advance payment",
+        "zh": "原供应商没有交货，应返还买方先付的£20,000。",
+        "en": ""
+      },
+      {
+        "term": "Price difference",
+        "zh": "替代采购花了£70,000，比原合同£60,000多£10,000。加上预付款返还，总请求额为£30,000。",
+        "en": ""
+      }
+    ]
+  },
+  "sra-flk1-original-030": {
+    "chapterId": "contract-07",
+    "topicTags": [
+      "Rescission",
+      "Bars to rescission",
+      "Affirmation"
+    ],
+    "explanation": {
+      "zh": "选 D。按本题设定，大规模拆除与扩建使实质恢复原状不可行，阻却撤销。买方改建时还不知道欺诈，因此不能把改建直接认定为知情后的确认合同。",
+      "reasoningSteps": [
+        {
+          "title": "先确认救济原则上存在",
+          "detail": "欺诈性虚假陈述可以使合同成为 **voidable**，受害方原则上可要求 **rescission**，让双方回到订约前状态。因此 A 从起点就错了。"
+        },
+        {
+          "title": "将事实与撤销障碍逐一对应",
+          "detail": "题目特别强调拆掉附属建筑并加建。这对应教材的“标的物被破坏，无法恢复”障碍；仅仅聘请建筑商，并不等于已有阻却撤销的第三人取得交易标的权利。"
+        },
+        {
+          "title": "用时间线排除最强干扰项",
+          "detail": "3月买入 → 4月改建 → 5月才知道陈述虚假。**Affirmation** 要求知悉相关虚假陈述及撤销权后，仍以言语或行为选择维持合同；4月的改建不满足这个时序。"
+        }
+      ],
+      "textbookReferences": [
+        {
+          "book": "Revise SQE 2027 · Contract Law",
+          "chapter": "第7章",
+          "pages": "72–74",
+          "section": "Rescission；bars：affirmation、destruction、third-party rights",
+          "bookId": "revise-contract-2027",
+          "pageNumbers": [
+            72,
+            73,
+            74
+          ]
+        },
+        {
+          "book": "SQE Notes（16页版）",
+          "chapter": "主题笔记",
+          "pages": "11",
+          "section": "Remedies to misrepresentation；Bars to rescission",
+          "bookId": "notes-contract-16",
+          "pageNumbers": [
+            11
+          ]
+        }
+      ],
+      "warning": "轻微变化不必然妨碍撤销，法院可能允许金钱调整；本题强调的是大规模拆建。不能撤销，也不当然消灭欺诈损害赔偿请求。",
+      "textbookExample": {
+        "title": "教材的“拆除建筑”与“知情后继续使用”对照",
+        "facts": "Revise 在撤销障碍中分别列举：受误导买入后拆除建筑；以及知道虚假陈述及撤销权后，仍继续使用所购车辆或维持交易。",
+        "lesson": "前者侧重客观上还能否恢复；后者侧重受害人是否知情选择维持。二者都可能阻却撤销，但理由不同。",
+        "connection": "题干的重大拆建指向前者；“发现欺诈在改建之后”专门用来排除后者。"
+      },
+      "options": {
+        "A": {
+          "zh": "虚假陈述原则上可以支持 rescission；本题问题是该权利后来是否受到障碍。",
+          "en": ""
+        },
+        "B": {
+          "zh": "雇用建筑商本身不证明善意第三人已经取得会阻却撤销的标的权利。",
+          "en": ""
+        },
+        "C": {
+          "zh": "改建时尚未知欺诈，不能以此证明知情确认合同。",
+          "en": ""
+        },
+        "D": {
+          "zh": "重大拆除与扩建对应实质恢复原状不可能；这是官方题目的最佳答案。",
+          "en": ""
+        },
+        "E": {
+          "zh": "1967年法没有对本题欺诈性虚假陈述设立这样的统一撤销禁令。",
+          "en": ""
+        }
+      }
+    },
+    "quickPoints": [
+      {
+        "term": "Rescission",
+        "zh": "撤销合同原则上要把双方带回订约前的状态。本题房屋已被大规模拆改，按题设无法实质恢复，因此不能采用这一救济。",
+        "en": ""
+      },
+      {
+        "term": "Affirmation",
+        "zh": "确认合同需要先知道自己有撤销理由，再选择维持合同。买方改建时还不知道欺诈，不能仅凭改建就说他已经确认合同。",
+        "en": ""
+      }
+    ]
+  },
+  "sra-flk1-original-034": {
+    "chapterId": "contract-10",
+    "topicTags": [
+      "Mitigation",
+      "Avoidable loss",
+      "Causation"
+    ],
+    "explanation": {
+      "zh": "选 A。公司看到泄漏仍不搬移容器，而搬移不花钱；能够以合理措施避免的后续扩大损失，不能全部向卖方追偿。",
+      "reasoningSteps": [
+        {
+          "title": "把已经发生的损失与可避免的扩大损失分开",
+          "detail": "卖方提供不适合装酸的容器造成泄漏，不能因买方后来未减损便当然免除全部责任。问题是发现泄漏后，哪些地板损坏本来能够合理避免。"
+        },
+        {
+          "title": "检查措施是否合理可行",
+          "detail": "题干明确说雇员已看到损害，而且搬移无成本，支持移走容器属于合理措施。法律只要求 **reasonable steps**，不是要求受害方冒险或不计成本。"
+        },
+        {
+          "title": "准确表达少赔的理由",
+          "detail": "减损通常是对可赔金额的限制，而不是卖方可以反过来要求买方履行的一项独立合同义务。本题的 £5,000 维修费须剔除可避免部分，但未提供数字，不能算出具体应减少多少。"
+        }
+      ],
+      "textbookReferences": [
+        {
+          "book": "Revise SQE 2027 · Contract Law",
+          "chapter": "第10章",
+          "pages": "99–100",
+          "section": "Limiting factors：causation、contributory negligence、remoteness、mitigation",
+          "bookId": "revise-contract-2027",
+          "pageNumbers": [
+            99,
+            100
+          ]
+        },
+        {
+          "book": "SQE Notes（16页版）",
+          "chapter": "主题笔记",
+          "pages": "16",
+          "section": "Mitigation；contributory negligence",
+          "bookId": "notes-contract-16",
+          "pageNumbers": [
+            16
+          ]
+        }
+      ],
+      "warning": "未减损只影响可以合理避免的损失部分，并不自动使原本已经发生的全部损失都不获赔。",
+      "textbookExample": {
+        "title": "受污染饮料的召回",
+        "facts": "Revise 举例：供应原料受污染，饮料生产商选择召回并销毁饮料。即使这比仅发公告花费更多，也可能是保护声誉的合理减损措施。",
+        "lesson": "减损审查的是措施是否合理，而不是事后找出最便宜的办法；合理措施造成的费用仍可能获赔。",
+        "connection": "与教材中的主动召回相比，本题连免费移走泄漏容器都没有做，因此更难把后续扩大损失转嫁出去。"
+      },
+      "options": {
+        "A": {
+          "zh": "已知损害继续发生且可免费搬移，正好触发合理减损规则。",
+          "en": ""
+        },
+        "B": {
+          "zh": "不能仅看到买方“不小心”就套用共同过失；本题最明确的依据是未采取合理减损措施。",
+          "en": ""
+        },
+        "C": {
+          "zh": "即使损失由违约引起，仍要经过减损等赔偿范围限制，不是全部必赔。",
+          "en": ""
+        },
+        "D": {
+          "zh": "Remoteness 的分析不能只看公司单方预想；即使损失不遥远，也不能省略减损审查。",
+          "en": ""
+        },
+        "E": {
+          "zh": "无需认定因果链整体断裂；减损规则已经足以排除可避免的扩大部分。",
+          "en": ""
+        }
+      }
+    },
+    "quickPoints": [
+      {
+        "term": "Mitigation",
+        "zh": "发现容器泄漏后，买方可以不花钱把它移开，避免损失继续扩大。如果放任损失扩大，能够合理避免的那一部分通常不能向卖方索赔。",
+        "en": ""
+      }
+    ]
+  },
+  "sra-flk1-original-043": {
+    "chapterId": "contract-02",
+    "topicTags": [
+      "Part payment of debt",
+      "Fresh consideration",
+      "Practical benefit"
+    ],
+    "explanation": {
+      "zh": "选 B。债务人本来就应在今天支付 £5,000，仅同意支付其中 £4,000，没有为免除剩余 £1,000 提供新对价。债权人担心收不到钱，不会自动改变这个规则。",
+      "reasoningSteps": [
+        {
+          "title": "先识别这是“少收钱”，而非“多付钱”",
+          "detail": "教材把变更分为 **promise to pay more** 与 **promise to accept less**。本题属于到期债务减免，不能直接搬用履行工程等场景中 practical benefit 支持加价的规则。"
+        },
+        {
+          "title": "找债务人是否给了新增法律利益",
+          "detail": "没有提前付款、应债权人要求交付其他物品等额外事实。债权人本来就有今天收取 £5,000 的权利，债务人愿付其中 £4,000 不构成支持免除余款的新对价。"
+        },
+        {
+          "title": "逐一检查例外，不能凭空补事实",
+          "detail": "题干只说还有其他债权人，没有说达成债权人集体和解；担心破产也不等于非法胁迫。仅有同意少收钱，亦不足以直接认定符合 **promissory estoppel** 的依赖及不公平等条件。"
+        }
+      ],
+      "textbookReferences": [
+        {
+          "book": "Revise SQE 2027 · Contract Law",
+          "chapter": "第2章",
+          "pages": "29–31、33",
+          "section": "Pay more / accept less；Practice example 2.6；promissory estoppel",
+          "bookId": "revise-contract-2027",
+          "pageNumbers": [
+            29,
+            30,
+            31,
+            33
+          ]
+        },
+        {
+          "book": "SQE Prep Notes（30页版）",
+          "chapter": "主题笔记",
+          "pages": "8",
+          "section": "Foakes v Beer；Pinnel’s case；exceptions",
+          "bookId": "notes-contract-30",
+          "pageNumbers": [
+            8
+          ]
+        }
+      ],
+      "warning": "债权人担心一分钱都收不到，只是商业上的考虑，不能单凭这一点把部分偿债变成新对价。",
+      "textbookExample": {
+        "title": "电工同意 £100 只收 £80 · Practice example 2.6",
+        "facts": "Amir 做完电工工作，应收 £100。客户 Shakira 现金紧张，问能否只付 £80，Amir 同意后又希望追收 £20。",
+        "lesson": "教材认为他原则上仍可追收：少付原本已欠的金额没有新对价。省去追债麻烦这一实际好处，并不当然使余额减免有约束力。",
+        "connection": "把 £100 / £80 换成本题的 £5,000 / £4,000，法律结构相同；仍需再检查是否有题干支持的例外。"
+      },
+      "options": {
+        "A": {
+          "zh": "担心对方破产并不证明存在足以构成 duress 的不正当压力。",
+          "en": ""
+        },
+        "B": {
+          "zh": "部分履行到期金钱债务没有新增对价，直接解释为何原则上可追收余额。",
+          "en": ""
+        },
+        "C": {
+          "zh": "“同意放弃”是承诺事实，仍要检查它为何有约束力；不能只换成 waiver 标签就得出结论。",
+          "en": ""
+        },
+        "D": {
+          "zh": "债权人原有收足 £5,000 的权利，接受 £4,000 没有本题所需的新法律利益。",
+          "en": ""
+        },
+        "E": {
+          "zh": "避免完全收不到钱虽有商业吸引力，却不能自动让部分偿债成为有效新对价。",
+          "en": ""
+        }
+      }
+    },
+    "relatedChapterIds": [
+      "contract-08"
+    ],
+    "quickPoints": [
+      {
+        "term": "Part payment of debt",
+        "zh": "债务人已经欠£5,000，到期只付£4,000，原则上只是部分履行原有义务，没有为免除余额提供新对价。",
+        "en": ""
+      },
+      {
+        "term": "Fresh consideration",
+        "zh": "要改变这一结果，需要真正额外的法律依据，例如符合条件的提前付款或其他新对价。本题没有给出这些事实。",
+        "en": ""
+      }
+    ]
+  },
+  "demo-contract-01": {
+    "chapterId": "contract-10",
+    "topicTags": [
+      "Consumer goods",
+      "Short-term right to reject"
+    ],
+    "explanation": {
+      "zh": "选 B。制造缺陷在交付时已经存在，消费者第7天要求退货，仍在通常的30日短期拒收期间内；本题无须先接受一次维修。",
+      "reasoningSteps": [
+        {
+          "title": "先确定适用消费者买卖规则",
+          "detail": "零售商向个人出售家用水壶，题目明确适用 CRA 2015；与企业间采购适用的规则应分开。制造缺陷导致无法使用，不满足相应质量要求。"
+        },
+        {
+          "title": "按救济发生的阶段判断",
+          "detail": "**Short-term right to reject** 与其后维修、更换、减价及最终拒收的条件不同。本题问第7天的选择，经营者不能仅以愿意维修为由强迫消费者放弃短期拒收。"
+        }
+      ],
+      "textbookReferences": [
+        {
+          "book": "Revise SQE 2027 · Contract Law",
+          "chapter": "第5章",
+          "pages": "54–55",
+          "section": "CRA 2015：法定质量条款",
+          "bookId": "revise-contract-2027",
+          "pageNumbers": [
+            54,
+            55
+          ]
+        },
+        {
+          "book": "SQE Prep Notes（30页版）",
+          "chapter": "主题笔记",
+          "pages": "16–17",
+          "section": "消费者买卖救济；30日期间需结合 CRA 第22条核对",
+          "bookId": "notes-contract-30",
+          "pageNumbers": [
+            16,
+            17
+          ]
+        }
+      ],
+      "warning": "30日届满后仍可能有维修、更换、减价或最终拒收等救济；不是过了30日就没有权利。"
+    },
+    "relatedChapterIds": [
+      "contract-05"
+    ],
+    "quickPoints": [
+      {
+        "term": "Short-term right to reject",
+        "zh": "消费者收到有制造缺陷的商品，第7天提出退货，仍在通常30日的短期拒收期间内。在这个阶段，可以选择拒收退款，不必先让卖方维修一次。",
+        "en": ""
+      }
+    ]
+  },
+  "demo-contract-02": {
+    "chapterId": "contract-06",
+    "topicTags": [
+      "CRA s 65",
+      "Negligence",
+      "Personal injury"
+    ],
+    "explanation": {
+      "zh": "选 D。消费者合同不能用条款排除或限制过失导致死亡或人身伤害的责任。签名、显著提示及价格优惠，都不能使本题这种免责有效。",
+      "reasoningSteps": [
+        {
+          "title": "把订入合同与效力分开",
+          "detail": "签名和清晰提示可能解决 **incorporation**，但仍须检查法律是否允许排除这种责任。题干已明确过失和因果关系成立。"
+        },
+        {
+          "title": "用损害类型选择控制规则",
+          "detail": "这里是教练过失造成人身伤害，直接触发 CRA 第65条的禁止；不是证明条款合理就可以免责的财产损害场景。"
+        }
+      ],
+      "textbookReferences": [
+        {
+          "book": "Revise SQE 2027 · Contract Law",
+          "chapter": "第6章",
+          "pages": "62–63",
+          "section": "Negligence：death or personal injury；B2C statutory control",
+          "bookId": "revise-contract-2027",
+          "pageNumbers": [
+            62,
+            63
+          ]
+        },
+        {
+          "book": "SQE Notes（16页版）",
+          "chapter": "主题笔记",
+          "pages": "7–8",
+          "section": "Negligence exclusions；CRA 2015",
+          "bookId": "notes-contract-16",
+          "pageNumbers": [
+            7,
+            8
+          ]
+        }
+      ],
+      "warning": "这一禁止针对过失造成的死亡或人身伤害；不能据此认为所有种类的免责条款都无效。"
+    },
+    "quickPoints": [
+      {
+        "term": "Negligence → death / personal injury",
+        "zh": "经营者不能事先通过合同免除其过失造成消费者死亡或人身伤害的责任。即使消费者签了字，免责文字也很醒目，仍不能使这一免责有效。",
+        "en": ""
+      }
+    ]
+  },
+  "demo-contract-03": {
+    "chapterId": "contract-04",
+    "topicTags": [
+      "Third-party rights",
+      "CRTPA 1999 s 1"
+    ],
+    "explanation": {
+      "zh": "选 A。女儿虽不是签约人，但合同明确识别了她，并明确赋予她执行条款的权利，符合1999年法的这条法定路径。",
+      "reasoningSteps": [
+        {
+          "title": "先看到通常的合同相对性障碍",
+          "detail": "合同由父亲与建筑商订立，女儿属于 **third party**；按一般规则，不能仅因自己受益就当然主张他人的合同。"
+        },
+        {
+          "title": "再检查成文法例外",
+          "detail": "合同明确写明女儿姓名并赋予执行权，满足本题采用的 express enforcement 路径。她无须再付对价，也不必先接受父亲的债权让与。"
+        }
+      ],
+      "textbookReferences": [
+        {
+          "book": "Revise SQE 2027 · Contract Law",
+          "chapter": "第4章",
+          "pages": "43–44",
+          "section": "Statutory rights for third parties；CRTPA 1999",
+          "bookId": "revise-contract-2027",
+          "pageNumbers": [
+            43,
+            44
+          ]
+        },
+        {
+          "book": "SQE Notes（16页版）",
+          "chapter": "主题笔记",
+          "pages": "4",
+          "section": "Exceptions to privity；Contracts (Rights of Third Parties) Act 1999",
+          "bookId": "notes-contract-16",
+          "pageNumbers": [
+            4
+          ]
+        }
+      ],
+      "warning": "“从合同中受益”不一定等于“有权起诉”。本题的重要事实是合同明确识别她并赋予执行权。"
+    },
+    "quickPoints": [
+      {
+        "term": "Third-party rights",
+        "zh": "合同虽然不是女儿签的，但明确写出了她，并允许她执行相关条款，符合法定例外。她无须为取得该权利再向合同双方另外支付对价。",
+        "en": ""
+      }
+    ]
+  },
+  "demo-contract-04": {
+    "chapterId": "contract-07",
+    "topicTags": [
+      "Misrepresentation Act s 2(1)",
+      "Burden of proof"
+    ],
+    "explanation": {
+      "zh": "选 E。卖方要同时证明有合理依据相信陈述真实，并且直至订约时仍确实相信它真实。只有主观诚实、不想骗人，并不足够。",
+      "reasoningSteps": [
+        {
+          "title": "看清题目问的是哪一种请求",
+          "detail": "这是1967年法第2(1)条请求，不能把欺诈的证明规则或侵权 negligent misstatement 的特殊关系要求直接搬过来。题干已给出虚假陈述、诱使订约与损失。"
+        },
+        {
+          "title": "拆成客观与主观两个条件",
+          "detail": "**Reasonable grounds** 是相信的依据是否合理；**actual belief until contracting** 是卖方当时是否真正相信，且持续至订约。该抗辩由卖方证明，两项缺一不可。"
+        }
+      ],
+      "textbookReferences": [
+        {
+          "book": "Revise SQE 2027 · Contract Law",
+          "chapter": "第7章",
+          "pages": "73–74",
+          "section": "Negligent misrepresentation under the Misrepresentation Act 1967",
+          "bookId": "revise-contract-2027",
+          "pageNumbers": [
+            73,
+            74
+          ]
+        },
+        {
+          "book": "SQE Notes（16页版）",
+          "chapter": "主题笔记",
+          "pages": "10",
+          "section": "Statutory negligent misrepresentation；defendant’s burden",
+          "bookId": "notes-contract-16",
+          "pageNumbers": [
+            10
+          ]
+        }
+      ],
+      "warning": "买方本可自己调查，不代表卖方就已经证明这项抗辩。"
+    },
+    "quickPoints": [
+      {
+        "term": "Reasonable grounds + actual belief",
+        "zh": "卖方要证明两件事：客观上有合理依据相信陈述真实；主观上也一直相信它真实，直至合同订立。只有“我没有故意骗人”还不够。",
+        "en": ""
+      }
+    ]
+  },
+  "demo-contract-05": {
+    "chapterId": "contract-06",
+    "topicTags": [
+      "UCTA s 2(2)",
+      "Property damage",
+      "Reasonableness"
+    ],
+    "explanation": {
+      "zh": "选 C。题干明确适用 UCTA，且仅有机器等财产损坏，因此免责条款须通过合理性审查，既不是自动有效，也不是一律无效。",
+      "reasoningSteps": [
+        {
+          "title": "识别已经解决和仍待解决的问题",
+          "detail": "**Properly incorporated** 说明条款已有效订入；题目不再考通知是否及时，而是考法定效力控制。双方都是企业，不因此免受 UCTA 控制。"
+        },
+        {
+          "title": "按损害类型分流",
+          "detail": "过失造成死亡或人身伤害适用禁止免责；其他损害按第2(2)条检查 **reasonableness**。本题明确无人受伤，所以适用后一条。"
+        }
+      ],
+      "textbookReferences": [
+        {
+          "book": "Revise SQE 2027 · Contract Law",
+          "chapter": "第6章",
+          "pages": "62–63",
+          "section": "Negligence liability；What is reasonable?",
+          "bookId": "revise-contract-2027",
+          "pageNumbers": [
+            62,
+            63
+          ]
+        },
+        {
+          "book": "SQE Notes（16页版）",
+          "chapter": "主题笔记",
+          "pages": "7–8",
+          "section": "UCTA s 2；s 11 reasonableness test",
+          "bookId": "notes-contract-16",
+          "pageNumbers": [
+            7,
+            8
+          ]
+        }
+      ],
+      "warning": "如果过失导致死亡或人身伤害，适用的是禁止免责规则，而不是用合理性审查决定能否免责。"
+    },
+    "quickPoints": [
+      {
+        "term": "Reasonableness",
+        "zh": "本题只有机器等财产损失。适用UCTA时，排除过失财产损害责任的条款，需要通过合理性审查，不能只因双方都是企业或签过字就认定有效。",
+        "en": ""
+      }
+    ]
+  },
+  "demo-contract-06": {
+    "chapterId": "contract-06",
+    "topicTags": [
+      "Unfair terms",
+      "CRA ss 62 & 67",
+      "Severability"
+    ],
+    "explanation": {
+      "zh": "选 A。不公平条款不约束消费者；题干又明确余下合同能独立运行，因此在实际可行范围内保留其余部分。",
+      "reasoningSteps": [
+        {
+          "title": "先识别题干已经给出的不公平认定",
+          "detail": "违反诚信、显著失衡、对消费者不利，对应 CRA 第62条的标准。这里无需另证明欺诈，也不能用“字体醒目”否定已认定的不公平。"
+        },
+        {
+          "title": "将个别条款的后果与整份合同分开",
+          "detail": "**Not binding on the consumer** 是该条款的效力后果；第67条使合同其余部分在可行范围内继续有效，避免动辄推翻整笔交易。"
+        }
+      ],
+      "textbookReferences": [
+        {
+          "book": "Revise SQE 2027 · Contract Law",
+          "chapter": "第6章",
+          "pages": "63–64",
+          "section": "What is an unfair term?；CRA 2015",
+          "bookId": "revise-contract-2027",
+          "pageNumbers": [
+            63,
+            64
+          ]
+        },
+        {
+          "book": "SQE Notes（16页版）",
+          "chapter": "主题笔记",
+          "pages": "8",
+          "section": "CRA：unfair terms not binding on the consumer",
+          "bookId": "notes-contract-16",
+          "pageNumbers": [
+            8
+          ]
+        }
+      ],
+      "warning": "条款写得清楚、容易看见，只能说明它较为透明；不代表它的实际内容一定公平。"
+    },
+    "quickPoints": [
+      {
+        "term": "Unfair term",
+        "zh": "不公平条款本身对消费者不具约束力。如果删掉这一条后，其余合同仍能运作，原则上保留其余部分。",
+        "en": ""
+      }
+    ]
+  },
+  "demo-contract-07": {
+    "chapterId": "contract-07",
+    "topicTags": [
+      "Misrepresentation exclusion",
+      "Reasonableness",
+      "Burden of proof"
+    ],
+    "explanation": {
+      "zh": "选 D。排除订约前虚假陈述责任的条款，须满足1967年法第3条所援引的合理性标准；由希望援引免责条款的卖方证明。",
+      "reasoningSteps": [
+        {
+          "title": "先认清条款想排除什么责任",
+          "detail": "该条款排除的是订约前 misrepresentation 的责任或救济，不能只因为已签字或措辞明确，就停在合同解释这一层。"
+        },
+        {
+          "title": "区分审查标准与举证责任",
+          "detail": "本题是企业间交易，且明示适用第3条。合理性按 UCTA 第11(1)条衡量，援引方承担证明责任；并非任何商业虚假陈述免责都一律有效或一律禁止。"
+        }
+      ],
+      "textbookReferences": [
+        {
+          "book": "Revise SQE 2027 · Contract Law",
+          "chapter": "第6章及第7章",
+          "pages": "63、73–74",
+          "section": "免责条款的合理性；法定虚假陈述责任（第3条标准与举证另经法条核对）",
+          "bookId": "revise-contract-2027",
+          "pageNumbers": [
+            63,
+            73,
+            74
+          ]
+        },
+        {
+          "book": "SQE Notes（16页版）",
+          "chapter": "主题笔记",
+          "pages": "7–8",
+          "section": "UCTA reasonableness（辅助理解）",
+          "bookId": "notes-contract-16",
+          "pageNumbers": [
+            7,
+            8
+          ]
+        }
+      ],
+      "warning": "这里审查的是免责条款是否合理，与卖方能否证明自己当时有合理依据相信陈述真实，是两个不同问题。"
+    },
+    "relatedChapterIds": [
+      "contract-06"
+    ],
+    "quickPoints": [
+      {
+        "term": "Misrepresentation exclusion",
+        "zh": "卖方想依靠条款免除自己订约前作出虚假陈述的责任，必须证明该免责条款符合合理性要求。举证责任在援引免责的卖方。",
+        "en": ""
+      }
+    ]
+  },
+  "demo-contract-08": {
+    "chapterId": "contract-05",
+    "topicTags": [
+      "Implied statutory terms",
+      "CRA s 49",
+      "Reasonable care and skill"
+    ],
+    "explanation": {
+      "zh": "选 B。消费者付费接受专业粉刷服务，CRA 第49条将合理谨慎和技能标准纳入合同；双方未写质量条款，不会令该义务消失。",
+      "reasoningSteps": [
+        {
+          "title": "先区分义务的来源",
+          "detail": "本题的标准来自 **statute**，不要求当事人另行明示，也不需要先用 business efficacy 等法院默示条款测试来补空白。"
+        },
+        {
+          "title": "看标准要求的是怎样履行",
+          "detail": "合理谨慎和技能要求经营者以合理专业水平工作。草率施工可能违反这一义务，但该条本身不保证每一次服务都达到完美结果。"
+        }
+      ],
+      "textbookReferences": [
+        {
+          "book": "Revise SQE 2027 · Contract Law",
+          "chapter": "第5章",
+          "pages": "54–55",
+          "section": "Terms included by statute；Table 5.4：CRA s 49",
+          "bookId": "revise-contract-2027",
+          "pageNumbers": [
+            54,
+            55
+          ]
+        },
+        {
+          "book": "SQE Prep Notes（30页版）",
+          "chapter": "主题笔记",
+          "pages": "16",
+          "section": "Supply of services：reasonable care and skill",
+          "bookId": "notes-contract-30",
+          "pageNumbers": [
+            16
+          ]
+        }
+      ],
+      "warning": ""
+    },
+    "quickPoints": [
+      {
+        "term": "Reasonable care and skill",
+        "zh": "消费者付费请专业人员粉刷房屋，即使合同没写施工标准，法律也要求承包人以合理谨慎和专业技能完成工作。",
+        "en": ""
+      },
+      {
+        "term": "No automatic guarantee of perfection",
+        "zh": "这一标准考查工作是否达到合理专业水平，并不等于承包人保证在任何情况下都得到完美结果。",
+        "en": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,5104 @@
+[
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "contract",
+    "id": "sra-flk1-original-001",
+    "number": 1,
+    "stem": "An architect received a leaflet from website designers advertising their website design packages. On the back of the leaflet was a copy of the website designers’ standard terms, which contained a limitation clause.\n\nThe architect wrote a letter to the website designers asking them to design his website and he attached to his letter a copy of his own standard terms and conditions, which did not contain a limitation clause. The architect received a quotation for £2,500 from the website designers.\n\nThe architect signed and returned a tear-off slip to the website designers which stated that he accepted the quotation on the website designers’ standard terms and conditions.",
+    "stemZh": "一名建筑师收到网站设计商的宣传单，背面印有包含限责条款的标准条款。建筑师写信委托设计网站，并附上不含限责条款的自有标准条款。设计商向其报价2,500英镑。建筑师签署并交回报价单的回执，明确按设计商的标准条款接受报价。",
+    "ask": "Which of the following statements best describes the legal position?",
+    "askZh": "以下哪项最准确地描述法律状况？",
+    "options": [
+      {
+        "id": "A",
+        "en": "The terms on the leaflet constituted an offer which the architect accepted by asking for a quotation.",
+        "zh": "宣传单构成要约，建筑师要求报价即为承诺。"
+      },
+      {
+        "id": "B",
+        "en": "The quotation constituted an offer which the architect accepted on the website designers’ standard terms and conditions.",
+        "zh": "报价构成要约，建筑师按设计商的标准条款接受。"
+      },
+      {
+        "id": "C",
+        "en": "The quotation constituted an offer which the architect accepted on the architect’s standard terms and conditions.",
+        "zh": "报价构成要约，建筑师按自己的标准条款接受。"
+      },
+      {
+        "id": "D",
+        "en": "The letter from the architect to the web designers constituted an offer which the web designers accepted by sending a quotation.",
+        "zh": "建筑师的信构成要约，设计商发送报价即为承诺。"
+      },
+      {
+        "id": "E",
+        "en": "The letter from the architect to the web designers constituted a counteroffer which the web designers accepted by sending a quotation.",
+        "zh": "建筑师的信构成反要约，设计商发送报价即为承诺。"
+      }
+    ],
+    "explanation": {
+      "answer": "B",
+      "topic": "Battle of forms · 格式条款之争",
+      "en": "",
+      "zh": "关键在最终签署的回执：建筑师明确接受设计商的报价及其标准条款。因此合同按设计商条款成立，选B。此前发送自己的条款，不会推翻之后的明确接受。",
+      "ruleEn": "",
+      "ruleZh": "先找最终要约，再找无条件接受。；双方各发标准条款时，看最终同意了哪一套。；条款订入合同与条款是否有效，是两个问题。",
+      "warning": "宣传单通常是 invitation to treat；本题不要求判断限责条款最终能否执行。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Invitation to treat**：宣传单通常是要约邀请；索要报价也不是接受该要约。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Acceptance**：回执明确接受报价和设计商条款，正好对应B。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Own standard terms**：回执写的是设计商的条款，不是建筑师的条款。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Counter-offer**：报价附有自己的条款，不能视为无条件接受建筑师的条件。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Original offer**：宣传单并非先前要约，且报价也未接受建筑师的条款。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Invitation to treat · 要约邀请",
+          "detail": "宣传广告通常只是邀请对方提出交易条件，尚未承诺对方一接受即受约束。"
+        },
+        {
+          "term": "Offer / counter-offer · 要约与反要约",
+          "detail": "报价是否为要约要看具体措辞；以不同条件答复通常不是接受，而是新要约。本题报价连同设计商条款构成要约。"
+        },
+        {
+          "term": "Acceptance · 承诺",
+          "detail": "必须对应要约条件。建筑师最后签署“按设计商标准条款接受”的回执，因此应看这一明确承诺。"
+        },
+        {
+          "term": "Incorporation / validity · 订入与效力",
+          "detail": "确定采用设计商条款，不等于限责条款必然有效；效力还可能受成文法审查。本题只问合同按谁的条款成立。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Offer and acceptance",
+          "zh": "先找最终要约，再找无条件接受。",
+          "en": ""
+        },
+        {
+          "term": "Battle of forms",
+          "zh": "双方各发标准条款时，看最终同意了哪一套。",
+          "en": ""
+        },
+        {
+          "term": "Incorporation",
+          "zh": "条款订入合同与条款是否有效，是两个问题。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "宣传单通常是 invitation to treat；本题不要求判断限责条款最终能否执行。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "business",
+    "id": "sra-flk1-original-002",
+    "number": 2,
+    "stem": "A company created a floating charge over all its assets in favour of a trade supplier, as security for sums due from time to time.\n\nFive years later, the same company entered into a debenture with a bank, creating a floating charge over all the assets of the company, as security for a loan from the bank.\n\nThe trade supplier’s charge was not registered at Companies House. However, before the debenture was signed, the company notified the bank that the trade supplier already held a valid floating charge over the company’s assets. The debenture was duly executed, and was immediately registered at Companies House. The company went into administration ten months after entering into the debenture, with outstanding sums due and unpaid both to the trade supplier and to the bank.",
+    "stemZh": "公司先向贸易供应商设立覆盖全部资产的浮动担保，担保不时产生的应付款。五年后，公司为银行贷款签署债券文件，再次就全部资产设立浮动担保。供应商的担保未在Companies House登记，但公司在签约前告知银行，供应商持有有效的浮动担保。银行担保签署后立即登记。十个月后公司进入管理程序，对两方均有欠款。",
+    "ask": "Which creditor of the company has a prior claim to the company’s assets?",
+    "askZh": "哪一债权人对公司资产享有优先受偿权？",
+    "options": [
+      {
+        "id": "A",
+        "en": "The bank, because the trade supplier’s failure to register its charge makes the charge void against the company.",
+        "zh": "银行，因为未登记使供应商担保对公司无效。"
+      },
+      {
+        "id": "B",
+        "en": "The trade supplier, because the bank had actual notice of the existence of the trade supplier’s charge.",
+        "zh": "供应商，因为银行实际知悉其担保。"
+      },
+      {
+        "id": "C",
+        "en": "The bank, because the trade supplier’s failure to register its charge makes the charge void against the administrator and the bank.",
+        "zh": "银行，因为供应商未登记的担保对管理人及银行无效。"
+      },
+      {
+        "id": "D",
+        "en": "The trade supplier, because the bank’s charge was created less than 12 months before the company went into administration.",
+        "zh": "供应商，因为银行担保设立后不足12个月公司便进入管理程序。"
+      },
+      {
+        "id": "E",
+        "en": "The trade supplier, because the priority of floating charges is determined solely according to their dates of creation.",
+        "zh": "供应商，因为浮动担保顺位仅按设立日期确定。"
+      }
+    ],
+    "explanation": {
+      "answer": "C",
+      "topic": "Company charges · 担保登记",
+      "en": "",
+      "zh": "未登记担保不能对抗管理人及公司债权人，银行可据此优先于供应商。银行知情不能补救登记缺失；但担保并非因此对公司本身也一概无效。",
+      "ruleEn": "",
+      "ruleZh": "可登记公司担保通常须在设立翌日起21天内登记。；未登记的担保对管理人、清算人及债权人无效。；后手知情不能弥补法定登记缺失。",
+      "warning": "“对公司无效”与“对管理人和债权人无效”不同；成立未满12个月也不自动使银行担保全部失效。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Void against the company**：结论偏向银行，但无效对象写错：不是公司本身。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Actual notice**：知悉在先担保不替代登记。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Administrator and creditors**：准确说明未登记的对抗后果。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Relevant period**：临近破产的浮动担保有具体适用条件及新价值例外，并非一律无效。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Priority**：必须先审查登记效力，不能只排日期。"
+        }
+      },
+      "source": "Companies Act 2006, ss 859A, 859H",
+      "sourceUrl": "https://www.legislation.gov.uk/ukpga/2006/46/section/859H",
+      "concepts": [
+        {
+          "term": "Registration · 公司担保登记",
+          "detail": "法定可登记担保通常须在设立翌日起21天内登记。登记问题先于“谁设立得早”的顺位比较。"
+        },
+        {
+          "term": "Void against creditors · 不能对抗债权人",
+          "detail": "未登记的担保对清算人、管理人及债权人无效；这不同于担保对公司本身不存在，也不等于基础债务被免除。"
+        },
+        {
+          "term": "Notice · 知情",
+          "detail": "银行即使知道供应商持有在先担保，也不能补救供应商未完成法定登记的问题。"
+        },
+        {
+          "term": "Avoidance · 破产撤销规则",
+          "detail": "破产前一定期间的浮动担保可能受限制，但须考察偿付能力、关联关系及新价值等，不能仅凭“十个月”就宣告银行担保无效。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Registration",
+          "zh": "可登记公司担保通常须在设立翌日起21天内登记。",
+          "en": ""
+        },
+        {
+          "term": "Unregistered charge",
+          "zh": "未登记的担保对管理人、清算人及债权人无效。",
+          "en": ""
+        },
+        {
+          "term": "Actual notice",
+          "zh": "后手知情不能弥补法定登记缺失。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "“对公司无效”与“对管理人和债权人无效”不同；成立未满12个月也不自动使银行担保全部失效。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "dispute",
+    "id": "sra-flk1-original-003",
+    "number": 3,
+    "stem": "A company is the claimant in an action for negligence against a defendant accountancy practice. The claimant seeks damages for allegedly negligent professional advice provided by the defendant to the claimant. Standard disclosure has been ordered.\n\nA two page letter sent to the claimant’s managing director by a financial adviser is included in the claimant’s list of documents. The financial adviser is independent of both parties to the litigation. The letter was found in the office of the claimant’s managing director, and the only copy is in the possession of the claimant’s solicitor. It is clear that the letter was written with the sole purpose of giving advice about drafting the letter before claim in the present litigation.",
+    "stemZh": "公司起诉会计师事务所提供过失专业意见并请求赔偿，法院已命令标准披露。公司文件清单包含独立财务顾问写给董事总经理的两页信函。信函在总经理办公室找到，现唯一副本由公司律师持有。信函的唯一目的，是就本案诉前索赔函的起草提供意见。",
+    "ask": "On what basis can the claimant claim a right to withhold inspection of the letter?",
+    "askZh": "公司可以依据什么拒绝让对方查阅信函？",
+    "options": [
+      {
+        "id": "A",
+        "en": "The letter is no longer in the control of the party disclosing it.",
+        "zh": "该文件已不受披露方控制。"
+      },
+      {
+        "id": "B",
+        "en": "The letter is subject to legal advice privilege.",
+        "zh": "该文件受法律意见特权保护。"
+      },
+      {
+        "id": "C",
+        "en": "It would be disproportionate to the issues in the case to permit inspection of the letter.",
+        "zh": "允许查阅与案件争点不合比例。"
+      },
+      {
+        "id": "D",
+        "en": "The letter is subject to litigation privilege.",
+        "zh": "该文件受诉讼特权保护。"
+      },
+      {
+        "id": "E",
+        "en": "The letter was written after the cause of action accrued.",
+        "zh": "该文件写于诉因产生以后。"
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Litigation privilege · 诉讼特权",
+      "en": "",
+      "zh": "该信由第三方为现实预期中的诉讼提供协助，且唯一目的就是准备诉前索赔函，符合**litigation privilege**。律师保管不等于公司失去控制；独立财务顾问也不是提供法律意见的律师。",
+      "ruleEn": "",
+      "ruleZh": "诉讼已开始或合理预期；通讯主要目的须是诉讼。；为诉讼与第三方交换的保密通讯也可受保护。；列出文件，不等于必须允许查阅其内容。",
+      "warning": "不要把所有“给意见的信”都选成 legal advice privilege。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Control**：律师代为保管，仍可属于当事人控制的文件。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Legal advice privilege**：本题是独立财务顾问的诉讼协助，不是律师与客户间的法律意见。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Proportionality**：比例性不是本题明确的拒绝查阅依据。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Litigation privilege**：诉讼目的及第三方通讯均与诉讼特权相符。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Cause of action**：诉因发生后的文件并不当然享有特权。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Legal advice privilege · 法律意见特权",
+          "detail": "通常保护律师与客户为取得或提供法律意见而进行的保密通讯；不因为写信者是“顾问”就成立。"
+        },
+        {
+          "term": "Litigation privilege · 诉讼特权",
+          "detail": "诉讼已经开始或合理预期，且通讯的主要目的是诉讼；范围可包括独立专家、财务顾问等第三方。此信专为起草本案诉前函而写。"
+        },
+        {
+          "term": "Disclosure / inspection · 披露与查阅",
+          "detail": "文件可能须列入披露清单，但其内容仍因特权而可拒绝查阅。披露存在性不等于放弃特权。"
+        },
+        {
+          "term": "Control · 控制",
+          "detail": "文件由本方律师保管，通常仍在当事人有权取得或查阅的范围内，不属于已脱离控制。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Litigation privilege",
+          "zh": "诉讼已开始或合理预期；通讯主要目的须是诉讼。",
+          "en": ""
+        },
+        {
+          "term": "Third parties",
+          "zh": "为诉讼与第三方交换的保密通讯也可受保护。",
+          "en": ""
+        },
+        {
+          "term": "Disclosure vs inspection",
+          "zh": "列出文件，不等于必须允许查阅其内容。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "不要把所有“给意见的信”都选成 legal advice privilege。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "business",
+    "id": "sra-flk1-original-004",
+    "number": 4,
+    "stem": "Last month a cycling enthusiast incorporated an online bicycle accessories shop. He is the sole director and he and a friend are the only shareholders.\n\nPrior to incorporation of the company, the enthusiast negotiated a contract with a provider of cycling clothing. The contract was signed, prior to the receipt of the certificate of incorporation, by the enthusiast in his own name, on behalf of the company.",
+    "stemZh": "一名自行车爱好者上月设立网上自行车配件公司。他是唯一董事，与朋友共同持股。在公司成立前，他与骑行服供应商磋商合同，并在取得公司注册成立证书之前，以本人姓名、代表公司签约。",
+    "ask": "With whom, if anyone, does the benefit of the contract reside?",
+    "askZh": "合同利益归谁享有？",
+    "options": [
+      {
+        "id": "A",
+        "en": "The company only.",
+        "zh": "仅归公司。"
+      },
+      {
+        "id": "B",
+        "en": "The shareholders only.",
+        "zh": "仅归股东。"
+      },
+      {
+        "id": "C",
+        "en": "The enthusiast only.",
+        "zh": "仅归该爱好者本人。"
+      },
+      {
+        "id": "D",
+        "en": "The enthusiast and the company jointly.",
+        "zh": "由本人和公司共同享有。"
+      },
+      {
+        "id": "E",
+        "en": "No one, the contract is void.",
+        "zh": "无人享有，合同无效。"
+      }
+    ],
+    "explanation": {
+      "answer": "C",
+      "topic": "Pre-incorporation contract · 设立前合同",
+      "en": "",
+      "zh": "签约时公司尚不存在。除另有约定外，设立前以公司名义订立的合同，视为与代表公司行动的人订立；该人享有合同利益，也承担责任。",
+      "ruleEn": "",
+      "ruleZh": "公司成立前不能作为该合同的现存委托人。；代未成立公司签约者通常亲自享有权利并承担义务。；成立后通常须另行更替合同，不能简单追认。",
+      "warning": "题目问合同的 benefit，不只是问谁承担 liability。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Company**：公司签约时尚未成立。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Shareholders**：股东身份本身不产生该合同权利。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Promoter**：签约者本人是法定规则下的合同当事人。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Joint entitlement**：公司不会因后来成立自动共同取得利益。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Void contract**：合同通常对签约者有效，并非当然无效。"
+        }
+      },
+      "source": "Companies Act 2006, s 51",
+      "sourceUrl": "https://www.legislation.gov.uk/ukpga/2006/46/section/51",
+      "concepts": [
+        {
+          "term": "Separate legal personality · 独立人格",
+          "detail": "公司自成立起才成为独立于股东的法律主体。Salomon原则解释的是已成立公司，不能让公司在出生前成为合同当事人。"
+        },
+        {
+          "term": "Pre-incorporation contract · 设立前合同",
+          "detail": "除另有约定外，代表未成立公司订约的人亲自成为合同当事人，既承担责任，也可享有合同利益。"
+        },
+        {
+          "term": "Ratification / novation · 追认与合同更替",
+          "detail": "公司成立后不能简单追认它不存在时订立的合同。若要让公司接手，通常需通过novation取得各方同意。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Pre-incorporation",
+          "zh": "公司成立前不能作为该合同的现存委托人。",
+          "en": ""
+        },
+        {
+          "term": "Promoter",
+          "zh": "代未成立公司签约者通常亲自享有权利并承担义务。",
+          "en": ""
+        },
+        {
+          "term": "Novation",
+          "zh": "成立后通常须另行更替合同，不能简单追认。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "题目问合同的 benefit，不只是问谁承担 liability。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "legal-system",
+    "id": "sra-flk1-original-005",
+    "number": 5,
+    "stem": "A woman in the UK asserts that her rights under Article 8 of the European Convention on Human Rights (ECHR) have been infringed by a public authority. Although she wishes to protest, she is unwilling to bring court proceedings under the Human Rights Act 1998 (HRA) against the public authority, because of the publicity she might receive, and because of the possible cost. The woman’s wealthy cousin is not affected by the alleged infringement, but says she would be willing to bring proceedings on behalf of the woman.",
+    "stemZh": "一名居住英国的女性认为公共机关侵犯其ECHR第8条权利，但因担心曝光和费用，不愿依据HRA 1998起诉。她富有的表亲并未受到侵害，但愿意代表她提起诉讼。",
+    "ask": "Can the cousin bring legal proceedings as the woman’s representative under the HRA?",
+    "askZh": "表亲能否作为她的代表依据HRA提起该诉讼？",
+    "options": [
+      {
+        "id": "A",
+        "en": "Yes, because family representatives are specifically granted standing under the HRA.",
+        "zh": "可以，HRA明确赋予家庭成员诉讼资格。"
+      },
+      {
+        "id": "B",
+        "en": "Yes, because the HRA provides that proceedings may be brought by a representative where anonymity is a serious concern for the victim.",
+        "zh": "可以，受害人特别担心匿名问题时可以由代表起诉。"
+      },
+      {
+        "id": "C",
+        "en": "No, because only a victim of the infringement can bring an action and the cousin is not a victim.",
+        "zh": "不可以，只有受害人可以主张该侵害，而表亲不是受害人。"
+      },
+      {
+        "id": "D",
+        "en": "Yes, because the court will be satisfied that the cousin, as a representative, is able to meet the expenses of the proceedings.",
+        "zh": "可以，因为表亲能承担诉讼费用。"
+      },
+      {
+        "id": "E",
+        "en": "No, because a representative can only bring an action under the HRA where it replaces numerous individuals making identical claims.",
+        "zh": "不可以，只有替代大量同类个人请求时才可代表起诉。"
+      }
+    ],
+    "explanation": {
+      "answer": "C",
+      "topic": "HRA standing · 人权诉讼资格",
+      "en": "",
+      "zh": "HRA第7条要求主张侵害的人具备**victim**身份。表亲自身权利没有受侵害；愿意支付费用或亲属关系，都不能代替受害人资格。",
+      "ruleEn": "",
+      "ruleZh": "HRA诉讼通常要求本人是该项侵害的受害人。；与一般司法审查的 sufficient interest 标准区分。；出资能力不产生诉讼资格。",
+      "warning": "不要把本题理解为禁止律师代理或符合法定条件的 litigation friend；这里是未受侵害的亲属欲自行主张。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Family representative**：HRA没有一般的家庭成员代为起诉权。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Anonymity**：担心曝光本身不赋予表亲受害人资格。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Victim**：表亲不是受害人，不能据此自行起诉。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Funding**：有钱负担诉讼不解决资格问题。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Representative claim**：人数不是本题HRA受害人标准。"
+        }
+      },
+      "source": "Human Rights Act 1998, s 7",
+      "sourceUrl": "https://www.legislation.gov.uk/ukpga/1998/42/section/7",
+      "concepts": [
+        {
+          "term": "Victim · 受害人资格",
+          "detail": "HRA第7条通常要求起诉者是该公共机关行为的受害人；自己的Convention right受到影响才是起点。"
+        },
+        {
+          "term": "Sufficient interest · 充分利害关系",
+          "detail": "一般司法审查的资格标准不同；不能将较宽的公共利益诉讼思路直接替换HRA的victim要求。"
+        },
+        {
+          "term": "Representation · 代理",
+          "detail": "律师代理或符合法定要求的litigation friend，与未受侵害的亲属以自己的资格提起诉讼不同。"
+        },
+        {
+          "term": "Funding / privacy · 费用与隐私",
+          "detail": "出资能力、亲属关系和曝光顾虑均不能自行创造受害人资格。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Victim test",
+          "zh": "HRA诉讼通常要求本人是该项侵害的受害人。",
+          "en": ""
+        },
+        {
+          "term": "Standing",
+          "zh": "与一般司法审查的 sufficient interest 标准区分。",
+          "en": ""
+        },
+        {
+          "term": "Funding",
+          "zh": "出资能力不产生诉讼资格。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "不要把本题理解为禁止律师代理或符合法定条件的 litigation friend；这里是未受侵害的亲属欲自行主张。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "business",
+    "id": "sra-flk1-original-006",
+    "number": 6,
+    "stem": "The directors of a private limited company plan to sell some land which is owned by the company. The proposed purchaser of the land is known to all the directors, and is the father of one of the directors. The company’s directors are all also shareholders in the company.\n\nThe land has recently been independently valued at £70,000 and it is agreed that this will be the sale price.\n\nThe company’s most recent set of annual accounts states net profits of £770,000 and net assets of £600,000. The company has adopted the Companies (Model Articles) Regulations 2008 (unamended) as its articles of association.",
+    "stemZh": "私人有限公司拟以70,000英镑出售土地，价格与独立估值一致。买方是其中一名董事的父亲，所有董事均知悉此关系；董事也都是股东。最近年度账目列示净利润770,000英镑、净资产600,000英镑。公司采用未修改的2008年示范章程。",
+    "ask": "Does the proposed sale of land require shareholder approval?",
+    "askZh": "这项出售是否需要股东批准？",
+    "options": [
+      {
+        "id": "A",
+        "en": "No, because the transaction falls under the directors’ general authority to manage the company’s business.",
+        "zh": "不需要，属于董事管理公司业务的一般权限。"
+      },
+      {
+        "id": "B",
+        "en": "No, because the transaction involves the sale and purchase of land which is a non-cash asset.",
+        "zh": "不需要，土地是非现金资产。"
+      },
+      {
+        "id": "C",
+        "en": "No, because the transaction involves the sale and purchase of an asset at its fair market value.",
+        "zh": "不需要，按公平市价交易。"
+      },
+      {
+        "id": "D",
+        "en": "Yes, because the transaction involves the sale and purchase of land whose value exceeds 10% of the company’s asset value.",
+        "zh": "需要，土地价值超过公司资产价值的10%。"
+      },
+      {
+        "id": "E",
+        "en": "Yes, because the company’s directors are all also shareholders in the company.",
+        "zh": "需要，因为董事也都是股东。"
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Substantial property transaction · 重大财产交易",
+      "en": "",
+      "zh": "董事父亲属于关联人士；70,000英镑超过净资产600,000英镑的10%，且超过5,000英镑，构成**substantial property transaction**。即使按市价出售，也需股东批准。",
+      "ruleEn": "",
+      "ruleZh": "董事的父母属于法定关联人士。；资产超过£100,000，或同时超过£5,000及公司资产价值10%。；与董事或其关联人士进行此类非现金资产交易，通常须股东普通决议。",
+      "warning": "分母用资产价值，本题是净资产；不能用净利润770,000英镑计算。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Directors’ authority**：法定股东批准要求限制董事一般管理权。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Non-cash asset**：非现金资产恰是这项规则适用的对象。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Fair market value**：公平市价不免除法定批准。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Asset-value threshold**：70,000大于60,000，且大于5,000，满足门槛。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Shareholder approval**：董事与股东身份重合并不是触发门槛。"
+        }
+      },
+      "source": "Companies Act 2006, ss 190–191, 252–253",
+      "sourceUrl": "https://www.legislation.gov.uk/ukpga/2006/46/section/191",
+      "concepts": [
+        {
+          "term": "Connected person · 关联人士",
+          "detail": "董事的父母属于相关法定范围，因此出售给董事父亲应检查重大财产交易规则。"
+        },
+        {
+          "term": "Non-cash asset · 非现金资产",
+          "detail": "土地属于non-cash asset；正因为不是现金，才需考虑这项财产交易批准规则。"
+        },
+        {
+          "term": "Substantial · 重大",
+          "detail": "超过£100,000；或同时超过£5,000及公司资产价值的10%。本题£70,000大于£60,000及£5,000。"
+        },
+        {
+          "term": "Shareholder approval · 股东批准",
+          "detail": "达到条件时通常须普通决议。市价公平或董事兼任股东，均不代替正式批准程序。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Connected person",
+          "zh": "董事的父母属于法定关联人士。",
+          "en": ""
+        },
+        {
+          "term": "Substantial",
+          "zh": "资产超过£100,000，或同时超过£5,000及公司资产价值10%。",
+          "en": ""
+        },
+        {
+          "term": "Approval",
+          "zh": "与董事或其关联人士进行此类非现金资产交易，通常须股东普通决议。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "分母用资产价值，本题是净资产；不能用净利润770,000英镑计算。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "contract",
+    "id": "sra-flk1-original-007",
+    "number": 7,
+    "stem": "The owner of a Greek restaurant orders wall tiles that include a border design showing the Greek flag. After the tiles have been fitted, the owner notices that the tiles are decorated with the flag of Uruguay. The owner wants the tiles to be replaced.",
+    "stemZh": "希腊餐厅老板订购了带希腊国旗边饰的墙砖。铺贴完成后，老板发现图案实际是乌拉圭国旗，要求更换。",
+    "ask": "In a claim for breach of contract which of the following measure of damages is the court most likely to award?",
+    "askZh": "违约诉讼中，法院最可能采用哪项损害赔偿计算方法？",
+    "options": [
+      {
+        "id": "A",
+        "en": "Expectation.",
+        "zh": "履行利益。"
+      },
+      {
+        "id": "B",
+        "en": "Reliance.",
+        "zh": "信赖利益。"
+      },
+      {
+        "id": "C",
+        "en": "Cost of cure.",
+        "zh": "修复费用。"
+      },
+      {
+        "id": "D",
+        "en": "Loss of amenity.",
+        "zh": "享用利益损失。"
+      },
+      {
+        "id": "E",
+        "en": "Mental distress.",
+        "zh": "精神痛苦。"
+      }
+    ],
+    "explanation": {
+      "answer": "C",
+      "topic": "Cost of cure · 修复费用",
+      "en": "",
+      "zh": "国旗设计与希腊餐厅用途直接相关，要求符合约定的装饰有实际利益。以合理更换费用衡量赔偿最贴切，选**cost of cure**。",
+      "ruleEn": "",
+      "ruleZh": "按合理纠正违约所需费用计算。；修复费用与取得约定履行的利益应相称。；修复费用可以是实现履行利益的一种计算方法。",
+      "warning": "A是上位概念；单项最佳答案应选更具体的C。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Expectation loss**：履行利益方向没错，但C更准确指明本题计算方法。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Reliance loss**：本题不是要求返还因信赖合同而支出的费用。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Cost of cure**：合理换砖费用直接实现约定的装修效果。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Loss of amenity**：享用利益赔偿常用于修复费用不合理等情形，本题更适合修复。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Mental distress**：商业装修不通常以精神痛苦赔偿为主要救济。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Expectation loss · 履行利益",
+          "detail": "总目标是使守约方处于合同正常履行时的经济地位；这是损害赔偿目的的上位概念。"
+        },
+        {
+          "term": "Cost of cure · 修复费用",
+          "detail": "以合理纠正缺陷的费用实现约定履行。希腊餐厅订希腊国旗墙砖，设计与商业用途有关，合理更换费用最贴题。"
+        },
+        {
+          "term": "Loss of amenity · 享用利益损失",
+          "detail": "修复代价明显不合理时，可能就没有获得约定的使用或享受利益给予较小赔偿。并非所有装饰缺陷都只赔这一项。"
+        },
+        {
+          "term": "Reliance / distress · 信赖与精神损害",
+          "detail": "信赖利益关注因信赖合同而浪费的支出；精神痛苦赔偿在普通商业合同中受限制，均不是这里的主要计算路径。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Cost of cure",
+          "zh": "按合理纠正违约所需费用计算。",
+          "en": ""
+        },
+        {
+          "term": "Reasonableness",
+          "zh": "修复费用与取得约定履行的利益应相称。",
+          "en": ""
+        },
+        {
+          "term": "Expectation",
+          "zh": "修复费用可以是实现履行利益的一种计算方法。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "A是上位概念；单项最佳答案应选更具体的C。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "dispute",
+    "id": "sra-flk1-original-008",
+    "number": 8,
+    "stem": "In March 2025, a claimant brought a claim against his plumber for a breach of contract alleged to have taken place in June 2019. The plumber operated as a sole trader.\n\nIn August 2025, the plumber died. The plumber’s assets are being dealt with by her personal representatives.\n\nIn October 2025, the claimant applied to substitute the plumber’s personal representatives for the deceased plumber in the claim, so that the claim could continue.",
+    "stemZh": "原告于2025年3月起诉独资经营的水管工，主张其于2019年6月违约。水管工于2025年8月死亡，遗产由遗产代理人处理。原告于2025年10月申请以遗产代理人替换死者，继续诉讼。",
+    "ask": "What powers does the court have to make a substitution for the plumber as a deceased party in the claim?",
+    "askZh": "法院有何权力替换作为已死亡当事人的水管工？",
+    "options": [
+      {
+        "id": "A",
+        "en": "The court can order a new party to be substituted because the relevant limitation period was current when the claimant applied for the substitution.",
+        "zh": "可以，因为申请替换时仍在时效内。"
+      },
+      {
+        "id": "B",
+        "en": "The court cannot order a new party to be substituted because the relevant limitation period has expired.",
+        "zh": "不可以，因为时效已届满。"
+      },
+      {
+        "id": "C",
+        "en": "The court can order a new party to be substituted because the relevant limitation period was current when the proceedings were started.",
+        "zh": "可以，因为提起诉讼时仍在时效内。"
+      },
+      {
+        "id": "D",
+        "en": "The court can order a new party to be substituted because the relevant limitation period was current when the plumber died.",
+        "zh": "可以，因为水管工死亡时仍在时效内。"
+      },
+      {
+        "id": "E",
+        "en": "The court cannot order a new party to be substituted because liability remains with the plumber’s business.",
+        "zh": "不可以，因为责任仍由水管业务承担。"
+      }
+    ],
+    "explanation": {
+      "answer": "C",
+      "topic": "Substitution after limitation · 时效后替换当事人",
+      "en": "",
+      "zh": "普通合同请求通常适用六年时效。2025年3月起诉尚未到期；之后死亡致责任转移，替换有必要。CPR 19.6允许在这类情形中于时效届满后替换当事人。",
+      "ruleEn": "",
+      "ruleZh": "普通合同通常自违约日起六年。；时效后替换须起诉时未过时效，且替换必要。；死亡后利益或责任转至新当事人，可满足必要性。",
+      "warning": "判断起点是 proceedings were started，不是死亡日或替换申请日。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Application date**：2025年10月已超过2019年6月后的六年。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Expired limitation**：时效届满不一概禁止法定必要替换。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Proceedings started**：起诉及时，且死亡后替换满足必要性。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Date of death**：2025年8月已过六年，且此时间不是关键。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Sole trader**：独资业务不是隔离死者责任的独立法人。"
+        }
+      },
+      "source": "CPR 19.6(2)–(3)",
+      "sourceUrl": "https://www.justice.gov.uk/courts/procedure-rules/civil/rules/part19",
+      "concepts": [
+        {
+          "term": "Limitation · 时效",
+          "detail": "普通合同请求通常从违约起六年；2019年6月至2025年3月尚未满六年，因此原诉及时。"
+        },
+        {
+          "term": "Substitution · 替换当事人",
+          "detail": "申请时已过时效仍可能获准，关键是原诉启动时未过时效，并且替换属于规则所认可的必要情形。"
+        },
+        {
+          "term": "Personal representatives · 遗产代理人",
+          "detail": "原当事人死亡，利益或责任转给遗产代理人，属于本题必要替换的依据。"
+        },
+        {
+          "term": "Sole trader · 独资经营者",
+          "detail": "个人与业务没有公司式人格分离；死亡后不能说业务是独立主体而无需处理个人遗产责任。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Limitation",
+          "zh": "普通合同通常自违约日起六年。",
+          "en": ""
+        },
+        {
+          "term": "CPR 19.6",
+          "zh": "时效后替换须起诉时未过时效，且替换必要。",
+          "en": ""
+        },
+        {
+          "term": "Death",
+          "zh": "死亡后利益或责任转至新当事人，可满足必要性。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "判断起点是 proceedings were started，不是死亡日或替换申请日。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "contract",
+    "id": "sra-flk1-original-009",
+    "number": 9,
+    "stem": "A man is given a bicycle as a gift. He later agrees to sell the bicycle for £25 to a woman but no payment has yet been made. He subsequently discovers that the bicycle is worth £390. He informs the woman that he no longer wishes to sell the bicycle because he was mistaken about its value.",
+    "stemZh": "男子获赠一辆自行车，后来同意以25英镑卖给一名女性，对方尚未付款。他随后发现车值390英镑，便以误判价值为由表示不再出售。",
+    "ask": "What advice should the woman be given?",
+    "askZh": "应向该女性提供什么意见？",
+    "options": [
+      {
+        "id": "A",
+        "en": "There is a contract because there is executed consideration.",
+        "zh": "合同成立，因为已有履行完毕的对价。"
+      },
+      {
+        "id": "B",
+        "en": "There is a contract because sufficient consideration has been promised.",
+        "zh": "合同成立，因为已经承诺提供法律上充分的对价。"
+      },
+      {
+        "id": "C",
+        "en": "There is no contract because the consideration is insufficient.",
+        "zh": "合同不成立，因为对价不充分。"
+      },
+      {
+        "id": "D",
+        "en": "There is no contract because adequate consideration has not been promised.",
+        "zh": "合同不成立，因为未承诺经济上等值的对价。"
+      },
+      {
+        "id": "E",
+        "en": "There is no contract because the consideration promised is only executory.",
+        "zh": "合同不成立，因为承诺的对价尚待履行。"
+      }
+    ],
+    "explanation": {
+      "answer": "B",
+      "topic": "Consideration · 对价的充分性",
+      "en": "",
+      "zh": "承诺支付25英镑具有法律价值，构成**sufficient consideration**。对价不必与市场价格相当，也不要求必须已付款；仅误判交易价值一般不能反悔。",
+      "ruleEn": "",
+      "ruleZh": "对价须有法律价值，无须经济等值。；未来履行的承诺也可作为对价。；交易不划算一般不等于合同无效。",
+      "warning": "尚未支付不等于没有 consideration；区分 executed 与 executory。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Executed consideration**：虽有合同，但对价尚待履行，并非executed。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Sufficient consideration**：25英镑的付款承诺具有法律价值。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Insufficient consideration**：价格低不等于法律上不充分。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Adequacy**：不要求对价与车价等值。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Executory consideration**：待履行的对价足以支持合同。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Sufficient consideration · 法律上充分",
+          "detail": "须存在法律认可的价值；25英镑的付款承诺满足这一点。"
+        },
+        {
+          "term": "Adequate consideration · 经济上等值",
+          "detail": "法院一般不审查交易是否划算，25英镑不必与390英镑市价相当。"
+        },
+        {
+          "term": "Executory consideration · 待履行对价",
+          "detail": "将来付款的承诺可以支持双方待履行的合同，不必先实际支付才生效。"
+        },
+        {
+          "term": "Executed consideration · 已履行对价",
+          "detail": "对价已经完成。本题尚未付款，所以合同虽成立，也不能用executed描述。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Sufficient, not adequate",
+          "zh": "对价须有法律价值，无须经济等值。",
+          "en": ""
+        },
+        {
+          "term": "Executory consideration",
+          "zh": "未来履行的承诺也可作为对价。",
+          "en": ""
+        },
+        {
+          "term": "Bad bargain",
+          "zh": "交易不划算一般不等于合同无效。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "尚未支付不等于没有 consideration；区分 executed 与 executory。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "legal-system",
+    "id": "sra-flk1-original-010",
+    "number": 10,
+    "stem": "A decision is made by the Court of Appeal (Civil Division) in favour of the claimant. The defendant wishes to obtain permission to appeal.",
+    "stemZh": "上诉法院民事庭判原告胜诉，被告希望取得进一步上诉许可。",
+    "ask": "Which of the following courts have the power to grant permission to appeal?",
+    "askZh": "下列哪些法院有权给予上诉许可？",
+    "options": [
+      {
+        "id": "A",
+        "en": "The Court of Appeal only.",
+        "zh": "仅上诉法院。"
+      },
+      {
+        "id": "B",
+        "en": "The Supreme Court only.",
+        "zh": "仅最高法院。"
+      },
+      {
+        "id": "C",
+        "en": "The House of Lords only.",
+        "zh": "仅上议院。"
+      },
+      {
+        "id": "D",
+        "en": "The Court of Appeal and the Supreme Court.",
+        "zh": "上诉法院和最高法院。"
+      },
+      {
+        "id": "E",
+        "en": "The Court of Appeal and the House of Lords.",
+        "zh": "上诉法院和上议院。"
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Permission to appeal · 上诉许可",
+      "en": "",
+      "zh": "从上诉法院民事庭上诉至最高法院须取得许可。可先向上诉法院申请；如被拒绝，再向最高法院申请。两个法院均有批准权限。",
+      "ruleEn": "",
+      "ruleZh": "上诉至UK Supreme Court通常需要许可。；先向作出被上诉裁判的法院申请。；下级法院拒绝后，可向最高法院申请。",
+      "warning": "House of Lords已不再承担这一最高上诉审判职能。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Court of Appeal only**：遗漏最高法院的许可权。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Supreme Court only**：遗漏上诉法院的许可权。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**House of Lords**：目前最高司法上诉机构是最高法院。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Both courts**：两者均有权授予许可。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Former appellate role**：把已转移的上议院司法职能混入现行结构。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Court of Appeal · 上诉法院",
+          "detail": "作出民事上诉裁判后，可就进一步上诉至最高法院给予许可，通常应先向该院提出申请。"
+        },
+        {
+          "term": "UK Supreme Court · 最高法院",
+          "detail": "下级法院拒绝许可后，可再向最高法院申请；能否获准还取决于适用的许可条件。"
+        },
+        {
+          "term": "House of Lords · 上议院",
+          "detail": "过去承担的最高上诉司法职能已转至最高法院，不能将历史机构名称作为现行答案。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Permission to appeal",
+          "zh": "上诉至UK Supreme Court通常需要许可。",
+          "en": ""
+        },
+        {
+          "term": "Court below",
+          "zh": "先向作出被上诉裁判的法院申请。",
+          "en": ""
+        },
+        {
+          "term": "Supreme Court",
+          "zh": "下级法院拒绝后，可向最高法院申请。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "House of Lords已不再承担这一最高上诉审判职能。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "tort",
+    "id": "sra-flk1-original-011",
+    "number": 11,
+    "stem": "A man runs a very popular farmers market on a small farm on the edge of a village every Thursday. This results in the village becoming very busy on Thursdays when many of its roads are blocked by parked cars. Because of this, on Thursdays, a woman who runs a business in the village is unable to deliver her goods and she loses trade as a result.",
+    "stemZh": "一男子每周四在村边小农场举办热门农贸市场，导致村里道路被停放车辆堵塞。一名在村中经营业务的女性因此无法配送货物并损失生意。",
+    "ask": "Which cause of action should the woman pursue in tort?",
+    "askZh": "该女性应依据哪项侵权事由提出请求？",
+    "options": [
+      {
+        "id": "A",
+        "en": "Private nuisance.",
+        "zh": "私人滋扰。"
+      },
+      {
+        "id": "B",
+        "en": "Public nuisance.",
+        "zh": "公共滋扰。"
+      },
+      {
+        "id": "C",
+        "en": "Rylands v Fletcher.",
+        "zh": "Rylands v Fletcher规则。"
+      },
+      {
+        "id": "D",
+        "en": "Negligence.",
+        "zh": "过失侵权。"
+      },
+      {
+        "id": "E",
+        "en": "Occupiers' liability.",
+        "zh": "场所占有人责任。"
+      }
+    ],
+    "explanation": {
+      "answer": "B",
+      "topic": "Public nuisance · 公共滋扰",
+      "en": "",
+      "zh": "堵塞公共道路影响公众通行；女性又因无法配送遭受特定经营损失，可主张民事**public nuisance**。",
+      "ruleEn": "",
+      "ruleZh": "干扰公众或一部分公众共同享有的权利。；个人起诉通常须有超出公众一般不便的特别损害。；通常针对土地使用或享用受到不合理干扰。",
+      "warning": "本题重点是公共道路受阻及特别营业损失，不是农场访客在场所内受伤。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Private nuisance**：题设主要涉及公共通行权，而非对其土地使用的干扰。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Public nuisance**：公共道路阻塞加上特定营业损失，最符合该诉因。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Rylands v Fletcher**：没有危险物非通常使用土地后逸出的事实。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Negligence**：本题最直接的诉因是公共滋扰，不能仅凭经济损失跳到过失。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Occupiers’ liability**：她不是因在农场内遭遇场所危险而受损。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Public nuisance · 公共滋扰",
+          "detail": "影响公众共同享有的权利，例如公共道路通行。大量车辆堵路首先指向这一诉因。"
+        },
+        {
+          "term": "Special damage · 特别损害",
+          "detail": "个人提起民事请求通常须证明超出公众一般不便的特别损害；本题是无法送货造成的具体生意损失。"
+        },
+        {
+          "term": "Private nuisance · 私人滋扰",
+          "detail": "主要保护对土地的使用和享用，需要相应土地利益；不能只因有人受影响就选private。"
+        },
+        {
+          "term": "Rylands / occupiers’ liability",
+          "detail": "前者关注危险物从土地逸出等要件；后者关注场所危险对进入者的伤害。本题事实均不以此为中心。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Public nuisance",
+          "zh": "干扰公众或一部分公众共同享有的权利。",
+          "en": ""
+        },
+        {
+          "term": "Special damage",
+          "zh": "个人起诉通常须有超出公众一般不便的特别损害。",
+          "en": ""
+        },
+        {
+          "term": "Private nuisance",
+          "zh": "通常针对土地使用或享用受到不合理干扰。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "本题重点是公共道路受阻及特别营业损失，不是农场访客在场所内受伤。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "business",
+    "id": "sra-flk1-original-012",
+    "number": 12,
+    "stem": "An ordinary trading partnership has three partners: the senior partner, the managing partner, and the junior partner. The three partners share income profits equally and capital profits in accordance with their capital contributions as follows:\n\nSenior partner: 50%\n\nManaging partner: 30%\n\nJunior partner: 20%\n\nFive years ago, the firm purchased office premises. The premises have just been sold for a profit, realising a chargeable gain.",
+    "stemZh": "普通经营合伙有三名合伙人。经营利润平均分配；资本利润按出资比例分配：高级合伙人50%、管理合伙人30%、初级合伙人20%。合伙五年前购入办公楼，现出售获利，产生应税资本利得。",
+    "ask": "Who will be liable to pay tax on the gain realised on the sale?",
+    "askZh": "谁对出售所得利得纳税？",
+    "options": [
+      {
+        "id": "A",
+        "en": "Each partner will be liable to pay Capital Gains Tax on one third of the gain and the firm will have no liability.",
+        "zh": "三人各就三分之一缴资本利得税，合伙不纳税。"
+      },
+      {
+        "id": "B",
+        "en": "The firm will be liable to pay Corporation Tax on the entire gain and the partners will have no liability.",
+        "zh": "合伙就全部利得缴公司税，合伙人不纳税。"
+      },
+      {
+        "id": "C",
+        "en": "Each partner will be liable to pay Income Tax on one third of the gain and the firm will have no liability.",
+        "zh": "三人各就三分之一缴所得税，合伙不纳税。"
+      },
+      {
+        "id": "D",
+        "en": "The senior partner will be liable to pay Capital Gains Tax on 50% of the gain, the managing partner on 30% of the gain and the junior partner on 20% of the gain.",
+        "zh": "高级、管理、初级合伙人分别就50%、30%、20%缴资本利得税。"
+      },
+      {
+        "id": "E",
+        "en": "The senior partner will be liable to pay Income Tax on 50% of the gain, the managing partner on 30% of the gain and the junior partner on 20% of the gain.",
+        "zh": "三人分别就50%、30%、20%缴所得税。"
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Partnership CGT · 合伙资本利得",
+      "en": "",
+      "zh": "普通合伙在此按税收透明处理；个人合伙人按其资本利得份额缴**Capital Gains Tax**。题设将资本利润比例定为50/30/20，不能改用经营利润平均分配比例。",
+      "ruleEn": "",
+      "ruleZh": "普通合伙的资本利得归属各合伙人计税。；资本利得按资本分配权计算。；个人处置资本资产的利得，区分于经营收入的Income Tax。",
+      "warning": "题目故意同时给出经营利润比例和资本利润比例。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Equal CGT shares**：税种正确，但分配比例错误。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Corporation Tax**：普通合伙在此不作为公司缴Corporation Tax。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Income Tax**：税种与比例均错误。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Capital profit shares**：资本利得按约定的50/30/20分配。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Wrong tax**：比例正确，但资本处置利得不是本题的Income Tax。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Tax transparency · 税收透明",
+          "detail": "普通合伙的资本资产收益通常分配至各合伙人，由合伙人就其份额纳税，而非合伙统一缴公司税。"
+        },
+        {
+          "term": "Capital profits · 资本利润",
+          "detail": "出售办公楼属于资本处置；题设明确按50%／30%／20%分配，因此相应利得按这一比例归属。"
+        },
+        {
+          "term": "Income profits · 经营利润",
+          "detail": "平时经营收入均分，不意味着资本处置收益也均分。应分别读取合伙协议对两类利润的约定。"
+        },
+        {
+          "term": "CGT / Income Tax",
+          "detail": "个人资本处置收益通常看Capital Gains Tax；经营所得看Income Tax。此题同时测试税种和分配比例。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Tax transparency",
+          "zh": "普通合伙的资本利得归属各合伙人计税。",
+          "en": ""
+        },
+        {
+          "term": "Capital share",
+          "zh": "资本利得按资本分配权计算。",
+          "en": ""
+        },
+        {
+          "term": "CGT",
+          "zh": "个人处置资本资产的利得，区分于经营收入的Income Tax。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "题目故意同时给出经营利润比例和资本利润比例。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "business",
+    "id": "sra-flk1-original-013",
+    "number": 13,
+    "stem": "A company has an accounting reference date of 31 December. It commenced trading in April, so that its first accounting period ended on 31 December of the year in which it commenced trading. During this first accounting period, the company made neither a trading profit nor a trading loss. However, the company did make a chargeable gain of £75,000 in the November, from the sale of a freehold property. The company made no capital losses during this first accounting period.\n\nIn its second accounting period, which ended on 31 December the following year, the company made a trading loss of £45,000. The company made no capital gain and no capital loss during the second accounting period.",
+    "stemZh": "公司会计基准日为12月31日，首年4月开始营业。首会计期间无经营利润或亏损，但11月出售永久产权房产产生75,000英镑应税利得，且无资本损失。次年截至12月31日的第二会计期间产生45,000英镑经营亏损，无资本利得或损失。",
+    "ask": "Can the trading loss of £45,000 made in the second accounting period be set off against the chargeable gain of £75,000 from the first accounting period?",
+    "askZh": "第二期间的45,000英镑经营亏损能否抵销第一期间的75,000英镑应税利得？",
+    "options": [
+      {
+        "id": "A",
+        "en": "Yes, because no trading or capital losses were incurred in the first accounting period.",
+        "zh": "可以，因为第一期间没有经营或资本亏损。"
+      },
+      {
+        "id": "B",
+        "en": "No, because a trading loss can only be set off against trading profits from an earlier accounting period.",
+        "zh": "不可以，经营亏损只能抵销以前期间的经营利润。"
+      },
+      {
+        "id": "C",
+        "en": "Yes, because the chargeable gain occurred within the 12 month period ending immediately before the accounting period in which the trading loss was incurred.",
+        "zh": "可以，因为利得发生于亏损期间开始前的12个月内。"
+      },
+      {
+        "id": "D",
+        "en": "No, because the company was not carrying on business for a full 12 month period before the accounting period in which the trading loss was incurred.",
+        "zh": "不可以，因为此前营业未满12个月。"
+      },
+      {
+        "id": "E",
+        "en": "No, because a trading loss can only be carried forward and set off against trading profits from a subsequent accounting period.",
+        "zh": "不可以，经营亏损只能向后结转抵销以后经营利润。"
+      }
+    ],
+    "explanation": {
+      "answer": "C",
+      "topic": "Trading loss carry-back · 公司亏损向前结转",
+      "en": "",
+      "zh": "通常可申请将经营亏损回溯抵销前12个月的**total profits**，其中包括应税资本利得。首期间虽不足一年，但11月利得处于该窗口内，故可抵销。",
+      "ruleEn": "",
+      "ruleZh": "一般窗口是亏损会计期间开始前12个月。；包括应税资本利得，并非仅trading profits。；前一会计期间不足12个月，不当然排除回溯。",
+      "warning": "通常先抵本期可用利润，再考虑回溯；本题次期没有其他利得。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**No earlier loss**：前期没有亏损不是决定能否回溯的法律标准。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Trading profits only**：回溯可抵总利润，包括应税资本利得。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**12-month carry-back**：利得落在允许的12个月窗口内。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Short period**：不要求前期必须营业满整整12个月。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Carry-forward only**：符合条件时允许回溯，不只允许向后结转。"
+        }
+      },
+      "source": "HMRC · Corporation Tax trading losses",
+      "sourceUrl": "https://www.gov.uk/guidance/corporation-tax-calculating-and-claiming-a-loss",
+      "concepts": [
+        {
+          "term": "Trading loss · 经营亏损",
+          "detail": "公司的经营亏损可按法定路径抵减利润；本题第二期间没有其他应税利润可先抵。"
+        },
+        {
+          "term": "Total profits · 总利润",
+          "detail": "公司税下可包括经营利润及应税资本利得，不能误以为经营亏损只能与同类经营利润相抵。"
+        },
+        {
+          "term": "Carry-back · 回溯抵减",
+          "detail": "通常可申请抵亏损期间开始前12个月的利润。首期间11月的£75,000利得处于这一窗口。"
+        },
+        {
+          "term": "Short accounting period · 短会计期间",
+          "detail": "公司首年4月开业，不妨碍窗口内符合条件的利得被抵减；不是必须先营业满一年。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Carry-back",
+          "zh": "一般窗口是亏损会计期间开始前12个月。",
+          "en": ""
+        },
+        {
+          "term": "Total profits",
+          "zh": "包括应税资本利得，并非仅trading profits。",
+          "en": ""
+        },
+        {
+          "term": "Short period",
+          "zh": "前一会计期间不足12个月，不当然排除回溯。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "通常先抵本期可用利润，再考虑回溯；本题次期没有其他利得。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "business",
+    "id": "sra-flk1-original-014",
+    "number": 14,
+    "stem": "A private limited company was incorporated with the Companies (Model Articles) Regulations 2008 (‘the Model Articles’) as its articles of association, but following further investment from some new shareholders, has recently adopted amended articles of association. The amended articles of association (‘the New Articles’) are based on the Model Articles but also include some special articles.",
+    "stemZh": "一家私人有限公司成立时采用示范章程。新股东投资后，公司通过基于示范章程并加入特别条款的新章程。",
+    "ask": "What must be filed with the Registrar of Companies following the adoption of the New Articles?",
+    "askZh": "通过新章程后，须向公司注册官提交哪些文件？",
+    "options": [
+      {
+        "id": "A",
+        "en": "The board minutes proposing the changes to the Model Articles and the shareholders’ resolution to adopt the New Articles.",
+        "zh": "提议修改的董事会会议记录和通过新章程的股东决议。"
+      },
+      {
+        "id": "B",
+        "en": "The shareholders’ resolution to adopt the New Articles and the prescribed fee.",
+        "zh": "股东决议和规定费用。"
+      },
+      {
+        "id": "C",
+        "en": "The New Articles and the prescribed fee.",
+        "zh": "新章程和规定费用。"
+      },
+      {
+        "id": "D",
+        "en": "The shareholders’ resolution to adopt the New Articles and the New Articles.",
+        "zh": "股东决议和新章程。"
+      },
+      {
+        "id": "E",
+        "en": "The board minutes proposing the changes to the Model Articles and the New Articles.",
+        "zh": "董事会会议记录和新章程。"
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Amending articles · 修改章程的备案",
+      "en": "",
+      "zh": "修改章程通常须特别决议，并向注册官提交该决议及修改后的章程。董事会内部会议记录不是替代文件，选D。",
+      "ruleEn": "",
+      "ruleZh": "修改articles通常需要至少75%多数。；提交股东特别决议及修改后的章程。；两份文件通常均须在相应法定15日期限内提交。",
+      "warning": "不要将内部board minutes当成必须报送的股东特别决议。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Board minutes**：缺少新章程。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Resolution only**：缺少新章程，费用不能替代。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Articles only**：缺少股东特别决议。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Resolution and articles**：两项核心备案文件齐全。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Missing resolution**：缺少股东决议，董事会记录不能代替。"
+        }
+      },
+      "source": "Companies Act 2006, ss 21, 26, 30",
+      "sourceUrl": "https://www.legislation.gov.uk/ukpga/2006/46/section/26",
+      "concepts": [
+        {
+          "term": "Articles of association · 公司章程",
+          "detail": "规定内部管理安排。修改通常需要股东special resolution，不能只靠董事会决定。"
+        },
+        {
+          "term": "Special resolution · 特别决议",
+          "detail": "通常需要至少75%的适用表决多数；须向注册官提交决议副本。"
+        },
+        {
+          "term": "Amended articles · 新章程文本",
+          "detail": "修改后的完整章程也须提交，通常与特别决议分别遵守相关15日法定期限。"
+        },
+        {
+          "term": "Board minutes · 董事会记录",
+          "detail": "可记录董事建议或程序，但不能替代应报送的股东决议和新章程。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Special resolution",
+          "zh": "修改articles通常需要至少75%多数。",
+          "en": ""
+        },
+        {
+          "term": "Filing",
+          "zh": "提交股东特别决议及修改后的章程。",
+          "en": ""
+        },
+        {
+          "term": "15 days",
+          "zh": "两份文件通常均须在相应法定15日期限内提交。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "不要将内部board minutes当成必须报送的股东特别决议。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "legal-system",
+    "id": "sra-flk1-original-015",
+    "number": 15,
+    "stem": "In the course of a trial various arguments are put to the judge as to the exact meaning of a particular section of a relevant statute. When deciding the case, the judge first looks at the natural ordinary meaning of the words used. However, such an interpretation of those words results in an absurd meaning being given to the section. The judge therefore, in coming to his decision, interprets the words in a different way which does not result in an absurd meaning.",
+    "stemZh": "庭审中，双方争论某法条的准确含义。法官先查看文字的自然通常含义，发现按该含义解释将产生荒谬结果，于是采取另一种不会导致荒谬结果的解释。",
+    "ask": "What method of statutory interpretation has the judge used?",
+    "askZh": "法官采用了哪种成文法解释方法？",
+    "options": [
+      {
+        "id": "A",
+        "en": "The literal rule.",
+        "zh": "文义规则。"
+      },
+      {
+        "id": "B",
+        "en": "The mischief rule.",
+        "zh": "弊害规则。"
+      },
+      {
+        "id": "C",
+        "en": "The extrinsic evidence rule.",
+        "zh": "外部证据规则。"
+      },
+      {
+        "id": "D",
+        "en": "The golden rule.",
+        "zh": "黄金规则。"
+      },
+      {
+        "id": "E",
+        "en": "The intrinsic evidence rule.",
+        "zh": "内部证据规则。"
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Golden rule · 黄金解释规则",
+      "en": "",
+      "zh": "从普通文义出发，但为避免荒谬结果而有限调整，是**golden rule**的典型描述。",
+      "ruleEn": "",
+      "ruleZh": "依文字的通常含义解释。；通常文义导致荒谬时，作必要调整。；关注旧法缺陷及立法欲解决的问题。",
+      "warning": "看到 absurdity，优先辨认 golden rule；不要仅因偏离字面就选mischief。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Literal rule**：法官没有停留于普通文义。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Mischief rule**：题目没有从旧法弊害出发。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Extrinsic aids**：外部资料是解释辅助材料，不是这里的规则。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Golden rule**：为避免荒谬结果调整文义，正是黄金规则。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Intrinsic aids**：法案内部资料也不是本题采用的方法名称。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Literal rule · 文义规则",
+          "detail": "通常直接依照词语的自然含义，即使结果不方便，也不因此自动改写法律。"
+        },
+        {
+          "term": "Golden rule · 黄金规则",
+          "detail": "从文义出发，但在导致荒谬结果时作必要调整；本题从ordinary meaning转向避免absurdity。"
+        },
+        {
+          "term": "Mischief rule · 弊害规则",
+          "detail": "追问旧法存在什么漏洞、立法打算纠正什么弊害，再据此解释新法。"
+        },
+        {
+          "term": "Intrinsic / extrinsic aids · 内外部辅助资料",
+          "detail": "指法案内部材料或外部材料等解释依据，与前三项作为解释方法的规则不同。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Literal rule",
+          "zh": "依文字的通常含义解释。",
+          "en": ""
+        },
+        {
+          "term": "Golden rule",
+          "zh": "通常文义导致荒谬时，作必要调整。",
+          "en": ""
+        },
+        {
+          "term": "Mischief rule",
+          "zh": "关注旧法缺陷及立法欲解决的问题。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "看到 absurdity，优先辨认 golden rule；不要仅因偏离字面就选mischief。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "legal-system",
+    "id": "sra-flk1-original-016",
+    "number": 16,
+    "stem": "Following a series of terrorist explosions in central London, the government invoked emergency prerogative powers. These powers enabled the government to take control over commercial buildings damaged in the explosions. The powers also enabled the government to deny the occupiers access to those buildings while forensic teams undertook the lengthy process of gathering evidence.\n\nRecognising the impact on the occupiers of such buildings, Parliament passed legislation creating a compensation scheme allowing those affected to claim for any costs and losses incurred while those buildings are under the government’s control.\n\nNotwithstanding this new legislation, the government is continuing to use the prerogative powers in order to avoid paying any such compensation under the statutory scheme.",
+    "stemZh": "伦敦发生多起恐怖爆炸后，政府援引紧急特权接管受损商业楼宇，并在漫长的取证期间禁止占用人进入。议会随后立法设立赔偿机制，补偿楼宇受政府控制期间的费用和损失。政府仍继续援引原特权，试图避免支付法定赔偿。",
+    "ask": "Which of the following statements best summarises the legal position?",
+    "askZh": "以下哪项最准确地概括法律地位？",
+    "options": [
+      {
+        "id": "A",
+        "en": "Where there is overlap between a prerogative power and a statute, neither prevails; the courts look to the common law for guidance.",
+        "zh": "特权与成文法重叠时，两者均不优先，法院依据普通法。"
+      },
+      {
+        "id": "B",
+        "en": "Where there is overlap between a prerogative power and a statute, the statute prevails.",
+        "zh": "重叠时，成文法优先。"
+      },
+      {
+        "id": "C",
+        "en": "Where there is overlap between a prerogative power and a statute, the prerogative power prevails.",
+        "zh": "重叠时，特权优先。"
+      },
+      {
+        "id": "D",
+        "en": "Where there is overlap between a prerogative power and a statute, the judge hearing the matter may refer to proceedings in Parliament for guidance.",
+        "zh": "重叠时，法官可参考议会辩论寻求指引。"
+      },
+      {
+        "id": "E",
+        "en": "Where there is overlap between a prerogative power and a statute, the judge hearing the matter may refer to a higher court for guidance.",
+        "zh": "重叠时，法官可提交上级法院寻求指引。"
+      }
+    ],
+    "explanation": {
+      "answer": "B",
+      "topic": "Prerogative and statute · 王室特权与成文法",
+      "en": "",
+      "zh": "议会已就同一事项制定规则，政府不能改用特权来绕开法定赔偿。成文法在重叠范围内优先，选B。",
+      "ruleEn": "",
+      "ruleZh": "成文法规定同一事项时，优先适用成文法。；不能作为绕开法定限制或补偿义务的途径。；本题对应特权受重叠成文法约束的原则。",
+      "warning": "紧急情况不意味着行政机关可选择不用已生效的赔偿立法。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**No priority**：这里存在明确的成文法优先原则。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Statutory priority**：政府不能借特权规避法定方案。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Prerogative priority**：方向相反，议会立法优先。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Parliamentary materials**：查议会材料不是两者冲突时的实体优先规则。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Higher-court guidance**：向上级法院寻求指引也不是答案所问的法律规则。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Royal prerogative · 王室特权",
+          "detail": "行政机关部分权力来自普通法认可的特权，但其行使仍受法律约束。"
+        },
+        {
+          "term": "Statutory scheme · 法定制度",
+          "detail": "议会就相同领域制定方案后，政府必须遵守其中的条件和赔偿安排。"
+        },
+        {
+          "term": "De Keyser principle",
+          "detail": "特权与成文法重叠时，不能选择特权以规避成文法限制；本题即不能绕过新设赔偿。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Statutory priority",
+          "zh": "成文法规定同一事项时，优先适用成文法。",
+          "en": ""
+        },
+        {
+          "term": "Royal prerogative",
+          "zh": "不能作为绕开法定限制或补偿义务的途径。",
+          "en": ""
+        },
+        {
+          "term": "De Keyser principle",
+          "zh": "本题对应特权受重叠成文法约束的原则。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "紧急情况不意味着行政机关可选择不用已生效的赔偿立法。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "legal-services",
+    "id": "sra-flk1-original-017",
+    "number": 17,
+    "stem": "A solicitor is dealing with a negligence case for a client. At the outset the solicitor gave a written estimate of likely total costs of £15,000 including counsel’s fees and other disbursements. A few weeks later the solicitor decides that expert evidence is also needed and the cost of this will be an additional £3,000.",
+    "stemZh": "律师承办过失案件，最初书面估计总费用15,000英镑，包括大律师费用及其他代垫费用。数周后发现还需专家证据，将另增3,000英镑。",
+    "ask": "Which of the following best explains what the solicitor should do next?",
+    "askZh": "律师接下来应如何处理？",
+    "options": [
+      {
+        "id": "A",
+        "en": "The solicitor does not need to do anything because the client was informed that it was only an estimate at the outset.",
+        "zh": "无需行动，因为最初只是估算。"
+      },
+      {
+        "id": "B",
+        "en": "The solicitor does not need to do anything because experts' costs are awarded by the court.",
+        "zh": "无需行动，因为专家费用由法院裁定。"
+      },
+      {
+        "id": "C",
+        "en": "The solicitor does not need to do anything because he is not obliged to tell the client about third party costs.",
+        "zh": "无需行动，因为不必披露第三方费用。"
+      },
+      {
+        "id": "D",
+        "en": "The solicitor should write to the client to inform him about the cost of the expert and ask for his instructions because a solicitor must get prior approval for every item of expenditure.",
+        "zh": "应书面告知专家费用并征求指示，因为每一笔支出都须事先批准。"
+      },
+      {
+        "id": "E",
+        "en": "The solicitor should write to the client to inform him about the cost of the expert and ask for his instructions because the original estimate is no longer accurate.",
+        "zh": "应书面告知专家费用并征求指示，因为原估算已不准确。"
+      }
+    ],
+    "explanation": {
+      "answer": "E",
+      "topic": "Costs information · 更新费用估算",
+      "en": "",
+      "zh": "新增专家费用使总费用估算发生实质变化，应更新信息并取得客户指示。理由是让客户持续了解整体费用，而不是存在对每笔开支一律逐项报批的规则。",
+      "ruleEn": "",
+      "ruleZh": "估算不是可以不更新的免责说明。；案件推进中，适时告知预计总成本变化。；专家费用等第三方支出也应计入费用信息。",
+      "warning": "D和E的行动相同，区别在理由；every item of expenditure过于绝对。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Estimate**：估算发生变化仍须及时更新。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Court-awarded costs**：法院可能作费用命令，不消除对客户的告知义务。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Third-party costs**：第三方费用也会影响客户总负担。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Every item**：不存在此处所述每一笔支出一律事先批准的普遍规则。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Updated estimate**：准确对应原估算不再可靠这一事实。"
+        }
+      },
+      "source": "SRA Code of Conduct, 8.6–8.7",
+      "sourceUrl": "https://www.sra.org.uk/solicitors/standards-regulations/code-conduct-solicitors/",
+      "concepts": [
+        {
+          "term": "Estimate · 费用估算",
+          "detail": "并非固定报价，但应根据案件进展保持客户对预计总费用的理解准确。"
+        },
+        {
+          "term": "Disbursements · 代垫费用",
+          "detail": "专家、大律师等第三方费用也影响客户总支出，不能因为不是本所收入就不披露。"
+        },
+        {
+          "term": "Updated instructions · 更新指示",
+          "detail": "新专家使费用增加£3,000，应说明需要和影响，再让客户作出知情决定。"
+        },
+        {
+          "term": "Every item · 每笔批准",
+          "detail": "D把所有开支都必须逐笔预批写成绝对规则；E以原估算失准为理由，准确得多。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Costs estimate",
+          "zh": "估算不是可以不更新的免责说明。",
+          "en": ""
+        },
+        {
+          "term": "Ongoing information",
+          "zh": "案件推进中，适时告知预计总成本变化。",
+          "en": ""
+        },
+        {
+          "term": "Disbursements",
+          "zh": "专家费用等第三方支出也应计入费用信息。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "D和E的行动相同，区别在理由；every item of expenditure过于绝对。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "legal-system",
+    "id": "sra-flk1-original-018",
+    "number": 18,
+    "stem": "A non-UK national living in the UK has allegedly committed a serious crime in his country of origin. His country of origin is not a signatory to the European Convention on Human Rights (‘the Convention’).\n\nThe UK government has issued an order for the deportation of the man to his country of origin. However, the man asserts that evidence will be used against him in respect of the alleged crime which has been obtained by the use of torture. The man appeals under the Convention against the deportation order in the High Court and the High Court accepts the man’s assertion.",
+    "stemZh": "一名居英非英国国民被指控在原籍国犯重罪。原籍国不是ECHR缔约国。英国拟将其驱逐回国，但他主张原籍国审判将使用酷刑取得的证据。该人依据公约向高等法院挑战驱逐令，法院接受其主张。",
+    "ask": "Which of the following best explains whether the High Court would uphold the deportation order?",
+    "askZh": "高等法院是否会维持驱逐令，何项理由最准确？",
+    "options": [
+      {
+        "id": "A",
+        "en": "It would not uphold the order because the Convention provides that member countries must secure the Convention rights for everyone within their jurisdiction.",
+        "zh": "不会，公约要求缔约国保障其管辖下每个人的公约权利。"
+      },
+      {
+        "id": "B",
+        "en": "It would not uphold the order because the merits of deportation decisions involving the human rights of nationals from non-signatory countries must be considered by the European Court of Human Rights.",
+        "zh": "不会，涉及非缔约国国民的人权驱逐案必须由欧洲人权法院审查。"
+      },
+      {
+        "id": "C",
+        "en": "It would uphold the order because the UK government is not responsible for how another sovereign state obtains evidence for use in criminal trials.",
+        "zh": "会，英国不对另一主权国家的刑事取证方式负责。"
+      },
+      {
+        "id": "D",
+        "en": "It would uphold the order because non-UK nationals do not benefit from UK human rights protection.",
+        "zh": "会，非英国国民不受英国人权保障。"
+      },
+      {
+        "id": "E",
+        "en": "It would uphold the order because the man has allegedly committed a serious crime and the Convention is not intended to protect criminals.",
+        "zh": "会，公约不保护被指控犯重罪的人。"
+      }
+    ],
+    "explanation": {
+      "answer": "A",
+      "topic": "Deportation and ECHR · 驱逐与人权",
+      "en": "",
+      "zh": "英国须保障其管辖下的人，不以英国国籍为限。若遣送后面临使用酷刑证据导致严重否定公正审判的风险，英国不能借接收国非缔约国而回避自身义务。",
+      "ruleEn": "",
+      "ruleZh": "ECHR保障通常不取决于英国国籍。；遣送后的严重不公正审判风险可阻止遣送。；使用酷刑取得的证据是严重公正审判问题。",
+      "warning": "本题重点是酷刑证据导致的flagrant denial of justice，不能把所有外国程序差异都等同于禁止驱逐。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Within jurisdiction**：正确抓住英国对其管辖下个人的保障义务。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Domestic court**：英国法院本身可以处理该人权争议。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Receiving state**：英国须审查自身遣送行为造成的后果。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Nationality**：公约保障并非仅供英国国民。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Criminal allegation**：犯罪嫌疑不使一个人丧失基本公约保护。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Jurisdiction · 管辖",
+          "detail": "ECHR保障原则上及于英国管辖下的人，外国国民、涉嫌犯罪者均不因此被排除。"
+        },
+        {
+          "term": "Removal decision · 遣送决定",
+          "detail": "英国法院审查的是英国将人遣送的行为是否侵害其保障义务，并非直接管辖外国法院。"
+        },
+        {
+          "term": "Article 6 · 公正审判",
+          "detail": "遣送后存在flagrant denial of justice风险时可能阻止遣送；酷刑证据的使用是本题的重要事实。"
+        },
+        {
+          "term": "Serious crime · 严重犯罪",
+          "detail": "不能仅因被指控犯罪就剥夺公约保护；接收国非缔约国也不解除英国自身义务。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Within jurisdiction",
+          "zh": "ECHR保障通常不取决于英国国籍。",
+          "en": ""
+        },
+        {
+          "term": "Article 6",
+          "zh": "遣送后的严重不公正审判风险可阻止遣送。",
+          "en": ""
+        },
+        {
+          "term": "Torture evidence",
+          "zh": "使用酷刑取得的证据是严重公正审判问题。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "本题重点是酷刑证据导致的flagrant denial of justice，不能把所有外国程序差异都等同于禁止驱逐。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "legal-services",
+    "id": "sra-flk1-original-019",
+    "number": 19,
+    "stem": "A man instructs his solicitor to act for him in the purchase of the entire issued share capital of a private limited company from another company. The solicitor advises on the share purchase and helps to prepare and negotiate all the necessary documentation.\n\nNeither the solicitor nor his firm is authorised by the Financial Conduct Authority to carry on a ‘regulated activity’ as defined in the Financial Services and Markets Act 2000 and related secondary legislation.",
+    "stemZh": "男子委托律师购买某私人有限公司全部已发行股本，卖方为另一家公司。律师就交易提供意见并准备、协商文件。律师及其律所均未获FCA授权从事FSMA 2000及其配套法规所称的受规管活动。",
+    "ask": "Has the solicitor breached the general prohibition against carrying on a regulated activity?",
+    "askZh": "律师是否违反不得未经授权从事受规管活动的一般禁令？",
+    "options": [
+      {
+        "id": "A",
+        "en": "Yes, because the solicitor has given advice on the purchase of shares in a specific company and no exclusion or exemption applies.",
+        "zh": "是，因为就特定公司股份提出建议且无排除或豁免。"
+      },
+      {
+        "id": "B",
+        "en": "Yes, because the transaction involves the purchase of the entire issued share capital of the company and no exclusion or exemption applies.",
+        "zh": "是，因为购买全部已发行股本且无排除或豁免。"
+      },
+      {
+        "id": "C",
+        "en": "No, because an exemption applies to professional firms which are supervised by the Solicitors Regulation Authority when they engage in corporate work.",
+        "zh": "否，因为受SRA监管的专业机构从事公司业务均获豁免。"
+      },
+      {
+        "id": "D",
+        "en": "No, because an exclusion applies if the transaction relates to the purchase of any number of shares in a private limited company.",
+        "zh": "否，因为买入任何数量的私人公司股份均属排除。"
+      },
+      {
+        "id": "E",
+        "en": "No, because an exclusion applies if the transaction involves at least 50% of the voting shares in the company.",
+        "zh": "否，因为至少50%有表决权股份的交易适用排除。"
+      }
+    ],
+    "explanation": {
+      "answer": "E",
+      "topic": "Sale of a body corporate · 公司收购排除",
+      "en": "",
+      "zh": "本题是公司整体控制权收购，适用**sale of a body corporate exclusion**；全部股本满足至少50%有表决权股份的相关门槛。并不是一切公司业务或任意私人股份投资都自动豁免。",
+      "ruleEn": "",
+      "ruleZh": "活动落在法定排除内，与依赖专业机构豁免不同。；公司出售排除的一条路径看表决权股份比例。；还须满足相关交易主体条件；控制权路径也有具体规定。",
+      "warning": "本题个人买方、公司卖方且购买全部股本；不要把“持股≥50%”背成没有其他条件的万能豁免。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Specific investment advice**：就特定股份提出建议可能受规管，但本交易有排除。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Entire share capital**：购买全部股本正是适用控制权收购排除的关键事实。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Professional exemption**：受SRA监管不意味着所有公司业务一概豁免。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Any share purchase**：任意数量股份不满足此项排除的规则。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Sale of a body corporate**：本题主体及全部股本交易符合相关排除。"
+        }
+      },
+      "source": "Regulated Activities Order 2001, art 70",
+      "sourceUrl": "https://www.legislation.gov.uk/uksi/2001/544/article/70",
+      "concepts": [
+        {
+          "term": "Regulated activity · 受规管活动",
+          "detail": "就特定投资的优劣提供建议可能触发FSMA，须先检查活动、投资及业务背景。"
+        },
+        {
+          "term": "Exclusion · 法定排除",
+          "detail": "符合排除时，该活动不落入相关受规管范围；不能与专业机构exemption混为一谈。"
+        },
+        {
+          "term": "Sale of a body corporate · 公司出售",
+          "detail": "至少50%表决权股份且满足适用主体等条件，是相关排除的一条路径。本题自然人向公司买入全部股本。"
+        },
+        {
+          "term": "Private shares · 私人公司股份",
+          "detail": "私人或未上市，不代表股份交易自动脱离监管；少量投资也不自动满足控制权收购排除。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Exclusion",
+          "zh": "活动落在法定排除内，与依赖专业机构豁免不同。",
+          "en": ""
+        },
+        {
+          "term": "50% voting shares",
+          "zh": "公司出售排除的一条路径看表决权股份比例。",
+          "en": ""
+        },
+        {
+          "term": "Control acquisition",
+          "zh": "还须满足相关交易主体条件；控制权路径也有具体规定。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "本题个人买方、公司卖方且购买全部股本；不要把“持股≥50%”背成没有其他条件的万能豁免。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "dispute",
+    "id": "sra-flk1-original-020",
+    "number": 20,
+    "stem": "A claimant is bringing a claim against a defendant, seeking damages for breach of contract. The claimant alleges that the parties agreed to an oral amendment to the contract. The defendant denies that the parties had any such agreement. The only evidence on this issue, which will determine the outcome of the claim, is the conflicting oral evidence of the claimant and the defendant.",
+    "stemZh": "原告请求违约损害赔偿，称双方曾口头修改合同。被告否认有此约定。决定案件结果的该争点，仅有双方互相矛盾的口头证言。",
+    "ask": "Which of the following best describes the burden of proof, if any, which the court will apply in deciding the issue?",
+    "askZh": "法院将如何分配并适用证明责任？",
+    "options": [
+      {
+        "id": "A",
+        "en": "The burden lies with the defendant to disprove the claimant’s allegation beyond reasonable doubt.",
+        "zh": "被告须排除合理怀疑地证明原告说法不成立。"
+      },
+      {
+        "id": "B",
+        "en": "The burden lies with the defendant to disprove the claimant’s allegation on the balance of probabilities.",
+        "zh": "被告须按优势盖然性证明原告说法不成立。"
+      },
+      {
+        "id": "C",
+        "en": "Neither party bears the burden of proof and the judge will order a retrial if the judge cannot be sure which party’s evidence is correct.",
+        "zh": "双方均不负担，法官无法确定时应重审。"
+      },
+      {
+        "id": "D",
+        "en": "The burden lies with the claimant to prove the allegation on the balance of probabilities.",
+        "zh": "原告须按优势盖然性证明该主张。"
+      },
+      {
+        "id": "E",
+        "en": "The burden lies with the claimant to prove the allegation beyond reasonable doubt.",
+        "zh": "原告须排除合理怀疑地证明该主张。"
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Civil burden of proof · 民事举证责任",
+      "en": "",
+      "zh": "主张存在口头修改的是原告，须证明其发生的可能性大于未发生，即**balance of probabilities**。证据难分高下，并不把责任倒置给被告。",
+      "ruleEn": "",
+      "ruleZh": "主张相关事实的一方通常承担证明责任。；民事事实标准是“更可能发生”。；证据势均力敌时，承担证明责任的一方在该点失败。",
+      "warning": "Beyond reasonable doubt是刑事证明标准，不能移植到此处。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Criminal standard**：责任主体与证明标准均错误。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Defendant’s burden**：标准正确，但这里责任在原告。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**No burden**：有明确的证明责任，不能仅因证言冲突即重审。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Claimant / balance of probabilities**：主体及标准均正确。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Beyond reasonable doubt**：原告承担责任，但不适用刑事标准。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Legal burden · 法律上的证明责任",
+          "detail": "提出决定性积极主张的一方通常负担；本题原告主张双方达成口头修改。"
+        },
+        {
+          "term": "Balance of probabilities · 优势盖然性",
+          "detail": "民事标准为该事实更可能发生。不是要求法官排除所有合理怀疑。"
+        },
+        {
+          "term": "Conflicting evidence · 证言冲突",
+          "detail": "只剩双方口述也仍按同一标准判断；证据恰好均衡时，承担证明责任的一方在该点失败。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Burden of proof",
+          "zh": "主张相关事实的一方通常承担证明责任。",
+          "en": ""
+        },
+        {
+          "term": "Balance of probabilities",
+          "zh": "民事事实标准是“更可能发生”。",
+          "en": ""
+        },
+        {
+          "term": "Even balance",
+          "zh": "证据势均力敌时，承担证明责任的一方在该点失败。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "Beyond reasonable doubt是刑事证明标准，不能移植到此处。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "tort",
+    "id": "sra-flk1-original-021",
+    "number": 21,
+    "stem": "A man is using his new mountain bike which is a state of the art product. It has a specially developed metal frame which enhances the bike’s performance over rough terrain. However, due to metal corrosion in some of the screws, which was unforeseeable, the handle bar snaps in two when the man is using it. He breaks both wrists.",
+    "stemZh": "男子使用一辆采用先进技术的新山地车，其特殊金属车架有助于崎岖地形行驶。但一些螺丝出现无法预见的金属腐蚀，导致车把断裂，男子双腕骨折。",
+    "ask": "Which of the following best explains whether the man can recover damages for his injuries under the Consumer Protection Act 1987?",
+    "askZh": "根据Consumer Protection Act 1987，他能否就伤害获赔？",
+    "options": [
+      {
+        "id": "A",
+        "en": "Yes, he can because the bike is defective.",
+        "zh": "可以，因为自行车有缺陷。"
+      },
+      {
+        "id": "B",
+        "en": "Yes, he can because there has been a breach of the duty of care.",
+        "zh": "可以，因为违反了注意义务。"
+      },
+      {
+        "id": "C",
+        "en": "Yes, he can because his injuries are not too remote.",
+        "zh": "可以，因为伤害不太遥远。"
+      },
+      {
+        "id": "D",
+        "en": "No, he cannot because the injuries were not foreseeable.",
+        "zh": "不可以，因为伤害不可预见。"
+      },
+      {
+        "id": "E",
+        "en": "No, he cannot because damages for personal injuries are not awarded under the Consumer Protection Act.",
+        "zh": "不可以，因为该法不赔人身伤害。"
+      }
+    ],
+    "explanation": {
+      "answer": "A",
+      "topic": "Product liability · 缺陷产品严格责任",
+      "en": "",
+      "zh": "CPA以产品安全缺陷为核心，通常无需证明生产者过失。骑行时车把断裂，产品安全低于公众有权期待的水平，并造成伤害，选A。",
+      "ruleEn": "",
+      "ruleZh": "产品安全未达到公众通常有权期待的水平。；须证明缺陷、损害及因果关系，不必证明过失。；抗辩看当时科技知识能否发现缺陷，不等于笼统的不可预见。",
+      "warning": "题设写unforeseeable，并不足以单独证明法定development risks defence。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Defective product**：准确对应CPA的缺陷产品责任。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Duty of care**：这是过失侵权路径，并非CPA责任的必要条件。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Remoteness**：并非本题最直接的法定责任根据。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Unforeseeability**：不可预见不当然否定严格责任。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Personal injury**：CPA明确可赔人身伤害。"
+        }
+      },
+      "source": "Consumer Protection Act 1987, ss 2–5",
+      "sourceUrl": "https://www.legislation.gov.uk/ukpga/1987/43/section/3",
+      "concepts": [
+        {
+          "term": "Negligence · 过失",
+          "detail": "通常须证明注意义务、违反义务、因果关系及损害；这是B涉及的另一条责任路径。"
+        },
+        {
+          "term": "CPA strict liability · 产品严格责任",
+          "detail": "无需证明生产者疏忽，但须证明产品缺陷、可赔损害以及因果联系；人身伤害可以获赔。"
+        },
+        {
+          "term": "Defect · 安全缺陷",
+          "detail": "衡量公众通常有权期待的安全水平。本题骑行时车把断裂造成双腕骨折，符合缺陷伤害的思路。"
+        },
+        {
+          "term": "Development risks defence · 开发风险抗辩",
+          "detail": "关注当时科学技术知识能否发现缺陷；不能仅凭unforeseeable就认为抗辩成立。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Defect",
+          "zh": "产品安全未达到公众通常有权期待的水平。",
+          "en": ""
+        },
+        {
+          "term": "Strict liability",
+          "zh": "须证明缺陷、损害及因果关系，不必证明过失。",
+          "en": ""
+        },
+        {
+          "term": "Development risks",
+          "zh": "抗辩看当时科技知识能否发现缺陷，不等于笼统的不可预见。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "题设写unforeseeable，并不足以单独证明法定development risks defence。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "legal-services",
+    "id": "sra-flk1-original-022",
+    "number": 22,
+    "stem": "A claim for damages for professional negligence is settled on terms that the defendant surveyor must pay to the claimant damages of £60,000 together with the claimant’s legal costs, to be assessed on the standard basis.\n\nA year ago, the claimant had entered into a written conditional fee agreement with her solicitor which provided for a success fee of 90%. The solicitor has calculated his professional charges at £20,000 before addition of the success fee and VAT.",
+    "stemZh": "专业过失索赔和解，被告测量师须支付60,000英镑赔偿及按标准基础评定的原告诉讼费用。原告一年前与律师签署书面条件收费协议，成功费为90%。律师基础专业费用为20,000英镑，尚未加入成功费及VAT。",
+    "ask": "What sum may the solicitor charge the client for his professional fees, net of VAT?",
+    "askZh": "不计VAT，律师可向客户收取多少专业费用？",
+    "options": [
+      {
+        "id": "A",
+        "en": "£15,000",
+        "zh": "15,000英镑。"
+      },
+      {
+        "id": "B",
+        "en": "£18,000",
+        "zh": "18,000英镑。"
+      },
+      {
+        "id": "C",
+        "en": "£30,000",
+        "zh": "30,000英镑。"
+      },
+      {
+        "id": "D",
+        "en": "£35,000",
+        "zh": "35,000英镑。"
+      },
+      {
+        "id": "E",
+        "en": "£38,000",
+        "zh": "38,000英镑。"
+      }
+    ],
+    "explanation": {
+      "answer": "E",
+      "topic": "Conditional fee agreement · 成功费计算",
+      "en": "",
+      "zh": "成功费以基础律师费为计算基数：20,000×90%=18,000英镑。加基础费用20,000，总计38,000英镑。题目问律师向客户收费，不是败诉方应承担多少。",
+      "ruleEn": "",
+      "ruleZh": "通常按基础律师费的百分比增加。；本题20,000＋18,000＝38,000英镑。；对方向客户赔付的费用，不等同于客户欠律师的费用。",
+      "warning": "本题不是人身伤害案；不要机械套用以赔偿额为基数的25%扣费上限。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**25% damages cap**：错误套用了赔偿额的25%。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Success fee only**：只有成功费，漏掉基础律师费。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Calculation base**：无题设计算依据。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Damages-based calculation**：错误结合基础费用与赔偿额比例。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Base plus uplift**：按20,000×190%计算，正确。"
+        }
+      },
+      "source": "Conditional Fee Agreements Order 2013, arts 3–5",
+      "sourceUrl": "https://www.legislation.gov.uk/uksi/2013/689/article/3",
+      "concepts": [
+        {
+          "term": "Base costs · 基础律师费",
+          "detail": "协议成功费的起算基础是£20,000专业收费，不是£60,000损害赔偿。"
+        },
+        {
+          "term": "Success fee · 成功费",
+          "detail": "90%×£20,000＝£18,000；成功后的律师收费合计£38,000，尚不含VAT。"
+        },
+        {
+          "term": "Client / opponent · 客户与对方",
+          "detail": "客户按CFA欠律师的费用，与败诉方依费用命令应偿还的数额不同，成功费通常不能转嫁给对方。"
+        },
+        {
+          "term": "Personal injury cap · 人身伤害扣费上限",
+          "detail": "特定人身伤害案件另有与赔偿额挂钩的限制；本题是测量师专业过失，不可直接套用。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Success fee",
+          "zh": "通常按基础律师费的百分比增加。",
+          "en": ""
+        },
+        {
+          "term": "Client bill",
+          "zh": "本题20,000＋18,000＝38,000英镑。",
+          "en": ""
+        },
+        {
+          "term": "Inter partes costs",
+          "zh": "对方向客户赔付的费用，不等同于客户欠律师的费用。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "本题不是人身伤害案；不要机械套用以赔偿额为基数的25%扣费上限。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "legal-system",
+    "id": "sra-flk1-original-023",
+    "number": 23,
+    "stem": "In an appeal before the Court of Appeal, the appellant relies in argument on an earlier decision of the Judicial Committee of the Privy Council (JCPC) which indicates that the appeal should be allowed. The respondent relies in argument on an earlier decision of the Court of Appeal which indicates that the appeal should not be allowed.",
+    "stemZh": "上诉法院审理上诉时，上诉人援引枢密院司法委员会的先前裁判，支持准许上诉。被上诉人援引上诉法院自身的先前裁判，支持驳回上诉。",
+    "ask": "How should the Court of Appeal treat the two decisions to which it has been referred?",
+    "askZh": "上诉法院应如何对待这两项裁判？",
+    "options": [
+      {
+        "id": "A",
+        "en": "The court should consider itself bound by the earlier decision of the JCPC.",
+        "zh": "必须服从枢密院司法委员会先前裁判。"
+      },
+      {
+        "id": "B",
+        "en": "The court should consider itself bound by the earlier decision of the Court of Appeal.",
+        "zh": "必须服从上诉法院先前裁判。"
+      },
+      {
+        "id": "C",
+        "en": "The court should consider itself bound by both earlier decisions and must transfer the appeal to a higher court.",
+        "zh": "两者均有约束力，须转交上级法院。"
+      },
+      {
+        "id": "D",
+        "en": "The court should treat both earlier decisions as having persuasive value only and must decide which of the two to follow.",
+        "zh": "两者都只有说服力，由本院自行选择。"
+      },
+      {
+        "id": "E",
+        "en": "The court should treat both earlier decisions as without precedent value and should make its decision without regard to either.",
+        "zh": "两者都无先例价值。"
+      }
+    ],
+    "explanation": {
+      "answer": "B",
+      "topic": "Binding precedent · 判例约束力",
+      "en": "",
+      "zh": "通常情况下，上诉法院受自身先例约束；JCPC判例通常只有说服力。题设没有说明适用偏离自身先例的例外，故选B。",
+      "ruleEn": "",
+      "ruleZh": "原则上受自身先前裁判约束。；对英格兰与威尔士法院通常具有说服力。；冲突先例、与最高法院裁判不相容、per incuriam等须另行判断。",
+      "warning": "一般规则不等于绝无例外；题中并未给出允许偏离的特殊事实。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**JCPC binding**：JCPC裁判通常不是对上诉法院的约束性先例。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Own precedent**：对应本题未出现例外的通常规则。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Transfer**：不因这种分歧自动转交。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Persuasive only**：忽略本院先例的约束力。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**No precedent value**：二者都有判例价值，只是效力不同。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Binding precedent · 约束性先例",
+          "detail": "上诉法院通常受自身先前裁判约束，所以不能只因更喜欢另一个法院的推理而改判。"
+        },
+        {
+          "term": "Persuasive authority · 说服性权威",
+          "detail": "JCPC裁判通常在英格兰与威尔士只有说服力，不能一般性压过上诉法院本院先例。"
+        },
+        {
+          "term": "Exceptions · 例外",
+          "detail": "相互冲突的本院先例、与最高法院裁判不相容及per incuriam等情形须另查；题设没有说明存在例外。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Court of Appeal",
+          "zh": "原则上受自身先前裁判约束。",
+          "en": ""
+        },
+        {
+          "term": "Privy Council",
+          "zh": "对英格兰与威尔士法院通常具有说服力。",
+          "en": ""
+        },
+        {
+          "term": "Exceptions",
+          "zh": "冲突先例、与最高法院裁判不相容、per incuriam等须另行判断。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "一般规则不等于绝无例外；题中并未给出允许偏离的特殊事实。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "legal-system",
+    "id": "sra-flk1-original-024",
+    "number": 24,
+    "stem": "A political party decides to hold a meeting in the central square of a provincial city. One of its leaders is expected to make a speech which will annoy many members of the local population.",
+    "stemZh": "一个政党拟在某地方城市中心广场举行集会，一名领导人的演讲预计会激怒许多当地居民。",
+    "ask": "Which of the following statements best describes the powers of the police in this situation?",
+    "askZh": "哪项最准确地说明警察的权限？",
+    "options": [
+      {
+        "id": "A",
+        "en": "The Chief Constable may impose conditions in relation to the meeting in order to prevent serious disorder.",
+        "zh": "首席警察官可以为防止严重骚乱而对集会附加条件。"
+      },
+      {
+        "id": "B",
+        "en": "The organisers must obtain permission to hold the meeting from the Chief Constable.",
+        "zh": "组织者必须先取得首席警察官许可。"
+      },
+      {
+        "id": "C",
+        "en": "The Chief Constable can prohibit the meeting if he has insufficient resources to police it.",
+        "zh": "首席警察官可因警力不足而禁止集会。"
+      },
+      {
+        "id": "D",
+        "en": "The meeting can only be regulated by the police if more than 200 persons attend.",
+        "zh": "只有参加者超过200人时警察才能监管。"
+      },
+      {
+        "id": "E",
+        "en": "Any police officer can insist that the meeting cease.",
+        "zh": "任何警员都可要求集会停止。"
+      }
+    ],
+    "explanation": {
+      "answer": "A",
+      "topic": "Public assembly · 集会限制",
+      "en": "",
+      "zh": "Public Order Act 1986允许在满足严重骚乱等法定条件时，对公共集会施加必要限制。普通静态集会不是普遍许可制，也不存在单凭警力不足一概禁止的规则。",
+      "ruleEn": "",
+      "ruleZh": "本题是静态集会，不是procession。；有合理理由预期严重骚乱等，可依法附加条件。；仅让人不悦不自动满足严重骚乱门槛。",
+      "warning": "A说的是为防止serious disorder而附条件的权力，不能理解为不受限制地禁止政治言论。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Conditions**：说明了满足法定门槛时的条件附加权。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Permission**：静态集会无此一般事前许可要求。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Prohibition**：资源不足不单独产生这里声称的普遍禁令权。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Headcount threshold**：没有200人的普遍门槛。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Any police officer**：不是任何警员均有此无限制终止权。"
+        }
+      },
+      "source": "Public Order Act 1986, s 14",
+      "sourceUrl": "https://www.legislation.gov.uk/ukpga/1986/64/section/14",
+      "concepts": [
+        {
+          "term": "Assembly · 静态集会",
+          "detail": "人们在广场集会，区别于沿路线移动的procession；不能机械套用游行的通知或禁止制度。"
+        },
+        {
+          "term": "Conditions · 附加条件",
+          "detail": "在有合理理由预期严重骚乱等法定影响时，可按法定权限施加必要条件。"
+        },
+        {
+          "term": "Annoyance / serious disorder",
+          "detail": "演讲令人不悦与严重骚乱不同；警方有相关权力，不代表单因观点不受欢迎即可任意限制。"
+        },
+        {
+          "term": "Prohibition · 禁止",
+          "detail": "施加条件不等于拥有无条件禁止集会的权力，也不是任何警员都可任意叫停。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Public assembly",
+          "zh": "本题是静态集会，不是procession。",
+          "en": ""
+        },
+        {
+          "term": "Conditions",
+          "zh": "有合理理由预期严重骚乱等，可依法附加条件。",
+          "en": ""
+        },
+        {
+          "term": "Threshold",
+          "zh": "仅让人不悦不自动满足严重骚乱门槛。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "A说的是为防止serious disorder而附条件的权力，不能理解为不受限制地禁止政治言论。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "business",
+    "id": "sra-flk1-original-025",
+    "number": 25,
+    "stem": "Three clients decide to go into business together. They each invest equal amounts of capital in the business, and agree to share the profits equally. After two years, the business has made a loss and the clients no longer believe the business is viable.",
+    "stemZh": "三人一起创业，各投入相同资本并约定均分利润。两年后业务亏损，三人认为无法继续经营。",
+    "ask": "Have the three clients been working in partnership together?",
+    "askZh": "他们是否已经共同构成合伙？",
+    "options": [
+      {
+        "id": "A",
+        "en": "Yes, because they are in business together and intended to make a profit even though they have made a loss.",
+        "zh": "是，因为共同经营且意图盈利，即使实际亏损。"
+      },
+      {
+        "id": "B",
+        "en": "Yes, because they agreed to invest equal amounts of capital in the business.",
+        "zh": "是，因为约定出资相同。"
+      },
+      {
+        "id": "C",
+        "en": "No, because they have not entered into a written partnership agreement.",
+        "zh": "否，因为没有书面合伙协议。"
+      },
+      {
+        "id": "D",
+        "en": "No, because they have not registered themselves as a partnership.",
+        "zh": "否，因为没有登记为合伙。"
+      },
+      {
+        "id": "E",
+        "en": "No, because they agreed to share profits equally but did not agree how to share losses between them.",
+        "zh": "否，因为只约定利润均分，未约定损失分担。"
+      }
+    ],
+    "explanation": {
+      "answer": "A",
+      "topic": "Partnership formation · 合伙成立",
+      "en": "",
+      "zh": "合伙的核心是共同经营业务且以盈利为目的，即**carrying on a business in common with a view of profit**。结果亏损不否定成立，也不以书面协议或一般登记为必要条件。",
+      "ruleEn": "",
+      "ruleZh": "共同经营业务。；看盈利目的，不要求实际盈利。；未约定的利润及亏损分配可由法定默认规则补充。",
+      "warning": "英格兰与威尔士：普通合伙合同债务原则上为joint liability；特定侵权等责任为joint and several liability。无限责任与是否具有独立人格也须分开判断。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Business with a view of profit**：完整抓住共同经营及盈利目的。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Equal capital**：平等出资本身不一定形成合伙。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Written agreement**：普通合伙不以书面协议为成立前提。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Registration**：缺少该类登记不否定本题关系。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Loss-sharing agreement**：损失分担可适用默认规则。"
+        }
+      },
+      "source": "Partnership Act 1890, ss 1, 24",
+      "sourceUrl": "https://www.legislation.gov.uk/ukpga/Vict/53-54/39/section/1",
+      "concepts": [
+        {
+          "term": "Sole trader · 独资经营",
+          "detail": "在英格兰与威尔士，经营者与业务没有独立人格区分；经营者以个人财产承担无限责任。"
+        },
+        {
+          "term": "General partnership · 普通合伙",
+          "detail": "共同经营并以营利为目的即可成立，实际亏损不妨碍；无公司式独立人格，合伙人承担个人无限责任。"
+        },
+        {
+          "term": "LLP · 有限责任合伙",
+          "detail": "注册后是独立法律主体，成员通常不因成员身份而为LLP全部债务负责；个人保证或自身过错等须另看。"
+        },
+        {
+          "term": "Ltd · 私人股份有限公司",
+          "detail": "公司独立于股东，成员责任原则上以其股份尚未缴付金额为限；股份已缴足时，不因持股本身追加承担公司债务。"
+        },
+        {
+          "term": "PLC · 公众公司（包括未上市）",
+          "detail": "同样具有独立人格和成员有限责任；public不等于listed，未上市也不使其丧失公司人格。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Business in common",
+          "zh": "共同经营业务。",
+          "en": ""
+        },
+        {
+          "term": "View of profit",
+          "zh": "看盈利目的，不要求实际盈利。",
+          "en": ""
+        },
+        {
+          "term": "Default rules",
+          "zh": "未约定的利润及亏损分配可由法定默认规则补充。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "相同出资可作为事实背景，但不是合伙定义的决定性要件。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "business",
+    "id": "sra-flk1-original-026",
+    "number": 26,
+    "stem": "A company has created a fixed charge in favour of its bank over machinery owned by the company and used in the company’s factory. The company is solvent. The fixed charge has been correctly registered at Companies House. The company now wishes to sell some of the machinery and seeks legal advice on how to proceed.",
+    "stemZh": "公司以工厂内自有机器向银行设立固定担保，并已正确在Companies House登记。公司有偿付能力，现希望出售其中部分机器。",
+    "ask": "What advice should the company receive in relation to the sale of the machinery?",
+    "askZh": "应就出售提供哪项意见？",
+    "options": [
+      {
+        "id": "A",
+        "en": "The company can proceed to sell the machinery freely because the charge has not yet crystallised.",
+        "zh": "尚未结晶，所以公司可以自由出售。"
+      },
+      {
+        "id": "B",
+        "en": "The company can only sell the machinery if it does so with the consent of the bank as chargeholder.",
+        "zh": "须取得作为担保权人的银行同意才可出售。"
+      },
+      {
+        "id": "C",
+        "en": "The company can only sell the machinery if the bank is a party to the sale because the bank has legal title to the machinery.",
+        "zh": "须由银行作为出售方参加，因为银行拥有机器法定所有权。"
+      },
+      {
+        "id": "D",
+        "en": "The company can only sell the machinery with the consent of its unsecured creditors.",
+        "zh": "须取得无担保债权人同意。"
+      },
+      {
+        "id": "E",
+        "en": "The company can proceed to sell the machinery once it has registered the sale at Companies House.",
+        "zh": "向Companies House登记出售后即可进行。"
+      }
+    ],
+    "explanation": {
+      "answer": "B",
+      "topic": "Fixed charge · 固定担保财产处分",
+      "en": "",
+      "zh": "**Fixed charge**直接附着于特定财产，限制担保人自由处分；公司应取得银行同意及相应担保解除安排。浮动担保的结晶概念不适用。",
+      "ruleEn": "",
+      "ruleZh": "特定财产受担保权控制，不能自行无负担出售。；出售通常需要担保权人同意或释放担保。；结晶前正常业务处分的特点不能套到fixed charge。",
+      "warning": "公司仍有偿付能力，不代表可以忽略固定担保。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Crystallisation**：把浮动担保的crystallisation概念用错了。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Chargeholder consent**：银行作为担保权人须同意处分。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Legal title**：固定担保不意味着银行当然持有机器法定所有权。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Unsecured creditors**：控制权在担保权人，不在无担保债权人。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Companies House filing**：出售登记不能代替银行同意。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Fixed charge · 固定担保",
+          "detail": "附着于特定财产，担保权人控制相关处分。本题机器已受固定担保，应先取得银行同意及解除安排。"
+        },
+        {
+          "term": "Floating charge · 浮动担保",
+          "detail": "通常覆盖变化中的资产类别；未结晶时可在正常业务范围内处分，但仍受担保条款约束。"
+        },
+        {
+          "term": "Crystallisation · 结晶",
+          "detail": "使浮动担保转为约束相关资产的固定状态；不是固定担保处分前要等的事件。"
+        },
+        {
+          "term": "Title / security · 所有权与担保",
+          "detail": "拥有担保权并不自动意味着银行已经取得机器所有权，也不当然要求银行以卖方身份签约。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Fixed charge",
+          "zh": "特定财产受担保权控制，不能自行无负担出售。",
+          "en": ""
+        },
+        {
+          "term": "Consent / release",
+          "zh": "出售通常需要担保权人同意或释放担保。",
+          "en": ""
+        },
+        {
+          "term": "Floating charge",
+          "zh": "结晶前正常业务处分的特点不能套到fixed charge。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "公司仍有偿付能力，不代表可以忽略固定担保。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "contract",
+    "id": "sra-flk1-original-027",
+    "number": 27,
+    "stem": "A company (‘the Retailer’) entered into a contract with another company (‘the Supplier’) to purchase 30,000 flat-pack boxes at a price of £60,000. The Retailer paid a deposit of £20,000.\n\nWhen delivered, the boxes were defective and the Supplier was unable to supply replacement boxes. The Retailer rejected the boxes and did not pay the balance of the purchase price. To avoid incurring further losses, the Retailer obtained replacement boxes from another supplier for £70,000.\n\nThe Retailer has followed all appropriate pre-action procedures, and the Retailer’s solicitor is now ready to draft and issue a claim form.",
+    "stemZh": "零售商以60,000英镑向供应商购买30,000个折叠箱，并预付20,000英镑。交货有缺陷，供应商无法补发；零售商拒收且未付余款。为避免进一步损失，零售商以70,000英镑另行购入替代箱。诉前程序已完成，律师准备起诉。",
+    "ask": "Ignoring interest, what sum can the Retailer properly claim against the Supplier?",
+    "askZh": "不计利息，零售商可合理请求多少？",
+    "options": [
+      {
+        "id": "A",
+        "en": "£70,000",
+        "zh": "70,000英镑。"
+      },
+      {
+        "id": "B",
+        "en": "£10,000",
+        "zh": "10,000英镑。"
+      },
+      {
+        "id": "C",
+        "en": "£30,000",
+        "zh": "30,000英镑。"
+      },
+      {
+        "id": "D",
+        "en": "£20,000",
+        "zh": "20,000英镑。"
+      },
+      {
+        "id": "E",
+        "en": "£60,000",
+        "zh": "60,000英镑。"
+      }
+    ],
+    "explanation": {
+      "answer": "C",
+      "topic": "Damages calculation · 价差与预付款",
+      "en": "",
+      "zh": "收回已付20,000英镑，加上替代采购比原合同多付的10,000英镑，总计30,000英镑。不能把未付的40,000英镑也算作已发生损失。",
+      "ruleEn": "",
+      "ruleZh": "替代采购差额＝70,000−60,000＝10,000。；另返还已付20,000英镑。；最终赔偿30,000，而不是整个替代采购价。",
+      "warning": "用现金流复核：已付20,000＋新付70,000−本来应付60,000＝30,000。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Whole replacement price**：未扣除原合同本来就应付的价款。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Price difference only**：只算差价，漏掉预付款。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Deposit plus difference**：预付款返还加价差，正确。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Deposit only**：只返还预付款，漏掉额外采购成本。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Original contract price**：原合同总价并非损失金额。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Expectation measure · 履行利益",
+          "detail": "以正常履行时的状态为目标。若正常履行，零售商总共支出£60,000并取得合格箱子。"
+        },
+        {
+          "term": "Replacement cost · 替代采购",
+          "detail": "实际以£70,000买到合格箱子，额外采购损失为£10,000，而不是整个£70,000。"
+        },
+        {
+          "term": "Deposit repayment · 返还预付款",
+          "detail": "原供应商还持有£20,000，而买方已经合法拒收，应一并追回。"
+        },
+        {
+          "term": "Saved expenditure · 节省开支",
+          "detail": "原合同余款£40,000没有支付，计算损失时须考虑，避免重复赔偿。合计£30,000。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Cover price",
+          "zh": "替代采购差额＝70,000−60,000＝10,000。",
+          "en": ""
+        },
+        {
+          "term": "Deposit",
+          "zh": "另返还已付20,000英镑。",
+          "en": ""
+        },
+        {
+          "term": "No double recovery",
+          "zh": "最终赔偿30,000，而不是整个替代采购价。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "用现金流复核：已付20,000＋新付70,000−本来应付60,000＝30,000。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "tort",
+    "id": "sra-flk1-original-028",
+    "number": 28,
+    "stem": "A junior employee at a summer camp for young people has been convicted of an assault on a participant in the camp. The victim is suing the camp organisers for damages for psychological trauma on the basis that they are vicariously liable for the actions of the employee.",
+    "stemZh": "青少年夏令营的一名初级雇员因袭击参加者被定罪。受害人就心理创伤起诉组织方，主张雇主对雇员行为承担替代责任。",
+    "ask": "Which of the following best describes whether vicarious liability will apply?",
+    "askZh": "替代责任是否适用？",
+    "options": [
+      {
+        "id": "A",
+        "en": "Vicarious liability will apply if the employee’s act is sufficiently closely connected to his employment.",
+        "zh": "如果行为与受雇工作有足够密切联系，则适用。"
+      },
+      {
+        "id": "B",
+        "en": "Vicarious liability cannot apply to criminal behaviour.",
+        "zh": "不适用于犯罪行为。"
+      },
+      {
+        "id": "C",
+        "en": "Vicarious liability will apply only if the assault occurred in working hours.",
+        "zh": "仅在工作时间内发生才适用。"
+      },
+      {
+        "id": "D",
+        "en": "Vicarious liability can only apply to senior employees.",
+        "zh": "只适用于高级雇员。"
+      },
+      {
+        "id": "E",
+        "en": "Vicarious liability will not apply because the employer obtained no benefit.",
+        "zh": "不适用，因为雇主未获益。"
+      }
+    ],
+    "explanation": {
+      "answer": "A",
+      "topic": "Vicarious liability · 雇主替代责任",
+      "en": "",
+      "zh": "已存在雇佣关系，关键在侵权行为与雇员获派职责的**close connection**。犯罪、初级职位及雇主未获益，均不当然排除责任。",
+      "ruleEn": "",
+      "ruleZh": "先看雇佣或类似关系，再看行为与工作的联系。；行为与获派职责须足够密切相关。；故意侵权甚至犯罪，也可能触发责任。",
+      "warning": "在工作时间内并不自动成立，在工作时间外也不自动排除。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Close connection**：准确指出本案需要判断的密切联系。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Criminal behaviour**：犯罪性质本身不排除替代责任。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Working hours**：工作时间不是唯一标准。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Seniority**：职位高低不决定是否适用。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Employer benefit**：雇主获益不是独立必要条件。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Employment relationship · 雇佣关系",
+          "detail": "首先确认雇佣或类似关系；本题已明确是营地雇员。"
+        },
+        {
+          "term": "Close connection · 密切联系",
+          "detail": "再问侵权与其获派工作是否足够紧密，以致由雇主负责是适当的；不是只看行为发生地点或钟点。"
+        },
+        {
+          "term": "Criminal act · 犯罪行为",
+          "detail": "故意侵权、袭击甚至刑事定罪均不自动排除替代责任，关键仍是与工作的联系。"
+        },
+        {
+          "term": "Seniority / benefit · 职位与获益",
+          "detail": "不要求是高级员工，也不要求雇主从袭击中获益。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Two stages",
+          "zh": "先看雇佣或类似关系，再看行为与工作的联系。",
+          "en": ""
+        },
+        {
+          "term": "Close connection",
+          "zh": "行为与获派职责须足够密切相关。",
+          "en": ""
+        },
+        {
+          "term": "Intentional wrongdoing",
+          "zh": "故意侵权甚至犯罪，也可能触发责任。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "在工作时间内并不自动成立，在工作时间外也不自动排除。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "legal-services",
+    "id": "sra-flk1-original-029",
+    "number": 29,
+    "stem": "A solicitor acts for a client in relation to the acquisition of a private limited company. Two days before the transaction is due to complete the solicitor suspects that his client will be using the transaction to launder money. The solicitor reports this to the nominated officer who makes a suspicious activity report to the relevant authority.",
+    "stemZh": "律师代表客户收购私人有限公司。交割前两天，律师怀疑客户借交易洗钱，向指定负责人报告。该负责人向有关机关提交可疑活动报告。",
+    "ask": "What action should the solicitor now take?",
+    "askZh": "律师现在应采取什么行动？",
+    "options": [
+      {
+        "id": "A",
+        "en": "Proceed with the transaction as the solicitor has made the disclosure to the nominated officer.",
+        "zh": "已经向指定负责人报告，所以可继续交易。"
+      },
+      {
+        "id": "B",
+        "en": "Proceed with the transaction only after receiving authorisation to do so from the nominated officer.",
+        "zh": "只有收到指定负责人授权后才继续交易。"
+      },
+      {
+        "id": "C",
+        "en": "Proceed with the transaction after a period of three working days if no response is received from the relevant authority.",
+        "zh": "有关机关三个工作日未回复即可继续。"
+      },
+      {
+        "id": "D",
+        "en": "Explain to the client that the solicitor cannot proceed with the transaction as a suspicious activity report has been made.",
+        "zh": "告知客户已提交可疑活动报告，因此不能交易。"
+      },
+      {
+        "id": "E",
+        "en": "Explain to the client that a suspicious activity report has been made and then proceed with the transaction.",
+        "zh": "先告知客户已提交报告，然后继续交易。"
+      }
+    ],
+    "explanation": {
+      "answer": "B",
+      "topic": "Money laundering · 报告后的交易处理",
+      "en": "",
+      "zh": "报告不等于交易自动获准。律师应等待指定负责人在适用的DAML及法定程序下确认可继续，并避免向客户披露可能妨碍调查的报告信息。",
+      "ruleEn": "",
+      "ruleZh": "提交报告本身不是继续交易的通行证。；由指定负责人确认何时可依法继续。；披露已提交报告并可能妨碍调查，可能构成犯罪。",
+      "warning": "不是等三个工作日；适用通知期及后续禁行期必须由负责人结合实际程序处理。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Internal disclosure**：仅向内部负责人报告仍不足以继续可疑交易。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Authorisation**：应待指定负责人依据相关程序授权。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Three working days**：三个工作日不是此处的法定等待标准。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Tipping off**：直接披露报告可能构成tipping off。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Disclosure and continuation**：披露及未经适当确认继续交易都存在问题。"
+        }
+      },
+      "source": "Proceeds of Crime Act 2002, ss 333A, 335–336",
+      "sourceUrl": "https://www.legislation.gov.uk/ukpga/2002/29/section/335",
+      "concepts": [
+        {
+          "term": "Suspicion / SAR · 怀疑与报告",
+          "detail": "怀疑洗钱时走内部报告及相关外部SAR程序；已经提交报告不等于资金已合法化。"
+        },
+        {
+          "term": "DAML · 洗钱抗辩程序",
+          "detail": "若拟继续可能涉及洗钱的行为，须按适用程序取得相应法律保护或等待期届满等，再由指定负责人确认。"
+        },
+        {
+          "term": "Nominated officer · 指定负责人",
+          "detail": "律师应等其确认可继续，不能自己把“三天没回复”视为默示许可。"
+        },
+        {
+          "term": "Tipping off · 通风报信",
+          "detail": "在适用情形下，透露已作报告且可能妨碍调查可构成犯罪。停止或延迟时须谨慎沟通理由。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "SAR",
+          "zh": "提交报告本身不是继续交易的通行证。",
+          "en": ""
+        },
+        {
+          "term": "Nominated officer",
+          "zh": "由指定负责人确认何时可依法继续。",
+          "en": ""
+        },
+        {
+          "term": "Tipping off",
+          "zh": "披露已提交报告并可能妨碍调查，可能构成犯罪。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "不是等三个工作日；适用通知期及后续禁行期必须由负责人结合实际程序处理。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "contract",
+    "id": "sra-flk1-original-030",
+    "number": 30,
+    "stem": "In March a buyer entered into a contract for the purchase of a children’s nursery because of a fraudulent statement made by the seller in January about the previous year’s sales figures.\n\nIn April, after purchasing the nursery, the buyer employed a builder to carry out extensive building works to the nursery including demolishing outbuildings and adding an extension.\n\nIn May the buyer discovered the fraudulent statement was false and decided that he wished to rescind the contract.",
+    "stemZh": "卖方1月对上一年营业额作欺诈性陈述，买方3月据此购入一家儿童托育机构。4月，买方聘人进行大规模改建，拆除附属建筑并扩建。5月买方才发现陈述虚假，希望撤销合同。",
+    "ask": "Could the buyer rescind the contract?",
+    "askZh": "买方能否撤销合同？",
+    "options": [
+      {
+        "id": "A",
+        "en": "No, because rescission is not an available remedy for misrepresentation.",
+        "zh": "不能，因为失实陈述不能获得撤销救济。"
+      },
+      {
+        "id": "B",
+        "en": "No, because a third party has acquired rights.",
+        "zh": "不能，因为第三人已取得权利。"
+      },
+      {
+        "id": "C",
+        "en": "No, because the buyer has affirmed the contract.",
+        "zh": "不能，因为买方已确认合同。"
+      },
+      {
+        "id": "D",
+        "en": "No, because restitution is impossible.",
+        "zh": "不能，因为无法恢复原状。"
+      },
+      {
+        "id": "E",
+        "en": "No, because there is a statutory bar under the Misrepresentation Act 1967.",
+        "zh": "不能，因为Misrepresentation Act 1967设置了法定禁止。"
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Rescission bars · 撤销障碍",
+      "en": "",
+      "zh": "按本题设定，大规模拆除和扩建令返还原状不可实现，构成撤销障碍。改建发生在发现欺诈之前，不能据此推断明知后的**affirmation**。",
+      "ruleEn": "",
+      "ruleZh": "原则上让双方回到订约前状态。；重大不可逆改变可能阻却撤销。；确认通常要求知道相关失实陈述后仍选择维持合同。",
+      "warning": "法院可允许实质恢复及金钱调整，轻微变化未必阻却；本题强调大规模拆改。不能撤销也不当然排除欺诈赔偿。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Rescission available**：失实陈述原则上可以支持撤销。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Third-party rights**：没有题设中的第三方权利介入。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Affirmation**：改建时尚未知欺诈，不是知情确认。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Restitution impossible**：按官方题设，大规模变动导致恢复不能。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Statutory bar**：没有此处所称对欺诈撤销的一般法定禁止。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Rescission · 撤销",
+          "detail": "旨在解除因失实陈述订立的交易，并使双方实质回到交易前；欺诈原则上可支持这项救济。"
+        },
+        {
+          "term": "Restitution impossible · 恢复不能",
+          "detail": "大规模拆除和扩建可能使原状无法恢复，本题官方答案据此阻却撤销；微小变化或可调整的差额未必如此。"
+        },
+        {
+          "term": "Affirmation · 确认合同",
+          "detail": "知道失实陈述后仍选择维持合同，可能丧失撤销权；本题改建发生在发现欺诈前，不满足这一时序。"
+        },
+        {
+          "term": "Damages · 损害赔偿",
+          "detail": "撤销被阻却，不等于欺诈方免于赔偿。撤销与赔偿应分开分析。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Rescission",
+          "zh": "原则上让双方回到订约前状态。",
+          "en": ""
+        },
+        {
+          "term": "Restitution impossible",
+          "zh": "重大不可逆改变可能阻却撤销。",
+          "en": ""
+        },
+        {
+          "term": "Affirmation",
+          "zh": "确认通常要求知道相关失实陈述后仍选择维持合同。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "法院可允许实质恢复及金钱调整，轻微变化未必阻却；本题强调大规模拆改。不能撤销也不当然排除欺诈赔偿。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "legal-services",
+    "id": "sra-flk1-original-031",
+    "number": 31,
+    "stem": "A disabled employee at a firm of solicitors has requested that the firm buy some computer software for him to use at work. This software enables a person with the employee’s disability to use a computer more effectively. The partners in the firm want advice on their obligations under the Equality Act 2010 (‘the Act’).",
+    "stemZh": "律所一名残障雇员请求购买软件，以便其更有效地使用电脑。合伙人希望了解Equality Act 2010下的义务。",
+    "ask": "What must the partners in the firm do to meet their obligations under the Act?",
+    "askZh": "律所合伙人须如何履行该法义务？",
+    "options": [
+      {
+        "id": "A",
+        "en": "They must make substantial adjustments to ensure that the disabled employee is not placed at a disadvantage compared to those who are not disabled.",
+        "zh": "作出重大调整，确保残障雇员不处于任何不利地位。"
+      },
+      {
+        "id": "B",
+        "en": "They must make reasonable adjustments to ensure that the disabled employee is not placed at a substantial disadvantage compared to those who are not disabled.",
+        "zh": "作出合理调整，确保其相较无残障者不处于实质性不利地位。"
+      },
+      {
+        "id": "C",
+        "en": "They must make adjustments to ensure that the disabled employee is not placed at a significant disadvantage compared to those who are not disabled.",
+        "zh": "作出调整，确保其不处于显著不利地位。"
+      },
+      {
+        "id": "D",
+        "en": "They must make significant adjustments to ensure that the disabled employee is not placed at a disadvantage compared to those who are not disabled.",
+        "zh": "作出显著调整，确保其不处于任何不利地位。"
+      },
+      {
+        "id": "E",
+        "en": "They must make adjustments to ensure that the disabled employee is not placed at an unreasonable disadvantage compared to those who are not disabled.",
+        "zh": "作出调整，确保其不处于不合理的不利地位。"
+      }
+    ],
+    "explanation": {
+      "answer": "B",
+      "topic": "Reasonable adjustments · 合理调整",
+      "en": "",
+      "zh": "法定措辞是**reasonable adjustments**，针对残障人士相较非残障人士遭受的**substantial disadvantage**。软件可涉及辅助设备支持，应结合合理性作出安排。",
+      "ruleEn": "",
+      "ruleZh": "义务是作出合理调整。；触发标准是实质性不利，而非任意轻微不便。；适当软件或辅助设备可属于调整措施。",
+      "warning": "把reasonable与substantial放到正确位置；这是本题五项的核心区别。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Substantial adjustments**：把调整要求错误写为substantial，且不利门槛过宽。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Reasonable / substantial**：两个法定关键词及对应关系均正确。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Significant disadvantage**：没有准确表达reasonable及substantial组合。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Significant adjustments**：significant adjustments不是法定标准。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Unreasonable disadvantage**：unreasonable disadvantage不是这里的法定门槛。"
+        }
+      },
+      "source": "Equality Act 2010, s 20",
+      "sourceUrl": "https://www.legislation.gov.uk/ukpga/2010/15/section/20",
+      "concepts": [
+        {
+          "term": "Reasonable adjustments · 合理调整",
+          "detail": "法律要求采取合理措施改善残障人士的不利处境；不是一概要求任何成本、任何规模的改造。"
+        },
+        {
+          "term": "Substantial disadvantage · 实质性不利",
+          "detail": "比较残障人士与没有该残障者，识别超过轻微程度的不利；本题是使用电脑的工作障碍。"
+        },
+        {
+          "term": "Auxiliary aid · 辅助设备",
+          "detail": "专用软件可能是合理辅助措施。是否合理可结合有效性、实际可行性、成本及雇主资源等判断。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Reasonable adjustments",
+          "zh": "义务是作出合理调整。",
+          "en": ""
+        },
+        {
+          "term": "Substantial disadvantage",
+          "zh": "触发标准是实质性不利，而非任意轻微不便。",
+          "en": ""
+        },
+        {
+          "term": "Auxiliary aid",
+          "zh": "适当软件或辅助设备可属于调整措施。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "把reasonable与substantial放到正确位置；这是本题五项的核心区别。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "legal-services",
+    "id": "sra-flk1-original-032",
+    "number": 32,
+    "stem": "A solicitor in a law firm has received a phone call from the managing director of a private limited company incorporated in the UK, which is a new client. The managing director wants to know why the solicitor’s firm is asking for documents to verify the identity of the company’s shareholder. The company’s shareholder lives in Brazil and owns and holds the entire shareholding of the company.",
+    "stemZh": "英国私人有限公司是律所新客户。董事总经理来电询问，为何要求核实公司股东身份。该股东居住巴西，并拥有和持有公司全部股份。",
+    "ask": "Which of the following responses best explains the advice the solicitor should give to the managing director?",
+    "askZh": "哪项最准确地说明要求核实股东身份的原因？",
+    "options": [
+      {
+        "id": "A",
+        "en": "The solicitor is under an obligation to identify and verify the identity of the company’s shareholder because the shareholder lives outside the UK.",
+        "zh": "因为该股东住在英国境外。"
+      },
+      {
+        "id": "B",
+        "en": "The solicitor is under an obligation to identify and verify the identity of the company’s shareholder because the shareholder lives in Brazil.",
+        "zh": "因为该股东住在巴西。"
+      },
+      {
+        "id": "C",
+        "en": "The solicitor is under an obligation to identify and verify the identity of the company’s shareholder because the shareholder owns more than 25% of the shares.",
+        "zh": "因为该股东持有超过25%的股份。"
+      },
+      {
+        "id": "D",
+        "en": "The solicitor is under an obligation to identify and verify the identity of the company’s shareholder because of the structure of the company and the way the shares are held by the shareholder.",
+        "zh": "因为公司的结构及该股东持股方式。"
+      },
+      {
+        "id": "E",
+        "en": "The solicitor is under an obligation to identify and verify the identity of the company’s shareholder because there is only one shareholder in the company.",
+        "zh": "因为公司只有一个股东。"
+      }
+    ],
+    "explanation": {
+      "answer": "C",
+      "topic": "Beneficial owner · 实益拥有人识别",
+      "en": "",
+      "zh": "个人持有超过25%的股份，是公司实益拥有人识别标准之一。该人持股100%，应进行相关识别，并采取合理措施核实身份；不是单凭境外居住或单一股东身份。",
+      "ruleEn": "",
+      "ruleZh": "通常包括最终拥有超过25%股份或表决权的个人。；识别实益拥有人，并采取合理措施核实身份。；即使不靠持股门槛，其他最终控制也可能相关。",
+      "warning": "门槛是more than 25%，不是恰好25%；海外地址不是本题的决定因素。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Overseas residence**：境外居住可能影响风险评估，但不是这里识别的核心根据。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Brazil**：特定居住国不是本题给出的识别触发标准。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**More than 25%**：100%超过25%，满足实益拥有人门槛。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Ownership structure**：过于笼统，没有点明明确的持股标准。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**One shareholder**：单一股东数量不是规则本身，且股东可能是法人。"
+        }
+      },
+      "source": "Money Laundering Regulations 2017, regs 5, 28",
+      "sourceUrl": "https://www.legislation.gov.uk/uksi/2017/692/regulation/5",
+      "concepts": [
+        {
+          "term": "Beneficial owner · 实益拥有人",
+          "detail": "公司背后最终拥有或控制它的个人。超过25%股份或表决权是识别路径之一，其他控制也可能符合。"
+        },
+        {
+          "term": "Ownership threshold · 持股门槛",
+          "detail": "本题持有全部股份，明显超过25%；不是因为“人数只有一个”才需要识别。"
+        },
+        {
+          "term": "Verification · 核实身份",
+          "detail": "除识别外，还须采取合理措施核实，使律所了解最终受益人是谁。"
+        },
+        {
+          "term": "Risk factors · 风险因素",
+          "detail": "居住境外或某特定国家可能影响风险评估，但不是本题实益拥有人身份的决定理由。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Beneficial owner",
+          "zh": "通常包括最终拥有超过25%股份或表决权的个人。",
+          "en": ""
+        },
+        {
+          "term": "CDD",
+          "zh": "识别实益拥有人，并采取合理措施核实身份。",
+          "en": ""
+        },
+        {
+          "term": "Control",
+          "zh": "即使不靠持股门槛，其他最终控制也可能相关。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "门槛是more than 25%，不是恰好25%；海外地址不是本题的决定因素。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "dispute",
+    "id": "sra-flk1-original-033",
+    "number": 33,
+    "stem": "A man engaged an estate agent to sell his property. The terms of their agreement were contained in a written document. The agreement provided for payment of commission to the estate agent on completion of a sale, provided that the estate agent introduced the purchaser.\n\nThe sale of the property completed and a dispute arose as to whether the estate agent had introduced the purchaser. The estate agent brought proceedings against the man for payment of the commission alleged due under the written agreement. The proceedings were successful at trial, resulting in an award of damages to the estate agent of £12,000.",
+    "stemZh": "男子书面委托房产中介出售房产，约定中介介绍买方并完成出售后支付佣金。交割后双方争论买方是否由中介介绍。中介起诉并胜诉，获判12,000英镑。",
+    "ask": "What, if any, order for costs might be expected in the circumstances of this case?",
+    "askZh": "本案通常会作出何种诉讼费用命令？",
+    "options": [
+      {
+        "id": "A",
+        "en": "No order for costs because the claim arose from a consumer contract within the meaning of the Consumer Rights Act 2015.",
+        "zh": "不作费用命令，因为属于消费者合同。"
+      },
+      {
+        "id": "B",
+        "en": "An order in favour of the estate agent confined to reimbursement of court fees paid because the claim is a small claim.",
+        "zh": "仅补偿法院费用，因为属于小额诉讼。"
+      },
+      {
+        "id": "C",
+        "en": "No order for costs because the claim is a small claim.",
+        "zh": "不作费用命令，因为属于小额诉讼。"
+      },
+      {
+        "id": "D",
+        "en": "An order in favour of the estate agent for fixed recoverable costs only.",
+        "zh": "判中介获得可追偿固定费用。"
+      },
+      {
+        "id": "E",
+        "en": "An order in favour of the estate agent for costs on the standard basis, summarily assessed at the conclusion of trial.",
+        "zh": "判中介获按标准基础评定、庭审结束时简易评定的费用。"
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Fixed recoverable costs · 可追偿固定费用",
+      "en": "",
+      "zh": "普通12,000英镑合同争议一般超过小额诉讼门槛，通常走**fast track**。按本题更新后的规则，适用可追偿固定费用，故官方答案为D。",
+      "ruleEn": "",
+      "ruleZh": "一般金钱请求门槛通常为£10,000，特殊案件另有规则。；这类£12,000普通合同案通常进入快速审理。；适用固定费用制度时，不走一般按时数核定的标准费用路径。",
+      "warning": "原PDF第33题答案为D；不要沿用旧材料对fast track一概选择standard basis的做法。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Consumer contract**：消费者合同身份不会当然排除费用命令。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Small claim**：12,000英镑通常已超过一般小额门槛。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**No costs**：同样错误认定为小额程序。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Fixed recoverable costs**：符合本题适用的固定可追偿费用制度。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Standard basis**：忽略了本题固定费用制度。"
+        }
+      },
+      "source": "CPR 45.43–45.44 · Fast track fixed costs",
+      "sourceUrl": "https://www.justice.gov.uk/courts/procedure-rules/civil/rules/part45-fixed-costs",
+      "concepts": [
+        {
+          "term": "Small claims track · 小额程序",
+          "detail": "一般金钱请求通常以£10,000为界，特殊案件有不同规则；本题£12,000不能仅凭数额不大就按小额处理。"
+        },
+        {
+          "term": "Fast track · 快速审理",
+          "detail": "普通、较简单且符合金额与审理要求的案件可能进入fast track；此类佣金争议通常如此。"
+        },
+        {
+          "term": "Fixed recoverable costs · 固定可追偿费用",
+          "detail": "适用时依相应表格及规则决定可向对方追回的费用；并非按所有实际工时逐项报销。"
+        },
+        {
+          "term": "Standard basis · 标准费用基础",
+          "detail": "与fixed costs不同。看到胜诉不能自动选按标准基础在庭审结束时简易评定。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Small claims",
+          "zh": "一般金钱请求门槛通常为£10,000，特殊案件另有规则。",
+          "en": ""
+        },
+        {
+          "term": "Fast track",
+          "zh": "这类£12,000普通合同案通常进入快速审理。",
+          "en": ""
+        },
+        {
+          "term": "Fixed recoverable costs",
+          "zh": "适用固定费用制度时，不走一般按时数核定的标准费用路径。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "原PDF第33题答案为D；不要沿用旧材料对fast track一概选择standard basis的做法。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "contract",
+    "id": "sra-flk1-original-034",
+    "number": 34,
+    "stem": "A company buys drums of an industrial cleaning acid from a woman and stores them in its factory. The drums are not suitable for the storage of the acid and the acid leaks causing damage to the floor of the factory.\n\nA company employee sees that damage to the floor is being caused by the leak but fails to move the drums. The drums could have been moved at no cost to the company. The company claims £5,000 which is the cost of the repair to the floor. The woman refuses to pay that amount arguing the damages payable should be lower.",
+    "stemZh": "公司向一名女性购买工业清洁酸并存放在工厂。容器不适合储酸，导致泄漏并损坏地板。一名雇员看见地板被侵蚀，却未移走容器，而搬移不会产生费用。公司请求5,000英镑地板维修费，卖方认为赔偿应减少。",
+    "ask": "Will the woman succeed in her argument?",
+    "askZh": "卖方要求减少赔偿的主张会成功吗？",
+    "options": [
+      {
+        "id": "A",
+        "en": "Yes, because the company is under a duty to minimise its losses by moving the drums.",
+        "zh": "会，因为公司应移走容器以减少损失。"
+      },
+      {
+        "id": "B",
+        "en": "Yes, because the company is guilty of contributory negligence by not moving the drums.",
+        "zh": "会，因为公司未搬移构成共同过失。"
+      },
+      {
+        "id": "C",
+        "en": "No, because the woman must compensate the company for all losses flowing from the breach.",
+        "zh": "不会，卖方须赔一切因违约产生的损失。"
+      },
+      {
+        "id": "D",
+        "en": "No, because the woman must compensate the company for all losses that are in the reasonable contemplation of the company.",
+        "zh": "不会，卖方须赔公司合理预想范围内的一切损失。"
+      },
+      {
+        "id": "E",
+        "en": "Yes, because there is a break in the chain of causation.",
+        "zh": "会，因为因果关系链已断裂。"
+      }
+    ],
+    "explanation": {
+      "answer": "A",
+      "topic": "Mitigation · 减损",
+      "en": "",
+      "zh": "受害方不能把本可合理避免的扩大损失全部转嫁给违约方。公司已知泄漏且能免费搬移，却放任损害继续扩大，涉及**mitigation of loss**。",
+      "ruleEn": "",
+      "ruleZh": "应采取合理措施避免损失扩大。；未合理减损所增加的部分通常不能追回。；不要求不合理牺牲；本题搬移无成本。",
+      "warning": "“减损义务”通常指赔偿范围受限，不是对违约方独立负有可诉的履行义务。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Mitigation**：直接命中知情后未采取免费减损措施。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Contributory negligence**：本合同问题主要是减损，不宜直接当作侵权共同过失。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**All consequential loss**：可避免的损失不会全部获赔。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Remoteness**：可预见性不能取代减损要求，且并非仅看公司单方预想。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Break in causation**：不必认定整条因果链断裂，也可排除扩大部分。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Mitigation · 减损",
+          "detail": "受害方须合理控制损失；法律上的后果通常是不能追偿本来可避免的扩大部分，而非向违约方另负独立赔偿义务。"
+        },
+        {
+          "term": "Avoidable loss · 可避免损失",
+          "detail": "本题已知酸液继续腐蚀且可免费搬移，后续可避免的地板损坏应从请求中扣除。"
+        },
+        {
+          "term": "Contributory negligence · 共同过失",
+          "detail": "涉及原告对损害的过失贡献，但不能见到“不谨慎”就替代合同减损分析。"
+        },
+        {
+          "term": "Remoteness / causation",
+          "detail": "可预见性及因果关系仍需考虑；即使损害可预见，也不意味着不减损的扩大损失全部获赔。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Mitigation",
+          "zh": "应采取合理措施避免损失扩大。",
+          "en": ""
+        },
+        {
+          "term": "Avoidable loss",
+          "zh": "未合理减损所增加的部分通常不能追回。",
+          "en": ""
+        },
+        {
+          "term": "Reasonable steps",
+          "zh": "不要求不合理牺牲；本题搬移无成本。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "“减损义务”通常指赔偿范围受限，不是对违约方独立负有可诉的履行义务。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "legal-services",
+    "id": "sra-flk1-original-035",
+    "number": 35,
+    "stem": "A solicitor has been instructed by a client company that is suffering cash flow difficulties. The solicitor has been instructed by the client to advise on its directors’ duties in respect of monitoring the company’s financial position. In the course of discussions, the client mentions that it is considering attempting to improve its financial position by investing in equity securities and asks whether the solicitor can recommend any stockbrokers.\n\nThe solicitor's brother is a partner in a firm of stockbrokers which is authorised by the Financial Conduct Authority and which has made substantial returns for the solicitor and other clients.\n\nThe solicitor has concluded that making the referral would:\n\n(i) not in any way compromise his independence as the client’s legal advisor; and (ii) be in the best interests of the client because the stockbrokers are the best available in this field.\n\nThe solicitor will not get a financial benefit from the referral. The solicitor knows that the brother would be grateful for the business introduction.",
+    "stemZh": "律师为资金周转困难的公司提供董事财务监督义务方面的意见。客户考虑投资股票改善财务，询问可推荐的股票经纪商。律师的兄弟是某获FCA授权经纪行的合伙人，该行曾为律师及其他客户取得可观回报。律师判断转介不会损害独立性，且该行为该领域最佳选择，符合客户利益。律师不会得到经济利益，但兄弟会感谢这项介绍。",
+    "ask": "Which of the following steps should the solicitor take next?",
+    "askZh": "律师下一步应做什么？",
+    "options": [
+      {
+        "id": "A",
+        "en": "Cease to act for the client.",
+        "zh": "停止代理客户。"
+      },
+      {
+        "id": "B",
+        "en": "Refer the client to an individual at the stockbrokers other than the solicitor's brother.",
+        "zh": "将客户转介给经纪行内兄弟以外的人。"
+      },
+      {
+        "id": "C",
+        "en": "Get written confirmation from the brother that the solicitor will not get a financial benefit in return for the business referral.",
+        "zh": "取得兄弟书面确认律师不会因介绍获利。"
+      },
+      {
+        "id": "D",
+        "en": "Inform the client that the solicitor's brother is a partner of the stockbrokers.",
+        "zh": "告知客户其兄弟是经纪行合伙人。"
+      },
+      {
+        "id": "E",
+        "en": "Ask somebody else in the solicitor's firm to refer the client to the stockbrokers.",
+        "zh": "让律所其他人代为转介。"
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Referrals · 转介利益披露",
+      "en": "",
+      "zh": "转介涉及亲属这一其他利益关系，应向客户披露。题设已确认独立性及客户最佳利益，未显示必须停止代理的冲突；无介绍费也不免除披露。",
+      "ruleEn": "",
+      "ruleZh": "须披露转介中的经济或其他利益。；亲属关系也可能属于应披露利益。；转介必须与独立判断及客户最佳利益相容。",
+      "warning": "“没有financial benefit”不等于“没有需要披露的关系”。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Ceasing to act**：题设未说明存在必须停止代理的冲突。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Different contact**：换经纪行联系人并不能消除兄弟合伙关系。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**No referral fee**：书面确认不获利不能替代向客户披露。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Family connection**：直接披露相关亲属利益关系。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Another solicitor**：让同事出面不解决未披露问题。"
+        }
+      },
+      "source": "SRA Code of Conduct, 5.1(a)",
+      "sourceUrl": "https://www.sra.org.uk/solicitors/standards-regulations/code-conduct-solicitors/",
+      "concepts": [
+        {
+          "term": "Referral · 转介",
+          "detail": "向客户推荐其他服务商时，要考虑是否符合其利益及是否损害独立判断。题设已明确这两个条件。"
+        },
+        {
+          "term": "Financial or other interest · 经济或其他利益",
+          "detail": "披露范围不仅包括介绍费，也包括相关的亲属或其他利益联系。"
+        },
+        {
+          "term": "Family connection · 家庭联系",
+          "detail": "兄弟是经纪行合伙人，应让客户知悉；换经办人或让同事介绍，不会消除这层联系。"
+        },
+        {
+          "term": "Own-interest conflict · 自身利益冲突",
+          "detail": "如确有不能承办的利益冲突，披露也未必能补救；但本题没有该事实，故下一步为披露关系。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Financial or other interest",
+          "zh": "须披露转介中的经济或其他利益。",
+          "en": ""
+        },
+        {
+          "term": "Family connection",
+          "zh": "亲属关系也可能属于应披露利益。",
+          "en": ""
+        },
+        {
+          "term": "Independence",
+          "zh": "转介必须与独立判断及客户最佳利益相容。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "“没有financial benefit”不等于“没有需要披露的关系”。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "legal-system",
+    "id": "sra-flk1-original-036",
+    "number": 36,
+    "stem": "A client objects to a decision which has been made to grant planning permission for the building of a supermarket on land near his home. The client has discovered that the chairman of the planning committee that made the decision is a non-executive director of the supermarket chain in question.",
+    "stemZh": "客户反对其住宅附近新建超市的规划许可，发现作出决定的规划委员会主席同时是该连锁超市的非执行董事。",
+    "ask": "Which of the following best describes the status of this decision?",
+    "askZh": "哪项最准确地描述该决定的合法性？",
+    "options": [
+      {
+        "id": "A",
+        "en": "Only where the facts suggest to the court that there was in fact a conflict of interest and that the decision was in fact biased will the decision be held unlawful.",
+        "zh": "只有法院认为实际存在利益冲突且决定确实偏颇时才违法。"
+      },
+      {
+        "id": "B",
+        "en": "If the client can prove that a fair minded and informed observer would naturally conclude that there was a conflict of interest, the decision will be held to be automatically biased and thus unlawful.",
+        "zh": "若公平知情观察者认定有利益冲突，就自动构成偏见而违法。"
+      },
+      {
+        "id": "C",
+        "en": "For the decision to breach the rule against bias and thus be held unlawful, the client must prove to the court on a balance of probabilities that the chairman was actually biased.",
+        "zh": "客户必须按优势盖然性证明主席实际上偏颇。"
+      },
+      {
+        "id": "D",
+        "en": "Only if the facts suggest to the court that a fair minded and informed observer would conclude that the decision was biased will the decision be held unlawful.",
+        "zh": "只有公平知情观察者认为决定确已偏颇才违法。"
+      },
+      {
+        "id": "E",
+        "en": "If the facts suggest to the court that a fair minded and informed observer would conclude that there was a real possibility of bias, the decision will be held unlawful.",
+        "zh": "若公平知情观察者认为存在偏见的现实可能性，决定违法。"
+      }
+    ],
+    "explanation": {
+      "answer": "E",
+      "topic": "Apparent bias · 表见偏见",
+      "en": "",
+      "zh": "无需证明主席实际上受偏见左右。**Apparent bias**问的是公平且知情的观察者会否认为存在偏见的现实可能性，选E。",
+      "ruleEn": "",
+      "ruleZh": "从公平、充分知情的外部观察者角度判断。；标准是偏见的现实可能性。；不必证明实际偏见。",
+      "warning": "“存在利益冲突”不是此题完整测试；也不要把real possibility改成已经确定biased。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Actual conflict and bias**：错误要求证明实际偏见。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Automatic bias**：混淆利益冲突与表见偏见测试，且“自动”过强。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Proof of actual bias**：不需证明实际偏见。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Finding of bias**：要求观察者认定已经偏颇，门槛过高。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Real possibility of bias**：准确表述Porter v Magill测试。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Actual bias · 实际偏见",
+          "detail": "证明决策者事实上偏袒是一条路径，但不是挑战决定的唯一方法。"
+        },
+        {
+          "term": "Apparent bias · 表见偏见",
+          "detail": "即使无法证明内心偏袒，外观上存在足以损害公正的风险，也可能令决定违法。"
+        },
+        {
+          "term": "Fair-minded and informed observer",
+          "detail": "假设一个公平且知悉有关事实的观察者，问其是否认为有偏见的real possibility。"
+        },
+        {
+          "term": "Conflict of interest · 利益冲突",
+          "detail": "主席是受益公司的非执行董事，是判断风险的重要事实；完整测试仍是偏见的现实可能性。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Fair-minded and informed observer",
+          "zh": "从公平、充分知情的外部观察者角度判断。",
+          "en": ""
+        },
+        {
+          "term": "Real possibility of bias",
+          "zh": "标准是偏见的现实可能性。",
+          "en": ""
+        },
+        {
+          "term": "Actual bias",
+          "zh": "不必证明实际偏见。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "“存在利益冲突”不是此题完整测试；也不要把real possibility改成已经确定biased。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "legal-services",
+    "id": "sra-flk1-original-037",
+    "number": 37,
+    "stem": "A solicitor is advising a client on an employment contract in respect of a position that the client has been offered in a start-up company. The client currently has a permanent position at an established company.\n\nThe following day the solicitor sits next to a new acquaintance at a golf club dinner. The new acquaintance tells the solicitor that he is concerned that the business he works for is bound for financial failure because its key customer is to be taken into receivership shortly. The new acquaintance then tells the solicitor the name of the business he works for. Much to the solicitor's surprise it is, by coincidence, the start-up company.",
+    "stemZh": "客户考虑离开稳定公司的长期职位，加入初创公司，委托律师审阅新雇佣合同。次日在高尔夫俱乐部晚宴，一名新认识的人告诉律师，其雇主因主要客户将进入接管程序而可能经营失败。律师发现对方雇主恰是该初创公司。",
+    "ask": "Is the solicitor obliged to inform the client of the reported concerns about the financial prospects of the start-up company?",
+    "askZh": "律师是否必须把这些财务前景方面的担忧告知客户？",
+    "options": [
+      {
+        "id": "A",
+        "en": "No, because the information was obtained in the course of the solicitor’s personal life and therefore does not impact on his professional obligations.",
+        "zh": "不必，因为信息来自私人生活，与职业义务无关。"
+      },
+      {
+        "id": "B",
+        "en": "No, because the duty of confidentiality overrides the duty of disclosure.",
+        "zh": "不必，因为保密义务优先于披露义务。"
+      },
+      {
+        "id": "C",
+        "en": "No, because information obtained from clients must be kept confidential unless disclosure is required or permitted by law or the client consents.",
+        "zh": "不必，因为来自客户的信息须保密。"
+      },
+      {
+        "id": "D",
+        "en": "Yes, because the information is material to the client’s matter.",
+        "zh": "必须，因为信息对客户委托事项重要。"
+      },
+      {
+        "id": "E",
+        "en": "Yes, because the duty of disclosure overrides the duty of confidentiality.",
+        "zh": "必须，因为披露义务优先于保密义务。"
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Duty of disclosure · 告知重要信息",
+      "en": "",
+      "zh": "初创公司的财务风险会影响客户是否跳槽，属于**material information**。本题消息来自社交中新认识的人，没有给出另一个客户的保密信息；应说明所获消息及其未经核实性质。",
+      "ruleEn": "",
+      "ruleZh": "应让客户知道与事项重要相关的已知信息。；私人场合获知不自动排除专业告知义务。；与其他客户保密义务冲突时不能简单说披露优先。",
+      "warning": "告诉客户“听到这一担忧”，不要把未经核实的社交消息说成已确定事实。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Personal life**：私人生活获取的信息也可能与现有委托重要相关。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Confidentiality**：题目没有给出应优先保护的他方客户保密信息。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Client information**：新认识的人不是题设中的客户。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Material information**：重要性是本题的正确依据。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Disclosure priority**：不能普遍说披露义务凌驾保密义务。"
+        }
+      },
+      "source": "SRA Code of Conduct, 6.3–6.4",
+      "sourceUrl": "https://www.sra.org.uk/solicitors/standards-regulations/code-conduct-solicitors/",
+      "concepts": [
+        {
+          "term": "Material information · 重要信息",
+          "detail": "凡对客户委托中的决定有实质影响的已知信息，通常应告知；公司可能破产显然关系到是否跳槽。"
+        },
+        {
+          "term": "Personal setting · 私人场合",
+          "detail": "义务不以信息在办公室取得为限；社交场合得知的消息也可能重要。"
+        },
+        {
+          "term": "Confidentiality · 保密",
+          "detail": "若信息属于其他客户的保密资料，不能简单宣称披露优先。本题只提到新认识的人，未提供这种保密冲突。"
+        },
+        {
+          "term": "Unverified report · 未核实消息",
+          "detail": "应准确告诉客户所听到的担忧及来源性质，避免将传闻说成已查明事实。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Material information",
+          "zh": "应让客户知道与事项重要相关的已知信息。",
+          "en": ""
+        },
+        {
+          "term": "Source of knowledge",
+          "zh": "私人场合获知不自动排除专业告知义务。",
+          "en": ""
+        },
+        {
+          "term": "Confidentiality",
+          "zh": "与其他客户保密义务冲突时不能简单说披露优先。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "告诉客户“听到这一担忧”，不要把未经核实的社交消息说成已确定事实。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "tort",
+    "id": "sra-flk1-original-038",
+    "number": 38,
+    "stem": "A man is employed by a roofing company to repair roofs. The role requires him to wear special gloves in order to protect his hands when he handles roof tiles. Whilst standing on some scaffolding, negligently erected by the roofing company, he falls off, suffers serious injury to his head and brings a claim. He carelessly failed to wear the gloves at the time.",
+    "stemZh": "屋顶公司雇员工作时须戴专用手套防止瓦片伤手。他从公司过失搭建的脚手架上跌落，头部重伤并索赔。当时他疏忽地没有戴手套。",
+    "ask": "Which of the following best describes whether the company can successfully claim contributory negligence on the part of the roofer?",
+    "askZh": "公司能否成功主张雇员存在共同过失？",
+    "options": [
+      {
+        "id": "A",
+        "en": "The company cannot claim contributory negligence because the roofer’s carelessness did not cause or contribute to the injury.",
+        "zh": "不能，因为不戴手套没有导致或促成该伤害。"
+      },
+      {
+        "id": "B",
+        "en": "The company cannot claim contributory negligence because the roofer did not owe the company a duty of care.",
+        "zh": "不能，因为雇员对公司没有注意义务。"
+      },
+      {
+        "id": "C",
+        "en": "The company can claim contributory negligence because the roofer’s carelessness caused or contributed to the injury.",
+        "zh": "能，因为不戴手套导致或促成伤害。"
+      },
+      {
+        "id": "D",
+        "en": "The company can claim contributory negligence because the roofer’s carelessness materially increased the risk of injury.",
+        "zh": "能，因为不戴手套实质增加受伤风险。"
+      },
+      {
+        "id": "E",
+        "en": "The company can claim contributory negligence because the roofer owed the company a duty of care.",
+        "zh": "能，因为雇员对公司负有注意义务。"
+      }
+    ],
+    "explanation": {
+      "answer": "A",
+      "topic": "Contributory negligence · 共同过失的因果要求",
+      "en": "",
+      "zh": "不戴手套虽不谨慎，但手套保护的是手，并没有导致跌落或头伤。**Contributory negligence**要求受害人的过失与所受损害有因果联系。",
+      "ruleEn": "",
+      "ruleZh": "关注受害人是否合理注意自身安全。；不谨慎必须对具体损害有贡献。；只有相关过失才可能导致公平合理减赔。",
+      "warning": "违反安全要求不自动减赔；必须与本次损害相关。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**No causal contribution**：缺乏与头部伤害的因果联系，故抗辩不成立。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Duty to employer**：关键不是是否对雇主另负注意义务。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Causation**：题设未表明手套会避免头伤或跌落。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Material risk**：手部防护风险不等同于具体头伤风险。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Duty of care**：即使另有义务，也不能省略因果要求。"
+        }
+      },
+      "source": "Law Reform (Contributory Negligence) Act 1945, s 1",
+      "sourceUrl": "https://www.legislation.gov.uk/ukpga/Geo6/8-9/28/section/1",
+      "concepts": [
+        {
+          "term": "Contributory negligence · 共同过失",
+          "detail": "原告未合理保护自身安全，且因此对实际损害作出贡献，才可能减赔。"
+        },
+        {
+          "term": "Causation · 因果联系",
+          "detail": "手套防止手被瓦片割伤，并不能由题设推出会防止脚手架坠落造成的头部损伤。"
+        },
+        {
+          "term": "Breach of a rule · 违反规定",
+          "detail": "违反安全要求是相关事实，但不是无需因果分析就能减赔的独立开关。"
+        },
+        {
+          "term": "Duty to the employer · 对雇主义务",
+          "detail": "抗辩核心是原告对自己的损害有何贡献，并非先要求原告对被告负有独立注意义务。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Own safety",
+          "zh": "关注受害人是否合理注意自身安全。",
+          "en": ""
+        },
+        {
+          "term": "Causal contribution",
+          "zh": "不谨慎必须对具体损害有贡献。",
+          "en": ""
+        },
+        {
+          "term": "Reduction",
+          "zh": "只有相关过失才可能导致公平合理减赔。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "违反安全要求不自动减赔；必须与本次损害相关。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "legal-services",
+    "id": "sra-flk1-original-039",
+    "number": 39,
+    "stem": "A solicitor acts for a client who is raising finance secured against his home to fund his new business. The solicitor will be providing advice and preparing all the necessary documentation in connection with the mortgage.\n\nThe client asks the solicitor to explain the key differences between a repayment mortgage and an endowment mortgage. Neither the solicitor nor his firm is authorised by the Financial Conduct Authority to carry on a regulated activity.",
+    "stemZh": "客户为新业务筹资，以住宅作抵押。律师将提供相关法律意见并准备文件。客户要求解释还本型按揭与储蓄保险型按揭的主要差别；律师及律所均无FCA受规管活动授权。",
+    "ask": "Can the solicitor give the explanation requested about the types of mortgages?",
+    "askZh": "律师能否提供所要求的按揭类型说明？",
+    "options": [
+      {
+        "id": "A",
+        "en": "Yes, because such advice is a necessary part of the provision of his legal services.",
+        "zh": "可以，因为该意见是法律服务的必要部分。"
+      },
+      {
+        "id": "B",
+        "en": "Yes, because he is subject to the Solicitors' Financial Services (Scope) Rules and therefore falls within an exemption from the Financial Services and Markets Act 2000.",
+        "zh": "可以，因为受律师金融服务范围规则约束而获得FSMA豁免。"
+      },
+      {
+        "id": "C",
+        "en": "Yes, because the provision of generic advice is outside the scope of the Financial Services and Markets Act 2000.",
+        "zh": "可以，因为一般性意见不在FSMA受规管活动范围内。"
+      },
+      {
+        "id": "D",
+        "en": "No, because such advice does not fall within an exemption from the Financial Services and Markets Act 2000.",
+        "zh": "不可以，因为该意见不在FSMA豁免内。"
+      },
+      {
+        "id": "E",
+        "en": "No, because he is not authorised by the Financial Conduct Authority to give advice in respect of either type of mortgage.",
+        "zh": "不可以，因为无FCA授权就不能谈这两类按揭。"
+      }
+    ],
+    "explanation": {
+      "answer": "C",
+      "topic": "Generic advice · 一般金融说明",
+      "en": "",
+      "zh": "仅比较两种按揭的普遍结构，是**generic advice**，没有就某项特定投资或按揭作推荐，因此无需先依赖授权或专业豁免。",
+      "ruleEn": "",
+      "ruleZh": "解释产品类别的一般特点。；就特定产品是否适合提出建议，可能进入受规管范围。；先判断是否属于受规管活动，再找排除或豁免。",
+      "warning": "客户问的是类型差异，不是“我应该买哪一项具体产品”。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Necessary legal services**：必要性并非本题排除监管的正确理由。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Professional exemption**：无需依赖专业豁免，因本题仅是一般说明。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Generic advice**：准确描述活动本身的性质。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Exemption**：错误跳过是否属于受规管活动这一前提。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**FCA authorisation**：无授权不等于不能提供任何一般金融信息。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Generic advice · 一般说明",
+          "detail": "解释repayment mortgage与endowment mortgage的运作差异，不选择特定产品，通常不属于这里的受规管投资建议。"
+        },
+        {
+          "term": "Specific recommendation · 特定推荐",
+          "detail": "根据客户状况推荐某项具体投资或按揭，可能进入监管范围，须重新检查权限。"
+        },
+        {
+          "term": "Exclusion / exemption",
+          "detail": "先确定活动本身是否受规管，再考虑排除或豁免。不能只因律师提供服务就说一概获豁免。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Generic advice",
+          "zh": "解释产品类别的一般特点。",
+          "en": ""
+        },
+        {
+          "term": "Specific recommendation",
+          "zh": "就特定产品是否适合提出建议，可能进入受规管范围。",
+          "en": ""
+        },
+        {
+          "term": "Scope first",
+          "zh": "先判断是否属于受规管活动，再找排除或豁免。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "客户问的是类型差异，不是“我应该买哪一项具体产品”。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "legal-system",
+    "id": "sra-flk1-original-040",
+    "number": 40,
+    "stem": "The UK government has introduced a Parliamentary Bill (‘the Bill’) to repeal a UK statute. The government is able to command a majority in the House of Commons, but the Bill is opposed in the House of Lords. The Parliament Acts 1911 and 1949 are invoked in order to pass the Bill into law.",
+    "stemZh": "政府提出法案废除一项英国成文法，能取得下议院多数支持，但上议院反对。现援引1911及1949年Parliament Acts使法案通过。",
+    "ask": "What further steps are required for the Bill to become law?",
+    "askZh": "该法案成为法律还须哪些步骤？",
+    "options": [
+      {
+        "id": "A",
+        "en": "The Bill will require approval in the House of Commons, and to receive Royal Assent.",
+        "zh": "下议院批准并获得御准。"
+      },
+      {
+        "id": "B",
+        "en": "The Bill will require approval in the House of Commons and the House of Lords, and to receive Royal Assent.",
+        "zh": "上下两院批准并获得御准。"
+      },
+      {
+        "id": "C",
+        "en": "The Bill will require approval in the House of Commons and in a UK referendum.",
+        "zh": "下议院批准及英国公投。"
+      },
+      {
+        "id": "D",
+        "en": "The Bill will require approval in the House of Commons, the House of Lords and in a UK referendum, and to receive Royal Assent.",
+        "zh": "上下两院批准、英国公投及御准。"
+      },
+      {
+        "id": "E",
+        "en": "The Bill will require approval in the House of Commons, the House of Lords and in a UK referendum.",
+        "zh": "上下两院批准及英国公投。"
+      }
+    ],
+    "explanation": {
+      "answer": "A",
+      "topic": "Parliament Acts · 无上议院同意立法",
+      "en": "",
+      "zh": "在Parliament Acts适用条件满足时，可以绕过上议院同意，但仍须符合下议院通过程序并取得**Royal Assent**。本题不要求公投。",
+      "ruleEn": "",
+      "ruleZh": "符合条件的法案可不经上议院同意通过。；仍须遵循下议院通过及适用法定程序。；御准仍是成为法律的必要步骤。",
+      "warning": "这不是政府凭下议院多数即可立即绕过上议院；适用法案种类、时间及程序条件仍须满足。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Commons and Royal Assent**：在题设已援引法定程序的前提下正确。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Both Houses**：仍强求上议院同意，忽略Parliament Acts的作用。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Referendum**：没有一般公投要求，且漏掉御准。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Additional requirements**：增加了不需要的上议院同意及公投。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Missing Royal Assent**：同样增加两项条件并漏掉御准。"
+        }
+      },
+      "source": "Parliament Act 1911, s 2（经1949年法修改）",
+      "sourceUrl": "https://www.legislation.gov.uk/ukpga/Geo5/1-2/13/section/2",
+      "concepts": [
+        {
+          "term": "Ordinary legislative route · 通常立法",
+          "detail": "通常由上下两院通过法案，再获御准；但议会法设置特定的例外程序。"
+        },
+        {
+          "term": "Parliament Acts · 议会法",
+          "detail": "符合适用法案种类、时间与程序要求时，可以不取得上议院同意。题设说明已援引此程序。"
+        },
+        {
+          "term": "Royal Assent · 御准",
+          "detail": "绕过上议院不等于免除御准，也不意味着须另行举行全国公投。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Parliament Acts",
+          "zh": "符合条件的法案可不经上议院同意通过。",
+          "en": ""
+        },
+        {
+          "term": "Commons",
+          "zh": "仍须遵循下议院通过及适用法定程序。",
+          "en": ""
+        },
+        {
+          "term": "Royal Assent",
+          "zh": "御准仍是成为法律的必要步骤。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "这不是政府凭下议院多数即可立即绕过上议院；适用法案种类、时间及程序条件仍须满足。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "tort",
+    "id": "sra-flk1-original-041",
+    "number": 41,
+    "stem": "A man and a woman who had never met each other were at a swimming pool. The man had a lesson from a qualified instructor but due to the negligence of the instructor the man struggled in the deep end of the pool and drowned. The woman saw the entire incident and developed traumatic neurosis as a result.",
+    "stemZh": "一男一女互不相识，同时在泳池。男子向合格教练学游泳，但因教练过失在深水区遇险溺亡。女性目睹全程并发生创伤性神经症。",
+    "ask": "Can the woman recover damages against the instructor for the traumatic neurosis?",
+    "askZh": "女性能否向教练请求该精神损害赔偿？",
+    "options": [
+      {
+        "id": "A",
+        "en": "Yes, because the instructor breached the duty of care he owed to the man and his negligence caused the woman loss.",
+        "zh": "能，因为教练违反了对男子的注意义务并使她受损。"
+      },
+      {
+        "id": "B",
+        "en": "Yes, because the instructor breached the duty of care which he owed to the woman and his negligence caused her loss.",
+        "zh": "能，因为教练违反了对女性的注意义务并使她受损。"
+      },
+      {
+        "id": "C",
+        "en": "Yes, because the woman is suffering from a medically recognised condition.",
+        "zh": "能，因为她患有医学认可的疾病。"
+      },
+      {
+        "id": "D",
+        "en": "No, because the instructor did not owe the woman a duty of care.",
+        "zh": "不能，因为教练不对她负有相关注意义务。"
+      },
+      {
+        "id": "E",
+        "en": "No, because the woman’s loss is too remote.",
+        "zh": "不能，因为损害过于遥远。"
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Secondary victim · 精神损害次级受害人",
+      "en": "",
+      "zh": "她未处于人身危险，是目击他人受害的**secondary victim**。双方完全陌生，不满足通常所需的亲密感情关系控制条件；仅目睹及医学认可疾病不足以建立对她的义务。",
+      "ruleEn": "",
+      "ruleZh": "因他人受害而产生精神损害的目击者。；通常须与直接受害者有亲密关系。；医学认可疾病必要，但单独并不充分。",
+      "warning": "先问是否向这名原告负有duty of care，不能把对死者的义务直接转给目击者。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Duty owed to the man**：对男子负有义务不能自动推出对所有旁观者负有义务。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Duty owed to the woman**：本题缺少建立对女性义务所需的控制条件。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Recognised condition**：医学认可疾病只是条件之一。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**No relevant duty**：陌生目击者不满足本题次级受害人的义务要求。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Remoteness**：核心障碍在注意义务成立，D更准确。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Primary victim · 直接受害人",
+          "detail": "本人处于事故人身危险等相关情形，精神损害义务分析与纯旁观者不同。题中女性没有被置于这种危险。"
+        },
+        {
+          "term": "Secondary victim · 次级受害人",
+          "detail": "因目睹他人受害而患精神疾病，通常须满足亲密感情关系、时空接近、直接感知事故等控制条件。"
+        },
+        {
+          "term": "Close ties · 亲密关系",
+          "detail": "男女完全陌生，所以即使在现场目睹也不能自动成为受保护的次级受害人。"
+        },
+        {
+          "term": "Recognised illness · 医学认可疾病",
+          "detail": "有真实可诊断疾病仍不够，必须先有被告对该原告的duty of care。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Secondary victim",
+          "zh": "因他人受害而产生精神损害的目击者。",
+          "en": ""
+        },
+        {
+          "term": "Close ties of love and affection",
+          "zh": "通常须与直接受害者有亲密关系。",
+          "en": ""
+        },
+        {
+          "term": "Recognised illness",
+          "zh": "医学认可疾病必要，但单独并不充分。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "先问是否向这名原告负有duty of care，不能把对死者的义务直接转给目击者。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "dispute",
+    "id": "sra-flk1-original-042",
+    "number": 42,
+    "stem": "A large public limited company (PLC) leases a vending machine to a small village school. The school has failed to make a payment of £300 due under the lease agreement for the machine. PLC has commenced a claim against the school in the County Court.\n\nThe school is defending the claim on the basis that sums are not due, because the vending machine no longer works. PLC has instructed its solicitor to compile a list of documents containing 267 pages of emails and to seek expert evidence on vending machines from two different experts.",
+    "stemZh": "大型上市公司向小村庄学校出租自动售货机。学校欠付300英镑，公司在County Court起诉。学校以机器已不运作为由抗辩。公司要求律师整理267页邮件清单并委托两名机器专家出具证据。",
+    "ask": "Are these instructions likely to be consistent with the overriding objective of the Civil Procedure Rules?",
+    "askZh": "这些指示是否符合CPR的首要目标？",
+    "options": [
+      {
+        "id": "A",
+        "en": "No, because the overriding objective requires the parties to help the court deal with cases justly and at proportionate cost.",
+        "zh": "不符合，当事人须协助法院公正且以相称费用处理案件。"
+      },
+      {
+        "id": "B",
+        "en": "No, because the overriding objective requires the parties to help the court deal with cases quickly.",
+        "zh": "不符合，当事人须协助法院迅速处理案件。"
+      },
+      {
+        "id": "C",
+        "en": "Yes, because the overriding objective applies only to the courts, not the parties.",
+        "zh": "符合，首要目标只约束法院。"
+      },
+      {
+        "id": "D",
+        "en": "Yes, because the overriding objective requires proportionality only in regards to the relative merit of a claim, not in regards to the relative value of the claim.",
+        "zh": "符合，比例性只看请求理由是否成立，不看金额。"
+      },
+      {
+        "id": "E",
+        "en": "Yes, because the overriding objective applies only to pre-action conduct.",
+        "zh": "符合，首要目标只适用于诉前行为。"
+      }
+    ],
+    "explanation": {
+      "answer": "A",
+      "topic": "Overriding objective · 比例原则",
+      "en": "",
+      "zh": "300英镑争议却准备大量文件并聘两名专家，明显涉及与金额和复杂程度不相称的成本。CPR要求公正并以相称费用处理案件，当事人也有协助义务。",
+      "ruleEn": "",
+      "ruleZh": "公正与相称成本共同构成核心目标。；当事人须协助法院实现目标。；考量金额、重要性、复杂性及当事人财力等。",
+      "warning": "不是一味追求速度；小额争议也可有必要证据，但本题配置明显过度。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Justly and proportionately**：准确对应费用与争议不成比例。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Speed**：只强调速度，未抓住本题的主要问题。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Parties’ duty**：当事人也有协助义务。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Claim value**：请求金额是比例性的重要因素。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Pre-action only**：目标贯穿诉讼，不仅适用于诉前。"
+        }
+      },
+      "source": "CPR 1.1, 1.3",
+      "sourceUrl": "https://www.justice.gov.uk/courts/procedure-rules/civil/rules/part01",
+      "concepts": [
+        {
+          "term": "Overriding objective · 首要目标",
+          "detail": "以公正、相称成本处理案件；金额、重要性、复杂程度和双方财力等均可能相关。"
+        },
+        {
+          "term": "Duty of the parties · 当事人义务",
+          "detail": "不只法官受约束，当事人也必须协助法院实现该目标。"
+        },
+        {
+          "term": "Proportionate evidence · 相称证据",
+          "detail": "£300争议安排267页邮件及两名专家，显著涉及投入是否超过案件合理需要的问题。"
+        },
+        {
+          "term": "Speed · 速度",
+          "detail": "及时处理是相关因素，但“尽快”不能代替本题考查的成本相称性。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Justly and at proportionate cost",
+          "zh": "公正与相称成本共同构成核心目标。",
+          "en": ""
+        },
+        {
+          "term": "Parties’ duty",
+          "zh": "当事人须协助法院实现目标。",
+          "en": ""
+        },
+        {
+          "term": "Proportionality",
+          "zh": "考量金额、重要性、复杂性及当事人财力等。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "不是一味追求速度；小额争议也可有必要证据，但本题配置明显过度。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "contract",
+    "id": "sra-flk1-original-043",
+    "number": 43,
+    "stem": "A debtor owes an unsecured creditor £5,000 due to be repaid today. The debtor tells the creditor that he can only repay £4,000 and asks that the creditor agree to this being in full and final settlement of the whole amount. Fearing that the debtor, who also has other unsecured creditors, is about to be made bankrupt, the creditor agrees.",
+    "stemZh": "债务人今天应偿还无担保债权人5,000英镑，却表示只能支付4,000英镑，要求作为全部债务的最终清偿。债权人担心对方还有其他无担保债权人、即将破产，因此同意。",
+    "ask": "Can the creditor enforce the payment of the remaining £1,000?",
+    "askZh": "债权人还能要求剩余1,000英镑吗？",
+    "options": [
+      {
+        "id": "A",
+        "en": "Yes, because the agreement to accept less than the full amount was extracted under duress.",
+        "zh": "能，因为少收款的同意是在胁迫下取得。"
+      },
+      {
+        "id": "B",
+        "en": "Yes, because the debtor provided no consideration in return for the agreement to accept less than the full amount.",
+        "zh": "能，因为债务人没有为免除差额提供对价。"
+      },
+      {
+        "id": "C",
+        "en": "No, because the creditor has waived entitlement to claim the full amount.",
+        "zh": "不能，因为债权人放弃了全额请求权。"
+      },
+      {
+        "id": "D",
+        "en": "No, because the creditor obtained a legal benefit in receiving £4,000 rather than nothing.",
+        "zh": "不能，因为收到4,000而非零构成法律利益。"
+      },
+      {
+        "id": "E",
+        "en": "No, because the creditor obtained a practical benefit in receiving £4,000 rather than nothing.",
+        "zh": "不能，因为收到4,000而非零构成实际利益。"
+      }
+    ],
+    "explanation": {
+      "answer": "B",
+      "topic": "Part payment of debt · 部分偿债",
+      "en": "",
+      "zh": "到期债务仅支付一部分，通常不是债权人放弃余额的新对价。仅有“比完全收不到好”的实际利益，不能在本题替代**Foakes v Beer**规则，故选B。",
+      "ruleEn": "",
+      "ruleZh": "以同一方式支付已到期债务的一部分，通常无新对价。；提前付款等真正新增法律利益须另行判断。；可能限制反悔，但须有相应依赖及不公平等事实。",
+      "warning": "不要自动把Williams v Roffey的practical benefit扩展到到期债务减免；题设也不足以直接成立estoppel。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Duress**：担心债务人破产本身不证明遭受违法胁迫。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**No fresh consideration**：没有额外对价支持免除余款。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Waiver**：单纯口头同意并不当然有效放弃全部余额。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Legal benefit**：履行部分既有付款义务没有本题所需的新法律利益。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Practical benefit**：实际经济好处不能直接绕开部分偿债规则。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Existing duty · 既有义务",
+          "detail": "债务人已负有今天支付£5,000的义务，只付£4,000通常没有给债权人新的法律利益。"
+        },
+        {
+          "term": "Foakes v Beer · 部分偿债",
+          "detail": "到期债务的部分清偿，原则上不足以支持债权人免除余额的承诺。提前给付或其他额外利益须另行分析。"
+        },
+        {
+          "term": "Practical benefit · 实际利益",
+          "detail": "“至少收到一些钱”的好处，不能直接用来绕过本题部分偿债规则。"
+        },
+        {
+          "term": "Promissory estoppel · 允诺禁反言",
+          "detail": "可能限制反悔，但需结合明确承诺、依赖及允许反悔是否不公平等事实；题设不能仅凭同意少收款就自动成立。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Part payment",
+          "zh": "以同一方式支付已到期债务的一部分，通常无新对价。",
+          "en": ""
+        },
+        {
+          "term": "Fresh consideration",
+          "zh": "提前付款等真正新增法律利益须另行判断。",
+          "en": ""
+        },
+        {
+          "term": "Promissory estoppel",
+          "zh": "可能限制反悔，但须有相应依赖及不公平等事实。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "不要自动把Williams v Roffey的practical benefit扩展到到期债务减免；题设也不足以直接成立estoppel。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "tort",
+    "id": "sra-flk1-original-044",
+    "number": 44,
+    "stem": "A driver drives negligently as a result of which he has an accident. A passenger in his car is hurt in the accident. The passenger had a serious pre-existing back condition of which the driver is aware. This condition is exacerbated by the accident and the passenger becomes paralysed.",
+    "stemZh": "司机过失驾驶引发事故，乘客受伤。乘客原有严重背部疾病，司机也知情。事故加重病情，导致乘客瘫痪。",
+    "ask": "Which of the following statements best describes whether the passenger can claim damages for his paralysis from the driver?",
+    "askZh": "乘客能否就瘫痪向司机索赔？",
+    "options": [
+      {
+        "id": "A",
+        "en": "The passenger can claim damages for his paralysis from the driver because the paralysis was in the contemplation of the parties as possible at the time of the accident.",
+        "zh": "能，因为双方在事故发生时可想到可能发生瘫痪。"
+      },
+      {
+        "id": "B",
+        "en": "The passenger can claim damages for his paralysis from the driver because the driver must take the passenger as he finds him.",
+        "zh": "能，因为司机必须接受受害人的原有身体状况。"
+      },
+      {
+        "id": "C",
+        "en": "The passenger cannot claim damages for his paralysis from the driver because it was not reasonably foreseeable that paralysis would result from the accident.",
+        "zh": "不能，因为瘫痪不可合理预见。"
+      },
+      {
+        "id": "D",
+        "en": "The passenger cannot claim damages for his paralysis from the driver because the paralysis did not result from the accident in the normal course of events.",
+        "zh": "不能，因为瘫痪并非事故在通常情况下的结果。"
+      },
+      {
+        "id": "E",
+        "en": "The passenger cannot claim damages for his paralysis from the driver because the passenger is partially responsible for the paralysis because of his pre-existing condition.",
+        "zh": "不能，因为原有疾病使乘客也应为瘫痪负责。"
+      }
+    ],
+    "explanation": {
+      "answer": "B",
+      "topic": "Thin skull rule · 蛋壳头骨规则",
+      "en": "",
+      "zh": "一旦可预见的人身伤害类型成立，受害人的特殊脆弱性造成更严重后果，并不因此减轻侵权人责任。司机须**take the victim as he finds him**。",
+      "ruleEn": "",
+      "ruleZh": "加害人须接受受害人的特殊体质。；一般要求损害类型可预见，不要求具体严重程度可预见。；既有疾病本身不等于受害人的过失。",
+      "warning": "赔的是事故造成或加重的损失；原本无论事故都会发生的恶化须区分。司机事先知情也不是规则成立的必要条件。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Contemplation of parties**：措辞类似合同遥远性，B才是本题准确的侵权原则。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Take the victim as found**：准确表达蛋壳头骨规则。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Foreseeable extent**：无需预见瘫痪这一具体严重程度。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Normal outcome**：异常严重后果仍可因受害人脆弱性而获赔。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Pre-existing condition**：疾病不等于共同过失。"
+        }
+      },
+      "source": "SRA 官方样题；相关普通法规则",
+      "sourceUrl": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions",
+      "concepts": [
+        {
+          "term": "Foreseeable type · 可预见损害类型",
+          "detail": "过失驾驶可预见会造成人身伤害，首先满足相关损害类型要求。"
+        },
+        {
+          "term": "Thin skull rule · 蛋壳头骨规则",
+          "detail": "受害人特别脆弱使伤害异常严重，加害人仍须接受其原有体质；不要求事先知道这种脆弱。"
+        },
+        {
+          "term": "Extent of harm · 损害程度",
+          "detail": "无需预见最终会严重到瘫痪；不能用严重程度异常代替对损害类型的判断。"
+        },
+        {
+          "term": "Pre-existing deterioration · 既有恶化",
+          "detail": "仍须区分事故造成或加重的损失，与没有事故也会发生的恶化；既有疾病本身不是共同过失。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Thin skull rule",
+          "zh": "加害人须接受受害人的特殊体质。",
+          "en": ""
+        },
+        {
+          "term": "Type vs extent",
+          "zh": "一般要求损害类型可预见，不要求具体严重程度可预见。",
+          "en": ""
+        },
+        {
+          "term": "Pre-existing condition",
+          "zh": "既有疾病本身不等于受害人的过失。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "赔的是事故造成或加重的损失；原本无论事故都会发生的恶化须区分。司机事先知情也不是规则成立的必要条件。",
+        "en": ""
+      },
+      "sources": []
+    }
+  },
+  {
+    "sourceId": "sra",
+    "sourceSet": "sra-flk1-original",
+    "sourceTitle": "FLK1 原始样题 · 2026-08-25 · Version 13",
+    "subjectId": "business",
+    "id": "sra-flk1-original-045",
+    "number": 45,
+    "stem": "A woman owns shares in a private limited company. The shares are not in an Individual Savings Account (ISA). In the 2025/26 tax year the woman receives a dividend of £5,000. Her only other source of income is her salary, and her taxable income, including the dividend, is £41,000.\n\nIn 2025/26 the personal allowance is £12,570, basic rate tax band is £12,571-£50,270 and the dividend allowance is £500.",
+    "stemZh": "女性持有私人有限公司股份，未放在ISA内。2025/26税年取得5,000英镑股息，其他收入只有工资，包含股息的应税收入为41,000英镑。题设给定：个人免税额12,570英镑，基本税率区间12,571—50,270英镑，股息免税额500英镑。",
+    "ask": "How much Income Tax, if any, should the woman pay on the dividend?",
+    "askZh": "她应如何就股息缴纳所得税？",
+    "options": [
+      {
+        "id": "A",
+        "en": "None, because the dividend was paid by a private limited company whose payment of Corporation Tax on its distributable profits satisfies the woman’s liability for Income Tax.",
+        "zh": "无需缴税，因为公司缴纳公司税已满足个人股息税负。"
+      },
+      {
+        "id": "B",
+        "en": "None, because her taxable income, including the dividend, does not exceed the upper threshold for basic rate tax.",
+        "zh": "无需缴税，因为总应税收入未超基本税率上限。"
+      },
+      {
+        "id": "C",
+        "en": "She should pay Income Tax at the Income Tax basic rate on the entire dividend because it exceeds her annual dividend allowance.",
+        "zh": "全部股息按普通所得税基本税率缴税，因为超过股息免税额。"
+      },
+      {
+        "id": "D",
+        "en": "She should pay Income Tax at the appropriate dividend tax rate on the proportion of the dividend that exceeds her annual dividend allowance.",
+        "zh": "超出股息免税额部分按适用股息税率缴税。"
+      },
+      {
+        "id": "E",
+        "en": "She should pay Income Tax at the Income Tax additional rate on the proportion of the dividend that exceeds her annual dividend allowance.",
+        "zh": "超出免税额部分按所得税附加税率缴税。"
+      }
+    ],
+    "explanation": {
+      "answer": "D",
+      "topic": "Dividend income · 股息所得税",
+      "en": "",
+      "zh": "股息免税额之外的部分适用相应**dividend tax rate**。本题5,000−500=4,500英镑需要按适用股息税率处理。公司已经缴公司税不会免除个人股息税；本题选D，无须另算未给出的具体税率。",
+      "ruleEn": "",
+      "ruleZh": "先按题给股息免税额500英镑判断。；使用股息税率，不直接套工资所得税率。；保留2025/26题设；不同税年规则分别核对。",
+      "warning": "本题的“taxable income”表述与区间写法容易诱发重复扣personal allowance；五项比较的关键是超额股息适用股息税率。",
+      "options": {
+        "A": {
+          "en": "",
+          "zh": "**Corporation Tax**：公司与股东是不同纳税主体。"
+        },
+        "B": {
+          "en": "",
+          "zh": "**Basic-rate band**：处于基本税率范围仍可能要缴股息税。"
+        },
+        "C": {
+          "en": "",
+          "zh": "**Ordinary income rate**：既忽略500英镑免税额，又用错普通所得税率。"
+        },
+        "D": {
+          "en": "",
+          "zh": "**Dividend rate above allowance**：正确体现免税额及股息专门税率。"
+        },
+        "E": {
+          "en": "",
+          "zh": "**Additional rate**：没有适用附加税率的题设依据。"
+        }
+      },
+      "source": "HMRC · Tax on dividends（题设税年2025/26）",
+      "sourceUrl": "https://www.gov.uk/tax-on-dividends",
+      "concepts": [
+        {
+          "term": "Company / shareholder · 公司与股东",
+          "detail": "公司缴Corporation Tax与股东就股息缴税是两个层次，前者不会当然消灭后者。"
+        },
+        {
+          "term": "Dividend allowance · 股息免税额",
+          "detail": "按题设2025/26税年，£5,000股息中有£500适用该额度；余下£4,500再看适用股息税率。"
+        },
+        {
+          "term": "Dividend tax rate · 股息税率",
+          "detail": "股息使用专门税率，不能简单套用工资等普通所得税率。"
+        },
+        {
+          "term": "Tax year / bands · 税年与税阶",
+          "detail": "应依据题给税年及收入结构判断；D正确表达通用机制，无须把另一税年的税率代入。"
+        }
+      ]
+    },
+    "knowledge": {
+      "points": [
+        {
+          "term": "Dividend allowance",
+          "zh": "先按题给股息免税额500英镑判断。",
+          "en": ""
+        },
+        {
+          "term": "Dividend rates",
+          "zh": "使用股息税率，不直接套工资所得税率。",
+          "en": ""
+        },
+        {
+          "term": "Tax year",
+          "zh": "保留2025/26题设；不同税年规则分别核对。",
+          "en": ""
+        }
+      ],
+      "warning": {
+        "zh": "本题的“taxable income”表述与区间写法容易诱发重复扣personal allowance；五项比较的关键是超额股息适用股息税率。",
+        "en": ""
+      },
+      "sources": []
+    }
+  }
+]
