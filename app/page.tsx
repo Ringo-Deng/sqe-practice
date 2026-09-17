@@ -1,2 +1,4 @@
 import StudyApp from './study-app';
-export default function Page(){return <StudyApp/>}
+import {getChatGPTUser} from './chatgpt-auth';
+export const dynamic='force-dynamic';
+export default async function Page(){const user=await getChatGPTUser();return <StudyApp authenticated={!!user}/>;}

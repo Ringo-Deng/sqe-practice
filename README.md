@@ -1,13 +1,13 @@
 # SQE Practice · 刷题室
 
-A private SQE practice application. The current release contains 580 questions: 290 FLK1 questions and 290 FLK2 questions from the imported SRA sample sets and Revise SQE practice assessments. QLTS and OUP remain available as empty library categories until imported.
+A public-access SQE practice application with an account-backed mode and a device-local guest mode. The current release contains 1,234 questions: 220 SRA samples, 360 Revise SQE practice-assessment questions and all 654 end-of-chapter SQE1-style questions found across the 14 uploaded Revise SQE 2027 textbooks. QLTS and OUP remain available as empty library categories until imported.
 
 ## Product
 
-- English question stems and choices; optional Chinese in learning mode.
+- English question stems and choices with pre-generated Chinese for every question in learning mode. Existing reviewed translations are retained; no browser-side translation or language-model download is required while studying.
 - Server-graded practice answers with Chinese-led explanation and selected English terminology, key rule, option-by-option analysis, exam warning and legislation links.
 - Timed examination mode with a server-enforced deadline. No grading or explanation is returned before submission. Unanswered questions count as incorrect on submission.
-- D1-backed sessions, navigation position, answers and cumulative statistics keyed by the platform-authenticated user.
+- Signed-in sessions, navigation position, answers and cumulative statistics are stored in D1 and keyed by the platform-authenticated user. Anonymous visitors keep the corresponding study state in their current browser.
 - Mistake review distinguishes unresolved errors from subsequently corrected questions and preserves the original history.
 - Private platform access and server-side user scoping; no app-owned password database or external AI API keys.
 
@@ -15,9 +15,9 @@ A private SQE practice application. The current release contains 580 questions: 
 
 `lib/questions.ts` combines the imported provider datasets on the server. `lib/study-types.ts` contains the transport types. Future imported questions should retain their provider, source question number, edition and original explanation; any supplementary content must remain distinguishable.
 
-`db/schema.ts` owns the schema. Generated migrations are in `drizzle/`. Never edit an applied migration. D1 is declared as `DB` in `.openai/hosting.json`. No user learning records are kept in browser storage.
+`db/schema.ts` owns the schema. Generated migrations are in `drizzle/`. Never edit an applied migration. D1 is declared as `DB` in `.openai/hosting.json`. Signed-in records remain server-side; guest study records, vocabulary, annotations and guest-imported PDFs stay in that visitor's browser.
 
-`app/api/study/route.ts` validates and grades the write flows. The private host supplies authenticated-user headers. Anonymous API requests are rejected, and the UI offers a top-level sign-in link when necessary.
+`app/api/study/route.ts` validates and grades signed-in write flows. The host supplies authenticated-user headers. `app/api/guest-study/route.ts` validates and grades anonymous actions without retaining them server-side; the returned state is saved by the visitor's browser.
 
 ## Validation
 
@@ -25,7 +25,7 @@ A private SQE practice application. The current release contains 580 questions: 
 - Authentication, user isolation, persistent navigation, hidden answer keys, repeat-submit idempotence, mistake tracking and server-side examination timing remain enforced by the API.
 - Removed demonstration questions and their legacy sessions are excluded from question totals, history and cumulative statistics.
 
-Use the Sites build and hosting scripts to publish; preserve this Site's existing project identity and private audience. The project uses pnpm.
+Use the Sites build and hosting scripts to publish; preserve this Site's existing project identity and current audience. The project uses pnpm.
 
 
 ## Subject library and inline reviews

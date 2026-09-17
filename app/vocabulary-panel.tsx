@@ -10,22 +10,59 @@ import {Dialog,DialogContent,DialogHeader,DialogTitle,DialogDescription,DialogFo
 import {AlertDialog,AlertDialogContent,AlertDialogHeader,AlertDialogTitle,AlertDialogDescription,AlertDialogFooter,AlertDialogCancel} from '@/components/ui/alert-dialog';
 import {Table,TableHeader,TableHead,TableBody,TableRow,TableCell} from '@/components/ui/table';
 import {toast} from 'sonner';
-import {dueCards,REVIEW_INTERVALS,reviewDate} from '@/lib/vocabulary';
+import {dueCards,REVIEW_INTERVALS,nextReview,reviewDate,wordKey} from '@/lib/vocabulary';
 import type {VocabularyCard,VocabularyData,VocabularyDraft,Rating} from '@/lib/vocabulary';
 import type {Question} from '@/lib/study-types';
 import {sourceById,questionNumberLabel} from '@/lib/question-sources';
 import {subjectById} from '@/lib/subjects';
 
 function browserZone(){return Intl.DateTimeFormat().resolvedOptions().timeZone||'Asia/Shanghai';}
-export function useVocabulary(){
+const GUEST_VOCABULARY_KEY='sqe-practice:guest-vocabulary:v1';
+function readGuestCards(){
+ try{const value=JSON.parse(localStorage.getItem(GUEST_VOCABULARY_KEY)??'[]');return Array.isArray(value)?value as VocabularyCard[]:[];}catch{return [];}
+}
+function writeGuestCards(cards:VocabularyCard[]){try{localStorage.setItem(GUEST_VOCABULARY_KEY,JSON.stringify(cards));}catch{throw new Error('浏览器无法保存生词表，请检查是否允许本站使用本机存储。');}}
+function guestVocabulary(body?:Record<string,unknown>):VocabularyData{
+ const timeZone=browserZone(),today=reviewDate(timeZone),cards=readGuestCards().sort((a,b)=>b.createdAt-a.createdAt||a.id.localeCompare(b.id));
+ if(!body)return {cards,today,timeZone};
+ if(typeof body.id!=='string'||!/^[0-9a-f-]{36}$/i.test(body.id))throw new Error('生词编号无效。');
+ const index=cards.findIndex(card=>card.id===body.id),existing=index>=0?cards[index]:undefined,now=Date.now();
+ if(body.action==='add'||body.action==='edit'){
+  if(typeof body.word!=='string'||!body.word.trim()||body.word.length>200||typeof body.meaning!=='string'||body.meaning.length>4000||typeof body.example!=='string'||body.example.length>6000||!['word','term'].includes(String(body.kind)))throw new Error('请填写词语（最多 200 字）；释义最多 4,000 字，原句最多 6,000 字。');
+  const word=body.word.trim().replace(/\s+/g,' '),duplicate=cards.find(card=>wordKey(card.word)===wordKey(word)&&card.id!==body.id);
+  if(duplicate)return {cards,today,timeZone,savedId:duplicate.id,duplicate:true};
+  if(body.action==='edit'){
+   if(!existing)throw new Error('这个词已被删除，请刷新生词表。');
+   if(body.revision!==existing.revision)throw new Error('这个词已更新，请刷新生词表后重试。');
+   cards[index]={...existing,word,kind:body.kind as 'word'|'term',meaning:body.meaning.trim(),example:body.example.trim(),updatedAt:now,revision:existing.revision+1};
+  }else{
+   if(existing)return {cards,today,timeZone,savedId:existing.id,duplicate:true};
+   cards.unshift({id:body.id,word,kind:body.kind as 'word'|'term',meaning:body.meaning.trim(),example:body.example.trim(),questionId:typeof body.questionId==='string'?body.questionId:null,sessionId:typeof body.sessionId==='string'?body.sessionId:null,subjectId:typeof body.subjectId==='string'?body.subjectId:null,sourceLabel:typeof body.sourceLabel==='string'?body.sourceLabel:'来源题目',stage:0,nextReview:today,reviewCount:0,lastReviewedAt:null,lastReviewedDate:null,queueDate:null,queueOrder:0,createdAt:now,updatedAt:now,revision:0});
+  }
+  writeGuestCards(cards);return {cards,today,timeZone,savedId:body.id};
+ }
+ if(body.action==='delete'&&!existing)return {cards,today,timeZone};
+ if(!existing)throw new Error('找不到这个词，请刷新生词表。');
+ if(body.revision!==existing.revision)throw new Error('这个词已更新，请刷新生词表后重试。');
+ if(body.action==='delete')cards.splice(index,1);
+ else if(body.action==='rate'){
+  if(!['again','hard','good'].includes(String(body.rating)))throw new Error('请选择复习结果。');
+  if(existing.nextReview>today)throw new Error('这个词尚未到复习时间，请刷新生词表。');
+  const schedule=nextReview(existing,body.rating as Rating,today,now);
+  cards[index]={...existing,...schedule,reviewCount:existing.reviewCount+1,updatedAt:now,revision:existing.revision+1};
+ }else throw new Error('未知操作。');
+ writeGuestCards(cards);return {cards,today,timeZone};
+}
+export function useVocabulary(guest=false){
  const[data,setData]=useState<VocabularyData|null>(null),[loading,setLoading]=useState(true),[busy,setBusy]=useState(false),[error,setError]=useState('');
  const locked=useRef(false),generation=useRef(0),dataRef=useRef(data);dataRef.current=data;
  const request=useCallback(async(body?:Record<string,unknown>)=>{
+  if(guest)return guestVocabulary(body);
   const timeZone=browserZone();
   const response=await fetch('/api/vocabulary'+(body?'':'?timeZone='+encodeURIComponent(timeZone)),body?{method:'POST',headers:{'Content-Type':'application/json','X-Study-Action':'1'},body:JSON.stringify({...body,timeZone})}:{cache:'no-store'});
   const value=await response.json() as VocabularyData&{error?:string};
   if(!response.ok)throw new Error(value.error||'暂时无法读取生词表，请重试。');return value;
- },[]);
+ },[guest]);
  const load=useCallback(async()=>{
   if(locked.current)return;const run=++generation.current;setLoading(true);
   try{const value=await request();if(run===generation.current){setData(value);setError('');}}
@@ -45,10 +82,10 @@ export function useVocabulary(){
  return {data,loading,busy,error,load,mutate};
 }
 export type VocabularyController=ReturnType<typeof useVocabulary>;
-export function cardDraft(card:VocabularyCard):VocabularyDraft{return {id:card.id,revision:card.revision,word:card.word,kind:'word',meaning:card.meaning,example:card.example,questionId:card.questionId,sessionId:card.sessionId};}
+export function cardDraft(card:VocabularyCard):VocabularyDraft{return {id:card.id,revision:card.revision,word:card.word,kind:'word',meaning:card.meaning,example:card.example,questionId:card.questionId,sessionId:card.sessionId,subjectId:card.subjectId,sourceLabel:card.sourceLabel};}
 export function newWordDraft(question?:Question,sessionId?:string,word='',example=''):VocabularyDraft{
  const concept=word?question?.explanation?.concepts?.find(c=>c.term.toLowerCase()===word.toLowerCase()):undefined;
- return {id:crypto.randomUUID(),word,kind:'word',meaning:concept?.detail??'',example,questionId:question?.id??null,sessionId:sessionId??null};
+ return {id:crypto.randomUUID(),word,kind:'word',meaning:concept?.detail??'',example,questionId:question?.id??null,sessionId:sessionId??null,subjectId:question?.subjectId??null,sourceLabel:question?`${sourceById(question.sourceId)?.name??question.sourceId} · ${questionNumberLabel(question)}`:''};
 }
 export function VocabularyEditor({draft,onClose,onChange,controller,question}:{draft:VocabularyDraft|null;onClose:()=>void;onChange:(draft:VocabularyDraft)=>void;controller:VocabularyController;question?:Question}){
  const[duplicate,setDuplicate]=useState<string|null>(null);useEffect(()=>setDuplicate(null),[draft?.id]);

@@ -10,7 +10,7 @@ export type VocabularyCard = {
  createdAt:number;updatedAt:number;revision:number;
 };
 export type VocabularyData = {cards:VocabularyCard[];today:string;timeZone:string;savedId?:string;duplicate?:boolean};
-export type VocabularyDraft = Pick<VocabularyCard,'word'|'kind'|'meaning'|'example'|'questionId'|'sessionId'> & {id:string;revision?:number};
+export type VocabularyDraft = Pick<VocabularyCard,'word'|'kind'|'meaning'|'example'|'questionId'|'sessionId'> & {id:string;revision?:number;subjectId?:string|null;sourceLabel?:string};
 export function wordKey(word:string){return word.normalize('NFKC').trim().replace(/\s+/g,' ').toLocaleLowerCase('en-US');}
 export function validTimeZone(value:unknown){
  const zone=typeof value==='string'&&value.length<=80?value:'Asia/Shanghai';

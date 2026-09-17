@@ -7,17 +7,20 @@ import {linkedTextbooks,textbookById,type LinkedTextbookReference} from '@/lib/t
 import {preloadTextbookPage} from '@/lib/textbook-pdf';
 import {newglawNotesForQuestion} from '@/lib/newglaw-notes';
 import {NewglawKnowledgeNotes} from './newglaw-knowledge-notes';
+import {normalizeExplanationText} from '@/lib/question-text';
 
 export function OriginalAnswerReview({question:q,onOpenTextbook}:{question:Question;onOpenTextbook:(ref:LinkedTextbookReference)=>void}){
  const e=q.explanation!;
  const refs=linkedTextbooks(e.textbookReferences);
  const newglawNotes=newglawNotesForQuestion(q);
  const[showZh,setShowZh]=useState(false);
+ const english=normalizeExplanationText(e.en);
+ const storedZh=normalizeExplanationText(e.zh);
  return <article id="answer-review" className="answer-review publisher-review" aria-label="原书答案与解析">
   <h2 className="sr-only">原书答案与解析</h2>
   <div className="review-body">
-   {!!e.zh&&<div className="review-language-control"><Button variant="ghost" size="sm" aria-pressed={showZh} onClick={()=>setShowZh(!showZh)}><Languages size={16}/>{showZh?'显示英文':'显示中文'}</Button></div>}
-   {showZh&&e.zh?<section className="analysis-section original-analysis" lang="zh-CN">{e.zh.split(/\n\s*\n/).map((paragraph,index)=><p key={index}>{paragraph}</p>)}</section>:<section className="analysis-section original-analysis" lang="en"><div className="tested-topic">Area of law assessed: {e.topic}</div>{e.en.split(/\n\s*\n/).map((paragraph,index)=><p key={index}>{paragraph}</p>)}</section>}
+   {!!english&&!!storedZh&&<div className="review-language-control"><Button variant="ghost" size="sm" aria-pressed={showZh} onClick={()=>setShowZh(value=>!value)}><Languages size={16}/> {showZh?'显示英文':'显示中文'}</Button></div>}
+   {showZh&&storedZh?<section className="analysis-section original-analysis" lang="zh-CN">{storedZh.split(/\n\s*\n/).map((paragraph,index)=><p key={index}>{paragraph}</p>)}</section>:<section className="analysis-section original-analysis" lang="en"><div className="tested-topic">Area of law assessed: {e.topic}</div>{english.split(/\n\s*\n/).map((paragraph,index)=><p key={index}>{paragraph}</p>)}</section>}
    <NewglawKnowledgeNotes notes={newglawNotes}/>
   </div>
   <footer className="review-footer">

@@ -6,6 +6,7 @@ import reviseQuestions from './revise-flk1-assessment-2025-26.json';
 import reviseFlk2Questions from './revise-flk2-practice-assessment.json';
 import reviseChapterQuestions from './revise-chapter-questions.json';
 import reviseTranslations from './revise-assessment-translations.json';
+import staticTranslations from './static-question-translations.json';
 import reviseReferences from './revise-assessment-references.json';
 import questionTextbookLinks from './question-textbook-links.json';
 import textbookReviews from './contract-textbook-reviews.json';
@@ -17,6 +18,7 @@ const textbookById=textbookReviews as Record<string,TextbookReview>;
 const textbookLinksById=questionTextbookLinks as Record<string,QuestionTextbookLink>;
 const reviseById=reviseReferences as Record<string,QuestionTextbookLink>;
 const translationsById=reviseTranslations as Record<string,{stemZh:string;askZh:string;options:Record<string,string>;explanationZh:string}>;
+const staticTranslationsById=staticTranslations as Record<string,{stemZh:string;askZh:string;options:Record<string,string>;explanationZh?:string}>;
 const importedRevise=(reviseQuestions as FullQuestion[]).map(q=>{
  const translation=translationsById[q.id];
  return {...q,
@@ -24,11 +26,18 @@ const importedRevise=(reviseQuestions as FullQuestion[]).map(q=>{
   explanation:{...q.explanation,...(translation?{zh:translation.explanationZh}:{})}};
 });
 export const questions:FullQuestion[]=[...(officialQuestions as FullQuestion[]),...(pretestedQuestions as FullQuestion[]),...(officialFlk2Questions as FullQuestion[]),...(pretestedFlk2Questions as FullQuestion[]),...importedRevise,...(reviseFlk2Questions as FullQuestion[]),...(reviseChapterQuestions as FullQuestion[])].map(q=>{
+ const translation=staticTranslationsById[q.id];
+ const bilingual=translation?{...q,
+  stemZh:q.stemZh||translation.stemZh,
+  askZh:q.askZh||translation.askZh,
+  options:q.options.map(option=>({...option,zh:option.zh||translation.options[option.id]||''})),
+  explanation:{...q.explanation,zh:q.explanation.zh||translation.explanationZh||''},
+ }:q;
  const link=textbookLinksById[q.id];
  const refined=reviseById[q.id];
  const references=refined?[...refined.textbookReferences,...(link?.textbookReferences.filter(ref=>ref.bookId?.startsWith('notes-'))??[])]:link?.textbookReferences;
  const chapterId=refined?.chapterId??link?.chapterId;
- const linked=references?{...q,...(chapterId?{chapterId}:{}),explanation:{...q.explanation,textbookReferences:references}}:q;
+ const linked=references?{...bilingual,...(chapterId?{chapterId}:{}),explanation:{...bilingual.explanation,textbookReferences:references}}:bilingual;
  const review=textbookById[linked.id];
  if(!review)return linked;
  const {explanation,quickPoints,...classification}=review;
