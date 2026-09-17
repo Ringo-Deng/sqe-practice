@@ -2,9 +2,9 @@
 
 ## 题库入口
 
-### [▶ 进入 SQE 在线题库](https://ringo-sqe-practice.dengqiyueecupl.chatgpt.site)
+### [▶ 进入 SQE GitHub 题库](https://ringo-deng.github.io/sqe-practice/)
 
-可直接开始练习；访客进度保存在当前浏览器，登录后的学习记录由题库账户保存。
+独立运行于 GitHub Pages；答题记录、生词和教材笔记保存在当前浏览器。
 
 A public-access SQE practice application with an account-backed mode and a device-local guest mode. The current release contains 1,234 questions: 220 SRA samples, 360 Revise SQE practice-assessment questions and all 654 end-of-chapter SQE1-style questions found across the 14 uploaded Revise SQE 2027 textbooks. QLTS and OUP remain available as empty library categories until imported.
 
