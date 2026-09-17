@@ -5,11 +5,15 @@ export type Textbook={id:string;title:string;shortTitle:string;subjectId:string;
 export type LinkedTextbookReference=TextbookReference&{bookId:string;pageNumbers:number[]};
 export const textbooks:Textbook[]=catalog;
 export const textbookById=(id?:string)=>textbooks.find(book=>book.id===id);
+function browserAssetUrl(url:string){
+ if(typeof document==='undefined'||!url.startsWith('/'))return url;
+ return new URL(url.replace(/^\\/+/,''),document.baseURI).toString();
+}
 export function textbookPageSource(book:Textbook,page:number){
  if(!Number.isInteger(page)||page<1||page>book.pageCount)throw Error('无效的教材页码');
  const pageUrl=book.pageUrlTemplate?.replace('{page}',String(page))??book.url;
  if(!pageUrl)throw Error('教材页面文件不存在');
- return {url:pageUrl,pageNumber:book.pageUrlTemplate?1:page,documentPages:book.pageUrlTemplate?1:book.pageCount};
+ return {url:browserAssetUrl(pageUrl),pageNumber:book.pageUrlTemplate?1:page,documentPages:book.pageUrlTemplate?1:book.pageCount};
 }
 export function linkedTextbooks(refs:TextbookReference[]=[]):LinkedTextbookReference[]{
  return refs.filter((ref):ref is LinkedTextbookReference=>{
