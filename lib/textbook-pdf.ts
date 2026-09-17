@@ -18,7 +18,8 @@ const cache=createPdfPageCache(source=>{
   if(!worker||worker.destroyed)worker=new lib.PDFWorker();
   const currentWorker=worker;
   return currentWorker.promise.then(()=>{
-   task=lib.getDocument({url:source.url,worker:currentWorker,withCredentials:true,standardFontDataUrl:'/pdfjs/standard_fonts/',useWasm:false});
+   const standardFontDataUrl=typeof document==='undefined'?'/pdfjs/standard_fonts/':new URL('pdfjs/standard_fonts/',document.baseURI).toString();
+   task=lib.getDocument({url:source.url,worker:currentWorker,withCredentials:true,standardFontDataUrl,useWasm:false});
    return task.promise;
   },error=>{currentWorker.destroy();if(worker===currentWorker)worker=undefined;throw error;});
  });
