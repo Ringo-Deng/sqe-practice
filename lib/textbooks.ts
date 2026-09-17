@@ -7,7 +7,7 @@ export const textbooks:Textbook[]=catalog;
 export const textbookById=(id?:string)=>textbooks.find(book=>book.id===id);
 function browserAssetUrl(url:string){
  if(typeof document==='undefined'||!url.startsWith('/'))return url;
- return new URL(url.replace(/^\\/+/,''),document.baseURI).toString();
+ return new URL(url.slice(1),document.baseURI).toString();
 }
 export function textbookPageSource(book:Textbook,page:number){
  if(!Number.isInteger(page)||page<1||page>book.pageCount)throw Error('无效的教材页码');
