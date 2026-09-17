@@ -18,6 +18,7 @@ const datasets={
  qltsMocks:readJson('lib/qlts-mock-exams-1-5.json'),
 };
 const qltsSource=readJson('lib/qlts-mock-exams-1-5-source.json');
+const qltsTranslations=readJson('lib/qlts-mock-exams-1-5-translations.json');
 const reviseTranslations=readJson('lib/revise-assessment-translations.json');
 const staticTranslations=readJson('lib/static-question-translations.json');
 const textbooks=readJson('lib/textbooks.json').filter(book=>book.id.startsWith('revise-'));
@@ -39,6 +40,7 @@ const expectedQNumbers={
 };
 assert.equal(datasets.qltsMocks.length,445);
 assert.equal(qltsSource.importedQuestions,datasets.qltsMocks.length);
+assert.deepEqual(Object.keys(qltsTranslations).sort(),datasets.qltsMocks.map(question=>question.id).sort());
 for(const mock of qltsSource.mocks){
  const items=datasets.qltsMocks.filter(question=>question.sourceSession===mock.mock);
  assert.equal(items.length,mock.importedQuestions,`QLTS Mock ${mock.mock}: manifest count mismatch`);
@@ -80,6 +82,33 @@ for(const question of translatedRecords){
  }
  if(staticTranslations[question.id])assert.ok(translatedValues.every(value=>!/\n/.test(value)),`${question.id}: generated translation contains a line break`);
  if(question.explanation.en?.trim())assert.match(question.explanation.zh,/\p{Script=Han}/u,`${question.id}: missing Chinese explanation`);
+}
+
+const translatedQltsRecords=datasets.qltsMocks.map(question=>{
+ const translation=qltsTranslations[question.id];
+ return {
+  ...question,
+  stemZh:translation.stemZh,
+  askZh:translation.askZh,
+  options:question.options.map(option=>({...option,zh:translation.options[option.id]})),
+  explanation:{...question.explanation,zh:translation.explanationZh},
+ };
+});
+const qltsBilingual=translatedQltsRecords.filter(question=>(!question.stem.trim()||question.stemZh?.trim())&&question.askZh?.trim()&&question.options.every(option=>option.zh?.trim())&&question.explanation.zh?.trim()).length;
+assert.equal(qltsBilingual,datasets.qltsMocks.length);
+for(const question of translatedQltsRecords){
+ const translatedValues=[question.askZh,question.explanation.zh];
+ if(question.stem.trim())translatedValues.push(question.stemZh);
+ for(const value of translatedValues){
+  assert.ok(value.trim(),`${question.id}: empty QLTS translation`);
+  assert.match(value,/\p{Script=Han}/u,`${question.id}: missing Chinese QLTS translation`);
+ }
+ for(const option of question.options){
+  assert.ok(option.zh.trim(),`${question.id}: empty translated option ${option.id}`);
+  if(/\p{L}{3}/u.test(option.en))assert.match(option.zh,/\p{Script=Han}/u,`${question.id}: missing Chinese option ${option.id}`);
+ }
+ assert.ok([question.stemZh,question.askZh,...question.options.map(option=>option.zh)].every(value=>!value.includes('\n')),`${question.id}: translated question text contains a line break`);
+ assert.deepEqual(Object.keys(qltsTranslations[question.id].options).sort(),question.options.map(option=>option.id).sort(),`${question.id}: translated option keys differ from source`);
 }
 
 const rawFormattingIssues=all.filter(question=>
@@ -144,7 +173,9 @@ console.log(JSON.stringify({
  reviseAssessments:{flk1:datasets.reviseFlk1.length,flk2:datasets.reviseFlk2.length},
  reviseChapterQuestions:datasets.reviseChapters.length,
  staticBilingual,
+ qltsBilingual,
  staticTranslationRecords:Object.keys(staticTranslations).length,
+ qltsTranslationRecords:Object.keys(qltsTranslations).length,
  rawFormattingIssues,
  displayedFormattingIssues,
  coverage,

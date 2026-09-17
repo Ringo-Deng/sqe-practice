@@ -10,7 +10,7 @@ A public-access SQE practice application with an account-backed mode and a devic
 
 ## Product
 
-- English question stems and choices, with pre-generated Chinese for the SRA and Revise collections in learning mode. The QLTS scan import preserves its original English text and explanation without adding an unreviewed translation. Existing reviewed translations are retained; no browser-side translation or language-model download is required while studying.
+- English question stems and choices, with pre-generated Chinese for the SRA, Revise and QLTS collections in learning mode. The QLTS scan import preserves the original English text and explanation and adds a separate Simplified Chinese translation layer. Existing reviewed translations are retained; no browser-side translation or language-model download is required while studying.
 - Server-graded practice answers with Chinese-led explanation and selected English terminology, key rule, option-by-option analysis, exam warning and legislation links.
 - Timed examination mode with a server-enforced deadline. No grading or explanation is returned before submission. Unanswered questions count as incorrect on submission.
 - Signed-in sessions, navigation position, answers and cumulative statistics are stored in D1 and keyed by the platform-authenticated user. Anonymous visitors keep the corresponding study state in their current browser.
@@ -21,7 +21,7 @@ A public-access SQE practice application with an account-backed mode and a devic
 
 `lib/questions.ts` combines the imported provider datasets on the server. `lib/study-types.ts` contains the transport types. Future imported questions should retain their provider, source question number, edition and original explanation; any supplementary content must remain distinguishable.
 
-The QLTS import is in `lib/qlts-mock-exams-1-5.json`; its source hashes, page counts and exclusions are recorded in `lib/qlts-mock-exams-1-5-source.json`. The five scanned PDFs supplied 445 complete questions: 90 / 90 / 86 / 89 / 90. Mock 3 lacks Q25–27 and has no answer capture for Q24; Mock 4 Q75 is obscured by a browser certificate dialog. Those five records were excluded instead of reconstructed. Each imported question retains its source PDF page numbers. The material is historical and has not been updated for current law or tax rates.
+The QLTS import is in `lib/qlts-mock-exams-1-5.json`; its source hashes, page counts and exclusions are recorded in `lib/qlts-mock-exams-1-5-source.json`, and its Chinese layer is in `lib/qlts-mock-exams-1-5-translations.json`. The five scanned PDFs supplied 445 complete questions: 90 / 90 / 86 / 89 / 90. Mock 3 lacks Q25–27 and has no answer capture for Q24; Mock 4 Q75 is obscured by a browser certificate dialog. Those five records were excluded instead of reconstructed. Each imported question retains its source PDF page numbers. The material is historical and has not been updated for current law or tax rates.
 
 `db/schema.ts` owns the schema. Generated migrations are in `drizzle/`. Never edit an applied migration. D1 is declared as `DB` in `.openai/hosting.json`. Signed-in records remain server-side; guest study records, vocabulary, annotations and guest-imported PDFs stay in that visitor's browser.
 

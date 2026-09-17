@@ -25,6 +25,7 @@ const pretestedFlk2=require('../lib/sra-flk2-pretested.json');
 const reviseFlk2=require('../lib/revise-flk2-practice-assessment.json');
 const originalQlts=require('../lib/qlts-mock-exams-1-5.json');
 const qltsSource=require('../lib/qlts-mock-exams-1-5-source.json');
+const qltsTranslations=require('../lib/qlts-mock-exams-1-5-translations.json');
 const translations=require('../lib/revise-assessment-translations.json');
 const {filterQuestions,chapterById}=require('../lib/chapters.ts');
 const {linkedTextbooks}=require('../lib/textbooks.ts');
@@ -42,10 +43,12 @@ async function main(){
  assert.equal(importedQlts.length,445);
  assert.equal(qltsSource.importedQuestions,importedQlts.length);
  assert.deepEqual(importedQlts.map(q=>q.id),originalQlts.map(q=>q.id));
+ assert.deepEqual(Object.keys(qltsTranslations).sort(),importedQlts.map(q=>q.id).sort());
  for(const mock of qltsSource.mocks){
   const items=filterQuestions(questions,{sourceId:'qlts',sourceSet:`qlts-mock-exam-${mock.mock}`});
   assert.equal(items.length,mock.importedQuestions);
   assert.ok(items.every(q=>q.sourcePages?.length&&q.explanation.en&&q.options.some(option=>option.id===q.explanation.answer)));
+  assert.ok(items.every(q=>q.askZh&&q.options.every(option=>option.zh)&&q.explanation.zh));
  }
  assert.equal(originalFlk2.length,45);
  assert.equal(pretestedFlk2.length,65);
@@ -104,7 +107,8 @@ async function main(){
  data=await post({action:'answer',sessionId:qltsPracticeId,questionId:qltsFirst.id,selected:qltsFirst.explanation.answer});
  assert.equal(data.session.score,1);
  assert.equal(data.questions.find(q=>q.id===qltsFirst.id).explanation.en,qltsFirst.explanation.en);
- assert.equal(data.questions.find(q=>q.id===qltsFirst.id).stemZh,'');
+ assert.equal(data.questions.find(q=>q.id===qltsFirst.id).stemZh,qltsTranslations[qltsFirst.id].stemZh);
+ assert.equal(data.questions.find(q=>q.id===qltsFirst.id).explanation.zh,qltsTranslations[qltsFirst.id].explanationZh);
  data=await post({action:'start',id:qltsExamId,mode:'exam',sourceId:'qlts',sourceSet:'qlts-mock-exam-3'});
  assert.equal(data.session.questionIds.length,86);
  const qltsExamFirst=importedQlts.find(q=>q.sourceSession===3&&q.number===1);
@@ -113,11 +117,12 @@ async function main(){
  data=await post({action:'finish',sessionId:qltsExamId});
  assert.equal(data.session.score,1);
  assert.equal(data.questions.find(q=>q.id===qltsExamFirst.id).explanation.en,qltsExamFirst.explanation.en);
+ assert.equal(data.questions.find(q=>q.id===qltsExamFirst.id).explanation.zh,qltsTranslations[qltsExamFirst.id].explanationZh);
  await post({action:'answer',sessionId:practiceId,questionId:second.id,selected:'A'},400);
  await post({action:'start',id:crypto.randomUUID(),mode:'practice',sourceSet:'missing'},400);
  data=await get(oldId);assert.equal(data.session.score,1);assert.equal(data.session.answers[oldQuestion.id].selected,oldQuestion.explanation.answer);
  data=await get(practiceId);assert.equal(data.session.score,1);
- console.log('Passed: SRA and Revise regressions plus five QLTS mock sets (445 source-backed questions), answer keys, scoring, exam answer protection, invalid set rejection and existing study history.');
+ console.log('Passed: SRA and Revise regressions plus five bilingual QLTS mock sets (445 source-backed questions), answer keys, scoring, exam answer protection, invalid set rejection and existing study history.');
  sqlite.close();
 }
 main().catch(error=>{console.error(error);process.exitCode=1;});
