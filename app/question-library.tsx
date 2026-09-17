@@ -3,7 +3,7 @@ import {useState} from 'react';
 import {ArrowRight,Check,ChevronRight} from 'lucide-react';
 import {Button} from '@/components/ui/button';
 import {subjects,subjectById} from '@/lib/subjects';
-import {qltsMockExams,questionSources,sourceById} from '@/lib/question-sources';
+import {questionSources,sourceById} from '@/lib/question-sources';
 import {chapters,filterQuestions} from '@/lib/chapters';
 import type {StudyData,Session} from '@/lib/study-types';
 
@@ -33,7 +33,6 @@ export function QuestionLibrary({data,busy,onStart,onResume}:{data:StudyData;bus
    <div className="source-grid">{[{id:'all',name:'全部来源',description:'跨来源练习'},...questionSources].map(s=>{const total=data.questions.filter(q=>s.id==='all'||q.sourceId===s.id).length;return <button key={s.id} type="button" aria-pressed={source===s.id} className={`source-card ${source===s.id?'active':''}`} onClick={()=>{setSource(s.id);setChosen(null);}}><span>{s.name}{source===s.id&&<Check size={16}/>}</span><small>{total?`${total} 题`:'待导入'}</small></button>;})}</div>
    {!sourceQs.length&&<p className="source-empty">上传这套题库后，题目会按来源和科目归入这里。</p>}
   </section>
-  {source==='qlts'&&<section className="source-section" aria-label="QLTS 模拟套题"><h2>整套练习</h2><div className="source-grid">{qltsMockExams.map(mock=>{const items=sourceQs.filter(q=>q.sourceSet===mock.id);const previous=exactSession(items);return <button key={mock.id} type="button" className="source-card" disabled={busy||!items.length} onClick={()=>previous?onResume(previous):onStart(undefined,'qlts',undefined,mock.id)}><span>{mock.name}<ArrowRight size={15}/></span><small>{previous?'继续上次练习':`${items.length} 题 · ${mock.details}`}</small></button>;})}</div><p className="source-empty">题目、中文译文和解析均可对照查看；原题为历史资料，未按现行法律或税率更新。</p></section>}
   <div className="library-toolbar"><h2>FLK1</h2><span className="library-hint">当前来源：{sourceName}</span></div>
   <div className="subject-grid">{subjects.filter(s=>s.group==='FLK1').map(s=><button type="button" key={s.id} className={`subject-card ${s.id===chosen?'active':''}`} aria-pressed={s.id===chosen} onClick={()=>{setChosen(s.id);requestAnimationFrame(()=>document.getElementById('subject-detail')?.scrollIntoView({block:'start'}));}}><div className="subject-top"><h3>{s.zh}</h3>{count(s.id)>0?<span className="subject-available">{count(s.id)} 题可练</span>:<span className="subject-empty">待导入</span>}</div><p className="subject-en" lang="en">{s.en}</p><div className="subject-bottom"><span>{count(s.id)>0?`${sourceQs.filter(q=>q.subjectId===s.id&&practiced.has(q.id)).length} / ${count(s.id)} 题已练`:'0 题'}</span>{s.id===chosen?<Check size={16}/>:<ChevronRight size={16}/>}</div></button>)}</div>
   <div className="library-toolbar library-group-second"><h2>FLK2</h2></div>
