@@ -23,6 +23,8 @@ const originalRevise=require('../lib/revise-flk1-assessment-2025-26.json');
 const originalFlk2=require('../lib/sra-flk2-original.json');
 const pretestedFlk2=require('../lib/sra-flk2-pretested.json');
 const reviseFlk2=require('../lib/revise-flk2-practice-assessment.json');
+const originalQlts=require('../lib/qlts-mock-exams-1-5.json');
+const qltsSource=require('../lib/qlts-mock-exams-1-5-source.json');
 const translations=require('../lib/revise-assessment-translations.json');
 const {filterQuestions,chapterById}=require('../lib/chapters.ts');
 const {linkedTextbooks}=require('../lib/textbooks.ts');
@@ -34,8 +36,17 @@ async function get(session){const response=await api.GET(new Request('https://ex
 async function main(){
  const imported=questions.filter(q=>q.sourceSet?.startsWith('revise-flk1-2025-26-'));
  const importedFlk2=questions.filter(q=>q.sourceSet?.startsWith('revise-flk2-practice-'));
+ const importedQlts=questions.filter(q=>q.sourceId==='qlts');
  assert.equal(imported.length,180);
  assert.equal(importedFlk2.length,180);
+ assert.equal(importedQlts.length,445);
+ assert.equal(qltsSource.importedQuestions,importedQlts.length);
+ assert.deepEqual(importedQlts.map(q=>q.id),originalQlts.map(q=>q.id));
+ for(const mock of qltsSource.mocks){
+  const items=filterQuestions(questions,{sourceId:'qlts',sourceSet:`qlts-mock-exam-${mock.mock}`});
+  assert.equal(items.length,mock.importedQuestions);
+  assert.ok(items.every(q=>q.sourcePages?.length&&q.explanation.en&&q.options.some(option=>option.id===q.explanation.answer)));
+ }
  assert.equal(originalFlk2.length,45);
  assert.equal(pretestedFlk2.length,65);
  assert.deepEqual(Object.keys(translations).sort(),imported.map(q=>q.id).sort());
@@ -62,7 +73,7 @@ async function main(){
  }
  for(const session of [1,2])assert.deepEqual(filterQuestions(questions,{sourceId:'revise',sourceSet:`revise-flk1-2025-26-session-${session}`}).map(q=>q.number),Array.from({length:90},(_,i)=>i+1));
  for(const session of [1,2])assert.deepEqual(filterQuestions(questions,{sourceId:'revise',sourceSet:`revise-flk2-practice-session-${session}`}).map(q=>q.number),Array.from({length:90},(_,i)=>i+1));
- const oldId=crypto.randomUUID(),practiceId=crypto.randomUUID(),examId=crypto.randomUUID();
+ const oldId=crypto.randomUUID(),practiceId=crypto.randomUUID(),examId=crypto.randomUUID(),qltsPracticeId=crypto.randomUUID(),qltsExamId=crypto.randomUUID();
  const oldQuestion=questions.find(q=>q.sourceId==='sra');
  await post({action:'start',id:oldId,mode:'practice',sourceId:'sra'});
  await post({action:'answer',sessionId:oldId,questionId:oldQuestion.id,selected:oldQuestion.explanation.answer});
@@ -87,11 +98,26 @@ async function main(){
  assert.equal(Object.keys(data.session.answers).length,90);
  assert.equal(data.questions.find(q=>q.id===second.id).explanation.en,second.explanation.en);
  assert.equal(data.questions.find(q=>q.id===second.id).explanation.zh,translations[second.id].explanationZh);
+ data=await post({action:'start',id:qltsPracticeId,mode:'practice',sourceId:'qlts',sourceSet:'qlts-mock-exam-1'});
+ assert.equal(data.session.questionIds.length,90);
+ const qltsFirst=importedQlts.find(q=>q.sourceSession===1&&q.number===1);
+ data=await post({action:'answer',sessionId:qltsPracticeId,questionId:qltsFirst.id,selected:qltsFirst.explanation.answer});
+ assert.equal(data.session.score,1);
+ assert.equal(data.questions.find(q=>q.id===qltsFirst.id).explanation.en,qltsFirst.explanation.en);
+ assert.equal(data.questions.find(q=>q.id===qltsFirst.id).stemZh,'');
+ data=await post({action:'start',id:qltsExamId,mode:'exam',sourceId:'qlts',sourceSet:'qlts-mock-exam-3'});
+ assert.equal(data.session.questionIds.length,86);
+ const qltsExamFirst=importedQlts.find(q=>q.sourceSession===3&&q.number===1);
+ data=await post({action:'answer',sessionId:qltsExamId,questionId:qltsExamFirst.id,selected:qltsExamFirst.explanation.answer});
+ assert.ok(data.questions.every(q=>!q.explanation));
+ data=await post({action:'finish',sessionId:qltsExamId});
+ assert.equal(data.session.score,1);
+ assert.equal(data.questions.find(q=>q.id===qltsExamFirst.id).explanation.en,qltsExamFirst.explanation.en);
  await post({action:'answer',sessionId:practiceId,questionId:second.id,selected:'A'},400);
  await post({action:'start',id:crypto.randomUUID(),mode:'practice',sourceSet:'missing'},400);
  data=await get(oldId);assert.equal(data.session.score,1);assert.equal(data.session.answers[oldQuestion.id].selected,oldQuestion.explanation.answer);
  data=await get(practiceId);assert.equal(data.session.score,1);
- console.log('Passed: FLK1 bilingual assessment plus 110 SRA FLK2 samples and two 90-question FLK2 Revise sessions, answer keys, chapter links, scoring, exam answer protection, invalid set rejection and existing study history.');
+ console.log('Passed: SRA and Revise regressions plus five QLTS mock sets (445 source-backed questions), answer keys, scoring, exam answer protection, invalid set rejection and existing study history.');
  sqlite.close();
 }
 main().catch(error=>{console.error(error);process.exitCode=1;});

@@ -5,6 +5,7 @@ import pretestedFlk2Questions from './sra-flk2-pretested.json';
 import reviseQuestions from './revise-flk1-assessment-2025-26.json';
 import reviseFlk2Questions from './revise-flk2-practice-assessment.json';
 import reviseChapterQuestions from './revise-chapter-questions.json';
+import qltsMockQuestions from './qlts-mock-exams-1-5.json';
 import reviseTranslations from './revise-assessment-translations.json';
 import staticTranslations from './static-question-translations.json';
 import reviseReferences from './revise-assessment-references.json';
@@ -25,7 +26,7 @@ const importedRevise=(reviseQuestions as FullQuestion[]).map(q=>{
   ...(translation?{stemZh:translation.stemZh,askZh:translation.askZh,options:q.options.map(o=>({...o,zh:translation.options[o.id]}))}:{}),
   explanation:{...q.explanation,...(translation?{zh:translation.explanationZh}:{})}};
 });
-export const questions:FullQuestion[]=[...(officialQuestions as FullQuestion[]),...(pretestedQuestions as FullQuestion[]),...(officialFlk2Questions as FullQuestion[]),...(pretestedFlk2Questions as FullQuestion[]),...importedRevise,...(reviseFlk2Questions as FullQuestion[]),...(reviseChapterQuestions as FullQuestion[])].map(q=>{
+export const questions:FullQuestion[]=[...(officialQuestions as FullQuestion[]),...(pretestedQuestions as FullQuestion[]),...(officialFlk2Questions as FullQuestion[]),...(pretestedFlk2Questions as FullQuestion[]),...importedRevise,...(reviseFlk2Questions as FullQuestion[]),...(reviseChapterQuestions as FullQuestion[]),...(qltsMockQuestions as FullQuestion[])].map(q=>{
  const translation=staticTranslationsById[q.id];
  const bilingual=translation?{...q,
   stemZh:q.stemZh||translation.stemZh,

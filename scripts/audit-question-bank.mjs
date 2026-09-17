@@ -15,7 +15,9 @@ const datasets={
  reviseFlk1:readJson('lib/revise-flk1-assessment-2025-26.json'),
  reviseFlk2:readJson('lib/revise-flk2-practice-assessment.json'),
  reviseChapters:readJson('lib/revise-chapter-questions.json'),
+ qltsMocks:readJson('lib/qlts-mock-exams-1-5.json'),
 };
+const qltsSource=readJson('lib/qlts-mock-exams-1-5-source.json');
 const reviseTranslations=readJson('lib/revise-assessment-translations.json');
 const staticTranslations=readJson('lib/static-question-translations.json');
 const textbooks=readJson('lib/textbooks.json').filter(book=>book.id.startsWith('revise-'));
@@ -27,17 +29,37 @@ for(const items of [datasets.reviseFlk1,datasets.reviseFlk2]){
  for(const session of [1,2])assert.deepEqual(items.filter(item=>item.sourceSession===session).map(item=>item.number),Array.from({length:90},(_,index)=>index+1));
 }
 
-const all=Object.values(datasets).flat();
-assert.equal(all.length,1234);
-assert.equal(new Set(all.map(question=>question.id)).size,all.length);
-for(const question of all){
- assert.ok(question.stem.trim(),`${question.id}: missing stem`);
- assert.ok(question.ask.trim(),`${question.id}: missing ask`);
- assert.deepEqual(question.options.map(option=>option.id),['A','B','C','D','E'],`${question.id}: invalid options`);
- assert.match(question.explanation.answer,/^[A-E]$/,`${question.id}: invalid answer`);
+const legacy=[datasets.sraFlk1Original,datasets.sraFlk1Pretested,datasets.sraFlk2Original,datasets.sraFlk2Pretested,datasets.reviseFlk1,datasets.reviseFlk2,datasets.reviseChapters].flat();
+const expectedQNumbers={
+ 1:Array.from({length:90},(_,index)=>index+1),
+ 2:Array.from({length:90},(_,index)=>index+1),
+ 3:Array.from({length:90},(_,index)=>index+1).filter(number=>![24,25,26,27].includes(number)),
+ 4:Array.from({length:90},(_,index)=>index+1).filter(number=>number!==75),
+ 5:Array.from({length:90},(_,index)=>index+1),
+};
+assert.equal(datasets.qltsMocks.length,445);
+assert.equal(qltsSource.importedQuestions,datasets.qltsMocks.length);
+for(const mock of qltsSource.mocks){
+ const items=datasets.qltsMocks.filter(question=>question.sourceSession===mock.mock);
+ assert.equal(items.length,mock.importedQuestions,`QLTS Mock ${mock.mock}: manifest count mismatch`);
+ assert.deepEqual(items.map(question=>question.number),expectedQNumbers[mock.mock],`QLTS Mock ${mock.mock}: unexpected question sequence`);
 }
 
-const translatedRecords=all.map(question=>{
+const all=[...legacy,...datasets.qltsMocks];
+assert.equal(all.length,1679);
+assert.equal(new Set(all.map(question=>question.id)).size,all.length);
+for(const question of all){
+ assert.ok(question.stem.trim()||question.sourceId==='qlts',`${question.id}: missing stem`);
+ assert.ok(question.ask.trim(),`${question.id}: missing ask`);
+ const expectedOptionIds='ABCDE'.slice(0,question.options.length).split('');
+ assert.ok([4,5].includes(question.options.length),`${question.id}: invalid option count`);
+ assert.deepEqual(question.options.map(option=>option.id),expectedOptionIds,`${question.id}: invalid options`);
+ assert.match(question.explanation.answer,/^[A-E]$/,`${question.id}: invalid answer`);
+ assert.ok(expectedOptionIds.includes(question.explanation.answer),`${question.id}: answer outside available options`);
+ if(question.sourceId==='qlts')assert.ok(question.explanation.en.trim(),`${question.id}: missing explanation`);
+}
+
+const translatedRecords=legacy.map(question=>{
  const translation=reviseTranslations[question.id]??staticTranslations[question.id];
  return translation?{
   ...question,
@@ -49,7 +71,7 @@ const translatedRecords=all.map(question=>{
 });
 const staticBilingual=translatedRecords.filter(question=>question.stemZh?.trim()&&question.askZh?.trim()&&question.options.every(option=>option.zh?.trim())).length;
 assert.equal(Object.keys(staticTranslations).length,944);
-assert.equal(staticBilingual,all.length);
+assert.equal(staticBilingual,legacy.length);
 for(const question of translatedRecords){
  const translatedValues=[question.stemZh,question.askZh,...question.options.map(option=>option.zh)];
  assert.match(translatedValues.join(' '),/\p{Script=Han}/u,`${question.id}: missing Chinese translation`);
@@ -63,7 +85,7 @@ for(const question of translatedRecords){
 const rawFormattingIssues=all.filter(question=>
  /\n/.test(question.stem)||/\n/.test(question.ask)||question.options.some(option=>/\n/.test(option.en))
 ).length;
-const normalized=translatedRecords.map(question=>({
+const normalized=all.map(question=>({
  ...question,
  stem:normalizeInlineQuestionText(question.stem),
  ask:normalizeInlineQuestionText(question.ask),
@@ -116,6 +138,8 @@ for(const book of textbooks){
 
 console.log(JSON.stringify({
  totalQuestions:all.length,
+ qltsQuestions:datasets.qltsMocks.length,
+ qltsMocks:Object.fromEntries(qltsSource.mocks.map(mock=>[`mock${mock.mock}`,mock.importedQuestions])),
  reviseQuestions:datasets.reviseFlk1.length+datasets.reviseFlk2.length+datasets.reviseChapters.length,
  reviseAssessments:{flk1:datasets.reviseFlk1.length,flk2:datasets.reviseFlk2.length},
  reviseChapterQuestions:datasets.reviseChapters.length,

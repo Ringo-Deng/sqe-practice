@@ -8,6 +8,7 @@ import {preloadTextbookPage} from '@/lib/textbook-pdf';
 import {newglawNotesForQuestion} from '@/lib/newglaw-notes';
 import {NewglawKnowledgeNotes} from './newglaw-knowledge-notes';
 import {normalizeExplanationText} from '@/lib/question-text';
+import {sourceById} from '@/lib/question-sources';
 
 export function OriginalAnswerReview({question:q,onOpenTextbook}:{question:Question;onOpenTextbook:(ref:LinkedTextbookReference)=>void}){
  const e=q.explanation!;
@@ -26,7 +27,7 @@ export function OriginalAnswerReview({question:q,onOpenTextbook}:{question:Quest
   <footer className="review-footer">
    {!!refs.length&&<section className="textbook-access" aria-label="查阅对应教材">{refs.map(ref=><Button key={ref.bookId} variant="outline" size="sm" className="textbook-link" title={`${ref.chapter} · PDF 第 ${ref.pageNumbers[0]} 页起`} onPointerEnter={()=>preloadTextbookPage(textbookById(ref.bookId)!,ref.pageNumbers[0])} onFocus={()=>preloadTextbookPage(textbookById(ref.bookId)!,ref.pageNumbers[0])} onClick={()=>onOpenTextbook(ref)}><BookOpen size={16}/>查阅 {textbookById(ref.bookId)!.shortTitle}</Button>)}</section>}
    <Button variant="ghost" size="sm" className="back-to-question" onClick={()=>document.getElementById('current-question')?.scrollIntoView({block:'start'})}><ArrowUp size={14}/>回到题目</Button>
-   <p className="review-source">答案与解析：Revise 原书 · PDF 第 {e.originalPdfPages?.join('、')} 页</p>
+   <p className="review-source">答案与解析：{q.sourceTitle??e.source??sourceById(q.sourceId)?.name} · PDF 第 {e.originalPdfPages?.join('、')} 页{q.sourceId==='qlts'?' · 原题年代较早，未按现行法更新':''}</p>
   </footer>
  </article>;
 }

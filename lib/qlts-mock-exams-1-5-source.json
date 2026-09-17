@@ -1,0 +1,61 @@
+{
+  "source": "QLTS Mock Exam 1-5 scanned PDFs",
+  "method": "Local macOS Vision OCR with source-page reconciliation",
+  "importedQuestions": 445,
+  "mocks": [
+    {
+      "mock": 1,
+      "filename": "Mock Exam 1-compresssed.pdf",
+      "sha256": "0a40de9ed525fe2f6ccb10ca6fadc5881dcca31a8349a6c9470eda4c0ea9156b",
+      "pdfPages": 261,
+      "importedQuestions": 90,
+      "excludedQuestions": []
+    },
+    {
+      "mock": 2,
+      "filename": "Mock Exam 2-compresssed.pdf",
+      "sha256": "bffc19df4f44c669d8823f505db6acb86574f810903f0ee7b9af25c9f58b8a83",
+      "pdfPages": 267,
+      "importedQuestions": 90,
+      "excludedQuestions": []
+    },
+    {
+      "mock": 3,
+      "filename": "Mock Exam 3-compresssed.pdf",
+      "sha256": "2bea52cdc6f4b756120c64da5eaccb4496620be7a617fb25ca7df5076638d474",
+      "pdfPages": 257,
+      "importedQuestions": 86,
+      "excludedQuestions": [
+        {"number": 24, "reason": "Question pages are present but the answer and explanation pages are absent."},
+        {"number": 25, "reason": "Absent from the source PDF."},
+        {"number": 26, "reason": "Absent from the source PDF."},
+        {"number": 27, "reason": "Absent from the source PDF."}
+      ]
+    },
+    {
+      "mock": 4,
+      "filename": "Mock Exam 4-compresssed.pdf",
+      "sha256": "2b2cd4ee4d434629642ed80d9dc89c2d6843d48a314fb59b9ec6dba2a37488fc",
+      "pdfPages": 261,
+      "importedQuestions": 89,
+      "excludedQuestions": [
+        {"number": 75, "reason": "A browser certificate dialog obscures the question text in the only source capture."}
+      ]
+    },
+    {
+      "mock": 5,
+      "filename": "Mock Exam 5-compresssed.pdf",
+      "sha256": "268030d9385c39fa827183d605efe8e5db59405c515c64cca3f9797b175f1ae1",
+      "pdfPages": 287,
+      "importedQuestions": 90,
+      "excludedQuestions": []
+    }
+  ],
+  "notes": [
+    "The source PDFs are scans and are not committed to this repository.",
+    "Each imported record retains its original PDF page numbers.",
+    "Subject IDs are mapped to the app's current syllabus taxonomy and are not publisher labels.",
+    "Questions and explanations are historical source material and have not been updated for current law or tax rates.",
+    "No Chinese translation is included in this import."
+  ]
+}
