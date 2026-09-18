@@ -1,5 +1,5 @@
 'use client';
-import {useCallback,useEffect,useMemo,useRef,useState} from 'react';
+import {useCallback,useEffect,useLayoutEffect,useMemo,useRef,useState} from 'react';
 import {BookOpen,ChevronLeft,ChevronRight,ExternalLink,Highlighter,Loader2,Pencil,RotateCcw,StickyNote,Trash2,X,ZoomIn,ZoomOut} from 'lucide-react';
 import {Button} from '@/components/ui/button';
 import {Tabs,TabsList,TabsTrigger} from '@/components/ui/tabs';
@@ -85,7 +85,7 @@ export function TextbookReader({references=[],initial,onClose,books,standalone=f
  const [bookId,setBookId]=useState(initial.bookId),[positions,setPositions]=useState<Record<string,number>>({[initial.bookId]:initial.page});
  const [pageInput,setPageInput]=useState(String(initial.page)),[zoom,setZoom]=useState(DEFAULT_TEXTBOOK_ZOOM),[overlay,setOverlay]=useState(false),[readerWidth,setReaderWidth]=useState(0);
  const [selection,setSelection]=useState<SelectionDraft|null>(null),[editing,setEditing]=useState<TextbookAnnotationDraft|null>(null);
- const scrollRoot=useRef<HTMLDivElement>(null),scrollFrame=useRef<number|undefined>(undefined),lastReported=useRef('');
+ const scrollRoot=useRef<HTMLDivElement>(null),scrollFrame=useRef<number|undefined>(undefined),lastReported=useRef(''),lastLayout=useRef('');
  const book=availableBooks.find(item=>item.id===bookId)??textbookById(bookId)??availableBooks[0];
  const refs=references.filter(ref=>ref.bookId===book?.id),related=[...new Set(refs.flatMap(ref=>ref.pageNumbers))];
  const page=book?positions[book.id]??related[0]??1:1;
@@ -97,7 +97,8 @@ export function TextbookReader({references=[],initial,onClose,books,standalone=f
   const key=`${initial.bookId}:${initial.page}`;if(key===lastReported.current)return;
   setBookId(initial.bookId);setPositions(current=>({...current,[initial.bookId]:initial.page}));setPageInput(String(initial.page));setSelection(null);requestAnimationFrame(()=>jumpToPage(initial.page,'auto'));
  },[initial.bookId,initial.page,jumpToPage]);
- useEffect(()=>{const root=scrollRoot.current;if(!root)return;const observer=new ResizeObserver(([entry])=>setReaderWidth(Math.max(240,Math.floor(entry.contentRect.width-32))));observer.observe(root);return()=>observer.disconnect();},[book?.id]);
+ useEffect(()=>{const root=scrollRoot.current;if(!root)return;const observer=new ResizeObserver(([entry])=>setReaderWidth(Math.max(240,Math.floor(entry.contentRect.width-32))));observer.observe(root);return()=>observer.disconnect();},[book?.id,overlay]);
+ useLayoutEffect(()=>{if(!book||!readerWidth)return;const key=`${book.id}:${overlay?'overlay':'inline'}:${readerWidth}:${zoom}`;if(key===lastLayout.current)return;const root=scrollRoot.current,node=root?.querySelector<HTMLElement>(`[data-textbook-page="${page}"]`);if(!root||!node)return;lastLayout.current=key;root.scrollTo({top:Math.max(0,node.offsetTop-8),behavior:'auto'});},[book,overlay,page,readerWidth,zoom]);
  useEffect(()=>{if(standalone){setOverlay(false);return;}const mq=window.matchMedia('(max-width: 1250px)'),update=()=>setOverlay(mq.matches);update();mq.addEventListener('change',update);return()=>mq.removeEventListener('change',update);},[standalone]);
  useEffect(()=>{if(!book)return;const key=`${book.id}:${page}`;lastReported.current=key;onPositionChange?.(book.id,page);setPageInput(String(page));},[book?.id,page,onPositionChange]);
  useEffect(()=>()=>{if(scrollFrame.current)cancelAnimationFrame(scrollFrame.current);},[]);
