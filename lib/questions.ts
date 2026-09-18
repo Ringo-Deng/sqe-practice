@@ -11,6 +11,7 @@ import qltsMockQuestions11To15 from './qlts-mock-exams-11-15.json';
 import qltsTranslations1To5 from './qlts-mock-exams-1-5-translations.json';
 import qltsTranslations6To10 from './qlts-mock-exams-6-10-translations.json';
 import qltsTranslations11To15 from './qlts-mock-exams-11-15-translations.json';
+import qltsChapterMatchData from './qlts-chapter-matches.json';
 import reviseTranslations from './revise-assessment-translations.json';
 import staticTranslations from './static-question-translations.json';
 import reviseReferences from './revise-assessment-references.json';
@@ -26,7 +27,11 @@ const reviseById=reviseReferences as Record<string,QuestionTextbookLink>;
 const translationsById=reviseTranslations as Record<string,{stemZh:string;askZh:string;options:Record<string,string>;explanationZh:string}>;
 const staticTranslationsById=staticTranslations as Record<string,{stemZh:string;askZh:string;options:Record<string,string>;explanationZh?:string}>;
 const qltsTranslationsById={...qltsTranslations1To5,...qltsTranslations6To10,...qltsTranslations11To15} as Record<string,{stemZh:string;askZh:string;options:Record<string,string>;explanationZh:string}>;
-const qltsMockQuestions=[...qltsMockQuestions1To5,...qltsMockQuestions6To10,...qltsMockQuestions11To15] as FullQuestion[];
+const qltsChapterMatches=qltsChapterMatchData.matches as Record<string,{subjectId:string;chapterId:string}>;
+const qltsMockQuestions=([...qltsMockQuestions1To5,...qltsMockQuestions6To10,...qltsMockQuestions11To15] as FullQuestion[]).map(question=>{
+ const match=qltsChapterMatches[question.id];
+ return match?{...question,subjectId:match.subjectId,chapterId:match.chapterId}:question;
+});
 const importedRevise=(reviseQuestions as FullQuestion[]).map(q=>{
  const translation=translationsById[q.id];
  return {...q,

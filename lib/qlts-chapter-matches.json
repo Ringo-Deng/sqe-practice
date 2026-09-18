@@ -1,0 +1,4773 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-18",
+  "method": "TF-IDF matching against existing chapter-linked SRA and Revise SQE questions, with subject keyword weighting and reviewed overrides",
+  "trainingQuestions": 954,
+  "evaluation": {
+    "subjectAccuracy": 0.9832,
+    "chapterAccuracy": 0.9486
+  },
+  "matchedQuestions": 1190,
+  "matches": {
+    "qlts-mock-01-q001": {
+      "subjectId": "contract",
+      "chapterId": "contract-02"
+    },
+    "qlts-mock-01-q002": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-01"
+    },
+    "qlts-mock-01-q003": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-04"
+    },
+    "qlts-mock-01-q004": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-01-q005": {
+      "subjectId": "tort",
+      "chapterId": "tort-01"
+    },
+    "qlts-mock-01-q006": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-02"
+    },
+    "qlts-mock-01-q007": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-01-q008": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-01-q009": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-03"
+    },
+    "qlts-mock-01-q010": {
+      "subjectId": "business",
+      "chapterId": "business-08"
+    },
+    "qlts-mock-01-q011": {
+      "subjectId": "property-practice",
+      "chapterId": "property-practice-05"
+    },
+    "qlts-mock-01-q012": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-03"
+    },
+    "qlts-mock-01-q013": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-01-q014": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-01"
+    },
+    "qlts-mock-01-q015": {
+      "subjectId": "tort",
+      "chapterId": "tort-07"
+    },
+    "qlts-mock-01-q016": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-02"
+    },
+    "qlts-mock-01-q017": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-01-q018": {
+      "subjectId": "contract",
+      "chapterId": "contract-01"
+    },
+    "qlts-mock-01-q019": {
+      "subjectId": "wills",
+      "chapterId": "wills-09"
+    },
+    "qlts-mock-01-q020": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-01-q021": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-01-q022": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-01-q023": {
+      "subjectId": "contract",
+      "chapterId": "contract-10"
+    },
+    "qlts-mock-01-q024": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-03"
+    },
+    "qlts-mock-01-q025": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-01-q026": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-05"
+    },
+    "qlts-mock-01-q027": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-01"
+    },
+    "qlts-mock-01-q028": {
+      "subjectId": "contract",
+      "chapterId": "contract-02"
+    },
+    "qlts-mock-01-q029": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-01-q030": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-05"
+    },
+    "qlts-mock-01-q031": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-01-q032": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-01-q033": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-06"
+    },
+    "qlts-mock-01-q034": {
+      "subjectId": "business",
+      "chapterId": "business-10"
+    },
+    "qlts-mock-01-q035": {
+      "subjectId": "land",
+      "chapterId": "land-09"
+    },
+    "qlts-mock-01-q036": {
+      "subjectId": "contract",
+      "chapterId": "contract-08"
+    },
+    "qlts-mock-01-q037": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-01-q038": {
+      "subjectId": "contract",
+      "chapterId": "contract-04"
+    },
+    "qlts-mock-01-q039": {
+      "subjectId": "criminal-practice",
+      "chapterId": "criminal-practice-09"
+    },
+    "qlts-mock-01-q040": {
+      "subjectId": "contract",
+      "chapterId": "contract-04"
+    },
+    "qlts-mock-01-q041": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-01-q042": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-01-q043": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-01-q044": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-07"
+    },
+    "qlts-mock-01-q045": {
+      "subjectId": "business",
+      "chapterId": "business-09"
+    },
+    "qlts-mock-01-q046": {
+      "subjectId": "land",
+      "chapterId": "land-03"
+    },
+    "qlts-mock-01-q047": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-01-q048": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-02"
+    },
+    "qlts-mock-01-q049": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-01-q050": {
+      "subjectId": "tort",
+      "chapterId": "tort-02"
+    },
+    "qlts-mock-01-q051": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-01"
+    },
+    "qlts-mock-01-q052": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-01-q053": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-02"
+    },
+    "qlts-mock-01-q054": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-02"
+    },
+    "qlts-mock-01-q055": {
+      "subjectId": "business",
+      "chapterId": "business-09"
+    },
+    "qlts-mock-01-q056": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-01-q057": {
+      "subjectId": "contract",
+      "chapterId": "contract-04"
+    },
+    "qlts-mock-01-q058": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-02"
+    },
+    "qlts-mock-01-q059": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-02"
+    },
+    "qlts-mock-01-q060": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-01-q061": {
+      "subjectId": "contract",
+      "chapterId": "contract-10"
+    },
+    "qlts-mock-01-q062": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-08"
+    },
+    "qlts-mock-01-q063": {
+      "subjectId": "business",
+      "chapterId": "business-07"
+    },
+    "qlts-mock-01-q064": {
+      "subjectId": "land",
+      "chapterId": "land-05"
+    },
+    "qlts-mock-01-q065": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-01-q066": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-09"
+    },
+    "qlts-mock-01-q067": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-03"
+    },
+    "qlts-mock-01-q068": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-01-q069": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-02"
+    },
+    "qlts-mock-01-q070": {
+      "subjectId": "tort",
+      "chapterId": "tort-08"
+    },
+    "qlts-mock-01-q071": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-01-q072": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-01-q073": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-12"
+    },
+    "qlts-mock-01-q074": {
+      "subjectId": "land",
+      "chapterId": "land-01"
+    },
+    "qlts-mock-01-q075": {
+      "subjectId": "contract",
+      "chapterId": "contract-08"
+    },
+    "qlts-mock-01-q076": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-02"
+    },
+    "qlts-mock-01-q077": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-09"
+    },
+    "qlts-mock-01-q078": {
+      "subjectId": "criminal-practice",
+      "chapterId": "criminal-practice-08"
+    },
+    "qlts-mock-01-q079": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-01-q080": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-01-q081": {
+      "subjectId": "land",
+      "chapterId": "land-08"
+    },
+    "qlts-mock-01-q082": {
+      "subjectId": "criminal-practice",
+      "chapterId": "criminal-practice-10"
+    },
+    "qlts-mock-01-q083": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-04"
+    },
+    "qlts-mock-01-q084": {
+      "subjectId": "contract",
+      "chapterId": "contract-10"
+    },
+    "qlts-mock-01-q085": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-02"
+    },
+    "qlts-mock-01-q086": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-02"
+    },
+    "qlts-mock-01-q087": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-01-q088": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-01-q089": {
+      "subjectId": "land",
+      "chapterId": "land-06"
+    },
+    "qlts-mock-01-q090": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-04"
+    },
+    "qlts-mock-02-q001": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-02-q002": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-02-q003": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-02-q004": {
+      "subjectId": "dispute",
+      "chapterId": "dispute-03"
+    },
+    "qlts-mock-02-q005": {
+      "subjectId": "wills",
+      "chapterId": "wills-10"
+    },
+    "qlts-mock-02-q006": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-02-q007": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-03"
+    },
+    "qlts-mock-02-q008": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-03"
+    },
+    "qlts-mock-02-q009": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-09"
+    },
+    "qlts-mock-02-q010": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-02-q011": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-07"
+    },
+    "qlts-mock-02-q012": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-02-q013": {
+      "subjectId": "contract",
+      "chapterId": "contract-01"
+    },
+    "qlts-mock-02-q014": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-02-q015": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-02-q016": {
+      "subjectId": "tort",
+      "chapterId": "tort-02"
+    },
+    "qlts-mock-02-q017": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-07"
+    },
+    "qlts-mock-02-q018": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-02-q019": {
+      "subjectId": "business",
+      "chapterId": "business-10"
+    },
+    "qlts-mock-02-q020": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-01"
+    },
+    "qlts-mock-02-q021": {
+      "subjectId": "business",
+      "chapterId": "business-10"
+    },
+    "qlts-mock-02-q022": {
+      "subjectId": "land",
+      "chapterId": "land-07"
+    },
+    "qlts-mock-02-q023": {
+      "subjectId": "contract",
+      "chapterId": "contract-08"
+    },
+    "qlts-mock-02-q024": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-02"
+    },
+    "qlts-mock-02-q025": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-01"
+    },
+    "qlts-mock-02-q026": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-02-q027": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-02-q028": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-02-q029": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-08"
+    },
+    "qlts-mock-02-q030": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-02-q031": {
+      "subjectId": "business",
+      "chapterId": "business-08"
+    },
+    "qlts-mock-02-q032": {
+      "subjectId": "land",
+      "chapterId": "land-05"
+    },
+    "qlts-mock-02-q033": {
+      "subjectId": "contract",
+      "chapterId": "contract-05"
+    },
+    "qlts-mock-02-q034": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-04"
+    },
+    "qlts-mock-02-q035": {
+      "subjectId": "property-practice",
+      "chapterId": "property-practice-03"
+    },
+    "qlts-mock-02-q036": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-02-q037": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-02-q038": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-05"
+    },
+    "qlts-mock-02-q039": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-02-q040": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-02-q041": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-02-q042": {
+      "subjectId": "business",
+      "chapterId": "business-07"
+    },
+    "qlts-mock-02-q043": {
+      "subjectId": "land",
+      "chapterId": "land-05"
+    },
+    "qlts-mock-02-q044": {
+      "subjectId": "contract",
+      "chapterId": "contract-06"
+    },
+    "qlts-mock-02-q045": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-02-q046": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-03"
+    },
+    "qlts-mock-02-q047": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-02-q048": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-02-q049": {
+      "subjectId": "business",
+      "chapterId": "business-08"
+    },
+    "qlts-mock-02-q050": {
+      "subjectId": "land",
+      "chapterId": "land-01"
+    },
+    "qlts-mock-02-q051": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-07"
+    },
+    "qlts-mock-02-q052": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-02-q053": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-07"
+    },
+    "qlts-mock-02-q054": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-01"
+    },
+    "qlts-mock-02-q055": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-02-q056": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-02-q057": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-02-q058": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-03"
+    },
+    "qlts-mock-02-q059": {
+      "subjectId": "contract",
+      "chapterId": "contract-04"
+    },
+    "qlts-mock-02-q060": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-09"
+    },
+    "qlts-mock-02-q061": {
+      "subjectId": "tort",
+      "chapterId": "tort-08"
+    },
+    "qlts-mock-02-q062": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-02-q063": {
+      "subjectId": "dispute",
+      "chapterId": "dispute-06"
+    },
+    "qlts-mock-02-q064": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-09"
+    },
+    "qlts-mock-02-q065": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-02"
+    },
+    "qlts-mock-02-q066": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-02"
+    },
+    "qlts-mock-02-q067": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-02-q068": {
+      "subjectId": "contract",
+      "chapterId": "contract-02"
+    },
+    "qlts-mock-02-q069": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-04"
+    },
+    "qlts-mock-02-q070": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-06"
+    },
+    "qlts-mock-02-q071": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-02-q072": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-05"
+    },
+    "qlts-mock-02-q073": {
+      "subjectId": "contract",
+      "chapterId": "contract-10"
+    },
+    "qlts-mock-02-q074": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-02-q075": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-05"
+    },
+    "qlts-mock-02-q076": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-02-q077": {
+      "subjectId": "dispute",
+      "chapterId": "dispute-03"
+    },
+    "qlts-mock-02-q078": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-02-q079": {
+      "subjectId": "land",
+      "chapterId": "land-06"
+    },
+    "qlts-mock-02-q080": {
+      "subjectId": "contract",
+      "chapterId": "contract-10"
+    },
+    "qlts-mock-02-q081": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-06"
+    },
+    "qlts-mock-02-q082": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-02-q083": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-02-q084": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-02-q085": {
+      "subjectId": "contract",
+      "chapterId": "contract-01"
+    },
+    "qlts-mock-02-q086": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-05"
+    },
+    "qlts-mock-02-q087": {
+      "subjectId": "tort",
+      "chapterId": "tort-06"
+    },
+    "qlts-mock-02-q088": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-02-q089": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-09"
+    },
+    "qlts-mock-02-q090": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-03-q001": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-03-q002": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-01"
+    },
+    "qlts-mock-03-q003": {
+      "subjectId": "wills",
+      "chapterId": "wills-10"
+    },
+    "qlts-mock-03-q004": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-03-q005": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-03-q006": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-08"
+    },
+    "qlts-mock-03-q007": {
+      "subjectId": "tort",
+      "chapterId": "tort-01"
+    },
+    "qlts-mock-03-q008": {
+      "subjectId": "contract",
+      "chapterId": "contract-01"
+    },
+    "qlts-mock-03-q009": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-03-q010": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-03"
+    },
+    "qlts-mock-03-q011": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-02"
+    },
+    "qlts-mock-03-q012": {
+      "subjectId": "contract",
+      "chapterId": "contract-06"
+    },
+    "qlts-mock-03-q013": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-03-q014": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-03-q015": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-04"
+    },
+    "qlts-mock-03-q016": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-02"
+    },
+    "qlts-mock-03-q017": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-08"
+    },
+    "qlts-mock-03-q018": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-09"
+    },
+    "qlts-mock-03-q019": {
+      "subjectId": "business",
+      "chapterId": "business-06"
+    },
+    "qlts-mock-03-q020": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-11"
+    },
+    "qlts-mock-03-q021": {
+      "subjectId": "land",
+      "chapterId": "land-04"
+    },
+    "qlts-mock-03-q022": {
+      "subjectId": "wills",
+      "chapterId": "wills-10"
+    },
+    "qlts-mock-03-q023": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-03-q028": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-03-q029": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-01"
+    },
+    "qlts-mock-03-q030": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-06"
+    },
+    "qlts-mock-03-q031": {
+      "subjectId": "contract",
+      "chapterId": "contract-01"
+    },
+    "qlts-mock-03-q032": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-02"
+    },
+    "qlts-mock-03-q033": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-06"
+    },
+    "qlts-mock-03-q034": {
+      "subjectId": "wills",
+      "chapterId": "wills-10"
+    },
+    "qlts-mock-03-q035": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-03-q036": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-03-q037": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-03-q038": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-02"
+    },
+    "qlts-mock-03-q039": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-09"
+    },
+    "qlts-mock-03-q040": {
+      "subjectId": "land",
+      "chapterId": "land-09"
+    },
+    "qlts-mock-03-q041": {
+      "subjectId": "tort",
+      "chapterId": "tort-01"
+    },
+    "qlts-mock-03-q042": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-04"
+    },
+    "qlts-mock-03-q043": {
+      "subjectId": "property-practice",
+      "chapterId": "property-practice-07"
+    },
+    "qlts-mock-03-q044": {
+      "subjectId": "contract",
+      "chapterId": "contract-04"
+    },
+    "qlts-mock-03-q045": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-03-q046": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-08"
+    },
+    "qlts-mock-03-q047": {
+      "subjectId": "business",
+      "chapterId": "business-05"
+    },
+    "qlts-mock-03-q048": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-03-q049": {
+      "subjectId": "business",
+      "chapterId": "business-08"
+    },
+    "qlts-mock-03-q050": {
+      "subjectId": "land",
+      "chapterId": "land-06"
+    },
+    "qlts-mock-03-q051": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-02"
+    },
+    "qlts-mock-03-q052": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-03-q053": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-03-q054": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-03"
+    },
+    "qlts-mock-03-q055": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-03-q056": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-03-q057": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-09"
+    },
+    "qlts-mock-03-q058": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-03-q059": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-02"
+    },
+    "qlts-mock-03-q060": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-03-q061": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-03"
+    },
+    "qlts-mock-03-q062": {
+      "subjectId": "tort",
+      "chapterId": "tort-06"
+    },
+    "qlts-mock-03-q063": {
+      "subjectId": "contract",
+      "chapterId": "contract-02"
+    },
+    "qlts-mock-03-q064": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-07"
+    },
+    "qlts-mock-03-q065": {
+      "subjectId": "wills",
+      "chapterId": "wills-05"
+    },
+    "qlts-mock-03-q066": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-03-q067": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-01"
+    },
+    "qlts-mock-03-q068": {
+      "subjectId": "business",
+      "chapterId": "business-09"
+    },
+    "qlts-mock-03-q069": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-03-q070": {
+      "subjectId": "property-practice",
+      "chapterId": "property-practice-10"
+    },
+    "qlts-mock-03-q071": {
+      "subjectId": "land",
+      "chapterId": "land-03"
+    },
+    "qlts-mock-03-q072": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-06"
+    },
+    "qlts-mock-03-q073": {
+      "subjectId": "contract",
+      "chapterId": "contract-02"
+    },
+    "qlts-mock-03-q074": {
+      "subjectId": "criminal-practice",
+      "chapterId": "criminal-practice-09"
+    },
+    "qlts-mock-03-q075": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-08"
+    },
+    "qlts-mock-03-q076": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-08"
+    },
+    "qlts-mock-03-q077": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-02"
+    },
+    "qlts-mock-03-q078": {
+      "subjectId": "land",
+      "chapterId": "land-05"
+    },
+    "qlts-mock-03-q079": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-03-q080": {
+      "subjectId": "contract",
+      "chapterId": "contract-05"
+    },
+    "qlts-mock-03-q081": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-02"
+    },
+    "qlts-mock-03-q082": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-09"
+    },
+    "qlts-mock-03-q083": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-03-q084": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-09"
+    },
+    "qlts-mock-03-q085": {
+      "subjectId": "tort",
+      "chapterId": "tort-08"
+    },
+    "qlts-mock-03-q086": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-06"
+    },
+    "qlts-mock-03-q087": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-03-q088": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-03-q089": {
+      "subjectId": "dispute",
+      "chapterId": "dispute-06"
+    },
+    "qlts-mock-03-q090": {
+      "subjectId": "land",
+      "chapterId": "land-03"
+    },
+    "qlts-mock-04-q001": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-04-q002": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-04-q003": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-04-q004": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-04-q005": {
+      "subjectId": "contract",
+      "chapterId": "contract-04"
+    },
+    "qlts-mock-04-q006": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-06"
+    },
+    "qlts-mock-04-q007": {
+      "subjectId": "business",
+      "chapterId": "business-10"
+    },
+    "qlts-mock-04-q008": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-05"
+    },
+    "qlts-mock-04-q009": {
+      "subjectId": "land",
+      "chapterId": "land-05"
+    },
+    "qlts-mock-04-q010": {
+      "subjectId": "contract",
+      "chapterId": "contract-02"
+    },
+    "qlts-mock-04-q011": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-04-q012": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-04-q013": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-02"
+    },
+    "qlts-mock-04-q014": {
+      "subjectId": "tort",
+      "chapterId": "tort-08"
+    },
+    "qlts-mock-04-q015": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-04-q016": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-04-q017": {
+      "subjectId": "business",
+      "chapterId": "business-07"
+    },
+    "qlts-mock-04-q018": {
+      "subjectId": "property-practice",
+      "chapterId": "property-practice-08"
+    },
+    "qlts-mock-04-q019": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-05"
+    },
+    "qlts-mock-04-q020": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-04-q021": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-03"
+    },
+    "qlts-mock-04-q022": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-05"
+    },
+    "qlts-mock-04-q023": {
+      "subjectId": "tort",
+      "chapterId": "tort-06"
+    },
+    "qlts-mock-04-q024": {
+      "subjectId": "contract",
+      "chapterId": "contract-06"
+    },
+    "qlts-mock-04-q025": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-04-q026": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-04-q027": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-04-q028": {
+      "subjectId": "land",
+      "chapterId": "land-06"
+    },
+    "qlts-mock-04-q029": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-02"
+    },
+    "qlts-mock-04-q030": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-04-q031": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-01"
+    },
+    "qlts-mock-04-q032": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-04-q033": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-04-q034": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-04-q035": {
+      "subjectId": "contract",
+      "chapterId": "contract-01"
+    },
+    "qlts-mock-04-q036": {
+      "subjectId": "wills",
+      "chapterId": "wills-06"
+    },
+    "qlts-mock-04-q037": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-04-q038": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-09"
+    },
+    "qlts-mock-04-q039": {
+      "subjectId": "wills",
+      "chapterId": "wills-10"
+    },
+    "qlts-mock-04-q040": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-07"
+    },
+    "qlts-mock-04-q041": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-01"
+    },
+    "qlts-mock-04-q042": {
+      "subjectId": "contract",
+      "chapterId": "contract-04"
+    },
+    "qlts-mock-04-q043": {
+      "subjectId": "tort",
+      "chapterId": "tort-07"
+    },
+    "qlts-mock-04-q044": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-04-q045": {
+      "subjectId": "contract",
+      "chapterId": "contract-07"
+    },
+    "qlts-mock-04-q046": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-04-q047": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-08"
+    },
+    "qlts-mock-04-q048": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-04-q049": {
+      "subjectId": "business",
+      "chapterId": "business-06"
+    },
+    "qlts-mock-04-q050": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-04-q051": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-05"
+    },
+    "qlts-mock-04-q052": {
+      "subjectId": "land",
+      "chapterId": "land-05"
+    },
+    "qlts-mock-04-q053": {
+      "subjectId": "business",
+      "chapterId": "business-09"
+    },
+    "qlts-mock-04-q054": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-08"
+    },
+    "qlts-mock-04-q055": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-04-q056": {
+      "subjectId": "contract",
+      "chapterId": "contract-10"
+    },
+    "qlts-mock-04-q057": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-03"
+    },
+    "qlts-mock-04-q058": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-04-q059": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-04-q060": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-04-q061": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-03"
+    },
+    "qlts-mock-04-q062": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-04-q063": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-04-q064": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-04"
+    },
+    "qlts-mock-04-q065": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-09"
+    },
+    "qlts-mock-04-q066": {
+      "subjectId": "wills",
+      "chapterId": "wills-03"
+    },
+    "qlts-mock-04-q067": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-01"
+    },
+    "qlts-mock-04-q068": {
+      "subjectId": "contract",
+      "chapterId": "contract-05"
+    },
+    "qlts-mock-04-q069": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-09"
+    },
+    "qlts-mock-04-q070": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-01"
+    },
+    "qlts-mock-04-q071": {
+      "subjectId": "business",
+      "chapterId": "business-08"
+    },
+    "qlts-mock-04-q072": {
+      "subjectId": "land",
+      "chapterId": "land-08"
+    },
+    "qlts-mock-04-q073": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-02"
+    },
+    "qlts-mock-04-q074": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-04-q076": {
+      "subjectId": "tort",
+      "chapterId": "tort-07"
+    },
+    "qlts-mock-04-q077": {
+      "subjectId": "contract",
+      "chapterId": "contract-05"
+    },
+    "qlts-mock-04-q078": {
+      "subjectId": "wills",
+      "chapterId": "wills-07"
+    },
+    "qlts-mock-04-q079": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-05"
+    },
+    "qlts-mock-04-q080": {
+      "subjectId": "contract",
+      "chapterId": "contract-10"
+    },
+    "qlts-mock-04-q081": {
+      "subjectId": "land",
+      "chapterId": "land-08"
+    },
+    "qlts-mock-04-q082": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-04-q083": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-04-q084": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-04-q085": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-04-q086": {
+      "subjectId": "criminal-practice",
+      "chapterId": "criminal-practice-01"
+    },
+    "qlts-mock-04-q087": {
+      "subjectId": "land",
+      "chapterId": "land-09"
+    },
+    "qlts-mock-04-q088": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-04-q089": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-11"
+    },
+    "qlts-mock-04-q090": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-05"
+    },
+    "qlts-mock-05-q001": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-05-q002": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-06"
+    },
+    "qlts-mock-05-q003": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-05-q004": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-05-q005": {
+      "subjectId": "land",
+      "chapterId": "land-01"
+    },
+    "qlts-mock-05-q006": {
+      "subjectId": "wills",
+      "chapterId": "wills-06"
+    },
+    "qlts-mock-05-q007": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-05-q008": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-08"
+    },
+    "qlts-mock-05-q009": {
+      "subjectId": "tort",
+      "chapterId": "tort-07"
+    },
+    "qlts-mock-05-q010": {
+      "subjectId": "contract",
+      "chapterId": "contract-04"
+    },
+    "qlts-mock-05-q011": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-05-q012": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-02"
+    },
+    "qlts-mock-05-q013": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-02"
+    },
+    "qlts-mock-05-q014": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-07"
+    },
+    "qlts-mock-05-q015": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-05-q016": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-06"
+    },
+    "qlts-mock-05-q017": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-05"
+    },
+    "qlts-mock-05-q018": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-05-q019": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-08"
+    },
+    "qlts-mock-05-q020": {
+      "subjectId": "business",
+      "chapterId": "business-10"
+    },
+    "qlts-mock-05-q021": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-05-q022": {
+      "subjectId": "land",
+      "chapterId": "land-05"
+    },
+    "qlts-mock-05-q023": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-05-q024": {
+      "subjectId": "contract",
+      "chapterId": "contract-03"
+    },
+    "qlts-mock-05-q025": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-05-q026": {
+      "subjectId": "business",
+      "chapterId": "business-05"
+    },
+    "qlts-mock-05-q027": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-03"
+    },
+    "qlts-mock-05-q028": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-01"
+    },
+    "qlts-mock-05-q029": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-05-q030": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-05"
+    },
+    "qlts-mock-05-q031": {
+      "subjectId": "land",
+      "chapterId": "land-06"
+    },
+    "qlts-mock-05-q032": {
+      "subjectId": "contract",
+      "chapterId": "contract-10"
+    },
+    "qlts-mock-05-q033": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-05-q034": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-05-q035": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-05-q036": {
+      "subjectId": "tort",
+      "chapterId": "tort-01"
+    },
+    "qlts-mock-05-q037": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-02"
+    },
+    "qlts-mock-05-q038": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-05-q039": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-06"
+    },
+    "qlts-mock-05-q040": {
+      "subjectId": "business",
+      "chapterId": "business-07"
+    },
+    "qlts-mock-05-q041": {
+      "subjectId": "land",
+      "chapterId": "land-04"
+    },
+    "qlts-mock-05-q042": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-05-q043": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-05-q044": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-05-q045": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-02"
+    },
+    "qlts-mock-05-q046": {
+      "subjectId": "contract",
+      "chapterId": "contract-09"
+    },
+    "qlts-mock-05-q047": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-03"
+    },
+    "qlts-mock-05-q048": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-05-q049": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-11"
+    },
+    "qlts-mock-05-q050": {
+      "subjectId": "business",
+      "chapterId": "business-09"
+    },
+    "qlts-mock-05-q051": {
+      "subjectId": "land",
+      "chapterId": "land-03"
+    },
+    "qlts-mock-05-q052": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-01"
+    },
+    "qlts-mock-05-q053": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-05"
+    },
+    "qlts-mock-05-q054": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-05-q055": {
+      "subjectId": "wills",
+      "chapterId": "wills-11"
+    },
+    "qlts-mock-05-q056": {
+      "subjectId": "business",
+      "chapterId": "business-07"
+    },
+    "qlts-mock-05-q057": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-05-q058": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-03"
+    },
+    "qlts-mock-05-q059": {
+      "subjectId": "contract",
+      "chapterId": "contract-02"
+    },
+    "qlts-mock-05-q060": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-05-q061": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-05-q062": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-05-q063": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-05-q064": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-06"
+    },
+    "qlts-mock-05-q065": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-05-q066": {
+      "subjectId": "property-practice",
+      "chapterId": "property-practice-02"
+    },
+    "qlts-mock-05-q067": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-05-q068": {
+      "subjectId": "criminal-practice",
+      "chapterId": "criminal-practice-08"
+    },
+    "qlts-mock-05-q069": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-04"
+    },
+    "qlts-mock-05-q070": {
+      "subjectId": "land",
+      "chapterId": "land-04"
+    },
+    "qlts-mock-05-q071": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-03"
+    },
+    "qlts-mock-05-q072": {
+      "subjectId": "contract",
+      "chapterId": "contract-02"
+    },
+    "qlts-mock-05-q073": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-05-q074": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-05"
+    },
+    "qlts-mock-05-q075": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-03"
+    },
+    "qlts-mock-05-q076": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-01"
+    },
+    "qlts-mock-05-q077": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-05-q078": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-01"
+    },
+    "qlts-mock-05-q079": {
+      "subjectId": "business",
+      "chapterId": "business-08"
+    },
+    "qlts-mock-05-q080": {
+      "subjectId": "land",
+      "chapterId": "land-08"
+    },
+    "qlts-mock-05-q081": {
+      "subjectId": "dispute",
+      "chapterId": "dispute-03"
+    },
+    "qlts-mock-05-q082": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-05"
+    },
+    "qlts-mock-05-q083": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-07"
+    },
+    "qlts-mock-05-q084": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-09"
+    },
+    "qlts-mock-05-q085": {
+      "subjectId": "tort",
+      "chapterId": "tort-08"
+    },
+    "qlts-mock-05-q086": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-05-q087": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-03"
+    },
+    "qlts-mock-05-q088": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-06"
+    },
+    "qlts-mock-05-q089": {
+      "subjectId": "land",
+      "chapterId": "land-06"
+    },
+    "qlts-mock-05-q090": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-06-q002": {
+      "subjectId": "contract",
+      "chapterId": "contract-01"
+    },
+    "qlts-mock-06-q003": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-11"
+    },
+    "qlts-mock-06-q004": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-05"
+    },
+    "qlts-mock-06-q005": {
+      "subjectId": "property-practice",
+      "chapterId": "property-practice-08"
+    },
+    "qlts-mock-06-q006": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-06-q007": {
+      "subjectId": "wills",
+      "chapterId": "wills-10"
+    },
+    "qlts-mock-06-q009": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-06-q010": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-06-q011": {
+      "subjectId": "tort",
+      "chapterId": "tort-01"
+    },
+    "qlts-mock-06-q012": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-08"
+    },
+    "qlts-mock-06-q013": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-06"
+    },
+    "qlts-mock-06-q014": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-06-q015": {
+      "subjectId": "contract",
+      "chapterId": "contract-08"
+    },
+    "qlts-mock-06-q016": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-06-q017": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-05"
+    },
+    "qlts-mock-06-q018": {
+      "subjectId": "tort",
+      "chapterId": "tort-01"
+    },
+    "qlts-mock-06-q019": {
+      "subjectId": "contract",
+      "chapterId": "contract-09"
+    },
+    "qlts-mock-06-q020": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-01"
+    },
+    "qlts-mock-06-q021": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-06-q023": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-06-q024": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-12"
+    },
+    "qlts-mock-06-q026": {
+      "subjectId": "contract",
+      "chapterId": "contract-01"
+    },
+    "qlts-mock-06-q027": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-05"
+    },
+    "qlts-mock-06-q028": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-06-q029": {
+      "subjectId": "land",
+      "chapterId": "land-06"
+    },
+    "qlts-mock-06-q032": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-06"
+    },
+    "qlts-mock-06-q033": {
+      "subjectId": "business",
+      "chapterId": "business-07"
+    },
+    "qlts-mock-06-q034": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-02"
+    },
+    "qlts-mock-06-q035": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-06-q036": {
+      "subjectId": "contract",
+      "chapterId": "contract-03"
+    },
+    "qlts-mock-06-q038": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-09"
+    },
+    "qlts-mock-06-q039": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-12"
+    },
+    "qlts-mock-06-q040": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-06-q041": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-06-q042": {
+      "subjectId": "tort",
+      "chapterId": "tort-04"
+    },
+    "qlts-mock-06-q043": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-06-q044": {
+      "subjectId": "contract",
+      "chapterId": "contract-01"
+    },
+    "qlts-mock-06-q047": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-06-q048": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-02"
+    },
+    "qlts-mock-06-q049": {
+      "subjectId": "land",
+      "chapterId": "land-09"
+    },
+    "qlts-mock-06-q050": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-06-q051": {
+      "subjectId": "tort",
+      "chapterId": "tort-08"
+    },
+    "qlts-mock-06-q052": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-06-q053": {
+      "subjectId": "business",
+      "chapterId": "business-10"
+    },
+    "qlts-mock-06-q055": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-04"
+    },
+    "qlts-mock-06-q057": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-06-q058": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-06"
+    },
+    "qlts-mock-06-q059": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-06-q060": {
+      "subjectId": "property-practice",
+      "chapterId": "property-practice-02"
+    },
+    "qlts-mock-06-q061": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-06-q063": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-06-q064": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-06-q065": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-01"
+    },
+    "qlts-mock-06-q066": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-01"
+    },
+    "qlts-mock-06-q067": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-06-q068": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-06-q069": {
+      "subjectId": "land",
+      "chapterId": "land-03"
+    },
+    "qlts-mock-06-q070": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-06"
+    },
+    "qlts-mock-06-q071": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-06-q072": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-06-q073": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-04"
+    },
+    "qlts-mock-06-q074": {
+      "subjectId": "contract",
+      "chapterId": "contract-08"
+    },
+    "qlts-mock-06-q075": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-05"
+    },
+    "qlts-mock-06-q076": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-06-q077": {
+      "subjectId": "land",
+      "chapterId": "land-07"
+    },
+    "qlts-mock-06-q079": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-06-q080": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-06-q083": {
+      "subjectId": "contract",
+      "chapterId": "contract-03"
+    },
+    "qlts-mock-06-q084": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-02"
+    },
+    "qlts-mock-06-q085": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-06-q086": {
+      "subjectId": "tort",
+      "chapterId": "tort-01"
+    },
+    "qlts-mock-06-q087": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-06"
+    },
+    "qlts-mock-06-q088": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-08"
+    },
+    "qlts-mock-06-q089": {
+      "subjectId": "land",
+      "chapterId": "land-03"
+    },
+    "qlts-mock-06-q090": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-07-q001": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-07-q002": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-07-q004": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-07-q005": {
+      "subjectId": "property-practice",
+      "chapterId": "property-practice-06"
+    },
+    "qlts-mock-07-q006": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-07-q007": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-11"
+    },
+    "qlts-mock-07-q008": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-08"
+    },
+    "qlts-mock-07-q009": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-07-q010": {
+      "subjectId": "contract",
+      "chapterId": "contract-04"
+    },
+    "qlts-mock-07-q012": {
+      "subjectId": "wills",
+      "chapterId": "wills-10"
+    },
+    "qlts-mock-07-q014": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-07-q016": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-07-q017": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-07-q019": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-07-q020": {
+      "subjectId": "land",
+      "chapterId": "land-03"
+    },
+    "qlts-mock-07-q021": {
+      "subjectId": "tort",
+      "chapterId": "tort-08"
+    },
+    "qlts-mock-07-q022": {
+      "subjectId": "contract",
+      "chapterId": "contract-03"
+    },
+    "qlts-mock-07-q024": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-07-q025": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-07-q026": {
+      "subjectId": "land",
+      "chapterId": "land-07"
+    },
+    "qlts-mock-07-q027": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-05"
+    },
+    "qlts-mock-07-q028": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-07-q029": {
+      "subjectId": "business",
+      "chapterId": "business-07"
+    },
+    "qlts-mock-07-q030": {
+      "subjectId": "contract",
+      "chapterId": "contract-09"
+    },
+    "qlts-mock-07-q031": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-07-q032": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-07-q033": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-07-q034": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-01"
+    },
+    "qlts-mock-07-q036": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-02"
+    },
+    "qlts-mock-07-q037": {
+      "subjectId": "wills",
+      "chapterId": "wills-06"
+    },
+    "qlts-mock-07-q038": {
+      "subjectId": "dispute",
+      "chapterId": "dispute-08"
+    },
+    "qlts-mock-07-q039": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-07-q040": {
+      "subjectId": "contract",
+      "chapterId": "contract-10"
+    },
+    "qlts-mock-07-q041": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-07-q043": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-07-q044": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-07-q045": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-03"
+    },
+    "qlts-mock-07-q047": {
+      "subjectId": "tort",
+      "chapterId": "tort-06"
+    },
+    "qlts-mock-07-q048": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-07-q052": {
+      "subjectId": "contract",
+      "chapterId": "contract-02"
+    },
+    "qlts-mock-07-q054": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-07-q055": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-03"
+    },
+    "qlts-mock-07-q056": {
+      "subjectId": "tort",
+      "chapterId": "tort-01"
+    },
+    "qlts-mock-07-q057": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-01"
+    },
+    "qlts-mock-07-q058": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-07-q060": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-09"
+    },
+    "qlts-mock-07-q062": {
+      "subjectId": "property-practice",
+      "chapterId": "property-practice-09"
+    },
+    "qlts-mock-07-q063": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-07-q064": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-07-q065": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-05"
+    },
+    "qlts-mock-07-q066": {
+      "subjectId": "land",
+      "chapterId": "land-01"
+    },
+    "qlts-mock-07-q068": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-07-q069": {
+      "subjectId": "contract",
+      "chapterId": "contract-05"
+    },
+    "qlts-mock-07-q070": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-07-q071": {
+      "subjectId": "tort",
+      "chapterId": "tort-01"
+    },
+    "qlts-mock-07-q072": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-06"
+    },
+    "qlts-mock-07-q074": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-08"
+    },
+    "qlts-mock-07-q075": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-07-q076": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-04"
+    },
+    "qlts-mock-07-q077": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-07-q079": {
+      "subjectId": "contract",
+      "chapterId": "contract-06"
+    },
+    "qlts-mock-07-q080": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-01"
+    },
+    "qlts-mock-07-q082": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-06"
+    },
+    "qlts-mock-07-q083": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-07-q084": {
+      "subjectId": "contract",
+      "chapterId": "contract-08"
+    },
+    "qlts-mock-07-q085": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-09"
+    },
+    "qlts-mock-07-q086": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-07-q087": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-07-q089": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-07-q090": {
+      "subjectId": "land",
+      "chapterId": "land-09"
+    },
+    "qlts-mock-08-q001": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-08-q003": {
+      "subjectId": "contract",
+      "chapterId": "contract-10"
+    },
+    "qlts-mock-08-q004": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-09"
+    },
+    "qlts-mock-08-q006": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-08-q007": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-08-q008": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-08-q010": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-08-q011": {
+      "subjectId": "contract",
+      "chapterId": "contract-07"
+    },
+    "qlts-mock-08-q012": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-07"
+    },
+    "qlts-mock-08-q013": {
+      "subjectId": "wills",
+      "chapterId": "wills-10"
+    },
+    "qlts-mock-08-q014": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-08-q016": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-08-q017": {
+      "subjectId": "dispute",
+      "chapterId": "dispute-07"
+    },
+    "qlts-mock-08-q018": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-01"
+    },
+    "qlts-mock-08-q019": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-08-q020": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-08-q021": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-05"
+    },
+    "qlts-mock-08-q022": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-09"
+    },
+    "qlts-mock-08-q023": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-08-q024": {
+      "subjectId": "contract",
+      "chapterId": "contract-01"
+    },
+    "qlts-mock-08-q026": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-08-q027": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-01"
+    },
+    "qlts-mock-08-q028": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-08-q029": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-04"
+    },
+    "qlts-mock-08-q030": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-08-q031": {
+      "subjectId": "tort",
+      "chapterId": "tort-06"
+    },
+    "qlts-mock-08-q032": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-08-q033": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-08-q035": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-09"
+    },
+    "qlts-mock-08-q036": {
+      "subjectId": "land",
+      "chapterId": "land-05"
+    },
+    "qlts-mock-08-q038": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-01"
+    },
+    "qlts-mock-08-q039": {
+      "subjectId": "contract",
+      "chapterId": "contract-02"
+    },
+    "qlts-mock-08-q040": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-08-q043": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-08-q044": {
+      "subjectId": "tort",
+      "chapterId": "tort-01"
+    },
+    "qlts-mock-08-q045": {
+      "subjectId": "business",
+      "chapterId": "business-07"
+    },
+    "qlts-mock-08-q046": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-08-q047": {
+      "subjectId": "land",
+      "chapterId": "land-05"
+    },
+    "qlts-mock-08-q048": {
+      "subjectId": "contract",
+      "chapterId": "contract-01"
+    },
+    "qlts-mock-08-q049": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-08-q051": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-06"
+    },
+    "qlts-mock-08-q052": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-06"
+    },
+    "qlts-mock-08-q053": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-08-q055": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-08-q056": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-07"
+    },
+    "qlts-mock-08-q057": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-08-q058": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-08-q061": {
+      "subjectId": "land",
+      "chapterId": "land-05"
+    },
+    "qlts-mock-08-q062": {
+      "subjectId": "contract",
+      "chapterId": "contract-04"
+    },
+    "qlts-mock-08-q063": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-08-q064": {
+      "subjectId": "tort",
+      "chapterId": "tort-07"
+    },
+    "qlts-mock-08-q065": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-09"
+    },
+    "qlts-mock-08-q066": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-08-q067": {
+      "subjectId": "wills",
+      "chapterId": "wills-10"
+    },
+    "qlts-mock-08-q068": {
+      "subjectId": "tort",
+      "chapterId": "tort-01"
+    },
+    "qlts-mock-08-q069": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-05"
+    },
+    "qlts-mock-08-q070": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-08-q073": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-08-q074": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-08-q075": {
+      "subjectId": "tort",
+      "chapterId": "tort-08"
+    },
+    "qlts-mock-08-q076": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-04"
+    },
+    "qlts-mock-08-q077": {
+      "subjectId": "business",
+      "chapterId": "business-10"
+    },
+    "qlts-mock-08-q078": {
+      "subjectId": "contract",
+      "chapterId": "contract-03"
+    },
+    "qlts-mock-08-q079": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-08-q080": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-02"
+    },
+    "qlts-mock-08-q081": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-08-q082": {
+      "subjectId": "land",
+      "chapterId": "land-09"
+    },
+    "qlts-mock-08-q083": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-02"
+    },
+    "qlts-mock-08-q084": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-08-q085": {
+      "subjectId": "contract",
+      "chapterId": "contract-06"
+    },
+    "qlts-mock-08-q087": {
+      "subjectId": "wills",
+      "chapterId": "wills-11"
+    },
+    "qlts-mock-08-q089": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-08-q090": {
+      "subjectId": "land",
+      "chapterId": "land-05"
+    },
+    "qlts-mock-09-q001": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-09-q002": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-09-q003": {
+      "subjectId": "land",
+      "chapterId": "land-07"
+    },
+    "qlts-mock-09-q005": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-05"
+    },
+    "qlts-mock-09-q006": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-09-q007": {
+      "subjectId": "contract",
+      "chapterId": "contract-01"
+    },
+    "qlts-mock-09-q008": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-09-q011": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-09-q014": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-09-q015": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-09-q016": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-09-q017": {
+      "subjectId": "tort",
+      "chapterId": "tort-06"
+    },
+    "qlts-mock-09-q018": {
+      "subjectId": "wills",
+      "chapterId": "wills-09"
+    },
+    "qlts-mock-09-q019": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-01"
+    },
+    "qlts-mock-09-q020": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-03"
+    },
+    "qlts-mock-09-q021": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-07"
+    },
+    "qlts-mock-09-q022": {
+      "subjectId": "property-practice",
+      "chapterId": "property-practice-07"
+    },
+    "qlts-mock-09-q023": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-09-q026": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-09-q027": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-09-q028": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-08"
+    },
+    "qlts-mock-09-q029": {
+      "subjectId": "contract",
+      "chapterId": "contract-05"
+    },
+    "qlts-mock-09-q031": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-09-q032": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-09-q033": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-01"
+    },
+    "qlts-mock-09-q034": {
+      "subjectId": "tort",
+      "chapterId": "tort-01"
+    },
+    "qlts-mock-09-q035": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-06"
+    },
+    "qlts-mock-09-q036": {
+      "subjectId": "contract",
+      "chapterId": "contract-08"
+    },
+    "qlts-mock-09-q037": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-09-q038": {
+      "subjectId": "contract",
+      "chapterId": "contract-09"
+    },
+    "qlts-mock-09-q039": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-09-q040": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-09-q041": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-09-q042": {
+      "subjectId": "land",
+      "chapterId": "land-03"
+    },
+    "qlts-mock-09-q043": {
+      "subjectId": "tort",
+      "chapterId": "tort-04"
+    },
+    "qlts-mock-09-q044": {
+      "subjectId": "contract",
+      "chapterId": "contract-06"
+    },
+    "qlts-mock-09-q046": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-06"
+    },
+    "qlts-mock-09-q048": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-03"
+    },
+    "qlts-mock-09-q049": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-09-q050": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-06"
+    },
+    "qlts-mock-09-q051": {
+      "subjectId": "land",
+      "chapterId": "land-07"
+    },
+    "qlts-mock-09-q052": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-04"
+    },
+    "qlts-mock-09-q054": {
+      "subjectId": "criminal-practice",
+      "chapterId": "criminal-practice-03"
+    },
+    "qlts-mock-09-q055": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-09-q056": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-09-q057": {
+      "subjectId": "dispute",
+      "chapterId": "dispute-08"
+    },
+    "qlts-mock-09-q058": {
+      "subjectId": "contract",
+      "chapterId": "contract-03"
+    },
+    "qlts-mock-09-q060": {
+      "subjectId": "tort",
+      "chapterId": "tort-07"
+    },
+    "qlts-mock-09-q061": {
+      "subjectId": "property-practice",
+      "chapterId": "property-practice-03"
+    },
+    "qlts-mock-09-q062": {
+      "subjectId": "criminal-practice",
+      "chapterId": "criminal-practice-04"
+    },
+    "qlts-mock-09-q064": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-09-q065": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-09-q066": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-09-q067": {
+      "subjectId": "contract",
+      "chapterId": "contract-06"
+    },
+    "qlts-mock-09-q068": {
+      "subjectId": "dispute",
+      "chapterId": "dispute-07"
+    },
+    "qlts-mock-09-q070": {
+      "subjectId": "wills",
+      "chapterId": "wills-10"
+    },
+    "qlts-mock-09-q071": {
+      "subjectId": "contract",
+      "chapterId": "contract-10"
+    },
+    "qlts-mock-09-q072": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-03"
+    },
+    "qlts-mock-09-q073": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-09-q074": {
+      "subjectId": "land",
+      "chapterId": "land-09"
+    },
+    "qlts-mock-09-q075": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-01"
+    },
+    "qlts-mock-09-q077": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-09-q078": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-09-q079": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-06"
+    },
+    "qlts-mock-09-q082": {
+      "subjectId": "contract",
+      "chapterId": "contract-10"
+    },
+    "qlts-mock-09-q083": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-09-q084": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-09-q085": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-09-q086": {
+      "subjectId": "land",
+      "chapterId": "land-08"
+    },
+    "qlts-mock-09-q087": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-09-q088": {
+      "subjectId": "land",
+      "chapterId": "land-06"
+    },
+    "qlts-mock-09-q090": {
+      "subjectId": "business",
+      "chapterId": "business-10"
+    },
+    "qlts-mock-10-q001": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-10-q002": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-10-q003": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-10-q004": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-10-q005": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-10-q006": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-10-q008": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-12"
+    },
+    "qlts-mock-10-q009": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-07"
+    },
+    "qlts-mock-10-q010": {
+      "subjectId": "land",
+      "chapterId": "land-08"
+    },
+    "qlts-mock-10-q011": {
+      "subjectId": "contract",
+      "chapterId": "contract-07"
+    },
+    "qlts-mock-10-q012": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-10-q014": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-10-q015": {
+      "subjectId": "business",
+      "chapterId": "business-07"
+    },
+    "qlts-mock-10-q016": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-10-q018": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-10-q019": {
+      "subjectId": "land",
+      "chapterId": "land-01"
+    },
+    "qlts-mock-10-q020": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-10-q021": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-10-q022": {
+      "subjectId": "tort",
+      "chapterId": "tort-07"
+    },
+    "qlts-mock-10-q025": {
+      "subjectId": "contract",
+      "chapterId": "contract-10"
+    },
+    "qlts-mock-10-q026": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-02"
+    },
+    "qlts-mock-10-q027": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-10-q028": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-07"
+    },
+    "qlts-mock-10-q029": {
+      "subjectId": "wills",
+      "chapterId": "wills-06"
+    },
+    "qlts-mock-10-q030": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-02"
+    },
+    "qlts-mock-10-q032": {
+      "subjectId": "land",
+      "chapterId": "land-05"
+    },
+    "qlts-mock-10-q033": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-02"
+    },
+    "qlts-mock-10-q034": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-10-q035": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-08"
+    },
+    "qlts-mock-10-q036": {
+      "subjectId": "tort",
+      "chapterId": "tort-08"
+    },
+    "qlts-mock-10-q037": {
+      "subjectId": "wills",
+      "chapterId": "wills-10"
+    },
+    "qlts-mock-10-q038": {
+      "subjectId": "contract",
+      "chapterId": "contract-09"
+    },
+    "qlts-mock-10-q039": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-05"
+    },
+    "qlts-mock-10-q041": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-10-q042": {
+      "subjectId": "land",
+      "chapterId": "land-03"
+    },
+    "qlts-mock-10-q044": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-10-q047": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-10-q048": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-11"
+    },
+    "qlts-mock-10-q049": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-02"
+    },
+    "qlts-mock-10-q050": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-10-q051": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-10-q052": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-10-q053": {
+      "subjectId": "dispute",
+      "chapterId": "dispute-03"
+    },
+    "qlts-mock-10-q054": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-10-q055": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-11"
+    },
+    "qlts-mock-10-q056": {
+      "subjectId": "tort",
+      "chapterId": "tort-01"
+    },
+    "qlts-mock-10-q057": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-02"
+    },
+    "qlts-mock-10-q059": {
+      "subjectId": "contract",
+      "chapterId": "contract-01"
+    },
+    "qlts-mock-10-q060": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-10-q061": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-10-q062": {
+      "subjectId": "land",
+      "chapterId": "land-05"
+    },
+    "qlts-mock-10-q063": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-06"
+    },
+    "qlts-mock-10-q064": {
+      "subjectId": "contract",
+      "chapterId": "contract-02"
+    },
+    "qlts-mock-10-q065": {
+      "subjectId": "wills",
+      "chapterId": "wills-10"
+    },
+    "qlts-mock-10-q066": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-03"
+    },
+    "qlts-mock-10-q067": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-10-q068": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-10-q069": {
+      "subjectId": "tort",
+      "chapterId": "tort-01"
+    },
+    "qlts-mock-10-q070": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-09"
+    },
+    "qlts-mock-10-q072": {
+      "subjectId": "contract",
+      "chapterId": "contract-06"
+    },
+    "qlts-mock-10-q074": {
+      "subjectId": "business",
+      "chapterId": "business-10"
+    },
+    "qlts-mock-10-q075": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-10-q076": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-09"
+    },
+    "qlts-mock-10-q077": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-10-q078": {
+      "subjectId": "property-practice",
+      "chapterId": "property-practice-03"
+    },
+    "qlts-mock-10-q079": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-10-q081": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-10-q082": {
+      "subjectId": "contract",
+      "chapterId": "contract-03"
+    },
+    "qlts-mock-10-q083": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-04"
+    },
+    "qlts-mock-10-q084": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-10-q085": {
+      "subjectId": "business",
+      "chapterId": "business-10"
+    },
+    "qlts-mock-10-q086": {
+      "subjectId": "land",
+      "chapterId": "land-06"
+    },
+    "qlts-mock-10-q087": {
+      "subjectId": "contract",
+      "chapterId": "contract-01"
+    },
+    "qlts-mock-10-q088": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-11"
+    },
+    "qlts-mock-10-q089": {
+      "subjectId": "land",
+      "chapterId": "land-07"
+    },
+    "qlts-mock-10-q090": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-11-q001": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-11-q004": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-03"
+    },
+    "qlts-mock-11-q005": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-08"
+    },
+    "qlts-mock-11-q006": {
+      "subjectId": "property-practice",
+      "chapterId": "property-practice-04"
+    },
+    "qlts-mock-11-q007": {
+      "subjectId": "contract",
+      "chapterId": "contract-02"
+    },
+    "qlts-mock-11-q008": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-11-q009": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-11-q010": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-11-q012": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-11-q013": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-02"
+    },
+    "qlts-mock-11-q014": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-11-q016": {
+      "subjectId": "contract",
+      "chapterId": "contract-02"
+    },
+    "qlts-mock-11-q017": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-01"
+    },
+    "qlts-mock-11-q018": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-11-q019": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-11-q020": {
+      "subjectId": "tort",
+      "chapterId": "tort-04"
+    },
+    "qlts-mock-11-q023": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-11-q024": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-11-q025": {
+      "subjectId": "contract",
+      "chapterId": "contract-01"
+    },
+    "qlts-mock-11-q026": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-11-q029": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-05"
+    },
+    "qlts-mock-11-q030": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-04"
+    },
+    "qlts-mock-11-q031": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-11-q032": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-07"
+    },
+    "qlts-mock-11-q033": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-11-q034": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-11-q035": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-05"
+    },
+    "qlts-mock-11-q038": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-11-q039": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-11-q040": {
+      "subjectId": "business",
+      "chapterId": "business-07"
+    },
+    "qlts-mock-11-q041": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-11-q042": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-06"
+    },
+    "qlts-mock-11-q043": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-11-q044": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-11-q045": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-11-q046": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-11-q050": {
+      "subjectId": "tort",
+      "chapterId": "tort-06"
+    },
+    "qlts-mock-11-q051": {
+      "subjectId": "criminal-practice",
+      "chapterId": "criminal-practice-07"
+    },
+    "qlts-mock-11-q052": {
+      "subjectId": "land",
+      "chapterId": "land-06"
+    },
+    "qlts-mock-11-q053": {
+      "subjectId": "contract",
+      "chapterId": "contract-03"
+    },
+    "qlts-mock-11-q054": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-01"
+    },
+    "qlts-mock-11-q055": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-11-q058": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-11-q059": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-03"
+    },
+    "qlts-mock-11-q060": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-05"
+    },
+    "qlts-mock-11-q061": {
+      "subjectId": "land",
+      "chapterId": "land-05"
+    },
+    "qlts-mock-11-q062": {
+      "subjectId": "contract",
+      "chapterId": "contract-04"
+    },
+    "qlts-mock-11-q063": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-11-q064": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-11-q065": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-11-q067": {
+      "subjectId": "wills",
+      "chapterId": "wills-10"
+    },
+    "qlts-mock-11-q068": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-11-q069": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-02"
+    },
+    "qlts-mock-11-q070": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-11-q071": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-11-q073": {
+      "subjectId": "tort",
+      "chapterId": "tort-06"
+    },
+    "qlts-mock-11-q074": {
+      "subjectId": "criminal-practice",
+      "chapterId": "criminal-practice-08"
+    },
+    "qlts-mock-11-q075": {
+      "subjectId": "land",
+      "chapterId": "land-08"
+    },
+    "qlts-mock-11-q076": {
+      "subjectId": "contract",
+      "chapterId": "contract-05"
+    },
+    "qlts-mock-11-q077": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-11-q078": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-11-q079": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-05"
+    },
+    "qlts-mock-11-q080": {
+      "subjectId": "tort",
+      "chapterId": "tort-08"
+    },
+    "qlts-mock-11-q081": {
+      "subjectId": "criminal-practice",
+      "chapterId": "criminal-practice-09"
+    },
+    "qlts-mock-11-q082": {
+      "subjectId": "land",
+      "chapterId": "land-09"
+    },
+    "qlts-mock-11-q083": {
+      "subjectId": "contract",
+      "chapterId": "contract-08"
+    },
+    "qlts-mock-11-q084": {
+      "subjectId": "business",
+      "chapterId": "business-06"
+    },
+    "qlts-mock-11-q085": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-11-q086": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-11-q087": {
+      "subjectId": "contract",
+      "chapterId": "contract-08"
+    },
+    "qlts-mock-11-q089": {
+      "subjectId": "land",
+      "chapterId": "land-04"
+    },
+    "qlts-mock-11-q090": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-08"
+    },
+    "qlts-mock-12-q001": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-04"
+    },
+    "qlts-mock-12-q002": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-06"
+    },
+    "qlts-mock-12-q003": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-12-q004": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-12-q005": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-07"
+    },
+    "qlts-mock-12-q006": {
+      "subjectId": "land",
+      "chapterId": "land-08"
+    },
+    "qlts-mock-12-q007": {
+      "subjectId": "contract",
+      "chapterId": "contract-01"
+    },
+    "qlts-mock-12-q008": {
+      "subjectId": "land",
+      "chapterId": "land-09"
+    },
+    "qlts-mock-12-q009": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-12-q010": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-05"
+    },
+    "qlts-mock-12-q012": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-03"
+    },
+    "qlts-mock-12-q013": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-12-q016": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-12-q017": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-08"
+    },
+    "qlts-mock-12-q018": {
+      "subjectId": "property-practice",
+      "chapterId": "property-practice-08"
+    },
+    "qlts-mock-12-q019": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-05"
+    },
+    "qlts-mock-12-q020": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-12-q021": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-12-q022": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-12-q023": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-12-q024": {
+      "subjectId": "criminal-practice",
+      "chapterId": "criminal-practice-10"
+    },
+    "qlts-mock-12-q025": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-12-q026": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-05"
+    },
+    "qlts-mock-12-q027": {
+      "subjectId": "land",
+      "chapterId": "land-07"
+    },
+    "qlts-mock-12-q028": {
+      "subjectId": "land",
+      "chapterId": "land-09"
+    },
+    "qlts-mock-12-q029": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-12-q030": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-12-q031": {
+      "subjectId": "wills",
+      "chapterId": "wills-10"
+    },
+    "qlts-mock-12-q032": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-06"
+    },
+    "qlts-mock-12-q033": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-12-q034": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-02"
+    },
+    "qlts-mock-12-q035": {
+      "subjectId": "tort",
+      "chapterId": "tort-02"
+    },
+    "qlts-mock-12-q036": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-05"
+    },
+    "qlts-mock-12-q037": {
+      "subjectId": "land",
+      "chapterId": "land-07"
+    },
+    "qlts-mock-12-q038": {
+      "subjectId": "contract",
+      "chapterId": "contract-07"
+    },
+    "qlts-mock-12-q039": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-01"
+    },
+    "qlts-mock-12-q040": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-12-q041": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-04"
+    },
+    "qlts-mock-12-q042": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-12-q043": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-02"
+    },
+    "qlts-mock-12-q044": {
+      "subjectId": "business",
+      "chapterId": "business-08"
+    },
+    "qlts-mock-12-q045": {
+      "subjectId": "contract",
+      "chapterId": "contract-07"
+    },
+    "qlts-mock-12-q046": {
+      "subjectId": "land",
+      "chapterId": "land-06"
+    },
+    "qlts-mock-12-q047": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-12-q049": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-12-q050": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-04"
+    },
+    "qlts-mock-12-q051": {
+      "subjectId": "contract",
+      "chapterId": "contract-08"
+    },
+    "qlts-mock-12-q052": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-12-q053": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-12-q054": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-01"
+    },
+    "qlts-mock-12-q056": {
+      "subjectId": "tort",
+      "chapterId": "tort-07"
+    },
+    "qlts-mock-12-q057": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-12-q058": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-01"
+    },
+    "qlts-mock-12-q059": {
+      "subjectId": "business",
+      "chapterId": "business-06"
+    },
+    "qlts-mock-12-q060": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-05"
+    },
+    "qlts-mock-12-q061": {
+      "subjectId": "business",
+      "chapterId": "business-07"
+    },
+    "qlts-mock-12-q063": {
+      "subjectId": "tort",
+      "chapterId": "tort-08"
+    },
+    "qlts-mock-12-q064": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-11"
+    },
+    "qlts-mock-12-q065": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-12-q066": {
+      "subjectId": "contract",
+      "chapterId": "contract-06"
+    },
+    "qlts-mock-12-q067": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-09"
+    },
+    "qlts-mock-12-q068": {
+      "subjectId": "wills",
+      "chapterId": "wills-10"
+    },
+    "qlts-mock-12-q071": {
+      "subjectId": "tort",
+      "chapterId": "tort-01"
+    },
+    "qlts-mock-12-q072": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-06"
+    },
+    "qlts-mock-12-q073": {
+      "subjectId": "property-practice",
+      "chapterId": "property-practice-05"
+    },
+    "qlts-mock-12-q074": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-12-q075": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-12-q076": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-12-q077": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-12-q078": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-04"
+    },
+    "qlts-mock-12-q079": {
+      "subjectId": "contract",
+      "chapterId": "contract-09"
+    },
+    "qlts-mock-12-q080": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-12-q081": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-12-q083": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-12-q085": {
+      "subjectId": "criminal-practice",
+      "chapterId": "criminal-practice-03"
+    },
+    "qlts-mock-12-q086": {
+      "subjectId": "land",
+      "chapterId": "land-08"
+    },
+    "qlts-mock-12-q087": {
+      "subjectId": "contract",
+      "chapterId": "contract-08"
+    },
+    "qlts-mock-12-q088": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-12-q089": {
+      "subjectId": "land",
+      "chapterId": "land-01"
+    },
+    "qlts-mock-12-q090": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-13-q001": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-08"
+    },
+    "qlts-mock-13-q002": {
+      "subjectId": "land",
+      "chapterId": "land-05"
+    },
+    "qlts-mock-13-q003": {
+      "subjectId": "wills",
+      "chapterId": "wills-10"
+    },
+    "qlts-mock-13-q004": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-02"
+    },
+    "qlts-mock-13-q005": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-13-q007": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-13-q008": {
+      "subjectId": "tort",
+      "chapterId": "tort-08"
+    },
+    "qlts-mock-13-q009": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-13-q010": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-13-q011": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-13-q012": {
+      "subjectId": "contract",
+      "chapterId": "contract-02"
+    },
+    "qlts-mock-13-q013": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-07"
+    },
+    "qlts-mock-13-q014": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-13-q016": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-13-q017": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-01"
+    },
+    "qlts-mock-13-q018": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-13-q019": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-13-q020": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-13-q021": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-13-q022": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-11"
+    },
+    "qlts-mock-13-q023": {
+      "subjectId": "contract",
+      "chapterId": "contract-01"
+    },
+    "qlts-mock-13-q024": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-13-q025": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-13-q027": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-13-q028": {
+      "subjectId": "contract",
+      "chapterId": "contract-06"
+    },
+    "qlts-mock-13-q029": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-05"
+    },
+    "qlts-mock-13-q030": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-04"
+    },
+    "qlts-mock-13-q031": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-13-q032": {
+      "subjectId": "tort",
+      "chapterId": "tort-02"
+    },
+    "qlts-mock-13-q034": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-03"
+    },
+    "qlts-mock-13-q035": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-13-q036": {
+      "subjectId": "land",
+      "chapterId": "land-01"
+    },
+    "qlts-mock-13-q037": {
+      "subjectId": "land",
+      "chapterId": "land-09"
+    },
+    "qlts-mock-13-q039": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-13-q041": {
+      "subjectId": "tort",
+      "chapterId": "tort-01"
+    },
+    "qlts-mock-13-q042": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-13-q043": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-13-q044": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-13-q045": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-02"
+    },
+    "qlts-mock-13-q048": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-02"
+    },
+    "qlts-mock-13-q049": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-13-q050": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-13-q051": {
+      "subjectId": "contract",
+      "chapterId": "contract-04"
+    },
+    "qlts-mock-13-q052": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-01"
+    },
+    "qlts-mock-13-q053": {
+      "subjectId": "tort",
+      "chapterId": "tort-08"
+    },
+    "qlts-mock-13-q054": {
+      "subjectId": "business",
+      "chapterId": "business-07"
+    },
+    "qlts-mock-13-q056": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-13-q057": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-13-q058": {
+      "subjectId": "contract",
+      "chapterId": "contract-05"
+    },
+    "qlts-mock-13-q059": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-09"
+    },
+    "qlts-mock-13-q060": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-13-q061": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-13-q062": {
+      "subjectId": "wills",
+      "chapterId": "wills-04"
+    },
+    "qlts-mock-13-q063": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-06"
+    },
+    "qlts-mock-13-q064": {
+      "subjectId": "tort",
+      "chapterId": "tort-07"
+    },
+    "qlts-mock-13-q065": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-07"
+    },
+    "qlts-mock-13-q066": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-13-q067": {
+      "subjectId": "contract",
+      "chapterId": "contract-10"
+    },
+    "qlts-mock-13-q068": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-13-q069": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-13-q070": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-02"
+    },
+    "qlts-mock-13-q073": {
+      "subjectId": "criminal-practice",
+      "chapterId": "criminal-practice-04"
+    },
+    "qlts-mock-13-q074": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-13-q075": {
+      "subjectId": "tort",
+      "chapterId": "tort-06"
+    },
+    "qlts-mock-13-q076": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-03"
+    },
+    "qlts-mock-13-q077": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-13-q078": {
+      "subjectId": "contract",
+      "chapterId": "contract-03"
+    },
+    "qlts-mock-13-q079": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-11"
+    },
+    "qlts-mock-13-q080": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-06"
+    },
+    "qlts-mock-13-q081": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-13-q082": {
+      "subjectId": "tort",
+      "chapterId": "tort-01"
+    },
+    "qlts-mock-13-q084": {
+      "subjectId": "business",
+      "chapterId": "business-06"
+    },
+    "qlts-mock-13-q085": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-03"
+    },
+    "qlts-mock-13-q086": {
+      "subjectId": "contract",
+      "chapterId": "contract-08"
+    },
+    "qlts-mock-13-q087": {
+      "subjectId": "land",
+      "chapterId": "land-05"
+    },
+    "qlts-mock-13-q088": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-13-q089": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-13-q090": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-14-q001": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-02"
+    },
+    "qlts-mock-14-q002": {
+      "subjectId": "property-practice",
+      "chapterId": "property-practice-05"
+    },
+    "qlts-mock-14-q004": {
+      "subjectId": "tort",
+      "chapterId": "tort-01"
+    },
+    "qlts-mock-14-q006": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-07"
+    },
+    "qlts-mock-14-q007": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-14-q008": {
+      "subjectId": "business",
+      "chapterId": "business-06"
+    },
+    "qlts-mock-14-q009": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-09"
+    },
+    "qlts-mock-14-q010": {
+      "subjectId": "contract",
+      "chapterId": "contract-06"
+    },
+    "qlts-mock-14-q011": {
+      "subjectId": "tort",
+      "chapterId": "tort-08"
+    },
+    "qlts-mock-14-q012": {
+      "subjectId": "land",
+      "chapterId": "land-06"
+    },
+    "qlts-mock-14-q014": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-01"
+    },
+    "qlts-mock-14-q016": {
+      "subjectId": "accounts",
+      "chapterId": "accounts-05"
+    },
+    "qlts-mock-14-q017": {
+      "subjectId": "contract",
+      "chapterId": "contract-05"
+    },
+    "qlts-mock-14-q018": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-01"
+    },
+    "qlts-mock-14-q019": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-14-q020": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-14-q021": {
+      "subjectId": "land",
+      "chapterId": "land-03"
+    },
+    "qlts-mock-14-q022": {
+      "subjectId": "criminal-practice",
+      "chapterId": "criminal-practice-09"
+    },
+    "qlts-mock-14-q023": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-14-q024": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-02"
+    },
+    "qlts-mock-14-q025": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-04"
+    },
+    "qlts-mock-14-q026": {
+      "subjectId": "business",
+      "chapterId": "business-07"
+    },
+    "qlts-mock-14-q027": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-14-q028": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-14-q029": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-14-q030": {
+      "subjectId": "land",
+      "chapterId": "land-07"
+    },
+    "qlts-mock-14-q031": {
+      "subjectId": "business",
+      "chapterId": "business-05"
+    },
+    "qlts-mock-14-q032": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-11"
+    },
+    "qlts-mock-14-q033": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-14-q034": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-14-q035": {
+      "subjectId": "business",
+      "chapterId": "business-10"
+    },
+    "qlts-mock-14-q037": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-14-q039": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-14-q040": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-07"
+    },
+    "qlts-mock-14-q041": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-14-q042": {
+      "subjectId": "contract",
+      "chapterId": "contract-03"
+    },
+    "qlts-mock-14-q043": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-14-q044": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-14-q045": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-02"
+    },
+    "qlts-mock-14-q046": {
+      "subjectId": "dispute",
+      "chapterId": "dispute-07"
+    },
+    "qlts-mock-14-q047": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-14-q048": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-14-q050": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-03"
+    },
+    "qlts-mock-14-q051": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-14-q052": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-14-q053": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-14-q054": {
+      "subjectId": "tort",
+      "chapterId": "tort-06"
+    },
+    "qlts-mock-14-q055": {
+      "subjectId": "wills",
+      "chapterId": "wills-10"
+    },
+    "qlts-mock-14-q056": {
+      "subjectId": "contract",
+      "chapterId": "contract-02"
+    },
+    "qlts-mock-14-q057": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-09"
+    },
+    "qlts-mock-14-q058": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-01"
+    },
+    "qlts-mock-14-q059": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-01"
+    },
+    "qlts-mock-14-q061": {
+      "subjectId": "land",
+      "chapterId": "land-01"
+    },
+    "qlts-mock-14-q062": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-14-q063": {
+      "subjectId": "contract",
+      "chapterId": "contract-03"
+    },
+    "qlts-mock-14-q064": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-14-q066": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-05"
+    },
+    "qlts-mock-14-q067": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-04"
+    },
+    "qlts-mock-14-q068": {
+      "subjectId": "wills",
+      "chapterId": "wills-05"
+    },
+    "qlts-mock-14-q069": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-14-q070": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-14-q071": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-14-q072": {
+      "subjectId": "contract",
+      "chapterId": "contract-06"
+    },
+    "qlts-mock-14-q073": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-14-q077": {
+      "subjectId": "tort",
+      "chapterId": "tort-01"
+    },
+    "qlts-mock-14-q078": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-06"
+    },
+    "qlts-mock-14-q079": {
+      "subjectId": "land",
+      "chapterId": "land-05"
+    },
+    "qlts-mock-14-q080": {
+      "subjectId": "contract",
+      "chapterId": "contract-08"
+    },
+    "qlts-mock-14-q081": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-14-q082": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-14-q083": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-14-q084": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-05"
+    },
+    "qlts-mock-14-q085": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-02"
+    },
+    "qlts-mock-14-q086": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-14-q088": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-01"
+    },
+    "qlts-mock-14-q089": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-05"
+    },
+    "qlts-mock-14-q090": {
+      "subjectId": "contract",
+      "chapterId": "contract-09"
+    },
+    "qlts-mock-15-q002": {
+      "subjectId": "contract",
+      "chapterId": "contract-08"
+    },
+    "qlts-mock-15-q003": {
+      "subjectId": "land",
+      "chapterId": "land-04"
+    },
+    "qlts-mock-15-q004": {
+      "subjectId": "wills",
+      "chapterId": "wills-06"
+    },
+    "qlts-mock-15-q005": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-15-q007": {
+      "subjectId": "wills",
+      "chapterId": "wills-10"
+    },
+    "qlts-mock-15-q008": {
+      "subjectId": "dispute",
+      "chapterId": "dispute-03"
+    },
+    "qlts-mock-15-q009": {
+      "subjectId": "contract",
+      "chapterId": "contract-03"
+    },
+    "qlts-mock-15-q010": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-15-q011": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-05"
+    },
+    "qlts-mock-15-q012": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-15-q013": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-06"
+    },
+    "qlts-mock-15-q015": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-15-q016": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-15-q017": {
+      "subjectId": "dispute",
+      "chapterId": "dispute-07"
+    },
+    "qlts-mock-15-q018": {
+      "subjectId": "contract",
+      "chapterId": "contract-01"
+    },
+    "qlts-mock-15-q019": {
+      "subjectId": "land",
+      "chapterId": "land-06"
+    },
+    "qlts-mock-15-q020": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-03"
+    },
+    "qlts-mock-15-q021": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-05"
+    },
+    "qlts-mock-15-q022": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-02"
+    },
+    "qlts-mock-15-q024": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-15-q027": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-15-q029": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-07"
+    },
+    "qlts-mock-15-q030": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-15-q031": {
+      "subjectId": "contract",
+      "chapterId": "contract-06"
+    },
+    "qlts-mock-15-q032": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-15-q034": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-02"
+    },
+    "qlts-mock-15-q035": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-05"
+    },
+    "qlts-mock-15-q036": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-09"
+    },
+    "qlts-mock-15-q037": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-15-q038": {
+      "subjectId": "land",
+      "chapterId": "land-03"
+    },
+    "qlts-mock-15-q040": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-05"
+    },
+    "qlts-mock-15-q041": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-15-q042": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-01"
+    },
+    "qlts-mock-15-q043": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-ethics-04"
+    },
+    "qlts-mock-15-q044": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-15-q045": {
+      "subjectId": "criminal-practice",
+      "chapterId": "criminal-practice-08"
+    },
+    "qlts-mock-15-q046": {
+      "subjectId": "contract",
+      "chapterId": "contract-04"
+    },
+    "qlts-mock-15-q048": {
+      "subjectId": "legal-services",
+      "chapterId": "legal-services-lss-07"
+    },
+    "qlts-mock-15-q049": {
+      "subjectId": "tort",
+      "chapterId": "tort-06"
+    },
+    "qlts-mock-15-q051": {
+      "subjectId": "land",
+      "chapterId": "land-04"
+    },
+    "qlts-mock-15-q052": {
+      "subjectId": "tort",
+      "chapterId": "tort-03"
+    },
+    "qlts-mock-15-q053": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-07"
+    },
+    "qlts-mock-15-q054": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-15-q055": {
+      "subjectId": "contract",
+      "chapterId": "contract-10"
+    },
+    "qlts-mock-15-q056": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-02"
+    },
+    "qlts-mock-15-q057": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-15-q058": {
+      "subjectId": "land",
+      "chapterId": "land-09"
+    },
+    "qlts-mock-15-q060": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-05"
+    },
+    "qlts-mock-15-q061": {
+      "subjectId": "criminal-liability",
+      "chapterId": "criminal-liability-08"
+    },
+    "qlts-mock-15-q062": {
+      "subjectId": "tort",
+      "chapterId": "tort-08"
+    },
+    "qlts-mock-15-q063": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-15-q065": {
+      "subjectId": "tort",
+      "chapterId": "tort-07"
+    },
+    "qlts-mock-15-q066": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-15-q067": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-01"
+    },
+    "qlts-mock-15-q068": {
+      "subjectId": "land",
+      "chapterId": "land-05"
+    },
+    "qlts-mock-15-q069": {
+      "subjectId": "contract",
+      "chapterId": "contract-05"
+    },
+    "qlts-mock-15-q070": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-11"
+    },
+    "qlts-mock-15-q071": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-15-q072": {
+      "subjectId": "business",
+      "chapterId": "business-07"
+    },
+    "qlts-mock-15-q076": {
+      "subjectId": "tort",
+      "chapterId": "tort-08"
+    },
+    "qlts-mock-15-q077": {
+      "subjectId": "criminal-practice",
+      "chapterId": "criminal-practice-07"
+    },
+    "qlts-mock-15-q078": {
+      "subjectId": "land",
+      "chapterId": "land-02"
+    },
+    "qlts-mock-15-q079": {
+      "subjectId": "contract",
+      "chapterId": "contract-06"
+    },
+    "qlts-mock-15-q080": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-04"
+    },
+    "qlts-mock-15-q081": {
+      "subjectId": "trusts",
+      "chapterId": "trusts-10"
+    },
+    "qlts-mock-15-q082": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-15-q083": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-15-q085": {
+      "subjectId": "tort",
+      "chapterId": "tort-05"
+    },
+    "qlts-mock-15-q087": {
+      "subjectId": "land",
+      "chapterId": "land-08"
+    },
+    "qlts-mock-15-q088": {
+      "subjectId": "contract",
+      "chapterId": "contract-05"
+    },
+    "qlts-mock-15-q089": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-15-q090": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    }
+  }
+}

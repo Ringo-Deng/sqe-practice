@@ -4,6 +4,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {getDocument} from 'pdfjs-dist/legacy/build/pdf.mjs';
 import {normalizeInlineQuestionText} from '../lib/question-text.ts';
+import {chapterById} from '../lib/chapters.ts';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const readJson=file=>JSON.parse(fs.readFileSync(path.join(root,file),'utf8'));
@@ -23,6 +24,7 @@ const qltsSource={
  mocks:qltsSourceFiles.flatMap(source=>source.mocks),
 };
 const qltsTranslations={...readJson('lib/qlts-mock-exams-1-5-translations.json'),...readJson('lib/qlts-mock-exams-6-10-translations.json'),...readJson('lib/qlts-mock-exams-11-15-translations.json')};
+const qltsChapterMatches=readJson('lib/qlts-chapter-matches.json');
 const qltsCurrentLawReviews=[readJson('lib/qlts-mock-exams-6-10-removed.json'),readJson('lib/qlts-mock-exams-11-15-removed.json')];
 const reviseTranslations=readJson('lib/revise-assessment-translations.json');
 const staticTranslations=readJson('lib/static-question-translations.json');
@@ -54,6 +56,14 @@ assert.ok(currentLawExclusions.every(id=>!datasets.qltsMocks.some(question=>ques
 assert.equal(datasets.qltsMocks.length,1190);
 assert.equal(qltsSource.importedQuestions,datasets.qltsMocks.length);
 assert.deepEqual(Object.keys(qltsTranslations).sort(),datasets.qltsMocks.map(question=>question.id).sort());
+assert.equal(qltsChapterMatches.matchedQuestions,datasets.qltsMocks.length);
+assert.deepEqual(Object.keys(qltsChapterMatches.matches).sort(),datasets.qltsMocks.map(question=>question.id).sort());
+for(const question of datasets.qltsMocks){
+ const match=qltsChapterMatches.matches[question.id];
+ const chapter=chapterById(match.chapterId);
+ assert.ok(chapter,`${question.id}: unknown QLTS chapter ${match.chapterId}`);
+ assert.equal(chapter.subjectId,match.subjectId,`${question.id}: QLTS subject/chapter mismatch`);
+}
 for(const mock of qltsSource.mocks){
  const items=datasets.qltsMocks.filter(question=>question.sourceSession===mock.mock);
  assert.equal(items.length,mock.importedQuestions,`QLTS Mock ${mock.mock}: manifest count mismatch`);

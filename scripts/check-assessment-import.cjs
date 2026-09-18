@@ -27,6 +27,7 @@ const originalQlts=[...require('../lib/qlts-mock-exams-1-5.json'),...require('..
 const qltsSourceFiles=[require('../lib/qlts-mock-exams-1-5-source.json'),require('../lib/qlts-mock-exams-6-10-source.json'),require('../lib/qlts-mock-exams-11-15-source.json')];
 const qltsSource={importedQuestions:qltsSourceFiles.reduce((sum,source)=>sum+source.importedQuestions,0),mocks:qltsSourceFiles.flatMap(source=>source.mocks)};
 const qltsTranslations={...require('../lib/qlts-mock-exams-1-5-translations.json'),...require('../lib/qlts-mock-exams-6-10-translations.json'),...require('../lib/qlts-mock-exams-11-15-translations.json')};
+const qltsChapterMatches=require('../lib/qlts-chapter-matches.json');
 const qltsCurrentLawReviews=[require('../lib/qlts-mock-exams-6-10-removed.json'),require('../lib/qlts-mock-exams-11-15-removed.json')];
 const translations=require('../lib/revise-assessment-translations.json');
 const {filterQuestions,chapterById}=require('../lib/chapters.ts');
@@ -49,6 +50,8 @@ async function main(){
  assert.equal(qltsSource.importedQuestions,importedQlts.length);
  assert.deepEqual(importedQlts.map(q=>q.id),originalQlts.map(q=>q.id));
  assert.deepEqual(Object.keys(qltsTranslations).sort(),importedQlts.map(q=>q.id).sort());
+ assert.deepEqual(Object.keys(qltsChapterMatches.matches).sort(),importedQlts.map(q=>q.id).sort());
+ assert.ok(importedQlts.every(q=>q.chapterId&&chapterById(q.chapterId)&&chapterById(q.chapterId).subjectId===q.subjectId));
  for(const mock of qltsSource.mocks){
   const items=filterQuestions(questions,{sourceId:'qlts',sourceSet:`qlts-mock-exam-${mock.mock}`});
   assert.equal(items.length,mock.importedQuestions);
