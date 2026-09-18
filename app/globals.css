@@ -219,6 +219,7 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
 
 /* Keep locally saved textbooks and rendered pages ready between reader opens. */
 .textbook-reader-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.textbook-reader-actions [data-slot=button]{height:28px;padding:0 8px;color:#446da9}.textbook-local-status{display:flex;align-items:center;gap:5px;color:#39745f}.textbook-reader-hidden{display:none!important}.textbook-dialog[data-state=closed],.textbook-dialog-overlay[data-state=closed]{display:none!important}
+.textbook-page-placeholder{justify-content:flex-start;padding-top:clamp(72px,18dvh,160px)}.textbook-page-placeholder-status{position:sticky;top:24px;display:flex;align-items:center;justify-content:center;gap:9px;flex-wrap:wrap;max-width:min(560px,calc(100% - 32px));text-align:center}
 
 /* Learning history performance, grouped from subject to primary chapter. */
 .history-breakdown{margin-bottom:26px;background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden}
