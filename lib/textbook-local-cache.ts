@@ -53,8 +53,8 @@ export async function readSavedTextbook(url:string){
  try{
   const cache=await caches.open(CACHE_NAME),response=await cache.match(url);
   if(!response){removeFromManifest(url);return undefined;}
-  const blob=await response.blob(),header=new Uint8Array(await blob.slice(0,5).arrayBuffer());
-  if(validPdf(header))return blob;
+  const bytes=new Uint8Array(await response.arrayBuffer());
+  if(validPdf(bytes))return bytes;
   await cache.delete(url);removeFromManifest(url);return undefined;
  }catch{return undefined;}
 }
