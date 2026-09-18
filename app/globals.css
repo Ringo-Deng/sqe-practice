@@ -41,6 +41,16 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
 .practice-workspace .question-number{margin:0;font-size:14px;font-weight:400;white-space:nowrap}
 .practice-workspace .question-number b{font-size:22px}
 .question-controls{display:flex;align-items:center;justify-content:flex-end;gap:12px;flex-wrap:wrap;margin-left:auto}
+.question-progress-popover{width:min(340px,calc(100vw - 24px));padding:18px;border-radius:12px;box-shadow:0 12px 34px #20345424}
+.question-progress-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:14px}
+.question-progress-head h2{margin:0;font-size:15px;font-weight:650;color:#293d5e}
+.question-progress-head span{font-size:13px;color:#78869b}
+.question-progress-popover .question-grid{grid-template-columns:repeat(5,minmax(0,1fr));max-height:min(390px,55vh);overflow-y:auto;margin-top:15px;padding:3px}
+.question-progress-popover .q-chip{margin:0;min-width:0}
+.question-progress-popover .q-chip.current{border-color:#315ac8;box-shadow:0 0 0 2px #315ac838;color:#294fa9}
+.question-progress-legend{margin-top:14px}
+.question-progress-legend i.saved{background:#8ca6df}
+.question-progress-legend i.current{background:#fff;border:2px solid #4268c8}
 .question-timer{display:flex;align-items:center;gap:7px;min-height:34px;padding:0 6px 0 10px;border:1px solid #dce3ef;border-radius:8px;background:#f7f9fc;color:#536783;font-size:14px}
 .question-timer>span{min-width:42px;font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:.3px}
 .question-timer>button{width:24px;height:24px;padding:0;border:0;border-radius:5px;background:transparent;color:#8794a8;display:grid;place-items:center}

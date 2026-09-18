@@ -17,6 +17,7 @@ import {toast} from 'sonner';
 import 'pdfjs-dist/web/pdf_viewer.css';
 
 type SelectionDraft={quote:string;rects:AnnotationRect[];left:number;top:number;page:number};
+const DEFAULT_TEXTBOOK_ZOOM=1.25;
 function annotationId(){
  if(typeof crypto!=='undefined'&&typeof crypto.randomUUID==='function')return crypto.randomUUID();
  const bytes=new Uint8Array(16);for(let i=0;i<bytes.length;i++)bytes[i]=Math.floor(Math.random()*256);bytes[6]=(bytes[6]&15)|64;bytes[8]=(bytes[8]&63)|128;
@@ -82,7 +83,7 @@ export function TextbookReader({references=[],initial,onClose,books,standalone=f
   return books?.length?books:[];
  },[books,references]);
  const [bookId,setBookId]=useState(initial.bookId),[positions,setPositions]=useState<Record<string,number>>({[initial.bookId]:initial.page});
- const [pageInput,setPageInput]=useState(String(initial.page)),[zoom,setZoom]=useState(1),[overlay,setOverlay]=useState(false),[readerWidth,setReaderWidth]=useState(0);
+ const [pageInput,setPageInput]=useState(String(initial.page)),[zoom,setZoom]=useState(DEFAULT_TEXTBOOK_ZOOM),[overlay,setOverlay]=useState(false),[readerWidth,setReaderWidth]=useState(0);
  const [selection,setSelection]=useState<SelectionDraft|null>(null),[editing,setEditing]=useState<TextbookAnnotationDraft|null>(null);
  const scrollRoot=useRef<HTMLDivElement>(null),scrollFrame=useRef<number|undefined>(undefined),lastReported=useRef('');
  const book=availableBooks.find(item=>item.id===bookId)??textbookById(bookId)??availableBooks[0];
@@ -107,7 +108,7 @@ export function TextbookReader({references=[],initial,onClose,books,standalone=f
    if(chosen!==page){setPositions(current=>({...current,[book.id]:chosen}));setSelection(null);}
   });
  },[book,page]);
- const switchBook=(id:string)=>{const next=availableBooks.find(item=>item.id===id);if(!next)return;const nextPage=positions[id]??references.find(ref=>ref.bookId===id)?.pageNumbers[0]??1;setBookId(id);setZoom(1);setSelection(null);setPageInput(String(nextPage));requestAnimationFrame(()=>jumpToPage(nextPage,'auto'));};
+ const switchBook=(id:string)=>{const next=availableBooks.find(item=>item.id===id);if(!next)return;const nextPage=positions[id]??references.find(ref=>ref.bookId===id)?.pageNumbers[0]??1;setBookId(id);setZoom(DEFAULT_TEXTBOOK_ZOOM);setSelection(null);setPageInput(String(nextPage));requestAnimationFrame(()=>jumpToPage(nextPage,'auto'));};
  const openAnnotation=useCallback((item:TextbookAnnotation)=>setEditing(annotationDraft(item)),[]);
  if(!book)return null;
  const saveHighlight=async()=>{if(!selection)return;const item:TextbookAnnotationDraft={id:annotationId(),bookId:book.id,page:selection.page,quote:selection.quote,note:'',color:'yellow',rects:selection.rects,sourceQuestionId:sourceQuestionId??null};const result=await annotations.mutate({...item,action:'add'});if(result){toast.success('已高亮教材原文');setSelection(null);window.getSelection()?.removeAllRanges();}};
