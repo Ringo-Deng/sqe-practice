@@ -1,0 +1,631 @@
+{
+  "source": "QLTS Mock Exam 16-20 scanned PDFs",
+  "method": "Local macOS Vision OCR with source-page reconciliation, confirmed OCR cleanups, and current-law/SQE-scope screening",
+  "sourceQuestions": 315,
+  "importedQuestions": 172,
+  "removedQuestions": 143,
+  "mocks": [
+    {
+      "mock": 16,
+      "filename": "Mock Exam 16-compresssed.pdf",
+      "sha256": "32d9745dbcfb22534c434d05eced719545b118dedd3eb1e6e622e4d4427d7470",
+      "pdfPages": 170,
+      "sourceQuestions": 85,
+      "importedQuestions": 84,
+      "excludedQuestions": [
+        {
+          "number": 67,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        }
+      ]
+    },
+    {
+      "mock": 17,
+      "filename": "Mock Exam 17-compresssed.pdf",
+      "sha256": "12f0d011997ceeea64744169bb5c8fe74a7a395b91c84d0b2aa455f171d72f16",
+      "pdfPages": 120,
+      "sourceQuestions": 60,
+      "importedQuestions": 54,
+      "excludedQuestions": [
+        {
+          "number": 6,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 9,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 19,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 37,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 51,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 57,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        }
+      ]
+    },
+    {
+      "mock": 18,
+      "filename": "Mock Exam 18-compresssed.pdf",
+      "sha256": "0552718470fb907235e0cb1d9dd4d7210897515289f5dde91f6c18debd28292e",
+      "pdfPages": 164,
+      "sourceQuestions": 82,
+      "importedQuestions": 0,
+      "excludedQuestions": [
+        {
+          "number": 1,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 2,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 3,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 4,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 5,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 6,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 7,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 8,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 9,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 10,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 11,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 12,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 13,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 14,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 15,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 16,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 17,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 18,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 19,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 20,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 21,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 22,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 23,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 24,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 25,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 26,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 27,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 28,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 29,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 30,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 31,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 32,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 33,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 34,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 35,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 36,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 37,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 38,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 39,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 40,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 41,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 42,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 43,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 44,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 45,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 46,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 47,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 48,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 49,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 50,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 51,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 52,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 53,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 54,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 55,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 56,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 57,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 58,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 59,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 60,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 61,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 62,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 63,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 64,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 65,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 66,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 67,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 68,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 69,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 70,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 71,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 72,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 73,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 74,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 75,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 76,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 77,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 78,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 79,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 80,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 81,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 82,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        }
+      ]
+    },
+    {
+      "mock": 19,
+      "filename": "Mock Exam 19-compresssed.pdf",
+      "sha256": "d7627dc1c960fecc80012be83f3f9ef82344a2306af1ff5063cd9209957b08a7",
+      "pdfPages": 106,
+      "sourceQuestions": 53,
+      "importedQuestions": 0,
+      "excludedQuestions": [
+        {
+          "number": 1,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 2,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 3,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 4,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 5,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 6,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 7,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 8,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 9,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 10,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 11,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 12,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 13,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 14,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 15,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 16,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 17,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 18,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 19,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 20,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 21,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 22,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 23,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 24,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 25,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 26,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 27,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 28,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 29,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 30,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 31,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 32,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 33,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 34,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 35,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 36,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 37,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 38,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 39,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 40,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 41,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 42,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 43,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 44,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 45,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 46,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 47,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 48,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 49,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 50,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 51,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 52,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        },
+        {
+          "number": 53,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        }
+      ]
+    },
+    {
+      "mock": 20,
+      "filename": "Mock Exam 20-compresssed.pdf",
+      "sha256": "380be4508f42cb49befb761cb50425fbe22748b4724c1778888a7b1728cba12b",
+      "pdfPages": 70,
+      "sourceQuestions": 35,
+      "importedQuestions": 34,
+      "excludedQuestions": [
+        {
+          "number": 34,
+          "reason": "Removed after current-law review; see qlts-mock-exams-16-20-removed.json."
+        }
+      ]
+    }
+  ]
+}

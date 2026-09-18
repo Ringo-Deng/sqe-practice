@@ -16,16 +16,16 @@ const datasets={
  reviseFlk1:readJson('lib/revise-flk1-assessment-2025-26.json'),
  reviseFlk2:readJson('lib/revise-flk2-practice-assessment.json'),
  reviseChapters:readJson('lib/revise-chapter-questions.json'),
- qltsMocks:[...readJson('lib/qlts-mock-exams-1-5.json'),...readJson('lib/qlts-mock-exams-6-10.json'),...readJson('lib/qlts-mock-exams-11-15.json')],
+ qltsMocks:[...readJson('lib/qlts-mock-exams-1-5.json'),...readJson('lib/qlts-mock-exams-6-10.json'),...readJson('lib/qlts-mock-exams-11-15.json'),...readJson('lib/qlts-mock-exams-16-20.json')],
 };
-const qltsSourceFiles=[readJson('lib/qlts-mock-exams-1-5-source.json'),readJson('lib/qlts-mock-exams-6-10-source.json'),readJson('lib/qlts-mock-exams-11-15-source.json')];
+const qltsSourceFiles=[readJson('lib/qlts-mock-exams-1-5-source.json'),readJson('lib/qlts-mock-exams-6-10-source.json'),readJson('lib/qlts-mock-exams-11-15-source.json'),readJson('lib/qlts-mock-exams-16-20-source.json')];
 const qltsSource={
  importedQuestions:qltsSourceFiles.reduce((sum,source)=>sum+source.importedQuestions,0),
  mocks:qltsSourceFiles.flatMap(source=>source.mocks),
 };
-const qltsTranslations={...readJson('lib/qlts-mock-exams-1-5-translations.json'),...readJson('lib/qlts-mock-exams-6-10-translations.json'),...readJson('lib/qlts-mock-exams-11-15-translations.json')};
+const qltsTranslations={...readJson('lib/qlts-mock-exams-1-5-translations.json'),...readJson('lib/qlts-mock-exams-6-10-translations.json'),...readJson('lib/qlts-mock-exams-11-15-translations.json'),...readJson('lib/qlts-mock-exams-16-20-translations.json')};
 const qltsChapterMatches=readJson('lib/qlts-chapter-matches.json');
-const qltsCurrentLawReviews=[readJson('lib/qlts-mock-exams-6-10-removed.json'),readJson('lib/qlts-mock-exams-11-15-removed.json')];
+const qltsCurrentLawReviews=[readJson('lib/qlts-mock-exams-6-10-removed.json'),readJson('lib/qlts-mock-exams-11-15-removed.json'),readJson('lib/qlts-mock-exams-16-20-removed.json')];
 const reviseTranslations=readJson('lib/revise-assessment-translations.json');
 const staticTranslations=readJson('lib/static-question-translations.json');
 const textbooks=readJson('lib/textbooks.json').filter(book=>book.id.startsWith('revise-'));
@@ -44,16 +44,17 @@ const expectedQNumbers={
  3:Array.from({length:90},(_,index)=>index+1).filter(number=>![24,25,26,27].includes(number)),
  4:Array.from({length:90},(_,index)=>index+1).filter(number=>number!==75),
  5:Array.from({length:90},(_,index)=>index+1),
- ...Object.fromEntries([6,7,8,9,10,11,12,13,14,15].map(mock=>{
-  const removed=new Set(qltsCurrentLawReviews.flatMap(review=>review.categories).flatMap(category=>category.questionIds).filter(id=>id.startsWith(`qlts-mock-${String(mock).padStart(2,'0')}-q`)).map(id=>Number(id.slice(-3))));
-  return [mock,Array.from({length:90},(_,index)=>index+1).filter(number=>!removed.has(number))];
+ ...Object.fromEntries(qltsSource.mocks.filter(mock=>mock.mock>=6).map(mock=>{
+  const removed=new Set(qltsCurrentLawReviews.flatMap(review=>review.categories).flatMap(category=>category.questionIds).filter(id=>id.startsWith(`qlts-mock-${String(mock.mock).padStart(2,'0')}-q`)).map(id=>Number(id.slice(-3))));
+  const sourceQuestions=mock.sourceQuestions??mock.importedQuestions+(mock.excludedQuestions?.length??0);
+  return [mock.mock,Array.from({length:sourceQuestions},(_,index)=>index+1).filter(number=>!removed.has(number))];
  })),
 };
 const currentLawExclusions=qltsCurrentLawReviews.flatMap(review=>review.categories).flatMap(category=>category.questionIds);
 assert.equal(currentLawExclusions.length,qltsCurrentLawReviews.reduce((sum,review)=>sum+review.removedQuestions,0));
 assert.equal(new Set(currentLawExclusions).size,currentLawExclusions.length);
 assert.ok(currentLawExclusions.every(id=>!datasets.qltsMocks.some(question=>question.id===id)));
-assert.equal(datasets.qltsMocks.length,1190);
+assert.equal(datasets.qltsMocks.length,1362);
 assert.equal(qltsSource.importedQuestions,datasets.qltsMocks.length);
 assert.deepEqual(Object.keys(qltsTranslations).sort(),datasets.qltsMocks.map(question=>question.id).sort());
 assert.equal(qltsChapterMatches.matchedQuestions,datasets.qltsMocks.length);
@@ -71,7 +72,7 @@ for(const mock of qltsSource.mocks){
 }
 
 const all=[...legacy,...datasets.qltsMocks];
-assert.equal(all.length,2424);
+assert.equal(all.length,2596);
 assert.equal(new Set(all.map(question=>question.id)).size,all.length);
 for(const question of all){
  assert.ok(question.stem.trim()||question.sourceId==='qlts',`${question.id}: missing stem`);

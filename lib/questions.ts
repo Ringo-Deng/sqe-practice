@@ -8,9 +8,11 @@ import reviseChapterQuestions from './revise-chapter-questions.json';
 import qltsMockQuestions1To5 from './qlts-mock-exams-1-5.json';
 import qltsMockQuestions6To10 from './qlts-mock-exams-6-10.json';
 import qltsMockQuestions11To15 from './qlts-mock-exams-11-15.json';
+import qltsMockQuestions16To20 from './qlts-mock-exams-16-20.json';
 import qltsTranslations1To5 from './qlts-mock-exams-1-5-translations.json';
 import qltsTranslations6To10 from './qlts-mock-exams-6-10-translations.json';
 import qltsTranslations11To15 from './qlts-mock-exams-11-15-translations.json';
+import qltsTranslations16To20 from './qlts-mock-exams-16-20-translations.json';
 import qltsChapterMatchData from './qlts-chapter-matches.json';
 import reviseTranslations from './revise-assessment-translations.json';
 import staticTranslations from './static-question-translations.json';
@@ -26,9 +28,9 @@ const textbookLinksById=questionTextbookLinks as Record<string,QuestionTextbookL
 const reviseById=reviseReferences as Record<string,QuestionTextbookLink>;
 const translationsById=reviseTranslations as Record<string,{stemZh:string;askZh:string;options:Record<string,string>;explanationZh:string}>;
 const staticTranslationsById=staticTranslations as Record<string,{stemZh:string;askZh:string;options:Record<string,string>;explanationZh?:string}>;
-const qltsTranslationsById={...qltsTranslations1To5,...qltsTranslations6To10,...qltsTranslations11To15} as Record<string,{stemZh:string;askZh:string;options:Record<string,string>;explanationZh:string}>;
+const qltsTranslationsById={...qltsTranslations1To5,...qltsTranslations6To10,...qltsTranslations11To15,...qltsTranslations16To20} as Record<string,{stemZh:string;askZh:string;options:Record<string,string>;explanationZh:string}>;
 const qltsChapterMatches=qltsChapterMatchData.matches as Record<string,{subjectId:string;chapterId:string}>;
-const qltsMockQuestions=([...qltsMockQuestions1To5,...qltsMockQuestions6To10,...qltsMockQuestions11To15] as FullQuestion[]).map(question=>{
+const qltsMockQuestions=([...qltsMockQuestions1To5,...qltsMockQuestions6To10,...qltsMockQuestions11To15,...qltsMockQuestions16To20] as FullQuestion[]).map(question=>{
  const match=qltsChapterMatches[question.id];
  return match?{...question,subjectId:match.subjectId,chapterId:match.chapterId}:question;
 });

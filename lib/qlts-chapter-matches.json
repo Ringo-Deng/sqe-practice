@@ -7,7 +7,7 @@
     "subjectAccuracy": 0.9832,
     "chapterAccuracy": 0.9486
   },
-  "matchedQuestions": 1190,
+  "matchedQuestions": 1362,
   "matches": {
     "qlts-mock-01-q001": {
       "subjectId": "contract",
@@ -4768,6 +4768,694 @@
     "qlts-mock-15-q090": {
       "subjectId": "legal-system",
       "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-16-q001": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-16-q002": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-16-q003": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q004": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-16-q005": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-16-q006": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q007": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q008": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-16-q009": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-16-q010": {
+      "subjectId": "business",
+      "chapterId": "business-07"
+    },
+    "qlts-mock-16-q011": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-16-q012": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q013": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-16-q014": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-16-q015": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q016": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-16-q017": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q018": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q019": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q020": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-16-q021": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-16-q022": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q023": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q024": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q025": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q026": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-16-q027": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q028": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-16-q029": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-16-q030": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-16-q031": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-16-q032": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q033": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q034": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q035": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q036": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q037": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q038": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-16-q039": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q040": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q041": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-16-q042": {
+      "subjectId": "business",
+      "chapterId": "business-05"
+    },
+    "qlts-mock-16-q043": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-16-q044": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-16-q045": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-16-q046": {
+      "subjectId": "business",
+      "chapterId": "business-05"
+    },
+    "qlts-mock-16-q047": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q048": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q049": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-16-q050": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-16-q051": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-16-q052": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-16-q053": {
+      "subjectId": "business",
+      "chapterId": "business-09"
+    },
+    "qlts-mock-16-q054": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-16-q055": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q056": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-16-q057": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-16-q058": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q059": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q060": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q061": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q062": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-16-q063": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q064": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q065": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-16-q066": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q068": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q069": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q070": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-16-q071": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-16-q072": {
+      "subjectId": "business",
+      "chapterId": "business-10"
+    },
+    "qlts-mock-16-q073": {
+      "subjectId": "business",
+      "chapterId": "business-10"
+    },
+    "qlts-mock-16-q074": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-16-q075": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-16-q076": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-16-q077": {
+      "subjectId": "business",
+      "chapterId": "business-02"
+    },
+    "qlts-mock-16-q078": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-16-q079": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-16-q080": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-16-q081": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q082": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-16-q083": {
+      "subjectId": "business",
+      "chapterId": "business-01"
+    },
+    "qlts-mock-16-q084": {
+      "subjectId": "business",
+      "chapterId": "business-04"
+    },
+    "qlts-mock-16-q085": {
+      "subjectId": "business",
+      "chapterId": "business-03"
+    },
+    "qlts-mock-17-q001": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-02"
+    },
+    "qlts-mock-17-q002": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-02"
+    },
+    "qlts-mock-17-q003": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-17-q004": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-17-q005": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-17-q007": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-02"
+    },
+    "qlts-mock-17-q008": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-02"
+    },
+    "qlts-mock-17-q010": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-17-q011": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-17-q012": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-01"
+    },
+    "qlts-mock-17-q013": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-01"
+    },
+    "qlts-mock-17-q014": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-02"
+    },
+    "qlts-mock-17-q015": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-17-q016": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-02"
+    },
+    "qlts-mock-17-q017": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-02"
+    },
+    "qlts-mock-17-q018": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-02"
+    },
+    "qlts-mock-17-q020": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-17-q021": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-17-q022": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-02"
+    },
+    "qlts-mock-17-q023": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-02"
+    },
+    "qlts-mock-17-q024": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-17-q025": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-17-q026": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-17-q027": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-17-q028": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-01"
+    },
+    "qlts-mock-17-q029": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-02"
+    },
+    "qlts-mock-17-q030": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-01"
+    },
+    "qlts-mock-17-q031": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-01"
+    },
+    "qlts-mock-17-q032": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-17-q033": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-17-q034": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-17-q035": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-17-q036": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-01"
+    },
+    "qlts-mock-17-q038": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-17-q039": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-17-q040": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-08"
+    },
+    "qlts-mock-17-q041": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-17-q042": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-02"
+    },
+    "qlts-mock-17-q043": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-17-q044": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-02"
+    },
+    "qlts-mock-17-q045": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-02"
+    },
+    "qlts-mock-17-q046": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-02"
+    },
+    "qlts-mock-17-q047": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-03"
+    },
+    "qlts-mock-17-q048": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-02"
+    },
+    "qlts-mock-17-q049": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-02"
+    },
+    "qlts-mock-17-q050": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-04"
+    },
+    "qlts-mock-17-q052": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-01"
+    },
+    "qlts-mock-17-q053": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-01"
+    },
+    "qlts-mock-17-q054": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-01"
+    },
+    "qlts-mock-17-q055": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-01"
+    },
+    "qlts-mock-17-q056": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-04"
+    },
+    "qlts-mock-17-q058": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-01"
+    },
+    "qlts-mock-17-q059": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-lss-01"
+    },
+    "qlts-mock-17-q060": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-02"
+    },
+    "qlts-mock-20-q001": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q002": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q003": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q004": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q005": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q006": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q007": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q008": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q009": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q010": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q011": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q012": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q013": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q014": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q015": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q016": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q017": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q018": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q019": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q020": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q021": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q022": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q023": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q024": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q025": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q026": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q027": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q028": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q029": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q030": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q031": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q032": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q033": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
+    },
+    "qlts-mock-20-q035": {
+      "subjectId": "legal-system",
+      "chapterId": "legal-system-cal-06"
     }
   }
 }

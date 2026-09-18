@@ -1,0 +1,235 @@
+{
+  "reviewedAt": "2026-09-18",
+  "scope": "QLTS Mock Exams 16-20",
+  "removedQuestions": 143,
+  "method": "Removed questions whose keyed answer, publisher explanation or tested framework is materially superseded as at 18 September 2026, or whose substantive EU-law module is outside the current SQE1 FLK1 scope. Historical wording was not silently rewritten.",
+  "sources": [
+    {
+      "label": "SRA SQE1 assessment specification",
+      "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-specification"
+    },
+    {
+      "label": "SRA FLK1 assessment specification",
+      "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-specification/flk1"
+    },
+    {
+      "label": "SRA Standards and Regulations resources",
+      "url": "https://update.sra.org.uk/solicitors/standards-regulations-resources/"
+    },
+    {
+      "label": "HMRC current and previous Income Tax rates and allowances",
+      "url": "https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past"
+    },
+    {
+      "label": "Dissolution and Calling of Parliament Act 2022 explanatory notes",
+      "url": "https://www.legislation.gov.uk/ukpga/2022/11/notes/division/6/index.htm"
+    },
+    {
+      "label": "Senedd and Elections (Wales) Act 2020",
+      "url": "https://www.legislation.gov.uk/anaw/2020/1/contents"
+    },
+    {
+      "label": "Retained EU Law (Revocation and Reform) Act 2023 explanatory notes",
+      "url": "https://www.legislation.gov.uk/ukpga/2023/28/notes/division/2/index.htm"
+    },
+    {
+      "label": "Public Service Pensions and Judicial Offices Act 2022 explanatory notes",
+      "url": "https://www.legislation.gov.uk/ukpga/2022/7/notes/division/6/index.htm"
+    },
+    {
+      "label": "Magistrates' Court Sentencing Powers Amendment Regulations 2024",
+      "url": "https://www.legislation.gov.uk/uksi/2024/1067/contents/made"
+    },
+    {
+      "label": "Crime and Policing Act 2026 explanatory notes",
+      "url": "https://www.legislation.gov.uk/ukpga/2026/20/notes/division/16/index.htm"
+    }
+  ],
+  "categories": [
+    {
+      "id": "superseded-tax-framework",
+      "reason": "The keyed advice and publisher explanation depend on an obsolete description of the capital-gains annual exempt amount as a tax-free personal allowance.",
+      "questionIds": [
+        "qlts-mock-16-q067"
+      ]
+    },
+    {
+      "id": "repealed-constitutional-framework",
+      "reason": "The keyed answer depends on the Fixed-term Parliaments Act 2011 framework, which was repealed by the Dissolution and Calling of Parliament Act 2022.",
+      "questionIds": [
+        "qlts-mock-17-q006",
+        "qlts-mock-17-q037"
+      ]
+    },
+    {
+      "id": "superseded-welsh-devolution-framework",
+      "reason": "The question and explanation use the former Welsh Assembly/Assembly Measure framework rather than the current Senedd Cymru/Welsh Acts framework.",
+      "questionIds": [
+        "qlts-mock-17-q009"
+      ]
+    },
+    {
+      "id": "pre-brexit-substantive-eu-law",
+      "reason": "The question tests substantive EU institutions, free movement, competition, direct effect or UK participation on a pre-Brexit premise, outside the current SQE1 scope limited to EU law's current place in the UK constitution.",
+      "questionIds": [
+        "qlts-mock-17-q019",
+        "qlts-mock-18-q001",
+        "qlts-mock-18-q002",
+        "qlts-mock-18-q003",
+        "qlts-mock-18-q004",
+        "qlts-mock-18-q005",
+        "qlts-mock-18-q006",
+        "qlts-mock-18-q007",
+        "qlts-mock-18-q008",
+        "qlts-mock-18-q009",
+        "qlts-mock-18-q010",
+        "qlts-mock-18-q011",
+        "qlts-mock-18-q012",
+        "qlts-mock-18-q013",
+        "qlts-mock-18-q014",
+        "qlts-mock-18-q015",
+        "qlts-mock-18-q016",
+        "qlts-mock-18-q017",
+        "qlts-mock-18-q018",
+        "qlts-mock-18-q019",
+        "qlts-mock-18-q020",
+        "qlts-mock-18-q021",
+        "qlts-mock-18-q022",
+        "qlts-mock-18-q023",
+        "qlts-mock-18-q024",
+        "qlts-mock-18-q025",
+        "qlts-mock-18-q026",
+        "qlts-mock-18-q027",
+        "qlts-mock-18-q028",
+        "qlts-mock-18-q029",
+        "qlts-mock-18-q030",
+        "qlts-mock-18-q031",
+        "qlts-mock-18-q032",
+        "qlts-mock-18-q033",
+        "qlts-mock-18-q034",
+        "qlts-mock-18-q035",
+        "qlts-mock-18-q036",
+        "qlts-mock-18-q037",
+        "qlts-mock-18-q038",
+        "qlts-mock-18-q039",
+        "qlts-mock-18-q040",
+        "qlts-mock-18-q041",
+        "qlts-mock-18-q042",
+        "qlts-mock-18-q043",
+        "qlts-mock-18-q044",
+        "qlts-mock-18-q045",
+        "qlts-mock-18-q046",
+        "qlts-mock-18-q047",
+        "qlts-mock-18-q048",
+        "qlts-mock-18-q049",
+        "qlts-mock-18-q050",
+        "qlts-mock-18-q051",
+        "qlts-mock-18-q052",
+        "qlts-mock-18-q053",
+        "qlts-mock-18-q054",
+        "qlts-mock-18-q055",
+        "qlts-mock-18-q056",
+        "qlts-mock-18-q057",
+        "qlts-mock-18-q058",
+        "qlts-mock-18-q059",
+        "qlts-mock-18-q060",
+        "qlts-mock-18-q061",
+        "qlts-mock-18-q062",
+        "qlts-mock-18-q063",
+        "qlts-mock-18-q064",
+        "qlts-mock-18-q065",
+        "qlts-mock-18-q066",
+        "qlts-mock-18-q067",
+        "qlts-mock-18-q068",
+        "qlts-mock-18-q069",
+        "qlts-mock-18-q070",
+        "qlts-mock-18-q071",
+        "qlts-mock-18-q072",
+        "qlts-mock-18-q073",
+        "qlts-mock-18-q074",
+        "qlts-mock-18-q075",
+        "qlts-mock-18-q076",
+        "qlts-mock-18-q077",
+        "qlts-mock-18-q078",
+        "qlts-mock-18-q079",
+        "qlts-mock-18-q080",
+        "qlts-mock-18-q081",
+        "qlts-mock-18-q082"
+      ]
+    },
+    {
+      "id": "superseded-judicial-retirement-rules",
+      "reason": "The keyed answer uses the former age-70 rule; the mandatory judicial retirement age was raised to 75 by the Public Service Pensions and Judicial Offices Act 2022.",
+      "questionIds": [
+        "qlts-mock-17-q051",
+        "qlts-mock-17-q057"
+      ]
+    },
+    {
+      "id": "superseded-sra-handbook",
+      "reason": "The complete mock is framed by the former SRA Handbook, including obsolete Outcomes, Indicative Behaviours, chapter numbering and former Mandatory Principles.",
+      "questionIds": [
+        "qlts-mock-19-q001",
+        "qlts-mock-19-q002",
+        "qlts-mock-19-q003",
+        "qlts-mock-19-q004",
+        "qlts-mock-19-q005",
+        "qlts-mock-19-q006",
+        "qlts-mock-19-q007",
+        "qlts-mock-19-q008",
+        "qlts-mock-19-q009",
+        "qlts-mock-19-q010",
+        "qlts-mock-19-q011",
+        "qlts-mock-19-q012",
+        "qlts-mock-19-q013",
+        "qlts-mock-19-q014",
+        "qlts-mock-19-q015",
+        "qlts-mock-19-q016",
+        "qlts-mock-19-q017",
+        "qlts-mock-19-q018",
+        "qlts-mock-19-q019",
+        "qlts-mock-19-q020",
+        "qlts-mock-19-q021",
+        "qlts-mock-19-q022",
+        "qlts-mock-19-q023",
+        "qlts-mock-19-q024",
+        "qlts-mock-19-q025",
+        "qlts-mock-19-q026",
+        "qlts-mock-19-q027",
+        "qlts-mock-19-q028",
+        "qlts-mock-19-q029",
+        "qlts-mock-19-q030",
+        "qlts-mock-19-q031",
+        "qlts-mock-19-q032",
+        "qlts-mock-19-q033",
+        "qlts-mock-19-q034",
+        "qlts-mock-19-q035",
+        "qlts-mock-19-q036",
+        "qlts-mock-19-q037",
+        "qlts-mock-19-q038",
+        "qlts-mock-19-q039",
+        "qlts-mock-19-q040",
+        "qlts-mock-19-q041",
+        "qlts-mock-19-q042",
+        "qlts-mock-19-q043",
+        "qlts-mock-19-q044",
+        "qlts-mock-19-q045",
+        "qlts-mock-19-q046",
+        "qlts-mock-19-q047",
+        "qlts-mock-19-q048",
+        "qlts-mock-19-q049",
+        "qlts-mock-19-q050",
+        "qlts-mock-19-q051",
+        "qlts-mock-19-q052",
+        "qlts-mock-19-q053"
+      ]
+    },
+    {
+      "id": "superseded-sentencing-figures",
+      "reason": "Although the mode-of-trial answer remains broadly correct, the publisher explanation states the superseded six-month magistrates' court maximum for an either-way offence.",
+      "questionIds": [
+        "qlts-mock-20-q034"
+      ]
+    }
+  ]
+}
