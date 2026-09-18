@@ -14,18 +14,19 @@ export function loadPdfEngine(){
 }
 
 const cache=createPdfPageCache(source=>{
- let task:PDFDocumentLoadingTask|undefined;
+ let task:PDFDocumentLoadingTask|undefined,localUrl:string|undefined;
  const promise=loadPdfEngine().then(async lib=>{
   const saved=await readSavedTextbook(source.url);
   if(!worker||worker.destroyed)worker=new lib.PDFWorker();
   const currentWorker=worker;
   return currentWorker.promise.then(()=>{
    const standardFontDataUrl=typeof document==='undefined'?'/pdfjs/standard_fonts/':new URL('pdfjs/standard_fonts/',document.baseURI).toString();
-   task=lib.getDocument(saved?{data:saved,worker:currentWorker,standardFontDataUrl,useWasm:false}:{url:source.url,worker:currentWorker,withCredentials:true,standardFontDataUrl,useWasm:false});
+   localUrl=saved?URL.createObjectURL(saved):undefined;
+   task=lib.getDocument({url:localUrl??source.url,worker:currentWorker,withCredentials:!localUrl,standardFontDataUrl,useWasm:false,disableStream:true,disableAutoFetch:true,rangeChunkSize:262_144});
    return task.promise;
   },error=>{currentWorker.destroy();if(worker===currentWorker)worker=undefined;throw error;});
  });
- return {promise,destroy:async()=>{await promise.catch(()=>{});await task?.destroy();}};
+ return {promise,destroy:async()=>{await promise.catch(()=>{});await task?.destroy();if(localUrl)URL.revokeObjectURL(localUrl);}};
 });
 
 export function acquireTextbookPage(book:Textbook,page:number){return cache.acquire(textbookPageSource(book,page));}

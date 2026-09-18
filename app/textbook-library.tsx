@@ -1,5 +1,5 @@
 'use client';
-import {useCallback,useMemo,useState} from 'react';
+import {useCallback,useEffect,useMemo,useState} from 'react';
 import {BookOpen,FileUp,Highlighter,Loader2,Pencil} from 'lucide-react';
 import {Button} from '@/components/ui/button';
 import {Dialog,DialogContent,DialogDescription,DialogFooter,DialogHeader,DialogTitle} from '@/components/ui/dialog';
@@ -11,8 +11,15 @@ import type {Textbook} from '@/lib/textbooks';
 import type {TextbookAnnotationsController} from './use-textbook-annotations';
 import type {TextbookCatalogController} from './use-textbook-catalog';
 
+const LAST_TEXTBOOK_POSITION_KEY='sqe-practice:textbook-position:v1';
+function savedPosition(books:Textbook[]){
+ try{const value=JSON.parse(localStorage.getItem(LAST_TEXTBOOK_POSITION_KEY)??'null') as {bookId?:unknown;page?:unknown}|null;const book=books.find(item=>item.id===value?.bookId);if(!book)return null;const page=typeof value?.page==='number'&&Number.isInteger(value.page)?Math.max(1,Math.min(book.pageCount,value.page)):1;return {bookId:book.id,page};}catch{return null;}
+}
+function savePosition(bookId:string,page:number){try{localStorage.setItem(LAST_TEXTBOOK_POSITION_KEY,JSON.stringify({bookId,page}));}catch{/* Reading still works when browser storage is unavailable. */}}
+
 export function TextbookLibrary({controller,catalog,guest=false}:{controller:TextbookAnnotationsController;catalog:TextbookCatalogController;guest?:boolean}){
  const[first]=catalog.books;const[selectedId,setSelectedId]=useState(first?.id??'');const[target,setTarget]=useState({bookId:first?.id??'',page:1});
+ const[positionReady,setPositionReady]=useState(false);
  const[renameBook,setRenameBook]=useState<Textbook|null>(null),[renameValue,setRenameValue]=useState('');
  const[importOpen,setImportOpen]=useState(false),[importFile,setImportFile]=useState<File|null>(null),[importName,setImportName]=useState('');
  const book=catalog.books.find(item=>item.id===selectedId)??first;
@@ -22,12 +29,14 @@ export function TextbookLibrary({controller,catalog,guest=false}:{controller:Tex
   const ids=[...new Set(catalog.books.map(item=>item.subjectId))];ids.sort((a,b)=>a==='my-materials'?-1:b==='my-materials'?1:0);
   return ids.map(id=>({id,books:catalog.books.filter(item=>item.subjectId===id)}));
  },[catalog.books]);
+ useEffect(()=>{if(positionReady||catalog.loading)return;const timer=window.setTimeout(()=>{const fallback=catalog.books[0];if(!fallback){setPositionReady(true);return;}const saved=savedPosition(catalog.books)??{bookId:fallback.id,page:1};setSelectedId(saved.bookId);setTarget(saved);setPositionReady(true);},0);return()=>window.clearTimeout(timer);},[catalog.books,catalog.loading,positionReady]);
  const selectBook=(id:string)=>{const firstNote=annotations.filter(item=>item.bookId===id).sort((a,b)=>a.page-b.page)[0];setSelectedId(id);setTarget({bookId:id,page:firstNote?.page??1});};
- const handlePosition=useCallback((bookId:string,page:number)=>{setTarget(current=>current.bookId===bookId&&current.page===page?current:{bookId,page});},[]);
+ const handlePosition=useCallback((bookId:string,page:number)=>{setTarget(current=>current.bookId===bookId&&current.page===page?current:{bookId,page});savePosition(bookId,page);},[]);
  const openRename=(item:Textbook)=>{setRenameBook(item);setRenameValue(item.shortTitle);};
  const submitRename=async(event:React.FormEvent)=>{event.preventDefault();if(!renameBook||!renameValue.trim())return;if(await catalog.rename(renameBook.id,renameValue.trim()))setRenameBook(null);};
  const chooseFile=(file?:File)=>{setImportFile(file??null);if(file&&!importName.trim())setImportName(file.name.replace(/\.pdf$/i,''));};
  const submitImport=async(event:React.FormEvent)=>{event.preventDefault();if(!importFile||!importName.trim())return;if(await catalog.importPdf(importFile,importName.trim())){setImportOpen(false);setImportFile(null);setImportName('');}};
+ if(!positionReady)return <div className="empty"><Loader2 className="animate-spin" size={24}/><p>正在打开上次阅读位置…</p></div>;
  if(!book)return <div className="empty"><BookOpen/><p>尚无教材。</p><Button onClick={()=>setImportOpen(true)}><FileUp size={15}/>导入 PDF</Button></div>;
  return <section className="textbook-library-page">
   {(controller.error||catalog.error)&&<div className="notice error" role="alert"><span>{controller.error||catalog.error}</span><Button variant="outline" disabled={controller.busy||controller.loading||catalog.busy||catalog.loading} onClick={()=>void Promise.all([controller.load(),catalog.load()])}>重新读取</Button></div>}

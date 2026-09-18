@@ -18,6 +18,7 @@ import {toast} from 'sonner';
 import 'pdfjs-dist/web/pdf_viewer.css';
 
 type SelectionDraft={quote:string;rects:AnnotationRect[];left:number;top:number;page:number};
+type IdleWindow=Window&{requestIdleCallback?:(callback:()=>void,options?:{timeout:number})=>number;cancelIdleCallback?:(handle:number)=>void};
 const DEFAULT_TEXTBOOK_ZOOM=1.25;
 function annotationId(){
  if(typeof crypto!=='undefined'&&typeof crypto.randomUUID==='function')return crypto.randomUUID();
@@ -35,24 +36,26 @@ function ContinuousPdfPage({book,page,zoom,width,active,annotations,onSelect,onO
  },[active,rendered]);
  useEffect(()=>{
   if(!active||!width)return;
-  let cancelled=false,render:RenderTask|undefined,textLayer:TextLayer|undefined;
+  let cancelled=false,render:RenderTask|undefined,refine:RenderTask|undefined,textLayer:TextLayer|undefined,refineTimer:number|undefined,refineIdle:number|undefined;
   const held=acquireTextbookPage(book,page);setBusy(true);setError('');
   const timeout=window.setTimeout(()=>{if(!cancelled){setError('打开时间过长，请重试或使用右下角“单独打开 PDF”。');setBusy(false);}},18000);
   const work=(async()=>{
    const pdf=await held.promise;if(cancelled)return;
    const pdfPage=await pdf.getPage(textbookPageSource(book,page).pageNumber);if(cancelled)return;
    const base=pdfPage.getViewport({scale:1}),scale=width/base.width*zoom,viewport=pdfPage.getViewport({scale});setAspect(viewport.width/viewport.height);
-   const deviceRatio=Math.min(window.devicePixelRatio||1,2),maxRasterPixels=9_000_000;
-   const pixelRatio=Math.max(1,Math.min(deviceRatio,Math.sqrt(maxRasterPixels/(viewport.width*viewport.height)))),canvas=document.createElement('canvas');
-   canvas.setAttribute('aria-label',`${book.shortTitle} · PDF 第 ${page} 页`);canvas.width=Math.floor(viewport.width*pixelRatio);canvas.height=Math.floor(viewport.height*pixelRatio);canvas.style.width=`${viewport.width}px`;canvas.style.height=`${viewport.height}px`;
+   const deviceRatio=Math.min(window.devicePixelRatio||1,2),maxRasterPixels=5_000_000;
+   const desiredRatio=Math.max(1,Math.min(deviceRatio,Math.sqrt(maxRasterPixels/(viewport.width*viewport.height))));
+   const makeCanvas=(pixelRatio:number)=>{const canvas=document.createElement('canvas');canvas.setAttribute('aria-label',`${book.shortTitle} · PDF 第 ${page} 页`);canvas.width=Math.floor(viewport.width*pixelRatio);canvas.height=Math.floor(viewport.height*pixelRatio);canvas.style.width=`${viewport.width}px`;canvas.style.height=`${viewport.height}px`;return canvas;};
+   const canvas=makeCanvas(1);
    const wrapper=document.createElement('div');wrapper.className='textbook-page';wrapper.lang='en';wrapper.style.width=`${viewport.width}px`;wrapper.style.height=`${viewport.height}px`;wrapper.style.setProperty('--scale-factor',String(scale));wrapper.style.setProperty('--total-scale-factor',String(scale));wrapper.appendChild(canvas);
-   render=pdfPage.render({canvas,viewport,transform:pixelRatio===1?undefined:[pixelRatio,0,0,pixelRatio,0,0]});await render.promise;if(cancelled)return;
+   render=pdfPage.render({canvas,viewport});await render.promise;if(cancelled)return;
    const highlights=document.createElement('div');highlights.className='textbook-highlight-layer';wrapper.appendChild(highlights);host.current?.replaceChildren(wrapper);setRendered(true);setBusy(false);
+   if(desiredRatio>1.05)refineTimer=window.setTimeout(()=>{const idleWindow=window as IdleWindow;const sharpen=async()=>{if(cancelled)return;const sharpCanvas=makeCanvas(desiredRatio);try{refine=pdfPage.render({canvas:sharpCanvas,viewport,transform:[desiredRatio,0,0,desiredRatio,0,0]});await refine.promise;if(!cancelled)canvas.replaceWith(sharpCanvas);}catch(reason){if(!cancelled&&(!(reason instanceof Error)||reason.name!=='RenderingCancelledException'))console.warn('Textbook page refinement failed',reason);}};if(idleWindow.requestIdleCallback)refineIdle=idleWindow.requestIdleCallback(()=>void sharpen(),{timeout:1500});else void sharpen();},300);
    try{const lib=await loadPdfEngine();if(cancelled)return;const layer=document.createElement('div');layer.className='textLayer';wrapper.insertBefore(layer,highlights);textLayer=new lib.TextLayer({textContentSource:pdfPage.streamTextContent(),container:layer,viewport});await textLayer.render();}catch{/* The PDF canvas remains readable if selectable text is unavailable. */}
   })().catch(reason=>{if(!cancelled&&reason?.name!=='RenderingCancelledException'){setError('这一页未能显示，请重试。');setBusy(false);}});
   void work.finally(()=>window.clearTimeout(timeout));
-  return()=>{cancelled=true;window.clearTimeout(timeout);render?.cancel();textLayer?.cancel();void work.finally(held.release);};
- },[active,book.id,book.pageCount,book.pageUrlTemplate,book.url,page,width,zoom,retry]);
+  return()=>{cancelled=true;window.clearTimeout(timeout);if(refineTimer)window.clearTimeout(refineTimer);const idleWindow=window as IdleWindow;if(refineIdle!==undefined)idleWindow.cancelIdleCallback?.(refineIdle);render?.cancel();refine?.cancel();textLayer?.cancel();void work.finally(held.release);};
+ },[active,book,page,width,zoom,retry]);
  useEffect(()=>{
   const layer=host.current?.querySelector<HTMLElement>('.textbook-highlight-layer');if(!layer)return;layer.replaceChildren();
   for(const item of annotations)item.rects.forEach((rect,index)=>{const button=document.createElement('button');button.type='button';button.className='textbook-highlight';button.style.left=`${rect.x*100}%`;button.style.top=`${rect.y*100}%`;button.style.width=`${rect.width*100}%`;button.style.height=`${rect.height*100}%`;button.title=item.note||item.quote;button.setAttribute('aria-label',index===0?`查看第 ${page} 页高亮笔记`:'同一条高亮');button.addEventListener('click',event=>{event.stopPropagation();onOpen(item);});layer.appendChild(button);});
