@@ -111,7 +111,7 @@ export function applyGuestStudyAction(rawState:unknown,body:Record<string,unknow
   return {state,data:studyPayload(state,requested)};
  }
  if(action==='start'){
-  if(typeof body.id!=='string'||!UUID.test(body.id)||state.sessions.some(session=>session.id===body.id)||!['practice','exam','wrong'].includes(String(body.mode)))invalid('练习设置无效。');
+  if(typeof body.id!=='string'||!UUID.test(body.id)||state.sessions.some(session=>session.id===body.id)||!['practice','wrong'].includes(String(body.mode)))invalid('练习设置无效。');
   if(body.subjectId!==undefined&&(typeof body.subjectId!=='string'||!subjectById(body.subjectId)))invalid('请选择有效科目。');
   if(body.sourceId!==undefined&&(typeof body.sourceId!=='string'||!sourceById(body.sourceId)))invalid('请选择有效题目来源。');
   if(body.sourceSet!==undefined&&(typeof body.sourceSet!=='string'||!questions.some(question=>question.sourceSet===body.sourceSet)))invalid('请选择有效的试卷场次。');

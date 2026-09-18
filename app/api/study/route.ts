@@ -29,7 +29,7 @@ if(request.headers.get('x-study-action')!=='1'||!request.headers.get('content-ty
 let body:Record<string,unknown>;try{const text=await request.text();if(text.length>10000)return json({error:'请求过大。'},400);body=JSON.parse(text);if(!body||typeof body!=='object')throw Error();}catch{return json({error:'请求格式无效。'},400);}
 try{const db=database();const action=body.action;const sessionId=typeof body.sessionId==='string'?body.sessionId:null;
 if(action==='start'){
- if(typeof body.id!=='string'||! /^[0-9a-f-]{36}$/i.test(body.id)||!['practice','exam','wrong'].includes(String(body.mode)))return json({error:'练习设置无效。'},400);
+ if(typeof body.id!=='string'||! /^[0-9a-f-]{36}$/i.test(body.id)||!['practice','wrong'].includes(String(body.mode)))return json({error:'练习设置无效。'},400);
  if(body.subjectId!==undefined&&(typeof body.subjectId!=='string'||!subjectById(body.subjectId)))return json({error:'请选择有效科目。'},400);
  if(body.sourceId!==undefined&&(typeof body.sourceId!=='string'||!sourceById(body.sourceId)))return json({error:'请选择有效题目来源。'},400);
  if(body.sourceSet!==undefined&&(typeof body.sourceSet!=='string'||!questions.some(q=>q.sourceSet===body.sourceSet)))return json({error:'请选择有效的试卷场次。'},400);
