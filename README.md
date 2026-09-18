@@ -6,7 +6,7 @@
 
 独立运行于 GitHub Pages；答题记录、生词和教材笔记保存在当前浏览器。
 
-A public-access SQE practice application with an account-backed mode and a device-local guest mode. The current release contains 1,679 questions: 220 SRA samples, 360 Revise SQE practice-assessment questions, all 654 end-of-chapter SQE1-style questions found across the 14 uploaded Revise SQE 2027 textbooks, and 445 questions from QLTS Mock Exams 1–5. OUP remains available as an empty library category until imported.
+A public-access SQE practice application with an account-backed mode and a device-local guest mode. The current release contains 2,424 questions: 220 SRA samples, 360 Revise SQE practice-assessment questions, all 654 end-of-chapter SQE1-style questions found across the 14 uploaded Revise SQE 2027 textbooks, and 1,190 questions from QLTS Mock Exams 1–15. OUP remains available as an empty library category until imported.
 
 ## Product
 
@@ -21,7 +21,7 @@ A public-access SQE practice application with an account-backed mode and a devic
 
 `lib/questions.ts` combines the imported provider datasets on the server. `lib/study-types.ts` contains the transport types. Future imported questions should retain their provider, source question number, edition and original explanation; any supplementary content must remain distinguishable.
 
-The QLTS import is in `lib/qlts-mock-exams-1-5.json`; its source hashes, page counts and exclusions are recorded in `lib/qlts-mock-exams-1-5-source.json`, and its Chinese layer is in `lib/qlts-mock-exams-1-5-translations.json`. The five scanned PDFs supplied 445 complete questions: 90 / 90 / 86 / 89 / 90. Mock 3 lacks Q25–27 and has no answer capture for Q24; Mock 4 Q75 is obscured by a browser certificate dialog. Those five records were excluded instead of reconstructed. Each imported question retains its source PDF page numbers. The material is historical and has not been updated for current law or tax rates.
+The QLTS import is split into five-exam files covering Mocks 1–5, 6–10 and 11–15; the matching `-source.json` files record source hashes, page counts and exclusions, while the matching `-translations.json` files provide the Chinese layer. The active bank contains 1,190 questions: 90 / 90 / 86 / 89 / 90 / 75 / 70 / 73 / 72 / 76 / 72 / 80 / 78 / 77 / 72. Mock 3 lacks Q25–27 and has no answer capture for Q24; Mock 4 Q75 is obscured by a browser certificate dialog. A further 155 questions from Mocks 6–15 were removed after current-law review because their keyed answers depended on superseded tax figures, the former SRA Handbook or Accounts Rules, old anti-money-laundering rules, pre-Brexit substantive EU law, an obsolete court name, or a repealed constitutional statute. The review records and official sources are in the matching `-removed.json` files. Each retained question keeps its original PDF page numbers.
 
 `db/schema.ts` owns the schema. Generated migrations are in `drizzle/`. Never edit an applied migration. D1 is declared as `DB` in `.openai/hosting.json`. Signed-in records remain server-side; guest study records, vocabulary, annotations and guest-imported PDFs stay in that visitor's browser.
 

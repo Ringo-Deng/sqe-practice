@@ -1,0 +1,141 @@
+{
+  "reviewedAt": "2026-09-18",
+  "scope": "QLTS Mock Exams 11-15",
+  "removedQuestions": 71,
+  "method": "Removed only questions whose keyed answer or tested framework is materially tied to superseded tax figures, the pre-2019 SRA regulatory framework, the pre-2019 SRA Accounts Rules, the Money Laundering Regulations 2007, pre-Brexit substantive EU law, or a repealed constitutional statute.",
+  "sources": [
+    {
+      "label": "SRA Standards and Regulations",
+      "url": "https://www.sra.org.uk/standards/"
+    },
+    {
+      "label": "SRA Accounts Rules",
+      "url": "https://www.sra.org.uk/accounts-rules/"
+    },
+    {
+      "label": "HMRC current and previous Income Tax rates and allowances",
+      "url": "https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past"
+    },
+    {
+      "label": "European Union (Withdrawal) Act 2018 explanatory notes",
+      "url": "https://www.legislation.gov.uk/ukpga/2018/16/notes/division/2/index.htm"
+    },
+    {
+      "label": "Immigration and Social Security Co-ordination (EU Withdrawal) Act 2020 explanatory notes",
+      "url": "https://www.legislation.gov.uk/ukpga/2020/20/notes/division/2/index.htm"
+    },
+    {
+      "label": "Dissolution and Calling of Parliament Act 2022 explanatory notes",
+      "url": "https://www.legislation.gov.uk/ukpga/2022/11/notes/division/6/index.htm"
+    }
+  ],
+  "categories": [
+    {
+      "id": "superseded-tax-figures",
+      "reason": "The keyed calculation depends on superseded allowances, dividend treatment, corporation tax rates or annual exempt amounts.",
+      "questionIds": [
+        "qlts-mock-11-q011",
+        "qlts-mock-11-q027",
+        "qlts-mock-11-q056",
+        "qlts-mock-12-q011",
+        "qlts-mock-13-q026",
+        "qlts-mock-13-q038",
+        "qlts-mock-13-q071",
+        "qlts-mock-14-q003",
+        "qlts-mock-14-q005",
+        "qlts-mock-14-q076",
+        "qlts-mock-15-q025",
+        "qlts-mock-15-q028",
+        "qlts-mock-15-q033"
+      ]
+    },
+    {
+      "id": "superseded-sra-handbook",
+      "reason": "The keyed answer is framed by the former SRA Handbook, including former Mandatory Principles.",
+      "questionIds": [
+        "qlts-mock-11-q028",
+        "qlts-mock-11-q047",
+        "qlts-mock-14-q013",
+        "qlts-mock-14-q049",
+        "qlts-mock-15-q050",
+        "qlts-mock-15-q073"
+      ]
+    },
+    {
+      "id": "superseded-accounts-rules",
+      "reason": "The keyed answer applies the former SRA Accounts Rules and their obsolete rule numbering or treatment.",
+      "questionIds": [
+        "qlts-mock-11-q002",
+        "qlts-mock-11-q021",
+        "qlts-mock-11-q048",
+        "qlts-mock-11-q088",
+        "qlts-mock-12-q015",
+        "qlts-mock-12-q062",
+        "qlts-mock-12-q082",
+        "qlts-mock-13-q015",
+        "qlts-mock-13-q033",
+        "qlts-mock-13-q047",
+        "qlts-mock-13-q072",
+        "qlts-mock-14-q038",
+        "qlts-mock-14-q065",
+        "qlts-mock-14-q087",
+        "qlts-mock-15-q014",
+        "qlts-mock-15-q039",
+        "qlts-mock-15-q064",
+        "qlts-mock-15-q084"
+      ]
+    },
+    {
+      "id": "superseded-aml-cdd-rules",
+      "reason": "The keyed answer applies customer due-diligence thresholds from the Money Laundering Regulations 2007.",
+      "questionIds": [
+        "qlts-mock-11-q003"
+      ]
+    },
+    {
+      "id": "pre-brexit-substantive-eu-law",
+      "reason": "The question tests substantive EU free-movement, competition, institutional or direct-effect rules on the premise of UK participation.",
+      "questionIds": [
+        "qlts-mock-11-q015",
+        "qlts-mock-11-q022",
+        "qlts-mock-11-q037",
+        "qlts-mock-11-q049",
+        "qlts-mock-11-q057",
+        "qlts-mock-11-q066",
+        "qlts-mock-11-q072",
+        "qlts-mock-12-q014",
+        "qlts-mock-12-q048",
+        "qlts-mock-12-q055",
+        "qlts-mock-12-q070",
+        "qlts-mock-12-q084",
+        "qlts-mock-13-q006",
+        "qlts-mock-13-q040",
+        "qlts-mock-13-q046",
+        "qlts-mock-13-q055",
+        "qlts-mock-13-q083",
+        "qlts-mock-14-q015",
+        "qlts-mock-14-q036",
+        "qlts-mock-14-q060",
+        "qlts-mock-14-q074",
+        "qlts-mock-14-q075",
+        "qlts-mock-15-q001",
+        "qlts-mock-15-q026",
+        "qlts-mock-15-q059",
+        "qlts-mock-15-q074",
+        "qlts-mock-15-q075"
+      ]
+    },
+    {
+      "id": "repealed-constitutional-framework",
+      "reason": "The keyed answer depends on a repealed statutory framework: the Fixed-term Parliaments Act 2011 or the European Union Act 2011 referendum lock.",
+      "questionIds": [
+        "qlts-mock-11-q036",
+        "qlts-mock-12-q069",
+        "qlts-mock-15-q006",
+        "qlts-mock-15-q023",
+        "qlts-mock-15-q047",
+        "qlts-mock-15-q086"
+      ]
+    }
+  ]
+}

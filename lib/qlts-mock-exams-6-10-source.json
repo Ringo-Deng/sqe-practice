@@ -1,0 +1,396 @@
+{
+  "source": "QLTS Mock Exam 6-10 scanned PDFs",
+  "method": "Local macOS Vision OCR with source-page reconciliation",
+  "importedQuestions": 366,
+  "mocks": [
+    {
+      "mock": 6,
+      "filename": "Mock Exam 6-compresssed.pdf",
+      "sha256": "aad044051f7506e92d2a330df11436291e7d68e8aeac66adf7558d2a45b1f6d6",
+      "pdfPages": 272,
+      "importedQuestions": 75,
+      "excludedQuestions": [
+        {
+          "number": 1,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 8,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 22,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 25,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 30,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 31,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 37,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 45,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 46,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 54,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 56,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 62,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 78,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 81,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 82,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        }
+      ]
+    },
+    {
+      "mock": 7,
+      "filename": "Mock Exam 7-compresssed.pdf",
+      "sha256": "e77f8ea62d997c580f888ac1773fdbaa2cf38a2f735001b8aa855f854bc0e1f9",
+      "pdfPages": 277,
+      "importedQuestions": 70,
+      "excludedQuestions": [
+        {
+          "number": 3,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 11,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 13,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 15,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 18,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 23,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 35,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 42,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 46,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 49,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 50,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 51,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 53,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 59,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 61,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 67,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 73,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 78,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 81,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 88,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        }
+      ]
+    },
+    {
+      "mock": 8,
+      "filename": "Mock Exam 8-compresssed.pdf",
+      "sha256": "089361c9f7a3dabab59a742b99fd30e90a10c93bf97def0718051c5d4c54eb20",
+      "pdfPages": 262,
+      "importedQuestions": 73,
+      "excludedQuestions": [
+        {
+          "number": 2,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 5,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 9,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 15,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 25,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 34,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 37,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 41,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 42,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 50,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 54,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 59,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 60,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 71,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 72,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 86,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 88,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        }
+      ]
+    },
+    {
+      "mock": 9,
+      "filename": "Mock Exam 9-compresssed.pdf",
+      "sha256": "e20e8da4d3e5cc13068d11da3ad6e156cba7fbb2b021e7ac149a6bb76a74008f",
+      "pdfPages": 279,
+      "importedQuestions": 72,
+      "excludedQuestions": [
+        {
+          "number": 4,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 9,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 10,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 12,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 13,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 24,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 25,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 30,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 45,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 47,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 53,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 59,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 63,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 69,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 76,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 80,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 81,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 89,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        }
+      ]
+    },
+    {
+      "mock": 10,
+      "filename": "Mock Exam 10-compresssed.pdf",
+      "sha256": "ad1d60e4413be2e4dd5de72585c826804e6783f542e476e3278531cca546f048",
+      "pdfPages": 274,
+      "importedQuestions": 76,
+      "excludedQuestions": [
+        {
+          "number": 7,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 13,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 17,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 23,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 24,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 31,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 40,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 43,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 45,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 46,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 58,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 71,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 73,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        },
+        {
+          "number": 80,
+          "reason": "Removed after current-law review; see qlts-mock-exams-6-10-removed.json."
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "The source PDFs are scans and are not committed to this repository.",
+    "Each imported record retains its original PDF page numbers.",
+    "Subject IDs are mapped to the app's current syllabus taxonomy and are not publisher labels.",
+    "Simplified Chinese translations are stored in a separate companion file.",
+    "The review record and official sources are in qlts-mock-exams-6-10-removed.json.",
+    "Questions tied to superseded law, regulation, tax figures or a pre-Brexit UK legal position were removed after a current-law review on 18 September 2026."
+  ]
+}

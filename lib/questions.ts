@@ -5,8 +5,12 @@ import pretestedFlk2Questions from './sra-flk2-pretested.json';
 import reviseQuestions from './revise-flk1-assessment-2025-26.json';
 import reviseFlk2Questions from './revise-flk2-practice-assessment.json';
 import reviseChapterQuestions from './revise-chapter-questions.json';
-import qltsMockQuestions from './qlts-mock-exams-1-5.json';
-import qltsTranslations from './qlts-mock-exams-1-5-translations.json';
+import qltsMockQuestions1To5 from './qlts-mock-exams-1-5.json';
+import qltsMockQuestions6To10 from './qlts-mock-exams-6-10.json';
+import qltsMockQuestions11To15 from './qlts-mock-exams-11-15.json';
+import qltsTranslations1To5 from './qlts-mock-exams-1-5-translations.json';
+import qltsTranslations6To10 from './qlts-mock-exams-6-10-translations.json';
+import qltsTranslations11To15 from './qlts-mock-exams-11-15-translations.json';
 import reviseTranslations from './revise-assessment-translations.json';
 import staticTranslations from './static-question-translations.json';
 import reviseReferences from './revise-assessment-references.json';
@@ -21,14 +25,15 @@ const textbookLinksById=questionTextbookLinks as Record<string,QuestionTextbookL
 const reviseById=reviseReferences as Record<string,QuestionTextbookLink>;
 const translationsById=reviseTranslations as Record<string,{stemZh:string;askZh:string;options:Record<string,string>;explanationZh:string}>;
 const staticTranslationsById=staticTranslations as Record<string,{stemZh:string;askZh:string;options:Record<string,string>;explanationZh?:string}>;
-const qltsTranslationsById=qltsTranslations as Record<string,{stemZh:string;askZh:string;options:Record<string,string>;explanationZh:string}>;
+const qltsTranslationsById={...qltsTranslations1To5,...qltsTranslations6To10,...qltsTranslations11To15} as Record<string,{stemZh:string;askZh:string;options:Record<string,string>;explanationZh:string}>;
+const qltsMockQuestions=[...qltsMockQuestions1To5,...qltsMockQuestions6To10,...qltsMockQuestions11To15] as FullQuestion[];
 const importedRevise=(reviseQuestions as FullQuestion[]).map(q=>{
  const translation=translationsById[q.id];
  return {...q,
   ...(translation?{stemZh:translation.stemZh,askZh:translation.askZh,options:q.options.map(o=>({...o,zh:translation.options[o.id]}))}:{}),
   explanation:{...q.explanation,...(translation?{zh:translation.explanationZh}:{})}};
 });
-export const questions:FullQuestion[]=[...(officialQuestions as FullQuestion[]),...(pretestedQuestions as FullQuestion[]),...(officialFlk2Questions as FullQuestion[]),...(pretestedFlk2Questions as FullQuestion[]),...importedRevise,...(reviseFlk2Questions as FullQuestion[]),...(reviseChapterQuestions as FullQuestion[]),...(qltsMockQuestions as FullQuestion[])].map(q=>{
+export const questions:FullQuestion[]=[...(officialQuestions as FullQuestion[]),...(pretestedQuestions as FullQuestion[]),...(officialFlk2Questions as FullQuestion[]),...(pretestedFlk2Questions as FullQuestion[]),...importedRevise,...(reviseFlk2Questions as FullQuestion[]),...(reviseChapterQuestions as FullQuestion[]),...qltsMockQuestions].map(q=>{
  const translation=staticTranslationsById[q.id]??qltsTranslationsById[q.id];
  const bilingual=translation?{...q,
   stemZh:q.stemZh||translation.stemZh,

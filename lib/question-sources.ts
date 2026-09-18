@@ -13,6 +13,16 @@ export const qltsMockExams=[
  {id:'qlts-mock-exam-3',session:3,name:'Mock Exam 3',count:86,details:'原 PDF 缺 Q25–27；Q24 无答案'},
  {id:'qlts-mock-exam-4',session:4,name:'Mock Exam 4',count:89,details:'Q75 原题被系统弹窗遮挡'},
  {id:'qlts-mock-exam-5',session:5,name:'Mock Exam 5',count:90,details:'Q1–90 · 原题英文解析'},
+ {id:'qlts-mock-exam-6',session:6,name:'Mock Exam 6',count:75,details:'已删除 15 道过时题 · 保留原题号'},
+ {id:'qlts-mock-exam-7',session:7,name:'Mock Exam 7',count:70,details:'已删除 20 道过时题 · 保留原题号'},
+ {id:'qlts-mock-exam-8',session:8,name:'Mock Exam 8',count:73,details:'已删除 17 道过时题 · 保留原题号'},
+ {id:'qlts-mock-exam-9',session:9,name:'Mock Exam 9',count:72,details:'已删除 18 道过时题 · 保留原题号'},
+ {id:'qlts-mock-exam-10',session:10,name:'Mock Exam 10',count:76,details:'已删除 14 道过时题 · 保留原题号'},
+ {id:'qlts-mock-exam-11',session:11,name:'Mock Exam 11',count:72,details:'已删除 18 道过时题 · 保留原题号'},
+ {id:'qlts-mock-exam-12',session:12,name:'Mock Exam 12',count:80,details:'已删除 10 道过时题 · 保留原题号'},
+ {id:'qlts-mock-exam-13',session:13,name:'Mock Exam 13',count:78,details:'已删除 12 道过时题 · 保留原题号'},
+ {id:'qlts-mock-exam-14',session:14,name:'Mock Exam 14',count:77,details:'已删除 13 道过时题 · 保留原题号'},
+ {id:'qlts-mock-exam-15',session:15,name:'Mock Exam 15',count:72,details:'已删除 18 道过时题 · 保留原题号'},
 ];
 export const reviseAssessmentSessions=[
  ...[1,2].map(session=>({id:`revise-flk1-2025-26-session-${session}`,session,name:`FLK1 · Session ${session}`,edition:'FLK1 Practice Assessment · 2025–26',details:'原题 Q1–90 · 原书解析 · 中文译文'})),

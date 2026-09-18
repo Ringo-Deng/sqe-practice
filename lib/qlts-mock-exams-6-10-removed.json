@@ -1,0 +1,150 @@
+{
+  "reviewedAt": "2026-09-18",
+  "scope": "QLTS Mock Exams 6-10",
+  "removedQuestions": 84,
+  "method": "Removed only questions whose keyed answer or tested framework is materially tied to superseded tax figures, the pre-2019 SRA regulatory framework, the pre-2019 SRA Accounts Rules, pre-2017 anti-money-laundering due-diligence rules, pre-Brexit UK participation in substantive EU law, or an obsolete court name used as the keyed answer.",
+  "sources": [
+    {
+      "label": "SRA SQE1 Assessment Specification (applicable from 1 September 2026)",
+      "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-specification"
+    },
+    {
+      "label": "SRA FLK1 Assessment Specification",
+      "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-specification/flk1"
+    },
+    {
+      "label": "SRA Standards and Regulations",
+      "url": "https://www.sra.org.uk/standards/"
+    },
+    {
+      "label": "SRA Accounts Rules",
+      "url": "https://www.sra.org.uk/accounts-rules/"
+    },
+    {
+      "label": "HMRC current and previous Income Tax rates and allowances",
+      "url": "https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past"
+    }
+  ],
+  "categories": [
+    {
+      "id": "superseded-tax-figures",
+      "reason": "The keyed calculation depends on superseded allowances, dividend treatment or corporation tax rates.",
+      "questionIds": [
+        "qlts-mock-06-q022",
+        "qlts-mock-06-q062",
+        "qlts-mock-07-q050",
+        "qlts-mock-07-q067",
+        "qlts-mock-07-q081",
+        "qlts-mock-07-q088",
+        "qlts-mock-08-q025",
+        "qlts-mock-08-q059",
+        "qlts-mock-09-q013",
+        "qlts-mock-09-q059",
+        "qlts-mock-09-q081",
+        "qlts-mock-10-q024",
+        "qlts-mock-10-q043"
+      ]
+    },
+    {
+      "id": "superseded-sra-handbook",
+      "reason": "The keyed answer is framed by the former SRA Handbook, including Outcomes, Indicative Behaviours or the former numbered Mandatory Principles.",
+      "questionIds": [
+        "qlts-mock-06-q001",
+        "qlts-mock-06-q025",
+        "qlts-mock-06-q054",
+        "qlts-mock-06-q081",
+        "qlts-mock-07-q011",
+        "qlts-mock-07-q018",
+        "qlts-mock-07-q046",
+        "qlts-mock-07-q053",
+        "qlts-mock-07-q061",
+        "qlts-mock-07-q078",
+        "qlts-mock-08-q009",
+        "qlts-mock-08-q037",
+        "qlts-mock-08-q042",
+        "qlts-mock-08-q072",
+        "qlts-mock-08-q088",
+        "qlts-mock-09-q004",
+        "qlts-mock-09-q024",
+        "qlts-mock-09-q047",
+        "qlts-mock-09-q053",
+        "qlts-mock-09-q069",
+        "qlts-mock-09-q089",
+        "qlts-mock-10-q007",
+        "qlts-mock-10-q046",
+        "qlts-mock-10-q080"
+      ]
+    },
+    {
+      "id": "superseded-accounts-rules",
+      "reason": "The keyed answer applies the former SRA Accounts Rules and their obsolete rule numbering or treatment.",
+      "questionIds": [
+        "qlts-mock-06-q031",
+        "qlts-mock-06-q046",
+        "qlts-mock-06-q078",
+        "qlts-mock-07-q003",
+        "qlts-mock-07-q042",
+        "qlts-mock-07-q049",
+        "qlts-mock-07-q073",
+        "qlts-mock-08-q005",
+        "qlts-mock-08-q054",
+        "qlts-mock-08-q071",
+        "qlts-mock-09-q010",
+        "qlts-mock-09-q030",
+        "qlts-mock-09-q063",
+        "qlts-mock-09-q080",
+        "qlts-mock-10-q017",
+        "qlts-mock-10-q031",
+        "qlts-mock-10-q040",
+        "qlts-mock-10-q071"
+      ]
+    },
+    {
+      "id": "superseded-aml-cdd-rules",
+      "reason": "The keyed answer applies superseded customer due-diligence exemptions and regulation numbers from the pre-2017 anti-money-laundering regime.",
+      "questionIds": [
+        "qlts-mock-08-q002",
+        "qlts-mock-09-q012"
+      ]
+    },
+    {
+      "id": "pre-brexit-substantive-eu-law",
+      "reason": "The question tests substantive EU free-movement, competition, institutional or direct-effect rules on the premise of UK participation, whereas the current SQE specification limits EU law to its current place in the UK constitution.",
+      "questionIds": [
+        "qlts-mock-06-q008",
+        "qlts-mock-06-q030",
+        "qlts-mock-06-q037",
+        "qlts-mock-06-q056",
+        "qlts-mock-06-q082",
+        "qlts-mock-07-q013",
+        "qlts-mock-07-q015",
+        "qlts-mock-07-q035",
+        "qlts-mock-07-q051",
+        "qlts-mock-07-q059",
+        "qlts-mock-08-q015",
+        "qlts-mock-08-q034",
+        "qlts-mock-08-q050",
+        "qlts-mock-08-q060",
+        "qlts-mock-08-q086",
+        "qlts-mock-09-q009",
+        "qlts-mock-09-q025",
+        "qlts-mock-09-q045",
+        "qlts-mock-09-q076",
+        "qlts-mock-10-q013",
+        "qlts-mock-10-q023",
+        "qlts-mock-10-q045",
+        "qlts-mock-10-q058",
+        "qlts-mock-10-q073"
+      ]
+    },
+    {
+      "id": "obsolete-court-name",
+      "reason": "The obsolete Queen's Bench name is part of the keyed answer rather than a harmless distractor or historical quotation.",
+      "questionIds": [
+        "qlts-mock-06-q045",
+        "qlts-mock-07-q023",
+        "qlts-mock-08-q041"
+      ]
+    }
+  ]
+}
