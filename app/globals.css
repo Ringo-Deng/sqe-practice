@@ -217,6 +217,9 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
 @media(max-width:900px){.textbook-scroll-hint{display:none}}
 @media(max-width:650px){.textbook-page-stack{padding-top:4px}.textbook-page-slot{padding:6px 8px}.textbook-pages-continuous .textbook-page-placeholder{width:calc(100% - 16px)}.textbook-catalog-row>[data-slot=button]{opacity:1}.textbook-manage-dialog{width:calc(100vw - 24px)!important;padding:20px 17px!important}}
 
+/* Keep locally saved textbooks and rendered pages ready between reader opens. */
+.textbook-reader-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.textbook-reader-actions [data-slot=button]{height:28px;padding:0 8px;color:#446da9}.textbook-local-status{display:flex;align-items:center;gap:5px;color:#39745f}.textbook-reader-hidden{display:none!important}.textbook-dialog[data-state=closed],.textbook-dialog-overlay[data-state=closed]{display:none!important}
+
 /* Learning history performance, grouped from subject to primary chapter. */
 .history-breakdown{margin-bottom:26px;background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden}
 .history-breakdown-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;padding:23px 25px;border-bottom:1px solid #e5eaf2;background:linear-gradient(115deg,#f7faff,#fff)}
