@@ -4,6 +4,7 @@ import { questions,publicQuestions } from '@/lib/questions';
 import {examDurationMs} from '@/lib/study-timing';
 import {subjectById} from '@/lib/subjects';
 import {sourceById} from '@/lib/question-sources';
+import {buildSubjectStudyStats} from '@/lib/study-statistics';
 import {chapterById,filterQuestions} from '@/lib/chapters';
 import type {Session,StudyData} from '@/lib/study-types';
 export const dynamic='force-dynamic';
@@ -19,9 +20,9 @@ const s=current?serial(current):null;
 const graded=(await db.prepare("SELECT r.* FROM responses r JOIN sessions s ON s.id=r.session_id WHERE s.user_id=? AND (s.mode!='exam' OR s.status='finished') ORDER BY r.answered_at DESC,r.session_id DESC").bind(user).all<AnswerRow>()).results.filter(a=>availableIds.has(a.question_id));
 const mistakes:StudyData['mistakes']=[];
 for(const q of questions){const related=graded.filter(a=>a.question_id===q.id);const count=related.filter(a=>!a.correct).length;if(count)mistakes.push({questionId:q.id,wrongCount:count,selected:related[0].selected,lastCorrect:!!related[0].correct,topic:q.explanation.topic});}
-const correct=graded.filter(a=>a.correct).length;
+const completedAnswers=graded.filter(answer=>answer.selected),correct=completedAnswers.filter(answer=>answer.correct).length;
 const unseenQuestions=publicQuestions();
-return{questions:questions.map((q,index)=>{const visible=s?.answers[q.id]&&(s.mode!=='exam'||s.status==='finished');return visible?q:unseenQuestions[index];}),session:s,sessions:rows.map(serial),stats:{answered:graded.length,correct,accuracy:graded.length?Math.round(correct/graded.length*100):null,wrongCount:mistakes.filter(m=>!m.lastCorrect).length},mistakes};}
+return{questions:questions.map((q,index)=>{const visible=s?.answers[q.id]&&(s.mode!=='exam'||s.status==='finished');return visible?q:unseenQuestions[index];}),session:s,sessions:rows.map(serial),stats:{answered:completedAnswers.length,correct,accuracy:completedAnswers.length?Math.round(correct/completedAnswers.length*100):null,wrongCount:mistakes.filter(m=>!m.lastCorrect).length,subjects:buildSubjectStudyStats(completedAnswers.map(answer=>({questionId:answer.question_id,correct:!!answer.correct})),questions)},mistakes};}
 export async function GET(request:Request){const user=await getChatGPTUser();if(!user)return json({error:'请先登录，再保存和读取学习记录。'},401);try{return json(await payload(user.userId,new URL(request.url).searchParams.get('session')));}catch(e){console.error('Study load failed',e);return json({error:'暂时无法读取记录，请重试。'},503);}}
 export async function POST(request:Request){const user=await getChatGPTUser();if(!user)return json({error:'请先登录，再保存学习记录。'},401);
 if(request.headers.get('x-study-action')!=='1'||!request.headers.get('content-type')?.includes('application/json')||request.headers.get('sec-fetch-site')==='cross-site')return json({error:'请求无效，请刷新后重试。'},403);

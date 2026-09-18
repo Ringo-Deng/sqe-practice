@@ -1,6 +1,7 @@
 import {chapterById,filterQuestions} from './chapters';
 import {questions,publicQuestions} from './questions';
 import {sourceById} from './question-sources';
+import {buildSubjectStudyStats} from './study-statistics';
 import {examDurationMs} from './study-timing';
 import {subjectById} from './subjects';
 import type {Session,StudyData} from './study-types';
@@ -84,7 +85,7 @@ function studyPayload(state:GuestStudyState,requestedSessionId?:string|null):Stu
   const related=graded.filter(answer=>answer.questionId===question.id),wrongCount=related.filter(answer=>!answer.correct).length;
   if(wrongCount)mistakes.push({questionId:question.id,wrongCount,selected:related[0].selected,lastCorrect:related[0].correct,topic:question.explanation.topic});
  }
- const correct=graded.filter(answer=>answer.correct).length,unseen=publicQuestions();
+ const completedAnswers=graded.filter(answer=>answer.selected),correct=completedAnswers.filter(answer=>answer.correct).length,unseen=publicQuestions();
  return {
   questions:questions.map((question,index)=>{
    const visible=current?.answers[question.id]&&(current.mode!=='exam'||current.status==='finished');
@@ -92,7 +93,7 @@ function studyPayload(state:GuestStudyState,requestedSessionId?:string|null):Stu
   }),
   session:current,
   sessions:state.sessions.map(serialize),
-  stats:{answered:graded.length,correct,accuracy:graded.length?Math.round(correct/graded.length*100):null,wrongCount:mistakes.filter(item=>!item.lastCorrect).length},
+  stats:{answered:completedAnswers.length,correct,accuracy:completedAnswers.length?Math.round(correct/completedAnswers.length*100):null,wrongCount:mistakes.filter(item=>!item.lastCorrect).length,subjects:buildSubjectStudyStats(completedAnswers,questions)},
   mistakes,
  };
 }
