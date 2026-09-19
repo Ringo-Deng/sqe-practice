@@ -354,3 +354,7 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
 .mobile-sidebar-trigger{display:none}
 .sidebar-login{display:inline-block;margin-top:8px;color:#d7e2ff;font-size:12px;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:767px){.mobile-sidebar-trigger{display:flex;position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:40;width:44px;height:44px;border:1px solid #d8e1ef;border-radius:12px;background:#fff;color:#345785;box-shadow:0 4px 16px #1c3d6b1a}.workspace{padding-bottom:calc(80px + env(safe-area-inset-bottom))}}
+
+/* Repeat question navigation after the complete answer explanation. */
+.review-navigation{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 24px;background:#fcfdff;border:1px solid var(--border);border-radius:12px}
+@media(max-width:650px){.review-navigation{padding:12px}}
