@@ -95,9 +95,14 @@ try{
   await api(student,'/api/admin/users',undefined,{expected:403});check(true,'student cannot list or manage accounts');
   const before=(await api(admin,'/api/study')).value;
   const sessionId=randomUUID();
-  const started=(await api(admin,'/api/study',{action:'start',id:sessionId,mode:'practice',sourceId:'sra'})).value;
-  const question=started.questions.find(item=>item.id===started.session.questionIds[0]);
-  const answered=(await api(admin,'/api/study',{action:'answer',sessionId,questionId:question.id,selected:question.options[0].id})).value;
+  const started=(await api(admin,'/api/study',{action:'start',id:sessionId,mode:'practice',sourceId:'sra'},{headers:{'X-Study-Compact':'1'}})).value;
+  check(started.compact===true&&started.questions.length===0,'session start omits the unchanged question catalogue');
+  const question=before.questions.find(item=>item.id===started.session.questionIds[0]);
+  const answered=(await api(admin,'/api/study',{action:'answer',sessionId,questionId:question.id,selected:question.options[0].id},{headers:{'X-Study-Compact':'1'}})).value;
+  check(answered.compact===true&&answered.questions.length===0&&answered.revealedQuestions[0]?.id===question.id&&answered.revealedQuestions[0]?.explanation,'answer returns only the newly revealed question');
+  const fullResponseBytes=Buffer.byteLength(JSON.stringify(before));
+  const compactResponseBytes=Buffer.byteLength(JSON.stringify(answered));
+  check(compactResponseBytes<100000&&compactResponseBytes*20<fullResponseBytes,'answer response is more than 20 times smaller than a full load');
   check(answered.stats.answered===before.stats.answered+1,'answer persists through actual Worker and D1');
   const after=(await api(admin,'/api/study')).value;
   check(after.stats.answered===answered.stats.answered,'saved answer survives a fresh API load');
@@ -150,7 +155,7 @@ try{
   check((await api(student,'/api/account')).value.user===null,'logout clears the account session');
   await api(admin,`/api/admin/users/${studentId}/disable`,{});
   await api(admin,'/api/account/logout',{});
-  const report={passed:results.length,checks:results,timings,limitations:'Local wall-clock measurements only; not production CPU usage or browser interaction verification.'};
+  const report={passed:results.length,checks:results,responseBytes:{full:fullResponseBytes,answer:compactResponseBytes},timings,limitations:'Local wall-clock measurements only; not production CPU usage or browser interaction verification.'};
   await writeFile(reportPath,JSON.stringify(report,null,2));
   console.log(JSON.stringify(report,null,2));
 }catch(error){

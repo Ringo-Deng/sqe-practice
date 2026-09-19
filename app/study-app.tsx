@@ -76,14 +76,24 @@ function StudyContent({authenticated,standalone,accountControl,loginHref}:{authe
  const hasQuestionTranslation=!!visibleStemZh||!!visibleAskZh||!!q?.options.some(option=>option.zh?.trim());
  const readerAvailable=!!reader&&reader.questionId===q?.id&&graded&&!activeExam,readerOpen=readerAvailable&&readerVisible;
  useEffect(()=>{window.scrollTo({top:0});setReader(null);setReaderVisible(false);},[view,q?.id,session?.id,summary]);
- const adopt=useCallback((d:StudyData)=>{setData(d);const id=d.session?.questionIds[d.session.position]??d.questions.filter(q=>q.sourceId==='sra')[localPosition]?.id;setSelected(id?d.session?.answers[id]?.selected??'':'');},[localPosition]);
+ const adopt=useCallback((d:StudyData)=>{dataRef.current=d;setData(d);const id=d.session?.questionIds[d.session.position]??d.questions.filter(q=>q.sourceId==='sra')[localPosition]?.id;setSelected(id?d.session?.answers[id]?.selected??'':'');},[localPosition]);
  async function request(body?:Record<string,unknown>,sessionId?:string){
   if(guest){
    const action={...body,action:body?.action??'hydrate',sessionId:body?.sessionId??sessionId};
    if(standalone){const value=applyGuestStudyAction(readGuestStudy(),action);saveGuestStudy(value.state);setNeedsLogin(false);return value.data;}
    const response=await fetch('/api/guest-study',{method:'POST',headers:{'Content-Type':'application/json','X-Study-Action':'1'},body:JSON.stringify({...action,state:readGuestStudy()})});const value=await response.json() as {data?:StudyData;state?:unknown;error?:string};if(!response.ok||!value.data)throw new Error(value.error??'暂时无法读取本机进度，请重试。');saveGuestStudy(value.state);setNeedsLogin(false);return value.data;
   }
-  const response=await fetch('/api/study'+(sessionId?'?session='+encodeURIComponent(sessionId):''),body?{method:'POST',headers:expectedAccountHeaders(expectedAccountId,{'Content-Type':'application/json','X-Study-Action':'1'}),body:JSON.stringify(body)}:{cache:'no-store',headers:expectedAccountHeaders(expectedAccountId)});const value=await response.json() as StudyData & {error?:string};if(!response.ok){if(response.status===401)setNeedsLogin(true);throw new Error(value.error??'暂时无法连接，请重试。');}setNeedsLogin(false);return value as StudyData;
+  const response=await fetch('/api/study'+(sessionId?'?session='+encodeURIComponent(sessionId):''),body?{method:'POST',headers:expectedAccountHeaders(expectedAccountId,{'Content-Type':'application/json','X-Study-Action':'1',...(expectedAccountId?{'X-Study-Compact':'1'}:{})}),body:JSON.stringify(body)}:{cache:'no-store',headers:expectedAccountHeaders(expectedAccountId)});
+  const value=await response.json() as StudyData & {error?:string;compact?:true;revealedQuestions?:Question[]};
+  if(!response.ok){if(response.status===401)setNeedsLogin(true);throw new Error(value.error??'暂时无法连接，请重试。');}
+  setNeedsLogin(false);
+  if(value.compact){
+   const previous=dataRef.current;
+   if(!previous||!Array.isArray(value.revealedQuestions))throw new Error('学习页面需要刷新，请重新打开后继续。');
+   const revealed=new Map(value.revealedQuestions.map(question=>[question.id,question]));
+   return {...value,questions:previous.questions.map(question=>revealed.get(question.id)??question)};
+  }
+  return value;
  }
  const load=useCallback(async()=>{
   setLoading(true);setError('');setWorkspaceReady(false);
