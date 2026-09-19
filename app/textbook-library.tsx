@@ -1,6 +1,6 @@
 'use client';
 import {useCallback,useEffect,useMemo,useState} from 'react';
-import {BookOpen,FileUp,Highlighter,Loader2,PanelLeft,Pencil,Search,X} from 'lucide-react';
+import {Bookmark,BookmarkPlus,BookOpen,FileUp,Highlighter,Loader2,PanelLeft,Pencil,Search,X} from 'lucide-react';
 import {Button} from '@/components/ui/button';
 import {Dialog,DialogContent,DialogDescription,DialogFooter,DialogHeader,DialogTitle} from '@/components/ui/dialog';
 import {Input} from '@/components/ui/input';
@@ -8,30 +8,39 @@ import {Label} from '@/components/ui/label';
 import {subjectById} from '@/lib/subjects';
 import {readReadingPositions,writeReadingPosition} from '@/lib/textbook-reading-position';
 import {TextbookReader} from './textbook-reader';
+import {TextbookBookmarkEditor} from './textbook-bookmark-editor';
 import './textbook-library.css';
 import type {Textbook} from '@/lib/textbooks';
 import type {TextbookAnnotationsController} from './use-textbook-annotations';
 import type {TextbookCatalogController} from './use-textbook-catalog';
+import type {TextbookBookmarksController} from './use-textbook-bookmarks';
+import type {TextbookBookmarkDraft} from '@/lib/textbook-bookmarks';
 
-type LibraryPanel='catalog'|'notes';
+type LibraryPanel='catalog'|'notes'|'bookmarks';
 type BookFilter='all'|'FLK1'|'FLK2'|'mine';
 const bookFilters:{id:BookFilter;label:string}[]=[{id:'all',label:'全部'},{id:'FLK1',label:'FLK1'},{id:'FLK2',label:'FLK2'},{id:'mine',label:'我的'}];
 
-export function TextbookLibrary({controller,catalog,guest=false}:{controller:TextbookAnnotationsController;catalog:TextbookCatalogController;guest?:boolean}){
+export function TextbookLibrary({controller,catalog,bookmarks,guest=false}:{controller:TextbookAnnotationsController;catalog:TextbookCatalogController;bookmarks:TextbookBookmarksController;guest?:boolean}){
  const[first]=catalog.books;
  const[selectedId,setSelectedId]=useState(first?.id??'');
  const[target,setTarget]=useState({bookId:first?.id??'',page:1});
+ const[navigationRequest,setNavigationRequest]=useState(0);
  const[positionReady,setPositionReady]=useState(false);
  const[positions,setPositions]=useState<Record<string,number>>({});
  const[panel,setPanel]=useState<LibraryPanel|null>(null);
  const[query,setQuery]=useState(''),[filter,setFilter]=useState<BookFilter>('all');
  const[noteQuery,setNoteQuery]=useState('');
+ const[bookmarkQuery,setBookmarkQuery]=useState('');
+ const[bookmarkDraft,setBookmarkDraft]=useState<TextbookBookmarkDraft|null>(null);
  const[renameBook,setRenameBook]=useState<Textbook|null>(null),[renameValue,setRenameValue]=useState('');
  const[importOpen,setImportOpen]=useState(false),[importFile,setImportFile]=useState<File|null>(null),[importName,setImportName]=useState('');
  const book=catalog.books.find(item=>item.id===selectedId)??first;
  const bookNotes=useMemo(()=>(controller.data?.annotations??[]).filter(item=>item.bookId===book?.id).sort((a,b)=>a.page-b.page||b.updatedAt-a.updatedAt),[controller.data?.annotations,book?.id]);
  const noteCounts=useMemo(()=>{const counts=new Map<string,number>();for(const note of controller.data?.annotations??[])counts.set(note.bookId,(counts.get(note.bookId)??0)+1);return counts;},[controller.data?.annotations]);
  const filteredNotes=useMemo(()=>{const term=noteQuery.trim().toLocaleLowerCase();return bookNotes.filter(note=>!term||`${note.quote} ${note.note} ${note.page}`.toLocaleLowerCase().includes(term));},[bookNotes,noteQuery]);
+ const bookBookmarks=useMemo(()=>(bookmarks.data?.bookmarks??[]).filter(item=>item.bookId===book?.id).sort((a,b)=>a.page-b.page),[bookmarks.data?.bookmarks,book?.id]);
+ const filteredBookmarks=useMemo(()=>{const term=bookmarkQuery.trim().toLocaleLowerCase();return bookBookmarks.filter(item=>!term||`${item.note} ${item.page}`.toLocaleLowerCase().includes(term));},[bookBookmarks,bookmarkQuery]);
+ const currentBookmark=bookBookmarks.find(item=>item.page===target.page);
  const groups=useMemo(()=>{
   const term=query.trim().toLocaleLowerCase();
   const filtered=catalog.books.filter(item=>{
@@ -56,11 +65,12 @@ export function TextbookLibrary({controller,catalog,guest=false}:{controller:Tex
  const togglePanel=(next:LibraryPanel)=>{
   if(panel===next){closePanel();return;}
   setPanel(next);
+  if(next==='bookmarks'&&!bookmarks.data&&!bookmarks.loading)void bookmarks.load();
   requestAnimationFrame(()=>document.getElementById(`textbook-${next}-search`)?.focus());
  };
  const selectBook=(id:string)=>{
   const next=catalog.books.find(item=>item.id===id);if(!next)return;
-  setSelectedId(id);setTarget({bookId:id,page:Math.min(next.pageCount,positions[id]??1)});setNoteQuery('');
+  setSelectedId(id);setTarget({bookId:id,page:Math.min(next.pageCount,positions[id]??1)});setNoteQuery('');setBookmarkQuery('');
   closePanel();
  };
  const handlePosition=useCallback((bookId:string,page:number)=>{
@@ -68,20 +78,23 @@ export function TextbookLibrary({controller,catalog,guest=false}:{controller:Tex
   setPositions(current=>current[bookId]===page?current:{...current,[bookId]:page});
   writeReadingPosition(bookId,page);
  },[]);
+ const jumpToPage=(bookId:string,page:number)=>{setTarget({bookId,page});setNavigationRequest(current=>current+1);};
  const openRename=(item:Textbook)=>{setRenameBook(item);setRenameValue(item.shortTitle);};
  const submitRename=async(event:React.FormEvent)=>{event.preventDefault();if(!renameBook||!renameValue.trim())return;if(await catalog.rename(renameBook.id,renameValue.trim()))setRenameBook(null);};
  const chooseFile=(file?:File)=>{setImportFile(file??null);if(file&&!importName.trim())setImportName(file.name.replace(/\.pdf$/i,''));};
  const submitImport=async(event:React.FormEvent)=>{event.preventDefault();if(!importFile||!importName.trim())return;if(await catalog.importPdf(importFile,importName.trim())){setImportOpen(false);setImportFile(null);setImportName('');setQuery('');setFilter('mine');setPanel('catalog');}};
+ const bookmarkCurrentPage=()=>{if(book&&bookmarks.data)setBookmarkDraft(currentBookmark??{bookId:book.id,page:target.page,note:''});};
  const panelControls=<div className="textbook-panel-controls" role="group" aria-label="阅读侧栏">
   <Button id="textbook-catalog-toggle" variant="ghost" size="sm" aria-label="书目" title="打开或收起书目" aria-expanded={panel==='catalog'} aria-controls="textbook-catalog-panel" onClick={()=>togglePanel('catalog')}><PanelLeft size={16}/><span className="textbook-panel-button-label">书目</span></Button>
   <Button id="textbook-notes-toggle" variant="ghost" size="sm" aria-label={`笔记，${bookNotes.length} 条`} title="打开或收起笔记" aria-expanded={panel==='notes'} aria-controls="textbook-notes-panel" onClick={()=>togglePanel('notes')}><Highlighter size={16}/><span className="textbook-panel-button-label">笔记</span><span className="textbook-count">{bookNotes.length}</span></Button>
+  <Button id="textbook-bookmarks-toggle" variant="ghost" size="sm" aria-label={`书签，${bookBookmarks.length} 个`} title="打开或收起书签" aria-expanded={panel==='bookmarks'} aria-controls="textbook-bookmarks-panel" onClick={()=>togglePanel('bookmarks')}><Bookmark size={16}/><span className="textbook-panel-button-label">书签</span><span className="textbook-count">{bookBookmarks.length}</span></Button>
  </div>;
  if(!positionReady)return <div className="empty"><Loader2 className="animate-spin" size={24}/><p>正在打开上次阅读位置…</p></div>;
  return <section className="textbook-library-page textbook-library-refined textbook-library-compact" onKeyDown={event=>{
-  if(!event.defaultPrevented&&event.key==='Escape'&&panel&&!renameBook&&!importOpen&&!(event.target as HTMLElement).closest('[role="dialog"],[role="alertdialog"]')){event.preventDefault();closePanel();}
+  if(!event.defaultPrevented&&event.key==='Escape'&&panel&&!renameBook&&!importOpen&&!bookmarkDraft&&!(event.target as HTMLElement).closest('[role="dialog"],[role="alertdialog"]')){event.preventDefault();closePanel();}
  }} onPointerDown={event=>{
   // Book selection is temporary; notes stay open while the reader is used.
-  if(panel==='catalog'&&!renameBook&&!importOpen&&!(event.target as HTMLElement).closest('#textbook-catalog-panel,#textbook-catalog-toggle,#textbook-notes-toggle,[role="dialog"],[role="alertdialog"],[data-slot="popover-content"]'))setPanel(null);
+  if(panel==='catalog'&&!renameBook&&!importOpen&&!bookmarkDraft&&!(event.target as HTMLElement).closest('#textbook-catalog-panel,#textbook-catalog-toggle,#textbook-notes-toggle,#textbook-bookmarks-toggle,[role="dialog"],[role="alertdialog"],[data-slot="popover-content"]'))setPanel(null);
  }}>
   <h1 className="sr-only">教材阅读</h1>
   {(controller.error||catalog.error)&&<div className="notice error" role="alert"><span>{controller.error||catalog.error}</span><Button variant="outline" disabled={controller.busy||controller.loading||catalog.busy||catalog.loading} onClick={()=>void Promise.all([controller.load(),catalog.load()])}>重新读取</Button></div>}
@@ -106,14 +119,22 @@ export function TextbookLibrary({controller,catalog,guest=false}:{controller:Tex
     </div>
    </aside>
    <div className="textbook-library-reader">
-    {book?<TextbookReader key={book.id} references={[]} books={[book]} initial={target} annotations={controller} standalone toolbarStart={panelControls} onPositionChange={handlePosition}/>:<div className="empty">{panelControls}<BookOpen/><p>尚无教材。</p><Button onClick={()=>setImportOpen(true)}><FileUp size={15}/>导入 PDF</Button></div>}
+    {book?<TextbookReader key={book.id} references={[]} books={[book]} initial={target} navigationRequest={navigationRequest} annotations={controller} bookmarks={bookmarks} standalone toolbarStart={panelControls} onPositionChange={handlePosition}/>:<div className="empty">{panelControls}<BookOpen/><p>尚无教材。</p><Button onClick={()=>setImportOpen(true)}><FileUp size={15}/>导入 PDF</Button></div>}
    </div>
    <aside id="textbook-notes-panel" className="textbook-note-index" aria-label="教材高亮笔记" hidden={panel!=='notes'}>
     <div className="textbook-note-index-heading"><div><h2><Highlighter size={17}/>高亮笔记 <span className="textbook-count">{bookNotes.length}</span></h2><p>{book?.shortTitle??'选择一本教材'}</p></div><Button size="icon" variant="ghost" aria-label="收起笔记" onClick={closePanel}><X size={16}/></Button></div>
     <div className="textbook-panel-search"><Search size={15}/><Input id="textbook-notes-search" aria-label="搜索当前教材笔记" placeholder="搜索高亮、笔记或页码" value={noteQuery} onChange={event=>setNoteQuery(event.target.value)}/>{noteQuery&&<button type="button" aria-label="清除笔记搜索" onClick={()=>{setNoteQuery('');document.getElementById('textbook-notes-search')?.focus();}}><X size={14}/></button>}</div>
-    {controller.loading&&!controller.data?<div className="textbook-notes-loading"><Loader2 className="animate-spin" size={18}/>正在读取…</div>:!bookNotes.length?<div className="textbook-notes-empty"><div className="textbook-note-empty-icon"><Highlighter size={24}/></div><p>把重要的规则留下来</p><small>在教材中选中文字，即可高亮或写笔记。<br/>保存后，在这里点击即可回到原文。</small></div>:!filteredNotes.length?<div className="textbook-filter-empty"><p>没有匹配的笔记</p><Button variant="ghost" size="sm" onClick={()=>setNoteQuery('')}>查看全部笔记</Button></div>:<div className="textbook-note-list">{filteredNotes.map(item=><button key={item.id} onClick={()=>{setTarget({bookId:item.bookId,page:item.page});}}><span>第 {item.page} 页<span>回到原文 →</span></span><blockquote>{item.quote}</blockquote>{item.note&&<p>{item.note}</p>}</button>)}</div>}
+    {controller.loading&&!controller.data?<div className="textbook-notes-loading"><Loader2 className="animate-spin" size={18}/>正在读取…</div>:!bookNotes.length?<div className="textbook-notes-empty"><div className="textbook-note-empty-icon"><Highlighter size={24}/></div><p>把重要的规则留下来</p><small>在教材中选中文字，即可高亮或写笔记。<br/>保存后，在这里点击即可回到原文。</small></div>:!filteredNotes.length?<div className="textbook-filter-empty"><p>没有匹配的笔记</p><Button variant="ghost" size="sm" onClick={()=>setNoteQuery('')}>查看全部笔记</Button></div>:<div className="textbook-note-list">{filteredNotes.map(item=><button key={item.id} onClick={()=>jumpToPage(item.bookId,item.page)}><span>第 {item.page} 页<span>回到原文 →</span></span><blockquote>{item.quote}</blockquote>{item.note&&<p>{item.note}</p>}</button>)}</div>}
+   </aside>
+   <aside id="textbook-bookmarks-panel" className="textbook-note-index textbook-bookmark-index" aria-label="教材书签" hidden={panel!=='bookmarks'}>
+    <div className="textbook-note-index-heading"><div><h2><Bookmark size={17}/>书签 <span className="textbook-count">{bookBookmarks.length}</span></h2><p>{book?.shortTitle??'选择一本教材'}</p></div><Button size="icon" variant="ghost" aria-label="收起书签" onClick={closePanel}><X size={16}/></Button></div>
+    <div className="textbook-panel-search"><Search size={15}/><Input id="textbook-bookmarks-search" aria-label="搜索当前教材书签" placeholder="搜索备注或页码" value={bookmarkQuery} onChange={event=>setBookmarkQuery(event.target.value)}/>{bookmarkQuery&&<button type="button" aria-label="清除书签搜索" onClick={()=>{setBookmarkQuery('');document.getElementById('textbook-bookmarks-search')?.focus();}}><X size={14}/></button>}</div>
+    <div className="textbook-bookmark-actions"><Button variant="outline" size="sm" onClick={bookmarkCurrentPage} disabled={!book||!bookmarks.data||bookmarks.loading||bookmarks.busy}>{currentBookmark?<Pencil size={14}/>:<BookmarkPlus size={14}/>}<span>{currentBookmark?'编辑当前页书签':'收藏当前页'}</span><small>第 {target.page} 页</small></Button></div>
+    {bookmarks.error&&<div className="textbook-bookmark-error" role="alert"><p>{bookmarks.error}</p><Button variant="outline" size="sm" disabled={bookmarks.loading||bookmarks.busy} onClick={()=>void bookmarks.load()}>重新读取</Button></div>}
+    {bookmarks.loading&&!bookmarks.data?<div className="textbook-notes-loading"><Loader2 className="animate-spin" size={18}/>正在读取…</div>:!bookBookmarks.length?<div className="textbook-filter-empty"><Bookmark size={24}/><p>{bookmarks.error?'暂时无法读取书签':'还没有书签'}</p></div>:!filteredBookmarks.length?<div className="textbook-filter-empty"><p>没有匹配的书签</p><Button variant="ghost" size="sm" onClick={()=>setBookmarkQuery('')}>查看全部书签</Button></div>:<div className="textbook-bookmark-list">{filteredBookmarks.map(item=><div className={`textbook-bookmark-row ${item.page===target.page?'active':''}`} key={`${item.bookId}:${item.page}`}><button type="button" className="textbook-bookmark-jump" onClick={()=>jumpToPage(item.bookId,item.page)} aria-current={item.page===target.page?'page':undefined}><span><Bookmark size={14}/>第 {item.page} 页</span>{item.note&&<p>{item.note}</p>}</button><Button variant="ghost" size="icon" aria-label={`编辑第 ${item.page} 页书签备注`} title="编辑备注" disabled={bookmarks.busy} onClick={()=>setBookmarkDraft(item)}><Pencil size={14}/></Button></div>)}</div>}
    </aside>
   </div>
+  {bookmarkDraft&&<TextbookBookmarkEditor key={`${bookmarkDraft.bookId}:${bookmarkDraft.page}:${bookmarkDraft.revision??'new'}`} draft={bookmarkDraft} bookTitle={catalog.books.find(item=>item.id===bookmarkDraft.bookId)?.shortTitle??'教材'} controller={bookmarks} onChange={setBookmarkDraft} onClose={()=>setBookmarkDraft(null)}/>}
   <Dialog open={!!renameBook} onOpenChange={open=>{if(!open&&!catalog.busy)setRenameBook(null);}}><DialogContent className="textbook-manage-dialog"><DialogHeader><DialogTitle>重命名教材</DialogTitle><DialogDescription>只改变你在刷题室看到的名称，不会修改 PDF 文件。</DialogDescription></DialogHeader><form onSubmit={submitRename}><div className="textbook-manage-field"><Label htmlFor="textbook-rename">教材名称</Label><Input id="textbook-rename" autoFocus maxLength={120} value={renameValue} onChange={event=>setRenameValue(event.target.value)}/></div><DialogFooter><Button type="button" variant="outline" disabled={catalog.busy} onClick={()=>setRenameBook(null)}>取消</Button><Button type="submit" disabled={catalog.busy||!renameValue.trim()}>{catalog.busy?<Loader2 size={15} className="animate-spin"/>:<Pencil size={15}/>}保存名称</Button></DialogFooter></form></DialogContent></Dialog>
   <Dialog open={importOpen} onOpenChange={open=>{if(!catalog.busy)setImportOpen(open);}}><DialogContent className="textbook-manage-dialog"><DialogHeader><DialogTitle>导入教材 PDF</DialogTitle><DialogDescription>{guest?'PDF 只保存在当前浏览器中，清除网站数据或更换设备后需要重新导入。单份不超过 80 MB。':'PDF 会保存到你的账号中，导入后可连续阅读、高亮并记录笔记。单份不超过 80 MB。'}</DialogDescription></DialogHeader><form onSubmit={submitImport}><div className="textbook-manage-field"><Label htmlFor="textbook-file">PDF 文件</Label><Input id="textbook-file" type="file" accept="application/pdf,.pdf" onChange={event=>chooseFile(event.target.files?.[0])}/></div><div className="textbook-manage-field"><Label htmlFor="textbook-import-name">教材名称</Label><Input id="textbook-import-name" maxLength={120} value={importName} onChange={event=>setImportName(event.target.value)} placeholder="例如：Business Law Notes"/></div><DialogFooter><Button type="button" variant="outline" disabled={catalog.busy} onClick={()=>setImportOpen(false)}>取消</Button><Button type="submit" disabled={catalog.busy||!importFile||!importName.trim()}>{catalog.busy?<Loader2 size={15} className="animate-spin"/>:<FileUp size={15}/>}导入教材</Button></DialogFooter></form></DialogContent></Dialog>
  </section>;

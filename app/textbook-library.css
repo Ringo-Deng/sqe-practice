@@ -62,6 +62,22 @@
 .textbook-filter-empty p{color:#596f91;font-size:13px;margin:0 0 7px}
 .textbook-filter-empty small{display:block}
 .textbook-filter-empty button{margin-top:13px;font-size:12px;color:#4f73a6}
+.textbook-bookmark-actions{padding:0 12px 12px;flex-shrink:0}
+.textbook-bookmark-actions>button{width:100%;justify-content:flex-start;gap:7px;border-color:#dce5f1;background:#f8faff;font-size:12px;color:#4d6c98;box-shadow:none}
+.textbook-bookmark-actions>button>small{margin-left:auto;font-size:10px;color:#8496af;white-space:nowrap}
+.textbook-bookmark-error{flex-shrink:0;margin:0 12px 12px;padding:10px;border:1px solid #f0d1d0;border-radius:7px;background:#fff8f7;color:#a9524d;font-size:12px;line-height:1.6;overflow-wrap:anywhere}
+.textbook-bookmark-error p{margin:0 0 8px}
+.textbook-bookmark-error button{height:27px;font-size:11px;background:#fff}
+.textbook-bookmark-list{display:flex;flex-direction:column;gap:7px;min-height:0;padding:0 12px 14px;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin}
+.textbook-bookmark-row{display:flex;align-items:flex-start;border:1px solid #e2e8f1;border-radius:8px;background:#fff;flex-shrink:0;transition:border-color .15s,background .15s}
+.textbook-bookmark-row:hover{border-color:#c9d8ee;background:#f8fbff}
+.textbook-bookmark-row.active{background:#edf3fd;border-color:#ccdcef}
+.textbook-bookmark-jump{flex:1;min-width:0;padding:12px;border:0;border-radius:7px;background:transparent;text-align:left;color:#4a6286}
+.textbook-bookmark-jump>span{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:550;font-variant-numeric:tabular-nums}
+.textbook-bookmark-jump>span>svg{flex-shrink:0;color:#7c98c0}
+.textbook-bookmark-jump>p{margin:8px 0 0;font-size:12px;line-height:1.7;color:#71829b;white-space:pre-wrap;overflow-wrap:anywhere}
+.textbook-bookmark-jump:focus-visible{outline:2px solid #8da8d1;outline-offset:-2px}
+.textbook-bookmark-row>button[data-slot=button]{flex-shrink:0;width:28px;height:28px;margin:6px 5px 0 0;padding:0;color:#8597b0}
 /* Shared reader controls, including the reader alongside a practice question. */
 .textbook-reader-inner .textbook-reader-heading{gap:12px;padding:13px 16px;min-height:57px}
 .textbook-reader-title{display:flex;align-items:center;gap:12px;min-width:0;flex:1}

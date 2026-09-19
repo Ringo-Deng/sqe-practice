@@ -1,7 +1,7 @@
 'use client';
 import {useCallback,useEffect,useLayoutEffect,useMemo,useRef,useState} from 'react';
 import type {ReactNode} from 'react';
-import {BookOpen,ChevronLeft,ChevronRight,Download,Ellipsis,ExternalLink,HardDrive,Highlighter,Loader2,Pencil,RotateCcw,StickyNote,Trash2,X,ZoomIn,ZoomOut} from 'lucide-react';
+import {Bookmark,BookOpen,ChevronLeft,ChevronRight,Download,Ellipsis,ExternalLink,HardDrive,Highlighter,Loader2,Pencil,RotateCcw,StickyNote,Trash2,X,ZoomIn,ZoomOut} from 'lucide-react';
 import {Button} from '@/components/ui/button';
 import {Tabs,TabsList,TabsTrigger} from '@/components/ui/tabs';
 import {Dialog,DialogContent,DialogTitle,DialogDescription,DialogHeader,DialogFooter} from '@/components/ui/dialog';
@@ -15,6 +15,9 @@ import {acquireTextbookPage,loadPdfEngine} from '@/lib/textbook-pdf';
 import {canSaveTextbookLocally,isTextbookSavedLocally,saveTextbookLocally} from '@/lib/textbook-local-cache';
 import type {AnnotationRect,TextbookAnnotation,TextbookAnnotationDraft} from '@/lib/textbook-annotations';
 import type {TextbookAnnotationsController} from './use-textbook-annotations';
+import type {TextbookBookmarksController} from './use-textbook-bookmarks';
+import type {TextbookBookmarkDraft} from '@/lib/textbook-bookmarks';
+import {TextbookBookmarkEditor} from './textbook-bookmark-editor';
 import type {RenderTask,TextLayer} from 'pdfjs-dist';
 import {toast} from 'sonner';
 import 'pdfjs-dist/web/pdf_viewer.css';
@@ -86,7 +89,7 @@ function AnnotationEditor({draft,bookTitle,onChange,onClose,controller}:{draft:T
  return <><Dialog open onOpenChange={open=>{if(!open&&!controller.busy)onClose();}}><DialogContent className="textbook-note-editor" showCloseButton={!controller.busy}><DialogHeader><DialogTitle>{saved?'编辑高亮笔记':'添加高亮笔记'}</DialogTitle><DialogDescription>{bookTitle} · 第 {draft.page} 页</DialogDescription></DialogHeader><form onSubmit={save}><blockquote>{draft.quote}</blockquote><div className="textbook-note-field"><Label htmlFor="textbook-note">我的笔记 <span>可留空，仅保留高亮</span></Label><Textarea autoFocus id="textbook-note" maxLength={10000} rows={5} value={draft.note} onChange={event=>onChange({...draft,note:event.target.value})} placeholder="记下规则、例外或容易混淆的地方"/></div>{controller.error&&<p className="vocab-error" role="alert">{controller.error}</p>}<DialogFooter className="textbook-note-actions">{saved&&<Button type="button" variant="ghost" className="text-[#aa4d5c] mr-auto" disabled={controller.busy} onClick={()=>setConfirmDelete(true)}><Trash2 size={15}/>删除高亮</Button>}<Button type="button" variant="outline" disabled={controller.busy} onClick={onClose}>取消</Button><Button type="submit" disabled={controller.busy}>{controller.busy?<Loader2 size={15} className="animate-spin"/>:<StickyNote size={15}/>}保存</Button></DialogFooter></form></DialogContent></Dialog><AlertDialog open={confirmDelete} onOpenChange={open=>{if(!controller.busy)setConfirmDelete(open);}}><AlertDialogContent><AlertDialogHeader><AlertDialogTitle>删除这条高亮？</AlertDialogTitle><AlertDialogDescription>高亮和填写的笔记会一起删除，教材原文不会受到影响。</AlertDialogDescription></AlertDialogHeader><AlertDialogFooter><AlertDialogCancel disabled={controller.busy}>取消</AlertDialogCancel><Button variant="destructive" disabled={controller.busy} onClick={()=>void remove()}>{controller.busy?'正在删除…':'确认删除'}</Button></AlertDialogFooter></AlertDialogContent></AlertDialog></>;
 }
 
-export function TextbookReader({references=[],initial,onClose,books,standalone=false,open=true,sourceQuestionId,annotations,onPositionChange,toolbarStart}:{references?:LinkedTextbookReference[];initial:{bookId:string;page:number};onClose?:()=>void;books?:Textbook[];standalone?:boolean;open?:boolean;sourceQuestionId?:string;annotations:TextbookAnnotationsController;onPositionChange?:(bookId:string,page:number)=>void;toolbarStart?:ReactNode}){
+export function TextbookReader({references=[],initial,onClose,books,standalone=false,open=true,sourceQuestionId,annotations,bookmarks,onPositionChange,toolbarStart,navigationRequest}:{references?:LinkedTextbookReference[];initial:{bookId:string;page:number};onClose?:()=>void;books?:Textbook[];standalone?:boolean;open?:boolean;sourceQuestionId?:string;annotations:TextbookAnnotationsController;bookmarks?:TextbookBookmarksController;onPositionChange?:(bookId:string,page:number)=>void;toolbarStart?:ReactNode;navigationRequest?:number}){
  const availableBooks=useMemo(()=>{
   if(references.length){const source=books?.length?books:[];return [...new Set(references.map(ref=>ref.bookId))].map(id=>source.find(item=>item.id===id)??textbookById(id)).filter((item):item is Textbook=>!!item);}
   return books?.length?books:[];
@@ -95,6 +98,8 @@ export function TextbookReader({references=[],initial,onClose,books,standalone=f
  const [pageInput,setPageInput]=useState(String(initial.page)),[zoom,setZoom]=useState(DEFAULT_TEXTBOOK_ZOOM),[overlay,setOverlay]=useState(false),[readerWidth,setReaderWidth]=useState(0);
  const [localBook,setLocalBook]=useState<{id:string;state:'remote'|'saving'|'saved'}|null>(null);
  const [selection,setSelection]=useState<SelectionDraft|null>(null),[editing,setEditing]=useState<TextbookAnnotationDraft|null>(null);
+ const[editingBookmark,setEditingBookmark]=useState<TextbookBookmarkDraft|null>(null);
+ const lastNavigationRequest=useRef(navigationRequest);
  const pageInputFocused=useRef(false);
  const scrollRoot=useRef<HTMLDivElement>(null),scrollFrame=useRef<number|undefined>(undefined),lastReported=useRef(''),lastLayout=useRef('');
  const book=availableBooks.find(item=>item.id===bookId)??textbookById(bookId)??availableBooks[0];
@@ -102,13 +107,13 @@ export function TextbookReader({references=[],initial,onClose,books,standalone=f
  const refs=references.filter(ref=>ref.bookId===book?.id),related=[...new Set(refs.flatMap(ref=>ref.pageNumbers))];
  const page=book?positions[book.id]??related[0]??1:1;
  const annotationsByPage=useMemo(()=>{const map=new Map<number,TextbookAnnotation[]>();for(const item of annotations.data?.annotations??[])if(item.bookId===book?.id)map.set(item.page,[...(map.get(item.page)??[]),item]);return map;},[annotations.data?.annotations,book?.id]);
- const pageAnnotations=annotationsByPage.get(page)??[];
+ const currentBookmark=bookmarks?.data?.bookmarks.find(item=>item.bookId===book?.id&&item.page===page);
  const jumpToPage=useCallback((next:number,behavior:ScrollBehavior='smooth')=>requestAnimationFrame(()=>{const root=scrollRoot.current,node=root?.querySelector<HTMLElement>(`[data-textbook-page="${next}"]`);if(root&&node)root.scrollTo({top:Math.max(0,node.offsetTop-8),behavior});}),[]);
  const go=useCallback((next:number,behavior?:ScrollBehavior)=>{if(book&&Number.isInteger(next)&&next>=1&&next<=book.pageCount){setPositions(current=>({...current,[book.id]:next}));setPageInput(String(next));setSelection(null);window.getSelection()?.removeAllRanges();jumpToPage(next,behavior??(Math.abs(next-page)>3?'auto':'smooth'));}else setPageInput(String(page));},[book,jumpToPage,page]);
  useEffect(()=>{
-  const key=`${initial.bookId}:${initial.page}`;if(key===lastReported.current)return;
+  const key=`${initial.bookId}:${initial.page}`,requested=navigationRequest!==lastNavigationRequest.current;lastNavigationRequest.current=navigationRequest;if(key===lastReported.current&&!requested)return;
   setBookId(initial.bookId);setPositions(current=>({...current,[initial.bookId]:initial.page}));setPageInput(String(initial.page));setSelection(null);requestAnimationFrame(()=>jumpToPage(initial.page,'auto'));
- },[initial.bookId,initial.page,jumpToPage]);
+ },[initial.bookId,initial.page,jumpToPage,navigationRequest]);
  useEffect(()=>{const root=scrollRoot.current;if(!root)return;const observer=new ResizeObserver(([entry])=>{const slot=root.querySelector<HTMLElement>('.textbook-page-slot'),style=slot?window.getComputedStyle(slot):null,padding=style?parseFloat(style.paddingLeft)+parseFloat(style.paddingRight):32;const width=Math.floor(entry.contentRect.width-padding);if(width>0)setReaderWidth(width);});observer.observe(root);return()=>observer.disconnect();},[book?.id,overlay]);
  useLayoutEffect(()=>{if(!book||!readerWidth)return;const key=`${book.id}:${overlay?'overlay':'inline'}:${readerWidth}:${zoom}`;if(key===lastLayout.current)return;const root=scrollRoot.current,node=root?.querySelector<HTMLElement>(`[data-textbook-page="${page}"]`);if(!root||!node)return;lastLayout.current=key;root.scrollTo({top:Math.max(0,node.offsetTop-8),behavior:'auto'});},[book,overlay,page,readerWidth,zoom]);
  useEffect(()=>{if(standalone){setOverlay(false);return;}const mq=window.matchMedia('(max-width: 1250px)'),update=()=>setOverlay(mq.matches);update();mq.addEventListener('change',update);return()=>mq.removeEventListener('change',update);},[standalone]);
@@ -124,7 +129,7 @@ export function TextbookReader({references=[],initial,onClose,books,standalone=f
  },[book,page]);
  const switchBook=(id:string)=>{const next=availableBooks.find(item=>item.id===id);if(!next)return;const nextPage=positions[id]??references.find(ref=>ref.bookId===id)?.pageNumbers[0]??1;setBookId(id);setZoom(DEFAULT_TEXTBOOK_ZOOM);setSelection(null);setPageInput(String(nextPage));requestAnimationFrame(()=>jumpToPage(nextPage,'auto'));};
  const onReaderKeyDown=(event:React.KeyboardEvent<HTMLDivElement>)=>{
-  if(event.target!==event.currentTarget||document.activeElement!==event.currentTarget||event.defaultPrevented||event.altKey||event.ctrlKey||event.metaKey||event.shiftKey||event.nativeEvent.isComposing||editing||selection||!open)return;
+  if(event.target!==event.currentTarget||document.activeElement!==event.currentTarget||event.defaultPrevented||event.altKey||event.ctrlKey||event.metaKey||event.shiftKey||event.nativeEvent.isComposing||editing||editingBookmark||selection||!open)return;
   const selectedText=window.getSelection();if(selectedText&&!selectedText.isCollapsed)return;
   const direction=event.key==='ArrowLeft'||event.key==='PageUp'?-1:event.key==='ArrowRight'||event.key==='PageDown'?1:0;if(!direction)return;
   event.preventDefault();if(book)go(Math.max(1,Math.min(book.pageCount,page+direction)),'auto');
@@ -148,11 +153,13 @@ export function TextbookReader({references=[],initial,onClose,books,standalone=f
    </div>
    {!standalone&&<span className="textbook-scroll-hint">连续滚动阅读</span>}
    <div className="textbook-zoom" role="group" aria-label="教材缩放"><Button size="icon" variant="ghost" aria-label="缩小教材" disabled={zoom<=.75} onClick={()=>setZoom(value=>Math.max(.75,value-.25))}><ZoomOut size={16}/></Button><Button size="sm" variant="ghost" className="textbook-zoom-value" aria-label={`当前缩放 ${Math.round(zoom*100)}%，点击适应阅读区宽度`} title="适应阅读区宽度（100%）" onClick={()=>setZoom(DEFAULT_TEXTBOOK_ZOOM)}>{zoom===1&&!standalone?'100% · 适宽':`${Math.round(zoom*100)}%`}</Button><Button size="icon" variant="ghost" aria-label="放大教材" disabled={zoom>=2} onClick={()=>setZoom(value=>Math.min(2,value+.25))}><ZoomIn size={16}/></Button></div>
+   {bookmarks&&<Button type="button" size="sm" variant="ghost" className="textbook-bookmark-toggle" disabled={!bookmarks.data||bookmarks.loading||bookmarks.busy} aria-label={`${currentBookmark?'编辑':'添加'}第 ${page} 页书签`} title={currentBookmark?'编辑本页书签备注':'添加本页书签'} data-bookmarked={!!currentBookmark} onClick={()=>setEditingBookmark(currentBookmark?{...currentBookmark}:{bookId:book.id,page,note:''})}><Bookmark size={16} fill={currentBookmark?'currentColor':'none'}/><span>{currentBookmark?'编辑书签':'添加书签'}</span></Button>}
    {standalone&&<Popover><PopoverTrigger asChild><Button type="button" size="sm" variant="ghost" className="textbook-reader-more" aria-label="更多教材选项" title="更多教材选项"><Ellipsis size={17}/><span>更多</span></Button></PopoverTrigger><PopoverContent align="end" className="textbook-reader-more-content" aria-label="更多教材选项" onEscapeKeyDown={event=>event.stopPropagation()}><p className="textbook-reader-more-title">{book.title}</p>{book.version&&<p className="textbook-reader-more-edition">{book.version==='Library upload'?'学习资料':book.version}</p>}<div className="textbook-reader-more-actions">{readerActions}</div></PopoverContent></Popover>}
   </div>
   <div className="textbook-pages textbook-pages-continuous" ref={scrollRoot} role="region" aria-label={`${book.shortTitle}，连续阅读区；聚焦后可用左右方向键或 Page Up、Page Down 翻页`} tabIndex={open?0:-1} onKeyDown={onReaderKeyDown} onScroll={syncVisiblePage} onPointerDown={event=>{setSelection(null);if(event.target instanceof Element&&!event.target.closest('button,a,input,textarea,select,[contenteditable="true"]'))event.currentTarget.focus({preventScroll:true});}}><div className="textbook-page-stack">{Array.from({length:book.pageCount},(_,index)=>{const number=index+1;return <ContinuousPdfPage key={`${book.id}:${number}`} book={book} page={number} zoom={zoom} width={readerWidth} active={number===page} annotations={annotationsByPage.get(number)??[]} onSelect={setSelection} onOpen={openAnnotation}/>;})}</div></div>
-  <footer className={`textbook-reader-footer${standalone?' textbook-reader-footer-compact':''}`}><span className="textbook-page-note-count"><Highlighter size={14}/>{pageAnnotations.length?`本页 ${pageAnnotations.length} 条高亮`:'选中文字即可高亮'}</span>{!standalone&&<div className="textbook-reader-actions">{readerActions}</div>}</footer>
+  {!standalone&&<footer className="textbook-reader-footer"><div className="textbook-reader-actions">{readerActions}</div></footer>}
   {selection&&<div className="textbook-selection-menu" style={{left:selection.left,top:selection.top}} onPointerDown={event=>event.preventDefault()}><Button size="sm" disabled={annotations.busy} onClick={()=>void saveHighlight()}><Highlighter size={15}/>高亮</Button><Button size="sm" variant="outline" disabled={annotations.busy} onClick={writeNote}><Pencil size={15}/>写笔记</Button></div>}
+  {bookmarks&&editingBookmark&&<TextbookBookmarkEditor key={`${editingBookmark.bookId}:${editingBookmark.page}:${editingBookmark.revision??'new'}`} draft={editingBookmark} bookTitle={availableBooks.find(item=>item.id===editingBookmark.bookId)?.shortTitle??book.shortTitle} controller={bookmarks} onChange={setEditingBookmark} onClose={()=>setEditingBookmark(null)}/>}
   <AnnotationEditor draft={editing} bookTitle={book.shortTitle} onChange={setEditing} onClose={()=>setEditing(null)} controller={annotations}/>
  </div>;
  if(overlay)return <Dialog open={open} onOpenChange={next=>{if(!next)onClose?.();}}><DialogContent overlayClassName="textbook-dialog-overlay" className="textbook-dialog" showCloseButton={false}><DialogTitle className="sr-only">{book.shortTitle}</DialogTitle><DialogDescription className="sr-only">在教材之间切换，连续滚动阅读，并对原文进行高亮或记录笔记。</DialogDescription>{content}</DialogContent></Dialog>;

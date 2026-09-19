@@ -13,3 +13,6 @@ export const textbookTitles=sqliteTable('textbook_titles',{
 export const userTextbooks=sqliteTable('user_textbooks',{
  id:text('id').primaryKey(),userId:text('user_id').notNull(),title:text('title').notNull(),originalName:text('original_name').notNull(),pageCount:integer('page_count').notNull(),storageKey:text('storage_key').notNull(),sizeBytes:integer('size_bytes').notNull(),createdAt:integer('created_at').notNull(),updatedAt:integer('updated_at').notNull(),revision:integer('revision').notNull().default(0)
 },t=>[index('idx_user_textbooks_user_created').on(t.userId,t.createdAt)]);
+export const textbookBookmarks=sqliteTable('textbook_bookmarks',{
+ userId:text('user_id').notNull(),bookId:text('book_id').notNull(),page:integer('page').notNull(),note:text('note').notNull().default(''),createdAt:integer('created_at').notNull(),updatedAt:integer('updated_at').notNull(),revision:integer('revision').notNull().default(0)
+},t=>[primaryKey({columns:[t.userId,t.bookId,t.page]}),index('idx_textbook_bookmarks_user_updated').on(t.userId,t.updatedAt)]);
