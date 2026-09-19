@@ -1,5 +1,5 @@
 'use client';
-import {useCallback,useEffect,useMemo,useState} from 'react';
+import {useCallback,useEffect,useMemo,useState,type CSSProperties} from 'react';
 import {Bookmark,BookmarkPlus,BookOpen,FileUp,Highlighter,Loader2,PanelLeft,Pencil,Search,X} from 'lucide-react';
 import {Button} from '@/components/ui/button';
 import {Dialog,DialogContent,DialogDescription,DialogFooter,DialogHeader,DialogTitle} from '@/components/ui/dialog';
@@ -25,6 +25,7 @@ export function TextbookLibrary({controller,catalog,bookmarks,guest=false}:{cont
  const[selectedId,setSelectedId]=useState(first?.id??'');
  const[target,setTarget]=useState({bookId:first?.id??'',page:1});
  const[navigationRequest,setNavigationRequest]=useState(0);
+ const[toolbarHeight,setToolbarHeight]=useState(56);
  const[positionReady,setPositionReady]=useState(false);
  const[positions,setPositions]=useState<Record<string,number>>({});
  const[panel,setPanel]=useState<LibraryPanel|null>(null);
@@ -98,7 +99,7 @@ export function TextbookLibrary({controller,catalog,bookmarks,guest=false}:{cont
  }}>
   <h1 className="sr-only">教材阅读</h1>
   {(controller.error||catalog.error)&&<div className="notice error" role="alert"><span>{controller.error||catalog.error}</span><Button variant="outline" disabled={controller.busy||controller.loading||catalog.busy||catalog.loading} onClick={()=>void Promise.all([controller.load(),catalog.load()])}>重新读取</Button></div>}
-  <div className={`textbook-library-layout ${panel??'reading'}-open`}>
+  <div className={`textbook-library-layout ${panel??'reading'}-open`} style={{'--textbook-toolbar-height':`${toolbarHeight}px`} as CSSProperties}>
    <aside id="textbook-catalog-panel" className="textbook-catalog" aria-label="教材目录" hidden={panel!=='catalog'}>
     <div className="textbook-catalog-heading"><div><h2>我的书目</h2><span>{catalog.books.length}</span></div><div className="textbook-panel-heading-actions"><Button size="sm" variant="outline" onClick={()=>setImportOpen(true)} disabled={catalog.busy}><FileUp size={14}/>导入</Button><Button size="icon" variant="ghost" aria-label="收起书目" onClick={closePanel}><X size={16}/></Button></div></div>
     <div className="textbook-panel-search"><Search size={15}/><Input id="textbook-catalog-search" aria-label="搜索教材" placeholder="搜索书名或科目" value={query} onChange={event=>setQuery(event.target.value)}/>{query&&<button type="button" aria-label="清除教材搜索" onClick={()=>{setQuery('');document.getElementById('textbook-catalog-search')?.focus();}}><X size={14}/></button>}</div>
@@ -119,7 +120,7 @@ export function TextbookLibrary({controller,catalog,bookmarks,guest=false}:{cont
     </div>
    </aside>
    <div className="textbook-library-reader">
-    {book?<TextbookReader key={book.id} references={[]} books={[book]} initial={target} navigationRequest={navigationRequest} annotations={controller} bookmarks={bookmarks} standalone toolbarStart={panelControls} onPositionChange={handlePosition}/>:<div className="empty">{panelControls}<BookOpen/><p>尚无教材。</p><Button onClick={()=>setImportOpen(true)}><FileUp size={15}/>导入 PDF</Button></div>}
+    {book?<TextbookReader key={book.id} references={[]} books={[book]} initial={target} navigationRequest={navigationRequest} annotations={controller} bookmarks={bookmarks} standalone toolbarStart={panelControls} onToolbarHeightChange={setToolbarHeight} onPositionChange={handlePosition}/>:<div className="empty">{panelControls}<BookOpen/><p>尚无教材。</p><Button onClick={()=>setImportOpen(true)}><FileUp size={15}/>导入 PDF</Button></div>}
    </div>
    <aside id="textbook-notes-panel" className="textbook-note-index" aria-label="教材高亮笔记" hidden={panel!=='notes'}>
     <div className="textbook-note-index-heading"><div><h2><Highlighter size={17}/>高亮笔记 <span className="textbook-count">{bookNotes.length}</span></h2><p>{book?.shortTitle??'选择一本教材'}</p></div><Button size="icon" variant="ghost" aria-label="收起笔记" onClick={closePanel}><X size={16}/></Button></div>
