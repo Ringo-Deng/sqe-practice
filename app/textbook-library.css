@@ -1,0 +1,133 @@
+/* Reading workspace. Keep these rules scoped so the practice layout stays independent. */
+.workspace.textbook-library-workspace{padding:16px 20px 20px;max-width:none}
+.textbook-library-refined.textbook-library-page{height:calc(100dvh - 108px);min-height:420px;display:flex;flex-direction:column;gap:12px}
+.textbook-library-refined>.notice{flex-shrink:0;margin:0}
+.textbook-workspace-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-shrink:0;min-height:38px}
+.textbook-workspace-label{display:flex;align-items:center;gap:9px;min-width:0;color:#355480}
+.textbook-workspace-label h1{font-size:18px;font-weight:650;letter-spacing:-.4px;margin:0;color:#2f466b;white-space:nowrap}
+.textbook-workspace-label>span{margin-left:5px;font-size:12px;color:#78869b;white-space:nowrap}
+.textbook-panel-controls{display:flex;align-items:center;gap:5px;padding:3px;border:1px solid #dfe6ef;border-radius:9px;background:#fff}
+.textbook-panel-controls button{color:#61728c;height:32px}
+.textbook-panel-controls button[aria-expanded=true]{background:#eaf0fb;color:#315ca0}
+.textbook-count{display:inline-flex;align-items:center;justify-content:center;min-width:19px;height:19px;padding:0 5px;border-radius:5px;background:#f0f3f8;color:#697d99;font-size:11px;font-variant-numeric:tabular-nums}
+.textbook-library-refined .textbook-library-layout{position:relative;flex:1;min-height:0;height:auto;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr);grid-template-areas:none;gap:14px;isolation:isolate}
+.textbook-library-refined .textbook-library-layout.catalog-open{grid-template-columns:248px minmax(0,1fr)}
+.textbook-library-refined .textbook-library-layout.notes-open{grid-template-columns:minmax(0,1fr) 290px}
+.textbook-library-refined .textbook-catalog,.textbook-library-refined .textbook-note-index{grid-area:auto;height:100%;min-height:0;max-height:none;border-color:#dfe6ef;border-radius:12px;box-shadow:0 2px 7px #243e6003;overflow:hidden;display:flex;flex-direction:column;background:#fff}
+.textbook-library-refined .textbook-catalog[hidden],.textbook-library-refined .textbook-note-index[hidden]{display:none}
+.textbook-library-refined .textbook-catalog{padding:0}
+.textbook-library-refined .textbook-catalog-heading{padding:14px 12px 12px;gap:5px;flex-shrink:0;border-bottom:0}
+.textbook-library-refined .textbook-catalog-heading>div{gap:7px}
+.textbook-library-refined .textbook-catalog-heading h2{font-size:14px;font-weight:650;color:#344f76;margin:0;white-space:nowrap}
+.textbook-panel-heading-actions{display:flex;align-items:center}
+.textbook-panel-heading-actions>button{height:28px;font-size:12px;padding:0 7px;gap:4px}
+.textbook-panel-heading-actions>button[data-size=icon]{width:25px;padding:0}
+.textbook-panel-search{display:flex;align-items:center;gap:8px;margin:0 12px 12px;padding:0 10px;min-height:36px;flex-shrink:0;border:1px solid #e0e6ef;border-radius:7px;background:#f8fafd;color:#8291a8}
+.textbook-panel-search:focus-within{border-color:#8fa9d5;box-shadow:0 0 0 2px #e8eef9}
+.textbook-panel-search>svg{flex-shrink:0}
+.textbook-panel-search input{height:34px;padding:0;border:0;box-shadow:none!important;outline:none!important;background:transparent;font-size:12px;color:#3f5678}
+.textbook-panel-search input:focus-visible{box-shadow:none!important;border:0}
+.textbook-panel-search>button{flex-shrink:0;width:20px;height:24px;display:grid;place-items:center;padding:0;border:0;background:transparent;color:#7a8aa1}
+.textbook-catalog-filters{display:flex;gap:3px;margin:0 12px;padding:3px;border-radius:7px;background:#f1f4f9}
+.textbook-catalog-filters>button{flex:1;border:0;border-radius:5px;background:transparent;color:#7a89a0;padding:6px 2px;font-size:11px;font-weight:550}
+.textbook-catalog-filters>button[aria-pressed=true]{background:#fff;box-shadow:0 1px 4px #213b6810;color:#355d98}
+.textbook-catalog-results{font-size:11px;color:#8a97aa;margin:12px 14px 8px;flex-shrink:0}
+.textbook-catalog-books{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;padding:0 8px 14px;scrollbar-width:thin}
+.textbook-library-refined .textbook-catalog-books section{padding-top:13px}
+.textbook-library-refined .textbook-catalog-books section+section{margin-top:9px;border-top:1px solid #eef1f6}
+.textbook-catalog-books h3{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:11px;font-weight:600;line-height:1.5;color:#7c8ca5;margin:0 7px 7px}
+.textbook-catalog-books h3 small{font-size:9px;font-weight:500;color:#a3adbc;flex-shrink:0}
+.textbook-library-refined .textbook-catalog-row{border:1px solid transparent;margin:3px 0;align-items:flex-start;border-radius:8px;position:relative}
+.textbook-library-refined .textbook-catalog-row.active{background:#edf3fd;border-color:#d9e5f7;color:#31578f}
+.textbook-library-refined .textbook-catalog-row.active:before{content:"";position:absolute;left:-1px;top:11px;bottom:11px;width:3px;border-radius:0 3px 3px 0;background:#6c8fbf}
+.textbook-library-refined .textbook-catalog section .textbook-catalog-select{padding:11px 6px 11px 10px}
+.textbook-library-refined .textbook-catalog-select>span{font-size:13px;font-weight:550;line-height:1.5;overflow-wrap:anywhere}
+.textbook-library-refined .textbook-catalog-select>small{font-size:10px;line-height:1.6;margin-top:4px}
+.textbook-library-refined .textbook-catalog-select .textbook-book-location{color:#5d7da6;font-size:10px}
+.textbook-library-refined .textbook-catalog section .textbook-catalog-row>[data-slot=button]{margin-top:7px;width:26px;min-width:26px;height:28px;opacity:.55}
+.textbook-library-refined .textbook-catalog-row:hover>[data-slot=button],.textbook-library-refined .textbook-catalog-row>[data-slot=button]:focus-visible{opacity:1}
+.textbook-library-refined .textbook-library-reader{grid-area:auto;height:100%;min-height:0;min-width:0;overflow:hidden}
+.textbook-library-refined .textbook-reader-standalone{border-color:#d8e2ef;border-radius:12px;min-height:0;height:100%}
+.textbook-library-refined .textbook-note-index-heading{flex-shrink:0;gap:7px;border-bottom:0;padding:16px 14px 12px}
+.textbook-library-refined .textbook-note-index-heading h2{font-size:14px;gap:7px}
+.textbook-library-refined .textbook-note-index-heading p{font-size:11px;margin-top:7px;overflow-wrap:anywhere}
+.textbook-library-refined .textbook-note-index-heading>button{width:26px;height:28px;flex-shrink:0;color:#8391a6}
+.textbook-library-refined .textbook-note-list{display:flex;flex-direction:column;gap:9px;padding:0 12px 14px;min-height:0;overscroll-behavior:contain}
+.textbook-library-refined .textbook-note-list>button{margin:0;flex-shrink:0;padding:12px;border-color:#e6eaf0;border-radius:8px;transition:border-color .15s,background .15s}
+.textbook-library-refined .textbook-note-list>button:hover{border-color:#c9d8ee;background:#f8fbff}
+.textbook-library-refined .textbook-note-list>button>span{display:flex;align-items:center;justify-content:space-between;font-size:11px}
+.textbook-note-list>button>span>span{font-size:10px;color:#8a9bb3}
+.textbook-library-refined .textbook-note-list blockquote{border-left:2px solid #efd47e;padding-left:9px;font-size:13px;line-height:1.7;margin-top:10px}
+.textbook-library-refined .textbook-note-list p{font-size:12px}
+.textbook-library-refined .textbook-notes-empty{padding:36px 20px}
+.textbook-note-empty-icon{display:grid;place-items:center;width:54px;height:54px;margin:6px auto 18px;border-radius:16px;background:#fff7dd;color:#c2a35b}
+.textbook-library-refined .textbook-notes-empty p{font-size:14px;margin-bottom:9px}
+.textbook-library-refined .textbook-notes-empty small{font-size:12px;line-height:1.9}
+.textbook-filter-empty{padding:30px 12px;text-align:center;color:#8393aa;font-size:12px;line-height:1.7}
+.textbook-filter-empty>svg{margin:0 auto 12px;color:#a4b4cc}
+.textbook-filter-empty p{color:#596f91;font-size:13px;margin:0 0 7px}
+.textbook-filter-empty small{display:block}
+.textbook-filter-empty button{margin-top:13px;font-size:12px;color:#4f73a6}
+.textbook-panel-backdrop{display:none}
+.textbook-library-reader[inert] .textbook-selection-menu{display:none}
+/* Shared reader controls, including the reader alongside a practice question. */
+.textbook-reader-inner .textbook-reader-heading{gap:12px;padding:13px 16px;min-height:57px}
+.textbook-reader-title{display:flex;align-items:center;gap:12px;min-width:0;flex:1}
+.textbook-reader-inner .textbook-reader-title h2{min-width:0;font-size:15px;line-height:1.5;gap:8px}
+.textbook-reader-title h2>svg{flex-shrink:0}
+.textbook-reader-title h2>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.textbook-reader-edition{flex-shrink:0;font-size:10px;color:#7b8ca4;background:#f2f5fa;border-radius:4px;padding:3px 6px}
+.textbook-reader-inner .textbook-toolbar{padding:8px 12px;gap:8px;background:#fbfcfe;border-top:0}
+.textbook-pagination{display:flex;align-items:center;gap:7px}
+.textbook-pagination>button{height:30px;width:30px;padding:0;box-shadow:none;color:#597499;background:#fff;border-color:#dce4f0}
+.textbook-reader-inner .textbook-toolbar form{gap:6px;font-variant-numeric:tabular-nums}
+.textbook-reader-inner .textbook-toolbar label{font-size:11px;color:#8492a6}
+.textbook-reader-inner .textbook-toolbar input{height:30px;width:47px;font-size:13px;border-color:#dce4f0;box-shadow:none}
+.textbook-page-total{font-size:12px;color:#7c8da6;white-space:nowrap}
+.textbook-reader-inner .textbook-zoom{gap:1px;margin-left:auto}
+.textbook-reader-inner .textbook-zoom>button{height:30px;padding:0 6px;font-size:11px;color:#607899}
+.textbook-reader-inner .textbook-zoom-value{min-width:82px;font-variant-numeric:tabular-nums}
+.textbook-reader-inner .textbook-scroll-hint{font-size:11px;color:#98a6b9}
+.textbook-reader-inner .textbook-pages:focus-visible{outline:2px solid #91a9d2;outline-offset:-3px}
+.textbook-reader-inner .textbook-pages{background:#e9eef4}
+.textbook-reader-inner .textbook-reader-footer{padding:8px 12px;gap:6px 12px;font-size:11px;min-height:43px}
+.textbook-reader-inner .textbook-reader-actions{gap:9px}
+.textbook-reader-inner .textbook-reader-actions button{font-size:11px;padding:0 5px;height:26px}
+.textbook-reader-inner .textbook-reader-footer a{font-size:11px;text-decoration:none;white-space:nowrap}
+@media(max-width:1200px){
+ .textbook-reader-inner .textbook-scroll-hint{display:none}
+ .textbook-reader-title{gap:7px;align-items:flex-start;flex-direction:column}
+ .textbook-reader-edition{padding:0;background:transparent}
+}
+@media(max-width:1000px){
+ .workspace.textbook-library-workspace{padding:12px 14px 16px}
+ .textbook-library-refined.textbook-library-page{height:calc(100dvh - 100px);min-height:380px;gap:10px}
+ .textbook-library-refined .textbook-library-layout.catalog-open,.textbook-library-refined .textbook-library-layout.notes-open{grid-template-columns:minmax(0,1fr)}
+ .textbook-library-refined .textbook-catalog,.textbook-library-refined .textbook-note-index{position:absolute;top:0;bottom:0;width:min(310px,calc(100% - 24px));height:100%;z-index:3;box-shadow:0 8px 32px #223b6133}
+ .textbook-library-refined .textbook-catalog{left:0}
+ .textbook-library-refined .textbook-note-index{right:0}
+ .textbook-panel-backdrop{display:block;position:absolute;inset:0;z-index:2;background:#27395533;border:0;border-radius:12px;cursor:default}
+}
+@media(max-width:650px){
+ .workspace.textbook-library-workspace{padding:9px 8px 12px}
+ .textbook-library-refined.textbook-library-page{height:calc(100dvh - 84px);min-height:340px;gap:8px}
+ .textbook-workspace-label{gap:6px}
+ .textbook-workspace-label>svg{display:none}
+ .textbook-workspace-label h1{font-size:16px}
+ .textbook-workspace-label>span{display:none}
+ .textbook-panel-controls button{height:32px;font-size:12px;padding:0 9px}
+ .textbook-reader-inner .textbook-reader-heading{min-height:46px;padding:10px 12px}
+ .textbook-reader-inner .textbook-reader-title h2{font-size:13px}
+ .textbook-reader-title{gap:3px}
+ .textbook-reader-inner .textbook-toolbar{padding:7px 8px;gap:6px}
+ .textbook-pagination{gap:4px}
+ .textbook-reader-inner .textbook-toolbar label{display:none}
+ .textbook-reader-inner .textbook-toolbar input{width:41px}
+ .textbook-reader-inner .textbook-zoom{gap:0}
+ .textbook-reader-inner .textbook-zoom>button[data-size=icon]{width:28px}
+ .textbook-reader-inner .textbook-zoom-value{min-width:72px;padding:0 3px;font-size:10px}
+ .textbook-reader-inner .textbook-reader-footer{padding:7px 10px;gap:5px}
+ .textbook-reader-inner .textbook-page-note-count{order:0;width:auto;font-size:10px}
+ .textbook-reader-inner .textbook-reader-actions{margin-left:auto;gap:6px}
+ .textbook-reader-inner .textbook-reader-footer a,.textbook-reader-inner .textbook-reader-actions button,.textbook-reader-inner .textbook-local-status{font-size:10px}
+}
