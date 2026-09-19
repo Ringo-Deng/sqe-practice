@@ -7,6 +7,7 @@ import {Input} from '@/components/ui/input';
 import {Label} from '@/components/ui/label';
 import {subjects,subjectById} from '@/lib/subjects';
 import {readReadingPositions,writeReadingPosition} from '@/lib/textbook-reading-position';
+import {useExpectedAccount} from '@/lib/expected-account';
 import {TextbookReader} from './textbook-reader';
 import {TextbookBookmarkEditor} from './textbook-bookmark-editor';
 import './textbook-library.css';
@@ -21,6 +22,7 @@ type BookFilter='all'|'FLK1'|'FLK2'|'mine';
 const bookFilters:{id:BookFilter;label:string}[]=[{id:'all',label:'全部'},{id:'FLK1',label:'FLK1'},{id:'FLK2',label:'FLK2'},{id:'mine',label:'我的'}];
 
 export function TextbookLibrary({controller,catalog,bookmarks,guest=false}:{controller:TextbookAnnotationsController;catalog:TextbookCatalogController;bookmarks:TextbookBookmarksController;guest?:boolean}){
+ const expectedAccountId=useExpectedAccount();
  const[first]=catalog.books;
  const[selectedId,setSelectedId]=useState(first?.id??'');
  const[target,setTarget]=useState({bookId:first?.id??'',page:1});
@@ -79,8 +81,8 @@ export function TextbookLibrary({controller,catalog,bookmarks,guest=false}:{cont
  const handlePosition=useCallback((bookId:string,page:number)=>{
   setTarget(current=>current.bookId===bookId&&current.page===page?current:{bookId,page});
   setPositions(current=>current[bookId]===page?current:{...current,[bookId]:page});
-  writeReadingPosition(bookId,page);
- },[]);
+  writeReadingPosition(bookId,page,undefined,expectedAccountId);
+ },[expectedAccountId]);
  const jumpToPage=(bookId:string,page:number)=>{setTarget({bookId,page});setNavigationRequest(current=>current+1);};
  const openEdit=(item:Textbook)=>{setEditBook(item);setEditTitle(item.shortTitle);setEditSubject(item.subjectId);};
  const submitEdit=async(event:React.FormEvent)=>{event.preventDefault();if(!editBook||!editTitle.trim())return;if(await catalog.updateBook(editBook.id,editTitle.trim(),editSubject))setEditBook(null);};

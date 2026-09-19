@@ -46,3 +46,7 @@ next-env.d.ts
 /work/
 
 *.tsbuildinfo
+/dist-cloud/
+/dist-github/
+/.cloud/
+/.dev.vars

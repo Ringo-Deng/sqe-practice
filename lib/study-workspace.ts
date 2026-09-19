@@ -11,7 +11,9 @@ export type WorkspaceSnapshot={
 };
 type StorageReader=Pick<Storage,'getItem'>;
 type StorageWriter=Pick<Storage,'setItem'>;
-export const workspaceKey=(guest:boolean)=>`sqe-practice:workspace:v1:${guest?'guest':'account'}`;
+let workspaceAccount:string|null=null;
+export function setWorkspaceAccount(userId:string|null){workspaceAccount=typeof userId==='string'&&userId.trim()?userId:null;}
+export const workspaceKey=(guest:boolean,accountId:string|null=workspaceAccount)=>`sqe-practice:workspace:v1:${guest?'guest':accountId?`account:${encodeURIComponent(accountId)}`:'account'}`;
 
 export function readWorkspace(storage:StorageReader,key:string):WorkspaceSnapshot|null{
  try{

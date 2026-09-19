@@ -1,0 +1,16 @@
+{
+ "$schema":"node_modules/wrangler/config-schema.json",
+ "name":"sqe-practice-cloud",
+ "main":"cloud/worker.ts",
+ "compatibility_date":"2026-05-22",
+ "compatibility_flags":["nodejs_compat"],
+ "workers_dev":true,
+ "send_metrics":false,
+ "minify":true,
+ "assets":{"directory":"./dist-cloud","binding":"ASSETS","run_worker_first":true,"not_found_handling":"single-page-application"},
+ "alias":{"next/headers":"./cloud/request-context.ts","next/navigation":"./cloud/navigation.ts"},
+ "vars":{"APP_ORIGIN":"http://localhost:8788","LOCAL_DEV":"true"},
+ "d1_databases":[{"binding":"DB","database_name":"sqe-practice-cloud","database_id":"00000000-0000-4000-8000-000000000000","migrations_dir":"cloud/migrations"}],
+ "observability":{"enabled":true,"head_sampling_rate":0.1},
+ "triggers":{"crons":["15 19 * * *"]}
+}

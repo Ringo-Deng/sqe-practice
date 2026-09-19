@@ -1,6 +1,8 @@
 'use client';
 import {useCallback,useEffect,useRef,useState} from 'react';
 import {toast} from 'sonner';
+import {useExpectedAccount} from '@/lib/expected-account';
+import {expectedAccountHeaders} from '@/lib/expected-account-headers';
 import {textbookById} from '@/lib/textbooks';
 import {GUEST_TEXTBOOK_BOOKMARKS_KEY,mutateGuestTextbookBookmarks,parseBookmarkMutation,readGuestTextbookBookmarks,type BookmarkBook,type TextbookBookmarkData} from '@/lib/textbook-bookmarks';
 
@@ -35,6 +37,7 @@ async function guestBook(bookId:string):Promise<BookmarkBook|undefined>{
 }
 
 export function useTextbookBookmarks(guest=false){
+ const expectedAccountId=useExpectedAccount();
  const[data,setData]=useState<TextbookBookmarkData|null>(null),[loading,setLoading]=useState(true),[busy,setBusy]=useState(false),[error,setError]=useState('');
  const locked=useRef(false),generation=useRef(0),active=useRef(true),refreshPending=useRef(false);
  const refreshRef=useRef<()=>Promise<void>>(async()=>{});
@@ -47,12 +50,12 @@ export function useTextbookBookmarks(guest=false){
     return mutateGuestTextbookBookmarks(localStorage,body,book);
    });
   }
-  const response=await fetch('/api/textbook-bookmarks',body?{method:'POST',headers:{'Content-Type':'application/json','X-Study-Action':'1'},body:JSON.stringify(body)}:{cache:'no-store'});
+  const response=await fetch('/api/textbook-bookmarks',body?{method:'POST',headers:expectedAccountHeaders(expectedAccountId,{'Content-Type':'application/json','X-Study-Action':'1'}),body:JSON.stringify(body)}:{cache:'no-store',headers:expectedAccountHeaders(expectedAccountId)});
   const value=await response.json().catch(()=>{throw new Error('服务器没有返回可读取的书签，请重试。');}) as TextbookBookmarkData&{error?:string};
   if(!response.ok)throw new Error(value.error||'暂时无法读取教材书签，请重试。');
   if(!Array.isArray(value.bookmarks))throw new Error('服务器没有返回可读取的书签，请重试。');
   return value;
- },[guest]);
+ },[guest,expectedAccountId]);
  const load=useCallback(async()=>{
   if(locked.current){refreshPending.current=true;return;}
   const run=++generation.current;setLoading(true);

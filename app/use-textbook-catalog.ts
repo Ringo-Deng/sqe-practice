@@ -1,6 +1,8 @@
 'use client';
 import {useCallback,useEffect,useMemo,useRef,useState} from 'react';
 import {toast} from 'sonner';
+import {useExpectedAccount} from '@/lib/expected-account';
+import {expectedAccountHeaders} from '@/lib/expected-account-headers';
 import {loadPdfEngine} from '@/lib/textbook-pdf';
 import {isTextbookSubjectId,mergeTextbookCatalog,readGuestTextbookMetadata,saveGuestTextbookMetadata,updateTextbookCatalog,validateTextbookMetadata,type TextbookCatalogData} from '@/lib/textbook-catalog';
 import {textbookById,type Textbook} from '@/lib/textbooks';
@@ -13,13 +15,14 @@ async function guestTextbooks(){const db=await guestDb();try{return await new Pr
 async function guestTextbook(id:string){const db=await guestDb();try{return await new Promise<StoredGuestTextbook|undefined>((resolve,reject)=>{const request=db.transaction(GUEST_STORE).objectStore(GUEST_STORE).get(id);request.onsuccess=()=>resolve(request.result as StoredGuestTextbook|undefined);request.onerror=()=>reject(request.error);});}finally{db.close();}}
 async function putGuestTextbook(book:StoredGuestTextbook){const db=await guestDb();try{await new Promise<void>((resolve,reject)=>{const transaction=db.transaction(GUEST_STORE,'readwrite');transaction.objectStore(GUEST_STORE).put(book);transaction.oncomplete=()=>resolve();transaction.onerror=()=>reject(transaction.error);transaction.onabort=()=>reject(transaction.error);});}finally{db.close();}}
 export function useTextbookCatalog(guest=false){
+ const expectedAccountId=useExpectedAccount();
  const[data,setData]=useState<TextbookCatalogData|null>(null),[loading,setLoading]=useState(true),[busy,setBusy]=useState(false),[error,setError]=useState('');
  const locked=useRef(false),objectUrls=useRef<string[]>([]);
  const books=useMemo(()=>mergeTextbookCatalog(data),[data]);
  const read=useCallback(async(options?:RequestInit,url='/api/textbooks')=>{
-  const response=await fetch(url,options??{cache:'no-store'});const value=await response.json().catch(()=>({error:response.status===413?'PDF 文件过大，单份教材不能超过 80 MB。':'服务器没有返回可读取的结果，请重试。'})) as TextbookCatalogData&{error?:string};
+  const response=await fetch(url,{...(options??{cache:'no-store'}),headers:expectedAccountHeaders(expectedAccountId,options?.headers)});const value=await response.json().catch(()=>({error:response.status===413?'PDF 文件过大，单份教材不能超过 80 MB。':'服务器没有返回可读取的结果，请重试。'})) as TextbookCatalogData&{error?:string};
   if(!response.ok)throw new Error(value.error||'暂时无法读取教材，请重试。');return value;
- },[]);
+ },[expectedAccountId]);
  const load=useCallback(async()=>{setLoading(true);try{
   if(guest){
    const rows=(await guestTextbooks()).sort((a,b)=>b.createdAt-a.createdAt||a.id.localeCompare(b.id));

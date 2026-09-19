@@ -13,12 +13,17 @@
     "start": "node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js dev --config dist/server/wrangler.json --local --persist-to .wrangler/state --ip 127.0.0.1 --inspector-port 0",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "check:questions": "node scripts/audit-question-bank.mjs",
-    "db:generate": "drizzle-kit generate"
+    "db:generate": "drizzle-kit generate",
+    "build:cloud": "vite build --config vite.cloud.config.ts",
+    "dev:cloud": "wrangler dev --config wrangler.cloud.jsonc --port 8788 --ip 127.0.0.1",
+    "check:cloud-backup": "node scripts/check-cloud-backup.cjs",
+    "cloud:migrations": "node scripts/prepare-cloud-migrations.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
     "@hookform/resolvers": "^5.7.1",
     "@shadcn/react": "^0.3.0",
+    "better-auth": "1.7.4",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "cmdk": "^1.1.1",

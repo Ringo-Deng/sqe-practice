@@ -15,6 +15,8 @@ import type {VocabularyCard,VocabularyData,VocabularyDraft,Rating} from '@/lib/v
 import type {Question} from '@/lib/study-types';
 import {sourceById,questionNumberLabel} from '@/lib/question-sources';
 import {subjectById} from '@/lib/subjects';
+import {useExpectedAccount} from '@/lib/expected-account';
+import {expectedAccountHeaders} from '@/lib/expected-account-headers';
 
 function browserZone(){return Intl.DateTimeFormat().resolvedOptions().timeZone||'Asia/Shanghai';}
 const GUEST_VOCABULARY_KEY='sqe-practice:guest-vocabulary:v1';
@@ -54,15 +56,16 @@ function guestVocabulary(body?:Record<string,unknown>):VocabularyData{
  writeGuestCards(cards);return {cards,today,timeZone};
 }
 export function useVocabulary(guest=false){
+ const expectedAccountId=useExpectedAccount();
  const[data,setData]=useState<VocabularyData|null>(null),[loading,setLoading]=useState(true),[busy,setBusy]=useState(false),[error,setError]=useState('');
  const locked=useRef(false),generation=useRef(0),dataRef=useRef(data);dataRef.current=data;
  const request=useCallback(async(body?:Record<string,unknown>)=>{
   if(guest)return guestVocabulary(body);
   const timeZone=browserZone();
-  const response=await fetch('/api/vocabulary'+(body?'':'?timeZone='+encodeURIComponent(timeZone)),body?{method:'POST',headers:{'Content-Type':'application/json','X-Study-Action':'1'},body:JSON.stringify({...body,timeZone})}:{cache:'no-store'});
+  const response=await fetch('/api/vocabulary'+(body?'':'?timeZone='+encodeURIComponent(timeZone)),body?{method:'POST',headers:expectedAccountHeaders(expectedAccountId,{'Content-Type':'application/json','X-Study-Action':'1'}),body:JSON.stringify({...body,timeZone})}:{cache:'no-store',headers:expectedAccountHeaders(expectedAccountId)});
   const value=await response.json() as VocabularyData&{error?:string};
   if(!response.ok)throw new Error(value.error||'暂时无法读取生词表，请重试。');return value;
- },[guest]);
+ },[guest,expectedAccountId]);
  const load=useCallback(async()=>{
   if(locked.current)return;const run=++generation.current;setLoading(true);
   try{const value=await request();if(run===generation.current){setData(value);setError('');}}
