@@ -119,6 +119,32 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
  .compact-review .quick-review{padding:12px}
  .compact-review .concepts-table th,.compact-review .concepts-table td{padding:8px}
 }
+.mistake-notebook .mistake-top{align-items:center;flex-wrap:wrap}
+.mistake-subject-list{display:flex;flex-direction:column;gap:12px}
+.mistake-subject{border:1px solid var(--border);border-radius:10px;background:#fff;overflow:hidden}
+.mistake-subject>summary{display:flex;align-items:center;gap:12px;padding:16px 20px;cursor:pointer;list-style:none}
+.mistake-subject>summary::-webkit-details-marker{display:none}
+.mistake-subject>summary:focus-visible{outline:3px solid #9ab0ee;outline-offset:-3px}
+.mistake-subject>summary h2{flex:1;min-width:0;margin:0;font-size:16px;font-weight:600;color:#293d5e}
+.mistake-subject>summary>span{font-size:13px;color:#75849b;white-space:nowrap}
+.mistake-subject-chevron{color:#8192ad;flex-shrink:0;transition:transform .15s}
+.mistake-subject[open]>summary{border-bottom:1px solid #e8edf5;background:#f8faff}
+.mistake-subject[open] .mistake-subject-chevron{transform:rotate(90deg)}
+.mistake-subject-body{padding:0 20px}
+.mistake-subject-actions{display:flex;justify-content:flex-end;padding-top:12px}
+.mistake-subject .mistake-item{margin:0;padding:16px 0;border:0;border-radius:0}
+.mistake-subject .mistake-item+.mistake-item{border-top:1px solid #e8edf5}
+.mistake-subject .mistake-item h3{font-size:16px;line-height:1.5;overflow-wrap:anywhere}
+.mistake-subject .mistake-item p{overflow-wrap:anywhere}
+.mistake-item-meta{display:flex;justify-content:space-between;gap:12px;color:#8390a5;font-size:13px}
+.mistake-corrected{color:#338b73}
+.mistake-pending{color:#ae5060}
+@media(max-width:650px){
+ .mistake-subject>summary{padding:14px;gap:8px;flex-wrap:wrap}
+ .mistake-subject>summary h2{flex-basis:calc(100% - 30px)}
+ .mistake-subject>summary>span{order:1;flex-basis:100%;white-space:normal}
+ .mistake-subject-body{padding:0 14px}
+}
 .completion-summary{max-width:900px;margin:0 auto}
 .completion-overview{max-width:720px;margin:30px auto 24px;padding:22px 24px;border:1px solid var(--border);border-radius:12px;background:#f9fbff;text-align:left}
 .completion-overview-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:16px}
