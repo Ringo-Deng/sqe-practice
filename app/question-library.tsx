@@ -1,12 +1,13 @@
 'use client';
 import {useEffect,useState} from 'react';
-import {ArrowRight,Check,ChevronRight} from 'lucide-react';
+import {ArrowRight,BookOpen,Check,ChevronRight} from 'lucide-react';
 import {Button} from '@/components/ui/button';
 import {subjects,subjectById} from '@/lib/subjects';
 import {questionSources,sourceById} from '@/lib/question-sources';
 import {chapters,filterQuestions} from '@/lib/chapters';
 import {defaultLibrarySelection,readLibrarySelection,writeLibrarySelection,type LibrarySelection} from '@/lib/library-selection';
 import type {StudyData,Session} from '@/lib/study-types';
+import {getLibraryResume} from '@/lib/library-resume';
 
 export function QuestionLibrary({data,busy,onStart,onResume}:{data:StudyData;busy:boolean;onStart:(subjectId?:string,sourceId?:string,chapterId?:string,sourceSet?:string)=>void;onResume:(session:Session)=>void}){
  const[{source,chosen},setSelection]=useState(defaultLibrarySelection);
@@ -16,6 +17,7 @@ export function QuestionLibrary({data,busy,onStart,onResume}:{data:StudyData;bus
   setSelection(readLibrarySelection());
  },[]);
  const choose=(selection:LibrarySelection)=>{setSelection(selection);writeLibrarySelection(selection);};
+ const lastPractice=getLibraryResume(data);
  const sourceQs=data.questions.filter(q=>source==='all'||q.sourceId===source);
  const subject=subjectById(chosen??undefined);
  const qs=sourceQs.filter(q=>q.subjectId===chosen);
@@ -33,7 +35,12 @@ export function QuestionLibrary({data,busy,onStart,onResume}:{data:StudyData;bus
   return groups;
  },[]);
  return <div className="library-page">
-  <h1 className="sr-only">题库分类</h1>
+  <header className="library-heading"><h1>题库分类</h1></header>
+  {lastPractice&&<section className="library-resume" aria-label="上次练习">
+   <div className="library-resume-icon"><BookOpen size={22}/></div>
+   <div className="library-resume-copy"><span className="library-resume-label">{lastPractice.finished?'上次练习已完成':'上次练习'}</span><h2>{lastPractice.subjectLabel}{lastPractice.chapterLabel&&<span> · {lastPractice.chapterLabel}</span>}</h2><p>{lastPractice.sourceLabel}<span>第 {lastPractice.position+1} / {lastPractice.total} 题</span><span>已作答 {lastPractice.answered} 题</span></p></div>
+   <Button disabled={busy} onClick={()=>onResume(lastPractice.session)}>{lastPractice.finished?'查看上次结果':'继续上次练习'}<ArrowRight size={16}/></Button>
+  </section>}
   <section className="source-section" aria-label="题目来源">
    <h2>题目来源</h2>
    <div className="source-grid">{[{id:'all',name:'全部来源',description:'跨来源练习'},...questionSources.filter(item=>item.id!=='oup')].map(s=>{const total=data.questions.filter(q=>s.id==='all'||q.sourceId===s.id).length;return <button key={s.id} type="button" aria-pressed={source===s.id} className={`source-card ${source===s.id?'active':''}`} onClick={()=>choose({source:s.id,chosen:null})}><span>{s.name}{source===s.id&&<Check size={16}/>}</span><small>{total?`${total} 题`:'待导入'}</small></button>;})}</div>
