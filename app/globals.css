@@ -67,6 +67,11 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
 .practice-workspace .original-analysis{margin-top:12px}
 .practice-workspace .original-analysis p{margin:10px 0;font-size:17px;line-height:1.85}
 .practice-workspace .original-analysis p:last-child{margin-bottom:0}
+.answer-review.publisher-review .review-body{padding:16px 22px}
+.publisher-review .original-analysis{margin-top:4px}
+.publisher-review .original-analysis:first-child{margin-top:0}
+.publisher-review .original-analysis p:first-child{margin-top:0}
+@media(max-width:650px){.answer-review.publisher-review .review-body{padding:14px}}
 .practice-workspace .review-footer{padding:14px 28px;gap:10px 16px;background:#fff}
 .review-footer .textbook-access{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:0}
 .review-footer .textbook-link{width:auto;min-height:36px;height:auto;padding:8px 12px;gap:7px;font-size:14px;line-height:1.4;background:#fff;box-shadow:none}
