@@ -173,11 +173,13 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
 
 /* Compact source and subject selection, with no introductory panels. */
 .library-workspace{max-width:1480px;padding:18px 30px 32px}
-.library-page .source-section{padding:18px 20px;margin-bottom:18px}
-.library-page .source-section h2{margin-bottom:12px}
-.library-page .source-card{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:48px;padding:10px 12px}
-.library-page .source-card>span{min-width:0;flex-wrap:wrap;line-height:1.5}
+.library-page .source-section{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:16px;padding:12px 16px;margin-bottom:18px}
+.library-page .source-section h2{margin:0;white-space:nowrap}
+.library-page .source-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.library-page .source-card{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:3px 8px;min-height:44px;padding:8px 10px}
+.library-page .source-card>span{display:flex;align-items:center;min-width:0;gap:6px;white-space:nowrap;line-height:1.5}
 .library-page .source-card small{margin:0;white-space:nowrap;font-size:13px}
+.library-page .source-empty{grid-column:1/-1;margin:0}
 .library-page .source-selection{margin-top:14px;padding-top:14px;gap:12px}
 .library-page .source-summary{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 16px}
 .library-page .source-summary p{margin:0;font-size:14px;line-height:1.7}
@@ -210,10 +212,10 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
 .library-page .assessment-session{padding:14px 16px}
 .library-page .official-files{margin-top:18px;padding:14px 18px}
 .library-page .library-footnote{margin-top:16px}
-@media(max-width:1100px){.library-workspace{padding:18px 24px 30px}}
+@media(max-width:1100px){.library-workspace{padding:18px 24px 30px}.library-page .source-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){
  .library-workspace{padding:12px 12px 24px}
- .library-page .source-section{padding:16px;margin-bottom:14px}
+ .library-page .source-section{grid-template-columns:1fr;gap:10px;padding:12px;margin-bottom:14px}
  .library-page .source-grid{gap:8px}
  .library-page .source-card{padding:9px 10px}
  .library-page .source-selection{gap:12px}
