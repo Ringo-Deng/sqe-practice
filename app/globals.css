@@ -93,10 +93,11 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
 .compact-review .textbook-example p{margin:10px 0;line-height:1.7}
 .compact-review .concepts-table th,.compact-review .concepts-table td{padding:10px 12px;line-height:1.65}
 .compact-review .option-analysis{gap:10px;padding:9px 10px;align-items:flex-start;border-radius:6px}
-.compact-review .option-analysis>strong.option-key{width:24px;height:24px;font-size:13px;margin-top:1px;background:#fbeaec;color:#a44454}
+.compact-review .option-analysis>strong.option-key{width:24px;height:24px;font-size:13px;margin-top:1px;background:transparent;color:#64748b}
 .compact-review .option-analysis.answer-option-correct{background:#f3faf6}
-.compact-review .answer-option-correct>strong.option-key{background:#e1f2e8;color:#25765f}
-.compact-review .answer-option-selected>strong.option-key{outline:1.5px solid currentColor;outline-offset:2px}
+.compact-review .answer-option-correct>strong.option-key{background:#e1f2e8;color:#25765f;outline:1.5px solid currentColor;outline-offset:2px}
+.compact-review .option-analysis.answer-option-incorrect.answer-option-selected{background:#fff3f4}
+.compact-review .answer-option-incorrect.answer-option-selected>strong.option-key{color:#a44454}
 .compact-review .option-analysis p{flex:1;min-width:0;margin:0;font-size:15px;line-height:1.7;overflow-wrap:anywhere}
 .compact-review .quick-review{margin-top:16px;padding:14px 16px}
 .compact-review .quick-review h3{margin-bottom:8px;font-size:15px;gap:7px}
