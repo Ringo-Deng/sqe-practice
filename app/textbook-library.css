@@ -1,19 +1,13 @@
 /* Reading workspace. Keep these rules scoped so the practice layout stays independent. */
-.workspace.textbook-library-workspace{padding:16px 20px 20px;max-width:none}
-.textbook-library-refined.textbook-library-page{height:calc(100dvh - 108px);min-height:420px;display:flex;flex-direction:column;gap:12px}
+.workspace.textbook-library-workspace{padding:12px 20px 16px;max-width:none}
+.textbook-library-refined.textbook-library-page{height:calc(100dvh - 100px);min-height:420px;display:flex;flex-direction:column;gap:8px;--textbook-toolbar-height:48px}
 .textbook-library-refined>.notice{flex-shrink:0;margin:0}
-.textbook-workspace-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-shrink:0;min-height:38px}
-.textbook-workspace-label{display:flex;align-items:center;gap:9px;min-width:0;color:#355480}
-.textbook-workspace-label h1{font-size:18px;font-weight:650;letter-spacing:-.4px;margin:0;color:#2f466b;white-space:nowrap}
-.textbook-workspace-label>span{margin-left:5px;font-size:12px;color:#78869b;white-space:nowrap}
 .textbook-panel-controls{display:flex;align-items:center;gap:5px;padding:3px;border:1px solid #dfe6ef;border-radius:9px;background:#fff}
 .textbook-panel-controls button{color:#61728c;height:32px}
 .textbook-panel-controls button[aria-expanded=true]{background:#eaf0fb;color:#315ca0}
 .textbook-count{display:inline-flex;align-items:center;justify-content:center;min-width:19px;height:19px;padding:0 5px;border-radius:5px;background:#f0f3f8;color:#697d99;font-size:11px;font-variant-numeric:tabular-nums}
-.textbook-library-refined .textbook-library-layout{position:relative;flex:1;min-height:0;height:auto;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr);grid-template-areas:none;gap:14px;isolation:isolate}
-.textbook-library-refined .textbook-library-layout.catalog-open{grid-template-columns:248px minmax(0,1fr)}
-.textbook-library-refined .textbook-library-layout.notes-open{grid-template-columns:minmax(0,1fr) 290px}
-.textbook-library-refined .textbook-catalog,.textbook-library-refined .textbook-note-index{grid-area:auto;height:100%;min-height:0;max-height:none;border-color:#dfe6ef;border-radius:12px;box-shadow:0 2px 7px #243e6003;overflow:hidden;display:flex;flex-direction:column;background:#fff}
+.textbook-library-refined .textbook-library-layout{position:relative;flex:1;min-height:0;height:auto;display:block;isolation:isolate}
+.textbook-library-refined .textbook-catalog,.textbook-library-refined .textbook-note-index{position:absolute;left:8px;right:auto;top:calc(var(--textbook-toolbar-height) + 8px);bottom:8px;width:min(320px,calc(100% - 16px));height:auto;min-height:0;max-height:none;z-index:90;border-color:#d4dfed;border-radius:10px;box-shadow:0 10px 32px #243e602b;overflow:hidden;display:flex;flex-direction:column;background:#fff}
 .textbook-library-refined .textbook-catalog[hidden],.textbook-library-refined .textbook-note-index[hidden]{display:none}
 .textbook-library-refined .textbook-catalog{padding:0}
 .textbook-library-refined .textbook-catalog-heading{padding:14px 12px 12px;gap:5px;flex-shrink:0;border-bottom:0}
@@ -68,8 +62,6 @@
 .textbook-filter-empty p{color:#596f91;font-size:13px;margin:0 0 7px}
 .textbook-filter-empty small{display:block}
 .textbook-filter-empty button{margin-top:13px;font-size:12px;color:#4f73a6}
-.textbook-panel-backdrop{display:none}
-.textbook-library-reader[inert] .textbook-selection-menu{display:none}
 /* Shared reader controls, including the reader alongside a practice question. */
 .textbook-reader-inner .textbook-reader-heading{gap:12px;padding:13px 16px;min-height:57px}
 .textbook-reader-title{display:flex;align-items:center;gap:12px;min-width:0;flex:1}
@@ -101,20 +93,11 @@
 }
 @media(max-width:1000px){
  .workspace.textbook-library-workspace{padding:12px 14px 16px}
- .textbook-library-refined.textbook-library-page{height:calc(100dvh - 100px);min-height:380px;gap:10px}
- .textbook-library-refined .textbook-library-layout.catalog-open,.textbook-library-refined .textbook-library-layout.notes-open{grid-template-columns:minmax(0,1fr)}
- .textbook-library-refined .textbook-catalog,.textbook-library-refined .textbook-note-index{position:absolute;top:0;bottom:0;width:min(310px,calc(100% - 24px));height:100%;z-index:3;box-shadow:0 8px 32px #223b6133}
- .textbook-library-refined .textbook-catalog{left:0}
- .textbook-library-refined .textbook-note-index{right:0}
- .textbook-panel-backdrop{display:block;position:absolute;inset:0;z-index:2;background:#27395533;border:0;border-radius:12px;cursor:default}
+ .textbook-library-refined.textbook-library-page{height:calc(100dvh - 100px);min-height:380px;gap:8px}
 }
 @media(max-width:650px){
- .workspace.textbook-library-workspace{padding:9px 8px 12px}
- .textbook-library-refined.textbook-library-page{height:calc(100dvh - 84px);min-height:340px;gap:8px}
- .textbook-workspace-label{gap:6px}
- .textbook-workspace-label>svg{display:none}
- .textbook-workspace-label h1{font-size:16px}
- .textbook-workspace-label>span{display:none}
+ .workspace.textbook-library-workspace{padding:8px}
+ .textbook-library-refined.textbook-library-page{height:calc(100dvh - 79px);min-height:340px;gap:8px}
  .textbook-panel-controls button{height:32px;font-size:12px;padding:0 9px}
  .textbook-reader-inner .textbook-reader-heading{min-height:46px;padding:10px 12px}
  .textbook-reader-inner .textbook-reader-title h2{font-size:13px}
@@ -130,4 +113,43 @@
  .textbook-reader-inner .textbook-page-note-count{order:0;width:auto;font-size:10px}
  .textbook-reader-inner .textbook-reader-actions{margin-left:auto;gap:6px}
  .textbook-reader-inner .textbook-reader-footer a,.textbook-reader-inner .textbook-reader-actions button,.textbook-reader-inner .textbook-local-status{font-size:10px}
+}
+
+/* One compact row for the standalone textbook workspace. */
+.textbook-reader-inner .textbook-toolbar-compact{height:var(--textbook-toolbar-height,48px);min-height:48px;flex-wrap:nowrap;gap:9px;padding:7px 10px;background:#fff;border-bottom:1px solid #dfe6ef;overflow-x:auto;scrollbar-width:none}
+.textbook-toolbar-compact .textbook-toolbar-start{display:flex;flex-shrink:0;align-items:center}
+.textbook-toolbar-compact .textbook-panel-controls{border:0;border-radius:0;background:transparent;padding:0 10px 0 0;gap:3px;border-right:1px solid #e3e8f0;flex-shrink:0}
+.textbook-toolbar-compact .textbook-panel-controls button{height:32px;padding:0 8px;font-size:12px;gap:5px}
+.textbook-toolbar-compact .textbook-toolbar-book{flex:1;min-width:0;margin:0;font-size:14px;font-weight:600;color:#3e587c;line-height:1.5;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.textbook-toolbar-compact .textbook-pagination{flex-shrink:0;gap:5px}
+.textbook-reader-inner .textbook-toolbar-compact form label{display:none}
+.textbook-reader-inner .textbook-toolbar-compact .textbook-scroll-hint{display:none}
+.textbook-reader-inner .textbook-toolbar-compact .textbook-zoom{margin-left:0;flex-shrink:0;gap:0}
+.textbook-reader-inner .textbook-toolbar-compact .textbook-zoom-value{min-width:46px;padding:0 3px}
+.textbook-reader-inner .textbook-toolbar-compact .textbook-reader-more{height:30px;width:56px;padding:0 5px;gap:5px;flex-shrink:0;color:#607899;font-size:12px}
+.textbook-reader-more-content{width:min(300px,calc(100vw - 24px));padding:16px;background:#fff;border-color:#d9e2ef;font-size:13px;color:#4e6585;box-shadow:0 10px 30px #233c6026}
+.textbook-reader-more-content .textbook-reader-more-title{font-size:14px;line-height:1.6;font-weight:600;margin:0;overflow-wrap:anywhere;color:#334d72}
+.textbook-reader-more-content p{font-size:12px;color:#8693a7;line-height:1.7;margin:5px 0 12px}
+.textbook-reader-more-content .textbook-reader-more-actions{display:flex;align-items:stretch;flex-direction:column;gap:7px}
+.textbook-reader-more-content .textbook-reader-more-actions button,.textbook-reader-more-content .textbook-reader-more-actions a{display:flex;align-items:center;justify-content:flex-start;gap:8px;height:auto;min-height:32px;width:100%;padding:7px 8px;border-radius:6px;font-size:12px;color:#4f72a4;line-height:1.5;text-decoration:none;white-space:normal}
+.textbook-reader-more-content .textbook-reader-more-actions a:hover{background:#edf3fc}
+.textbook-reader-more-content .textbook-local-status{font-size:12px;padding:7px 8px}
+.textbook-library-compact .textbook-reader-footer{min-height:28px;padding:5px 12px;font-size:11px}
+@media(max-width:800px){
+ .textbook-toolbar-compact .textbook-toolbar-book{font-size:12px}
+ .textbook-reader-inner .textbook-toolbar-compact{gap:6px;padding:7px 8px}
+ .textbook-toolbar-compact .textbook-panel-controls{padding-right:6px}
+ .textbook-toolbar-compact .textbook-panel-controls button{padding:0 6px}
+}
+@media(max-width:650px){
+ .textbook-toolbar-compact .textbook-toolbar-book,.textbook-toolbar-compact .textbook-panel-button-label,.textbook-toolbar-compact .textbook-count{display:none}
+ .textbook-toolbar-compact .textbook-panel-controls{gap:1px;padding-right:5px}
+ .textbook-toolbar-compact .textbook-panel-controls button{width:30px;padding:0}
+ .textbook-toolbar-compact .textbook-pagination{gap:3px}
+ .textbook-toolbar-compact .textbook-pagination>button{width:27px;height:30px}
+ .textbook-reader-inner .textbook-toolbar-compact .textbook-zoom{margin-left:auto}
+ .textbook-reader-inner .textbook-toolbar-compact .textbook-zoom-value{min-width:40px;font-size:11px}
+ .textbook-reader-inner .textbook-toolbar-compact .textbook-zoom>button[data-size=icon]{width:27px}
+ .textbook-reader-inner .textbook-toolbar-compact .textbook-reader-more{width:27px;padding:0}
+ .textbook-toolbar-compact .textbook-reader-more>span{display:none}
 }
