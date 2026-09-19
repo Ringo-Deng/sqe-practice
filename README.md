@@ -15,6 +15,7 @@ A public-access SQE practice application with an account-backed mode and a devic
 - Timed examination mode with a server-enforced deadline. No grading or explanation is returned before submission. Unanswered questions count as incorrect on submission.
 - Signed-in sessions, navigation position, answers and cumulative statistics are stored in D1 and keyed by the platform-authenticated user. Anonymous visitors keep the corresponding study state in their current browser.
 - Mistake review shows questions whose latest graded answer is incorrect and removes each question as soon as it is answered correctly. Practice questions show cumulative correct and incorrect submitted-answer counts; original answer history is preserved.
+- “复制本题” copies the current question and selected choice for external tutoring, adding the answer, source-labelled explanation and textbook references only when the answer is revealed. Textbook body text is excluded. If clipboard access fails, a selectable text dialog provides a manual fallback.
 - Private platform access and server-side user scoping; no app-owned password database or external AI API keys.
 
 ## Data and maintenance
