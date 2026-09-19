@@ -7,7 +7,7 @@ export function NewglawKnowledgeNotes({notes}:{notes:NewglawNote[]}){
  return <section id="newglaw-knowledge" className="newglaw-knowledge" aria-labelledby="newglaw-heading">
   <div className="newglaw-heading">
    <BookMarked size={19}/>
-   <div><h3 id="newglaw-heading">新生代 SQE 知识要点</h3><p>依原网页章节与顺序忠实改写，未加入其他教材内容。</p></div>
+   <div><h3 id="newglaw-heading">新生代 SQE 知识要点</h3></div>
   </div>
   <div className="newglaw-note-list">
    {notes.map(note=><details className="newglaw-note" key={note.id}>
