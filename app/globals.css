@@ -297,11 +297,6 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
 
 /* Learning history performance, grouped from subject to primary chapter. */
 .history-breakdown{margin-bottom:26px;background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden}
-.history-breakdown-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;padding:23px 25px;border-bottom:1px solid #e5eaf2;background:linear-gradient(115deg,#f7faff,#fff)}
-.history-breakdown-head .eyebrow{margin-bottom:6px}
-.history-breakdown-head h2{margin:0;font-size:21px;font-weight:650;color:#293d5e}
-.history-breakdown-head p{margin:7px 0 0;font-size:13px;line-height:1.7;color:#76869d}
-.history-breakdown-head>span{font-size:13px;color:#657b9b;white-space:nowrap}
 .subject-stat-list{padding:0 24px}
 .subject-stat-card{border-bottom:1px solid #e7ebf2}
 .subject-stat-card:last-child{border-bottom:0}
@@ -336,7 +331,7 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
 .chapter-stat-table td:nth-child(3)>small{display:block;margin-top:2px;color:#8a96a8;font-size:10px}
 .chapter-stat-empty{margin:0;padding:17px;border:1px dashed #dce4ef;border-radius:8px;color:#8190a5;font-size:13px;text-align:center}
 @media(max-width:900px){.subject-stat-card>summary{grid-template-columns:minmax(230px,1fr) 82px 82px 20px}.subject-stat-meter{display:none}.chapter-stat-wrap{padding-left:0}}
-@media(max-width:650px){.history-breakdown-head{align-items:flex-start;flex-direction:column;padding:19px 17px;gap:10px}.history-breakdown-head>span{white-space:normal}.subject-stat-list{padding:0 16px}.subject-stat-card>summary{grid-template-columns:1fr auto auto 18px;gap:12px;padding:16px 0}.subject-stat-title{grid-column:1/-1}.subject-stat-value strong{font-size:17px}.subject-stat-chevron{grid-column:4;grid-row:2}.chapter-stat-wrap{overflow-x:auto;padding-bottom:15px}.chapter-stat-table{min-width:510px}.chapter-stat-table th,.chapter-stat-table td{padding:10px 12px}.chapter-stat-table th:first-child{width:64%}}
+@media(max-width:650px){.subject-stat-list{padding:0 16px}.subject-stat-card>summary{grid-template-columns:1fr auto auto 18px;gap:12px;padding:16px 0}.subject-stat-title{grid-column:1/-1}.subject-stat-value strong{font-size:17px}.subject-stat-chevron{grid-column:4;grid-row:2}.chapter-stat-wrap{overflow-x:auto;padding-bottom:15px}.chapter-stat-table{min-width:510px}.chapter-stat-table th,.chapter-stat-table td{padding:10px 12px}.chapter-stat-table th:first-child{width:64%}}
 
 /* Keep navigation accessible on narrow screens without a global header. */
 .mobile-sidebar-trigger{display:none}
