@@ -16,16 +16,16 @@ const datasets={
  reviseFlk1:readJson('lib/revise-flk1-assessment-2025-26.json'),
  reviseFlk2:readJson('lib/revise-flk2-practice-assessment.json'),
  reviseChapters:readJson('lib/revise-chapter-questions.json'),
- qltsMocks:[...readJson('lib/qlts-mock-exams-1-5.json'),...readJson('lib/qlts-mock-exams-6-10.json'),...readJson('lib/qlts-mock-exams-11-15.json'),...readJson('lib/qlts-mock-exams-16-20.json')],
+ qltsMocks:[...readJson('lib/qlts-mock-exams-1-5.json'),...readJson('lib/qlts-mock-exams-6-10.json'),...readJson('lib/qlts-mock-exams-11-15.json'),...readJson('lib/qlts-mock-exams-16-20.json'),...readJson('lib/qlts-mock-exams-21-30.json')],
 };
-const qltsSourceFiles=[readJson('lib/qlts-mock-exams-1-5-source.json'),readJson('lib/qlts-mock-exams-6-10-source.json'),readJson('lib/qlts-mock-exams-11-15-source.json'),readJson('lib/qlts-mock-exams-16-20-source.json')];
+const qltsSourceFiles=[readJson('lib/qlts-mock-exams-1-5-source.json'),readJson('lib/qlts-mock-exams-6-10-source.json'),readJson('lib/qlts-mock-exams-11-15-source.json'),readJson('lib/qlts-mock-exams-16-20-source.json'),readJson('lib/qlts-mock-exams-21-30-source.json')];
 const qltsSource={
  importedQuestions:qltsSourceFiles.reduce((sum,source)=>sum+source.importedQuestions,0),
  mocks:qltsSourceFiles.flatMap(source=>source.mocks),
 };
-const qltsTranslations={...readJson('lib/qlts-mock-exams-1-5-translations.json'),...readJson('lib/qlts-mock-exams-6-10-translations.json'),...readJson('lib/qlts-mock-exams-11-15-translations.json'),...readJson('lib/qlts-mock-exams-16-20-translations.json')};
+const qltsTranslations={...readJson('lib/qlts-mock-exams-1-5-translations.json'),...readJson('lib/qlts-mock-exams-6-10-translations.json'),...readJson('lib/qlts-mock-exams-11-15-translations.json'),...readJson('lib/qlts-mock-exams-16-20-translations.json'),...readJson('lib/qlts-mock-exams-21-30-translations.json')};
 const qltsChapterMatches=readJson('lib/qlts-chapter-matches.json');
-const qltsCurrentLawReviews=[readJson('lib/qlts-mock-exams-6-10-removed.json'),readJson('lib/qlts-mock-exams-11-15-removed.json'),readJson('lib/qlts-mock-exams-16-20-removed.json')];
+const qltsCurrentLawReviews=[readJson('lib/qlts-mock-exams-6-10-removed.json'),readJson('lib/qlts-mock-exams-11-15-removed.json'),readJson('lib/qlts-mock-exams-16-20-removed.json'),readJson('lib/qlts-mock-exams-21-30-removed.json')];
 const reviseTranslations=readJson('lib/revise-assessment-translations.json');
 const staticTranslations=readJson('lib/static-question-translations.json');
 const textbooks=readJson('lib/textbooks.json').filter(book=>book.id.startsWith('revise-'));
@@ -54,7 +54,12 @@ const currentLawExclusions=qltsCurrentLawReviews.flatMap(review=>review.categori
 assert.equal(currentLawExclusions.length,qltsCurrentLawReviews.reduce((sum,review)=>sum+review.removedQuestions,0));
 assert.equal(new Set(currentLawExclusions).size,currentLawExclusions.length);
 assert.ok(currentLawExclusions.every(id=>!datasets.qltsMocks.some(question=>question.id===id)));
-assert.equal(datasets.qltsMocks.length,1362);
+const latestQltsSource=readJson('lib/qlts-mock-exams-21-30-source.json');
+assert.equal(latestQltsSource.sourceQuestions,531);
+assert.equal(latestQltsSource.importedQuestions,400);
+assert.equal(latestQltsSource.removedQuestions,131);
+assert.equal(latestQltsSource.mocks.length,10);
+assert.equal(datasets.qltsMocks.length,1762);
 assert.equal(qltsSource.importedQuestions,datasets.qltsMocks.length);
 assert.deepEqual(Object.keys(qltsTranslations).sort(),datasets.qltsMocks.map(question=>question.id).sort());
 assert.equal(qltsChapterMatches.matchedQuestions,datasets.qltsMocks.length);
@@ -72,7 +77,7 @@ for(const mock of qltsSource.mocks){
 }
 
 const all=[...legacy,...datasets.qltsMocks];
-assert.equal(all.length,2596);
+assert.equal(all.length,2996);
 assert.equal(new Set(all.map(question=>question.id)).size,all.length);
 for(const question of all){
  assert.ok(question.stem.trim()||question.sourceId==='qlts',`${question.id}: missing stem`);

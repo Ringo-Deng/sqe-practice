@@ -1,0 +1,764 @@
+{
+  "source": "QLTS Mock Exam 21-30 scanned PDFs",
+  "method": "Local macOS Vision OCR, source-page reconciliation and targeted visual correction; separate reviewed Simplified Chinese layer; current-law/source-quality screening.",
+  "sourceQuestions": 531,
+  "importedQuestions": 400,
+  "removedQuestions": 131,
+  "mocks": [
+    {
+      "mock": 21,
+      "filename": "Mock Exam 21-compresssed.pdf",
+      "sha256": "98d2cd4b50fc2db611124e3ad37c0f2192fd081829beebbb422675380914fa0c",
+      "pdfPages": 177,
+      "sourceQuestions": 75,
+      "importedQuestions": 48,
+      "excludedQuestions": [
+        {
+          "number": 2,
+          "category": "mock-21-old-two-working-day-and-fourteen-day-options",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 4,
+          "category": "mock-21-paid-disbursement-reimbursement",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 7,
+          "category": "mock-21-obsolete-prescriptive-transfer-routes",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 9,
+          "category": "mock-21-old-two-working-day-and-fourteen-day-options",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 10,
+          "category": "mock-21-ordinary-course-cheque-cash-exceptions",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 19,
+          "category": "mock-21-obsolete-prescriptive-transfer-routes",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 20,
+          "category": "mock-21-ordinary-course-cheque-cash-exceptions",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 22,
+          "category": "mock-21-obsolete-prescriptive-transfer-routes",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 28,
+          "category": "mock-21-paid-disbursement-reimbursement",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 31,
+          "category": "mock-21-obsolete-prescriptive-transfer-routes",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 34,
+          "category": "mock-21-obsolete-prescriptive-transfer-routes",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 35,
+          "category": "mock-21-old-two-working-day-and-fourteen-day-options",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 36,
+          "category": "mock-21-old-two-working-day-and-fourteen-day-options",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 37,
+          "category": "mock-21-old-two-working-day-and-fourteen-day-options",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 38,
+          "category": "mock-21-old-two-working-day-and-fourteen-day-options",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 39,
+          "category": "mock-21-old-two-working-day-and-fourteen-day-options",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 40,
+          "category": "mock-21-old-two-working-day-and-fourteen-day-options",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 45,
+          "category": "mock-21-ordinary-course-cheque-cash-exceptions",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 46,
+          "category": "mock-21-fixed-fee-without-bill",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 47,
+          "category": "mock-21-old-two-working-day-and-fourteen-day-options",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 57,
+          "category": "mock-21-publisher-accounting-errors",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 61,
+          "category": "mock-21-old-two-working-day-and-fourteen-day-options",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 66,
+          "category": "mock-21-publisher-accounting-errors",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 67,
+          "category": "mock-21-fixed-fee-without-bill",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 70,
+          "category": "mock-21-publisher-accounting-errors",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 72,
+          "category": "mock-21-ordinary-course-cheque-cash-exceptions",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 75,
+          "category": "mock-21-accounting-record-retention",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        }
+      ]
+    },
+    {
+      "mock": 22,
+      "filename": "Mock Exam 22-compresssed.pdf",
+      "sha256": "e0cb60bf5c0f3004920fd875d70a31a5565b976b5b2f76ac07528333878e9fad",
+      "pdfPages": 120,
+      "sourceQuestions": 60,
+      "importedQuestions": 51,
+      "excludedQuestions": [
+        {
+          "number": 1,
+          "category": "mock-22-treaty-implementation",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 30,
+          "category": "mock-22-committal-proceedings",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 31,
+          "category": "mock-22-treaty-implementation",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 38,
+          "category": "mock-22-practice-directions-statutory-basis",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 39,
+          "category": "mock-22-practice-directions-statutory-basis",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 46,
+          "category": "mock-22-jury-probation-disqualification",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 49,
+          "category": "mock-22-evel-abolished",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 52,
+          "category": "mock-22-appeal-permission-renewal",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 56,
+          "category": "mock-22-divorce-forum",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        }
+      ]
+    },
+    {
+      "mock": 23,
+      "filename": "Mock Exam 23-compresssed.pdf",
+      "sha256": "30c8bc79a2801b80578b04060c2829a7699c29f44665d9813c4f263ec61db0b9",
+      "pdfPages": 84,
+      "sourceQuestions": 42,
+      "importedQuestions": 25,
+      "excludedQuestions": [
+        {
+          "number": 1,
+          "category": "mock-23-publisher-death-disposal",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 6,
+          "category": "mock-23-old-cgt-rates-and-exemption",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 8,
+          "category": "mock-23-publisher-depreciating-asset-relief",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 9,
+          "category": "mock-23-old-cgt-rates-and-exemption",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 13,
+          "category": "mock-23-publisher-incidental-costs",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 15,
+          "category": "mock-23-old-cgt-rates-and-exemption",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 19,
+          "category": "mock-23-superseded-indexation-taper",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 23,
+          "category": "mock-23-old-cgt-rates-and-exemption",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 28,
+          "category": "mock-23-publisher-watch-wasting-asset",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 34,
+          "category": "mock-23-old-cgt-rates-and-exemption",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 35,
+          "category": "mock-23-old-cgt-rates-and-exemption",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 36,
+          "category": "mock-23-old-cgt-rates-and-exemption",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 38,
+          "category": "mock-23-old-cgt-rates-and-exemption",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 39,
+          "category": "mock-23-old-cgt-rates-and-exemption",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 40,
+          "category": "mock-23-old-cgt-rates-and-exemption",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 41,
+          "category": "mock-23-old-cgt-rates-and-exemption",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 42,
+          "category": "mock-23-publisher-chattel-threshold",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        }
+      ]
+    },
+    {
+      "mock": 24,
+      "filename": "Mock Exam 24-compresssed.pdf",
+      "sha256": "33eeb9709f689bd76d16e1713f571934e3f6689216c10f48092c63baccb005b4",
+      "pdfPages": 60,
+      "sourceQuestions": 30,
+      "importedQuestions": 19,
+      "excludedQuestions": [
+        {
+          "number": 4,
+          "category": "incomplete-aml-reliance-test",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 6,
+          "category": "incorrect-authorised-disclosure-timing",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 10,
+          "category": "obsolete-sra-principles-and-outcomes",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 13,
+          "category": "unreliable-original-aml-explanations",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 14,
+          "category": "obsolete-sra-principles-and-outcomes",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 16,
+          "category": "obsolete-aml-guidance-and-cross-references",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 18,
+          "category": "obsolete-aml-guidance-and-cross-references",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 20,
+          "category": "unreliable-original-aml-explanations",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 23,
+          "category": "unreliable-original-aml-explanations",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 26,
+          "category": "obsolete-sra-principles-and-outcomes",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 29,
+          "category": "obsolete-sra-principles-and-outcomes",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        }
+      ]
+    },
+    {
+      "mock": 25,
+      "filename": "Mock Exam 25-compresssed.pdf",
+      "sha256": "af7c520bef944a3150d32ecbd8ebf1582a398ad2798bb6c4267e8778e917b989",
+      "pdfPages": 64,
+      "sourceQuestions": 32,
+      "importedQuestions": 29,
+      "excludedQuestions": [
+        {
+          "number": 8,
+          "category": "superseded-vat-sanitary-products-rate",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 19,
+          "category": "superseded-vat-default-surcharge",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 30,
+          "category": "superseded-vat-sanitary-products-rate",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        }
+      ]
+    },
+    {
+      "mock": 26,
+      "filename": "Mock Exam 26-compresssed.pdf",
+      "sha256": "414416cdd1d3e7c69b7adb62661d80cfdc2924292cc326706a5e587617601067",
+      "pdfPages": 136,
+      "sourceQuestions": 68,
+      "importedQuestions": 56,
+      "excludedQuestions": [
+        {
+          "number": 11,
+          "category": "superseded-inheritance-relief-framework",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 12,
+          "category": "superseded-inheritance-relief-framework",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 20,
+          "category": "unreliable-original-iht-charity-exemption",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 22,
+          "category": "unreliable-original-share-valuation",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 31,
+          "category": "superseded-inheritance-relief-framework",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 47,
+          "category": "unreliable-original-quick-succession-arithmetic",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 49,
+          "category": "unreliable-original-iht-payment-deadline",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 55,
+          "category": "unreliable-original-simultaneous-deaths-tax",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 57,
+          "category": "incorrect-inheritance-rate-set",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 62,
+          "category": "superseded-residence-nil-rate-band",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 63,
+          "category": "superseded-inheritance-relief-framework",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 67,
+          "category": "superseded-residence-nil-rate-band",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        }
+      ]
+    },
+    {
+      "mock": 27,
+      "filename": "Mock Exam 27-compresssed.pdf",
+      "sha256": "64cb720c3df3973f57fd24f0556b312bc9f15c269dfbb9d4e47fb8126af7e289",
+      "pdfPages": 93,
+      "sourceQuestions": 46,
+      "importedQuestions": 23,
+      "excludedQuestions": [
+        {
+          "number": 3,
+          "category": "superseded-income-tax-figures",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 6,
+          "category": "discontinued-working-tax-credit-example",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 12,
+          "category": "superseded-income-tax-figures",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 13,
+          "category": "superseded-income-tax-figures",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 16,
+          "category": "incorrect-partnership-salary-treatment",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 18,
+          "category": "obsolete-age-related-personal-allowance",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 21,
+          "category": "incorrect-employee-expense-exclusion",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 25,
+          "category": "legacy-incapacity-benefit-scenario",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 32,
+          "category": "superseded-income-tax-figures",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 33,
+          "category": "superseded-income-tax-figures",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 34,
+          "category": "superseded-income-tax-figures",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 35,
+          "category": "superseded-income-tax-figures",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 36,
+          "category": "superseded-income-tax-figures",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 37,
+          "category": "superseded-income-tax-figures",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 38,
+          "category": "superseded-income-tax-figures",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 39,
+          "category": "superseded-income-tax-figures",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 40,
+          "category": "unreliable-original-income-tax-arithmetic",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 41,
+          "category": "superseded-income-tax-figures",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 42,
+          "category": "superseded-income-tax-figures",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 43,
+          "category": "superseded-income-tax-figures",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 44,
+          "category": "superseded-income-tax-figures",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 45,
+          "category": "superseded-income-tax-figures",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 46,
+          "category": "superseded-income-tax-figures",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        }
+      ]
+    },
+    {
+      "mock": 28,
+      "filename": "Mock Exam 28-compresssed.pdf",
+      "sha256": "042691ef4c36d30a3ce570ef70cdc38ea45d6b5db01fde8da02a7681a54d5d34",
+      "pdfPages": 120,
+      "sourceQuestions": 60,
+      "importedQuestions": 50,
+      "excludedQuestions": [
+        {
+          "number": 1,
+          "category": "superseded-second-charge-mortgage-treatment",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 8,
+          "category": "superseded-endowment-insurance-investment-exemption",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 11,
+          "category": "superseded-retail-investment-and-pension-scope-framework",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 12,
+          "category": "superseded-retail-investment-and-pension-scope-framework",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 20,
+          "category": "incorrect-blanket-exclusion-of-fca-authorised-firms-from-sra-cob",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 26,
+          "category": "incomplete-authorised-person-criminal-offence-rule",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 29,
+          "category": "missing-client-accounting-qualification-in-keyed-commission-answer",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 36,
+          "category": "superseded-retail-investment-and-pension-scope-framework",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 48,
+          "category": "superseded-insurance-based-investment-negative-advice-explanation",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 51,
+          "category": "superseded-financial-promotion-approval-gateway",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        }
+      ]
+    },
+    {
+      "mock": 29,
+      "filename": "Mock Exam 29-compresssed.pdf",
+      "sha256": "6477ca4e902608e22644874748b27488f3797ecc75a1b33ae90b0f803771672c",
+      "pdfPages": 76,
+      "sourceQuestions": 38,
+      "importedQuestions": 26,
+      "excludedQuestions": [
+        {
+          "number": 2,
+          "category": "superseded-corporation-tax-rates",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 7,
+          "category": "superseded-annual-investment-allowance",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 21,
+          "category": "superseded-corporation-tax-rates",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 28,
+          "category": "superseded-corporation-tax-rates",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 30,
+          "category": "misleading-generalisation-of-trading-loss-relief",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 31,
+          "category": "superseded-corporation-tax-rates",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 32,
+          "category": "unsupported-full-disallowance-of-director-remuneration",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 33,
+          "category": "superseded-corporation-tax-rates",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 34,
+          "category": "superseded-corporation-tax-rates",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 36,
+          "category": "superseded-corporation-tax-rates",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 37,
+          "category": "superseded-corporation-tax-rates",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 38,
+          "category": "superseded-corporation-tax-rates",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        }
+      ]
+    },
+    {
+      "mock": 30,
+      "filename": "Mock Exam 30-compresssed.pdf",
+      "sha256": "70057b2825bc89d5de2848e00e6cd030259e6de25e7b34f89f5086acdabc9bf2",
+      "pdfPages": 160,
+      "sourceQuestions": 80,
+      "importedQuestions": 73,
+      "excludedQuestions": [
+        {
+          "number": 31,
+          "category": "incorrect-conclusive-ucta-reasonableness-assessment",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 32,
+          "category": "missing-consumer-exclusion-clause-fairness-assessment",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 35,
+          "category": "incorrect-corporate-consumer-status-under-cra",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 41,
+          "category": "superseded-consumer-insurance-disclosure-duty",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 46,
+          "category": "superseded-unqualified-nonconsumer-goods-rejection-rule",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 67,
+          "category": "superseded-mechanical-illegality-restitution-rules",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        },
+        {
+          "number": 68,
+          "category": "superseded-mechanical-illegality-restitution-rules",
+          "reason": "See qlts-mock-exams-21-30-removed.json for the reviewed reason and official sources."
+        }
+      ]
+    }
+  ]
+}

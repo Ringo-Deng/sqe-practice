@@ -23,15 +23,16 @@ const originalRevise=require('../lib/revise-flk1-assessment-2025-26.json');
 const originalFlk2=require('../lib/sra-flk2-original.json');
 const pretestedFlk2=require('../lib/sra-flk2-pretested.json');
 const reviseFlk2=require('../lib/revise-flk2-practice-assessment.json');
-const originalQlts=[...require('../lib/qlts-mock-exams-1-5.json'),...require('../lib/qlts-mock-exams-6-10.json'),...require('../lib/qlts-mock-exams-11-15.json'),...require('../lib/qlts-mock-exams-16-20.json')];
-const qltsSourceFiles=[require('../lib/qlts-mock-exams-1-5-source.json'),require('../lib/qlts-mock-exams-6-10-source.json'),require('../lib/qlts-mock-exams-11-15-source.json'),require('../lib/qlts-mock-exams-16-20-source.json')];
+const originalQlts=[...require('../lib/qlts-mock-exams-1-5.json'),...require('../lib/qlts-mock-exams-6-10.json'),...require('../lib/qlts-mock-exams-11-15.json'),...require('../lib/qlts-mock-exams-16-20.json'),...require('../lib/qlts-mock-exams-21-30.json')];
+const qltsSourceFiles=[require('../lib/qlts-mock-exams-1-5-source.json'),require('../lib/qlts-mock-exams-6-10-source.json'),require('../lib/qlts-mock-exams-11-15-source.json'),require('../lib/qlts-mock-exams-16-20-source.json'),require('../lib/qlts-mock-exams-21-30-source.json')];
 const qltsSource={importedQuestions:qltsSourceFiles.reduce((sum,source)=>sum+source.importedQuestions,0),mocks:qltsSourceFiles.flatMap(source=>source.mocks)};
-const qltsTranslations={...require('../lib/qlts-mock-exams-1-5-translations.json'),...require('../lib/qlts-mock-exams-6-10-translations.json'),...require('../lib/qlts-mock-exams-11-15-translations.json'),...require('../lib/qlts-mock-exams-16-20-translations.json')};
+const qltsTranslations={...require('../lib/qlts-mock-exams-1-5-translations.json'),...require('../lib/qlts-mock-exams-6-10-translations.json'),...require('../lib/qlts-mock-exams-11-15-translations.json'),...require('../lib/qlts-mock-exams-16-20-translations.json'),...require('../lib/qlts-mock-exams-21-30-translations.json')};
 const qltsChapterMatches=require('../lib/qlts-chapter-matches.json');
-const qltsCurrentLawReviews=[require('../lib/qlts-mock-exams-6-10-removed.json'),require('../lib/qlts-mock-exams-11-15-removed.json'),require('../lib/qlts-mock-exams-16-20-removed.json')];
+const qltsCurrentLawReviews=[require('../lib/qlts-mock-exams-6-10-removed.json'),require('../lib/qlts-mock-exams-11-15-removed.json'),require('../lib/qlts-mock-exams-16-20-removed.json'),require('../lib/qlts-mock-exams-21-30-removed.json')];
 const translations=require('../lib/revise-assessment-translations.json');
 const {filterQuestions,chapterById}=require('../lib/chapters.ts');
 const {linkedTextbooks}=require('../lib/textbooks.ts');
+const {applyGuestStudyAction,emptyGuestStudyState}=require('../lib/guest-study.ts');
 async function post(body,status=200){
  const response=await api.POST(new Request('https://example.test/api/study',{method:'POST',headers:{'content-type':'application/json','x-study-action':'1'},body:JSON.stringify(body)}));
  const data=await response.json();assert.equal(response.status,status,JSON.stringify(data));return data;
@@ -46,7 +47,7 @@ async function main(){
  const currentLawExclusions=qltsCurrentLawReviews.flatMap(review=>review.categories).flatMap(category=>category.questionIds);
  assert.equal(currentLawExclusions.length,qltsCurrentLawReviews.reduce((sum,review)=>sum+review.removedQuestions,0));
  assert.ok(currentLawExclusions.every(id=>!importedQlts.some(question=>question.id===id)));
- assert.equal(importedQlts.length,1362);
+ assert.equal(importedQlts.length,1762);
  assert.equal(qltsSource.importedQuestions,importedQlts.length);
  assert.deepEqual(importedQlts.map(q=>q.id),originalQlts.map(q=>q.id));
  assert.deepEqual(Object.keys(qltsTranslations).sort(),importedQlts.map(q=>q.id).sort());
@@ -121,11 +122,45 @@ async function main(){
  assert.equal(data.session.score,1);
  assert.equal(data.questions.find(q=>q.id===qltsExamFirst.id).explanation.en,qltsExamFirst.explanation.en);
  assert.equal(data.questions.find(q=>q.id===qltsExamFirst.id).explanation.zh,qltsTranslations[qltsExamFirst.id].explanationZh);
+ let guestState=emptyGuestStudyState();
+ for(const mock of qltsSource.mocks.filter(item=>item.mock>=21)){
+  const sessionId=crypto.randomUUID();
+  if(mock.importedQuestions===0){
+   await post({action:'start',id:sessionId,mode:'practice',sourceId:'qlts',sourceSet:`qlts-mock-exam-${mock.mock}`},400);
+   continue;
+  }
+  data=await post({action:'start',id:sessionId,mode:'practice',sourceId:'qlts',sourceSet:`qlts-mock-exam-${mock.mock}`});
+  assert.equal(data.session.questionIds.length,mock.importedQuestions);
+  assert.ok(data.questions.every(q=>!q.explanation));
+  const first=importedQlts.find(q=>q.sourceSession===mock.mock);
+  data=await post({action:'answer',sessionId,questionId:first.id,selected:first.explanation.answer});
+  assert.equal(data.session.score,1);
+  assert.equal(data.session.answers[first.id].correct,true);
+  const answered=data.questions.find(q=>q.id===first.id);
+  assert.equal(answered.explanation.en,first.explanation.en);
+  assert.equal(answered.explanation.zh,qltsTranslations[first.id].explanationZh);
+  assert.equal(answered.stemZh,qltsTranslations[first.id].stemZh);
+  assert.ok(data.questions.filter(q=>q.id!==first.id).every(q=>!q.explanation));
+  const reopened=await get(sessionId);
+  assert.equal(reopened.session.score,1);
+  assert.equal(reopened.session.answers[first.id].selected,first.explanation.answer);
+  const guestId=crypto.randomUUID();
+  let guest=applyGuestStudyAction(guestState,{action:'start',id:guestId,mode:'practice',sourceId:'qlts',sourceSet:`qlts-mock-exam-${mock.mock}`});
+  assert.equal(guest.data.session.questionIds.length,mock.importedQuestions);
+  assert.ok(guest.data.questions.every(q=>!q.explanation));
+  guest=applyGuestStudyAction(guest.state,{action:'answer',sessionId:guestId,questionId:first.id,selected:first.explanation.answer});
+  assert.equal(guest.data.session.score,1);
+  assert.equal(guest.data.questions.find(q=>q.id===first.id).explanation.zh,qltsTranslations[first.id].explanationZh);
+  guestState=JSON.parse(JSON.stringify(guest.state));
+  const restored=applyGuestStudyAction(guestState,{action:'hydrate',sessionId:guestId});
+  assert.equal(restored.data.session.answers[first.id].correct,true);
+  assert.equal(restored.data.session.score,1);
+ }
  await post({action:'answer',sessionId:practiceId,questionId:second.id,selected:'A'},400);
  await post({action:'start',id:crypto.randomUUID(),mode:'practice',sourceSet:'missing'},400);
  data=await get(oldId);assert.equal(data.session.score,1);assert.equal(data.session.answers[oldQuestion.id].selected,oldQuestion.explanation.answer);
  data=await get(practiceId);assert.equal(data.session.score,1);
- console.log('Passed: SRA and Revise regressions plus QLTS source sets 1-20 (1,362 bilingual, current-law-screened questions), answer keys, scoring, post-answer explanations, invalid set rejection and existing study history.');
+ console.log('Passed: SRA and Revise regressions plus QLTS source sets 1-30 (bilingual, current-law-screened questions), all new mocks in API and GitHub Pages guest mode, answer keys, scoring, post-answer explanations, saved-session hydration, invalid set rejection and existing study history.');
  sqlite.close();
 }
 main().catch(error=>{console.error(error);process.exitCode=1;});

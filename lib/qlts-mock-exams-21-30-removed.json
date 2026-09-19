@@ -1,0 +1,1744 @@
+{
+  "reviewedAt": "2026-09-19",
+  "scope": "QLTS Mock Exams 21-30",
+  "removedQuestions": 131,
+  "method": "Question-by-question screening against official law and regulator materials available on 19 September 2026. Excludes materially superseded keyed answers or explanations and separately identified substantive publisher errors. Historic dates or changed citation numbering alone are not grounds for exclusion. Original publisher rules and answers are not silently modernised.",
+  "sources": [
+    {
+      "label": "SRA Accounts Rules，现行 Rules 2、4–8、13",
+      "url": "https://www.sra.org.uk/solicitors/standards-regulations/accounts-rules/"
+    },
+    {
+      "label": "SRA：Taking money for your firm’s costs",
+      "url": "https://www.sra.org.uk/solicitors/guidance/taking-money-for-your-firms-costs/"
+    },
+    {
+      "label": "SRA：Helping you keep accurate client accounting records",
+      "url": "https://www.sra.org.uk/solicitors/guidance/accurate-client-accounting-records/"
+    },
+    {
+      "label": "House of Commons Library：How Parliament treats treaties",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-9247/"
+    },
+    {
+      "label": "EU Act 2011 provisions repeal：官方说明",
+      "url": "https://www.legislation.gov.uk/ukdsi/2018/9780111171653/pdfs/ukdsiem_9780111171653_en.pdf"
+    },
+    {
+      "label": "Ministry of Justice：Committal hearings abolished",
+      "url": "https://www.gov.uk/government/news/faster-justice-as-unneccessary-committal-hearings-are-abolished"
+    },
+    {
+      "label": "Justice：Practice Directions and statutory making powers",
+      "url": "https://www.justice.gov.uk/courts/procedure-rules/civil/rules/raprnotes"
+    },
+    {
+      "label": "GOV.UK：Who can be on a jury",
+      "url": "https://www.gov.uk/jury-service/who-can-be-on-jury"
+    },
+    {
+      "label": "UK Parliament：English Votes for English Laws",
+      "url": "https://www.parliament.uk/about/how/laws/bills/public/english-votes-for-english-laws/"
+    },
+    {
+      "label": "Justice：CPR Part 52，rules 52.5–52.6",
+      "url": "https://www.justice.gov.uk/courts/procedure-rules/civil/rules/part52"
+    },
+    {
+      "label": "MOJ：Single Family Court began 22 April 2014",
+      "url": "https://mojdigital.blog.gov.uk/2014/03/20/finding-a-family-court/"
+    },
+    {
+      "label": "HMRC：CGT rates，2026/27 为18%/24%",
+      "url": "https://www.gov.uk/capital-gains-tax/rates"
+    },
+    {
+      "label": "HMRC：CGT annual exempt amount £3,000",
+      "url": "https://www.gov.uk/capital-gains-tax/allowances"
+    },
+    {
+      "label": "HMRC：Capital losses",
+      "url": "https://www.gov.uk/capital-gains-tax/losses"
+    },
+    {
+      "label": "HMRC：Indexation allowance and its restriction",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg17207"
+    },
+    {
+      "label": "HMRC：Taper relief abolished",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg17895"
+    },
+    {
+      "label": "HMRC CG30320：Death is not a disposal",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg30320"
+    },
+    {
+      "label": "HMRC：Business Asset Rollover Relief",
+      "url": "https://www.gov.uk/business-asset-rollover-relief"
+    },
+    {
+      "label": "HMRC CG60295：Depreciating assets",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg60295"
+    },
+    {
+      "label": "HMRC：Work out gain and deductible costs",
+      "url": "https://www.gov.uk/tax-sell-property/work-out-your-gain"
+    },
+    {
+      "label": "HMRC：Limited lifespan possessions，clocks and watches",
+      "url": "https://www.gov.uk/capital-gains-tax-personal-possessions/limited-lifespan"
+    },
+    {
+      "label": "HMRC CG76573：£6,000 gross disposal consideration",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg76573"
+    },
+    {
+      "label": "SRA Principles",
+      "url": "https://www.sra.org.uk/solicitors/standards-regulations/principles/"
+    },
+    {
+      "label": "SRA guidance on the 2017 Money Laundering Regulations",
+      "url": "https://www.sra.org.uk/solicitors/guidance/money-laundering-terrorist-financing-transfer-funds-information-payer-regulations-2017/"
+    },
+    {
+      "label": "POCA 2002 section 338",
+      "url": "https://www.legislation.gov.uk/ukpga/2002/29/section/338"
+    },
+    {
+      "label": "LSAG Anti-Money Laundering Guidance 2025",
+      "url": "https://www.sra.org.uk/globalassets/documents/solicitors/firm-based-authorisation/lsag-aml-guidance.pdf"
+    },
+    {
+      "label": "VAT Notice 701/18",
+      "url": "https://www.gov.uk/guidance/vat-on-womens-sanitary-products-notice-70118"
+    },
+    {
+      "label": "VAT default surcharge Notice 700/50",
+      "url": "https://www.gov.uk/guidance/vat-default-surcharge-notice-70050"
+    },
+    {
+      "label": "Agricultural and business property relief changes",
+      "url": "https://www.gov.uk/government/publications/changes-to-agricultural-property-relief-and-business-property-relief/agricultural-property-relief-and-business-property-relief-changes"
+    },
+    {
+      "label": "Inheritance Tax nil-rate bands",
+      "url": "https://www.gov.uk/government/publications/inheritance-tax-nil-rate-band-and-residence-nil-rate-bands-from-6-april-2028/inheritance-tax-nil-rate-band-residence-nil-rate-band-from-6-april-2028"
+    },
+    {
+      "label": "Reduced-rate IHT calculator",
+      "url": "https://www.gov.uk/inheritance-tax-reduced-rate-calculator"
+    },
+    {
+      "label": "Trusts and Inheritance Tax",
+      "url": "https://www.gov.uk/trusts-taxes/trusts-and-inheritance-tax"
+    },
+    {
+      "label": "Gifts to charity in a will",
+      "url": "https://www.gov.uk/donating-to-charity/leaving-gifts-to-charity-in-your-will"
+    },
+    {
+      "label": "Valuing stocks and shares for IHT",
+      "url": "https://www.gov.uk/guidance/valuing-stocks-and-shares-for-inheritance-tax"
+    },
+    {
+      "label": "Paying Inheritance Tax",
+      "url": "https://www.gov.uk/paying-inheritance-tax"
+    },
+    {
+      "label": "IHT quick succession relief",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm22041"
+    },
+    {
+      "label": "HMRC simultaneous deaths: elder",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm12197"
+    },
+    {
+      "label": "Current income tax rates",
+      "url": "https://www.gov.uk/income-tax-rates"
+    },
+    {
+      "label": "Current dividend tax",
+      "url": "https://www.gov.uk/tax-on-dividends"
+    },
+    {
+      "label": "Tax credits ended on 5 April 2025",
+      "url": "https://www.gov.uk/when-is-your-next-tax-credits-payment"
+    },
+    {
+      "label": "HMRC partnership profits and earnings",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/partnership-manual/pm275500"
+    },
+    {
+      "label": "HMRC income tax allowances",
+      "url": "https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past"
+    },
+    {
+      "label": "HMRC employee equipment relief",
+      "url": "https://www.gov.uk/tax-relief-for-employees/buying-other-equipment"
+    },
+    {
+      "label": "Incapacity Benefit",
+      "url": "https://www.gov.uk/incapacity-benefit"
+    },
+    {
+      "label": "HMRC Incapacity Benefit replaced for new claims",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/paye-manual/paye77210"
+    },
+    {
+      "label": "Current SRA Financial Services (Scope) Rules, effective 11 April 2025",
+      "url": "https://www.sra.org.uk/solicitors/standards-regulations/financial-services-scope-rules/"
+    },
+    {
+      "label": "FSMA Professions Non-Exempt Activities Order 2001, articles 5-6",
+      "url": "https://www.legislation.gov.uk/uksi/2001/1227/pdfs/uksi_20011227_en.pdf"
+    },
+    {
+      "label": "Current SRA Financial Services (Conduct of Business) Rules",
+      "url": "https://www.sra.org.uk/solicitors/standards-regulations/financial-services-conduct-business-rules/"
+    },
+    {
+      "label": "FCA PROF 2.1.12 accounting for rewards to the client",
+      "url": "https://handbook.fca.org.uk/handbook/prof2/prof2s1"
+    },
+    {
+      "label": "SRA guidance on insurance distribution",
+      "url": "https://www.sra.org.uk/solicitors/guidance/law-firms-carrying-insurance-distribution-activities/"
+    },
+    {
+      "label": "FCA PERG 4, especially 4.4A.1A-1C",
+      "url": "https://handbook.fca.org.uk/handbook/perg4"
+    },
+    {
+      "label": "Financial Services Act 2012 Schedule 9, amendments to FSMA sections 20 and 23",
+      "url": "https://www.legislation.gov.uk/ukpga/2012/21/pdfs/ukpga_20120021_en.pdf"
+    },
+    {
+      "label": "FCA PS23/13 financial promotion approval gateway",
+      "url": "https://www.fca.org.uk/publications/policy-statements/ps23-13-introducing-gateway-firms-who-approve-financial-promotions"
+    },
+    {
+      "label": "HMRC Corporation Tax rates and allowances, updated 1 April 2026",
+      "url": "https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax"
+    },
+    {
+      "label": "HMRC annual investment allowance",
+      "url": "https://www.gov.uk/capital-allowances/annual-investment-allowance"
+    },
+    {
+      "label": "HMRC carrying forward Corporation Tax losses",
+      "url": "https://www.gov.uk/guidance/carry-forward-corporation-tax-losses"
+    },
+    {
+      "label": "HMRC claiming relief for Corporation Tax trading losses",
+      "url": "https://www.gov.uk/guidance/corporation-tax-calculating-and-claiming-a-loss"
+    },
+    {
+      "label": "HMRC BIM47105 staffing payments and the wholly-and-exclusively test",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim47105"
+    },
+    {
+      "label": "HMRC BIM47106 directors remuneration and commercial purpose",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim47106"
+    },
+    {
+      "label": "Unfair Contract Terms Act 1977, sections 6 and 11 and Schedule 2",
+      "url": "https://www.legislation.gov.uk/ukpga/1977/50/pdfs/ukpga_19770050_en.pdf"
+    },
+    {
+      "label": "Consumer Rights Act 2015, sections 2(3), 57 and 62",
+      "url": "https://www.legislation.gov.uk/ukpga/2015/15/pdfs/ukpga_20150015_en.pdf"
+    },
+    {
+      "label": "CMA fair consumer contracts guidance, updated 22 July 2026",
+      "url": "https://www.gov.uk/guidance/writing-a-fair-contract-for-customers"
+    },
+    {
+      "label": "Insurance Act 2015 explanatory notes, paragraph 8 explaining CIDRA",
+      "url": "https://www.legislation.gov.uk/ukpga/2015/4/pdfs/ukpgaen_20150004_en.pdf"
+    },
+    {
+      "label": "Sale and Supply of Goods Act 1994, section 4 inserting SGA 15A",
+      "url": "https://www.legislation.gov.uk/ukpga/1994/35/pdfs/ukpga_19940035_en.pdf"
+    },
+    {
+      "label": "UK Supreme Court Patel v Mirza judgment",
+      "url": "https://supremecourt.uk/uploads/uksc_2014_0218_judgment_550b6bc9f0.pdf"
+    },
+    {
+      "label": "UK Supreme Court Patel v Mirza press summary",
+      "url": "https://supremecourt.uk/uploads/uksc_2014_0218_press_summary_b4af1247e2.pdf"
+    }
+  ],
+  "categories": [
+    {
+      "id": "mock-21-old-two-working-day-and-fourteen-day-options",
+      "kind": "outdated-law",
+      "reason": "题目或原解析明确认可已取消的 Option 1/2/3 制度中的两个工作日或14日宽限；现行 Rule 4.2 要求 promptly 分配混合款项，Rules 2.1(d)、2.3、4.1 另定收款与分离义务。并非只因旧编号剔除。Q2、Q9、Q37 虽主答案分录仍正确，解析仍肯定旧宽限处理。",
+      "questionIds": [
+        "qlts-mock-21-q002",
+        "qlts-mock-21-q009",
+        "qlts-mock-21-q035",
+        "qlts-mock-21-q036",
+        "qlts-mock-21-q037",
+        "qlts-mock-21-q038",
+        "qlts-mock-21-q039",
+        "qlts-mock-21-q040",
+        "qlts-mock-21-q047",
+        "qlts-mock-21-q061"
+      ],
+      "sources": [
+        {
+          "label": "SRA Accounts Rules，现行 Rules 2、4–8、13",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/accounts-rules/"
+        },
+        {
+          "label": "SRA：Taking money for your firm’s costs",
+          "url": "https://www.sra.org.uk/solicitors/guidance/taking-money-for-your-firms-costs/"
+        }
+      ]
+    },
+    {
+      "id": "mock-21-ordinary-course-cheque-cash-exceptions",
+      "kind": "outdated-law",
+      "reason": "原答案/解析依据旧规定，仅凭 ordinary course of business 的现金转交或支票背书即可不入客户账户；现行 Rule 2.3(c) 的替代安排须个别书面约定，题中未给定该条件。",
+      "questionIds": [
+        "qlts-mock-21-q010",
+        "qlts-mock-21-q020",
+        "qlts-mock-21-q045",
+        "qlts-mock-21-q072"
+      ],
+      "sources": [
+        {
+          "label": "SRA Accounts Rules，现行 Rules 2、4–8、13",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/accounts-rules/"
+        }
+      ]
+    },
+    {
+      "id": "mock-21-fixed-fee-without-bill",
+      "kind": "outdated-law",
+      "reason": "以 agreed fee 自动成为 office money 为依据；现行 Rule 2.1(d) 以是否已交付相应账单划分。Q46 明示尚未账单/书面费用通知；Q67 也未交代账单且给出不存在的11月31日。",
+      "questionIds": [
+        "qlts-mock-21-q046",
+        "qlts-mock-21-q067"
+      ],
+      "sources": [
+        {
+          "label": "SRA Accounts Rules，现行 Rules 2、4–8、13",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/accounts-rules/"
+        },
+        {
+          "label": "SRA：Taking money for your firm’s costs",
+          "url": "https://www.sra.org.uk/solicitors/guidance/taking-money-for-your-firms-costs/"
+        }
+      ]
+    },
+    {
+      "id": "mock-21-paid-disbursement-reimbursement",
+      "kind": "outdated-law",
+      "reason": "Q4 解析称有足够客户款时 Land Registry fees 不得由 business account 支付；Q28 解析称偿付已由事务所垫付的支出前必须先交账单。SRA 现行指引允许先从 business account 付款，并在客户明白且授权后按 Rule 5.1(a) 偿付已支付支出，无该一概先账单要求。",
+      "questionIds": [
+        "qlts-mock-21-q004",
+        "qlts-mock-21-q028"
+      ],
+      "sources": [
+        {
+          "label": "SRA：Taking money for your firm’s costs",
+          "url": "https://www.sra.org.uk/solicitors/guidance/taking-money-for-your-firms-costs/"
+        }
+      ]
+    },
+    {
+      "id": "mock-21-obsolete-prescriptive-transfer-routes",
+      "kind": "outdated-law",
+      "reason": "原解析用旧规则将具体转账路线说成排他义务：Q7 以旧现金提现禁令否定选项；Q19 仅因没有其他款项应付客户即禁止经客户账户支付利息；Q22、Q31、Q34 依赖旧 designated-deposit 必经 general-client-account 路线或即时事后补划的明确豁免。现行 Rules 4–5、7 不再规定这些排他路线，仍须足额、用途、授权及记录。",
+      "questionIds": [
+        "qlts-mock-21-q007",
+        "qlts-mock-21-q019",
+        "qlts-mock-21-q022",
+        "qlts-mock-21-q031",
+        "qlts-mock-21-q034"
+      ],
+      "sources": [
+        {
+          "label": "SRA Accounts Rules，现行 Rules 2、4–8、13",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/accounts-rules/"
+        },
+        {
+          "label": "SRA：Helping you keep accurate client accounting records",
+          "url": "https://www.sra.org.uk/solicitors/guidance/accurate-client-accounting-records/"
+        }
+      ]
+    },
+    {
+      "id": "mock-21-accounting-record-retention",
+      "kind": "outdated-law",
+      "reason": "主选项六年仍对，但原解析反复称提现授权/支票仅保存两年；现行 Rule 13.1 要求全部 accounting records 至少六年。",
+      "questionIds": [
+        "qlts-mock-21-q075"
+      ],
+      "sources": [
+        {
+          "label": "SRA Accounts Rules，现行 Rules 2、4–8、13",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/accounts-rules/"
+        }
+      ]
+    },
+    {
+      "id": "mock-21-publisher-accounting-errors",
+      "kind": "publisher-substantive-error",
+      "reason": "Q57 解析文字将退款应借记客户/贷记银行反写，和其答案分录冲突。Q66 总资金£1,800，客户各£500，利息£18，按相同比例各£5，原答案各£6无事实依据。Q70 明称仅可转£2,000却列出从客户账户转£2,200，违反足额限制；扫描原解析还在第二种方案中途截止。均保留原文归档，不代作者改答案。",
+      "questionIds": [
+        "qlts-mock-21-q057",
+        "qlts-mock-21-q066",
+        "qlts-mock-21-q070"
+      ],
+      "sources": [
+        {
+          "label": "SRA Accounts Rules，现行 Rules 2、4–8、13",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/accounts-rules/"
+        },
+        {
+          "label": "SRA：Helping you keep accurate client accounting records",
+          "url": "https://www.sra.org.uk/solicitors/guidance/accurate-client-accounting-records/"
+        }
+      ]
+    },
+    {
+      "id": "mock-22-treaty-implementation",
+      "kind": "outdated-law",
+      "reason": "Q1 将所有条约一概说成先经 Act 批准后才能批准，解析又依赖已废除 EU Act 2011 referendum 制度；Q31 将政府 ratification 当成 HMRC 国内适用条约的充分前提。英国二元制下条约不会自动修改国内法，须看既有权限及必要实施立法。",
+      "questionIds": [
+        "qlts-mock-22-q001",
+        "qlts-mock-22-q031"
+      ],
+      "sources": [
+        {
+          "label": "House of Commons Library：How Parliament treats treaties",
+          "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-9247/"
+        },
+        {
+          "label": "EU Act 2011 provisions repeal：官方说明",
+          "url": "https://www.legislation.gov.uk/ukdsi/2018/9780111171653/pdfs/ukdsiem_9780111171653_en.pdf"
+        }
+      ]
+    },
+    {
+      "id": "mock-22-committal-proceedings",
+      "kind": "outdated-law",
+      "reason": "题干将 magistrates’ committal proceedings 描述为现行制度；英格兰与威尔士已于2013年全面废除旧 committal hearings，不能原样作为现行程序题。",
+      "questionIds": [
+        "qlts-mock-22-q030"
+      ],
+      "sources": [
+        {
+          "label": "Ministry of Justice：Committal hearings abolished",
+          "url": "https://www.gov.uk/government/news/faster-justice-as-unneccessary-committal-hearings-are-abolished"
+        }
+      ]
+    },
+    {
+      "id": "mock-22-practice-directions-statutory-basis",
+      "kind": "publisher-substantive-error",
+      "reason": "Q38 解析及 Q39 题干声称 Practice Directions 没有正式法定依据；现行官方说明明确权力由 Civil Procedure Act 1997 s5（经 Constitutional Reform Act 2005 修改）规制，并可委派 Master of the Rolls。原书将其等同判例机制的表述亦不可靠。",
+      "questionIds": [
+        "qlts-mock-22-q038",
+        "qlts-mock-22-q039"
+      ],
+      "sources": [
+        {
+          "label": "Justice：Practice Directions and statutory making powers",
+          "url": "https://www.justice.gov.uk/courts/procedure-rules/civil/rules/raprnotes"
+        }
+      ]
+    },
+    {
+      "id": "mock-22-jury-probation-disqualification",
+      "kind": "outdated-law",
+      "reason": "主答案两年前六个月监禁仍正确，但原解析仍给出旧 probation 五年失格规则；现行官方规定近十年 prison/detention/suspended/community sentence 失格。为保留原解析而不传播旧五年门槛，剔除。",
+      "questionIds": [
+        "qlts-mock-22-q046"
+      ],
+      "sources": [
+        {
+          "label": "GOV.UK：Who can be on a jury",
+          "url": "https://www.gov.uk/jury-service/who-can-be-on-jury"
+        }
+      ]
+    },
+    {
+      "id": "mock-22-evel-abolished",
+      "kind": "outdated-law",
+      "reason": "题干将2015年的 English Votes for English Laws certification/voting 程序作为仍然有效的要求；相关 Standing Orders 已于2021年7月13日撤销。West Lothian question 本身仍是历史概念。",
+      "questionIds": [
+        "qlts-mock-22-q049"
+      ],
+      "sources": [
+        {
+          "label": "UK Parliament：English Votes for English Laws",
+          "url": "https://www.parliament.uk/about/how/laws/bills/public/english-votes-for-english-laws/"
+        }
+      ]
+    },
+    {
+      "id": "mock-22-appeal-permission-renewal",
+      "kind": "outdated-law",
+      "reason": "主答案 OR 门槛正确，但原解析误写 AND，并断言纸面拒绝后当然可获口头复议；向 Court of Appeal 申请 permission 现受 CPR 52.5、52.6 规制，不存在该一般口头复议权。",
+      "questionIds": [
+        "qlts-mock-22-q052"
+      ],
+      "sources": [
+        {
+          "label": "Justice：CPR Part 52，rules 52.5–52.6",
+          "url": "https://www.justice.gov.uk/courts/procedure-rules/civil/rules/part52"
+        }
+      ]
+    },
+    {
+      "id": "mock-22-divorce-forum",
+      "kind": "outdated-law",
+      "reason": "问题要求查询 County Court divorce procedure；2014年起单一 Family Court 已取代旧 county-court 家事管辖结构。其正确选项还使用 Her Majesty’s Courts 名称，不能直接作为现行离婚管辖题。",
+      "questionIds": [
+        "qlts-mock-22-q056"
+      ],
+      "sources": [
+        {
+          "label": "MOJ：Single Family Court began 22 April 2014",
+          "url": "https://mojdigital.blog.gov.uk/2014/03/20/finding-a-family-court/"
+        }
+      ]
+    },
+    {
+      "id": "mock-23-old-cgt-rates-and-exemption",
+      "kind": "outdated-law",
+      "reason": "答案或原解析依赖已过时的2016–18税率、基本税档或£11,100/£11,300免税额。2026/27主要CGT税率18%/24%，个人AEA£3,000；Q6主增益计算仍对，但解析带入旧AEA。Q35另有同年损失扣减逻辑问题；Q38所售古董钟还涉及wasting-asset免税，均不改写为现代题。",
+      "questionIds": [
+        "qlts-mock-23-q006",
+        "qlts-mock-23-q009",
+        "qlts-mock-23-q015",
+        "qlts-mock-23-q023",
+        "qlts-mock-23-q034",
+        "qlts-mock-23-q035",
+        "qlts-mock-23-q036",
+        "qlts-mock-23-q038",
+        "qlts-mock-23-q039",
+        "qlts-mock-23-q040",
+        "qlts-mock-23-q041"
+      ],
+      "sources": [
+        {
+          "label": "HMRC：CGT rates，2026/27 为18%/24%",
+          "url": "https://www.gov.uk/capital-gains-tax/rates"
+        },
+        {
+          "label": "HMRC：CGT annual exempt amount £3,000",
+          "url": "https://www.gov.uk/capital-gains-tax/allowances"
+        },
+        {
+          "label": "HMRC：Capital losses",
+          "url": "https://www.gov.uk/capital-gains-tax/losses"
+        }
+      ]
+    },
+    {
+      "id": "mock-23-superseded-indexation-taper",
+      "kind": "outdated-law",
+      "reason": "本题专考个人2008年前 indexation/taper relief 旧制度，不是仅以历史年份为背景的稳定规则。并且1999年购入资产本身没有个人indexation（其冻结于1998年4月）的基础，原解释混淆。",
+      "questionIds": [
+        "qlts-mock-23-q019"
+      ],
+      "sources": [
+        {
+          "label": "HMRC：Indexation allowance and its restriction",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg17207"
+        },
+        {
+          "label": "HMRC：Taper relief abolished",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg17895"
+        }
+      ]
+    },
+    {
+      "id": "mock-23-publisher-death-disposal",
+      "kind": "publisher-substantive-error",
+      "reason": "原解析称 CGT 可在死亡时适用；死亡本身不视为CGT处分。后续PR或受益人的处分须另行分析。",
+      "questionIds": [
+        "qlts-mock-23-q001"
+      ],
+      "sources": [
+        {
+          "label": "HMRC CG30320：Death is not a disposal",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg30320"
+        }
+      ]
+    },
+    {
+      "id": "mock-23-publisher-depreciating-asset-relief",
+      "kind": "publisher-substantive-error",
+      "reason": "plant and machinery 的 depreciating-asset hold-over relief 并非一律仅在最终出售时才产生税负；还受十年或停止合资格营业用途等较早事件限制。",
+      "questionIds": [
+        "qlts-mock-23-q008"
+      ],
+      "sources": [
+        {
+          "label": "HMRC：Business Asset Rollover Relief",
+          "url": "https://www.gov.uk/business-asset-rollover-relief"
+        },
+        {
+          "label": "HMRC CG60295：Depreciating assets",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg60295"
+        }
+      ]
+    },
+    {
+      "id": "mock-23-publisher-incidental-costs",
+      "kind": "publisher-substantive-error",
+      "reason": "原解析一概称 incidental costs 不可扣，与必要的买卖律师费/经纪费等可扣的规则冲突；主答案扩建可扣并不足以挽救原解析。",
+      "questionIds": [
+        "qlts-mock-23-q013"
+      ],
+      "sources": [
+        {
+          "label": "HMRC：Work out gain and deductible costs",
+          "url": "https://www.gov.uk/tax-sell-property/work-out-your-gain"
+        }
+      ]
+    },
+    {
+      "id": "mock-23-publisher-watch-wasting-asset",
+      "kind": "publisher-substantive-error",
+      "reason": "个人继承后出售普通腕表，题中没有business/capital-allowance例外；机械腕表属于wasting asset，原答案称必缴CGT不可靠。",
+      "questionIds": [
+        "qlts-mock-23-q028"
+      ],
+      "sources": [
+        {
+          "label": "HMRC：Limited lifespan possessions，clocks and watches",
+          "url": "https://www.gov.uk/capital-gains-tax-personal-possessions/limited-lifespan"
+        }
+      ]
+    },
+    {
+      "id": "mock-23-publisher-chattel-threshold",
+      "kind": "publisher-substantive-error",
+      "reason": "原解析把£6,000 chattel threshold套在gain上；门槛考查的是gross disposal consideration。£14,000售价不能仅因£5,000增益就说完全不属chargeable，且今天AEA也不同。",
+      "questionIds": [
+        "qlts-mock-23-q042"
+      ],
+      "sources": [
+        {
+          "label": "HMRC CG76573：£6,000 gross disposal consideration",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg76573"
+        },
+        {
+          "label": "HMRC：CGT annual exempt amount £3,000",
+          "url": "https://www.gov.uk/capital-gains-tax/allowances"
+        }
+      ]
+    },
+    {
+      "id": "obsolete-sra-principles-and-outcomes",
+      "reason": "The publisher explanation relies on pre-2019 SRA Principles or Outcomes numbering and content. Current Principles and Codes replaced that framework.",
+      "questionIds": [
+        "qlts-mock-24-q010",
+        "qlts-mock-24-q014",
+        "qlts-mock-24-q026",
+        "qlts-mock-24-q029"
+      ],
+      "sources": [
+        {
+          "label": "SRA Principles",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/principles/"
+        }
+      ]
+    },
+    {
+      "id": "incomplete-aml-reliance-test",
+      "reason": "The keyed option treats a general confirmation of client identification as sufficient reliance. Regulation 39 requires agreed access to the underlying due-diligence information and records, with responsibility retained by the relying firm.",
+      "questionIds": [
+        "qlts-mock-24-q004"
+      ],
+      "sources": [
+        {
+          "label": "SRA guidance on the 2017 Money Laundering Regulations",
+          "url": "https://www.sra.org.uk/solicitors/guidance/money-laundering-terrorist-financing-transfer-funds-information-payer-regulations-2017/"
+        }
+      ]
+    },
+    {
+      "id": "incorrect-authorised-disclosure-timing",
+      "reason": "The explanation says authorised disclosure can only protect acts if made beforehand. POCA section 338 also expressly permits disclosures during or after an act where its statutory conditions are met; prior-act consent requirements are also omitted.",
+      "questionIds": [
+        "qlts-mock-24-q006"
+      ],
+      "sources": [
+        {
+          "label": "POCA 2002 section 338",
+          "url": "https://www.legislation.gov.uk/ukpga/2002/29/section/338"
+        }
+      ]
+    },
+    {
+      "id": "obsolete-aml-guidance-and-cross-references",
+      "reason": "Q16 relies on an old fixed three-year practice-note trigger and incorrect regulation mapping. Q18 combines former Schedule 2 PEP wording with the 2017 regime. Their original explanations are not suitable current-law teaching without rewriting.",
+      "questionIds": [
+        "qlts-mock-24-q016",
+        "qlts-mock-24-q018"
+      ],
+      "sources": [
+        {
+          "label": "SRA guidance on the 2017 Money Laundering Regulations",
+          "url": "https://www.sra.org.uk/solicitors/guidance/money-laundering-terrorist-financing-transfer-funds-information-payer-regulations-2017/"
+        },
+        {
+          "label": "LSAG Anti-Money Laundering Guidance 2025",
+          "url": "https://www.sra.org.uk/globalassets/documents/solicitors/firm-based-authorisation/lsag-aml-guidance.pdf"
+        }
+      ]
+    },
+    {
+      "id": "unreliable-original-aml-explanations",
+      "reason": "Q13 incorrectly treats the absence of issued proceedings as defeating the litigation exclusion; contemplated disputes can qualify. Q20 omits material same-transaction and prevention-purpose conditions from its categorical cross-firm disclosure advice. Q23 wrongly suggests pre-litigation divorce advice falls outside advice privilege. These are source-quality exclusions rather than claims of recent repeal.",
+      "questionIds": [
+        "qlts-mock-24-q013",
+        "qlts-mock-24-q020",
+        "qlts-mock-24-q023"
+      ],
+      "sources": [
+        {
+          "label": "LSAG Anti-Money Laundering Guidance 2025",
+          "url": "https://www.sra.org.uk/globalassets/documents/solicitors/firm-based-authorisation/lsag-aml-guidance.pdf"
+        }
+      ]
+    },
+    {
+      "id": "superseded-vat-sanitary-products-rate",
+      "reason": "The explanations apply a 5% VAT rate to women’s sanitary products. Those products have been zero-rated since 1 January 2021.",
+      "questionIds": [
+        "qlts-mock-25-q008",
+        "qlts-mock-25-q030"
+      ],
+      "sources": [
+        {
+          "label": "VAT Notice 701/18",
+          "url": "https://www.gov.uk/guidance/vat-on-womens-sanitary-products-notice-70118"
+        }
+      ]
+    },
+    {
+      "id": "superseded-vat-default-surcharge",
+      "reason": "The explanation teaches the old up-to-15% default-surcharge regime. New VAT late-filing and late-payment penalties apply to periods beginning on or after 1 January 2023.",
+      "questionIds": [
+        "qlts-mock-25-q019"
+      ],
+      "sources": [
+        {
+          "label": "VAT default surcharge Notice 700/50",
+          "url": "https://www.gov.uk/guidance/vat-default-surcharge-notice-70050"
+        }
+      ]
+    },
+    {
+      "id": "superseded-inheritance-relief-framework",
+      "reason": "Original explanations present uncapped 100% business/agricultural relief and describe the relief level without the allowance introduced from 6 April 2026. The combined 100% relief allowance is now £2.5 million, with 50% relief above it; some share categories also changed.",
+      "questionIds": [
+        "qlts-mock-26-q011",
+        "qlts-mock-26-q012",
+        "qlts-mock-26-q031",
+        "qlts-mock-26-q063"
+      ],
+      "sources": [
+        {
+          "label": "Agricultural and business property relief changes",
+          "url": "https://www.gov.uk/government/publications/changes-to-agricultural-property-relief-and-business-property-relief/agricultural-property-relief-and-business-property-relief-changes"
+        }
+      ]
+    },
+    {
+      "id": "superseded-residence-nil-rate-band",
+      "reason": "The calculation and keyed amount use the historical 2017–18 residence nil-rate band of £100,000 rather than the current £175,000. Historical dates are preserved in the source archive but these old-threshold calculations are excluded from the current-law bank.",
+      "questionIds": [
+        "qlts-mock-26-q062",
+        "qlts-mock-26-q067"
+      ],
+      "sources": [
+        {
+          "label": "Inheritance Tax nil-rate bands",
+          "url": "https://www.gov.uk/government/publications/inheritance-tax-nil-rate-band-and-residence-nil-rate-bands-from-6-april-2028/inheritance-tax-nil-rate-band-residence-nil-rate-band-from-6-april-2028"
+        }
+      ]
+    },
+    {
+      "id": "incorrect-inheritance-rate-set",
+      "reason": "The question presents only 0% and 40% as the available IHT rates, omitting the 36% charitable-estate rate and the separate lifetime-transfer treatment.",
+      "questionIds": [
+        "qlts-mock-26-q057"
+      ],
+      "sources": [
+        {
+          "label": "Reduced-rate IHT calculator",
+          "url": "https://www.gov.uk/inheritance-tax-reduced-rate-calculator"
+        },
+        {
+          "label": "Trusts and Inheritance Tax",
+          "url": "https://www.gov.uk/trusts-taxes/trusts-and-inheritance-tax"
+        }
+      ]
+    },
+    {
+      "id": "unreliable-original-iht-charity-exemption",
+      "reason": "The keyed answer treats any non-profit organisation as automatically IHT-exempt. Non-profit status alone does not establish the charity exemption.",
+      "questionIds": [
+        "qlts-mock-26-q020"
+      ],
+      "sources": [
+        {
+          "label": "Gifts to charity in a will",
+          "url": "https://www.gov.uk/donating-to-charity/leaving-gifts-to-charity-in-your-will"
+        }
+      ]
+    },
+    {
+      "id": "unreliable-original-share-valuation",
+      "reason": "The source applies the quarter-up calculation to the lowest and highest intraday prices. HMRC distinguishes the quoted bid/offer range from recorded bargains; the original explanation conflates them.",
+      "questionIds": [
+        "qlts-mock-26-q022"
+      ],
+      "sources": [
+        {
+          "label": "Valuing stocks and shares for IHT",
+          "url": "https://www.gov.uk/guidance/valuing-stocks-and-shares-for-inheritance-tax"
+        }
+      ]
+    },
+    {
+      "id": "unreliable-original-iht-payment-deadline",
+      "reason": "The keyed option and explanation say six months after the death itself. The statutory deadline is the end of the sixth month after the month of death.",
+      "questionIds": [
+        "qlts-mock-26-q049"
+      ],
+      "sources": [
+        {
+          "label": "Paying Inheritance Tax",
+          "url": "https://www.gov.uk/paying-inheritance-tax"
+        }
+      ]
+    },
+    {
+      "id": "unreliable-original-quick-succession-arithmetic",
+      "reason": "The source explanation inconsistently describes tax as reduced to 80% and reduced by 80%. This unresolved source arithmetic defect is excluded rather than silently rewritten.",
+      "questionIds": [
+        "qlts-mock-26-q047"
+      ],
+      "sources": [
+        {
+          "label": "IHT quick succession relief",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm22041"
+        }
+      ]
+    },
+    {
+      "id": "unreliable-original-simultaneous-deaths-tax",
+      "reason": "The keyed spouse exemption remains valid, but the explanation incorrectly carries the inherited estate into the younger spouse’s death estate for IHT; IHTA section 4(2) treats uncertain simultaneous deaths specially.",
+      "questionIds": [
+        "qlts-mock-26-q055"
+      ],
+      "sources": [
+        {
+          "label": "HMRC simultaneous deaths: elder",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm12197"
+        }
+      ]
+    },
+    {
+      "id": "superseded-income-tax-figures",
+      "reason": "Keyed amounts or explanations use 2016–18 personal allowances, basic-rate limits, dividend allowances or dividend rates. These obsolete calculations are excluded rather than recalculated into invented publisher questions.",
+      "questionIds": [
+        "qlts-mock-27-q003",
+        "qlts-mock-27-q012",
+        "qlts-mock-27-q013",
+        "qlts-mock-27-q032",
+        "qlts-mock-27-q033",
+        "qlts-mock-27-q034",
+        "qlts-mock-27-q035",
+        "qlts-mock-27-q036",
+        "qlts-mock-27-q037",
+        "qlts-mock-27-q038",
+        "qlts-mock-27-q039",
+        "qlts-mock-27-q041",
+        "qlts-mock-27-q042",
+        "qlts-mock-27-q043",
+        "qlts-mock-27-q044",
+        "qlts-mock-27-q045",
+        "qlts-mock-27-q046"
+      ],
+      "sources": [
+        {
+          "label": "Current income tax rates",
+          "url": "https://www.gov.uk/income-tax-rates"
+        },
+        {
+          "label": "Current dividend tax",
+          "url": "https://www.gov.uk/tax-on-dividends"
+        }
+      ]
+    },
+    {
+      "id": "discontinued-working-tax-credit-example",
+      "reason": "The explanation illustrates non-taxable current benefits using Working Tax Credit, a scheme which ended on 5 April 2025.",
+      "questionIds": [
+        "qlts-mock-27-q006"
+      ],
+      "sources": [
+        {
+          "label": "Tax credits ended on 5 April 2025",
+          "url": "https://www.gov.uk/when-is-your-next-tax-credits-payment"
+        }
+      ]
+    },
+    {
+      "id": "incorrect-partnership-salary-treatment",
+      "reason": "The keyed answer treats ordinary partners’ salary drawings as employment income subject to PAYE. Such partner remuneration is a share of partnership profits, absent a different legal arrangement such as the specific LLP salaried-member rules.",
+      "questionIds": [
+        "qlts-mock-27-q016"
+      ],
+      "sources": [
+        {
+          "label": "HMRC partnership profits and earnings",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/partnership-manual/pm275500"
+        }
+      ]
+    },
+    {
+      "id": "obsolete-age-related-personal-allowance",
+      "reason": "The explanation treats age and maintenance/marital relief as determinants of the Personal Allowance. Age-related personal allowances were abolished from 2016–17; separate tax reductions must not be conflated with that allowance.",
+      "questionIds": [
+        "qlts-mock-27-q018"
+      ],
+      "sources": [
+        {
+          "label": "HMRC income tax allowances",
+          "url": "https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past"
+        }
+      ]
+    },
+    {
+      "id": "incorrect-employee-expense-exclusion",
+      "reason": "The explanation says employees cannot claim business expenses or capital allowances. HMRC permits qualifying employment expenses and qualifying equipment capital allowances, so that absolute distinction is unreliable.",
+      "questionIds": [
+        "qlts-mock-27-q021"
+      ],
+      "sources": [
+        {
+          "label": "HMRC employee equipment relief",
+          "url": "https://www.gov.uk/tax-relief-for-employees/buying-other-equipment"
+        }
+      ]
+    },
+    {
+      "id": "legacy-incapacity-benefit-scenario",
+      "reason": "The scenario assumes a fresh short-term Incapacity Benefit claim, but that scheme has been replaced for new claims by Employment and Support Allowance. It is excluded as a legacy-benefit scenario, not a change to historic tax treatment.",
+      "questionIds": [
+        "qlts-mock-27-q025"
+      ],
+      "sources": [
+        {
+          "label": "Incapacity Benefit",
+          "url": "https://www.gov.uk/incapacity-benefit"
+        },
+        {
+          "label": "HMRC Incapacity Benefit replaced for new claims",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/paye-manual/paye77210"
+        }
+      ]
+    },
+    {
+      "id": "unreliable-original-income-tax-arithmetic",
+      "reason": "Q40 states a £500,000 loan at 10% but the original explanation uses £5,000 interest. The answer remains unreconciled with this source arithmetic defect; the publisher text is not silently corrected.",
+      "questionIds": [
+        "qlts-mock-27-q040"
+      ],
+      "sources": []
+    },
+    {
+      "id": "superseded-retail-investment-and-pension-scope-framework",
+      "reason": "The explanations teach the former broad SRA prohibition on arranging purchases of retail investment products and its pension exceptions. The present Scope Rules instead incorporate Treasury non-exempt activities and expressly prohibit insurance-based investment-product distribution. This is more than renumbering: the source allows generic retail-product sale/execution-only activity without the present insurance-based-product restriction and teaches old blanket arranging restrictions.",
+      "questionIds": [
+        "qlts-mock-28-q011",
+        "qlts-mock-28-q012",
+        "qlts-mock-28-q036"
+      ],
+      "sources": [
+        {
+          "label": "Current SRA Financial Services (Scope) Rules, effective 11 April 2025",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/financial-services-scope-rules/"
+        },
+        {
+          "label": "FSMA Professions Non-Exempt Activities Order 2001, articles 5-6",
+          "url": "https://www.legislation.gov.uk/uksi/2001/1227/pdfs/uksi_20011227_en.pdf"
+        }
+      ],
+      "questionDetails": [
+        {
+          "questionId": "qlts-mock-28-q011",
+          "sourcePages": [
+            21,
+            22
+          ],
+          "finding": "The keyed answer tests the former blanket arranging-purchase restriction; the explanation categorically permits retail-product sales without distinguishing current insurance-based investment products."
+        },
+        {
+          "questionId": "qlts-mock-28-q012",
+          "sourcePages": [
+            23,
+            24
+          ],
+          "finding": "The keyed answer broadly permits execution-only purchases of retail investment products including pensions, without distinguishing the current prohibition on insurance-based investment-product distribution."
+        },
+        {
+          "questionId": "qlts-mock-28-q036",
+          "sourcePages": [
+            71,
+            72
+          ],
+          "finding": "Although the individual-client securities restriction survives, the explanation also teaches the superseded broad arranging prohibition and permits retail-product sales without the current insurance-based-product distinction."
+        }
+      ]
+    },
+    {
+      "id": "incorrect-blanket-exclusion-of-fca-authorised-firms-from-sra-cob",
+      "reason": "The keyed answer and explanation state that FCA authorisation means SRA COB Rules do not apply. Current rule 1.1(b) applies those rules (other than status disclosure) to FCA-regulated SRA bodies in respect of non-mainstream regulated activities. This substantive qualification is absent.",
+      "questionIds": [
+        "qlts-mock-28-q020"
+      ],
+      "sources": [
+        {
+          "label": "Current SRA Financial Services (Conduct of Business) Rules",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/financial-services-conduct-business-rules/"
+        }
+      ]
+    },
+    {
+      "id": "missing-client-accounting-qualification-in-keyed-commission-answer",
+      "reason": "The keyed option says the exemption requires receiving no commission at all. The explanation correctly gives the missing qualification: third-party rewards are permitted if accounted for to the client. No option states that accurate complete condition; the issue is the source answer, not the historical O1.15 citation.",
+      "questionIds": [
+        "qlts-mock-28-q029"
+      ],
+      "sources": [
+        {
+          "label": "FCA PROF 2.1.12 accounting for rewards to the client",
+          "url": "https://handbook.fca.org.uk/handbook/prof2/prof2s1"
+        }
+      ]
+    },
+    {
+      "id": "superseded-insurance-based-investment-negative-advice-explanation",
+      "reason": "The explanation treats negative advice and endorsement about an endowment life policy as permissible under the former retail-product rules and invokes an information-only exclusion for advice that is more than mere information. Current Scope 3.1(i) prohibits insurance distribution involving insurance-based investment products; the old regulatory explanation cannot simply be carried forward.",
+      "questionIds": [
+        "qlts-mock-28-q048"
+      ],
+      "sources": [
+        {
+          "label": "Current SRA Financial Services (Scope) Rules, effective 11 April 2025",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/financial-services-scope-rules/"
+        },
+        {
+          "label": "SRA guidance on insurance distribution",
+          "url": "https://www.sra.org.uk/solicitors/guidance/law-firms-carrying-insurance-distribution-activities/"
+        }
+      ]
+    },
+    {
+      "id": "superseded-second-charge-mortgage-treatment",
+      "reason": "The explanation categorically excludes second legal mortgages from specified investments. The regulated-mortgage perimeter was extended to second-charge mortgages from 21 March 2016.",
+      "questionIds": [
+        "qlts-mock-28-q001"
+      ],
+      "sources": [
+        {
+          "label": "FCA PERG 4, especially 4.4A.1A-1C",
+          "url": "https://handbook.fca.org.uk/handbook/perg4"
+        }
+      ]
+    },
+    {
+      "id": "superseded-endowment-insurance-investment-exemption",
+      "reason": "The keyed answer allows advice/arranging an endowment policy merely because it complements conveyancing. Current Scope Rule 3.1(i) prohibits exempt firms from insurance distribution involving insurance-based investment products, so complementary legal work alone is insufficient.",
+      "questionIds": [
+        "qlts-mock-28-q008"
+      ],
+      "sources": [
+        {
+          "label": "Current SRA Financial Services (Scope) Rules, effective 11 April 2025",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/financial-services-scope-rules/"
+        },
+        {
+          "label": "SRA guidance on insurance distribution",
+          "url": "https://www.sra.org.uk/solicitors/guidance/law-firms-carrying-insurance-distribution-activities/"
+        }
+      ]
+    },
+    {
+      "id": "incomplete-authorised-person-criminal-offence-rule",
+      "reason": "The explanation states without qualification that an authorised firm acting outside its permission commits no crime. FSMA section 23(1A) creates an offence for credit-related regulated activity outside permission; section 20 expressly preserves that exception.",
+      "questionIds": [
+        "qlts-mock-28-q026"
+      ],
+      "sources": [
+        {
+          "label": "Financial Services Act 2012 Schedule 9, amendments to FSMA sections 20 and 23",
+          "url": "https://www.legislation.gov.uk/ukpga/2012/21/pdfs/ukpga_20120021_en.pdf"
+        }
+      ]
+    },
+    {
+      "id": "superseded-financial-promotion-approval-gateway",
+      "reason": "The answer treats approval by any FCA-authorised accountant as sufficient. Since 7 February 2024 a separate approval permission or applicable exemption is required; mere authorised-person status no longer establishes a valid approval.",
+      "questionIds": [
+        "qlts-mock-28-q051"
+      ],
+      "sources": [
+        {
+          "label": "FCA PS23/13 financial promotion approval gateway",
+          "url": "https://www.fca.org.uk/publications/policy-statements/ps23-13-introducing-gateway-firms-who-approve-financial-promotions"
+        }
+      ]
+    },
+    {
+      "id": "superseded-corporation-tax-rates",
+      "reason": "The keyed answer requires recalling a superseded flat 20% or 19% rate, or says the small-profits rate no longer exists. Current ordinary rates are 25% main and 19% small profits, with £50,000/£250,000 limits and marginal relief. Explicit hypothetical-rate arithmetic is treated separately.",
+      "questionIds": [
+        "qlts-mock-29-q002",
+        "qlts-mock-29-q021",
+        "qlts-mock-29-q028",
+        "qlts-mock-29-q031",
+        "qlts-mock-29-q033",
+        "qlts-mock-29-q034",
+        "qlts-mock-29-q036",
+        "qlts-mock-29-q037",
+        "qlts-mock-29-q038"
+      ],
+      "sources": [
+        {
+          "label": "HMRC Corporation Tax rates and allowances, updated 1 April 2026",
+          "url": "https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax"
+        }
+      ],
+      "questionDetails": [
+        {
+          "questionId": "qlts-mock-29-q002",
+          "sourcePages": [
+            3,
+            4
+          ],
+          "finding": "Asserts all companies pay a flat 20% rate."
+        },
+        {
+          "questionId": "qlts-mock-29-q021",
+          "sourcePages": [
+            41,
+            42
+          ],
+          "finding": "Asserts one rate applies to all companies and the small-profits rate has ceased."
+        },
+        {
+          "questionId": "qlts-mock-29-q028",
+          "sourcePages": [
+            55,
+            56
+          ],
+          "finding": "Derives liability by recalling the 2016-17 20% rate."
+        },
+        {
+          "questionId": "qlts-mock-29-q031",
+          "sourcePages": [
+            61,
+            62
+          ],
+          "finding": "Derives liability by recalling the 2016-17 20% rate."
+        },
+        {
+          "questionId": "qlts-mock-29-q033",
+          "sourcePages": [
+            65,
+            66
+          ],
+          "finding": "Derives liability by recalling the 2016-17 20% rate."
+        },
+        {
+          "questionId": "qlts-mock-29-q034",
+          "sourcePages": [
+            67,
+            68
+          ],
+          "finding": "Uses 19% on £250,000 taxable profits."
+        },
+        {
+          "questionId": "qlts-mock-29-q036",
+          "sourcePages": [
+            71,
+            72
+          ],
+          "finding": "Uses the old 20% rate to produce £40,000."
+        },
+        {
+          "questionId": "qlts-mock-29-q037",
+          "sourcePages": [
+            73,
+            74
+          ],
+          "finding": "Uses 20% on £2.5 million profits."
+        },
+        {
+          "questionId": "qlts-mock-29-q038",
+          "sourcePages": [
+            75,
+            76
+          ],
+          "finding": "Uses 19% on £1.2 million profits."
+        }
+      ]
+    },
+    {
+      "id": "superseded-annual-investment-allowance",
+      "reason": "The explanation teaches a £200,000 annual investment allowance ceiling. The current ceiling is £1 million; the question is excluded because of the obsolete rule even though full relief on this particular £200,000 purchase remains possible.",
+      "questionIds": [
+        "qlts-mock-29-q007"
+      ],
+      "sources": [
+        {
+          "label": "HMRC annual investment allowance",
+          "url": "https://www.gov.uk/capital-allowances/annual-investment-allowance"
+        }
+      ]
+    },
+    {
+      "id": "misleading-generalisation-of-trading-loss-relief",
+      "reason": "The explanation says trading losses cannot offset capital gains in earlier or later years and can only offset same-trade profits. That is not a valid general rule: carryback targets total profits, and most post-1 April 2017 losses can be carried forward against total profits. The pre-2017 factual example is preserved in the archive; the explicit 20% assumption is not itself the exclusion reason.",
+      "questionIds": [
+        "qlts-mock-29-q030"
+      ],
+      "sources": [
+        {
+          "label": "HMRC carrying forward Corporation Tax losses",
+          "url": "https://www.gov.uk/guidance/carry-forward-corporation-tax-losses"
+        },
+        {
+          "label": "HMRC claiming relief for Corporation Tax trading losses",
+          "url": "https://www.gov.uk/guidance/corporation-tax-calculating-and-claiming-a-loss"
+        }
+      ]
+    },
+    {
+      "id": "unsupported-full-disallowance-of-director-remuneration",
+      "reason": "The keyed calculation disallows the directors' entire remuneration solely because it exceeds comparable pay. Deductibility depends on the wholly-and-exclusively purpose; excess pay is evidence requiring examination, not an automatic rule eliminating the whole salary.",
+      "questionIds": [
+        "qlts-mock-29-q032"
+      ],
+      "sources": [
+        {
+          "label": "HMRC BIM47105 staffing payments and the wholly-and-exclusively test",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim47105"
+        },
+        {
+          "label": "HMRC BIM47106 directors remuneration and commercial purpose",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim47106"
+        }
+      ]
+    },
+    {
+      "id": "incorrect-conclusive-ucta-reasonableness-assessment",
+      "reason": "The no-refund answer treats signature plus a price discount as conclusively validating exclusion of implied terms. A business sale requires the UCTA section 6/11 reasonableness assessment; discount is one Schedule 2 factor, not a complete test. The source instead cites section 7.",
+      "questionIds": [
+        "qlts-mock-30-q031"
+      ],
+      "sources": [
+        {
+          "label": "Unfair Contract Terms Act 1977, sections 6 and 11 and Schedule 2",
+          "url": "https://www.legislation.gov.uk/ukpga/1977/50/pdfs/ukpga_19770050_en.pdf"
+        }
+      ]
+    },
+    {
+      "id": "missing-consumer-exclusion-clause-fairness-assessment",
+      "reason": "The advice conclusively binds the consumer to the gym's liability cap solely because notice was given. Incorporation alone does not establish enforceability under the Consumer Rights Act fairness and services protections; the source does not assess them.",
+      "questionIds": [
+        "qlts-mock-30-q032"
+      ],
+      "sources": [
+        {
+          "label": "Consumer Rights Act 2015, sections 2(3), 57 and 62",
+          "url": "https://www.legislation.gov.uk/ukpga/2015/15/pdfs/ukpga_20150015_en.pdf"
+        },
+        {
+          "label": "CMA fair consumer contracts guidance, updated 22 July 2026",
+          "url": "https://www.gov.uk/guidance/writing-a-fair-contract-for-customers"
+        }
+      ]
+    },
+    {
+      "id": "incorrect-corporate-consumer-status-under-cra",
+      "reason": "The answer applies an older UCTA corporate-consumer case to say a company enjoys Consumer Rights Act 2015 protection. Section 2(3) confines consumer status to individuals; a company does not satisfy that definition.",
+      "questionIds": [
+        "qlts-mock-30-q035"
+      ],
+      "sources": [
+        {
+          "label": "Consumer Rights Act 2015, sections 2(3), 57 and 62",
+          "url": "https://www.legislation.gov.uk/ukpga/2015/15/pdfs/ukpga_20150015_en.pdf"
+        }
+      ]
+    },
+    {
+      "id": "superseded-consumer-insurance-disclosure-duty",
+      "reason": "The answer imposes an affirmative duty to volunteer undisclosed convictions despite the insurer asking no question. CIDRA 2012 replaced consumer volunteering duties with reasonable care not to misrepresent; Insurance Act 2015 explanatory notes expressly describe the change.",
+      "questionIds": [
+        "qlts-mock-30-q041"
+      ],
+      "sources": [
+        {
+          "label": "Insurance Act 2015 explanatory notes, paragraph 8 explaining CIDRA",
+          "url": "https://www.legislation.gov.uk/ukpga/2015/4/pdfs/ukpgaen_20150004_en.pdf"
+        }
+      ]
+    },
+    {
+      "id": "superseded-unqualified-nonconsumer-goods-rejection-rule",
+      "reason": "The answer imports the old Moore packing-description result as an automatic right to reject the whole consignment despite no material difference. Sale of Goods Act section 15A requires consideration of whether the breach is so slight that rejection would be unreasonable.",
+      "questionIds": [
+        "qlts-mock-30-q046"
+      ],
+      "sources": [
+        {
+          "label": "Sale and Supply of Goods Act 1994, section 4 inserting SGA 15A",
+          "url": "https://www.legislation.gov.uk/ukpga/1994/35/pdfs/ukpga_19940035_en.pdf"
+        }
+      ]
+    },
+    {
+      "id": "superseded-mechanical-illegality-restitution-rules",
+      "reason": "The explanations decide restitution by mechanical withdrawal/non-performance exceptions to illegality. Patel v Mirza requires a policy and proportionality assessment; non-performance may remain relevant but is not the exclusive current test.",
+      "questionIds": [
+        "qlts-mock-30-q067",
+        "qlts-mock-30-q068"
+      ],
+      "sources": [
+        {
+          "label": "UK Supreme Court Patel v Mirza judgment",
+          "url": "https://supremecourt.uk/uploads/uksc_2014_0218_judgment_550b6bc9f0.pdf"
+        },
+        {
+          "label": "UK Supreme Court Patel v Mirza press summary",
+          "url": "https://supremecourt.uk/uploads/uksc_2014_0218_press_summary_b4af1247e2.pdf"
+        }
+      ]
+    }
+  ],
+  "retainedReviewNotes": [
+    {
+      "questionIds": [
+        "qlts-mock-21-q001",
+        "qlts-mock-21-q003",
+        "qlts-mock-21-q005",
+        "qlts-mock-21-q006",
+        "qlts-mock-21-q008",
+        "qlts-mock-21-q011",
+        "qlts-mock-21-q012",
+        "qlts-mock-21-q013",
+        "qlts-mock-21-q014",
+        "qlts-mock-21-q015",
+        "qlts-mock-21-q016",
+        "qlts-mock-21-q017",
+        "qlts-mock-21-q018",
+        "qlts-mock-21-q021",
+        "qlts-mock-21-q023",
+        "qlts-mock-21-q024",
+        "qlts-mock-21-q025",
+        "qlts-mock-21-q026",
+        "qlts-mock-21-q027",
+        "qlts-mock-21-q029",
+        "qlts-mock-21-q030",
+        "qlts-mock-21-q032",
+        "qlts-mock-21-q033",
+        "qlts-mock-21-q041",
+        "qlts-mock-21-q042",
+        "qlts-mock-21-q043",
+        "qlts-mock-21-q044",
+        "qlts-mock-21-q048",
+        "qlts-mock-21-q049",
+        "qlts-mock-21-q050",
+        "qlts-mock-21-q051",
+        "qlts-mock-21-q052",
+        "qlts-mock-21-q053",
+        "qlts-mock-21-q054",
+        "qlts-mock-21-q055",
+        "qlts-mock-21-q056",
+        "qlts-mock-21-q058",
+        "qlts-mock-21-q059",
+        "qlts-mock-21-q060",
+        "qlts-mock-21-q062",
+        "qlts-mock-21-q063",
+        "qlts-mock-21-q064",
+        "qlts-mock-21-q065",
+        "qlts-mock-21-q068",
+        "qlts-mock-21-q069",
+        "qlts-mock-21-q071",
+        "qlts-mock-21-q073",
+        "qlts-mock-21-q074"
+      ],
+      "reason": "保留基础记账、款项分离、足额支付、退票补足、利息及VAT等仍可靠内容。旧SRA规则编号作为出版原文保留，不是现行编号；现行对应主要为Rules 2、4–8。Q41的Option 1标签虽旧，其具体已付支出/已账单费用入business账户的结论仍一致。",
+      "sources": [
+        {
+          "label": "SRA Accounts Rules，现行 Rules 2、4–8、13",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/accounts-rules/"
+        },
+        {
+          "label": "SRA：Helping you keep accurate client accounting records",
+          "url": "https://www.sra.org.uk/solicitors/guidance/accurate-client-accounting-records/"
+        },
+        {
+          "label": "SRA：Taking money for your firm’s costs",
+          "url": "https://www.sra.org.uk/solicitors/guidance/taking-money-for-your-firms-costs/"
+        }
+      ]
+    },
+    {
+      "questionIds": [
+        "qlts-mock-21-q051",
+        "qlts-mock-21-q053",
+        "qlts-mock-21-q054"
+      ],
+      "reason": "VAT坏账六个月及最长四年六个月窗口仍有效。题目需按题设已符合其他条件理解。",
+      "sources": [
+        {
+          "label": "HMRC VAT Notice 700/18",
+          "url": "https://www.gov.uk/guidance/relief-from-vat-on-bad-debts-notice-70018"
+        }
+      ]
+    },
+    {
+      "questionIds": [
+        "qlts-mock-22-q004",
+        "qlts-mock-22-q009",
+        "qlts-mock-22-q017",
+        "qlts-mock-22-q023",
+        "qlts-mock-22-q026",
+        "qlts-mock-22-q045",
+        "qlts-mock-22-q048",
+        "qlts-mock-22-q053",
+        "qlts-mock-22-q057"
+      ],
+      "reason": "Queen/Her Majesty、Young案年份及Street Offences Act年份等源文本历史名称或引文瑕疵不改变本题判例/管辖/解释规则答案，保留原文。Q45须按解析的Attorney General法律问题reference理解，不是推翻已获无罪的普通上诉。",
+      "sources": [
+        {
+          "label": "Judiciary：King’s Bench Division",
+          "url": "https://www.judiciary.uk/courts-and-tribunals/kings-bench-division/"
+        }
+      ]
+    },
+    {
+      "questionIds": [
+        "qlts-mock-22-q051"
+      ],
+      "reason": "旧County Court家事场景保留作来源背景；核心District Judge向Circuit Judge上诉路线仍可用，不能据此理解为现今仍在County Court申请care order。",
+      "sources": [
+        {
+          "label": "Justice：Family appeals Practice Direction 30A",
+          "url": "https://www.justice.gov.uk/courts/procedure-rules/family/practice_directions/pd_part_30a"
+        }
+      ]
+    },
+    {
+      "questionIds": [
+        "qlts-mock-22-q008"
+      ],
+      "reason": "成人低价值shoplifting仍有选择Crown Court审判的权利；2026法案改变低价值分类不使本题Crown/Magistrates二选一结论失效。没有凭未查明的施行日期将新分类提前套入。",
+      "sources": [
+        {
+          "label": "Home Office：Crime and Policing Act 2026 retail crime factsheet",
+          "url": "https://www.gov.uk/government/publications/crime-and-policing-act-2026-factsheets/crime-and-policing-act-2026-retail-crime-factsheet"
+        }
+      ]
+    },
+    {
+      "questionIds": [
+        "qlts-mock-22-q002",
+        "qlts-mock-22-q013",
+        "qlts-mock-22-q058",
+        "qlts-mock-22-q060"
+      ],
+      "reason": "保留给定金额及复杂性下的法院/track最佳选择；Q13须理解为复杂公共重要性案件的分配/移送判断，并非允许低于£50,000的PI请求当然直接在High Court起诉。",
+      "sources": [
+        {
+          "label": "Justice：PD7A commencement limits",
+          "url": "https://www.justice.gov.uk/courts/procedure-rules/civil/rules/part07/pd_part07a"
+        }
+      ]
+    },
+    {
+      "questionIds": [
+        "qlts-mock-23-q005",
+        "qlts-mock-23-q016",
+        "qlts-mock-23-q021",
+        "qlts-mock-23-q022",
+        "qlts-mock-23-q024",
+        "qlts-mock-23-q025",
+        "qlts-mock-23-q027",
+        "qlts-mock-23-q033"
+      ],
+      "reason": "旧年份本身不构成排除理由：1982 rebasing、同年损失抵增益、公司适用corporation tax、AEA不可结转、私人机动车/消耗性资产等核心原则继续有效。",
+      "sources": [
+        {
+          "label": "HMRC：Capital losses",
+          "url": "https://www.gov.uk/capital-gains-tax/losses"
+        },
+        {
+          "label": "HMRC：Tax when selling assets",
+          "url": "https://www.gov.uk/capital-gains-tax"
+        }
+      ]
+    },
+    {
+      "questionIds": [
+        "qlts-mock-23-q007",
+        "qlts-mock-23-q026"
+      ],
+      "reason": "保留损失结转原则；须区分同年损失与往年损失。往年损失只扣至AEA，不能把原文can be deducted读成必须把全部往年损失用完；Q7按今日£3,000 AEA恰好仍得到£3,000。",
+      "sources": [
+        {
+          "label": "HMRC：Capital losses",
+          "url": "https://www.gov.uk/capital-gains-tax/losses"
+        },
+        {
+          "label": "HMRC：CGT annual exempt amount £3,000",
+          "url": "https://www.gov.uk/capital-gains-tax/allowances"
+        }
+      ]
+    },
+    {
+      "questionIds": [
+        "qlts-mock-23-q014"
+      ],
+      "reason": "源页27在Lorraine后有残句；已视觉核查为出版源问题，仍能完整回答税率依应税收入变化这一核心问题，未补造缺失事实。",
+      "sources": [
+        {
+          "label": "HMRC：CGT rates，2026/27 为18%/24%",
+          "url": "https://www.gov.uk/capital-gains-tax/rates"
+        }
+      ]
+    },
+    {
+      "questionIds": [
+        "qlts-mock-23-q037"
+      ],
+      "reason": "PR向legatee转移资产无CGT的主答案及probate-value基准正确。原解析末句this might be the capital gain指代不清；实际后来卖£9,000且基准£5,000，未扣费用前增益为£4,000，不把£9,000理解为gain。",
+      "sources": [
+        {
+          "label": "HMRC CG30770：Assets passing to legatees",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg30770"
+        }
+      ]
+    },
+    "A historic date alone is not an exclusion. Unchanged £325,000 ordinary nil-rate band, £3,000 annual exemption, £250 small gifts and seven-year PET principles remain eligible.",
+    "Original source defects are separately identified and are not represented as recent legislative changes.",
+    "Source PDFs and raw OCR are preserved locally; no source text is modernised to fabricate a new publisher question.",
+    {
+      "questionIds": [
+        "qlts-mock-26-q032"
+      ],
+      "reason": "The original stem inconsistently refers to two and four years before death. Retained because the stated £2,500 annual gift is below the unchanged £3,000 annual exemption under either timeline; the English dates are not silently reconciled."
+    },
+    {
+      "questionIds": [
+        "qlts-mock-28-q009",
+        "qlts-mock-28-q013",
+        "qlts-mock-28-q014",
+        "qlts-mock-28-q017",
+        "qlts-mock-28-q018",
+        "qlts-mock-28-q019",
+        "qlts-mock-28-q022",
+        "qlts-mock-28-q027",
+        "qlts-mock-28-q028",
+        "qlts-mock-28-q033",
+        "qlts-mock-28-q034",
+        "qlts-mock-28-q037",
+        "qlts-mock-28-q038",
+        "qlts-mock-28-q039",
+        "qlts-mock-28-q045",
+        "qlts-mock-28-q046",
+        "qlts-mock-28-q047",
+        "qlts-mock-28-q049",
+        "qlts-mock-28-q058",
+        "qlts-mock-28-q059"
+      ],
+      "reason": "Restored after substantive review: former SRA Principles, Outcomes, Indicative Behaviours and 2001 rule citations remain verbatim historical references, but the tested financial-services perimeter, accounting, competence, best-interests or referral obligation substantially continues. Do not treat the historical rule numbers as current citations.",
+      "warning": "原解析保留旧版SRA规则编号；本题所考实质义务仍延续，现行编号应另查SRA Standards and Regulations。",
+      "sources": [
+        {
+          "label": "SRA Standards and Regulations replacement of the Handbook (25 November 2019)",
+          "url": "https://update.sra.org.uk/solicitors/standards-regulations-resources/"
+        },
+        {
+          "label": "Current SRA Financial Services (Scope) Rules, effective 11 April 2025",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/financial-services-scope-rules/"
+        },
+        {
+          "label": "Current SRA Financial Services (Conduct of Business) Rules",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/financial-services-conduct-business-rules/"
+        },
+        {
+          "label": "Current SRA Code of Conduct, paragraphs 3.2, 4.1, 5.1-5.3",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/code-conduct-solicitors/"
+        }
+      ]
+    },
+    {
+      "questionIds": [
+        "qlts-mock-28-q013",
+        "qlts-mock-28-q014",
+        "qlts-mock-28-q027",
+        "qlts-mock-28-q033"
+      ],
+      "reason": "The individual securities-purchase advice restriction and authorised-adviser investment-management exception remain supported by articles 5-6 of the Treasury Non-Exempt Activities Order, incorporated by current Scope 3.1. The former Scope rule number alone is not a reason to discard these questions.",
+      "sources": [
+        {
+          "label": "Current SRA Financial Services (Scope) Rules, effective 11 April 2025",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/financial-services-scope-rules/"
+        },
+        {
+          "label": "FSMA Professions Non-Exempt Activities Order 2001, articles 5-6",
+          "url": "https://www.legislation.gov.uk/uksi/2001/1227/pdfs/uksi_20011227_en.pdf"
+        },
+        {
+          "label": "Current FCA PROF 2.1.9 identifying the Treasury non-exempt order",
+          "url": "https://handbook.fca.org.uk/handbook/prof2"
+        }
+      ]
+    },
+    {
+      "questionIds": [
+        "qlts-mock-28-q022",
+        "qlts-mock-28-q034"
+      ],
+      "reason": "Current COB rules retain disclosure, prompt execution, records and commission duties. Q34 concerns non-mainstream activities, for which SRA COB rules continue to apply. The source uses the old rules title but the practical answer is retained.",
+      "sources": [
+        {
+          "label": "Current SRA Financial Services (Conduct of Business) Rules",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/financial-services-conduct-business-rules/"
+        }
+      ]
+    },
+    {
+      "questionIds": [
+        "qlts-mock-29-q013"
+      ],
+      "reason": "Retained: the stem expressly supplies a hypothetical 20% corporation-tax rate and 40% individual rate. The answer is arithmetic under those stated assumptions, not a claim that 20% is the current rate.",
+      "sources": [
+        {
+          "label": "HMRC Corporation Tax rates and allowances, updated 1 April 2026",
+          "url": "https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax"
+        }
+      ]
+    },
+    {
+      "questionIds": [
+        "qlts-mock-29-q027",
+        "qlts-mock-29-q029"
+      ],
+      "reason": "Retained despite historical years: the tested taxable-profit/loss and day-apportionment mechanics do not require the learner to recall obsolete rates.",
+      "sources": [
+        {
+          "label": "HMRC claiming relief for Corporation Tax trading losses",
+          "url": "https://www.gov.uk/guidance/corporation-tax-calculating-and-claiming-a-loss"
+        }
+      ]
+    },
+    {
+      "questionIds": [
+        "qlts-mock-30-q017",
+        "qlts-mock-30-q018",
+        "qlts-mock-30-q019"
+      ],
+      "reason": "Retained: the questions explicitly ask about common-law privity. Q19 expressly distinguishes the Contracts (Rights of Third Parties) Act 1999; the common-law wording is not silently presented as the whole statutory position.",
+      "sources": []
+    },
+    {
+      "questionIds": [
+        "qlts-mock-30-q028",
+        "qlts-mock-30-q029"
+      ],
+      "reason": "Retained: Q28 is a private sale and Q29 is a dealer claim against its own private seller; these are not trader-to-consumer contracts displaced by CRA.",
+      "sources": [
+        {
+          "label": "Consumer Rights Act 2015, sections 2(3), 57 and 62",
+          "url": "https://www.legislation.gov.uk/ukpga/2015/15/pdfs/ukpga_20150015_en.pdf"
+        }
+      ]
+    },
+    {
+      "questionIds": [
+        "qlts-mock-30-q006"
+      ],
+      "reason": "Retained: reference to a penalty in the background does not test the penalty doctrine. The keyed rule concerns practical-benefit consideration; no Cavendish-based removal is warranted.",
+      "sources": []
+    },
+    {
+      "questionIds": [
+        "qlts-mock-30-q037"
+      ],
+      "reason": "Retained: the question asks only whether reasonable notice was given, not whether a consumer exclusion is enforceable after statutory fairness review.",
+      "sources": [
+        {
+          "label": "Consumer Rights Act 2015, sections 2(3), 57 and 62",
+          "url": "https://www.legislation.gov.uk/ukpga/2015/15/pdfs/ukpga_20150015_en.pdf"
+        }
+      ]
+    },
+    {
+      "questionIds": [
+        "qlts-mock-28-q042"
+      ],
+      "reason": "Retained: the source uses the older expression insurance mediation, but its keyed need for FCA authorisation for arranging an endowment insurance investment remains consistent with the present prohibition on exempt firms distributing insurance-based investment products.",
+      "sources": [
+        {
+          "label": "Current SRA Financial Services (Scope) Rules, effective 11 April 2025",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/financial-services-scope-rules/"
+        }
+      ]
+    },
+    {
+      "questionIds": [
+        "qlts-mock-28-q055",
+        "qlts-mock-28-q056"
+      ],
+      "reason": "Retained on the limited propositions actually tested: financial work must complement legal work and a significant separate financial practice is not incidental. The publisher's 50% wording is a heuristic; FCA PROF 2.1.14 uses a qualitative major-part, scale and holding-out assessment, not a numerical safe harbour.",
+      "sources": [
+        {
+          "label": "FCA PROF 2.1.13-14",
+          "url": "https://handbook.fca.org.uk/handbook/prof2/prof2s1"
+        }
+      ]
+    },
+    {
+      "questionIds": [
+        "qlts-mock-28-q060"
+      ],
+      "reason": "Publisher calls NCA the National Crime Authority. This is a source terminology error (correct name: National Crime Agency), not an OCR error, and has not been silently rewritten. The question tests suspicion/reporting rather than the agency name.",
+      "sources": []
+    },
+    {
+      "questionIds": [
+        "qlts-mock-28-q010"
+      ],
+      "reason": "The awkward phrase pre-retail investment products portfolios of investments is present in the source image (page 20), not invented by OCR; preserved.",
+      "sources": []
+    },
+    {
+      "questionIds": [
+        "qlts-mock-30-q056"
+      ],
+      "reason": "The missing verb in the ask (continue the Phoenix Club) is in the original page 111. Preserved source wording; the options make the personal-service issue clear.",
+      "sources": []
+    }
+  ]
+}
