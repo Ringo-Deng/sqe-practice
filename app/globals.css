@@ -72,6 +72,48 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
 .review-footer .textbook-link{width:auto;min-height:36px;height:auto;padding:8px 12px;gap:7px;font-size:14px;line-height:1.4;background:#fff;box-shadow:none}
 .review-footer .back-to-question{margin-left:auto;color:#617795}
 .review-footer .review-source{flex-basis:100%;max-width:none;font-size:13px;line-height:1.6;color:#7b899e}
+/* Compact answer explanations; preserve the original publisher review layout. */
+.answer-review.compact-review .review-body{padding:16px 22px}
+.compact-review .review-jumps{padding:0 0 10px;gap:8px 16px}
+.compact-review .review-chapter,.compact-review .review-topic-tags{gap:6px 12px;margin:8px 0}
+.compact-review .review-topic-tags>span{padding:2px 7px}
+.compact-review .analysis-section{margin-top:16px}
+.compact-review .analysis-section h3{margin-bottom:8px}
+.compact-review .analysis-section p{margin:6px 0;line-height:1.7}
+.compact-review .tested-topic{margin-bottom:6px}
+.compact-review .reasoning-steps{margin-top:12px;padding-left:22px}
+.compact-review .reasoning-steps li{margin:10px 0;padding-left:3px}
+.compact-review .reasoning-steps h4{margin-bottom:4px}
+.compact-review .reasoning-steps p{margin:0}
+.compact-review .textbook-example{margin:14px 0;padding:12px 14px}
+.compact-review .textbook-example p{margin:10px 0;line-height:1.7}
+.compact-review .concepts-table th,.compact-review .concepts-table td{padding:10px 12px;line-height:1.65}
+.compact-review .option-analysis{gap:10px;padding:9px 10px;align-items:flex-start;border-radius:6px}
+.compact-review .option-analysis>strong.option-key{width:24px;height:24px;font-size:13px;margin-top:1px;background:#fbeaec;color:#a44454}
+.compact-review .option-analysis.answer-option-correct{background:#f3faf6}
+.compact-review .answer-option-correct>strong.option-key{background:#e1f2e8;color:#25765f}
+.compact-review .answer-option-selected>strong.option-key{outline:1.5px solid currentColor;outline-offset:2px}
+.compact-review .option-analysis p{flex:1;min-width:0;margin:0;font-size:15px;line-height:1.7;overflow-wrap:anywhere}
+.compact-review .quick-review{margin-top:16px;padding:14px 16px}
+.compact-review .quick-review h3{margin-bottom:8px;font-size:15px;gap:7px}
+.compact-review .quick-review ul{padding:0;list-style:none}
+.compact-review .quick-review li{margin:6px 0;padding:0;font-size:15px;line-height:1.7}
+.compact-review .quick-review li+li{margin-top:10px}
+.compact-review .quick-review li>strong{font-size:15px;line-height:1.7;margin-bottom:2px}
+.compact-review .quick-review li>span{line-height:1.7}
+.compact-review .quick-review .quick-warning{margin-top:10px;padding-top:8px;font-size:15px;line-height:1.7}
+.compact-review .quick-warning>b{display:inline;margin-right:8px}
+.answer-review.compact-review .review-footer{padding:10px 22px;gap:8px 12px}
+.compact-review .review-footer .textbook-link{padding:6px 10px;min-height:32px;font-size:13px}
+.compact-review .review-footer .review-source{font-size:12px}
+@media(max-width:650px){
+ .answer-review.compact-review .review-body{padding:14px}
+ .answer-review.compact-review .review-footer{padding:10px 14px}
+ .compact-review .review-jumps{gap:7px 12px}
+ .compact-review .option-analysis{padding:8px 6px;gap:9px}
+ .compact-review .quick-review{padding:12px}
+ .compact-review .concepts-table th,.compact-review .concepts-table td{padding:8px}
+}
 .completion-summary{max-width:900px;margin:0 auto}
 .completion-overview{max-width:720px;margin:30px auto 24px;padding:22px 24px;border:1px solid var(--border);border-radius:12px;background:#f9fbff;text-align:left}
 .completion-overview-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:16px}
