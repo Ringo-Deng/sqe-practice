@@ -25,7 +25,7 @@ export function AnswerReview({question:q,answer,onOpenTextbook}:{question:Questi
   <h2 className="sr-only">答案与解析</h2>
   <div className="review-body">
    <section id="reasoning" className="analysis-section answer-rationale"><h3>为什么选 {e.answer}</h3><p><Terms text={e.zh}/></p>{e.reasoningSteps&&<ol className="reasoning-steps">{e.reasoningSteps.map(step=><li key={step.title}><h4><Terms text={step.title}/></h4><p><Terms text={step.detail}/></p></li>)}</ol>}</section>
-   {e.textbookExample&&<details className="textbook-example"><summary>用教材例子理解 · {e.textbookExample.title}</summary><div><p><b>教材情境</b><Terms text={e.textbookExample.facts}/></p><p><b>为什么</b><Terms text={e.textbookExample.lesson}/></p><p><b>回到本题</b><Terms text={e.textbookExample.connection}/></p><small>根据所列教材归纳，非原文引用。</small></div></details>}
+   {e.textbookExample&&<details className="textbook-example"><summary>用教材例子理解 · {e.textbookExample.title}</summary><div><p><b>教材情境</b><Terms text={e.textbookExample.facts}/></p><p><b>为什么</b><Terms text={e.textbookExample.lesson}/></p><p><b>回到本题</b><Terms text={e.textbookExample.connection}/></p></div></details>}
    {!!e.concepts?.length&&<section id="related-concepts" className="analysis-section related-concepts"><h3>相关概念与区别</h3><div className="concepts-table"><table><thead><tr><th scope="col">概念</th><th scope="col">规则与本题应用</th></tr></thead><tbody>{e.concepts.map(c=><tr key={c.term}><th scope="row"><Terms text={c.term} label/></th><td><Terms text={c.detail}/></td></tr>)}</tbody></table></div></section>}
    <section id="option-review" className="analysis-section"><h3>逐项分析</h3>{q.options.map(o=>{
     const correct=e.answer===o.id,selected=answer.selected===o.id;
@@ -41,7 +41,6 @@ export function AnswerReview({question:q,answer,onOpenTextbook}:{question:Questi
   <footer className="review-footer">
    {!!bookRefs.length&&<section className="textbook-access" aria-label="查阅本题对应教材">{bookRefs.map(ref=><Button key={ref.bookId} variant="outline" size="sm" className="textbook-link" title={`${ref.chapter} · PDF 第 ${ref.pageNumbers[0]} 页起`} onPointerEnter={()=>preloadTextbookPage(textbookById(ref.bookId)!,ref.pageNumbers[0])} onFocus={()=>preloadTextbookPage(textbookById(ref.bookId)!,ref.pageNumbers[0])} onClick={()=>onOpenTextbook(ref)}><BookOpen size={16}/>查阅 {textbookById(ref.bookId)!.shortTitle}</Button>)}</section>}
    <Button variant="ghost" size="sm" className="back-to-question" onClick={()=>document.getElementById('current-question')?.scrollIntoView({block:'start'})}><ArrowUp size={14}/>回到题目</Button>
-   <p className="review-source">{q.sourceId==='sra'?(q.stemZh?'答案：SRA 官方答案表 · 中文翻译与解析：AI 整理（非官方解析）':'答案：SRA 官方答案表 · 官方文件未提供逐项解析'):'AI 自编演示题'}{e.textbookReferences?' · 已结合 Revise 与 Notes 核对':''}</p>
    <div className="review-topic-meta" aria-label="本题考点与标签">
     <div className="tested-topic">本题考查 · <Terms text={e.topic} label/></div>
     {!!q.topicTags?.length&&<div className="review-topic-tags">{q.topicTags.map(tag=><span key={tag}><Terms text={tag} label/></span>)}</div>}
