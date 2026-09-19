@@ -132,11 +132,11 @@
  .textbook-reader-inner .textbook-reader-footer a,.textbook-reader-inner .textbook-reader-actions button,.textbook-reader-inner .textbook-local-status{font-size:10px}
 }
 
-/* Size the standalone toolbar from the reader width, not the browser width. */
+/* Keep all reader controls on one row; narrow reading areas can scroll horizontally. */
 .textbook-library-refined.textbook-library-page{container:textbook-workspace / inline-size}
 .textbook-reader-inner .textbook-toolbar-controls,.textbook-reader-inner .textbook-toolbar-tools{display:contents}
-.textbook-library-compact .textbook-reader-inner .textbook-toolbar-compact{display:flex;align-items:center;flex-wrap:nowrap;gap:20px;height:auto;min-height:56px;padding:8px 12px;background:#fff;border-bottom:1px solid #dfe6ef;overflow:visible}
-.textbook-library-compact .textbook-toolbar-compact .textbook-toolbar-heading{display:flex;align-items:center;flex:1 1 auto;gap:16px;min-width:0}
+.textbook-library-compact .textbook-reader-inner .textbook-toolbar-compact{display:flex;align-items:center;flex-wrap:nowrap;gap:20px;height:auto;min-height:56px;padding:8px 12px;background:#fff;border-bottom:1px solid #dfe6ef;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scrollbar-width:thin}
+.textbook-library-compact .textbook-toolbar-compact .textbook-toolbar-heading{display:flex;align-items:center;flex:1 0 300px;gap:16px;min-width:300px}
 .textbook-library-compact .textbook-toolbar-compact .textbook-toolbar-start{display:flex;align-items:center;flex:0 0 auto}
 .textbook-library-compact .textbook-toolbar-compact .textbook-panel-controls{gap:4px;padding:0 12px 0 0;border:0;border-right:1px solid #e3e8f0;border-radius:0;background:transparent;flex-shrink:0}
 .textbook-library-compact .textbook-toolbar-compact .textbook-panel-controls button{width:auto;min-width:36px;height:36px;padding:0 9px;gap:6px;font-size:12px}
@@ -158,31 +158,19 @@
 .textbook-library-compact .textbook-toolbar-compact .textbook-bookmark-toggle,.textbook-library-compact .textbook-toolbar-compact .textbook-reader-more{width:auto;min-width:36px;height:36px;padding:0 10px;gap:7px;border-radius:8px;flex-shrink:0;color:#607899;font-size:12px;white-space:nowrap}
 .textbook-library-compact .textbook-toolbar-compact .textbook-bookmark-toggle>span,.textbook-library-compact .textbook-toolbar-compact .textbook-reader-more>span{display:inline}
 .textbook-library-compact .textbook-toolbar-compact .textbook-bookmark-toggle[data-bookmarked=true]{color:#315bb4;background:#edf2fc}
-@container textbook-workspace (max-width:1060px){
- .textbook-library-compact .textbook-reader-inner .textbook-toolbar-compact{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;padding:10px 12px}
- .textbook-library-compact .textbook-toolbar-compact .textbook-toolbar-heading{width:100%;min-height:36px}
- .textbook-library-compact .textbook-toolbar-compact .textbook-toolbar-controls{display:grid;grid-template-columns:auto auto minmax(0,1fr);justify-content:stretch;width:100%;gap:16px;padding-top:10px;border-top:1px solid #eef1f6}
- .textbook-library-compact .textbook-toolbar-compact .textbook-toolbar-tools{justify-self:end}
-}
 @container textbook-workspace (max-width:620px){
- .textbook-library-compact .textbook-toolbar-compact .textbook-toolbar-heading{gap:12px}
+ .textbook-library-compact .textbook-toolbar-compact .textbook-toolbar-heading{flex-basis:280px;min-width:280px;gap:12px}
  .textbook-library-compact .textbook-toolbar-compact .textbook-toolbar-book{font-size:13px}
  .textbook-library-compact .textbook-toolbar-compact .textbook-panel-controls button{padding:0 8px}
  .textbook-library-compact .textbook-toolbar-compact .textbook-toolbar-controls{gap:12px}
  .textbook-library-compact .textbook-toolbar-compact .textbook-bookmark-toggle,.textbook-library-compact .textbook-toolbar-compact .textbook-reader-more{width:36px;padding:0}
  .textbook-library-compact .textbook-toolbar-compact .textbook-bookmark-toggle>span,.textbook-library-compact .textbook-toolbar-compact .textbook-reader-more>span{display:none}
 }
-@container textbook-workspace (max-width:480px){
- .textbook-library-compact .textbook-toolbar-compact .textbook-toolbar-controls{grid-template-columns:auto minmax(0,1fr);row-gap:10px}
- .textbook-library-compact .textbook-toolbar-compact .textbook-pagination{grid-column:1/-1;justify-self:center}
- .textbook-library-compact .textbook-toolbar-compact .textbook-zoom{grid-column:1;justify-self:start}
- .textbook-library-compact .textbook-toolbar-compact .textbook-toolbar-tools{grid-column:2}
-}
 @container textbook-workspace (max-width:360px){
  .textbook-library-compact .textbook-toolbar-compact .textbook-panel-button-label{display:none}
  .textbook-library-compact .textbook-toolbar-compact .textbook-panel-controls button{width:36px;padding:0}
  .textbook-library-compact .textbook-toolbar-compact .textbook-panel-controls{gap:3px;padding-right:10px}
- .textbook-library-compact .textbook-toolbar-compact .textbook-toolbar-heading{gap:10px}
+ .textbook-library-compact .textbook-toolbar-compact .textbook-toolbar-heading{flex-basis:200px;min-width:200px;gap:10px}
 }
 .textbook-reader-more-content{width:min(300px,calc(100vw - 24px));padding:16px;background:#fff;border-color:#d9e2ef;font-size:13px;color:#4e6585;box-shadow:0 10px 30px #233c6026}
 .textbook-reader-more-content .textbook-reader-more-title{font-size:14px;line-height:1.6;font-weight:600;margin:0;overflow-wrap:anywhere;color:#334d72}
