@@ -1,6 +1,6 @@
 /* Reading workspace. Keep these rules scoped so the practice layout stays independent. */
 .workspace.textbook-library-workspace{padding:12px 20px 16px;max-width:none}
-.textbook-library-refined.textbook-library-page{height:calc(100dvh - 100px);min-height:420px;display:flex;flex-direction:column;gap:8px;--textbook-toolbar-height:48px}
+.textbook-library-refined.textbook-library-page{height:calc(100dvh - 28px);min-height:420px;display:flex;flex-direction:column;gap:8px;--textbook-toolbar-height:48px}
 .textbook-library-refined>.notice{flex-shrink:0;margin:0}
 .textbook-panel-controls{display:flex;align-items:center;gap:5px;padding:3px;border:1px solid #dfe6ef;border-radius:9px;background:#fff}
 .textbook-panel-controls button{color:#61728c;height:32px}
@@ -93,11 +93,11 @@
 }
 @media(max-width:1000px){
  .workspace.textbook-library-workspace{padding:12px 14px 16px}
- .textbook-library-refined.textbook-library-page{height:calc(100dvh - 100px);min-height:380px;gap:8px}
+ .textbook-library-refined.textbook-library-page{height:calc(100dvh - 28px);min-height:380px;gap:8px}
 }
 @media(max-width:650px){
  .workspace.textbook-library-workspace{padding:8px}
- .textbook-library-refined.textbook-library-page{height:calc(100dvh - 79px);min-height:340px;gap:8px}
+ .textbook-library-refined.textbook-library-page{height:calc(100dvh - 16px);min-height:340px;gap:8px}
  .textbook-panel-controls button{height:32px;font-size:12px;padding:0 9px}
  .textbook-reader-inner .textbook-reader-heading{min-height:46px;padding:10px 12px}
  .textbook-reader-inner .textbook-reader-title h2{font-size:13px}
