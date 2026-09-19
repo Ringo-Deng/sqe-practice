@@ -26,6 +26,8 @@ import {useTextbookAnnotations} from './use-textbook-annotations';
 import {useTextbookCatalog} from './use-textbook-catalog';
 import {normalizeInlineQuestionText} from '@/lib/question-text';
 import {applyGuestStudyAction} from '@/lib/guest-study';
+import {getNextChapter,type PracticeScope} from '@/lib/next-chapter';
+import {readWorkspace,hydrateWorkspace,writeWorkspace,workspaceKey,type WorkspaceSnapshot} from '@/lib/study-workspace';
 const modeName=(m:string)=>m==='exam'?'历史练习':m==='wrong'?'错题重练':'刷题练习';
 const elapsedTime=(seconds:number)=>{const hours=Math.floor(seconds/3600),minutes=Math.floor(seconds%3600/60),rest=seconds%60;return hours?`${String(hours).padStart(2,'0')}:${String(minutes).padStart(2,'0')}:${String(rest).padStart(2,'0')}`:`${String(minutes).padStart(2,'0')}:${String(rest).padStart(2,'0')}`;};
 function QuestionTimer({onClose}:{onClose:()=>void}){const[seconds,setSeconds]=useState(0);useEffect(()=>{const startedAt=Date.now();const timer=window.setInterval(()=>setSeconds(Math.floor((Date.now()-startedAt)/1000)),1000);return()=>window.clearInterval(timer);},[]);const label=elapsedTime(seconds);return <div className="question-timer" role="timer" aria-label={`本题用时 ${label}`}><Clock3 size={16}/><span>{label}</span><button type="button" onClick={onClose} aria-label="关闭计时" title="关闭计时"><X size={14}/></button></div>;}
@@ -51,6 +53,8 @@ function StudyContent({authenticated,standalone}:{authenticated:boolean;standalo
  const textbookCatalog=useTextbookCatalog(guest);
  const[wordDraft,setWordDraft]=useState<VocabularyDraft|null>(null),[sourceQuestion,setSourceQuestion]=useState<Question|null>(null);
  const studyTextRef=useRef<HTMLDivElement|null>(null);
+ const[workspaceReady,setWorkspaceReady]=useState(false);
+ const[practiceScopes,setPracticeScopes]=useState<Record<string,PracticeScope>>({});
 
  const[data,setData]=useState<StudyData|null>(null);const[view,setView]=useState('library');const[loading,setLoading]=useState(true);const[busy,setBusy]=useState(false);const[error,setError]=useState('');const[needsLogin,setNeedsLogin]=useState(false);const[selected,setSelected]=useState('');const[showZh,setShowZh]=useState(false);const[dialog,setDialog]=useState<'finish'|null>(null);const[summary,setSummary]=useState(false);const[showCorrected,setShowCorrected]=useState(false);const[localPosition,setLocalPosition]=useState(0);const[questionTimerVisible,setQuestionTimerVisible]=useState(true);
  const[reader,setReader]=useState<{questionId:string;bookId:string;page:number}|null>(null),[readerVisible,setReaderVisible]=useState(false);
@@ -74,10 +78,29 @@ function StudyContent({authenticated,standalone}:{authenticated:boolean;standalo
   }
   const response=await fetch('/api/study'+(sessionId?'?session='+encodeURIComponent(sessionId):''),body?{method:'POST',headers:{'Content-Type':'application/json','X-Study-Action':'1'},body:JSON.stringify(body)}:{cache:'no-store'});const value=await response.json() as StudyData & {error?:string};if(!response.ok){if(response.status===401)setNeedsLogin(true);throw new Error(value.error??'暂时无法连接，请重试。');}setNeedsLogin(false);return value as StudyData;
  }
- const load=useCallback(async()=>{setLoading(true);setError('');try{const d=await request();setData(d);const id=d.session?.questionIds[d.session.position];setSelected(id?d.session?.answers[id]?.selected??'':'');}catch(e){setError((e as Error).message);}finally{setLoading(false);}},[]);
+ const load=useCallback(async()=>{
+  setLoading(true);setError('');setWorkspaceReady(false);
+  let saved:WorkspaceSnapshot|null=null;
+  try{saved=readWorkspace(window.sessionStorage,workspaceKey(guest));}catch{}
+  try{
+   const {data:d,workspace:restored}=await hydrateWorkspace(saved,id=>request(undefined,id));
+   setData(d);setView(restored.view);setSummary(restored.summary);setLocalPosition(restored.localPosition);setSelected(restored.selected);setShowZh(restored.showZh);setPracticeScopes(restored.scopes);setWorkspaceReady(true);
+  }catch(e){setError((e as Error).message);}finally{setLoading(false);}
+ },[]);
  useEffect(()=>{void load();},[load]);
+ useEffect(()=>{
+  if(!workspaceReady||loading||!data)return;
+  const scopes=Object.fromEntries(Object.entries(practiceScopes).filter(([id])=>data.sessions.some(item=>item.id===id)));
+  const saved:WorkspaceSnapshot={version:1,view:view as WorkspaceSnapshot['view'],sessionId:session?.id??null,sessionStatus:session?.status??null,summary,localPosition,showZh,selection:q?{questionId:q.id,value:selected}:null,scopes};
+  try{writeWorkspace(window.sessionStorage,workspaceKey(guest),saved);}catch{}
+ },[workspaceReady,loading,data,guest,view,session,summary,localPosition,showZh,selected,q?.id,practiceScopes]);
  const mutate=useCallback(async(body:Record<string,unknown>)=>{if(busyRef.current)return;busyRef.current=true;setBusy(true);setError('');try{const d=await request(body);adopt(d);return d;}catch(e){setError((e as Error).message);return undefined;}finally{busyRef.current=false;setBusy(false);}},[adopt]);opRef.current=mutate;
- async function start(mode:'practice'|'wrong',questionId?:string,subjectId?:string,sourceId?:string,chapterId?:string,sourceSet?:string){const d=await mutate({action:'start',id:crypto.randomUUID(),mode,questionId,subjectId,chapterId,sourceSet:sourceSet??(mode!=='wrong'&&sourceId===undefined&&subjectId===undefined&&chapterId===undefined?activeSourceSet:undefined),sourceId:sourceId==='all'?undefined:sourceId??(mode==='wrong'?undefined:q?.sourceId??'sra')});if(d){setView('practice');setSummary(false);setDialog(null);setShowZh(false);}return d;}
+ async function start(mode:'practice'|'wrong',questionId?:string,subjectId?:string,sourceId?:string,chapterId?:string,sourceSet?:string){
+  const actualSource=sourceId==='all'?undefined:sourceId??(mode==='wrong'?undefined:q?.sourceId??'sra');
+  const actualSourceSet=sourceSet??(mode!=='wrong'&&sourceId===undefined&&subjectId===undefined&&chapterId===undefined?activeSourceSet:undefined);
+  const d=await mutate({action:'start',id:crypto.randomUUID(),mode,questionId,subjectId,chapterId,sourceSet:actualSourceSet,sourceId:actualSource});
+  if(d){if(d.session)setPracticeScopes(value=>({...value,[d.session!.id]:{subjectId,sourceId:actualSource??'all',chapterId,sourceSet:actualSourceSet}}));setView('practice');setSummary(false);setDialog(null);setShowZh(false);}return d;
+ }
  async function navigate(next:number){if(next<0||next>=ids.length||busyRef.current)return false;if(session){const d=await mutate({action:'navigate',sessionId:session.id,position:next});if(!d)return false;}else{setLocalPosition(next);setSelected('');}setShowZh(false);setSummary(false);return true;}
  async function submit(){if(!q||!selected||busyRef.current||graded)return;let s=session;const choice=selected;if(!s){const d=await start('practice');if(!d?.session)return;s=d.session;if(position!==0){const moved=await mutate({action:'navigate',sessionId:s.id,position});if(!moved)return;}}const d=await mutate({action:'answer',sessionId:s.id,questionId:q.id,selected:choice});if(d){if(d.session?.mode==='exam'&&d.session.status==='finished')setSummary(true);}}
  async function choose(value:string){if(busyRef.current||graded)return;setSelected(value);if(activeExam&&q){const d=await mutate({action:'answer',sessionId:session.id,questionId:q.id,selected:value});if(d?.session?.status==='finished')setSummary(true);}}
@@ -91,6 +114,7 @@ function StudyContent({authenticated,standalone}:{authenticated:boolean;standalo
  const pending=data?.mistakes.filter(m=>!m.lastCorrect)??[];
  const currentSubject=subjectById(q?.subjectId);
  const activeSourceSet=q?.sourceSet&&session?.questionIds.every(id=>data?.questions.find(item=>item.id===id)?.sourceSet===q.sourceSet)?q.sourceSet:undefined;
+ const nextChapter=data&&session?getNextChapter(session,data.questions,practiceScopes[session.id]):null;
  const focusedPractice=view==='practice'&&!summary;
  const previousQuestionButton=<Button variant="ghost" disabled={position===0||busy||!!unsavedExam} onClick={()=>navigate(position-1)}><ChevronLeft size={16}/>上一题</Button>;
  const nextQuestionButton=position<ids.length-1?<Button variant={graded||activeExam?'default':'outline'} disabled={busy||!!unsavedExam} onClick={()=>navigate(position+1)}>下一题<ArrowRight size={16}/></Button>:session?.status==='finished'?<Button onClick={()=>setSummary(true)}>查看结果</Button>:<Button variant={graded||activeExam?'default':'outline'} disabled={busy||(!activeExam&&completed<ids.length)||!!unsavedExam} onClick={()=>activeExam?setDialog('finish'):finishSession()}>{activeExam?'交卷':'完成练习'}<Flag size={15}/></Button>;
@@ -106,7 +130,7 @@ function StudyContent({authenticated,standalone}:{authenticated:boolean;standalo
  <div className="sr-only" role="status" aria-live="polite">{graded&&`${answer.correct?'回答正确':answer.selected?'回答错误':'此题未作答'}，正确答案 ${q.explanation?.answer}`}</div>
  <div className="question-footer">{previousQuestionButton}<div>{!graded&&!activeExam&&session?.status!=='finished'&&<Button disabled={!selected||busy} onClick={submit}>{busy?<Loader2 size={15} className="animate-spin"/>:<Check size={15}/>}提交答案</Button>}{activeExam&&unsavedExam&&<Button disabled={busy} onClick={()=>choose(selected)}>重试保存</Button>}{activeExam&&position<ids.length-1&&<Button variant="ghost" disabled={busy||!!unsavedExam} onClick={()=>setDialog('finish')}>提前交卷</Button>}{nextQuestionButton}</div></div></article>{graded&&q.explanation&&<><AnswerReview key={q.id} question={q} answer={answer} onOpenTextbook={ref=>{setReader({questionId:q.id,bookId:ref.bookId,page:ref.pageNumbers[0]});setReaderVisible(true);}}/><nav className="review-navigation" aria-label="解析后的题目导航">{previousQuestionButton}{nextQuestionButton}</nav></>}</div>
  {readerAvailable&&reader&&<TextbookReader key={q.id} open={readerOpen} references={linkedTextbooks(q.explanation?.textbookReferences)} books={textbookCatalog.books} initial={reader} onClose={()=>setReaderVisible(false)} sourceQuestionId={q.id} annotations={annotations}/>}</div></>}
- {!loading&&view==='practice'&&data&&summary&&session&&<CompletionSummary session={session} label={modeName(session.mode)} busy={busy} hasPendingMistakes={pending.length>0} onNavigate={index=>{void navigate(index);}} onRetry={()=>{void start('wrong');}} onRestart={()=>{void start('practice');}}/>}
+ {!loading&&view==='practice'&&data&&summary&&session&&<CompletionSummary session={session} label={modeName(session.mode)} busy={busy} hasPendingMistakes={pending.length>0} onNavigate={index=>{void navigate(index);}} onRetry={()=>{void start('wrong');}} nextChapterAvailable={!!nextChapter} nextChapterTitle={nextChapter?.chapter.zh} onNextChapter={()=>{if(nextChapter)void start('practice',undefined,nextChapter.subjectId,nextChapter.sourceId,nextChapter.chapterId,nextChapter.sourceSet);else switchView('library');}}/>}
  {!loading&&view==='wrong'&&data&&<MistakeNotebook data={data} busy={busy} showCorrected={showCorrected} onShowCorrected={setShowCorrected} onRetry={(questionId,subjectId)=>void start('wrong',questionId,subjectId)} onPractice={()=>switchView('practice')}/>}
  {!loading&&view==='history'&&data&&<><StudyBreakdown data={data}/>{!data.sessions.length?<div className="empty"><History size={35}/><h2>从第一道题开始</h2><p>完成一次作答后，就可以在这里查看记录。</p><Button onClick={()=>switchView('practice')}>去练习</Button></div>:<div className="history-list">{data.sessions.map(s=><article className="history-row" key={s.id}><div className="flex items-center gap-4"><div className="stat-icon"><BookOpen/></div><div><div className="history-title">{modeName(s.mode)} <span className="text-sm text-[#78869b] font-normal">· {subjectById(data.questions.find(q=>q.id===s.questionIds[0])?.subjectId)?.zh??'综合练习'}</span></div><p>{new Date(s.startedAt).toLocaleString('zh-CN',{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'})} · {Object.values(s.answers).filter(a=>a.selected).length}/{s.questionIds.length} 题已作答 · {s.status==='finished'?'已完成':'进行中'}</p></div></div><div className="flex items-center gap-5"><div className="history-result">{s.mode==='exam'&&s.status==='active'?'—':`${s.score??0}/${s.questionIds.length}`}<small className="text-xs text-[#7b8ba2] block text-center">答对 / 总题数</small></div><Button disabled={busy} variant="outline" onClick={()=>openSession(s)}>{s.status==='finished'?'回顾':'继续'}<ChevronRight size={15}/></Button></div></article>)}</div>}<p className="bottom-caption">正确率只统计实际选择并提交答案的题目；重复作答按次数累计。</p></>}
  </div></main>

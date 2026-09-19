@@ -4,14 +4,16 @@ import {ArrowRight,RotateCcw} from 'lucide-react';
 import {Button} from '@/components/ui/button';
 import type {Session} from '@/lib/study-types';
 
-export function CompletionSummary({session,label,busy,hasPendingMistakes,onNavigate,onRetry,onRestart}:{
+export function CompletionSummary({session,label,busy,hasPendingMistakes,onNavigate,onRetry,onNextChapter,nextChapterAvailable,nextChapterTitle}:{
  session:Session;
  label:string;
  busy:boolean;
  hasPendingMistakes:boolean;
  onNavigate:(index:number)=>void;
  onRetry:()=>void;
- onRestart:()=>void;
+ onNextChapter:()=>void;
+ nextChapterAvailable:boolean;
+ nextChapterTitle?:string;
 }){
  const ids=session.questionIds;
  const correct=session.score??0;
@@ -41,7 +43,7 @@ export function CompletionSummary({session,label,busy,hasPendingMistakes,onNavig
   </section>
   <footer className="completion-actions">
    {hasPendingMistakes&&<Button onClick={onRetry} disabled={busy}><RotateCcw size={16}/>重练错题</Button>}
-   <Button variant={hasPendingMistakes?'outline':'default'} disabled={busy} onClick={onRestart}>再练一组<ArrowRight size={16}/></Button>
+   <Button variant={hasPendingMistakes?'outline':'default'} disabled={busy} onClick={onNextChapter} title={nextChapterTitle}>{nextChapterAvailable?'下一章节':'返回题库'}<ArrowRight size={16}/></Button>
   </footer>
  </section>;
 }
