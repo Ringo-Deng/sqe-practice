@@ -89,6 +89,8 @@ try{
   check(created.value.user.mustChangePassword===true,'admin-created user requires password change');
   await api(student,'/api/account/login',credentials,{label:'student login'});
   await api(student,'/api/study',undefined,{expected:403});check(true,'student must change temporary password before study');
+  await api(student,'/api/account/clear-study',{confirmation:'CLEAR_STUDY_RECORDS'},{expected:403});
+  check(true,'initial-password gate also blocks clearing study records');
   const personalPassword=secret();
   await api(student,'/api/account/change-password',{currentPassword:credentials.password,newPassword:personalPassword},{label:'student initial password change'});
   credentials.password=personalPassword;
@@ -117,6 +119,8 @@ try{
   check(true,'stale browser tab cannot change another active account password');
   await api(student,'/api/account/logout',{}, {expected:409,headers:staleHeaders});
   check((await api(student,'/api/account')).value.user?.id===studentId,'stale browser tab cannot log out a newly logged-in account');
+  await api(student,'/api/account/clear-study',{confirmation:'CLEAR_STUDY_RECORDS'},{expected:409,headers:staleHeaders});
+  check((await api(admin,'/api/study')).value.stats.answered===after.stats.answered,'stale browser tab cannot clear another account records');
   await api(student,'/api/study',{action:'answer',sessionId,questionId:question.id,selected:question.options[1].id},{expected:404});
   check(true,'second account cannot write another account session');
   await api(admin,'/api/reading-positions',{bookId:'qa-local-reading',page:17},{headers:{'X-Reading-Account':adminAccount.id}});
@@ -145,6 +149,16 @@ try{
   await api(admin,`/api/admin/users/${studentId}/enable`,{});
   await api(student,'/api/account/login',credentials,{label:'student login after enable'});
   check((await api(student,'/api/study')).value.stats.answered===restored.stats.answered,'re-enabling retains learning progress');
+  await api(student,'/api/reading-positions',{bookId:'qa-preserved-reading',page:8},{headers:{'X-Reading-Account':studentId}});
+  await api(student,'/api/account/clear-study',{}, {expected:400,label:'missing clear confirmation'});
+  check((await api(student,'/api/study')).value.stats.answered===restored.stats.answered,'missing confirmation leaves study records intact');
+  const cleared=(await api(student,'/api/account/clear-study',{confirmation:'CLEAR_STUDY_RECORDS',userId:adminAccount.id})).value;
+  check(cleared.ok&&cleared.sessions>0&&cleared.responses>0,'confirmed clear removes the current account sessions and responses');
+  const empty=(await api(student,'/api/study')).value;
+  check(empty.sessions.length===0&&empty.stats.answered===0&&empty.stats.wrongCount===0,'cleared study history, answer totals and mistakes are empty');
+  const remaining=(await api(student,'/api/backup')).value;
+  check(remaining.data.sessions.length===0&&remaining.data.responses.length===0&&remaining.data.reading_positions.some(item=>item.book_id==='qa-preserved-reading'&&item.page===8),'clear retains unrelated account data');
+  check((await api(admin,'/api/study')).value.stats.answered===after.stats.answered,'clear does not affect another account');
   const replacement=secret();
   await api(admin,`/api/admin/users/${studentId}/reset-password`,{password:replacement},{label:'administrator resets password'});
   await api(student,'/api/study',undefined,{expected:401});check(true,'password reset revokes old sessions');

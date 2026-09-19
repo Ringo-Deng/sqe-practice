@@ -151,7 +151,7 @@ function requireReadyAdmin(user: AccountUser | null): AccountUser {
 
 export async function handleAccountRequest(request: Request, env: AccountEnv): Promise<Response | null> {
   const pathname = new URL(request.url).pathname;
-  const accountPaths = ['/api/account', '/api/account/login', '/api/account/logout', '/api/account/change-password', '/api/account/setup'];
+  const accountPaths = ['/api/account', '/api/account/login', '/api/account/logout', '/api/account/change-password', '/api/account/clear-study', '/api/account/setup'];
   const adminAction = pathname.match(/^\/api\/admin\/users\/([^/]+)\/(disable|enable|reset-password)$/);
   if (!accountPaths.includes(pathname) && pathname !== '/api/admin/users' && !adminAction) return null;
   try {
@@ -229,6 +229,15 @@ export async function handleAccountRequest(request: Request, env: AccountEnv): P
       ]);
       if (!changed[0].meta.changes || !changed[1].meta.changes) throw new AccountError('账号或登录状态已更新，请重新登录后再修改密码。', 409);
       return json({ user: { ...user, mustChangePassword: false } });
+    }
+    if (pathname === '/api/account/clear-study') {
+      if (user.mustChangePassword) throw new AccountError('请先修改初始密码，再开始学习。', 403);
+      if (body.confirmation !== 'CLEAR_STUDY_RECORDS') throw new AccountError('请重新确认清空做题记录。');
+      const cleared = await env.DB.batch([
+        env.DB.prepare('DELETE FROM responses WHERE session_id IN (SELECT id FROM sessions WHERE user_id=?)').bind(user.id),
+        env.DB.prepare('DELETE FROM sessions WHERE user_id=?').bind(user.id),
+      ]);
+      return json({ ok: true, sessions: cleared[1].meta.changes ?? 0, responses: cleared[0].meta.changes ?? 0 });
     }
     requireReadyAdmin(user);
     if (pathname === '/api/admin/users') {

@@ -19,6 +19,8 @@
 .cloud-text-button{border:0;background:transparent;color:#436594;padding:6px 8px;min-height:32px}
 .cloud-text-button:hover:not(:disabled){background:#edf2fa}
 .cloud-danger-text{color:#a65b60}
+.cloud-danger-button{background:#a54855;border-color:#a54855}
+.cloud-danger-button:hover:not(:disabled){background:#873846}
 .cloud-primary:disabled,.cloud-secondary:disabled,.cloud-text-button:disabled{opacity:.55;cursor:not-allowed}
 .cloud-wide{width:100%;margin-top:3px}
 .cloud-feedback{font-size:13px;line-height:1.7;padding:10px 12px;border-radius:7px;overflow-wrap:anywhere;margin:12px 0 0}

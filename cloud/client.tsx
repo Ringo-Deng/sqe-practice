@@ -1,10 +1,11 @@
 'use client';
 
 import {useCallback, useEffect, useRef, useState, type FormEvent, type ReactNode} from 'react';
-import {ArrowDownToLine, ArrowUpFromLine, ChevronRight, Loader2, LogOut, UserRound} from 'lucide-react';
+import {ArrowDownToLine, ArrowUpFromLine, ChevronRight, Loader2, LogOut, Trash2, UserRound} from 'lucide-react';
 import StudyApp from '@/app/study-app';
+import {AlertDialog, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle} from '@/components/ui/alert-dialog';
 import {Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle} from '@/components/ui/dialog';
-import {setWorkspaceAccount} from '@/lib/study-workspace';
+import {setWorkspaceAccount, workspaceKey} from '@/lib/study-workspace';
 import {activateReadingAccount, getReadingSyncStatus, subscribeReadingSync} from '@/lib/textbook-reading-position';
 import {ExpectedAccountProvider, useExpectedAccount} from '@/lib/expected-account';
 import {expectedAccountHeaders} from '@/lib/expected-account-headers';
@@ -144,16 +145,17 @@ function ReadingSyncNotice() {
   const [status, setStatus] = useState(getReadingSyncStatus);
   useEffect(()=>subscribeReadingSync(setStatus),[]);
   if (status.state !== 'error' && status.state !== 'pending') return null;
-  return <p className="cloud-note cloud-sync-note" role="status">{status.message || (status.state === 'error' ? '阅读位置暂未同步，请检查网络后重试。' : `有 ${status.pendingCount} 处阅读位置等待同步。`)}{status.pendingCount > 0 && ' 下载的备份只包含已同步的阅读位置。'}</p>;
+  return <p className="cloud-note cloud-sync-note" role="status">{status.message || (status.state === 'error' ? '阅读位置暂未同步，请检查网络后重试。' : `有 ${status.pendingCount} 处阅读位置等待同步。`)}</p>;
 }
 
-function BackupPanel({onImported, onAccountRefresh}:{onImported:()=>Promise<void>; onAccountRefresh:()=>Promise<void>}) {
+function BackupPanel({onImported, onAccountRefresh, onCleared}:{onImported:()=>Promise<void>; onAccountRefresh:()=>Promise<void>; onCleared:()=>void}) {
   const accountRequest = useAccountRequest();
   const fileInput = useRef<HTMLInputElement>(null);
   const [selected, setSelected] = useState<{name:string; data:unknown}|null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
   const [message, setMessage] = useState('');
+  const [clearStage, setClearStage] = useState<0|1|2>(0);
   async function download() {
     if (busy) return;
     setBusy(true); setError(''); setMessage('');
@@ -164,7 +166,7 @@ function BackupPanel({onImported, onAccountRefresh}:{onImported:()=>Promise<void
       anchor.href = url; anchor.download = `SQE学习备份-${new Date().toISOString().slice(0,10)}.json`;
       document.body.appendChild(anchor); anchor.click(); anchor.remove();
       window.setTimeout(()=>URL.revokeObjectURL(url), 1000);
-      setMessage('已生成备份下载，请确认文件已保存。备份不包含 PDF 教材原文件。');
+      setMessage('已生成备份下载，请确认文件已保存。');
     } catch (cause) { setError((cause as Error).message); }
     finally { setBusy(false); }
   }
@@ -194,12 +196,25 @@ function BackupPanel({onImported, onAccountRefresh}:{onImported:()=>Promise<void
     } catch (cause) { setError((cause as Error).message); }
     finally { setBusy(false); }
   }
-  return <section className="cloud-section" aria-labelledby="cloud-backup-title"><h2 id="cloud-backup-title">学习数据备份</h2><p className="cloud-description">学习记录保存在账号中。你也可以下载一份备份，保存在自己的电脑或云盘。</p><p className="cloud-note">备份包含学习记录、笔记和已同步的教材阅读位置，<strong>不包含 PDF 教材原文件</strong>。请另外保存教材。</p>
-    <p className="cloud-note">也接受旧版“本机做题备份”；这类文件仅迁移做题记录，不包含词卡、教材批注或 PDF。</p>
+  async function clearStudy() {
+    if (busy || clearStage !== 2) return;
+    setBusy(true); setError(''); setMessage('');
+    try {
+      await accountRequest('/api/account/clear-study', {confirmation:'CLEAR_STUDY_RECORDS'});
+      setClearStage(0);
+      setSelected(null);
+      if (fileInput.current) fileInput.current.value = '';
+      onCleared();
+      setMessage('做题记录已清空。');
+    } catch (cause) { setClearStage(0); setError((cause as Error).message); }
+    finally { setBusy(false); }
+  }
+  return <section className="cloud-section" aria-label="备份与做题记录">
     <ReadingSyncNotice/>
-    <div className="cloud-actions"><button type="button" className="cloud-secondary" onClick={()=>void download()} disabled={busy}><ArrowDownToLine size={16}/>下载备份</button><button type="button" className="cloud-secondary" onClick={()=>fileInput.current?.click()} disabled={busy}><ArrowUpFromLine size={16}/>选择备份恢复</button><input ref={fileInput} type="file" accept=".json,application/json" className="cloud-file-input" aria-label="选择学习备份文件" onChange={e=>void choose(e.target.files?.[0])} disabled={busy}/></div>
+    <div className="cloud-actions"><button type="button" className="cloud-secondary" onClick={()=>void download()} disabled={busy}><ArrowDownToLine size={16}/>下载备份</button><button type="button" className="cloud-secondary" onClick={()=>fileInput.current?.click()} disabled={busy}><ArrowUpFromLine size={16}/>选择备份恢复</button><button type="button" className="cloud-secondary cloud-danger-text" onClick={()=>{setError('');setMessage('');setClearStage(1);}} disabled={busy}><Trash2 size={16}/>清空做题记录</button><input ref={fileInput} type="file" accept=".json,application/json" className="cloud-file-input" aria-label="选择学习备份文件" onChange={e=>void choose(e.target.files?.[0])} disabled={busy}/></div>
     {selected && <div className="cloud-import-preview"><strong>{selected.name}</strong><p>将备份记录合并到当前账号。建议先下载一份当前数据备份，再确认恢复。</p><div className="cloud-actions"><button type="button" className="cloud-primary" disabled={busy} onClick={()=>void restore()}><BusyLabel busy={busy}>{busy ? '恢复中…' : '确认恢复到此账号'}</BusyLabel></button><button type="button" className="cloud-text-button" disabled={busy} onClick={()=>{setSelected(null); if(fileInput.current)fileInput.current.value='';}}>取消</button></div></div>}
     <Feedback error={error} message={message}/>
+    <AlertDialog open={clearStage>0} onOpenChange={open=>{if(!open&&!busy)setClearStage(0);}}><AlertDialogContent onEscapeKeyDown={event=>{if(busy)event.preventDefault();}}><AlertDialogHeader><AlertDialogTitle>{clearStage===1?'确认清空做题记录？':'再次确认清空？'}</AlertDialogTitle><AlertDialogDescription>{clearStage===1?'这会清空当前账号的全部练习与作答，错题本、学习记录和统计也会归零。词卡、教材和笔记会保留。':'这是第二次确认。清空后无法撤销；如需留存，请先取消并下载备份。'}</AlertDialogDescription></AlertDialogHeader><AlertDialogFooter><AlertDialogCancel disabled={busy}>取消</AlertDialogCancel>{clearStage===1?<button type="button" className="cloud-secondary" onClick={()=>setClearStage(2)}>第一次确认，继续</button>:<button type="button" className="cloud-primary cloud-danger-button" disabled={busy} onClick={()=>void clearStudy()}><BusyLabel busy={busy}>{busy?'正在清空…':'第二次确认，清空全部做题记录'}</BusyLabel></button>}</AlertDialogFooter></AlertDialogContent></AlertDialog>
   </section>;
 }
 
@@ -266,7 +281,7 @@ function UserManagement({currentUser, onAccountRefresh}:{currentUser:AccountUser
   </section>;
 }
 
-function AccountDialog({user, open, onOpenChange, onAccountRefresh, onImported, onLogout}:{user:AccountUser; open:boolean; onOpenChange:(open:boolean)=>void; onAccountRefresh:()=>Promise<void>; onImported:()=>Promise<void>; onLogout:(expectedAccountId:string)=>Promise<void>}) {
+function AccountDialog({user, open, onOpenChange, onAccountRefresh, onImported, onCleared, onLogout}:{user:AccountUser; open:boolean; onOpenChange:(open:boolean)=>void; onAccountRefresh:()=>Promise<void>; onImported:()=>Promise<void>; onCleared:()=>void; onLogout:(expectedAccountId:string)=>Promise<void>}) {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
   async function logout() {
@@ -274,7 +289,7 @@ function AccountDialog({user, open, onOpenChange, onAccountRefresh, onImported, 
     try { await onLogout(user.id); } catch (cause) { setError((cause as Error).message); }
     finally { setBusy(false); }
   }
-  return <Dialog open={open} onOpenChange={onOpenChange}><DialogContent className="cloud-account-dialog"><DialogHeader><DialogTitle>账号与备份</DialogTitle><DialogDescription>{user.name || user.username} · {user.username}{user.role==='admin' ? ' · 管理员' : ''}</DialogDescription></DialogHeader><BackupPanel onImported={onImported} onAccountRefresh={onAccountRefresh}/><section className="cloud-section"><details className="cloud-details"><summary>修改密码</summary><PasswordForm onChanged={onAccountRefresh}/></details></section>{user.role==='admin' && <UserManagement currentUser={user} onAccountRefresh={onAccountRefresh}/>}<footer className="cloud-account-footer"><Feedback error={error}/><button type="button" className="cloud-secondary" onClick={()=>void logout()} disabled={busy}><LogOut size={16}/><BusyLabel busy={busy}>{busy ? '正在退出…' : '退出登录'}</BusyLabel></button></footer></DialogContent></Dialog>;
+  return <Dialog open={open} onOpenChange={onOpenChange}><DialogContent className="cloud-account-dialog"><DialogHeader><DialogTitle>账号与备份</DialogTitle><DialogDescription>{user.name && user.name !== user.username ? `${user.name} · ` : ''}{user.username}{user.role==='admin' ? ' · 管理员' : ''}</DialogDescription></DialogHeader><BackupPanel onImported={onImported} onAccountRefresh={onAccountRefresh} onCleared={onCleared}/><section className="cloud-section"><details className="cloud-details"><summary>修改密码</summary><PasswordForm onChanged={onAccountRefresh}/></details></section>{user.role==='admin' && <UserManagement currentUser={user} onAccountRefresh={onAccountRefresh}/>}<footer className="cloud-account-footer"><Feedback error={error}/><button type="button" className="cloud-secondary" onClick={()=>void logout()} disabled={busy}><LogOut size={16}/><BusyLabel busy={busy}>{busy ? '正在退出…' : '退出登录'}</BusyLabel></button></footer></DialogContent></Dialog>;
 }
 
 export default function CloudApp() {
@@ -333,5 +348,5 @@ export default function CloudApp() {
   if (!account.user) return <SignIn key={account.setupRequired ? 'setup' : 'login'} setup={account.setupRequired} notice={notice} onSuccess={async()=>{await refresh();setNotice('');}}/>;
   const user = account.user;
   if (user.mustChangePassword) return <ExpectedAccountProvider accountId={user.id}><AuthFrame title="设置你的专属密码" description="你正在使用临时密码。请先修改密码，再进入学习空间。"><PasswordForm required onChanged={refresh}/><Feedback error={loadError}/><button type="button" className="cloud-text-button cloud-gate-logout" disabled={loggingOut} onClick={()=>{setLoggingOut(true);void logout(user.id).catch(cause=>setLoadError((cause as Error).message)).finally(()=>setLoggingOut(false));}}>{loggingOut ? '正在退出…' : '退出登录'}</button></AuthFrame></ExpectedAccountProvider>;
-  return <ExpectedAccountProvider accountId={user.id}><StudyApp key={`${user.id}:${revision}`} authenticated standalone={false} loginHref="/login" accountControl={<button type="button" className="cloud-account-button" onClick={()=>setAccountOpen(true)} aria-label="打开账号与备份"><span className="cloud-account-avatar"><UserRound size={19}/></span><span className="cloud-account-button-copy"><strong>{user.name || user.username}</strong><small>账号与备份</small></span><ChevronRight size={15}/></button>}/>{accountOpen && <AccountDialog user={user} open={accountOpen} onOpenChange={setAccountOpen} onAccountRefresh={refresh} onImported={async()=>{readingActivation.current=activateReadingAccount(user.id);await readingActivation.current;setRevision(value=>value+1);}} onLogout={logout}/>}</ExpectedAccountProvider>;
+  return <ExpectedAccountProvider accountId={user.id}><StudyApp key={`${user.id}:${revision}`} authenticated standalone={false} loginHref="/login" accountControl={<button type="button" className="cloud-account-button" onClick={()=>setAccountOpen(true)} aria-label="打开账号与备份"><span className="cloud-account-avatar"><UserRound size={19}/></span><span className="cloud-account-button-copy"><strong>{user.name || user.username}</strong><small>账号与备份</small></span><ChevronRight size={15}/></button>}/>{accountOpen && <AccountDialog user={user} open={accountOpen} onOpenChange={setAccountOpen} onAccountRefresh={refresh} onImported={async()=>{readingActivation.current=activateReadingAccount(user.id);await readingActivation.current;setRevision(value=>value+1);}} onCleared={()=>{try{window.sessionStorage.removeItem(workspaceKey(false,user.id));}catch{}setRevision(value=>value+1);}} onLogout={logout}/>}</ExpectedAccountProvider>;
 }

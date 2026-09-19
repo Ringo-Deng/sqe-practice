@@ -59,7 +59,7 @@ const originalFetch=globalThis.fetch,storageDescriptor=Object.getOwnPropertyDesc
 
 (async()=>{
  await check('All protected API groups reject a stale account before invoking a data handler',async()=>{
-  for(const route of ['/api/study','/api/vocabulary','/api/textbook-annotations','/api/textbook-bookmarks','/api/textbooks','/api/textbooks/file','/api/backup','/api/reading-positions','/api/account/logout','/api/account/change-password','/api/admin/users']){
+  for(const route of ['/api/study','/api/vocabulary','/api/textbook-annotations','/api/textbook-bookmarks','/api/textbooks','/api/textbooks/file','/api/backup','/api/reading-positions','/api/account/logout','/api/account/change-password','/api/account/clear-study','/api/admin/users']){
    for(const method of ['GET','POST'])assert.equal((await worker.fetch(request(route,'account-a',method),env)).status,409,route);
   }
   assert.equal(handlerCalls,0);
