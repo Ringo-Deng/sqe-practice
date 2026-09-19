@@ -116,7 +116,7 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
  .compact-review .quick-review{padding:12px}
  .compact-review .concepts-table th,.compact-review .concepts-table td{padding:8px}
 }
-.mistake-notebook .mistake-top{align-items:center;flex-wrap:wrap}
+.mistake-notebook .mistake-top{align-items:center;justify-content:flex-end;flex-wrap:wrap}
 .mistake-subject-list{display:flex;flex-direction:column;gap:12px}
 .mistake-subject{border:1px solid var(--border);border-radius:10px;background:#fff;overflow:hidden}
 .mistake-subject>summary{display:flex;align-items:center;gap:12px;padding:16px 20px;cursor:pointer;list-style:none}
@@ -134,8 +134,6 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
 .mistake-subject .mistake-item h3{font-size:16px;line-height:1.5;overflow-wrap:anywhere}
 .mistake-subject .mistake-item p{overflow-wrap:anywhere}
 .mistake-item-meta{display:flex;justify-content:space-between;gap:12px;color:#8390a5;font-size:13px}
-.mistake-corrected{color:#338b73}
-.mistake-pending{color:#ae5060}
 @media(max-width:650px){
  .mistake-subject>summary{padding:14px;gap:8px;flex-wrap:wrap}
  .mistake-subject>summary h2{flex-basis:calc(100% - 30px)}
@@ -387,3 +385,6 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
  .library-resume-copy h2{font-size:15px}
  .library-resume>button{grid-column:2;justify-self:start}
 }
+
+.question-answer-counts{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 18px;margin-top:16px;color:#738099;font-size:13px;line-height:1.6;font-variant-numeric:tabular-nums}
+.question-answer-counts b{font-weight:600;color:#405777}

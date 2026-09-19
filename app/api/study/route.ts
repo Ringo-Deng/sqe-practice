@@ -4,7 +4,7 @@ import { questions,publicQuestions } from '@/lib/questions';
 import {examDurationMs} from '@/lib/study-timing';
 import {subjectById} from '@/lib/subjects';
 import {sourceById} from '@/lib/question-sources';
-import {buildSubjectStudyStats} from '@/lib/study-statistics';
+import {buildQuestionStudyStats,buildSubjectStudyStats} from '@/lib/study-statistics';
 import {chapterById,filterQuestions} from '@/lib/chapters';
 import type {Session,StudyData} from '@/lib/study-types';
 export const dynamic='force-dynamic';
@@ -19,10 +19,10 @@ const serial=(r:Row):Session=>{const visible=r.mode!=='exam'||r.status==='finish
 const s=current?serial(current):null;
 const graded=(await db.prepare("SELECT r.* FROM responses r JOIN sessions s ON s.id=r.session_id WHERE s.user_id=? AND (s.mode!='exam' OR s.status='finished') ORDER BY r.answered_at DESC,r.session_id DESC").bind(user).all<AnswerRow>()).results.filter(a=>availableIds.has(a.question_id));
 const mistakes:StudyData['mistakes']=[];
-for(const q of questions){const related=graded.filter(a=>a.question_id===q.id);const count=related.filter(a=>!a.correct).length;if(count)mistakes.push({questionId:q.id,wrongCount:count,selected:related[0].selected,lastCorrect:!!related[0].correct,topic:q.explanation.topic});}
+for(const q of questions){const related=graded.filter(a=>a.question_id===q.id);const count=related.filter(a=>!a.correct).length;if(related.length&&!related[0].correct)mistakes.push({questionId:q.id,wrongCount:count,selected:related[0].selected,lastCorrect:!!related[0].correct,topic:q.explanation.topic});}
 const completedAnswers=graded.filter(answer=>answer.selected),correct=completedAnswers.filter(answer=>answer.correct).length;
 const unseenQuestions=publicQuestions();
-return{questions:questions.map((q,index)=>{const visible=s?.answers[q.id]&&(s.mode!=='exam'||s.status==='finished');return visible?q:unseenQuestions[index];}),session:s,sessions:rows.map(serial),stats:{answered:completedAnswers.length,correct,accuracy:completedAnswers.length?Math.round(correct/completedAnswers.length*100):null,wrongCount:mistakes.filter(m=>!m.lastCorrect).length,subjects:buildSubjectStudyStats(completedAnswers.map(answer=>({questionId:answer.question_id,correct:!!answer.correct})),questions)},mistakes};}
+return{questions:questions.map((q,index)=>{const visible=s?.answers[q.id]&&(s.mode!=='exam'||s.status==='finished');return visible?q:unseenQuestions[index];}),session:s,sessions:rows.map(serial),questionStats:buildQuestionStudyStats(graded.map(answer=>({questionId:answer.question_id,selected:answer.selected,correct:!!answer.correct}))),stats:{answered:completedAnswers.length,correct,accuracy:completedAnswers.length?Math.round(correct/completedAnswers.length*100):null,wrongCount:mistakes.length,subjects:buildSubjectStudyStats(completedAnswers.map(answer=>({questionId:answer.question_id,correct:!!answer.correct})),questions)},mistakes};}
 export async function GET(request:Request){const user=await getChatGPTUser();if(!user)return json({error:'请先登录，再保存和读取学习记录。'},401);try{return json(await payload(user.userId,new URL(request.url).searchParams.get('session')));}catch(e){console.error('Study load failed',e);return json({error:'暂时无法读取记录，请重试。'},503);}}
 export async function POST(request:Request){const user=await getChatGPTUser();if(!user)return json({error:'请先登录，再保存学习记录。'},401);
 if(request.headers.get('x-study-action')!=='1'||!request.headers.get('content-type')?.includes('application/json')||request.headers.get('sec-fetch-site')==='cross-site')return json({error:'请求无效，请刷新后重试。'},403);
@@ -37,7 +37,7 @@ if(action==='start'){
  const filtered=filterQuestions(questions,{subjectId:body.subjectId as string|undefined,sourceId:body.sourceId as string|undefined,chapterId:body.chapterId as string|undefined,sourceSet:body.sourceSet as string|undefined});
  let ids=filtered.map(q=>q.id);
  if(!ids.length)return json({error:'所选来源、科目或章节尚未导入题目。'},400);
- if(body.mode==='wrong'){const data=await payload(user.userId);ids=data.mistakes.filter(m=>!m.lastCorrect).map(m=>m.questionId);if(body.subjectId)ids=ids.filter(id=>questions.find(q=>q.id===id)?.subjectId===body.subjectId);if(body.sourceId)ids=ids.filter(id=>questions.find(q=>q.id===id)?.sourceId===body.sourceId);if(body.chapterId||body.sourceSet)ids=ids.filter(id=>filtered.some(q=>q.id===id));if(typeof body.questionId==='string')ids=ids.filter(id=>id===body.questionId);if(!ids.length)return json({error:'暂时没有需要重练的错题。'},400);}
+ if(body.mode==='wrong'){const data=await payload(user.userId);ids=data.mistakes.map(m=>m.questionId);if(body.subjectId)ids=ids.filter(id=>questions.find(q=>q.id===id)?.subjectId===body.subjectId);if(body.sourceId)ids=ids.filter(id=>questions.find(q=>q.id===id)?.sourceId===body.sourceId);if(body.chapterId||body.sourceSet)ids=ids.filter(id=>filtered.some(q=>q.id===id));if(typeof body.questionId==='string')ids=ids.filter(id=>id===body.questionId);if(!ids.length)return json({error:'暂时没有需要重练的错题。'},400);}
  await db.prepare('INSERT OR IGNORE INTO sessions (id,user_id,mode,status,question_ids,position,started_at) VALUES (?,?,?,?,?,?,?)').bind(body.id,user.userId,body.mode,'active',JSON.stringify(ids),0,Date.now()).run();
  const owned=await sessionRow(user.userId,body.id);if(!owned)return json({error:'练习编号冲突，请重新开始。'},409);return json(await payload(user.userId,body.id));
 }
@@ -47,8 +47,9 @@ if(row.status==='finished')return json(await payload(user.userId,row.id));
 if(action==='answer'){
  const q=questions.find(q=>q.id===body.questionId);if(!q||!JSON.parse(row.question_ids).includes(q.id)||!q.options.some(o=>o.id===body.selected))return json({error:'请选择有效答案。'},400);
  const correct=body.selected===q.explanation.answer?1:0;
- if(row.mode==='exam')await db.prepare("INSERT INTO responses (session_id,question_id,selected,correct,answered_at) SELECT ?,?,?,?,? WHERE EXISTS(SELECT 1 FROM sessions WHERE id=? AND user_id=? AND status='active' AND started_at+?>?) ON CONFLICT(session_id,question_id) DO UPDATE SET selected=excluded.selected,correct=excluded.correct,answered_at=excluded.answered_at").bind(row.id,q.id,body.selected,correct,Date.now(),row.id,user.userId,examDurationMs(JSON.parse(row.question_ids)),Date.now()).run();
- else await db.prepare('INSERT OR IGNORE INTO responses (session_id,question_id,selected,correct,answered_at) VALUES (?,?,?,?,?)').bind(row.id,q.id,body.selected,correct,Date.now()).run();
+ // Assign a strictly later attempt time per question without changing retry idempotency.
+ if(row.mode==='exam')await db.prepare("INSERT INTO responses (session_id,question_id,selected,correct,answered_at) SELECT ?,?,?,?,MAX(?,COALESCE((SELECT MAX(r.answered_at)+1 FROM responses r JOIN sessions s ON s.id=r.session_id WHERE s.user_id=? AND r.question_id=?),0)) WHERE EXISTS(SELECT 1 FROM sessions WHERE id=? AND user_id=? AND status='active' AND started_at+?>?) ON CONFLICT(session_id,question_id) DO UPDATE SET selected=excluded.selected,correct=excluded.correct,answered_at=excluded.answered_at").bind(row.id,q.id,body.selected,correct,Date.now(),user.userId,q.id,row.id,user.userId,examDurationMs(JSON.parse(row.question_ids)),Date.now()).run();
+ else await db.prepare('INSERT OR IGNORE INTO responses (session_id,question_id,selected,correct,answered_at) VALUES (?,?,?,?,MAX(?,COALESCE((SELECT MAX(r.answered_at)+1 FROM responses r JOIN sessions s ON s.id=r.session_id WHERE s.user_id=? AND r.question_id=?),0)))').bind(row.id,q.id,body.selected,correct,Date.now(),user.userId,q.id).run();
  return json(await payload(user.userId,row.id));
 }
 if(action==='finish'){if(row.mode!=='exam'){const count=await db.prepare('SELECT COUNT(*) AS n FROM responses WHERE session_id=?').bind(row.id).first<{n:number}>();if(count?.n!==JSON.parse(row.question_ids).length)return json({error:'请先完成本组题目。'},400);}await finish(row);return json(await payload(user.userId,row.id));}

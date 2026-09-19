@@ -191,7 +191,7 @@ function checkLibraryMarkup(data,label){
  const nativeUseState=React.useState;
  let stateIndex=0,html;
  // Select a deterministic source/subject without changing the product interface.
- React.useState=initial=>nativeUseState(stateIndex++===0?'all':stateIndex===2?'legal-services':initial);
+ React.useState=initial=>nativeUseState(stateIndex++===0?{source:'all',chosen:'legal-services'}:initial);
  try{html=renderToStaticMarkup(React.createElement(QuestionLibrary,{data,busy:false,onStart(){},onResume(){}}));}
  finally{React.useState=nativeUseState;}
  assert.equal((html.match(/<h3>法律服务与职业道德<\/h3>/g)??[]).length,1,`${label}: one combined subject card`);
@@ -247,16 +247,17 @@ async function exercise(driver,fixtures,label){
  assert.equal(data.mistakes.find(item=>item.questionId===ethicsFixtures[1].id).wrongCount,2,`${label}: repeated mistakes retain their true attempt count`);
  data=await post({action:'answer',sessionId:retryId,questionId:ethicsFixtures[0].id,selected:ethicsFixtures[0].explanation.answer});
  checkStats(data,label,fixtures,[{questionId:ethicsFixtures[1].id,correct:false},{questionId:ethicsFixtures[0].id,correct:true}]);
- assert.equal(data.mistakes.length,4,`${label}: corrections retain all four historical mistake IDs`);
- assert.equal(new Set(data.mistakes.map(item=>item.questionId)).size,4,`${label}: merged mistakes contain no duplicates`);
+ assert.equal(data.mistakes.length,3,`${label}: correct answers leave the notebook while historical attempts remain`);
+ assert.equal(new Set(data.mistakes.map(item=>item.questionId)).size,3,`${label}: merged mistakes contain no duplicates`);
  assert.equal(data.stats.wrongCount,3,`${label}: corrected question leaves the pending count`);
- assert.equal(data.mistakes.find(item=>item.questionId===ethicsFixtures[0].id).lastCorrect,true);
+ assert.equal(data.mistakes.some(item=>item.questionId===ethicsFixtures[0].id),false);
+ assert.deepEqual(data.questionStats[ethicsFixtures[0].id],{correct:1,wrong:1},`${label}: corrected question retains both original and corrected attempts`);
  const history=await driver.load(fixtures.sessions[0].id);
  assert.equal(history.session.score,23,`${label}: later corrections do not rewrite an old session score`);
  assert.deepEqual(history.session.questionIds,fixtures.sessions[0].questionIds);
  data=await post({action:'start',id:randomUUID(),mode:'wrong',subjectId:'legal-services'});
  assert.deepEqual(ids(data.session.questionIds),ids([ethicsFixtures[1],fixtures.legalFixture]),`${label}: merged retry excludes corrections and accounts`);
- const html=renderToStaticMarkup(React.createElement(MistakeNotebook,{data,busy:false,showCorrected:true,onShowCorrected(){},onRetry(){},onPractice(){}}));
+ const html=renderToStaticMarkup(React.createElement(MistakeNotebook,{data,busy:false,onRetry(){},onPractice(){}}));
  const headings=[...html.matchAll(/<h2>(.*?)<\/h2>/g)].map(match=>match[1]);
  assert.equal(headings.filter(heading=>heading==='法律服务与职业道德').length,1,`${label}: one merged wrong-answer group`);
  assert.equal(headings.filter(heading=>heading==='律师账目').length,1,`${label}: accounts has its own wrong-answer group`);

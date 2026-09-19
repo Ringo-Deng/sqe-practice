@@ -14,7 +14,7 @@ A public-access SQE practice application with an account-backed mode and a devic
 - Server-graded practice answers with Chinese-led explanation and selected English terminology, key rule, option-by-option analysis, exam warning and legislation links.
 - Timed examination mode with a server-enforced deadline. No grading or explanation is returned before submission. Unanswered questions count as incorrect on submission.
 - Signed-in sessions, navigation position, answers and cumulative statistics are stored in D1 and keyed by the platform-authenticated user. Anonymous visitors keep the corresponding study state in their current browser.
-- Mistake review distinguishes unresolved errors from subsequently corrected questions and preserves the original history.
+- Mistake review shows questions whose latest graded answer is incorrect and removes each question as soon as it is answered correctly. Practice questions show cumulative correct and incorrect submitted-answer counts; original answer history is preserved.
 - Private platform access and server-side user scoping; no app-owned password database or external AI API keys.
 
 ## Data and maintenance
