@@ -41,13 +41,12 @@ export function MistakeNotebook({data,busy,onRetry,onPractice}:Props){
      <summary>
       <h2>{subject.zh}</h2>
       <span>{entries.length} 题</span>
+      {subject.id!=='other'&&<Button type="button" className="mistake-subject-retry" variant="outline" size="sm" disabled={busy} aria-label={`重练${subject.zh}的 ${entries.length} 道错题`} onClick={event=>{event.preventDefault();event.stopPropagation();onRetry(undefined,subject.id);}}><RotateCcw size={14}/>重练本科目</Button>}
       <ChevronRight size={18} className="mistake-subject-chevron"/>
      </summary>
      <div className="mistake-subject-body">
-      {subject.id!=='other'&&<div className="mistake-subject-actions"><Button variant="outline" size="sm" disabled={busy} onClick={()=>onRetry(undefined,subject.id)}><RotateCcw size={14}/>重练本科目（{entries.length}）</Button></div>}
       {entries.map(({mistake,question})=><article className="mistake-item" key={mistake.questionId}>
        <div className="mistake-item-meta"><span>错过 {mistake.wrongCount} 次</span></div>
-       <h3>{mistake.topic}</h3>
        <p>{question?normalizeInlineQuestionText(question.stem):'题目暂不可用'}</p>
        <Button variant="outline" size="sm" disabled={busy||!question} onClick={()=>onRetry(mistake.questionId)}>重做这道题<ArrowRight size={15}/></Button>
       </article>)}

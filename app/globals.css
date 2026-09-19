@@ -128,16 +128,16 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
 .mistake-subject[open]>summary{border-bottom:1px solid #e8edf5;background:#f8faff}
 .mistake-subject[open] .mistake-subject-chevron{transform:rotate(90deg)}
 .mistake-subject-body{padding:0 20px}
-.mistake-subject-actions{display:flex;justify-content:flex-end;padding-top:12px}
+.mistake-subject-retry{flex-shrink:0}
 .mistake-subject .mistake-item{margin:0;padding:16px 0;border:0;border-radius:0}
 .mistake-subject .mistake-item+.mistake-item{border-top:1px solid #e8edf5}
-.mistake-subject .mistake-item h3{font-size:16px;line-height:1.5;overflow-wrap:anywhere}
 .mistake-subject .mistake-item p{overflow-wrap:anywhere}
 .mistake-item-meta{display:flex;justify-content:space-between;gap:12px;color:#8390a5;font-size:13px}
 @media(max-width:650px){
  .mistake-subject>summary{padding:14px;gap:8px;flex-wrap:wrap}
  .mistake-subject>summary h2{flex-basis:calc(100% - 30px)}
- .mistake-subject>summary>span{order:1;flex-basis:100%;white-space:normal}
+ .mistake-subject>summary>span{order:1;margin-right:auto;white-space:normal}
+ .mistake-subject-retry{order:2}
  .mistake-subject-body{padding:0 14px}
 }
 @media(max-width:1100px){.practice-workspace{padding:18px 24px 30px}}

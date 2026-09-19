@@ -207,7 +207,8 @@ function checkMarkup(data){
  assert.deepEqual(sections.map(section=>section.match(/<h2>(.*?)<\/h2>/)[1]),['合同法','侵权法']);
  const contract=sections[0];
  assert.equal((contract.match(/class="mistake-item"/g)??[]).length,2,'Subject group contains only remaining mistakes');
- assert.match(contract,/重练本科目（2）/,'Subject retry count uses remaining mistakes');
+ assert.match(contract,/<summary>[\s\S]*aria-label="重练合同法的 2 道错题"[\s\S]*重练本科目[\s\S]*<\/summary>/,'Subject retry is visible in the collapsed header and names the remaining mistakes');
+ assert.doesNotMatch(contract,/<h3>/,'Individual mistakes do not repeat topic titles');
  assert.doesNotMatch(html,/mistake-tabs|待巩固|已订正|mistake-status|role="tab"/,'Removed categories and status badges are absent');
  assert.doesNotMatch(html,/mistake-source|SRA 官方|Revise SQE|QLTS School/,'No source groups or source labels');
  const correctedOnly={...data,mistakes:data.mistakes.map(mistake=>({...mistake,lastCorrect:true}))};
