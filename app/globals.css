@@ -176,8 +176,7 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
 .library-page .subject-top{align-items:flex-start;margin-bottom:4px;gap:12px}
 .library-page .subject-top h3{margin:0;font-size:17px;line-height:1.6}
 .library-page .subject-available,.library-page .subject-empty{white-space:nowrap;font-size:13px;line-height:1.5;padding:3px 7px}
-.library-page .subject-en{margin:0 0 14px;font-size:14px;line-height:1.6;flex:1}
-.library-page .subject-bottom{padding-top:10px;font-size:13px}
+.library-page .subject-en{margin:0;font-size:14px;line-height:1.6;flex:1}
 .library-page .subject-detail{margin-top:18px;padding:20px}
 .library-page .compact-chapter-section{margin-top:18px;padding-top:0;border-top:0}
 .compact-chapter-section .chapter-card{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px;padding:12px 14px}
