@@ -61,6 +61,11 @@ const chapterNotes:Record<string,string[]>={
  'legal-services-lss-06':['anti-money-laundering','ethics-rule-of-law'],
  'legal-services-lss-07':['financial-services'],
  'legal-services-lss-08':['fees-legal-aid'],
+ 'legal-services-sra-regulation':['legal-services','ethics-edi'],
+ 'legal-services-aml':['anti-money-laundering','ethics-rule-of-law'],
+ 'legal-services-financial-services':['financial-services'],
+ 'legal-services-funding':['fees-legal-aid'],
+ 'legal-services-sra-principles':['ethics-overview'],
  'accounts-01':['solicitors-accounts'],
  'accounts-02':['double-entry'],
  'accounts-03':['solicitors-accounts','double-entry'],
@@ -72,6 +77,7 @@ const chapterNotes:Record<string,string[]>={
 };
 
 const ethicsAll=['ethics-overview','ethics-rule-of-law','ethics-public-confidence','ethics-independence','ethics-honesty','ethics-integrity','ethics-edi','ethics-best-interests'];
+chapterNotes['legal-services-code-of-conduct']=ethicsAll;
 for(const prefix of ['legal-services-ethics','flk2-ethics']){
  chapterNotes[`${prefix}-01`]=['ethics-overview'];
  chapterNotes[`${prefix}-02`]=ethicsAll;
@@ -135,6 +141,10 @@ function fallbackIds(q:Question,text:string):string[]{
 
 export function newglawNotesForQuestion(q:Question):NewglawNote[]{
  const text=[q.stem,q.stemZh,q.ask,q.askZh,q.explanation?.topic,...(q.topicTags??[])].filter(Boolean).join(' ').toLowerCase();
- const ids=q.chapterId&&chapterNotes[q.chapterId]?chapterNotes[q.chapterId]:fallbackIds(q,text);
+ // Preserve the more specific practice-context notes when old ethics chapters
+ // are combined, while all other remapped questions use their reviewed topic.
+ const ethicsChapter=q.chapterId==='legal-services-code-of-conduct'&&q.originalChapterId&&/^(legal-services-ethics|flk2-ethics)-0[2-8]$/.test(q.originalChapterId)?q.originalChapterId:undefined;
+ const chapterId=ethicsChapter??q.chapterId;
+ const ids=chapterId&&chapterNotes[chapterId]?chapterNotes[chapterId]:fallbackIds(q,text);
  return [...new Set(ids)].map(id=>notes[id]).filter((item):item is NewglawNote=>!!item);
 }

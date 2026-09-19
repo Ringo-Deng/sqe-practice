@@ -22,6 +22,7 @@ import reviseReferences from './revise-assessment-references.json';
 import questionTextbookLinks from './question-textbook-links.json';
 import textbookReviews from './contract-textbook-reviews.json';
 import type {Question,Explanation} from './study-types';
+import {classifyLegalQuestion} from './legal-syllabus';
 type FullQuestion=Question&{explanation:Explanation};
 type TextbookReview={chapterId:string;relatedChapterIds?:string[];topicTags:string[];explanation:Partial<Explanation>;quickPoints?:{term:string;zh:string;en:string}[]};
 type QuestionTextbookLink={chapterId?:string;textbookReferences:NonNullable<Explanation['textbookReferences']>};
@@ -59,5 +60,5 @@ export const questions:FullQuestion[]=[...(officialQuestions as FullQuestion[]),
  if(!review)return linked;
  const {explanation,quickPoints,...classification}=review;
  return {...linked,...classification,explanation:{...linked.explanation,...explanation},knowledge:linked.knowledge?{...linked.knowledge,...(quickPoints?{points:quickPoints}:{}),warning:{...linked.knowledge.warning,zh:explanation.warning??linked.knowledge.warning.zh}}:undefined};
-});
+}).map(classifyLegalQuestion);
 export function publicQuestions(){return questions.map(({explanation,knowledge,...q})=>q);}

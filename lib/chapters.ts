@@ -1,4 +1,5 @@
 import type {Question} from './study-types';
+import {legalSyllabusChapters} from './legal-syllabus';
 
 export type Chapter={
  id:string;
@@ -9,6 +10,7 @@ export type Chapter={
  number:number;
  zh:string;
  en:string;
+ kind?:'syllabus';
 };
 
 type ChapterBook={
@@ -260,7 +262,7 @@ const chapterBooks:ChapterBook[]=[
  },
 ];
 
-export const chapters:Chapter[]=chapterBooks.flatMap(book=>book.items.map(([number,zh,en])=>({
+export const textbookChapters:Chapter[]=chapterBooks.flatMap(book=>book.items.map(([number,zh,en])=>({
  id:`${book.idPrefix}-${String(number).padStart(2,'0')}`,
  subjectId:book.subjectId,
  bookId:book.bookId,
@@ -270,7 +272,11 @@ export const chapters:Chapter[]=chapterBooks.flatMap(book=>book.items.map(([numb
  zh,
  en,
 })));
-export const chapterById=(id?:string)=>chapters.find(c=>c.id===id);
+export const chapters:Chapter[]=[
+ ...textbookChapters.filter(chapter=>chapter.subjectId!=='legal-services'&&chapter.subjectId!=='flk2-ethics'),
+ ...legalSyllabusChapters,
+];
+export const chapterById=(id?:string)=>chapters.find(c=>c.id===id)??textbookChapters.find(c=>c.id===id);
 export function filterQuestions<T extends Pick<Question,'sourceId'|'subjectId'|'chapterId'|'sourceSet'>>(items:T[],filter:{sourceId?:string;subjectId?:string;chapterId?:string;sourceSet?:string}){
  return items.filter(q=>(!filter.sourceId||filter.sourceId==='all'||q.sourceId===filter.sourceId)&&(!filter.subjectId||q.subjectId===filter.subjectId)&&(!filter.chapterId||q.chapterId===filter.chapterId)&&(!filter.sourceSet||q.sourceSet===filter.sourceSet));
 }
