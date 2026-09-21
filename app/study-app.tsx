@@ -149,6 +149,6 @@ export default function StudyApp({authenticated,standalone=false}:{authenticated
  const[readerSearch,setReaderSearch]=useState<string|null>(null);
  useEffect(()=>{setReaderSearch(window.location.search);},[]);
  if(readerSearch===null)return <div className="empty" role="status"><Loader2 className="animate-spin" size={24}/><p>正在打开…</p></div>;
- if(new URLSearchParams(readerSearch).get('reader')==='textbook')return <TextbookReadingPage guest={standalone||!authenticated} search={readerSearch}/>;
+ if(['textbook','mindmap'].includes(new URLSearchParams(readerSearch).get('reader')??''))return <TextbookReadingPage guest={standalone||!authenticated} search={readerSearch}/>;
  return <StudyContent authenticated={authenticated} standalone={standalone}/>;
 }

@@ -52,9 +52,10 @@ export function mindMapsForQuestion(question:Pick<Question,'id'|'subjectId'|'cha
  }));
 }
 
-export function mindMapPageUrl(id?:string,top?:number,focusLabel?:string){
- if(!id)return 'mindmaps/index.html';
- const params=new URLSearchParams({map:id});
+export function mindMapPageUrl(id?:string,top?:number,focusLabel?:string,sourceQuestionId?:string){
+ const params=new URLSearchParams({reader:'mindmap'});
+ if(id)params.set('map',id);
+ if(sourceQuestionId)params.set('question',sourceQuestionId);
  if(top!==undefined){params.set('top',String(top));if(focusLabel)params.set('focus',focusLabel);}
- return `mindmaps/index.html?${params}`;
+ return `?${params}`;
 }

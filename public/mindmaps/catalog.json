@@ -5,7 +5,9 @@
     "en": "Ethics and Professional Conduct",
     "group": "通用",
     "file": "ethics.pdf",
-    "height": 11563
+    "height": 11562.96,
+    "width": 1657.91992,
+    "sha256": "ad5a95365b76b1d95a40f60bf86d942a83f9eaa2ad703a91961aa9a1971fdae9"
   },
   {
     "id": "business",
@@ -13,7 +15,9 @@
     "en": "Business Law and Practice",
     "group": "FLK1",
     "file": "business.pdf",
-    "height": 11148
+    "height": 11148,
+    "width": 1699.9199,
+    "sha256": "9ac5be2e5748d359f969b9b8151a2950f9b70574f9a1b7c461da53db57ec929b"
   },
   {
     "id": "legal-system",
@@ -21,7 +25,9 @@
     "en": "Legal System of England and Wales & Constitution",
     "group": "FLK1",
     "file": "legal-system.pdf",
-    "height": 10354
+    "height": 10354.0801,
+    "width": 1583.03992,
+    "sha256": "90dccbdc30c1aeb76eeef0148193a6743130c1c3d599446cd3a3198d77849076"
   },
   {
     "id": "contract",
@@ -29,7 +35,9 @@
     "en": "Contract Law",
     "group": "FLK1",
     "file": "contract.pdf",
-    "height": 9066
+    "height": 9066,
+    "width": 1468.07996,
+    "sha256": "301227e2fda9033348bc9b96bfe68b828c8dd245ce3b51f41c777a27ed54a776"
   },
   {
     "id": "dispute",
@@ -37,7 +45,9 @@
     "en": "Dispute Resolution",
     "group": "FLK1",
     "file": "dispute.pdf",
-    "height": 13469
+    "height": 13469.04,
+    "width": 1491.12,
+    "sha256": "131d775dcf47255b6bcbd4ab5dc7c29934e0d9344ad53ba7dd5016f7d8e4e9c3"
   },
   {
     "id": "tort",
@@ -45,7 +55,9 @@
     "en": "Tort Law",
     "group": "FLK1",
     "file": "tort.pdf",
-    "height": 11329
+    "height": 11328.96,
+    "width": 1343.03992,
+    "sha256": "66540adf7126a47a006929936f806f7766e1bbd15851af75dae8f4acae93154a"
   },
   {
     "id": "criminal-law",
@@ -53,7 +65,9 @@
     "en": "Criminal Law",
     "group": "FLK2",
     "file": "criminal-law.pdf",
-    "height": 12808
+    "height": 12808.0801,
+    "width": 1452.95996,
+    "sha256": "72a34cd961e2122ecc649c444eb16a812c4ca1fbad3d111560a070418b384b15"
   },
   {
     "id": "criminal-practice",
@@ -61,7 +75,9 @@
     "en": "Criminal Practice",
     "group": "FLK2",
     "file": "criminal-practice.pdf",
-    "height": 19449
+    "height": 19449.119,
+    "width": 1450.07996,
+    "sha256": "d35bf38c4891fdb980979e6339c09da72c0420b4e9208ef650854b95fa74688b"
   },
   {
     "id": "land-property",
@@ -69,7 +85,9 @@
     "en": "Land Law & Property Practice",
     "group": "FLK2",
     "file": "land-property.pdf",
-    "height": 19233
+    "height": 19233.119,
+    "width": 1333.91992,
+    "sha256": "5ac5e636c6317beb42a681d5b505254b803ba53fae34fb68dcc3b0f14ed20106"
   },
   {
     "id": "trusts",
@@ -77,7 +95,9 @@
     "en": "Trust Law",
     "group": "FLK2",
     "file": "trusts.pdf",
-    "height": 9489
+    "height": 9489.1201,
+    "width": 1347.12,
+    "sha256": "9a40d2fb1274b236896931784344fa6ad50574ff64853198e2276918d1116285"
   },
   {
     "id": "wills",
@@ -85,7 +105,9 @@
     "en": "Wills and the Administration of Estates",
     "group": "FLK2",
     "file": "wills.pdf",
-    "height": 19563
+    "height": 19563.119,
+    "width": 1616.88,
+    "sha256": "85ea44068336920da270459a66ad6e8aae898f1ec6a5bd26e4cb98c020725401"
   },
   {
     "id": "taxation",
@@ -93,6 +115,8 @@
     "en": "Taxation",
     "group": "专题",
     "file": "taxation.pdf",
-    "height": 2472
+    "height": 2472,
+    "width": 1716,
+    "sha256": "c7d22980c0f8a397deed0c93c16f8f873913b38492109eb3d1387d362d5b80e7"
   }
 ]
