@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fb">
+  <title>思维导图 · SQE Practice</title>
+  <link rel="stylesheet" href="./reader.css">
+  <script src="./reader.js" defer></script>
+</head>
+<body>
+  <div class="reader-shell">
+    <header class="reader-header">
+      <a class="home-link" href="../" aria-label="返回 SQE 刷题室"><span class="brand-mark">S</span><span><strong>SQE Practice</strong><small>返回刷题室</small></span></a>
+      <div class="header-title"><span>学习资料</span><span class="divider">/</span><strong>思维导图</strong></div>
+      <a class="back-link" href="../">返回刷题室</a>
+    </header>
+    <div class="reader-layout">
+      <aside class="catalog" aria-label="思维导图目录">
+        <div class="catalog-intro"><span class="eyebrow">STUDY MAPS</span><h1>思维导图</h1><p>按科目打开原始导图 PDF，使用阅读器工具栏放大、搜索和滚动。</p></div>
+        <nav id="map-list" aria-label="选择思维导图"></nav>
+      </aside>
+      <main class="reader-main">
+        <div class="mobile-select"><label for="map-select">选择导图</label><select id="map-select"><option value="">全部导图</option></select></div>
+        <section id="landing" class="landing" aria-labelledby="landing-title"><span class="eyebrow">12 份导图</span><h2 id="landing-title">选择一份导图开始阅读</h2><p>职业道德适用于多个科目；土地法与房地产实务收录在同一份导图中。提供的资料没有独立的律师账目导图。</p><div id="landing-cards" class="landing-cards"></div></section>
+        <section id="document-panel" class="document-panel" aria-labelledby="document-title" hidden>
+          <div class="document-toolbar"><div class="document-heading"><span id="document-group" class="map-group"></span><h2 id="document-title"></h2><p id="document-en"></p></div><a id="pdf-link" class="pdf-link" href="#" target="_blank" rel="noopener">单独打开 PDF ↗</a></div>
+          <div class="pdf-frame"><iframe id="pdf-viewer" title="思维导图 PDF" referrerpolicy="no-referrer"></iframe></div>
+        </section>
+        <p id="load-error" class="load-error" role="alert" hidden>导图目录暂时无法载入，请刷新页面重试。</p>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

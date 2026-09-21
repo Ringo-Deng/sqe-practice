@@ -75,6 +75,8 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
 .practice-workspace .review-footer{padding:14px 28px;gap:10px 16px;background:#fff}
 .review-footer .textbook-access{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:0}
 .review-footer .textbook-link{width:auto;min-height:36px;height:auto;padding:8px 12px;gap:7px;font-size:14px;line-height:1.4;background:#fff;box-shadow:none}
+.review-footer .mindmap-link{border-color:#bed8d2;background:#eff8f5;color:#275d55;text-decoration:none}
+.review-footer .mindmap-link:hover{border-color:#83b5a8;background:#e4f4ef;color:#1e5148}
 .review-footer .back-to-question{margin-left:auto;color:#617795}
 /* Compact answer explanations; preserve the original publisher review layout. */
 .answer-review.compact-review .review-body{padding:16px 22px}

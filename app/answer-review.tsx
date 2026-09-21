@@ -8,6 +8,7 @@ import {preloadTextbookPage} from '@/lib/textbook-pdf';
 import {newglawNotesForQuestion} from '@/lib/newglaw-notes';
 import {OriginalAnswerReview} from './original-answer-review';
 import {NewglawKnowledgeNotes} from './newglaw-knowledge-notes';
+import {MindMapLinks} from './mindmap-links';
 
 function Terms({text,label=false}:{text:string;label?:boolean}){
  const readable=label?translateLegalLabel(text):explainLegalText(text);
@@ -39,7 +40,7 @@ export function AnswerReview({question:q,answer,onOpenTextbook}:{question:Questi
    <NewglawKnowledgeNotes notes={newglawNotes}/>
   </div>
   <footer className="review-footer">
-   {!!bookRefs.length&&<section className="textbook-access" aria-label="查阅本题对应教材">{bookRefs.map(ref=><Button key={ref.bookId} variant="outline" size="sm" className="textbook-link" title={`${ref.chapter} · PDF 第 ${ref.pageNumbers[0]} 页起`} onPointerEnter={()=>preloadTextbookPage(textbookById(ref.bookId)!,ref.pageNumbers[0])} onFocus={()=>preloadTextbookPage(textbookById(ref.bookId)!,ref.pageNumbers[0])} onClick={()=>onOpenTextbook(ref)}><BookOpen size={16}/>查阅 {textbookById(ref.bookId)!.shortTitle}</Button>)}</section>}
+   <section className="textbook-access" aria-label="查阅本题对应教材和思维导图">{bookRefs.map(ref=><Button key={ref.bookId} variant="outline" size="sm" className="textbook-link" title={`${ref.chapter} · PDF 第 ${ref.pageNumbers[0]} 页起`} onPointerEnter={()=>preloadTextbookPage(textbookById(ref.bookId)!,ref.pageNumbers[0])} onFocus={()=>preloadTextbookPage(textbookById(ref.bookId)!,ref.pageNumbers[0])} onClick={()=>onOpenTextbook(ref)}><BookOpen size={16}/>查阅 {textbookById(ref.bookId)!.shortTitle}</Button>)}<MindMapLinks question={q}/></section>
    <Button variant="ghost" size="sm" className="back-to-question" onClick={()=>document.getElementById('current-question')?.scrollIntoView({block:'start'})}><ArrowUp size={14}/>回到题目</Button>
    <div className="review-topic-meta" aria-label="本题考点与标签">
     <div className="tested-topic">本题考查 · <Terms text={e.topic} label/></div>

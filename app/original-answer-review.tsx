@@ -8,6 +8,7 @@ import {preloadTextbookPage} from '@/lib/textbook-pdf';
 import {newglawNotesForQuestion} from '@/lib/newglaw-notes';
 import {NewglawKnowledgeNotes} from './newglaw-knowledge-notes';
 import {normalizeExplanationText} from '@/lib/question-text';
+import {MindMapLinks} from './mindmap-links';
 
 export function OriginalAnswerReview({question:q,onOpenTextbook}:{question:Question;onOpenTextbook:(ref:LinkedTextbookReference)=>void}){
  const e=q.explanation!;
@@ -24,8 +25,8 @@ export function OriginalAnswerReview({question:q,onOpenTextbook}:{question:Quest
    {showZh&&storedZh&&<section className="analysis-section original-analysis translated-analysis" lang="zh-CN">{storedZh.split(/\n\s*\n/).map((paragraph,index)=><p key={index}>{paragraph}</p>)}</section>}
    <NewglawKnowledgeNotes notes={newglawNotes}/>
   </div>
-  {!!refs.length&&<footer className="review-footer">
-   <section className="textbook-access" aria-label="查阅对应教材">{refs.map(ref=><Button key={ref.bookId} variant="outline" size="sm" className="textbook-link" title={`${ref.chapter} · PDF 第 ${ref.pageNumbers[0]} 页起`} onPointerEnter={()=>preloadTextbookPage(textbookById(ref.bookId)!,ref.pageNumbers[0])} onFocus={()=>preloadTextbookPage(textbookById(ref.bookId)!,ref.pageNumbers[0])} onClick={()=>onOpenTextbook(ref)}><BookOpen size={16}/>查阅 {textbookById(ref.bookId)!.shortTitle}</Button>)}</section>
-  </footer>}
+  <footer className="review-footer">
+   <section className="textbook-access" aria-label="查阅对应教材和思维导图">{refs.map(ref=><Button key={ref.bookId} variant="outline" size="sm" className="textbook-link" title={`${ref.chapter} · PDF 第 ${ref.pageNumbers[0]} 页起`} onPointerEnter={()=>preloadTextbookPage(textbookById(ref.bookId)!,ref.pageNumbers[0])} onFocus={()=>preloadTextbookPage(textbookById(ref.bookId)!,ref.pageNumbers[0])} onClick={()=>onOpenTextbook(ref)}><BookOpen size={16}/>查阅 {textbookById(ref.bookId)!.shortTitle}</Button>)}<MindMapLinks question={q}/></section>
+  </footer>
  </article>;
 }
