@@ -3,6 +3,7 @@ import {ArrowRight,CheckCheck,ChevronRight,RotateCcw} from 'lucide-react';
 import {Button} from '@/components/ui/button';
 import {subjects,subjectById} from '@/lib/subjects';
 import {normalizeInlineQuestionText} from '@/lib/question-text';
+import {systemQuestionNumber} from '@/lib/system-question-number';
 import type {Question,StudyData} from '@/lib/study-types';
 
 type MistakeEntry={mistake:StudyData['mistakes'][number];question:Question|undefined};
@@ -46,7 +47,7 @@ export function MistakeNotebook({data,busy,onRetry,onPractice}:Props){
      </summary>
      <div className="mistake-subject-body">
       {entries.map(({mistake,question})=><article className="mistake-item" key={mistake.questionId}>
-       <div className="mistake-item-meta"><span>错过 {mistake.wrongCount} 次</span></div>
+       <div className="mistake-item-meta"><span>系统题号：{question?systemQuestionNumber(question.id):'—'}</span><span>错过 {mistake.wrongCount} 次</span></div>
        <p>{question?normalizeInlineQuestionText(question.stem):'题目暂不可用'}</p>
        <Button variant="outline" size="sm" disabled={busy||!question} onClick={()=>onRetry(mistake.questionId)}>重做这道题<ArrowRight size={15}/></Button>
       </article>)}

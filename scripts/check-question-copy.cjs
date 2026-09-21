@@ -5,7 +5,7 @@ const ts=require('typescript');
 require.extensions['.ts']=(module,file)=>module._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText,file);
 const {formatQuestionForCopy}=require('../lib/question-copy.ts');
 const question={
- id:'revise-fixture-7',number:7,sourceId:'revise',sourceTitle:'Fixture Practice Assessment',sourceSet:'fixture-set',sourceSession:2,sourcePages:[12],subjectId:'contract',
+ id:'revise-flk1-2025-26-s2-007',number:7,sourceId:'revise',sourceTitle:'Fixture Practice Assessment',sourceSet:'fixture-set',sourceSession:2,sourcePages:[12],subjectId:'contract',
  stem:'A client\n asks for advice.\n\nA solicitor responds.',stemZh:'QUESTION_TRANSLATION',ask:'Which option\n is correct?',askZh:'',
  options:[{id:'A',en:'The first\n option.',zh:''},{id:'B',en:'The second option.',zh:''}],
  knowledge:{points:[{term:'KNOWLEDGE_BODY',zh:'KNOWLEDGE_BODY',en:''}],warning:{zh:'KNOWLEDGE_WARNING',en:''},sources:[]},
@@ -24,6 +24,7 @@ for(const text of ['PUBLISHER_REASONING','TRANSLATED_REASONING','AI_RULE','AI_OP
 assert.ok(hidden.includes('我的选择：A'));
 assert.ok(hidden.includes('A. The first option.'));
 assert.ok(hidden.includes('Session 2 · Q7'));
+assert.ok(hidden.includes('系统题号：317'));
 assert.ok(hidden.endsWith('我的疑问：'));
 assert.doesNotThrow(()=>formatQuestionForCopy({...question,get explanation(){throw Error('The answer must not be accessed');}},{includeAnswer:false}));
 assert.ok(formatQuestionForCopy({...question,explanation:undefined},{includeAnswer:true}).includes('我的选择：未作答'));

@@ -14,6 +14,7 @@ import {dueCards,REVIEW_INTERVALS,nextReview,reviewDate,wordKey} from '@/lib/voc
 import type {VocabularyCard,VocabularyData,VocabularyDraft,Rating} from '@/lib/vocabulary';
 import type {Question} from '@/lib/study-types';
 import {sourceById,questionNumberLabel} from '@/lib/question-sources';
+import {systemQuestionNumber} from '@/lib/system-question-number';
 import {subjectById} from '@/lib/subjects';
 
 function browserZone(){return Intl.DateTimeFormat().resolvedOptions().timeZone||'Asia/Shanghai';}
@@ -101,7 +102,7 @@ export function VocabularyEditor({draft,onClose,onChange,controller,question}:{d
  <div className="vocab-field"><Label htmlFor="vocab-word">生词</Label><Input autoFocus id="vocab-word" value={draft.word} maxLength={200} required onChange={e=>change('word',e.target.value)} placeholder="例如：consideration"/></div>
  <div className="vocab-field"><Label htmlFor="vocab-meaning">释义 / 我的理解 <span>可稍后补充</span></Label><Textarea id="vocab-meaning" value={draft.meaning} maxLength={4000} rows={3} onChange={e=>change('meaning',e.target.value)} placeholder="用自己的话记下含义或容易混淆的地方"/></div>
  <div className="vocab-field"><Label htmlFor="vocab-example">题目原句 / 例句</Label><Textarea id="vocab-example" value={draft.example} maxLength={6000} rows={3} onChange={e=>change('example',e.target.value)} placeholder="选词时自动带入原句，也可以手动补充"/></div>
- {question&&<p className="vocab-source-note"><BookOpen size={14}/>{sourceById(question.sourceId)?.name} · {questionNumberLabel(question)} · {subjectById(question.subjectId)?.zh}</p>}
+ {question&&<p className="vocab-source-note"><BookOpen size={14}/>{sourceById(question.sourceId)?.name} · {questionNumberLabel(question)} · 系统题号：{systemQuestionNumber(question.id)} · {subjectById(question.subjectId)?.zh}</p>}
  {controller.error&&<p role="alert" className="vocab-error">{controller.error}</p>}
  {duplicate&&<div className="vocab-duplicate" role="status">这个词已在生词表中，原有释义和复习进度已保留。<Button type="button" variant="outline" size="sm" onClick={()=>{const card=controller.data?.cards.find(c=>c.id===duplicate);if(card){onChange(cardDraft(card));setDuplicate(null);}}}>查看已有词</Button></div>}
  <DialogFooter><Button type="button" variant="outline" disabled={controller.busy} onClick={onClose}>取消</Button><Button type="submit" disabled={controller.busy||!draft.word.trim()}>{controller.busy?<Loader2 size={16} className="animate-spin"/>:<Plus size={16}/>}保存{draft.revision===undefined?'到生词表':''}</Button></DialogFooter>
@@ -166,5 +167,5 @@ export function VocabularySelection({container,question,enabled,onAdd}:{containe
 }
 
 export function VocabularySource({question,onClose}:{question:Question|null;onClose:()=>void}){
- return <Dialog open={!!question} onOpenChange={open=>{if(!open)onClose();}}><DialogContent className="vocab-source-dialog"><DialogHeader><DialogTitle>来源题目</DialogTitle><DialogDescription>{question?`${sourceById(question.sourceId)?.name} · ${questionNumberLabel(question)} · ${subjectById(question.subjectId)?.zh}`:''}</DialogDescription></DialogHeader>{question&&<div className="vocab-source-body"><p className="question-stem" lang="en">{question.stem}</p><p className="question-ask" lang="en">{question.ask}</p><ol>{question.options.map(o=><li key={o.id}><b>{o.id}</b><span lang="en">{o.en}</span></li>)}</ol></div>}<DialogFooter><Button variant="outline" onClick={onClose}>返回生词表</Button></DialogFooter></DialogContent></Dialog>;
+ return <Dialog open={!!question} onOpenChange={open=>{if(!open)onClose();}}><DialogContent className="vocab-source-dialog"><DialogHeader><DialogTitle>来源题目</DialogTitle><DialogDescription>{question?`${sourceById(question.sourceId)?.name} · ${questionNumberLabel(question)} · 系统题号：${systemQuestionNumber(question.id)} · ${subjectById(question.subjectId)?.zh}`:''}</DialogDescription></DialogHeader>{question&&<div className="vocab-source-body"><p className="question-stem" lang="en">{question.stem}</p><p className="question-ask" lang="en">{question.ask}</p><ol>{question.options.map(o=><li key={o.id}><b>{o.id}</b><span lang="en">{o.en}</span></li>)}</ol></div>}<DialogFooter><Button variant="outline" onClick={onClose}>返回生词表</Button></DialogFooter></DialogContent></Dialog>;
 }

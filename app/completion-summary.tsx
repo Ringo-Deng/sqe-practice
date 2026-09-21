@@ -3,6 +3,7 @@
 import {ArrowRight,RotateCcw} from 'lucide-react';
 import {Button} from '@/components/ui/button';
 import type {Session} from '@/lib/study-types';
+import {systemQuestionNumber} from '@/lib/system-question-number';
 
 export function CompletionSummary({session,label,busy,hasPendingMistakes,onNavigate,onRetry,onNextChapter,nextChapterAvailable,nextChapterTitle}:{
  session:Session;
@@ -37,7 +38,7 @@ export function CompletionSummary({session,label,busy,hasPendingMistakes,onNavig
      const result=session.answers[id];
      const state=result?.selected?(result.correct?'right':'wrong'):'';
      const status=result?.selected?(result.correct?'答对':'答错'):'未答';
-     return <button key={id} type="button" className={`q-chip ${state}`} disabled={busy} aria-label={`回顾第${index+1}题，${status}`} title={`第 ${index+1} 题 · ${status}`} onClick={()=>onNavigate(index)}>{String(index+1).padStart(2,'0')}</button>;
+     return <button key={id} type="button" className={`q-chip ${state}`} disabled={busy} aria-label={`回顾第${index+1}题，系统题号 ${systemQuestionNumber(id)}，${status}`} title={`第 ${index+1} 题 · 系统题号 ${systemQuestionNumber(id)} · ${status}`} onClick={()=>onNavigate(index)}>{String(index+1).padStart(2,'0')}</button>;
     })}
    </div>
   </section>

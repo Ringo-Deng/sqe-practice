@@ -28,6 +28,7 @@ const qltsChapterMatches=readJson('lib/qlts-chapter-matches.json');
 const qltsCurrentLawReviews=[readJson('lib/qlts-mock-exams-6-10-removed.json'),readJson('lib/qlts-mock-exams-11-15-removed.json'),readJson('lib/qlts-mock-exams-16-20-removed.json'),readJson('lib/qlts-mock-exams-21-30-removed.json')];
 const reviseTranslations=readJson('lib/revise-assessment-translations.json');
 const staticTranslations=readJson('lib/static-question-translations.json');
+const questionNumbers=readJson('lib/question-numbers.json');
 const textbooks=readJson('lib/textbooks.json').filter(book=>book.id.startsWith('revise-'));
 
 assert.equal(datasets.reviseFlk1.length,180);
@@ -79,6 +80,10 @@ for(const mock of qltsSource.mocks){
 const all=[...legacy,...datasets.qltsMocks];
 assert.equal(all.length,2996);
 assert.equal(new Set(all.map(question=>question.id)).size,all.length);
+const reservedNumbers=Object.values(questionNumbers);
+assert.ok(reservedNumbers.every(number=>Number.isSafeInteger(number)&&number>0),'Invalid system question number');
+assert.equal(new Set(reservedNumbers).size,reservedNumbers.length,'Duplicate system question number');
+for(const question of all)assert.ok(Object.hasOwn(questionNumbers,question.id),`${question.id}: missing system question number`);
 for(const question of all){
  assert.ok(question.stem.trim()||question.sourceId==='qlts',`${question.id}: missing stem`);
  assert.ok(question.ask.trim(),`${question.id}: missing ask`);

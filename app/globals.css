@@ -39,6 +39,7 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
 .practice-workspace .question-top{padding:12px 28px;flex-wrap:wrap}
 .practice-workspace .question-number{margin:0;font-size:14px;font-weight:400;white-space:nowrap}
 .practice-workspace .question-number b{font-size:22px}
+.question-system-number{display:inline-block;margin-left:14px;font-size:13px;font-weight:500;color:#536783}
 .question-controls{display:flex;align-items:center;justify-content:flex-end;gap:12px;flex-wrap:wrap;margin-left:auto}
 .question-progress-popover{width:min(340px,calc(100vw - 24px));padding:18px;border-radius:12px;box-shadow:0 12px 34px #20345424}
 .question-progress-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:14px}

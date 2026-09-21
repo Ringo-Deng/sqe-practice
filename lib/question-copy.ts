@@ -1,6 +1,7 @@
 import type {Question} from './study-types';
 import {questionNumberLabel,sourceById} from './question-sources';
 import {normalizeExplanationText,normalizeInlineQuestionText} from './question-text';
+import {systemQuestionNumber} from './system-question-number';
 
 export function formatQuestionForCopy(question:Question,{selected,includeAnswer}:{selected?:string;includeAnswer:boolean}):string{
  const inline=normalizeInlineQuestionText;
@@ -10,7 +11,8 @@ export function formatQuestionForCopy(question:Question,{selected,includeAnswer}
    `来源：${sourceById(question.sourceId)?.name??question.sourceId}`,
    question.sourceTitle?`题集：${inline(question.sourceTitle)}`:'',
    question.sourceSet?`题集 ID：${question.sourceSet}`:'',
-   `题号：${questionNumberLabel(question)} · ID：${question.id}`,
+   `系统题号：${systemQuestionNumber(question.id)}`,
+   `原题号：${questionNumberLabel(question)} · ID：${question.id}`,
    question.sourcePages?.length?`题目 PDF 页码：${question.sourcePages.join('、')}`:'',
   ].filter(Boolean).join('\n'),
   `题干（英文原文）：\n${normalizeExplanationText(question.stem)}`,
