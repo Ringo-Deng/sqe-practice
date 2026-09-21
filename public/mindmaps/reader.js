@@ -26,7 +26,7 @@ function showMap(id){
  const focus=new URLSearchParams(location.search).get('focus');
  const focusElement=document.getElementById('document-focus');
  focusElement.hidden=top===null;
- focusElement.textContent=top===null?'':`已定位到图内章节：${focus||map.title}`;
+ focusElement.textContent=top===null?'':`目标章节：${focus||map.title}`;
  const pdfFragment=top===null?'#zoom=125':`#zoom=125,0,${Math.max(0,top-90)}`;
  document.getElementById('pdf-link').href=`./${map.file}${pdfFragment}`;
  viewer.title=`${map.title}思维导图 PDF`;
