@@ -19,8 +19,9 @@ export function OriginalAnswerReview({question:q,onOpenTextbook}:{question:Quest
  return <article id="answer-review" className="answer-review publisher-review" aria-label="原书答案与解析">
   <h2 className="sr-only">原书答案与解析</h2>
   <div className="review-body">
-   {!!english&&!!storedZh&&<div className="review-language-control"><Button variant="ghost" size="sm" aria-pressed={showZh} onClick={()=>setShowZh(value=>!value)}><Languages size={16}/> {showZh?'显示英文':'显示中文'}</Button></div>}
-   {showZh&&storedZh?<section className="analysis-section original-analysis" lang="zh-CN">{storedZh.split(/\n\s*\n/).map((paragraph,index)=><p key={index}>{paragraph}</p>)}</section>:<section className="analysis-section original-analysis" lang="en">{english.split(/\n\s*\n/).map((paragraph,index)=><p key={index}>{paragraph}</p>)}</section>}
+   {!!english&&!!storedZh&&<div className="review-language-control"><Button variant="ghost" size="sm" aria-pressed={showZh} onClick={()=>setShowZh(value=>!value)}><Languages size={16}/> {showZh?'隐藏中文':'显示中文'}</Button></div>}
+   <section className="analysis-section original-analysis" lang="en">{english.split(/\n\s*\n/).map((paragraph,index)=><p key={index}>{paragraph}</p>)}</section>
+   {showZh&&storedZh&&<section className="analysis-section original-analysis translated-analysis" lang="zh-CN">{storedZh.split(/\n\s*\n/).map((paragraph,index)=><p key={index}>{paragraph}</p>)}</section>}
    <NewglawKnowledgeNotes notes={newglawNotes}/>
   </div>
   {!!refs.length&&<footer className="review-footer">

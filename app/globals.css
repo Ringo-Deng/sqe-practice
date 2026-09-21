@@ -70,6 +70,7 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
 .publisher-review .original-analysis{margin-top:4px}
 .publisher-review .original-analysis:first-child{margin-top:0}
 .publisher-review .original-analysis p:first-child{margin-top:0}
+.publisher-review .translated-analysis{margin-top:16px;padding-top:16px;border-top:1px solid #e9edf4}
 @media(max-width:650px){.answer-review.publisher-review .review-body{padding:14px}}
 .practice-workspace .review-footer{padding:14px 28px;gap:10px 16px;background:#fff}
 .review-footer .textbook-access{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:0}
