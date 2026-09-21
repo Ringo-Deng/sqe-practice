@@ -7448,5 +7448,2527 @@
       }
     ],
     "chapterId": "contract-05"
+  },
+  "revise-flk2-practice-s1-001": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 2: Formalities for the creation of trusts",
+        "pages": "25",
+        "pageNumbers": [
+          25
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-002": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 2: Pre-contract (1): deduction and investigation of title",
+        "pages": "21",
+        "pageNumbers": [
+          21
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-003": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 2: Client money and client accounts: part 1",
+        "pages": "21",
+        "pageNumbers": [
+          21
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-004": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 1: The nature and principles of land law",
+        "pages": "14",
+        "pageNumbers": [
+          14
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-005": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 6: Structure and content of a lease",
+        "pages": "80",
+        "pageNumbers": [
+          80
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-006": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 5: Ethics and professional conduct in criminal law and practice",
+        "pages": "65",
+        "pageNumbers": [
+          65
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-007": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 6: Non-fatal offences against the person",
+        "pages": "84",
+        "pageNumbers": [
+          84
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-008": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 1: The nature and principles of land law",
+        "pages": "14",
+        "pageNumbers": [
+          14
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-009": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 6: Purpose trusts",
+        "pages": "58",
+        "pageNumbers": [
+          58
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-010": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 5: Bills",
+        "pages": "55",
+        "pageNumbers": [
+          55
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-011": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 1: The nature and principles of land law",
+        "pages": "14",
+        "pageNumbers": [
+          14
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-012": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 6: Easements",
+        "pages": "73",
+        "pageNumbers": [
+          73
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-013": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 7: Trial procedure in the magistrates’ court and Crown Court",
+        "pages": "90",
+        "pageNumbers": [
+          90
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-014": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 5: Ethics and professional conduct in criminal law and practice",
+        "pages": "65",
+        "pageNumbers": [
+          65
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-015": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 5: Leasehold estates",
+        "pages": "58",
+        "pageNumbers": [
+          58
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-016": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 3: First hearings before the magistrates’ court",
+        "pages": "43",
+        "pageNumbers": [
+          43
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-017": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 3: Client money and client accounts: part 2",
+        "pages": "30",
+        "pageNumbers": [
+          30
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-018": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 2: SRA Code of Conduct",
+        "pages": "24",
+        "pageNumbers": [
+          24
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-019": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 1: Essential requirements for a valid will",
+        "pages": "15",
+        "pageNumbers": [
+          15
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-020": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 2: SRA Code of Conduct",
+        "pages": "24",
+        "pageNumbers": [
+          24
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-021": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 4: Exceptions to the maxim that equity will not assist a volunteer",
+        "pages": "41",
+        "pageNumbers": [
+          41
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-022": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 4: Freehold estates",
+        "pages": "48",
+        "pageNumbers": [
+          48
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-023": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 2: Bail applications",
+        "pages": "29",
+        "pageNumbers": [
+          29
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-024": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 5: Pre-completion, completion, and post-completion matters",
+        "pages": "67",
+        "pageNumbers": [
+          67
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-025": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 4: Freehold estates",
+        "pages": "48",
+        "pageNumbers": [
+          48
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-026": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 6: Non-fatal offences against the person",
+        "pages": "84",
+        "pageNumbers": [
+          84
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-027": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 2: Bail applications",
+        "pages": "29",
+        "pageNumbers": [
+          29
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-028": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 1: The three certainties",
+        "pages": "14",
+        "pageNumbers": [
+          14
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-029": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 2: SRA Code of Conduct",
+        "pages": "24",
+        "pageNumbers": [
+          24
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-030": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 1: Essential requirements for a valid will",
+        "pages": "15",
+        "pageNumbers": [
+          15
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-031": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 5: Beneficial entitlement",
+        "pages": "50",
+        "pageNumbers": [
+          50
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-032": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 2: Unregistered land",
+        "pages": "25",
+        "pageNumbers": [
+          25
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-033": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 9: Liability of strangers and the fiduciary relationship",
+        "pages": "81",
+        "pageNumbers": [
+          81
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-034": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 6: VAT and transfers",
+        "pages": "66",
+        "pageNumbers": [
+          66
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-035": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 9: Liability of strangers and the fiduciary relationship",
+        "pages": "81",
+        "pageNumbers": [
+          81
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-036": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 5: Pre-completion, completion, and post-completion matters",
+        "pages": "67",
+        "pageNumbers": [
+          67
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-037": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 2: Unregistered land",
+        "pages": "25",
+        "pageNumbers": [
+          25
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-038": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 5: Pre-completion, completion, and post-completion matters",
+        "pages": "67",
+        "pageNumbers": [
+          67
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-039": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 7: Freehold covenants",
+        "pages": "89",
+        "pageNumbers": [
+          89
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-040": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 6: Non-fatal offences against the person",
+        "pages": "84",
+        "pageNumbers": [
+          84
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-041": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 4: The draft contract and exchange of contracts",
+        "pages": "54",
+        "pageNumbers": [
+          54
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-042": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 9: Appeals procedure",
+        "pages": "116",
+        "pageNumbers": [
+          116
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-043": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 6: Non-fatal offences against the person",
+        "pages": "84",
+        "pageNumbers": [
+          84
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-044": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 3: Registered land",
+        "pages": "35",
+        "pageNumbers": [
+          35
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-045": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 5: Bills",
+        "pages": "55",
+        "pageNumbers": [
+          55
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-046": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 10: Trustees",
+        "pages": "91",
+        "pageNumbers": [
+          91
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-047": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 7: Theft offences",
+        "pages": "100",
+        "pageNumbers": [
+          100
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-048": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 7: Theft offences",
+        "pages": "100",
+        "pageNumbers": [
+          100
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-049": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 4: Exceptions to the maxim that equity will not assist a volunteer",
+        "pages": "41",
+        "pageNumbers": [
+          41
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-050": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 7: Conveyancing accounts and other accounts",
+        "pages": "86",
+        "pageNumbers": [
+          86
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-051": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 8: Sentencing",
+        "pages": "103",
+        "pageNumbers": [
+          103
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-052": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 2: The personal representatives",
+        "pages": "22",
+        "pageNumbers": [
+          22
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-053": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 8: Sentencing",
+        "pages": "103",
+        "pageNumbers": [
+          103
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-054": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 7: Theft offences",
+        "pages": "100",
+        "pageNumbers": [
+          100
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-055": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 9: Co-ownership",
+        "pages": "120",
+        "pageNumbers": [
+          120
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-056": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 5: Pre-completion, completion, and post-completion matters",
+        "pages": "67",
+        "pageNumbers": [
+          67
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-057": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 3: Client money and client accounts: part 2; Chapter 6: VAT and transfers; Chapter 7: Conveyancing accounts and other accounts",
+        "pages": "30、66、86",
+        "pageNumbers": [
+          30,
+          66,
+          86
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-058": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 9: Co-ownership",
+        "pages": "120",
+        "pageNumbers": [
+          120
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-059": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 3: Pre-contract (2): searches and enquiries and planning matters",
+        "pages": "37",
+        "pageNumbers": [
+          37
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-060": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 7: Theft offences",
+        "pages": "100",
+        "pageNumbers": [
+          100
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-061": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 9: Liability of strangers and the fiduciary relationship",
+        "pages": "81",
+        "pageNumbers": [
+          81
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-062": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 10: Youth Court procedure and hearings",
+        "pages": "125",
+        "pageNumbers": [
+          125
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-063": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 3: Client money and client accounts: part 2",
+        "pages": "30",
+        "pageNumbers": [
+          30
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-064": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 9: Co-ownership",
+        "pages": "120",
+        "pageNumbers": [
+          120
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-065": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 8: Commercial leasehold remedies",
+        "pages": "112",
+        "pageNumbers": [
+          112
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-066": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 10: Property taxation",
+        "pages": "139",
+        "pageNumbers": [
+          139
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-067": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 2: SRA Code of Conduct",
+        "pages": "24",
+        "pageNumbers": [
+          24
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-068": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 9: Co-ownership",
+        "pages": "120",
+        "pageNumbers": [
+          120
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-069": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 4: Revocation of wills",
+        "pages": "37",
+        "pageNumbers": [
+          37
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-070": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 2: SRA Code of Conduct",
+        "pages": "24",
+        "pageNumbers": [
+          24
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-071": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 5: Case management and pre-trial hearings",
+        "pages": "63",
+        "pageNumbers": [
+          63
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-072": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 9: Liability of strangers and the fiduciary relationship",
+        "pages": "81",
+        "pageNumbers": [
+          81
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-073": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 2: SRA Code of Conduct",
+        "pages": "24",
+        "pageNumbers": [
+          24
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-074": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 10: Trustees",
+        "pages": "91",
+        "pageNumbers": [
+          91
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-075": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 3: First hearings before the magistrates’ court",
+        "pages": "43",
+        "pageNumbers": [
+          43
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-076": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 2: SRA Code of Conduct",
+        "pages": "24",
+        "pageNumbers": [
+          24
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-077": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 10: Trustees",
+        "pages": "91",
+        "pageNumbers": [
+          91
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-078": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 4: Interest",
+        "pages": "40",
+        "pageNumbers": [
+          40
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-079": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 4: Revocation of wills",
+        "pages": "37",
+        "pageNumbers": [
+          37
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-080": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 3: Constitution of trusts",
+        "pages": "33",
+        "pageNumbers": [
+          33
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-081": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 6: Principles and procedures to admit and exclude evidence",
+        "pages": "72",
+        "pageNumbers": [
+          72
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-082": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 8: Sentencing",
+        "pages": "103",
+        "pageNumbers": [
+          103
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-083": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 6: Easements",
+        "pages": "73",
+        "pageNumbers": [
+          73
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-084": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 3: Pre-contract (2): searches and enquiries and planning matters",
+        "pages": "37",
+        "pageNumbers": [
+          37
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-085": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 5: Beneficial entitlement",
+        "pages": "50",
+        "pageNumbers": [
+          50
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-086": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 6: Easements",
+        "pages": "73",
+        "pageNumbers": [
+          73
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-087": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 3: Pre-contract (2): searches and enquiries and planning matters",
+        "pages": "37",
+        "pageNumbers": [
+          37
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-088": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 3: First hearings before the magistrates’ court",
+        "pages": "43",
+        "pageNumbers": [
+          43
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-089": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 4: General defences",
+        "pages": "51",
+        "pageNumbers": [
+          51
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s1-090": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 4: Plea before venue and allocation of business between magistrates’ court and Crown Court",
+        "pages": "53",
+        "pageNumbers": [
+          53
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-001": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 3: Interpretation of wills, alterations and amendments",
+        "pages": "29",
+        "pageNumbers": [
+          29
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-002": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 4: Plea before venue and allocation of business between magistrates’ court and Crown Court",
+        "pages": "53",
+        "pageNumbers": [
+          53
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-003": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 6: VAT and transfers",
+        "pages": "66",
+        "pageNumbers": [
+          66
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-004": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 9: Criminal damage",
+        "pages": "132",
+        "pageNumbers": [
+          132
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-005": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 12: Equitable tracing and equitable remedies",
+        "pages": "109",
+        "pageNumbers": [
+          109
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-006": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 5: Homicide offences",
+        "pages": "66",
+        "pageNumbers": [
+          66
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-007": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 6: Principles and procedures to admit and exclude evidence",
+        "pages": "72",
+        "pageNumbers": [
+          72
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-008": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 7: Conveyancing accounts and other accounts",
+        "pages": "86",
+        "pageNumbers": [
+          86
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-009": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 10: Property taxation",
+        "pages": "139",
+        "pageNumbers": [
+          139
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-010": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 8: Sentencing",
+        "pages": "103",
+        "pageNumbers": [
+          103
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-011": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 5: Homicide offences",
+        "pages": "66",
+        "pageNumbers": [
+          66
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-012": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 12: Equitable tracing and equitable remedies",
+        "pages": "109",
+        "pageNumbers": [
+          109
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-013": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 7: Conveyancing accounts and other accounts",
+        "pages": "86",
+        "pageNumbers": [
+          86
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-014": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 8: Records, reconciliation and reports",
+        "pages": "99",
+        "pageNumbers": [
+          99
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-015": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 5: Homicide offences",
+        "pages": "66",
+        "pageNumbers": [
+          66
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-016": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 8: Sentencing",
+        "pages": "103",
+        "pageNumbers": [
+          103
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-017": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 9: Liability of strangers and the fiduciary relationship",
+        "pages": "81",
+        "pageNumbers": [
+          81
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-018": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 5: Homicide offences",
+        "pages": "66",
+        "pageNumbers": [
+          66
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-019": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 8: Records, reconciliation and reports",
+        "pages": "99",
+        "pageNumbers": [
+          99
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-020": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 9: Appeals procedure",
+        "pages": "116",
+        "pageNumbers": [
+          116
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-021": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 2: SRA Code of Conduct",
+        "pages": "24",
+        "pageNumbers": [
+          24
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-022": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 3: Inchoate offences",
+        "pages": "42",
+        "pageNumbers": [
+          42
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-023": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 9: Appeals procedure",
+        "pages": "116",
+        "pageNumbers": [
+          116
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-024": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 7: Resulting trusts",
+        "pages": "66",
+        "pageNumbers": [
+          66
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-025": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 10: Trustees",
+        "pages": "91",
+        "pageNumbers": [
+          91
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-026": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 2: SRA Code of Conduct",
+        "pages": "24",
+        "pageNumbers": [
+          24
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-027": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 2: SRA Code of Conduct",
+        "pages": "24",
+        "pageNumbers": [
+          24
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-028": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 3: Interpretation of wills, alterations and amendments",
+        "pages": "29",
+        "pageNumbers": [
+          29
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-029": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 10: Trustees",
+        "pages": "91",
+        "pageNumbers": [
+          91
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-030": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 9: Criminal damage",
+        "pages": "132",
+        "pageNumbers": [
+          132
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-031": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 7: Freehold covenants",
+        "pages": "89",
+        "pageNumbers": [
+          89
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-032": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 7: Conveyancing accounts and other accounts",
+        "pages": "86",
+        "pageNumbers": [
+          86
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-033": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 6: Principles and procedures to admit and exclude evidence",
+        "pages": "72",
+        "pageNumbers": [
+          72
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-034": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 6: Principles and procedures to admit and exclude evidence",
+        "pages": "72",
+        "pageNumbers": [
+          72
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-035": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 9: Criminal damage",
+        "pages": "132",
+        "pageNumbers": [
+          132
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-036": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 5: The intestacy rules",
+        "pages": "44",
+        "pageNumbers": [
+          44
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-037": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 7: Grant and assignment of commercial leases",
+        "pages": "99",
+        "pageNumbers": [
+          99
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-038": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 7: Freehold covenants",
+        "pages": "89",
+        "pageNumbers": [
+          89
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-039": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 1: General principles of criminal law",
+        "pages": "16",
+        "pageNumbers": [
+          16
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-040": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 6: VAT and transfers",
+        "pages": "66",
+        "pageNumbers": [
+          66
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-041": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 6: VAT and transfers",
+        "pages": "66",
+        "pageNumbers": [
+          66
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-042": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 1: General principles of criminal law",
+        "pages": "16",
+        "pageNumbers": [
+          16
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-043": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 2: SRA Code of Conduct",
+        "pages": "24",
+        "pageNumbers": [
+          24
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-044": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 8: Mortgages",
+        "pages": "105",
+        "pageNumbers": [
+          105
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-045": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 6: Property passing outside of the estate",
+        "pages": "52",
+        "pageNumbers": [
+          52
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-046": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 8: Mortgages",
+        "pages": "105",
+        "pageNumbers": [
+          105
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-047": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 5: Leasehold estates",
+        "pages": "58",
+        "pageNumbers": [
+          58
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-048": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 11: Trustees’ liability",
+        "pages": "101",
+        "pageNumbers": [
+          101
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-049": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 7: Conveyancing accounts and other accounts",
+        "pages": "86",
+        "pageNumbers": [
+          86
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-050": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 5: Leasehold estates",
+        "pages": "58",
+        "pageNumbers": [
+          58
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-051": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 2: SRA Code of Conduct",
+        "pages": "24",
+        "pageNumbers": [
+          24
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-052": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 6: Property passing outside of the estate",
+        "pages": "52",
+        "pageNumbers": [
+          52
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-053": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 6: VAT and transfers",
+        "pages": "66",
+        "pageNumbers": [
+          66
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-054": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 8: Fraud offences",
+        "pages": "119",
+        "pageNumbers": [
+          119
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-055": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 1: Advising clients, including vulnerable clients, about the procedure and processes at the police station",
+        "pages": "14",
+        "pageNumbers": [
+          14
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-056": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 11: Trustees’ liability",
+        "pages": "101",
+        "pageNumbers": [
+          101
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-057": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 5: Leasehold estates",
+        "pages": "58",
+        "pageNumbers": [
+          58
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-058": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 7: Resulting trusts",
+        "pages": "66",
+        "pageNumbers": [
+          66
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-059": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 7: Ethics and professional conduct in property practice",
+        "pages": "86",
+        "pageNumbers": [
+          86
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-060": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 10: Inheritance tax",
+        "pages": "84",
+        "pageNumbers": [
+          84
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-061": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 5: Leasehold estates",
+        "pages": "58",
+        "pageNumbers": [
+          58
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-062": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 10: Youth Court procedure and hearings",
+        "pages": "125",
+        "pageNumbers": [
+          125
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-063": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 5: Leasehold estates",
+        "pages": "58",
+        "pageNumbers": [
+          58
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-064": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 10: Youth Court procedure and hearings",
+        "pages": "125",
+        "pageNumbers": [
+          125
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-065": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 5: Homicide offences",
+        "pages": "66",
+        "pageNumbers": [
+          66
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-066": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 7: Getting the grant of representation",
+        "pages": "60",
+        "pageNumbers": [
+          60
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-067": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 2: Parties to a crime",
+        "pages": "29",
+        "pageNumbers": [
+          29
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-068": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 5: Homicide offences",
+        "pages": "66",
+        "pageNumbers": [
+          66
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-069": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 4: General defences",
+        "pages": "51",
+        "pageNumbers": [
+          51
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-070": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 8: Administration of the estate",
+        "pages": "68",
+        "pageNumbers": [
+          68
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-071": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 6: Ethics and professional conduct in wills and the administration of estates",
+        "pages": "76",
+        "pageNumbers": [
+          76
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-072": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 1: Advising clients, including vulnerable clients, about the procedure and processes at the police station",
+        "pages": "14",
+        "pageNumbers": [
+          14
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-073": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 9: Claims under the Inheritance (Provision for Family and Dependants) Act 1975",
+        "pages": "76",
+        "pageNumbers": [
+          76
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-074": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 2: Parties to a crime",
+        "pages": "29",
+        "pageNumbers": [
+          29
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-075": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 6: Principles and procedures to admit and exclude evidence",
+        "pages": "72",
+        "pageNumbers": [
+          72
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-076": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 8: Fraud offences",
+        "pages": "119",
+        "pageNumbers": [
+          119
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-077": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 8: Ethics and professional conduct in solicitors’ accounts",
+        "pages": "98",
+        "pageNumbers": [
+          98
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-078": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 8: Family home trusts",
+        "pages": "73",
+        "pageNumbers": [
+          73
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-079": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 7: Ethics and professional conduct in property practice",
+        "pages": "86",
+        "pageNumbers": [
+          86
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-080": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 10: Property taxation",
+        "pages": "139",
+        "pageNumbers": [
+          139
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-081": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 10: Inheritance tax",
+        "pages": "84",
+        "pageNumbers": [
+          84
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-082": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 2: Parties to a crime",
+        "pages": "29",
+        "pageNumbers": [
+          29
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-083": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 2: Unregistered land",
+        "pages": "25",
+        "pageNumbers": [
+          25
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-084": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 6: Purpose trusts",
+        "pages": "58",
+        "pageNumbers": [
+          58
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-085": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 10: Inheritance tax",
+        "pages": "84",
+        "pageNumbers": [
+          84
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-086": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 6: VAT and transfers",
+        "pages": "66",
+        "pageNumbers": [
+          66
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-087": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 10: Inheritance tax",
+        "pages": "84",
+        "pageNumbers": [
+          84
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-088": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 3: Pre-contract (2): searches and enquiries and planning matters",
+        "pages": "37",
+        "pageNumbers": [
+          37
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-089": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 8: Family home trusts",
+        "pages": "73",
+        "pageNumbers": [
+          73
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
+  },
+  "revise-flk2-practice-s2-090": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 8: Commercial leasehold remedies",
+        "pages": "112",
+        "pageNumbers": [
+          112
+        ],
+        "section": "Publisher-cited chapter opening"
+      }
+    ]
   }
 }

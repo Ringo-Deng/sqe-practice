@@ -84,6 +84,30 @@ async function main(){
   if(q.subjectId==='contract'){assert.ok(chapterById(q.chapterId));assert.equal(linkedTextbooks(q.explanation.textbookReferences).length,2);}
  }
  for(const session of [1,2])assert.deepEqual(filterQuestions(questions,{sourceId:'revise',sourceSet:`revise-flk1-2025-26-session-${session}`}).map(q=>q.number),Array.from({length:90},(_,i)=>i+1));
+ const flk2BookIds={
+  'Trusts Law':'revise-trusts-2027','Property Practice':'revise-property-practice-2027',
+  'Solicitors Accounts':'revise-solicitors-accounts-2027','Land Law':'revise-land-law-2027',
+  'Ethics and Professional Conduct':'revise-ethics-2027','Criminal Law':'revise-criminal-law-2027',
+  'Criminal Practice':'revise-criminal-practice-2027','Wills and the Administration of Estates':'revise-wills-estates-2027',
+ };
+ const {textbookById,textbookReaderUrl,parseTextbookReaderTarget}=require('../lib/textbooks.ts');
+ for(const q of importedFlk2){
+  const original=reviseFlk2.find(item=>item.id===q.id);
+  for(const field of ['answer','en','publisherReference','originalPdfPages'])assert.deepEqual(q.explanation[field],original.explanation[field]);
+  const citation=original.explanation.publisherReference;
+  const ref=linkedTextbooks(q.explanation.textbookReferences).find(item=>item.bookId===flk2BookIds[citation.book]);
+  assert.ok(ref,q.id+' missing publisher textbook link');
+  assert.equal(ref.pageNumbers.length,citation.chapters.length,q.id+' must retain every cited chapter');
+  for(const chapter of citation.chapters)assert.ok(ref.chapter.includes(`Chapter ${chapter}:`),q.id+' wrong chapter');
+  const book=textbookById(ref.bookId);
+  assert.ok(fs.existsSync(path.join(root,'public',book.url)),q.id+' PDF missing');
+  const target=parseTextbookReaderTarget(textbookReaderUrl(book,ref.pageNumbers[0],q.id));
+  assert.equal(target.bookId,ref.bookId);
+  assert.equal(target.page,ref.pageNumbers[0]);
+  assert.equal(target.sourceQuestionId,q.id);
+ }
+ assert.deepEqual(questions.find(q=>q.id==='revise-flk2-practice-s1-001').explanation.textbookReferences[0].pageNumbers,[25]);
+ assert.deepEqual(questions.find(q=>q.id==='revise-flk2-practice-s1-057').explanation.textbookReferences[0].pageNumbers,[30,66,86]);
  for(const session of [1,2])assert.deepEqual(filterQuestions(questions,{sourceId:'revise',sourceSet:`revise-flk2-practice-session-${session}`}).map(q=>q.number),Array.from({length:90},(_,i)=>i+1));
  const oldId=crypto.randomUUID(),practiceId=crypto.randomUUID(),secondPracticeId=crypto.randomUUID(),qltsPracticeId=crypto.randomUUID(),qltsSecondId=crypto.randomUUID();
  const oldQuestion=questions.find(q=>q.sourceId==='sra');
