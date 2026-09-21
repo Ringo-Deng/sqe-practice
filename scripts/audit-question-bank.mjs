@@ -2,9 +2,15 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {createRequire} from 'node:module';
 import {getDocument} from 'pdfjs-dist/legacy/build/pdf.mjs';
 import {normalizeInlineQuestionText} from '../lib/question-text.ts';
-import {chapterById} from '../lib/chapters.ts';
+// Match the TypeScript loading used by the other standalone regression checks.
+// Node's native strip-types loader cannot resolve extensionless nested imports.
+const require=createRequire(import.meta.url);
+const ts=require('typescript');
+require.extensions['.ts']=(module,file)=>module._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText,file);
+const {chapterById}=require('../lib/chapters.ts');
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const readJson=file=>JSON.parse(fs.readFileSync(path.join(root,file),'utf8'));

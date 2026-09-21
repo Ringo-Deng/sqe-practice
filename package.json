@@ -12,7 +12,8 @@
     "build:github-pages": "pnpm run check:question-numbers && vite build --config vite.github.config.ts",
     "start": "node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js dev --config dist/server/wrangler.json --local --persist-to .wrangler/state --ip 127.0.0.1 --inspector-port 0",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
-    "check:questions": "node scripts/audit-question-bank.mjs",
+    "check:questions": "node scripts/audit-question-bank.mjs && node scripts/check-question-resources.cjs",
+    "check:resources": "node scripts/check-question-resources.cjs",
     "check:question-numbers": "node scripts/update-question-numbers.mjs --check",
     "number:questions": "node scripts/update-question-numbers.mjs",
     "db:generate": "drizzle-kit generate"

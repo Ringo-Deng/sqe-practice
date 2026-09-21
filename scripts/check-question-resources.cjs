@@ -36,4 +36,31 @@ assert.equal(questions.find(q=>q.id==='sra-flk2-original-029').chapterId,'trusts
 assert.equal(questions.find(q=>q.id==='sra-flk2-original-027').chapterId,'accounts-07');
 assert.equal(questions.find(q=>q.id==='sra-flk2-pretested-105').chapterId,'legal-services-sra-regulation');
 assert.ok(publicQuestions().every(q=>!('explanation' in q)),'No answer or resource information leaks before grading');
-console.log('PASS: 110 SRA FLK2 chapter memberships and reader links; original questions, answers and reveal boundary preserved.');
+const notesSubjects=new Set(['business','contract','dispute','tort','legal-system','legal-services']);
+let notesCount=0;
+for(const q of questions){
+ const chapter=chapterById(q.chapterId);
+ assert.ok(chapter&&chapter.subjectId===q.subjectId,q.id+' has a valid practice chapter');
+ const refs=q.explanation.textbookReferences;
+ const valid=linkedTextbooks(refs);
+ assert.equal(valid.length,refs.length,q.id+' has no invalid/filtered references');
+ assert.equal(new Set(valid.map(ref=>ref.bookId)).size,valid.length,q.id+' has no duplicate buttons');
+ assert.ok(valid.some(ref=>ref.bookId.startsWith('revise-')),q.id+' has a textbook');
+ const notes=valid.filter(ref=>ref.bookId.startsWith('notes-'));
+ if(notesSubjects.has(q.subjectId))assert.ok(notes.length,q.id+' uses available Notes');
+ if(notes.length)notesCount++;
+ for(const ref of valid){
+  const book=textbookById(ref.bookId);
+  assert.ok(fs.existsSync(path.join(root,'public',book.url)),q.id+' has a readable local resource');
+  assert.ok(parseTextbookReaderTarget(textbookReaderUrl(book,ref.pageNumbers[0],q.id)));
+ }
+}
+assert.equal(notesCount,1860);
+const qlts=questions.filter(q=>q.sourceId==='qlts');
+assert.equal(qlts.length,1762);
+for(const q of qlts){
+ const ref=q.explanation.textbookReferences.find(ref=>ref.bookId.startsWith('revise-'));
+ const chapter=chapterById(q.chapterId);
+ if(chapter.kind!=='syllabus')assert.equal(ref.bookId,chapter.bookId,q.id+' uses its classified subject book');
+}
+console.log('PASS: all 2996 questions have chapter classification and textbook links; 1860 have available Notes; 110 SRA FLK2 official questions/answers and reveal boundary preserved.');
