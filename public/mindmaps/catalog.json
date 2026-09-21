@@ -1,14 +1,98 @@
 [
-  {"id":"ethics","title":"职业道德与专业行为","en":"Ethics and Professional Conduct","group":"通用","file":"ethics.pdf"},
-  {"id":"business","title":"商法与实务","en":"Business Law and Practice","group":"FLK1","file":"business.pdf"},
-  {"id":"legal-system","title":"法律制度与宪法","en":"Legal System of England and Wales & Constitution","group":"FLK1","file":"legal-system.pdf"},
-  {"id":"contract","title":"合同法","en":"Contract Law","group":"FLK1","file":"contract.pdf"},
-  {"id":"dispute","title":"争议解决","en":"Dispute Resolution","group":"FLK1","file":"dispute.pdf"},
-  {"id":"tort","title":"侵权法","en":"Tort Law","group":"FLK1","file":"tort.pdf"},
-  {"id":"criminal-law","title":"刑事实体法","en":"Criminal Law","group":"FLK2","file":"criminal-law.pdf"},
-  {"id":"criminal-practice","title":"刑事法与实务","en":"Criminal Practice","group":"FLK2","file":"criminal-practice.pdf"},
-  {"id":"land-property","title":"土地法与房地产实务","en":"Land Law & Property Practice","group":"FLK2","file":"land-property.pdf"},
-  {"id":"trusts","title":"信托法","en":"Trust Law","group":"FLK2","file":"trusts.pdf"},
-  {"id":"wills","title":"遗嘱与遗产管理","en":"Wills and the Administration of Estates","group":"FLK2","file":"wills.pdf"},
-  {"id":"taxation","title":"税法：所得税、资本利得税与遗产税","en":"Taxation","group":"专题","file":"taxation.pdf"}
+  {
+    "id": "ethics",
+    "title": "职业道德与专业行为",
+    "en": "Ethics and Professional Conduct",
+    "group": "通用",
+    "file": "ethics.pdf",
+    "height": 11563
+  },
+  {
+    "id": "business",
+    "title": "商法与实务",
+    "en": "Business Law and Practice",
+    "group": "FLK1",
+    "file": "business.pdf",
+    "height": 11148
+  },
+  {
+    "id": "legal-system",
+    "title": "法律制度与宪法",
+    "en": "Legal System of England and Wales & Constitution",
+    "group": "FLK1",
+    "file": "legal-system.pdf",
+    "height": 10354
+  },
+  {
+    "id": "contract",
+    "title": "合同法",
+    "en": "Contract Law",
+    "group": "FLK1",
+    "file": "contract.pdf",
+    "height": 9066
+  },
+  {
+    "id": "dispute",
+    "title": "争议解决",
+    "en": "Dispute Resolution",
+    "group": "FLK1",
+    "file": "dispute.pdf",
+    "height": 13469
+  },
+  {
+    "id": "tort",
+    "title": "侵权法",
+    "en": "Tort Law",
+    "group": "FLK1",
+    "file": "tort.pdf",
+    "height": 11329
+  },
+  {
+    "id": "criminal-law",
+    "title": "刑事实体法",
+    "en": "Criminal Law",
+    "group": "FLK2",
+    "file": "criminal-law.pdf",
+    "height": 12808
+  },
+  {
+    "id": "criminal-practice",
+    "title": "刑事法与实务",
+    "en": "Criminal Practice",
+    "group": "FLK2",
+    "file": "criminal-practice.pdf",
+    "height": 19449
+  },
+  {
+    "id": "land-property",
+    "title": "土地法与房地产实务",
+    "en": "Land Law & Property Practice",
+    "group": "FLK2",
+    "file": "land-property.pdf",
+    "height": 19233
+  },
+  {
+    "id": "trusts",
+    "title": "信托法",
+    "en": "Trust Law",
+    "group": "FLK2",
+    "file": "trusts.pdf",
+    "height": 9489
+  },
+  {
+    "id": "wills",
+    "title": "遗嘱与遗产管理",
+    "en": "Wills and the Administration of Estates",
+    "group": "FLK2",
+    "file": "wills.pdf",
+    "height": 19563
+  },
+  {
+    "id": "taxation",
+    "title": "税法：所得税、资本利得税与遗产税",
+    "en": "Taxation",
+    "group": "专题",
+    "file": "taxation.pdf",
+    "height": 2472
+  }
 ]

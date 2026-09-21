@@ -21,9 +21,16 @@ function showMap(id){
  document.getElementById('document-title').textContent=map.title;
  document.getElementById('document-en').textContent=map.en;
  document.getElementById('document-group').textContent=map.group;
- document.getElementById('pdf-link').href=`./${map.file}`;
+ const requestedTop=Number(new URLSearchParams(location.search).get('top'));
+ const top=Number.isFinite(requestedTop)&&requestedTop>0?Math.min(Math.round(requestedTop),map.height):null;
+ const focus=new URLSearchParams(location.search).get('focus');
+ const focusElement=document.getElementById('document-focus');
+ focusElement.hidden=top===null;
+ focusElement.textContent=top===null?'':`已定位到图内章节：${focus||map.title}`;
+ const pdfFragment=top===null?'#zoom=125':`#zoom=125,0,${Math.max(0,top-90)}`;
+ document.getElementById('pdf-link').href=`./${map.file}${pdfFragment}`;
  viewer.title=`${map.title}思维导图 PDF`;
- viewer.src=`./${map.file}#zoom=125`;
+ viewer.src=`./${map.file}${pdfFragment}`;
  document.title=`${map.title} · 思维导图 · SQE Practice`;
 }
 
@@ -31,6 +38,8 @@ function navigate(id){
  const url=new URL(location.href);
  if(id)url.searchParams.set('map',id);
  else url.searchParams.delete('map');
+ url.searchParams.delete('top');
+ url.searchParams.delete('focus');
  history.pushState(null,'',url);
  showMap(id);
 }
