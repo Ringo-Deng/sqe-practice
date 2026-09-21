@@ -1072,5 +1072,363 @@
         }
       ]
     }
+  },
+  "sra-flk2-pretested-046": {
+    "officialAnswer": "E",
+    "zh": "女儿只有终身受益权，并未取得信托本金的绝对权益。孙子的剩余权益以取得英格兰及威尔士律师资格为先决条件；他去世时仍是学生，条件未满足。女儿随后去世，终身权益也结束，未有效处分的本金由受托人为设立人持有归复信托，因此归该男子享有。",
+    "ruleZh": "附先决条件的受益权益须待条件满足才归属；该赠与失败且无替代安排时，未处分的权益通常归复设立人。",
+    "warning": "关键是未取得律师资格，不能自行把“比终身受益人活得久”加入题目未规定的条件。",
+    "optionZh": {
+      "A": "女儿只享终身权益，活得比孙子久不会使本金变成她的遗产。",
+      "B": "一般赠与意愿不能取代明确的资格条件；孙子尚未取得已归属的本金权益。",
+      "C": "归属结论相同但理由错误：本题明示条件是律师资格，并非必须后于女儿死亡。",
+      "D": "两人的遗产均未取得本金的绝对权益，没有平均分配的依据。",
+      "E": "正确。资格条件未满足，女儿终身权益结束后，本金归复设立人。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "HMRC HS270，Example 5：附条件权益失败后的归复",
+          "url": "https://www.gov.uk/government/publications/trusts-and-settlements-income-treated-as-the-settlors-hs270-self-assessment-helpsheet/hs270-trusts-and-settlements-income-treated-as-the-settlors-2026"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-047": {
+    "officialAnswer": "A",
+    "zh": "最初的储物安排是许可，但女子一直把储物间用于商店存货，随后以契据续租，且新租约未排除第62条。该条可以把原来随租赁土地实际享有的许可性利益提升为地役权；本题共享储物不排斥房东继续使用，因此不妨碍成立。",
+    "ruleZh": "Law of Property Act 1925第62条可在适当的土地转让或续租中，把既有附随使用利益转为地役权；文件可表示相反意图而排除其适用。",
+    "warning": "不是一切口头许可都会自动变成地役权；本题关键是既有使用、契据续租及未排除第62条。",
+    "optionZh": {
+      "A": "正确。契据续租时，第62条使原许可性储物利益转为随商店享有的地役权。",
+      "B": "商业上便利或需要，并不单独构成地役权；本题依据是第62条。",
+      "C": "只描述最初的许可，遗漏后来续租产生的法律效果。",
+      "D": "原许可不必本来就是书面地役权，才能在本题契据续租时受第62条作用。",
+      "E": "共享使用反而说明没有排除房东占有；不是地役权当然无效的原因。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Law of Property Act 1925，第62条",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/20/section/62"
+        },
+        {
+          "label": "Stenner v Teignbridge DC [2025] UKUT 204 (LC)，第46–49段：Wright v Macadam",
+          "url": "https://landschamber.decisions.tribunals.gov.uk/judgmentfiles/j2120/LC-2025-000030.pdf#page=10"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-048": {
+    "officialAnswer": "D",
+    "zh": "本题警方获授权的最长未起诉拘留期可达相关起算时间后的36小时。起点是周三23:30到达警署，而非23:00被捕或23:45批准拘留。加36小时为周五11:30；再继续拘留须向治安法院申请进一步拘留令。",
+    "ruleZh": "PACE第41–42条下，一般上限为24小时；符合可公诉罪、证据需要及勤勉迅速侦查等条件时，警司或以上可延长至36小时。",
+    "warning": "36小时不是自动权利；题目问的是警方依法行使最大延长权限后的界限。",
+    "optionZh": {
+      "A": "周四23:30仅为到署后24小时，未考虑警方可依法延长的12小时。",
+      "B": "错误地从批准拘留的23:45起算，且只计算24小时。",
+      "C": "周五11:00是从被捕的23:00加36小时，本题应从到署起算。",
+      "D": "正确。周三23:30到署，加36小时，为周五11:30。",
+      "E": "批准拘留的23:45不是本题起算点，因此多算了15分钟。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Police and Criminal Evidence Act 1984，第41条",
+          "url": "https://www.legislation.gov.uk/ukpga/1984/60/section/41"
+        },
+        {
+          "label": "Police and Criminal Evidence Act 1984，第42条",
+          "url": "https://www.legislation.gov.uk/ukpga/1984/60/section/42"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-049": {
+    "officialAnswer": "C",
+    "zh": "妻子虽未离婚且比男子多活一天，但未存活满法定28天，在男子的无遗嘱继承中视为未生存。已满21岁的女儿实际生存于父亲，其继承不受同一配偶28天规则限制，因此取得全部£1,500,000；她次日死亡后，该权益进入她的遗产。未婚同居人没有自动无遗嘱继承份额。",
+    "ruleZh": "配偶或民事伴侣须满足无遗嘱继承的28天生存规则；成年子女实际生存于死者即可，不应一并套用该规则。",
+    "warning": "本题只问男子遗产的第一层归属，不继续推算女儿遗产分配；同居人的供养请求是另一个问题。",
+    "optionZh": {
+      "A": "妻子未存活满28天，不能依本题无遗嘱继承取得男子的遗产。",
+      "B": "妻子的份额被28天规则排除，不能与女儿共同继承。",
+      "C": "正确。成年女儿生存于父亲，取得全部遗产权益，随后归入她自己的遗产。",
+      "D": "三年同居不等于婚姻，不产生自动无遗嘱继承资格。",
+      "E": "同居人不自动分得份额；本题全部权益归入女儿遗产。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Administration of Estates Act 1925，第46(1)、46(2A)条",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/23/section/46"
+        },
+        {
+          "label": "Administration of Estates Act 1925，第47条：子女法定信托",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/23/section/47"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-050": {
+    "officialAnswer": "D",
+    "zh": "该租约于1989年授予，属于1996年以前的旧租约。为使受让人即使以后再转让仍承担合同责任，许可转让文件应取得受让人向房东作出的直接承诺，承诺履行剩余整个租期内的承租人义务。新租约的AGA及合法转让自动释放机制不能直接套用。",
+    "ruleZh": "旧租约的受让人可在许可转让文件中对房东作出覆盖剩余租期的直接契约；这不同于仅在持有租约期间因产权关系承担的责任。",
+    "warning": "区分承诺人是原承租人还是受让人，以及责任持续至下次转让还是整个剩余租期。",
+    "optionZh": {
+      "A": "AGA是新租约制度中的担保安排，不是本题1989年旧租约所需的直接承诺。",
+      "B": "原承租人不是本题要新取得直接承诺的主体；应由受让人向房东承诺。",
+      "C": "由原承租人担保到下次转让，混入新租约思路，未建立所需受让人直接契约。",
+      "D": "正确。由受让人直接向房东承诺履行整个剩余租期的租约义务。",
+      "E": "仅持续到下次合法转让，不能达到本题旧租约下覆盖剩余租期的安排。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Landlord and Tenant (Covenants) Act 1995，第1条：新旧租约范围",
+          "url": "https://www.legislation.gov.uk/ukpga/1995/30/section/1"
+        },
+        {
+          "label": "Revise Property Practice：Licence to assign，PDF第107页",
+          "url": "https://ringo-deng.github.io/sqe-practice/textbooks/revise-property-practice-2027-81ce2ca236a9-web-v1.pdf#page=107"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-051": {
+    "officialAnswer": "A",
+    "zh": "房屋是已登记土地，开发商的购买选择权属于可用notice保护的权益。应把选择权负担记入产权登记簿，以保护其对后续登记处分的优先顺位；这既不是未登记土地的Land Charges登记，也不是立即把房屋转给开发商。",
+    "ruleZh": "已登记土地上的购买选择权通常可通过agreed notice或unilateral notice保护。",
+    "warning": "Notice保护有效权益的优先顺位，本身并不保证选择权有效，也不表示开发商已成为所有人。",
+    "optionZh": {
+      "A": "正确。购买选择权可在已登记土地的登记簿上以notice保护。",
+      "B": "C(iv)是未登记土地体系下estate contract的保护类别，不适用于本题已登记房屋。",
+      "C": "D(ii)涉及限制性契约，且同属未登记土地的Land Charges体系。",
+      "D": "不存在把选择权“登记为overriding interest”的做法；题目也无支持该优先保护的事实。",
+      "E": "选择权协议本身不是应以产权登记完成的房屋转让处分。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "HM Land Registry Practice Guide 19，第6.6节",
+          "url": "https://www.gov.uk/government/publications/notices-restrictions-and-protection-of-third-party-interests-pg19/practice-guide-19-notices-restrictions-and-the-protection-of-third-party-interests-in-the-register"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-052": {
+    "officialAnswer": "E",
+    "zh": "女子故意砸坏窗户，并实际意识到破碎玻璃可能危及屋内人的生命，仍掷出砖块。加重刑事毁损要求针对“毁损本身危及生命”的故意或鲁莽；飞溅玻璃来自窗户毁损，符合该联系。仅认识到砖块直接击人的风险并不够。",
+    "ruleZh": "Criminal Damage Act 1971第1(2)条要求故意或鲁莽毁损财物，并故意或鲁莽地由该毁损危及他人生命。",
+    "warning": "不必以伤人或危及生命为目的，也不必真的造成生命危险；但所认识到的危险须来自毁损。",
+    "optionZh": {
+      "A": "实际受伤加上砸窗故意，仍遗漏对由毁损危及生命的主观要件。",
+      "B": "玻璃确实危及生命，但仍须说明女子对该危险具有故意或鲁莽。",
+      "C": "危险来自砖块本身的描述没有体现“由毁损危及生命”的要求。",
+      "D": "对砖块直接伤人的鲁莽，不等于对窗户毁损所生危险的鲁莽。",
+      "E": "正确。她故意毁损窗户，并实际意识到由此产生的飞玻璃可能危及生命。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Criminal Damage Act 1971，第1(2)条",
+          "url": "https://www.legislation.gov.uk/ukpga/1971/48/section/1"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-053": {
+    "officialAnswer": "B",
+    "zh": "女子本来拥有房屋产权，可以声明自己以后以受托人身份为儿子和儿媳持有。她的签字文件清楚确认现存信托，符合土地信托须有签字书面证据的要求；自任受托人无需把产权再转给他人，也无需以契据或见证签名成立。后来疏远不会自动撤销已设立的信托。",
+    "ruleZh": "土地所有人可通过自任受托人的声明设立信托；第53(1)(b)条要求签字书面证据，不一概要求契据或受益人知情。",
+    "warning": "这是生前信托声明，不是未经见证的遗嘱；她死亡时登记名下的法律产权不等于仍为她实益所有。",
+    "optionZh": {
+      "A": "成年人并非成为受益人的必要条件，未成年人也能享有信托受益权。",
+      "B": "正确。她拥有法律产权，因而能够通过声明自己持有信托来完成设立。",
+      "C": "自任受托人无需另作产权转让，故未转移产权不能否定本信托。",
+      "D": "感情疏远不会当然消灭已成立的受益权益。",
+      "E": "签字书面证据即可满足本题要求，无须另签契据。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Law of Property Act 1925，第53(1)(b)条",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/20/section/53"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-054": {
+    "officialAnswer": "C",
+    "zh": "2019/20年度£3,000赠与全部使用当年免税额，故无该年度余额结转。2020/21年度£4,000减当年£3,000，计入£1,000。2021/22年度未赠与，其£3,000可结转至2022/23；该年£7,000减当年及前一年共£6,000，再计入£1,000。均在2025年12月死亡前七年内，累计£2,000。",
+    "ruleZh": "年度赠与免税额£3,000：先用当年额度，未用部分仅可结转下一税年；不能跨过一年反复累积。",
+    "warning": "£2,000是累计应计入的赠与额，不是应缴税款；减免税额与taper relief降低税额也不是同一计算。",
+    "optionZh": {
+      "A": "并非全部免税：2020年和2022年各有£1,000超过可用额度。",
+      "B": "只计一个£1,000尾额，遗漏另一次赠与的应计入部分。",
+      "C": "正确。£0＋£1,000＋£1,000＝£2,000。",
+      "D": "£4,000只是2022年赠与减当年额度的结果；既漏减前一年可结转额度，也漏计2020年的£1,000。",
+      "E": "将2020年和2022年各只扣当年£3,000，会漏掉2021/22年度可结转额度。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "HMRC IHTM14144：年度免税额的使用顺序与一年结转",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm14144"
+        },
+        {
+          "label": "GOV.UK：Inheritance Tax gifts，年度免税额与七年规则",
+          "url": "https://www.gov.uk/inheritance-tax/gifts"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-055": {
+    "officialAnswer": "D",
+    "zh": "血迹是在被捕时女子手上发现的，警方有理由认为与袭击有关，并已按要求就所调查罪名、待解释血迹、可能关联、不解释的后果及录音证据作出特别警告。符合第36条条件时，法院可对拒绝解释作适当不利推论；不以她后来出庭作证或提出新事实为前提。",
+    "ruleZh": "第36条针对被捕时的物品、物质或痕迹；须有适当特别警告及获得法律咨询的机会，方可考虑不利推论。",
+    "warning": "律师建议沉默不是自动豁免；是否作推论仍须考虑沉默原因及公平性，也不能仅凭沉默定罪。",
+    "optionZh": {
+      "A": "这是第36条痕迹解释规则，不是第34条“后来依赖未提事实”的要求。",
+      "B": "沉默权仍存在，但在法定条件满足时，沉默可能带来证据上的不利后果。",
+      "C": "法律意见是评估原因的因素，并不会一概阻止法院作适当推论。",
+      "D": "正确。题述特别警告及其余条件使法院可以考虑推论，而不是必须作推论。",
+      "E": "仅认为解释血迹属合理期待并不足够，不能省略法定特别警告等条件。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Criminal Justice and Public Order Act 1994，第36条",
+          "url": "https://www.legislation.gov.uk/ukpga/1994/33/section/36"
+        },
+        {
+          "label": "PACE Code C 2023，第10.10–10.11段",
+          "url": "https://www.gov.uk/government/publications/pace-code-c-2023/pace-code-c-2023-accessible"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-056": {
+    "officialAnswer": "A",
+    "zh": "未修改的SCS第5.1.1条把物业风险从合同成立时转给买方。本题已交换合同，随后车库火灾由买方承担合同风险；她仍须按约完成并支付原价，不能仅因车库毁损退出或要求卖方重建。",
+    "ruleZh": "Standard Conditions of Sale第五版2018修订版下，物业风险原则上自交换合同转给买方。",
+    "warning": "风险转移不等于标准条款强制买方购买保险；实际交易应在交换前核查保险及合同是否另有约定。",
+    "optionZh": {
+      "A": "正确。交换后风险由买方承担，仍应完成并支付原价。",
+      "B": "合同已明确分配毁损风险，车库重要并不自动解除买方义务。",
+      "C": "继续完成的结论正确，但SCS并未因此强制买方买保险并用赔款重建。",
+      "D": "本题风险已经转移，不存在卖方必须先重建车库才能履约的当然义务。",
+      "E": "本题买方没有任意退出或要求卖方恢复原状的选择权。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Standard Conditions of Sale，第五版2018修订，第5.1条（PDF第2页）",
+          "url": "https://portal.pls-solicitors.co.uk/assets/pdf/Standard%20Conditions%20of%20Sale.pdf#page=2"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-057": {
+    "officialAnswer": "E",
+    "zh": "已向执行人出具的账单共£1,700：律师费£1,000、VAT £200、已垫付遗嘱认证费£300及已发生估价费£200。估价已完成，发票开给律所，虽然尚未付款，费用责任已经发生，故可一并按账单划转。客户余额£5,225充足，最大可转£1,700，剩余£3,525继续留在客户账户。",
+    "ruleZh": "客户账户向业务账户支付费用须以已出具账单或书面通知及对应已发生金额为基础，并有足够的该客户资金。",
+    "warning": "区分“尚未支付”与“尚未发生”；本题已收到的估价发票不同于未来预计费用或仍由客户承担的税款。",
+    "optionZh": {
+      "A": "只包括律师费，漏掉VAT及两项已经发生的代垫费用。",
+      "B": "£1,300并非完整账单总额，未包括所有可划转项目。",
+      "C": "仅计律师费和VAT，漏掉£300认证费及£200已发生估价费。",
+      "D": "£1,400遗漏£300已垫付认证费，也不是本题最大可划转数额。",
+      "E": "正确。四项合计£1,700，估价费虽未付但已经发生且已列账单。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "SRA Accounts Rules，第4.3及5.2条",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/accounts-rules/"
+        },
+        {
+          "label": "SRA：Taking money for your firm’s costs，费用划转部分",
+          "url": "https://www.sra.org.uk/solicitors/guidance/taking-money-for-your-firms-costs/"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-058": {
+    "officialAnswer": "B",
+    "zh": "承诺只限制开发规模：若建房，不得超过四栋且只能是单层，并没有要求买方必须建房。买方通过不建或遵守限制即可履约，因此性质是限制性契约。限制性契约作为土地上的财产权益属于衡平权益，不在第1条列举的可成立法律权益之内。",
+    "ruleZh": "判断契约是积极还是限制性，看履行内容而非句式；限制开发数量及建筑高度通常为限制性契约。",
+    "warning": "原当事人之间另有合同责任，不改变本题问到的土地权益性质；写明继受人也不会把它变成法律权益。",
+    "optionZh": {
+      "A": "限制性契约是衡平土地权益，不因写进转让契据就成为法律权益。",
+      "B": "正确。限制建房数量和层数，属于衡平法上的限制性契约。",
+      "C": "没有必须建房或花费的积极义务；“不得超过”属于限制。",
+      "D": "既误判为积极契约，又误判为法律土地权益。",
+      "E": "这不是买卖土地的待履行合同权利，而是已转让土地上的开发限制。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Law of Property Act 1925，第1(2)–(3)条",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/20/section/1"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-059": {
+    "officialAnswer": "D",
+    "zh": "男子真诚相信自己即将遭到攻击，即使该判断错误且不合理，也可按他实际相信的情况评价是否需要防卫。题目进一步说明推人的力度在该假定攻击下属合理，因此他可以依赖自卫；无需先挨打，也不以女子是否最终受伤作为唯一标准。",
+    "ruleZh": "自卫中的事实判断可以是真诚但不合理的误信；使用力量是否合理，则按被告实际相信的情境判断。",
+    "warning": "误信是否合理有助判断其是否真实存在；自愿醉酒导致的错误认识另有限制，本题没有该事实。",
+    "optionZh": {
+      "A": "可以在攻击即将发生时采取合理预防性防卫，不必等待实际挨打。",
+      "B": "不合理并不当然排除真诚误信；题目明确男子确实相信将被攻击。",
+      "C": "真诚的事实误信本身不排除自卫。",
+      "D": "正确。真诚认为攻击迫近，且按该情境所用力量合理。",
+      "E": "标准是所用力量是否合理，而不是事后是否造成“不合理伤害”；没有受伤也不自动成立自卫。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Criminal Justice and Immigration Act 2008，第76(3)–(6)条",
+          "url": "https://www.legislation.gov.uk/ukpga/2008/4/section/76"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-060": {
+    "officialAnswer": "B",
+    "zh": "房屋位于威尔士，买方此次以£450,000购买所涉及的土地交易税是LTT。威尔士自2018年4月1日起以LTT替代SDLT。卖方五年前的成本及装修支出可能涉及卖方收益计算，不决定买方应缴的税种。",
+    "ruleZh": "购买威尔士土地或房屋适用Land Transaction Tax；英格兰和北爱尔兰适用SDLT，不能仅因同在英国而混用。",
+    "warning": "本题只问税种，不足以计算高税率等具体税额；完成时筹款也不等于必须在完成当日向税局缴清。",
+    "optionZh": {
+      "A": "传统Stamp Duty不是本题威尔士住宅购买所适用的土地交易税。",
+      "B": "正确。该房屋位于威尔士，购买适用Land Transaction Tax。",
+      "C": "资本利得税针对处置产生的收益，不是买方购入房屋时的这项税。",
+      "D": "SDLT已在威尔士由LTT替代，不适用于本题交易。",
+      "E": "既有住宅的本次出售不是题目所指的应税增值税交易；装修不使其自动变为VAT销售。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Welsh Revenue Authority：Land Transaction Tax overview",
+          "url": "https://www.gov.wales/land-transaction-tax-overview"
+        }
+      ]
+    }
   }
 }
