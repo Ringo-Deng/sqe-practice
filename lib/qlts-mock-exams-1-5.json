@@ -6272,9 +6272,9 @@
       39
     ],
     "subjectId": "contract",
-    "stem": "A man went in to a supermarket and saw a flat screen TV on a shelf with a sign saying \"Special Offer only £9.99\". He took the TV from the shelf, put it in his trolley, and went to the checkout counter. He was told that the sign is wrong and should read",
+    "stem": "A man went in to a supermarket and saw a flat screen TV on a shelf with a sign saying \"Special Offer only £9.99\". He took the TV from the shelf, put it in his trolley, and went to the checkout counter. He was told that the sign is wrong and should read £99.99.",
     "stemZh": "",
-    "ask": "Which of the following statements best describes the type of contract, if any, that has?",
+    "ask": "Which of the following statements best describes the type of contract, if any, that has been formed?",
     "askZh": "",
     "options": [
       {
@@ -6307,7 +6307,7 @@
       "kind": "publisher-original",
       "answer": "B",
       "topic": "Contract Law",
-      "en": ". He took the TV from the shelf, put it in his trolley, and You did not select the correct answer. B is correct. It is generally accepted that the display of goods within a shop is an invitation to treat and not an offer. Lead case: Pharmaceutical Society of Great Britain v Boots Cash Chemists (Southern) Ltd. [1953].",
+      "en": "B is correct. It is generally accepted that the display of goods within a shop is an invitation to treat and not an offer. Lead case: Pharmaceutical Society of Great Britain v Boots Cash Chemists (Southern) Ltd. [1953].",
       "zh": "",
       "ruleEn": "",
       "ruleZh": "",
