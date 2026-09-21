@@ -344,6 +344,14 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
 .review-navigation{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 24px;background:#fcfdff;border:1px solid var(--border);border-radius:12px}
 @media(max-width:650px){.review-navigation{padding:12px}}
 
+.settings-panel{max-width:760px;background:#fff;border:1px solid var(--border);border-radius:12px;padding:24px 28px}
+.settings-panel h2{margin:0 0 18px;font-size:17px;font-weight:650;color:#293d5e}
+.settings-row{display:flex;align-items:center;justify-content:space-between;gap:24px;border-top:1px solid #e8edf5;padding-top:18px}
+.settings-row label{display:block;font-size:15px;font-weight:600;color:#344b69;cursor:pointer}
+.settings-row p{margin:6px 0 0;font-size:14px;line-height:1.6;color:#71819a}
+.settings-error{margin:14px 0 0;font-size:14px;color:#a33c49}
+@media(max-width:650px){.settings-panel{padding:20px 18px}.settings-row{gap:14px}}
+
 /* Compact results for one completed practice group. */
 .completion-summary{max-width:760px;margin:0 auto;background:#fff;border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:0 6px 24px #213b6805}
 .completion-header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:30px 32px}
