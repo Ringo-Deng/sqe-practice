@@ -22,6 +22,7 @@ import {useVocabulary,VocabularyPanel,VocabularyEditor,VocabularySelection,Vocab
 import {dueCards} from '@/lib/vocabulary';
 import type {VocabularyDraft} from '@/lib/vocabulary';
 import {TextbookLibrary} from './textbook-library';
+import {TextbookReadingPage} from './textbook-reading-page';
 import {useTextbookAnnotations} from './use-textbook-annotations';
 import {useTextbookBookmarks} from './use-textbook-bookmarks';
 import {useTextbookCatalog} from './use-textbook-catalog';
@@ -144,4 +145,10 @@ function StudyContent({authenticated,standalone}:{authenticated:boolean;standalo
  <Toaster position="bottom-center" theme="light"/>
  </SidebarProvider>;
 }
-export default function StudyApp({authenticated,standalone=false}:{authenticated:boolean;standalone?:boolean}){return <StudyContent authenticated={authenticated} standalone={standalone}/>;}
+export default function StudyApp({authenticated,standalone=false}:{authenticated:boolean;standalone?:boolean}){
+ const[readerSearch,setReaderSearch]=useState<string|null>(null);
+ useEffect(()=>{setReaderSearch(window.location.search);},[]);
+ if(readerSearch===null)return <div className="empty" role="status"><Loader2 className="animate-spin" size={24}/><p>正在打开…</p></div>;
+ if(new URLSearchParams(readerSearch).get('reader')==='textbook')return <TextbookReadingPage guest={standalone||!authenticated} search={readerSearch}/>;
+ return <StudyContent authenticated={authenticated} standalone={standalone}/>;
+}

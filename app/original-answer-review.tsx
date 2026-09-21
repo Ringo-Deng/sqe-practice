@@ -26,7 +26,7 @@ export function OriginalAnswerReview({question:q}:{question:Question}){
    <NewglawKnowledgeNotes notes={newglawNotes}/>
   </div>
   <footer className="review-footer">
-   <section className="textbook-access" aria-label="查阅对应教材和思维导图"><TextbookLinks references={refs}/><MindMapLinks question={q}/></section>
+   <section className="textbook-access" aria-label="查阅对应教材和思维导图"><TextbookLinks references={refs} sourceQuestionId={q.id}/><MindMapLinks question={q}/></section>
   </footer>
  </article>;
 }

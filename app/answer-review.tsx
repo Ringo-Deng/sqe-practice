@@ -40,7 +40,7 @@ export function AnswerReview({question:q,answer}:{question:Question;answer:{sele
    <NewglawKnowledgeNotes notes={newglawNotes}/>
   </div>
   <footer className="review-footer">
-   <section className="textbook-access" aria-label="查阅本题对应教材和思维导图"><TextbookLinks references={bookRefs}/><MindMapLinks question={q}/></section>
+   <section className="textbook-access" aria-label="查阅本题对应教材和思维导图"><TextbookLinks references={bookRefs} sourceQuestionId={q.id}/><MindMapLinks question={q}/></section>
    <Button variant="ghost" size="sm" className="back-to-question" onClick={()=>document.getElementById('current-question')?.scrollIntoView({block:'start'})}><ArrowUp size={14}/>回到题目</Button>
    <div className="review-topic-meta" aria-label="本题考点与标签">
     <div className="tested-topic">本题考查 · <Terms text={e.topic} label/></div>

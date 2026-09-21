@@ -10,7 +10,7 @@ import {readReadingPositions,writeReadingPosition} from '@/lib/textbook-reading-
 import {TextbookReader} from './textbook-reader';
 import {TextbookBookmarkEditor} from './textbook-bookmark-editor';
 import './textbook-library.css';
-import type {Textbook} from '@/lib/textbooks';
+import type {Textbook,TextbookReaderTarget} from '@/lib/textbooks';
 import type {TextbookAnnotationsController} from './use-textbook-annotations';
 import type {TextbookCatalogController} from './use-textbook-catalog';
 import type {TextbookBookmarksController} from './use-textbook-bookmarks';
@@ -20,7 +20,7 @@ type LibraryPanel='catalog'|'notes'|'bookmarks';
 type BookFilter='all'|'FLK1'|'FLK2'|'mine';
 const bookFilters:{id:BookFilter;label:string}[]=[{id:'all',label:'全部'},{id:'FLK1',label:'FLK1'},{id:'FLK2',label:'FLK2'},{id:'mine',label:'我的'}];
 
-export function TextbookLibrary({controller,catalog,bookmarks,guest=false}:{controller:TextbookAnnotationsController;catalog:TextbookCatalogController;bookmarks:TextbookBookmarksController;guest?:boolean}){
+export function TextbookLibrary({controller,catalog,bookmarks,guest=false,initial}:{controller:TextbookAnnotationsController;catalog:TextbookCatalogController;bookmarks:TextbookBookmarksController;guest?:boolean;initial?:TextbookReaderTarget}){
  const[first]=catalog.books;
  const[selectedId,setSelectedId]=useState(first?.id??'');
  const[target,setTarget]=useState({bookId:first?.id??'',page:1});
@@ -59,11 +59,13 @@ export function TextbookLibrary({controller,catalog,bookmarks,guest=false}:{cont
  useEffect(()=>{
   if(positionReady||catalog.loading)return;
   const timer=window.setTimeout(()=>{
-   const saved=readReadingPositions(catalog.books),id=saved.lastBookId??catalog.books[0]?.id??'';
-   setPositions(saved.pages);setSelectedId(id);setTarget({bookId:id,page:saved.pages[id]??1});setPositionReady(true);
+   const saved=readReadingPositions(catalog.books),requested=catalog.books.find(item=>item.id===initial?.bookId);
+   const id=requested?.id??saved.lastBookId??catalog.books[0]?.id??'';
+   const page=requested&&initial?Math.max(1,Math.min(requested.pageCount,initial.page)):saved.pages[id]??1;
+   setPositions(saved.pages);setSelectedId(id);setTarget({bookId:id,page});setPositionReady(true);
   },0);
   return()=>window.clearTimeout(timer);
- },[catalog.books,catalog.loading,positionReady]);
+ },[catalog.books,catalog.loading,positionReady,initial]);
  const closePanel=()=>{const previous=panel;setPanel(null);requestAnimationFrame(()=>document.getElementById(`textbook-${previous}-toggle`)?.focus());};
  const togglePanel=(next:LibraryPanel)=>{
   if(panel===next){closePanel();return;}
@@ -92,7 +94,7 @@ export function TextbookLibrary({controller,catalog,bookmarks,guest=false}:{cont
   <Button id="textbook-notes-toggle" variant="ghost" size="sm" aria-label="笔记" title="打开或收起笔记" aria-expanded={panel==='notes'} aria-controls="textbook-notes-panel" onClick={()=>togglePanel('notes')}><Highlighter size={16}/><span className="textbook-panel-button-label">笔记</span></Button>
   <Button id="textbook-bookmarks-toggle" variant="ghost" size="sm" aria-label="书签" title="打开或收起书签" aria-expanded={panel==='bookmarks'} aria-controls="textbook-bookmarks-panel" onClick={()=>togglePanel('bookmarks')}><Bookmark size={16}/><span className="textbook-panel-button-label">书签</span></Button>
  </div>;
- if(!positionReady)return <div className="empty"><Loader2 className="animate-spin" size={24}/><p>正在打开上次阅读位置…</p></div>;
+ if(!positionReady)return <div className="empty"><Loader2 className="animate-spin" size={24}/><p>{initial?'正在打开对应教材页面…':'正在打开上次阅读位置…'}</p></div>;
  return <section className="textbook-library-page textbook-library-refined textbook-library-compact" onKeyDown={event=>{
   if(!event.defaultPrevented&&event.key==='Escape'&&panel&&!editBook&&!importOpen&&!bookmarkDraft&&!(event.target as HTMLElement).closest('[role="dialog"],[role="alertdialog"]')){event.preventDefault();closePanel();}
  }} onPointerDown={event=>{
@@ -122,7 +124,7 @@ export function TextbookLibrary({controller,catalog,bookmarks,guest=false}:{cont
     </div>
    </aside>
    <div className="textbook-library-reader">
-    {book?<TextbookReader key={book.id} references={[]} books={[book]} initial={target} navigationRequest={navigationRequest} annotations={controller} bookmarks={bookmarks} standalone toolbarStart={panelControls} onToolbarHeightChange={setToolbarHeight} onPositionChange={handlePosition}/>:<div className="empty">{panelControls}<BookOpen/><p>尚无教材。</p><Button onClick={()=>setImportOpen(true)}><FileUp size={15}/>导入 PDF</Button></div>}
+    {book?<TextbookReader key={book.id} references={[]} books={[book]} initial={target} navigationRequest={navigationRequest} annotations={controller} bookmarks={bookmarks} sourceQuestionId={book.id===initial?.bookId?initial.sourceQuestionId:undefined} standalone toolbarStart={panelControls} onToolbarHeightChange={setToolbarHeight} onPositionChange={handlePosition}/>:<div className="empty">{panelControls}<BookOpen/><p>尚无教材。</p><Button onClick={()=>setImportOpen(true)}><FileUp size={15}/>导入 PDF</Button></div>}
    </div>
    <aside id="textbook-notes-panel" className="textbook-note-index" aria-label="教材高亮笔记" hidden={panel!=='notes'}>
     <div className="textbook-note-index-heading"><div><h2><Highlighter size={17}/>高亮笔记</h2><p>{book?.shortTitle??'选择一本教材'}</p></div><Button size="icon" variant="ghost" aria-label="收起笔记" onClick={closePanel}><X size={16}/></Button></div>
