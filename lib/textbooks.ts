@@ -9,6 +9,11 @@ function browserAssetUrl(url:string){
  if(typeof document==='undefined'||!url.startsWith('/'))return url;
  return new URL(url.slice(1),document.baseURI).toString();
 }
+export function textbookPdfUrl(book:Textbook,page:number){
+ if(!Number.isInteger(page)||page<1||page>book.pageCount)throw Error('无效的教材页码');
+ if(!book.url)throw Error('教材 PDF 文件不存在');
+ return `${browserAssetUrl(book.url).split('#')[0]}#page=${page}&zoom=page-width`;
+}
 export function textbookPageSource(book:Textbook,page:number){
  if(!Number.isInteger(page)||page<1||page>book.pageCount)throw Error('无效的教材页码');
  const pageUrl=book.pageUrlTemplate?.replace('{page}',String(page))??book.url;

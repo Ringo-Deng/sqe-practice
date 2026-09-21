@@ -1,16 +1,16 @@
 'use client';
 import {useState} from 'react';
-import {BookOpen,Languages} from 'lucide-react';
+import {Languages} from 'lucide-react';
 import {Button} from '@/components/ui/button';
 import type {Question} from '@/lib/study-types';
-import {linkedTextbooks,textbookById,type LinkedTextbookReference} from '@/lib/textbooks';
-import {preloadTextbookPage} from '@/lib/textbook-pdf';
+import {linkedTextbooks} from '@/lib/textbooks';
+import {TextbookLinks} from './textbook-links';
 import {newglawNotesForQuestion} from '@/lib/newglaw-notes';
 import {NewglawKnowledgeNotes} from './newglaw-knowledge-notes';
 import {normalizeExplanationText} from '@/lib/question-text';
 import {MindMapLinks} from './mindmap-links';
 
-export function OriginalAnswerReview({question:q,onOpenTextbook}:{question:Question;onOpenTextbook:(ref:LinkedTextbookReference)=>void}){
+export function OriginalAnswerReview({question:q}:{question:Question}){
  const e=q.explanation!;
  const refs=linkedTextbooks(e.textbookReferences);
  const newglawNotes=newglawNotesForQuestion(q);
@@ -26,7 +26,7 @@ export function OriginalAnswerReview({question:q,onOpenTextbook}:{question:Quest
    <NewglawKnowledgeNotes notes={newglawNotes}/>
   </div>
   <footer className="review-footer">
-   <section className="textbook-access" aria-label="查阅对应教材和思维导图">{refs.map(ref=><Button key={ref.bookId} variant="outline" size="sm" className="textbook-link" title={`${ref.chapter} · PDF 第 ${ref.pageNumbers[0]} 页起`} onPointerEnter={()=>preloadTextbookPage(textbookById(ref.bookId)!,ref.pageNumbers[0])} onFocus={()=>preloadTextbookPage(textbookById(ref.bookId)!,ref.pageNumbers[0])} onClick={()=>onOpenTextbook(ref)}><BookOpen size={16}/>查阅 {textbookById(ref.bookId)!.shortTitle}</Button>)}<MindMapLinks question={q}/></section>
+   <section className="textbook-access" aria-label="查阅对应教材和思维导图"><TextbookLinks references={refs}/><MindMapLinks question={q}/></section>
   </footer>
  </article>;
 }

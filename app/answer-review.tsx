@@ -3,8 +3,8 @@ import {ArrowUp,BookOpen} from 'lucide-react';
 import {Button} from '@/components/ui/button';
 import type {Question} from '@/lib/study-types';
 import {explainLegalText,translateLegalLabel} from '@/lib/review-language';
-import {linkedTextbooks,textbookById,type LinkedTextbookReference} from '@/lib/textbooks';
-import {preloadTextbookPage} from '@/lib/textbook-pdf';
+import {linkedTextbooks} from '@/lib/textbooks';
+import {TextbookLinks} from './textbook-links';
 import {newglawNotesForQuestion} from '@/lib/newglaw-notes';
 import {OriginalAnswerReview} from './original-answer-review';
 import {NewglawKnowledgeNotes} from './newglaw-knowledge-notes';
@@ -14,10 +14,10 @@ function Terms({text,label=false}:{text:string;label?:boolean}){
  const readable=label?translateLegalLabel(text):explainLegalText(text);
  return <>{readable.split(/(\*\*[^*]+\*\*)/g).map((part,i)=>part.startsWith('**')&&part.endsWith('**')?<strong key={i} className="exam-term">{part.slice(2,-2)}</strong>:part)}</>;
 }
-export function AnswerReview({question:q,answer,onOpenTextbook}:{question:Question;answer:{selected:string;correct?:boolean};onOpenTextbook:(ref:LinkedTextbookReference)=>void}){
+export function AnswerReview({question:q,answer}:{question:Question;answer:{selected:string;correct?:boolean}}){
  const e=q.explanation,k=q.knowledge;
  if(!e)return null;
- if(e.kind==='publisher-original')return <OriginalAnswerReview question={q} onOpenTextbook={onOpenTextbook}/>;
+ if(e.kind==='publisher-original')return <OriginalAnswerReview question={q}/>;
  const warning=e.textbookReferences?e.warning:q.sourceId==='demo'&&k?k.warning.zh:e.warning;
  const newglawNotes=newglawNotesForQuestion(q);
  const hasQuickNotes=!!(k?.points.length||warning.trim());
@@ -40,7 +40,7 @@ export function AnswerReview({question:q,answer,onOpenTextbook}:{question:Questi
    <NewglawKnowledgeNotes notes={newglawNotes}/>
   </div>
   <footer className="review-footer">
-   <section className="textbook-access" aria-label="查阅本题对应教材和思维导图">{bookRefs.map(ref=><Button key={ref.bookId} variant="outline" size="sm" className="textbook-link" title={`${ref.chapter} · PDF 第 ${ref.pageNumbers[0]} 页起`} onPointerEnter={()=>preloadTextbookPage(textbookById(ref.bookId)!,ref.pageNumbers[0])} onFocus={()=>preloadTextbookPage(textbookById(ref.bookId)!,ref.pageNumbers[0])} onClick={()=>onOpenTextbook(ref)}><BookOpen size={16}/>查阅 {textbookById(ref.bookId)!.shortTitle}</Button>)}<MindMapLinks question={q}/></section>
+   <section className="textbook-access" aria-label="查阅本题对应教材和思维导图"><TextbookLinks references={bookRefs}/><MindMapLinks question={q}/></section>
    <Button variant="ghost" size="sm" className="back-to-question" onClick={()=>document.getElementById('current-question')?.scrollIntoView({block:'start'})}><ArrowUp size={14}/>回到题目</Button>
    <div className="review-topic-meta" aria-label="本题考点与标签">
     <div className="tested-topic">本题考查 · <Terms text={e.topic} label/></div>
