@@ -9970,5 +9970,1648 @@
         "section": "Publisher-cited chapter opening"
       }
     ]
+  },
+  "sra-flk2-original-001": {
+    "chapterId": "criminal-practice-01",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 1 Advising clients, including vulnerable clients, about the procedure and processes at the police station",
+        "pages": "14",
+        "pageNumbers": [
+          14
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-002": {
+    "chapterId": "criminal-practice-08",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 8 Sentencing",
+        "pages": "103",
+        "pageNumbers": [
+          103
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-003": {
+    "chapterId": "trusts-10",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 10 Trustees",
+        "pages": "91",
+        "pageNumbers": [
+          91
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-004": {
+    "chapterId": "wills-08",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 8 Administration of the estate",
+        "pages": "68",
+        "pageNumbers": [
+          68
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-005": {
+    "chapterId": "wills-07",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 7 Getting the grant of representation",
+        "pages": "60",
+        "pageNumbers": [
+          60
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-006": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 5 Ethics and professional conduct in criminal law and practice",
+        "pages": "65",
+        "pageNumbers": [
+          65
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-007": {
+    "chapterId": "property-practice-07",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 7 Grant and assignment of commercial leases",
+        "pages": "99",
+        "pageNumbers": [
+          99
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-008": {
+    "chapterId": "property-practice-09",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 9 Termination of leases and security of tenure under Part II of the Landlord and Tenant Act 1954",
+        "pages": "126",
+        "pageNumbers": [
+          126
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-009": {
+    "chapterId": "trusts-01",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 1 The three certainties",
+        "pages": "14",
+        "pageNumbers": [
+          14
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-010": {
+    "chapterId": "trusts-05",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 5 Beneficial entitlement",
+        "pages": "50",
+        "pageNumbers": [
+          50
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-011": {
+    "chapterId": "property-practice-05",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 5 Pre-completion, completion, and post-completion matters",
+        "pages": "67",
+        "pageNumbers": [
+          67
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-012": {
+    "chapterId": "land-01",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 1 The nature and principles of land law",
+        "pages": "14",
+        "pageNumbers": [
+          14
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-013": {
+    "chapterId": "property-practice-03",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 3 Pre-contract (2): searches and enquiries and planning matters",
+        "pages": "37",
+        "pageNumbers": [
+          37
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-014": {
+    "chapterId": "criminal-practice-02",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 2 Bail applications",
+        "pages": "29",
+        "pageNumbers": [
+          29
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-015": {
+    "chapterId": "wills-05",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 5 The intestacy rules",
+        "pages": "44",
+        "pageNumbers": [
+          44
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-016": {
+    "chapterId": "criminal-practice-06",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 6 Principles and procedures to admit and exclude evidence",
+        "pages": "72",
+        "pageNumbers": [
+          72
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-017": {
+    "chapterId": "criminal-liability-05",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 5 Homicide offences",
+        "pages": "66",
+        "pageNumbers": [
+          66
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-018": {
+    "chapterId": "criminal-liability-05",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 5 Homicide offences",
+        "pages": "66",
+        "pageNumbers": [
+          66
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-019": {
+    "chapterId": "land-09",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 9 Co-ownership",
+        "pages": "120",
+        "pageNumbers": [
+          120
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-020": {
+    "chapterId": "wills-08",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 8 Administration of the estate",
+        "pages": "68",
+        "pageNumbers": [
+          68
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-021": {
+    "chapterId": "wills-10",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 10 Inheritance tax",
+        "pages": "84",
+        "pageNumbers": [
+          84
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-022": {
+    "chapterId": "wills-10",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 10 Inheritance tax",
+        "pages": "84",
+        "pageNumbers": [
+          84
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-023": {
+    "chapterId": "criminal-liability-09",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 9 Criminal damage",
+        "pages": "132",
+        "pageNumbers": [
+          132
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-024": {
+    "chapterId": "land-07",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 7 Freehold covenants",
+        "pages": "89",
+        "pageNumbers": [
+          89
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-025": {
+    "chapterId": "wills-08",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 8 Administration of the estate",
+        "pages": "68",
+        "pageNumbers": [
+          68
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-026": {
+    "chapterId": "criminal-practice-06",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 6 Principles and procedures to admit and exclude evidence",
+        "pages": "72",
+        "pageNumbers": [
+          72
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-027": {
+    "chapterId": "accounts-07",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 7 Conveyancing accounts and other accounts",
+        "pages": "86",
+        "pageNumbers": [
+          86
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-028": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 5 Ethics and professional conduct in criminal law and practice",
+        "pages": "65",
+        "pageNumbers": [
+          65
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-029": {
+    "chapterId": "trusts-05",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 5 Beneficial entitlement",
+        "pages": "50",
+        "pageNumbers": [
+          50
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-030": {
+    "chapterId": "trusts-10",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 10 Trustees",
+        "pages": "91",
+        "pageNumbers": [
+          91
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-031": {
+    "chapterId": "criminal-liability-07",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 7 Theft offences",
+        "pages": "100",
+        "pageNumbers": [
+          100
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-032": {
+    "chapterId": "property-practice-10",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 10 Property taxation",
+        "pages": "139",
+        "pageNumbers": [
+          139
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-033": {
+    "chapterId": "criminal-liability-04",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 4 General defences",
+        "pages": "51",
+        "pageNumbers": [
+          51
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-034": {
+    "chapterId": "property-practice-09",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 9 Termination of leases and security of tenure under Part II of the Landlord and Tenant Act 1954",
+        "pages": "126",
+        "pageNumbers": [
+          126
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-035": {
+    "chapterId": "criminal-liability-07",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 7 Theft offences",
+        "pages": "100",
+        "pageNumbers": [
+          100
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-036": {
+    "chapterId": "land-06",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 6 Easements",
+        "pages": "73",
+        "pageNumbers": [
+          73
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-037": {
+    "chapterId": "property-practice-07",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 7 Grant and assignment of commercial leases",
+        "pages": "99",
+        "pageNumbers": [
+          99
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-038": {
+    "chapterId": "property-practice-02",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 2 Pre-contract (1): deduction and investigation of title",
+        "pages": "21",
+        "pageNumbers": [
+          21
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-039": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 7 Ethics and professional conduct in property practice",
+        "pages": "86",
+        "pageNumbers": [
+          86
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-040": {
+    "chapterId": "criminal-practice-01",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 1 Advising clients, including vulnerable clients, about the procedure and processes at the police station",
+        "pages": "14",
+        "pageNumbers": [
+          14
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-041": {
+    "chapterId": "wills-09",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 9 Claims under the Inheritance (Provision for Family and Dependants) Act 1975",
+        "pages": "76",
+        "pageNumbers": [
+          76
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-042": {
+    "chapterId": "criminal-liability-06",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 6 Non-fatal offences against the person",
+        "pages": "84",
+        "pageNumbers": [
+          84
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-043": {
+    "chapterId": "wills-04",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 4 Revocation of wills",
+        "pages": "37",
+        "pageNumbers": [
+          37
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-044": {
+    "chapterId": "property-practice-06",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 6 Structure and content of a lease",
+        "pages": "80",
+        "pageNumbers": [
+          80
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-original-045": {
+    "chapterId": "accounts-06",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 6 VAT and transfers",
+        "pages": "66",
+        "pageNumbers": [
+          66
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-046": {
+    "chapterId": "trusts-07",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 7 Resulting trusts",
+        "pages": "66",
+        "pageNumbers": [
+          66
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-047": {
+    "chapterId": "land-06",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 6 Easements",
+        "pages": "73",
+        "pageNumbers": [
+          73
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-048": {
+    "chapterId": "criminal-practice-01",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 1 Advising clients, including vulnerable clients, about the procedure and processes at the police station",
+        "pages": "14",
+        "pageNumbers": [
+          14
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-049": {
+    "chapterId": "wills-05",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 5 The intestacy rules",
+        "pages": "44",
+        "pageNumbers": [
+          44
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-050": {
+    "chapterId": "property-practice-07",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 7 Grant and assignment of commercial leases",
+        "pages": "99",
+        "pageNumbers": [
+          99
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-051": {
+    "chapterId": "land-03",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 3 Registered land",
+        "pages": "35",
+        "pageNumbers": [
+          35
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-052": {
+    "chapterId": "criminal-liability-09",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 9 Criminal damage",
+        "pages": "132",
+        "pageNumbers": [
+          132
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-053": {
+    "chapterId": "trusts-03",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 3 Constitution of trusts",
+        "pages": "33",
+        "pageNumbers": [
+          33
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-054": {
+    "chapterId": "wills-10",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 10 Inheritance tax",
+        "pages": "84",
+        "pageNumbers": [
+          84
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-055": {
+    "chapterId": "criminal-practice-06",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 6 Principles and procedures to admit and exclude evidence",
+        "pages": "72",
+        "pageNumbers": [
+          72
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-056": {
+    "chapterId": "property-practice-04",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 4 The draft contract and exchange of contracts",
+        "pages": "54",
+        "pageNumbers": [
+          54
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-057": {
+    "chapterId": "accounts-05",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 5 Bills",
+        "pages": "55",
+        "pageNumbers": [
+          55
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-058": {
+    "chapterId": "land-07",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 7 Freehold covenants",
+        "pages": "89",
+        "pageNumbers": [
+          89
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-059": {
+    "chapterId": "criminal-liability-04",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 4 General defences",
+        "pages": "51",
+        "pageNumbers": [
+          51
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-060": {
+    "chapterId": "property-practice-10",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 10 Property taxation",
+        "pages": "139",
+        "pageNumbers": [
+          139
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-061": {
+    "chapterId": "trusts-09",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 9 Liability of strangers and the fiduciary relationship",
+        "pages": "81",
+        "pageNumbers": [
+          81
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-062": {
+    "chapterId": "wills-01",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 1 Essential requirements for a valid will",
+        "pages": "15",
+        "pageNumbers": [
+          15
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-063": {
+    "chapterId": "land-05",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 5 Leasehold estates",
+        "pages": "58",
+        "pageNumbers": [
+          58
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-064": {
+    "chapterId": "criminal-practice-06",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 6 Principles and procedures to admit and exclude evidence",
+        "pages": "72",
+        "pageNumbers": [
+          72
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-065": {
+    "chapterId": "land-09",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 9 Co-ownership",
+        "pages": "120",
+        "pageNumbers": [
+          120
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-066": {
+    "chapterId": "trusts-10",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 10 Trustees",
+        "pages": "91",
+        "pageNumbers": [
+          91
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-067": {
+    "chapterId": "criminal-liability-06",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 6 Non-fatal offences against the person",
+        "pages": "84",
+        "pageNumbers": [
+          84
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-068": {
+    "chapterId": "property-practice-09",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 9 Termination of leases and security of tenure under Part II of the Landlord and Tenant Act 1954",
+        "pages": "126",
+        "pageNumbers": [
+          126
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-069": {
+    "chapterId": "criminal-practice-09",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 9 Appeals procedure",
+        "pages": "116",
+        "pageNumbers": [
+          116
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-070": {
+    "chapterId": "wills-10",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 10 Inheritance tax",
+        "pages": "84",
+        "pageNumbers": [
+          84
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-071": {
+    "chapterId": "land-06",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 6 Easements",
+        "pages": "73",
+        "pageNumbers": [
+          73
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-072": {
+    "chapterId": "accounts-05",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 5 Bills",
+        "pages": "55",
+        "pageNumbers": [
+          55
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-073": {
+    "chapterId": "land-09",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 9 Co-ownership",
+        "pages": "120",
+        "pageNumbers": [
+          120
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-074": {
+    "chapterId": "criminal-liability-02",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 2 Parties to a crime",
+        "pages": "29",
+        "pageNumbers": [
+          29
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-075": {
+    "chapterId": "property-practice-03",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 3 Pre-contract (2): searches and enquiries and planning matters",
+        "pages": "37",
+        "pageNumbers": [
+          37
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-076": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 7 Ethics and professional conduct in property practice",
+        "pages": "86",
+        "pageNumbers": [
+          86
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-077": {
+    "chapterId": "criminal-practice-10",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 10 Youth Court procedure and hearings",
+        "pages": "125",
+        "pageNumbers": [
+          125
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-078": {
+    "chapterId": "land-09",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 9 Co-ownership",
+        "pages": "120",
+        "pageNumbers": [
+          120
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-079": {
+    "chapterId": "wills-01",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 1 Essential requirements for a valid will",
+        "pages": "15",
+        "pageNumbers": [
+          15
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-080": {
+    "chapterId": "trusts-10",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 10 Trustees",
+        "pages": "91",
+        "pageNumbers": [
+          91
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-081": {
+    "chapterId": "criminal-practice-04",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 4 Plea before venue and allocation of business between magistrates’ court and Crown Court",
+        "pages": "53",
+        "pageNumbers": [
+          53
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-082": {
+    "chapterId": "property-practice-05",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 5 Pre-completion, completion, and post-completion matters",
+        "pages": "67",
+        "pageNumbers": [
+          67
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-083": {
+    "chapterId": "wills-03",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 3 Interpretation of wills, alterations and amendments",
+        "pages": "29",
+        "pageNumbers": [
+          29
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-084": {
+    "chapterId": "property-practice-05",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 5 Pre-completion, completion, and post-completion matters",
+        "pages": "67",
+        "pageNumbers": [
+          67
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-085": {
+    "chapterId": "criminal-liability-06",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 6 Non-fatal offences against the person",
+        "pages": "84",
+        "pageNumbers": [
+          84
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-086": {
+    "chapterId": "property-practice-07",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 7 Grant and assignment of commercial leases",
+        "pages": "99",
+        "pageNumbers": [
+          99
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-087": {
+    "chapterId": "wills-03",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 3 Interpretation of wills, alterations and amendments",
+        "pages": "29",
+        "pageNumbers": [
+          29
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-088": {
+    "chapterId": "criminal-liability-07",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 7 Theft offences",
+        "pages": "100",
+        "pageNumbers": [
+          100
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-089": {
+    "chapterId": "trusts-12",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 12 Equitable tracing and equitable remedies",
+        "pages": "109",
+        "pageNumbers": [
+          109
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-090": {
+    "chapterId": "criminal-practice-10",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 10 Youth Court procedure and hearings",
+        "pages": "125",
+        "pageNumbers": [
+          125
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-091": {
+    "chapterId": "accounts-02",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Solicitors’ Accounts",
+        "bookId": "revise-solicitors-accounts-2027",
+        "chapter": "Chapter 2 Client money and client accounts: part 1",
+        "pages": "21",
+        "pageNumbers": [
+          21
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-092": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 6 Ethics and professional conduct in wills and the administration of estates",
+        "pages": "76",
+        "pageNumbers": [
+          76
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-093": {
+    "chapterId": "property-practice-05",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 5 Pre-completion, completion, and post-completion matters",
+        "pages": "67",
+        "pageNumbers": [
+          67
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-094": {
+    "chapterId": "trusts-11",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 11 Trustees’ liability",
+        "pages": "101",
+        "pageNumbers": [
+          101
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-095": {
+    "chapterId": "property-practice-08",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 8 Commercial leasehold remedies",
+        "pages": "112",
+        "pageNumbers": [
+          112
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-096": {
+    "chapterId": "criminal-liability-04",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 4 General defences",
+        "pages": "51",
+        "pageNumbers": [
+          51
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-097": {
+    "chapterId": "property-practice-02",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 2 Pre-contract (1): deduction and investigation of title",
+        "pages": "21",
+        "pageNumbers": [
+          21
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-098": {
+    "chapterId": "criminal-practice-07",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 7 Trial procedure in the magistrates’ court and Crown Court",
+        "pages": "90",
+        "pageNumbers": [
+          90
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-099": {
+    "chapterId": "land-05",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 5 Leasehold estates",
+        "pages": "58",
+        "pageNumbers": [
+          58
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-100": {
+    "chapterId": "wills-08",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Wills and the Administration of Estates",
+        "bookId": "revise-wills-estates-2027",
+        "chapter": "Chapter 8 Administration of the estate",
+        "pages": "68",
+        "pageNumbers": [
+          68
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-101": {
+    "chapterId": "property-practice-06",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Property Practice",
+        "bookId": "revise-property-practice-2027",
+        "chapter": "Chapter 6 Structure and content of a lease",
+        "pages": "80",
+        "pageNumbers": [
+          80
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-102": {
+    "chapterId": "criminal-liability-08",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Law",
+        "bookId": "revise-criminal-law-2027",
+        "chapter": "Chapter 8 Fraud offences",
+        "pages": "119",
+        "pageNumbers": [
+          119
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-103": {
+    "chapterId": "land-06",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Land Law",
+        "bookId": "revise-land-law-2027",
+        "chapter": "Chapter 6 Easements",
+        "pages": "73",
+        "pageNumbers": [
+          73
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-104": {
+    "chapterId": "trusts-01",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 1 The three certainties",
+        "pages": "14",
+        "pageNumbers": [
+          14
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-105": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 2 SRA Code of Conduct",
+        "pages": "24",
+        "pageNumbers": [
+          24
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-106": {
+    "chapterId": "criminal-practice-06",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 6 Principles and procedures to admit and exclude evidence",
+        "pages": "72",
+        "pageNumbers": [
+          72
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-107": {
+    "chapterId": "trusts-02",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 2 Formalities for the creation of trusts",
+        "pages": "25",
+        "pageNumbers": [
+          25
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-108": {
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Ethics and Professional Conduct",
+        "bookId": "revise-ethics-2027",
+        "chapter": "Chapter 6 Ethics and professional conduct in wills and the administration of estates",
+        "pages": "76",
+        "pageNumbers": [
+          76
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-109": {
+    "chapterId": "criminal-practice-06",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Criminal Practice",
+        "bookId": "revise-criminal-practice-2027",
+        "chapter": "Chapter 6 Principles and procedures to admit and exclude evidence",
+        "pages": "72",
+        "pageNumbers": [
+          72
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
+  },
+  "sra-flk2-pretested-110": {
+    "chapterId": "trusts-05",
+    "textbookReferences": [
+      {
+        "book": "Revise SQE 2027 · Trusts Law",
+        "bookId": "revise-trusts-2027",
+        "chapter": "Chapter 5 Beneficial entitlement",
+        "pages": "50",
+        "pageNumbers": [
+          50
+        ],
+        "section": "相关教材章节（按考点匹配；非官方解析）"
+      }
+    ]
   }
 }

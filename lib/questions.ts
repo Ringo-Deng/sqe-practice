@@ -43,7 +43,7 @@ const importedRevise=(reviseQuestions as FullQuestion[]).map(q=>{
   ...(translation?{stemZh:translation.stemZh,askZh:translation.askZh,options:q.options.map(o=>({...o,zh:translation.options[o.id]}))}:{}),
   explanation:{...q.explanation,...(translation?{zh:translation.explanationZh}:{})}};
 });
-export const questions:FullQuestion[]=[...(officialQuestions as FullQuestion[]),...(pretestedQuestions as FullQuestion[]),...(officialFlk2Questions as FullQuestion[]),...(pretestedFlk2Questions as FullQuestion[]),...importedRevise,...(reviseFlk2Questions as FullQuestion[]),...(reviseChapterQuestions as FullQuestion[]),...qltsMockQuestions].map(q=>{
+export const assembledQuestions:FullQuestion[]=[...(officialQuestions as FullQuestion[]),...(pretestedQuestions as FullQuestion[]),...(officialFlk2Questions as FullQuestion[]),...(pretestedFlk2Questions as FullQuestion[]),...importedRevise,...(reviseFlk2Questions as FullQuestion[]),...(reviseChapterQuestions as FullQuestion[]),...qltsMockQuestions].map(q=>{
  const translation=staticTranslationsById[q.id]??qltsTranslationsById[q.id];
  const bilingual=translation?{...q,
   stemZh:q.stemZh||translation.stemZh,
@@ -60,5 +60,6 @@ export const questions:FullQuestion[]=[...(officialQuestions as FullQuestion[]),
  if(!review)return linked;
  const {explanation,quickPoints,...classification}=review;
  return {...linked,...classification,explanation:{...linked.explanation,...explanation},knowledge:linked.knowledge?{...linked.knowledge,...(quickPoints?{points:quickPoints}:{}),warning:{...linked.knowledge.warning,zh:explanation.warning??linked.knowledge.warning.zh}}:undefined};
-}).map(classifyLegalQuestion);
+});
+export const questions:FullQuestion[]=assembledQuestions.map(classifyLegalQuestion);
 export function publicQuestions(){return questions.map(({explanation,knowledge,...q})=>q);}

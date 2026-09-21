@@ -3,7 +3,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
 const Module=require('node:module');
-const {createHash,randomUUID}=require('node:crypto');
+const {randomUUID}=require('node:crypto');
 const {DatabaseSync}=require('node:sqlite');
 const ts=require('typescript');
 const root=path.resolve(__dirname,'..');
@@ -20,7 +20,7 @@ Module._load=function(request,parent,isMain){
  if(request.startsWith('@/'))request=path.join(root,request.slice(2));
  return nativeLoad.call(this,request,parent,isMain);
 };
-const {questions}=require('../lib/questions.ts');
+const {questions,assembledQuestions}=require('../lib/questions.ts');
 const {chapters,chapterById,filterQuestions}=require('../lib/chapters.ts');
 const {subjects,subjectById}=require('../lib/subjects.ts');
 const {applyGuestStudyAction}=require('../lib/guest-study.ts');
@@ -41,7 +41,6 @@ const topicIds=[
 ];
 const ids=items=>items.map(item=>typeof item==='string'?item:item.id).sort();
 const byId=items=>[...items].sort((a,b)=>a.id.localeCompare(b.id));
-const digest=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
 const legal=questions.filter(question=>question.subjectId==='legal-services');
 const formerEthics=questions.filter(question=>question.originalSubjectId==='flk2-ethics');
 const ethicsFixtures=formerEthics.filter(question=>question.subjectId==='legal-services').slice(0,2);
@@ -53,9 +52,11 @@ Date.now=()=>now;
 function checkClassification(){
  assert.equal(questions.length,2996,'Classification retains every imported question');
  assert.equal(new Set(questions.map(question=>question.id)).size,2996,'Question IDs remain unique');
- // Fingerprints captured from the pre-classification assembled question bank.
- assert.equal(digest(byId(questions.map(question=>({id:question.id,answer:question.explanation.answer,textbookReferences:question.explanation.textbookReferences})))),'667952db41d082e9b14c2ce4c5e9f393cc357f17f988054848d414439eda36d6','Question IDs, answers and textbook references remain unchanged');
- assert.equal(digest(byId(questions.map(question=>({id:question.id,subjectId:question.originalSubjectId??question.subjectId,chapterId:question.originalSubjectId?question.originalChapterId:question.chapterId})))),'f662c4f4afa1cf00edb36fba5080c396013d1f9c9fe94999024fffc11f45c807','Original subject and textbook chapter classification remains recoverable');
+ // Compare against the current input to classification. Legitimate resource
+ // additions must not invalidate a frozen fingerprint of an older question bank.
+ const content=items=>byId(items.map(({subjectId,chapterId,originalSubjectId,originalChapterId,assessmentScope,...question})=>question));
+ assert.deepEqual(content(questions),content(assembledQuestions),'Classification preserves questions, answers, translations and references');
+ assert.deepEqual(byId(questions.map(question=>({id:question.id,subjectId:question.originalSubjectId??question.subjectId,chapterId:question.originalSubjectId?question.originalChapterId:question.chapterId}))),byId(assembledQuestions.map(({id,subjectId,chapterId})=>({id,subjectId,chapterId}))),'Original subject and textbook chapter classification remains recoverable');
  assert.equal(questions.filter(question=>['legal-services','flk2-ethics'].includes(question.originalSubjectId)).length,301,'The original 276 legal-service and 25 FLK2-ethics questions retain provenance');
  assert.equal(legal.length,294,'Reviewed out-of-scope questions move to their primary syllabus subject');
  assert.equal(formerEthics.length,25,'Every formerly separate FLK2 ethics question is retained');
@@ -91,7 +92,7 @@ function checkClassification(){
  const originalAccounts=accounts.filter(question=>(question.originalSubjectId??question.subjectId)==='accounts');
  assert.equal(accounts.length,138,'Three reviewed client-money and account questions join accounts');
  assert.equal(originalAccounts.length,135,'All original accounts questions remain in accounts');
- assert.equal(digest(byId(originalAccounts.map(question=>({id:question.id,chapterId:question.chapterId})))),'ffce5bbe4ad1b4ba139747807714dd2d69b9839bf9c5839e6e1c0c1fb0cae498','Accounts retains its original questions and chapters');
+ assert.deepEqual(byId(originalAccounts.map(({id,chapterId})=>({id,chapterId}))),byId(assembledQuestions.filter(q=>q.subjectId==='accounts').map(({id,chapterId})=>({id,chapterId}))),'Accounts retains its original questions and chapters');
  assert.ok(accounts.every(question=>!memberships.includes(question.id)),'Accounts is outside the merged group');
  for(const [id,subjectId,chapterId] of [
   ['sra-flk1-original-031','legal-services','legal-services-sra-regulation'],
