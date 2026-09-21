@@ -710,5 +710,367 @@
         }
       ]
     }
+  },
+  "sra-flk2-original-031": {
+    "officialAnswer": "D",
+    "zh": "男子为夺取电脑，先威胁立即折断女孩的脖子，随后拿走电脑。抢劫不要求实际动手，也不要求受威胁者就是财物持有人；为实施盗窃而使女孩害怕当场遭受暴力，已满足本题的暴力威胁要件。因此 D 正确。",
+    "ruleZh": "抢劫要求盗窃，并在紧接盗窃前或实施时，为盗窃而对任何人用力，或使其害怕、试图使其害怕当场遭受暴力。",
+    "warning": "受威胁者可以是同行的第三人；一般的惊慌或困扰，不能替代对当场暴力的恐惧。",
+    "optionZh": {
+      "A": "暴力威胁可以满足抢劫要件，不以实际使用暴力为限。",
+      "B": "法律针对任何人的暴力或威胁均可适用，并不限于持有电脑的母亲。",
+      "C": "骚扰、惊慌或困扰不是本罪的相应要件；须联系当场暴力及盗窃目的。",
+      "D": "正确。威胁紧接盗窃之前、服务于盗窃目的，并使女孩害怕当场遭受暴力。",
+      "E": "枪支或攻击性武器不是抢劫罪的必备要件。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Theft Act 1968，第8条",
+          "url": "https://www.legislation.gov.uk/ukpga/1968/60/section/8"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-032": {
+    "officialAnswer": "D",
+    "zh": "房东已登记 VAT，并在出租前有效选择对该商业建筑征税，租金因此按标准税率 20% 征收 VAT。保险公司仅作免税供应，题设下不能抵扣这笔租金进项税，所以这部分税额由其承担。",
+    "ruleZh": "商业物业有效选择征税后，租金通常适用标准税率；承租人能否抵扣，另取决于其自身供应及进项税用途。",
+    "warning": "免税供应与零税率供应不同；房东选择征税不会把保险公司的免税业务变成应税业务。",
+    "optionZh": {
+      "A": "通常的物业出租免税待遇已因本题有效选择征税而改变。",
+      "B": "本题适用标准税率 20%，并非零税率。",
+      "C": "税率正确，但仅作题述免税供应的保险公司不能抵扣这笔税。",
+      "D": "正确。租金加收 20% VAT，题设下该进项税不能收回。",
+      "E": "选择征税是加征 VAT，不是给承租人打八折。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "HMRC VAT Notice 742A，第1.2段",
+          "url": "https://www.gov.uk/guidance/opting-to-tax-land-and-buildings-notice-742a"
+        },
+        {
+          "label": "HMRC：Exemption and partial exemption from VAT",
+          "url": "https://www.gov.uk/guidance/vat-exemption-and-partial-exemption"
+        },
+        {
+          "label": "GOV.UK：VAT标准税率",
+          "url": "https://www.gov.uk/vat-rates"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-033": {
+    "officialAnswer": "A",
+    "zh": "本题指控的是具有造成严重身体伤害故意的伤人罪，属于特定故意罪。按题设，男子醉到不知道自己在做什么，没有形成该项故意，因而不成立所控罪名。自愿醉酒本身的鲁莽不能代替这一特定故意。",
+    "ruleZh": "对特定故意罪，控方仍须证明被告实际形成所需故意；醉酒证据可能使该要件不能成立。",
+    "warning": "不是喝醉就免责：仍有实际故意者不能据此脱罪，且本题仍可能涉及第20条等基本故意罪。",
+    "optionZh": {
+      "A": "正确。题设醉酒程度使其没有形成造成严重身体伤害的必要故意。",
+      "B": "醉酒并非攻击他人的合理借口；关键在于是否形成该罪所需故意。",
+      "C": "自愿醉酒的鲁莽不能替代本项第18条指控要求的严重伤害故意。",
+      "D": "前半句分类正确，后半句错误；醉酒可以影响特定故意是否实际形成。",
+      "E": "以造成严重身体伤害为故意的本项罪名属于特定故意罪，不是基本故意罪。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Judicial College：Crown Court Compendium，Chapter 9及伤人罪示例（PDF第178页）",
+          "url": "https://www.judiciary.uk/wp-content/uploads/2022/06/Crown-Court-Compendium-Part-I-Oct-25-Mar-26-update.pdf#page=178"
+        },
+        {
+          "label": "CPS：第18条与第20条伤害罪",
+          "url": "https://www.cps.gov.uk/prosecution-guidance/offences-against-person-incorporating-charging-standard"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-034": {
+    "officialAnswer": "C",
+    "zh": "主承租人交还主租约，不会消灭已合法设立的转租。主租约消灭后，永久业主直接成为转承租人的房东，承接的是现有转租关系，继续适用转租条款。本题五年转租已履行两年，原则上还剩三年。",
+    "ruleZh": "主租约因 surrender 消灭时，现有转租受到保护，下一顺位的复归权成为该转租的直接复归权。",
+    "warning": "不要把自愿交还主租约与因违约没收租约混同，也不要把主租约条款直接套给转承租人。",
+    "optionZh": {
+      "A": "合法转租不会仅因主租约交还而消灭。",
+      "B": "转承租人确实成为业主的直接承租人，但继续受转租条款约束。",
+      "C": "正确。业主直接承接转租关系，适用原转租条款及剩余期限。",
+      "D": "不需要凭空设立 overriding lease；现有转租继续存在。",
+      "E": "交还主租约不是因违约没收租约，题中没有转租被没收的事实。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Law of Property Act 1925，第139条",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/20/section/139"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-035": {
+    "officialAnswer": "C",
+    "zh": "女子持有办公钥匙，并不意味着可以周六深夜带人进入办公室聚会。按题设，四人均越过获准进入的范围，作为侵入者进入后又实施盗窃，符合第9(1)(b)条。盗窃念头在进入半小时后才形成，不妨碍这一类型的入室盗窃成立。",
+    "ruleZh": "第9(1)(b)条涵盖明知或罔顾自己无权进入、作为侵入者进入建筑物后，再实施或企图实施盗窃的情形。",
+    "warning": "区分进入时已有盗窃故意的第9(1)(a)条，与侵入后才盗窃的第9(1)(b)条；无需破门或强行进入。",
+    "optionZh": {
+      "A": "工作时的进入许可不是任何时间、任何目的均可进入的授权。",
+      "B": "女子同样超出工作许可范围，并不因持有钥匙而当然排除侵入者身份。",
+      "C": "正确。四人作为侵入者进入后实施盗窃，符合第9(1)(b)条。",
+      "D": "使用钥匙而未用暴力，不妨碍构成入室盗窃。",
+      "E": "题目明确盗窃念头在进入后才形成，不能据此认定进入时已有该故意。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Theft Act 1968，第9条",
+          "url": "https://www.legislation.gov.uk/ukpga/1968/60/section/9"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-036": {
+    "officialAnswer": "A",
+    "zh": "正在检查的是买方拟购土地的登记簿，该土地享有跨越邻地的步行通行权，属于受益地。此项地役权的利益应记载在该地的 Property Register，因此应查找 A 所述条目。",
+    "ruleZh": "受益地享有的地役权记入 Property Register；土地承担的负担通常在 Charges Register 中查找。",
+    "warning": "先分清查的是受益地还是供役地的登记簿；同一通行权在两块土地上分别体现为利益与负担。",
+    "optionZh": {
+      "A": "正确。Property Register 记载拟购土地享有的地役权利益。",
+      "B": "Proprietorship Register 主要记载所有人、产权等级及处分限制，不是本题地役权利益的位置。",
+      "C": "本题查受益地；其 Charges Register 中的地役权条目通常涉及该地承担的负担。",
+      "D": "Restriction 控制登记处分的条件，不能代替通行权利益的登记。",
+      "E": "Restrictive covenant 是限制性契约，不是本题取得的积极通行权。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "HM Land Registry Practice Guide 62，第2.5节",
+          "url": "https://www.gov.uk/government/publications/easements-pg62/practice-guide-62-easements"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-037": {
+    "officialAnswer": "C",
+    "zh": "租约虽未写明不得不合理拒绝同意，但第19(1)条会把这一限制加入须经同意的转让条款。拟受让超市将与房东在对面的超市直接竞争，本题中可成为合理拒绝的理由。受让人财力更强并不排除房东其他合理考虑。",
+    "ruleZh": "须经房东同意的租约转让条款，原则上受不得不合理拒绝的限制；直接竞争可构成合理拒绝理由。",
+    "warning": "应结合地点、经营用途和具体竞争关系判断；不能推导为房东可凭任何商业偏好任意拒绝。",
+    "optionZh": {
+      "A": "超市属于零售用途，拒绝理由不是违反本题零售用途条款。",
+      "B": "第19(1)条加入合理性限制，即使租约未明写，房东也并非可任意拒绝。",
+      "C": "正确。本题拟受让人在对面与房东经营的超市直接竞争，可合理拒绝。",
+      "D": "本题直接竞争确可构成合理理由，不能一概排除。",
+      "E": "较强支付能力只是考虑因素之一，不产生必然同意的义务。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Landlord and Tenant Act 1927，第19(1)条",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/17-18/36/section/19"
+        },
+        {
+          "label": "DWF：Unreasonably withholding consent to assign a lease（直接竞争）",
+          "url": "https://dwfgroup.com/en-au/news-and-insights/insights/2015/4/unreasonably-withholding-consent-to-assign-a-lease"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-038": {
+    "officialAnswer": "A",
+    "zh": "1984年的产权转让契据是所列文件中最佳候选：年代超过15年，通常源于有偿交易，产权曾受买方调查。最终仍须检查其涵盖完整法律与衡平权益、物业描述充分且不引起产权疑问。遗产转让文件 assent 也可能合格，但通常不如有偿转让契据有力。",
+    "ruleZh": "良好产权根通常须至少15年、涵盖完整产权、充分描述物业且不使产权产生疑问；有偿转让契据通常优先。",
+    "warning": "题目问最佳候选，不是只比较哪个日期最早，也不是说 assent 绝对不能作为产权根。",
+    "optionZh": {
+      "A": "正确。符合年代要求的产权转让契据通常是最佳候选，仍需核查具体内容。",
+      "B": "Assent 可以成为合格产权根，但通常缺少有偿交易中买方曾调查产权的保障。",
+      "C": "规划许可说明开发许可，并不证明完整土地所有权的转移。",
+      "D": "遗嘱本身不等于已完成的产权转让，也不能单独证明死者拥有完整产权。",
+      "E": "土地负担检索证明只反映检索结果，不能替代证明产权的契据。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "HM Land Registry Practice Guide 1，第5.3.1节",
+          "url": "https://www.gov.uk/government/publications/first-registrations/practice-guide-1-first-registrations"
+        },
+        {
+          "label": "Revise Property Practice：Good root of title，PDF第24页",
+          "url": "https://ringo-deng.github.io/sqe-practice/textbooks/revise-property-practice-2027-81ce2ca236a9-web-v1.pdf#page=24"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-039": {
+    "officialAnswer": "E",
+    "zh": "律师本人是卖方，却同时受聘维护买方客户的利益，存在自身利益冲突，至少存在重大冲突风险。SRA第6.1条禁止在这种情况下代理；客户知情并书面同意，以及交易最终顺利完成，都不能消除这项禁止。",
+    "ruleZh": "自身利益冲突或其重大风险适用第6.1条；第6.2条有关不同客户之间冲突的有限例外不能移用于此。",
+    "warning": "“实质共同利益”“竞争同一目标”不是自身利益冲突的豁免条件。",
+    "optionZh": {
+      "A": "客户书面同意不能使自身利益冲突下的代理合法。",
+      "B": "律师自行认为符合客户最佳利益，不能排除第6.1条的禁止。",
+      "C": "实质共同利益的例外针对不同客户的利益冲突，不适用于律师自身利益冲突。",
+      "D": "虽然结论为不合规，但其“竞争同一目标”的自身利益冲突例外不存在。",
+      "E": "正确。自身利益冲突或重大风险本身即阻止律师接受或继续该代理。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "SRA Code of Conduct for Solicitors，第6.1–6.2条",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/code-conduct-solicitors/"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-040": {
+    "officialAnswer": "E",
+    "zh": "警署讯问阶段的免费法律协助不按收入审查，因此年收入£180,000不妨碍男子获得值班律师协助。到治安法院申请法律援助代理令，则须另行满足司法利益与经济条件；按题设收入及未提供特殊情况的事实，他不能通过经济审查。",
+    "ruleZh": "警署法律协助与治安法院代理令分属不同资助规则，前一阶段合格不等于后续诉讼自动获资助。",
+    "warning": "不要将无前科或警署免费协助，误当成法院无需经济审查；实际申请中的家庭及特殊困难情况须另核。",
+    "optionZh": {
+      "A": "警署法律协助不因他的高收入而被经济审查排除。",
+      "B": "警署阶段免费，并不自动覆盖直到量刑的全部庭审。",
+      "C": "本题普通袭击并非只能获得电话咨询的非监禁类事项，不能作此限制。",
+      "D": "治安法院代理令有经济审查，单独通过司法利益审查仍不够。",
+      "E": "正确。警署可以免费获助，但题设下治安法院的经济条件不能满足。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "GOV.UK：被捕或被控犯罪时的法律援助",
+          "url": "https://www.gov.uk/legal-aid/arrested-or-charged-with-a-crime"
+        },
+        {
+          "label": "Legal Aid Agency：Criminal legal aid means testing",
+          "url": "https://www.gov.uk/guidance/criminal-legal-aid-means-testing"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-041": {
+    "officialAnswer": "E",
+    "zh": "1975年法第4条的一般申请期限是从首次遗产管理授权签发起六个月，不是从死亡日起算。授权已签发七个月，且题目明确排除了法院许可逾期申请的可能，因此遗孀已不能提出本题所述申请。",
+    "ruleZh": "合理经济供养申请一般应于首次 grant of representation 后六个月内提出；逾期须获法院许可。",
+    "warning": "有资格以配偶身份申请，与是否仍在申请期限内，是两个独立问题。",
+    "optionZh": {
+      "A": "该法一般期限是首次授权后六个月，不是两年。",
+      "B": "授权是否在死亡后六个月内签发，不决定申请人目前是否逾期。",
+      "C": "距死亡不足两年不是该法的时限标准。",
+      "D": "结论相同但起算点错误；死亡已过六个月本身不排除申请。",
+      "E": "正确。首次授权已过六个月，且本题不存在准许逾期的情形。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Inheritance (Provision for Family and Dependants) Act 1975，第4条",
+          "url": "https://www.legislation.gov.uk/ukpga/1975/63/section/4"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-042": {
+    "officialAnswer": "D",
+    "zh": "男子明知持刀接近会使女子害怕立即遭受非法暴力，仍继续行为，足以满足 assault 的主观要件。女子因此逃跑跌伤是对持刀威胁的可预见反应，题设伤害与该袭击具有因果联系。ABH不另要求他意图造成伤害或预见伤害风险，因此 D 正确。",
+    "ruleZh": "Assault occasioning ABH 要求故意或鲁莽的 assault 导致实际身体伤害；主观要件针对 assault，而非另须预见该伤害。",
+    "warning": "鲁莽关注被告实际意识到的即时暴力恐惧风险；仅称合理人应当预见受伤，不能代替本题主观要件。",
+    "optionZh": {
+      "A": "无需另外证明他预见身体伤害风险，已有针对 assault 的鲁莽即可。",
+      "B": "不要求故意造成伤害；鲁莽 assault 导致ABH也可成立。",
+      "C": "无需证明伤害几乎必然发生；本题不是靠间接故意成立。",
+      "D": "正确。实际意识到引起即时暴力恐惧的风险，并因该行为造成题设伤害。",
+      "E": "只用合理人的客观预见替代被告的主观状态，理由错误。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "CPS：Common assault及Assault occasioning actual bodily harm",
+          "url": "https://www.cps.gov.uk/prosecution-guidance/offences-against-person-incorporating-charging-standard"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-043": {
+    "officialAnswer": "A",
+    "zh": "男子为取消女儿的受益安排，故意把原遗嘱撕成四片，同时具备毁损行为与撤销意图，遗嘱因此被撤销。事后和解及改变心意不会自动恢复遗嘱；须按法定方式重新签立，或通过依法签立且显示恢复意图的遗嘱附录使其恢复。",
+    "ruleZh": "撤销可由立遗嘱人带着撤销意图撕毁原件完成；已撤销遗嘱的恢复须符合 Wills Act 第22条。",
+    "warning": "附条件撤销须有相应条件事实；单纯事后后悔，不会触发 dependent relative revocation。",
+    "optionZh": {
+      "A": "正确。撕毁原件并意在取消原安排，构成毁损撤销。",
+      "B": "原文写明女儿受益及现时愿望，不足以恢复已经撤销的遗嘱。",
+      "C": "无效的原因是有意毁损撤销，不是纸片是否还能拼接阅读。",
+      "D": "新遗嘱中的撤销条款不是唯一方式；第20条也承认有意毁损。",
+      "E": "题中撤销并未以另一安排生效为条件，不能仅因后来和解就适用该原则。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Wills Act 1837，第20条：撤销",
+          "url": "https://www.legislation.gov.uk/ukpga/Will4and1Vict/7/26/section/20"
+        },
+        {
+          "label": "Wills Act 1837，第22条：恢复",
+          "url": "https://www.legislation.gov.uk/ukpga/Will4and1Vict/7/26/section/22"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-044": {
+    "officialAnswer": "B",
+    "zh": "在外墙新开两个窗洞属于结构性改建。租约仅允许非结构性改建，对结构性改建构成绝对禁止，而不是经房东同意即可进行的条款。因此，本题房东可以拒绝特别放行，无须依“不得不合理拒绝同意”的条件作出决定。",
+    "ruleZh": "第19(2)条对须经同意的改善条款施加合理性限制，并不自动把所有绝对禁止改成须合理同意。",
+    "warning": "本题判断的是现有租约下的同意要求；不等于承租人在满足条件时绝无第3条改善工程程序等其他法定途径。",
+    "optionZh": {
+      "A": "租赁标的是整幢楼；关键是结构改建禁令，不能以外墙当然排除于租赁之外作为理由。",
+      "B": "正确。新开窗洞是结构改建，落入本题绝对禁止条款。",
+      "C": "法律没有把一切绝对改建禁令统一改成不得不合理拒绝同意。",
+      "D": "第19(2)条不当然改写这种绝对结构改建禁令。",
+      "E": "在外墙新开窗洞属于结构性改建，不是简单的非结构性装修。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Landlord and Tenant Act 1927，第19(2)条",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/17-18/36/section/19"
+        },
+        {
+          "label": "Revise Property Practice：改建限制及法定程序，PDF第86–88页",
+          "url": "https://ringo-deng.github.io/sqe-practice/textbooks/revise-property-practice-2027-81ce2ca236a9-web-v1.pdf#page=86"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-045": {
+    "officialAnswer": "D",
+    "zh": "执行人已要求支付遗赠，受益人也书面指示用于购房事项。律所可先将£20,000从执行人的客户分类账划入受益人的客户分类账，再将已垫付且已出账的£2,000转入业务银行账户偿还垫款；余下£18,000仍是用于购房的客户资金。",
+    "ruleZh": "客户资金的账页间划转须有适当授权并准确记账；转入业务账户偿付费用前须已出具账单，且仅划转对应金额。",
+    "warning": "£20,000的分类账划转改变资金归属记录；只有随后£2,000转出客户账户。预留购房资金不因此成为stakeholder资金。",
+    "optionZh": {
+      "A": "有执行人付款及受益人用途指示，可作客户分类账之间的划转，无须先寄支票。",
+      "B": "既未完整反映遗赠划归受益人的步骤，寄出余额也违反留作购房款的指示。",
+      "C": "余额是受益人的购房资金；题中没有代买卖双方作为stakeholder持有的安排。",
+      "D": "正确。先划归受益人的客户账页，再支付已垫付并已出账的£2,000，保留£18,000客户资金。",
+      "E": "£2,000已经垫付、出账且获授权，无须等购房完成才偿还。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "SRA Accounts Rules，第4.3、5.1及8.1条",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/accounts-rules/"
+        }
+      ]
+    }
   }
 }

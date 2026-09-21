@@ -35,7 +35,7 @@ const React=require('react');
 const api=require('../app/api/study/route.ts');
 async function post(body){const response=await api.POST(new Request('http://localhost/api/study',{method:'POST',headers:{'Content-Type':'application/json','x-study-action':'1'},body:JSON.stringify(body)}));assert.equal(response.status,200);return response.json();}
 async function main(){
- assert.deepEqual(Object.keys(reviews),raw.slice(0,30).map(q=>q.id));
+ assert.deepEqual(Object.keys(reviews),raw.slice(0,45).map(q=>q.id));
  const snapshot=JSON.stringify(raw);
  for(const original of raw){
   const reviewed=applySraFlk2SupplementaryReview(original);
@@ -58,10 +58,10 @@ async function main(){
   for(const source of review.supplementaryReview.sources)assert.ok(html.includes(source.url.replaceAll('&','&amp;')));
  }
  assert.equal(JSON.stringify(raw),snapshot,'Raw source objects stay unchanged');
- assert.equal(questions.filter(q=>q.explanation.supplementaryReview).length,30);
- assert.equal(questions.filter(q=>q.id.startsWith('sra-flk2-')&&q.explanation.zh.includes('未提供逐项解析')).length,80);
+ assert.equal(questions.filter(q=>q.explanation.supplementaryReview).length,45);
+ assert.equal(questions.filter(q=>q.id.startsWith('sra-flk2-')&&q.explanation.zh.includes('未提供逐项解析')).length,65);
  assert.ok(publicQuestions().every(q=>!('explanation' in q)&&!('supplementaryReview' in q)));
- for(const q of [raw[0],raw[15],raw[21],raw[24],raw[26],raw[28],raw[29]]){
+ for(const q of [raw[0],raw[15],raw[21],raw[24],raw[26],raw[28],raw[29],raw[30],raw[31],raw[32],raw[36],raw[39],raw[40],raw[44]]){
  const sessionId=randomUUID(),settings={action:'start',id:sessionId,mode:'practice',sourceId:'sra',sourceSet:q.sourceSet};
  let guest=applyGuestStudyAction(emptyGuestStudyState(),settings);
  let data=await post(settings);
@@ -77,6 +77,6 @@ async function main(){
  const restored=applyGuestStudyAction(guest.state,{action:'hydrate',sessionId});
  assert.equal(restored.data.questions.find(item=>item.id===q.id).explanation.zh,reviews[q.id].zh);
  }
- console.log('PASS: 30 source-aligned reviews, 150 option explanations, visible provenance, immutable official answers, guest/API reveal boundaries; 80 FLK2 placeholders remain.');
+ console.log('PASS: 45 source-aligned reviews, 225 option explanations, visible provenance, immutable official answers, guest/API reveal boundaries; 65 FLK2 placeholders remain.');
 }
 main().catch(error=>{console.error(error);process.exitCode=1;});
