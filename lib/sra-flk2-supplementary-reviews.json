@@ -348,5 +348,367 @@
         }
       ]
     }
+  },
+  "sra-flk2-original-016": {
+    "officialAnswer": "C",
+    "zh": "题目已经确认辨认程序违反 Code D，但违规不使证据自动失去可采性。根据 PACE 第 78 条，法院要考虑包括取证过程在内的全部情况，判断接纳证据是否会对程序公平造成严重不利影响，以至不应接纳。本案疤痕在辨认材料中可能突出嫌疑人，足以支持排除申请，但最终仍由法院判断。",
+    "ruleZh": "违反辨认规则与证据排除并非一一对应；第 78 条关注接纳控方证据对程序公平的影响。",
+    "warning": "嫌疑人同意参加辨认或曾拒绝法律意见，不会当然补正警方程序违规。",
+    "optionZh": {
+      "A": "滥用程序与第 78 条排除证据并非同一判断；本题最直接的标准是程序公平。",
+      "B": "证据有不利于被告的效果并不必然排除，违反 Code D 也没有题述自动后果。",
+      "C": "正确。法院可因接纳该证据对程序公平造成达到法定程度的不利影响而予以排除。",
+      "D": "虽然不是自动排除，但不能预先断言该违规对公平没有不利影响。",
+      "E": "不存在一经违规就必须排除并命令重新辨认的自动规则；重做也不必然消除先前影响。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Police and Criminal Evidence Act 1984，第 78 条",
+          "url": "https://www.legislation.gov.uk/ukpga/1984/60/section/78"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-017": {
+    "officialAnswer": "E",
+    "zh": "男子故意造成严重身体伤害，已具备谋杀所需的故意；其撞击行为导致严重脑损伤，仍是死亡的实质且持续起作用的原因。门卫处理不当和其后病情恶化，不使原伤害在本题中失去这一作用。脑干死亡后撤除生命支持，也不会把死亡原因改成单纯的关机行为。",
+    "ruleZh": "谋杀的故意包括杀人故意或造成严重身体伤害的故意；行为不必是死亡的唯一原因。",
+    "warning": "不能仅因另有人介入或医疗设备最终被关闭，就认定因果链已经中断。",
+    "optionZh": {
+      "A": "第三人的行为有贡献，不等于原攻击不再构成死亡的实质原因。",
+      "B": "题目已给出造成严重伤害的直接故意；无须再证明死亡是不可避免的后果。",
+      "C": "在确认脑干死亡后撤除生命支持，不使原来造成致命脑损伤的攻击退出因果链。",
+      "D": "题目没有共谋或帮助门卫行为的事实；男子可能作为直接实施致命攻击者承担责任。",
+      "E": "正确。其行为仍实质性地造成死亡，并具有造成严重伤害的故意。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "CPS：Homicide，Murder 部分",
+          "url": "https://www.cps.gov.uk/prosecution-guidance/homicide-murder-manslaughter-infanticide-and-causing-or-allowing-death-or"
+        },
+        {
+          "label": "LCCSA：R v Malcherek; R v Steel (1981) 判例摘要",
+          "url": "https://www.lccsa.org.uk/r-v-malcherek-r-v-steel-1981/"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-018": {
+    "officialAnswer": "D",
+    "zh": "男子故意非法烧毁他人财物，实施了刑事违法行为。对房车纵火，清醒而合理的人会认识到造成至少某种身体伤害的风险，因此属于客观上危险的行为。该行为实际造成车内女子死亡，构成 unlawful act manslaughter；无须证明他本人想伤人或实际考虑过车内有人。",
+    "ruleZh": "非法行为致死要求刑事违法行为、客观危险性及致死因果关系，并须具备基础违法行为的主观要件。",
+    "warning": "危险性标准是身体伤害的风险，不要求合理人预见死亡或严重伤害。",
+    "optionZh": {
+      "A": "把危险性门槛错误提高为危及生命；存在某种身体伤害风险已经足够。",
+      "B": "不要求具有伤害他人或危及生命的故意；本题已具备故意毁损财物的主观要件。",
+      "C": "重大过失致死是另一种构成路径，不能以“严重疏忽”代替本题非法危险行为的分析。",
+      "D": "正确。故意纵火毁损财物、客观危险性及实际致死均成立。",
+      "E": "题目明确他未考虑是否有人，不能把主观上预见伤人风险当作既定事实或必需条件。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Judicial College：Crown Court Compendium，2026年3月更新，第 19-5 节",
+          "url": "https://www.judiciary.uk/wp-content/uploads/2022/06/Crown-Court-Compendium-Part-I-Oct-25-Mar-26-update.pdf#page=450"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-019": {
+    "officialAnswer": "D",
+    "zh": "三人原先在法律和衡平法上均为共同共有。夫妻分居、丈夫搬走和妻子单独立遗嘱，本身都不构成本题共同共有的有效分割。妻子去世后适用生存者取得规则，丈夫与岳母继续在法律和衡平法上共同共有，妻子不能用遗嘱把其中的份额赠给男友。",
+    "ruleZh": "未被有效分割的 joint tenancy 适用生存者取得规则，不能由遗嘱处分独立份额。",
+    "warning": "分居改变居住情况，不当然改变共有方式；遗嘱也不能在死亡时抢先排除生存者取得。",
+    "optionZh": {
+      "A": "题目没有衡平法共同共有已被分割的事实，因此不能改成按份共有。",
+      "B": "男友不能凭遗嘱取得未分割的共同共有份额，也不会自动成为法律所有人。",
+      "C": "丈夫并未因搬离而丧失产权，男友也没有依遗嘱取得该房屋权益。",
+      "D": "正确。妻子的共同共有权益归存续共有人，丈夫与岳母的法律及衡平法共有方式保持不变。",
+      "E": "同时错误排除了丈夫、加入男友，并将衡平法共有改成按份共有。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "GOV.UK：Joint property ownership",
+          "url": "https://www.gov.uk/joint-property-ownership"
+        },
+        {
+          "label": "HMRC TSEM9210：Joint tenants",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem9210"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-020": {
+    "officialAnswer": "A",
+    "zh": "第 27 条公告保护的是分配时不知道其权利主张的债权人或受益人，不限于债权人。本题公告已经合规且经过三个月，可就未知权利获得相应个人责任保护。但是遗嘱明确给儿子一半，遗产代理人知道他的权利；找不到他或他没有回复公告，都不能把他的份额全部给女儿而免责。",
+    "ruleZh": "未知权利人与已知但失联的受益人不同；公告不能消除已知的遗产权益。",
+    "warning": "公告保护不消灭原权利，也不当然阻止权利人依法向取得遗产的人追索。",
+    "optionZh": {
+      "A": "正确。合规公告可保护未知债权和未知受益权，但无法防御已知儿子的权利。",
+      "B": "错误地把第 27 条的保护限于债权人；其范围也包括未知受益人。",
+      "C": "儿子及其权益早已为遗产代理人所知，不能通过公告无回复而排除。",
+      "D": "未知债权人属于可保护范围；反而儿子不属于可以忽略的未知权利人。",
+      "E": "同时误解了保护对象：未知权利可受公告保护，已知但失联的儿子不能。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Trustee Act 1925，第 27 条",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/19/section/27"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-021": {
+    "officialAnswer": "A",
+    "zh": "应估值的是死者持有的未分割一半权益，而非把整套公寓价值机械地除以二。单独出售共有份额通常不如拥有整套物业方便，故以 £100,000 为起点再反映共有折价。兄妹之间不适用因配偶或民事伴侣共同持有相关财产而合并估值的规则，租赁产权本身也不会排除折价。",
+    "ruleZh": "遗产税估值关注死亡时所持实际权益的市场价值；共有份额可能低于整项资产的同比例价值。",
+    "warning": "题目没有给出折价率，不能自行填入固定百分比；折价须根据具体估值情况确定。",
+    "optionZh": {
+      "A": "正确。对 £200,000 的一半作适当共有折价，反映该份额单独出售的价值。",
+      "B": "兄妹关系不等同于相关财产规则中的配偶或民事伴侣关系。",
+      "C": "女儿是死亡后取得遗产的受益人；母女关系不使这项兄妹共有的物业适用所述规则。",
+      "D": "不存在题述“超过两个近亲与物业有关就不折价”的一般规则。",
+      "E": "租赁产权仍可按份共有，不能仅因是 leasehold 而拒绝估值折价。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Valuation Office：Inheritance Tax Manual，第 18 节，尤其 18.1–18.8、18.14",
+          "url": "https://www.gov.uk/guidance/inheritance-tax-manual/section-18-undivided-shares"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-022": {
+    "officialAnswer": "B",
+    "zh": "按题设 2025/26 年度计算：资产总额为 £175,000 + £550,000 + £170,000 = £895,000；扣除 £9,000 债务及丧葬费，净遗产为 £886,000。侄子不属于住宅免税额要求的直系后代，故只扣普通免税额 £325,000。应税额 £561,000 × 40% = £224,400。",
+    "ruleZh": "住宅免税额不能仅因死者有自住房就扣除，还要满足由合资格后代承继等条件。",
+    "warning": "出租房仍计入遗产；题目写明“侄子”承继，不能误当作子女而使用 £175,000 住宅免税额。",
+    "optionZh": {
+      "A": "£354,400 等于净遗产 £886,000 直接乘 40%，遗漏了 £325,000 普通免税额。",
+      "B": "正确。（£895,000 − £9,000 − £325,000）× 40% = £224,400。",
+      "C": "£154,400 是额外误扣 £175,000 住宅免税额的结果；侄子不符合本题该项条件。",
+      "D": "£152,000 不符合题设资产、债务及可用免税额的计算；两处房产均须计入净遗产。",
+      "E": "£84,400 相当于在普通免税额外再减 £350,000；本题既不能享有住宅免税额，也无两个住宅额度。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "GOV.UK：Inheritance Tax，普通免税额与40%税率",
+          "url": "https://www.gov.uk/inheritance-tax"
+        },
+        {
+          "label": "HMRC：Residence nil rate band，直系后代范围",
+          "url": "https://www.gov.uk/guidance/inheritance-tax-residence-nil-rate-band"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-023": {
+    "officialAnswer": "D",
+    "zh": "男子实际预见电脑有受损风险，且按其所知情况承担这一风险并不合理，符合刑事毁损罪的主观鲁莽标准。罪名不要求他希望电脑永久报废，也不要求预见损害几乎必然发生。以恶作剧为动机，不能排除已经成立的鲁莽毁损。",
+    "ruleZh": "R v G：实际意识到损害风险，并在所知情况下不合理地承担该风险，足以构成相关鲁莽。",
+    "warning": "“实际预见风险”与“应当预见风险”不同；几乎必然性涉及故意判断，不能作为鲁莽的必要门槛。",
+    "optionZh": {
+      "A": "刑事毁损可以基于故意或鲁莽；没有毁坏电脑的目的不当然免责。",
+      "B": "认定鲁莽不要求预见损害几乎必然发生，预见可能风险即可。",
+      "C": "他已实际预见风险，题目不只是描述一个未注意风险的过失者。",
+      "D": "正确。该选项准确对应实际预见风险及不合理承担风险这两个要素。",
+      "E": "结论虽为有罪，但仅说“应当预见”使用了错误标准；本题应依实际预见认定鲁莽。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "R v G and another [2003] UKHL 50，第 41 段",
+          "url": "https://publications.parliament.uk/pa/ld200203/ldjudgmt/jd031016/g-3.htm"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-024": {
+    "officialAnswer": "E",
+    "zh": "邻居是签署契据并作出承诺的原始义务人，因而可直接承担其承诺责任，无须先证明契约负担已传给后手。“不得让屋顶失修”虽用否定措辞，实质要求维修和支出，是积极契约；这不妨碍对原始承诺人执行。",
+    "ruleZh": "先区分原始当事人与继受人；积极或限制性契约的负担随土地转移问题，不能取代原始承诺责任。",
+    "warning": "判断契约性质要看履行所需行为，不能看到“not”就认定为限制性契约。",
+    "optionZh": {
+      "A": "题目没有统一开发规划及相互限制性契约等事实，无须援引 building scheme。",
+      "B": "题目没有取得某项利益须承担相应负担的安排，不能凭空适用利益与负担原则。",
+      "C": "该契约实质上确为积极义务，但“积极”本身不是能否对某位被告执行的充分理由。",
+      "D": "修缮屋顶需要积极行动和费用，否定句式不会使它变成限制性契约。",
+      "E": "正确。邻居亲自作出契据承诺，是原始义务人，可直接因不履行被追究。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Revise SQE 土地法，第7章：原始当事人的契约责任（PDF第91页）",
+          "url": "https://ringo-deng.github.io/sqe-practice/textbooks/revise-land-law-2027-1e668e57a628-web-v1.pdf#page=91"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-025": {
+    "officialAnswer": "A",
+    "zh": "遗产按遗嘱把股份转给受益人，本身不使执行人产生应税资本利得。两名受益人分别承接死亡时 £100,000 的一半作为成本，即各 £50,000，而非转让时市值各 £75,000。女儿以 £85,000 售出，收益为 £35,000；儿子以 £45,000 售出，损失为 £5,000。因此选 A。",
+    "ruleZh": "遗赠资产的取得成本通常承接死亡时市场价值；向受遗赠人转移资产不产生执行人的资本利得。",
+    "warning": "遗产管理尚未全部结束，不会把已转给受益人的股份出售重新归到执行人名下；这里计算收益/损失，并非最终应缴税额。",
+    "optionZh": {
+      "A": "正确。女儿收益 £35,000，儿子损失 £5,000；执行人向二人分配股份没有收益或损失。",
+      "B": "遗漏儿子 £45,000 售价低于 £50,000 成本所产生的损失。",
+      "C": "错误地把死亡后至分配日的升值算成执行人的应税收益。",
+      "D": "既错认执行人在分配时有收益，也忽略了子女随后各自出售的税务结果。",
+      "E": "分配不产生执行人收益，而儿子出售确有 £5,000 损失。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Taxation of Chargeable Gains Act 1992，第 62(1)、62(4) 条",
+          "url": "https://www.legislation.gov.uk/ukpga/1992/12/section/62"
+        },
+        {
+          "label": "HMRC HS282（2026）：Personal representatives and legatees",
+          "url": "https://www.gov.uk/government/publications/death-personal-representatives-and-legatees-hs282-self-assessment-helpsheet/hs282-death-personal-representatives-and-legatees-2026"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-026": {
+    "officialAnswer": "D",
+    "zh": "男子对朋友承认杀害妻子，是对自己不利的陈述，属于 PACE 所定义的 confession。供认并不限于向警察作出，也无需后来在警诫讯问中确认，原则上可以作为对其不利的证据。醉酒和事后否认可能影响可靠性及证据分量，但本题没有因此自动排除的规则。",
+    "ruleZh": "供认可以向普通人作出；其可采性仍受 PACE 第 76、78 条等排除规则约束。",
+    "warning": "应区分“存在可采供认”与“陈述真实可信”；两名听到者也不是供认可采的法定人数门槛。",
+    "optionZh": {
+      "A": "供认通常就是庭外不利陈述；不能仅因不在庭审中作出便排除。",
+      "B": "后来拒绝确认或否认，不会自动使此前供认失去可采性。",
+      "C": "两个人听到可帮助证明曾有该陈述，但并非供认可采的必要条件或根本理由。",
+      "D": "正确。这是承认实施犯罪的不利陈述，符合供认的证据规则。",
+      "E": "自行醉酒不会自动排除供认；仍须结合取证、可靠性及程序公平等具体问题判断。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "PACE 1984，第 76 条",
+          "url": "https://www.legislation.gov.uk/ukpga/1984/60/section/76"
+        },
+        {
+          "label": "PACE 1984，第 82(1) 条：confession 定义",
+          "url": "https://www.legislation.gov.uk/ukpga/1984/60/section/82"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-027": {
+    "officialAnswer": "D",
+    "zh": "£25,000 作为 stakeholder 定金收取，属于客户资金而非律所收入。收款增加客户银行账户的现金，在 cash sheet client account 记借方；同时增加对买卖双方持有资金的责任，在 joint stakeholder ledger 记贷方。D 正好体现这一对等记录。",
+    "ruleZh": "收到客户资金：借记客户现金簿，贷记对应客户或stakeholder分类账。",
+    "warning": "借贷方向要从律所账簿理解，不能照抄银行对账单的记账方向；stakeholder定金不能当作律所自有资金。",
+    "optionZh": {
+      "A": "把两个方向都颠倒了：收到钱应借记客户现金簿，而非贷记。",
+      "B": "除方向颠倒外，还错误使用业务账户；该笔定金是客户资金。",
+      "C": "这是两个分类账之间的记录，没有反映本题客户银行账户实际收款。",
+      "D": "正确。借记 cash sheet client account £25,000，贷记 joint stakeholder ledger £25,000。",
+      "E": "贷记客户现金簿表示付款方向，而且未正确反映stakeholder责任。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "SRA Accounts Rules，第 2.1(b)、8.1 条",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/accounts-rules/"
+        },
+        {
+          "label": "Revise SQE 律师账目，第7章：Stakeholder deposits（PDF第90页）",
+          "url": "https://ringo-deng.github.io/sqe-practice/textbooks/revise-solicitors-accounts-2027-64a8048c0b56-web-v1.pdf#page=90"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-028": {
+    "officialAnswer": "C",
+    "zh": "第三人可以在获得适当授权后为客户传达指示，女儿的亲属身份既不当然禁止，也不自动证明授权。律师还须完成利益冲突及保密核查：其已代理同案的儿子，父子可能出现不一致的辩护立场。确认女儿有授权且不存在妨碍代理的冲突后，才可接受，故 C 最合适。",
+    "ruleZh": "须核实第三人的授权，并审查利益冲突、重大冲突风险及原客户保密信息。",
+    "warning": "同属一家人或涉及同一罪名都不能免除核查；第 6.2 条的规范措辞是“重大冲突风险”，原选项对此有所简写。",
+    "optionZh": {
+      "A": "并无一概禁止近亲代为传达授权指示的规则，关键是有效授权及其他职业义务。",
+      "B": "SRA规则明确允许适当获授权的人代客户提供指示，因此绝对禁止第三人的说法错误。",
+      "C": "正确。授权及冲突核查是本题核心，仍须同时遵守保密义务。",
+      "D": "亲属之间也可能利益相反，不能跳过冲突检查。",
+      "E": "同一案件的父子可能互相指责或采取不兼容辩护，不能因亲属和同罪名就认为没有冲突。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "SRA Code of Conduct，第 3.1、6.2–6.5 段",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/code-conduct-solicitors/"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-029": {
+    "officialAnswer": "B",
+    "zh": "丈夫享有终身收益权；儿子虽已超过 25 岁，仍须活过丈夫才能取得本金。如果儿子未能活过丈夫，姐妹将绝对取得本金。因此全部权益不只属于父子，还包括姐妹的替代受益权。在所有相关受益人均成年、有行为能力并共同享有全部受益权益的前提下，须三人一致同意才能依 Saunders v Vautier 规则现在终止。",
+    "ruleZh": "提前终止须涵盖全部受益权益，包括尚附条件或替代性的权益，不能只看当前收益受益人。",
+    "warning": "儿子已经 30 岁只解决年龄条件，没有消除存活条件或姐妹的替代权益。",
+    "optionZh": {
+      "A": "遗漏姐妹：她在儿子先于丈夫死亡的情况下仍可能取得本金。",
+      "B": "正确。丈夫、儿子、姐妹的权益合起来才覆盖全部受益权益。",
+      "C": "遗漏儿子的附条件本金权益，不能由另外两人剥夺。",
+      "D": "姐妹只有替代性权益，不能独自终止涵盖丈夫和儿子权益的信托。",
+      "E": "遗漏丈夫正在享有的终身收益权，不能由后位受益人自行消灭。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Revise SQE 信托法，第5章：Terminating the trust（PDF第54页）",
+          "url": "https://ringo-deng.github.io/sqe-practice/textbooks/revise-trusts-2027-5b8fade5b889-web-v1.pdf#page=54"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-030": {
+    "officialAnswer": "C",
+    "zh": "£60,000 平分三名子女，每人的预期份额为 £20,000。第 32 条法定预支权允许受托人为受益人的发展或利益提前动用本金，即使其权益仍以达到某年龄为条件。本题遗嘱信托新近成立，适用 2014 年修法后的规则，最高可及该受益人的全部份额，所以为 £20,000，而非旧规则的一半。",
+    "ruleZh": "适用修法后规则时，法定预支上限是受益人的全部预期或既得份额；实际支付仍由受托人适当行使裁量。",
+    "warning": "遗嘱未扩张权力，不代表法定预支权不存在。获准预支的金额须计入该受益人最终份额，不能侵占其他子女的份额。",
+    "optionZh": {
+      "A": "未达到 21 岁不排除法定预支权；19岁女儿可为其发展或利益获得适当预支。",
+      "B": "£10,000 是半份额旧上限。本题新近成立的信托不受该旧限制。",
+      "C": "正确。£60,000 ÷ 3 = £20,000，可预支上限为其全部份额。",
+      "D": "£30,000 是整个基金的一半，并非该女儿自己的份额，超过其上限。",
+      "E": "兄长领取份额后余下 £40,000 属于两名女儿，不能全部用于一人的预支。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Trustee Act 1925，第 32 条",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/19/section/32"
+        },
+        {
+          "label": "Inheritance and Trustees’ Powers Act 2014，第 9–10 条",
+          "url": "https://www.legislation.gov.uk/ukpga/2014/16/contents"
+        },
+        {
+          "label": "2014年生效令，第2条（2014年10月1日）",
+          "url": "https://www.legislation.gov.uk/uksi/2014/2039/article/2"
+        }
+      ]
+    }
   }
 }
