@@ -1,0 +1,352 @@
+{
+  "sra-flk2-original-001": {
+    "officialAnswer": "B",
+    "zh": "经理认识这名曾在酒吧工作的男子，男子也承认这段雇佣关系；争议是经理当晚是否认错人，而非经理能否从人群中认出自己的前同事。PACE Code D 第 3.12 段将这种双方不争议原本相识的情形列为辨认程序可能没有实际用途的例子，因此 B 最合适。",
+    "ruleZh": "相识且相识事实不受争议时，正式辨认程序可能无助于证明或否定嫌疑人的参与。",
+    "warning": "无需举行辨认程序，不等于经理的指认必然可靠；光线、距离和观察条件仍影响证据分量。",
+    "optionZh": {
+      "A": "没有录像会影响可用证据，但不会使经理再次辨认一个本来就认识的人变得有用。",
+      "B": "正确。男子承认曾在经理所在酒吧工作，符合原本相识且无争议的题设。",
+      "C": "警方认识男子或掌握其前科，不是判断目击者辨认程序是否有用的标准。",
+      "D": "光线差可能削弱指认的可靠性，却不是本题无需辨认程序的关键理由。",
+      "E": "相距十米不当然使辨认程序无用，题目也未说明该距离必然无法观察。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "PACE Code D 2023，第 3.12–3.13 段",
+          "url": "https://www.gov.uk/government/publications/pace-code-d-2023/pace-code-d-2023-accessible"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-002": {
+    "officialAnswer": "A",
+    "zh": "新罪发生在原判作出后三个月，落在 12 个月的缓刑生效期间内，因此法院可以启动原来的六个月监禁。完成无偿劳动并不会提前结束生效期间。原则上应启动监禁，除非综合情况这样做会不公正；已完成的义务可以纳入这一判断。",
+    "ruleZh": "判断再犯是否触发缓刑，关注新罪的实施时间是否处于 operational period。",
+    "warning": "六个月是原监禁刑期，12 个月才是本题用于判断再犯的缓刑生效期间。",
+    "optionZh": {
+      "A": "正确。新罪实施于 12 个月生效期间之内，满足因再犯处理缓刑的时间条件。",
+      "B": "刑事毁损并非题述的不得判处监禁之罪；该理由不能排除启动原缓刑。",
+      "C": "完成无偿劳动是有利因素，但不能免除生效期间内再犯的后果。",
+      "D": "无需等生效期间届满；期间尚在进行不妨碍法院因新罪启动监禁。",
+      "E": "结论虽为“可以”，理由选错了期间；决定因素是 12 个月生效期间，并非六个月刑期。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Sentencing Council：Breach of a suspended sentence order，第 1 部分",
+          "url": "https://sentencingcouncil.org.uk/guidelines/breach-of-a-suspended-sentence-order/"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-003": {
+    "officialAnswer": "E",
+    "zh": "原有三名受托人，一人死亡后仍有两人可以履行信托职责。题目没有要求始终维持三人的特别条款。Trustee Act 1925 第 37(1)(c) 条并不要求在原任受托人超过两人时补足原人数，因此无须仅因这次死亡再任命一人。",
+    "ruleZh": "原先超过两名受托人的信托，通常不必一直维持原人数。",
+    "warning": "未成年受益人的存在，不会把本题所需受托人数自动提高到三人。",
+    "optionZh": {
+      "A": "仍有未成年受益人并不意味着必须有三名受托人；现有两人可继续管理。",
+      "B": "原来任命三人不等于法律要求人数永远保持为三。",
+      "C": "遗嘱信托的成立时间本身不是免于补任受托人的依据。",
+      "D": "没有土地并非本题的决定性理由；即使涉及土地，也不能据此推导出必须补足三人。",
+      "E": "正确。仍有两名存续受托人，题设下无须补足原来的三人。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Trustee Act 1925，第 37 条",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/19/section/37"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-004": {
+    "officialAnswer": "B",
+    "zh": "第 27 条通知应给债权人至少两个月申报，起算依广告通知，而非死亡或遗嘱认证日期；多次刊登时须以最后一则通知满足法定期间。期满后，执行人仍须处理已知债权。合规分配可保护执行人免于对当时未知的债权承担个人责任，并不会消灭债权本身。",
+    "ruleZh": "Trustee Act 1925 第 27 条：公告申报期不少于两个月，已知债权不能忽略。",
+    "warning": "两个月公告期解决的是未知债权保护，不表示所有遗产管理事项届时都已完成或可无条件分配。",
+    "optionZh": {
+      "A": "法定公告等待期不是从取得 grant of probate 时起算。",
+      "B": "正确。应满足广告所定至少两个月的申报期；有多则通知时注意最后一则的日期。",
+      "C": "死亡日期不是公告申报期的起点。",
+      "D": "法律没有要求死亡满两个月后才能发布这种通知。",
+      "E": "法律没有要求取得遗嘱认证满两个月后才能发布这种通知。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Trustee Act 1925，第 27 条",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/19/section/27"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-005": {
+    "officialAnswer": "D",
+    "zh": "没有相反遗嘱意思时，离婚后前配偶的执行人任命按其在离婚日已死亡处理。儿子先于立遗嘱人死亡，未曾取得本遗产的遗嘱认证；其遗产执行人不能据此继承本案任命。朋友是仍可履职的指定执行人，权利优先于仅作为受益人的侄女，因此只有朋友最有权申请。",
+    "ruleZh": "指定执行人的任命、离婚效果及执行人继任链，要分别判断。",
+    "warning": "儿子的执行人并不当然也是父亲的执行人；继任链要求满足遗产管理法的条件。",
+    "optionZh": {
+      "A": "错误地包括前配偶和儿子的侄子；前者受离婚规则影响，后者不能在本题形成执行人继任链。",
+      "B": "侄女虽为成年受益人，但没有因此与仍在世的指定执行人共同取得同等申请优先权。",
+      "C": "儿子的侄子与遗产受益人都不能仅凭各自身份加入本案指定执行人的申请顺位。",
+      "D": "正确。朋友仍是有资格履职的指定执行人，题目未显示其放弃或不能任职。",
+      "E": "儿子先于立遗嘱人去世且未证明其遗嘱，不存在本题所需的执行人继任链。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Wills Act 1837，第 18A 条",
+          "url": "https://www.legislation.gov.uk/ukpga/Will4and1Vict/7/26/section/18A"
+        },
+        {
+          "label": "Administration of Estates Act 1925，第 7 条",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/23/section/7"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-006": {
+    "officialAnswer": "E",
+    "zh": "律师知道客户故意报出虚假身份资料以隐瞒前科，不能继续配合这种误导。应先要求客户纠正；若客户拒绝，则停止代理。律师同时负有保密义务，因此本题不能直接跳到未经沟通便向法院披露客户资料，也不能通过暗示品行良好来维持错误印象。",
+    "ruleZh": "不得误导法院或成为客户误导行为的共犯，同时须遵守客户保密义务。",
+    "warning": "“不提及前科”不能解决律师已知客户正积极误导法院的情形。",
+    "optionZh": {
+      "A": "应先要求客户纠正并给予其纠正机会；题目尚未说明客户拒绝。",
+      "B": "单纯避谈品行，不能消除已知虚假地址和出生日期造成的误导。",
+      "C": "不能仅以避免误导为由，忽略保密义务和先向客户提出纠正要求的步骤。",
+      "D": "暗示良好品行仍会强化虚假印象，同样构成误导问题。",
+      "E": "正确。先要求纠正；拒绝纠正时停止代理，不能继续协助误导法院。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "SRA Code of Conduct，第 1.4、6.3 段",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/code-conduct-solicitors/"
+        },
+        {
+          "label": "SRA：Conduct in disputes",
+          "url": "https://www.sra.org.uk/solicitors/guidance/conduct-disputes/"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-007": {
+    "officialAnswer": "B",
+    "zh": "这是一份适用 1995 年法的新租约。合法转让通常释放转让人的租户契约责任，但 AGA 可要求其保证直接受让人的履约。药店为书店提供了 AGA，所以可被追索；报刊商的 AGA 针对服装店，在服装店进一步转让并获释放后不继续覆盖书店。题目未给服装店任何担保义务。",
+    "ruleZh": "AGA 保证直接受让人的履约，不能无限延伸到其后的所有承租人。",
+    "warning": "不要把旧租约原承租人的持续责任，直接套到本题的新租约及 AGA 上。",
+    "optionZh": {
+      "A": "把所有前承租人都列入，忽略了合法转让后的法定责任释放。",
+      "B": "正确。药店的 AGA 直接保证目前欠租的书店。",
+      "C": "服装店已合法转让，且题目未载其提供 AGA；不能仅因曾为承租人而追索。",
+      "D": "报刊商保证的是服装店，而非后来受让的书店。",
+      "E": "药店应列入，但报刊商的旧 AGA 不延伸至书店。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Landlord and Tenant (Covenants) Act 1995，第 5、16 条",
+          "url": "https://www.legislation.gov.uk/ukpga/1995/30/contents"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-008": {
+    "officialAnswer": "D",
+    "zh": "当事人无法谈妥受保护商业租约的新条款时，法院可依 1954 年法决定。第 33 条将法院在无协议时确定的固定期限限制在不超过 15 年；第 35 条要求法院就其他条款考虑现有租约和所有相关情况，并非只能原样续租或仅能调整租金。",
+    "ruleZh": "无协议时，法院可依法决定新租约条款；法院决定的固定租期最多 15 年。",
+    "warning": "考虑原租约条款，不等于每一条都必须照搬；15 年限制也不应误读为双方自愿协商租期的一概上限。",
+    "optionZh": {
+      "A": "法院的权力不局限于逐字复制现有租约。",
+      "B": "法院可以依法决定租金以外的条款，而非只准改租金。",
+      "C": "虽写对 15 年上限，却错误地限制其他条款必须完全不变。",
+      "D": "正确。法院按法定规则确定条款及期限，固定租期不超过 15 年。",
+      "E": "法院依法续租不会自动使新租约排除 1954 年法的保护。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Landlord and Tenant Act 1954，第 33 条",
+          "url": "https://www.legislation.gov.uk/ukpga/Eliz2/2-3/56/section/33"
+        },
+        {
+          "label": "Landlord and Tenant Act 1954，第 35 条",
+          "url": "https://www.legislation.gov.uk/ukpga/Eliz2/2-3/56/section/35"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-009": {
+    "officialAnswer": "E",
+    "zh": "余留财产须分给全部现任及前任雇员，属于固定受益范围的信托，需要能够列出完整受益人名单。题目明确存在完整记录，因此满足本题的对象确定性要求。知道某人是谁与能够找到其现住址是两回事；暂时无法联系部分雇员，不会仅因此使赠与无效。",
+    "ruleZh": "固定信托关注完整受益人名单；受益人身份确定性与实际联系困难须区分。",
+    "warning": "不要把酌情信托的对象测试或抽象的管理困难，直接套到已有完整名单的固定信托上。",
+    "optionZh": {
+      "A": "题目只说明可能联系不到部分雇员，未提供足以认定信托无法管理的事实。",
+      "B": "受益人是雇员而非公司；“公司不能成为受益人”本身也不是正确的一般规则。",
+      "C": "公司继续存在不直接证明受益对象确定，本题关键是完整的人员记录。",
+      "D": "受益人数多并非信托有效的法律理由。",
+      "E": "正确。完整记录可确定全部雇员受益人，无法联系个别人不等于身份不确定。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Snell’s Equity，第 34 版，第 22-022 段及脚注 113–114（PDF 第 50–51 页）",
+          "url": "https://www.ius.uzh.ch/dam/jcr:3943c99d-c6d5-47e5-89c7-201709e6f31e/Fox,%20Snells%20Equity%20Part%205%20-%20Trusts.pdf#page=50"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-010": {
+    "officialAnswer": "A",
+    "zh": "母亲已经取得终身居住的受益权，没有尚待满足的先决条件，因此是 vested interest。侄子与侄女都必须在母亲去世时仍生存，并达到 21 岁。侄女虽已 22 岁，仍未满足存活至母亲去世这一条件；侄子还未达到年龄要求。因此两人的权益都是 contingent interests。",
+    "ruleZh": "既得权益与附条件权益的区别，在于权利归属是否仍取决于不确定的先决条件。",
+    "warning": "只推迟享有不一定使权益附条件；但“存活至某人死亡”是额外的存活条件。",
+    "optionZh": {
+      "A": "正确。母亲的权利已确定，而两名后位受益人的存活条件均尚未满足。",
+      "B": "把两类权益倒置；母亲没有题述先决条件，侄子和侄女则有。",
+      "C": "母亲已经有终身居住权，不能把三人都列为附条件权益。",
+      "D": "侄子和侄女的权利仍取决于先决条件，并非全部既得。",
+      "E": "侄女达到 21 岁仅满足年龄条件，尚须比母亲活得更久。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "HMRC TSEM6210：Vested interest — definition",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem6210"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-011": {
+    "officialAnswer": "D",
+    "zh": "本题考查 OS1 查询提供的登记优先保护，因此官方选 D。应在查询证书所示优先期届满前提交受保护的登记申请，避免丧失对随后申请的优先地位。不能从交换合同或交割日另算 30 个工作日。",
+    "ruleZh": "OS1 优先期与查询申请有关；登记申请须在优先期内列入或依法视为列入 day list。",
+    "warning": "原题“登记在 30 个工作日内完成”是简化说法：重点是及时提交登记申请，并非要求土地登记局届时办结。PG12 第 5.2 节规定起于查询列入 day list，止于收到查询申请日后第 30 个工作日午夜；应依证书到期日办理，不能把结果的收件日当作新起点。",
+    "optionZh": {
+      "A": "交换合同日不是 OS1 优先期的起点，SDLT 的期限也不是本题的登记优先期。",
+      "B": "交割日不会重新启动查询优先期；该期限并非为避免未付交割价款的利息。",
+      "C": "逾期可能丧失优先保护，不表示衡平法产权因此自动回归卖方。",
+      "D": "正确选项所指的是 OS1 查询的优先保护。实践中须按证书载明的期限及时提交申请。",
+      "E": "贷款人的出售权不因交割后满 30 个工作日而自动产生。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "HM Land Registry Practice Guide 12，第 5.2–5.3 节",
+          "url": "https://www.gov.uk/government/publications/official-searches-and-outline-applications/practice-guide-12-official-searches-and-outline-applications"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-012": {
+    "officialAnswer": "D",
+    "zh": "灯具仅由三枚小螺丝轻度固定，题目又没有将其列入买卖合同，官方答案将它判断为较可能属于可移走的动产，因此选 D。附着程度及附着目的都要考虑；此处固定方式支持动产结论，但不能抽象成“有螺丝就一定可拆”。",
+    "ruleZh": "判断 fixture 或 chattel，应综合附着程度和附着目的。",
+    "warning": "纪念意义不是可以移除的独立法律标准；具体交易仍须核对合同及物品清单。",
+    "optionZh": {
+      "A": "三枚小螺丝体现的是轻度附着，题目不支持“高度附着”的判断。",
+      "B": "本题未给出承诺留下这件灯具的条款，不能仅以房间可能没有照明推导所述默示义务。",
+      "C": "房屋内所有物品并不当然属于土地，家具等动产可以独立存在。",
+      "D": "正确。这种轻度附着支持灯具较可能为动产的判断，与题述合同情况一致。",
+      "E": "情感价值不能推翻物品本身的法律性质或合同约定。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Elitestone Ltd v Morris [1997]：附着程度与目的",
+          "url": "https://publications.parliament.uk/pa/ld199697/ldjudgmt/jd970501/elites01.htm"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-013": {
+    "officialAnswer": "A",
+    "zh": "应分别看工程和用途。题述普通室内非结构工程不构成需要规划许可的 development；但从办公室改为夜总会，是实质用途改变。夜总会属于 sui generis，不能因为不在一般用途类别内就享有豁免，所以用途改变需要规划许可。",
+    "ruleZh": "室内工程与实质用途改变须分别审查；sui generis 并不等于免许可。",
+    "warning": "空置五年不等于四年后自动放弃用途或可以随意改用；规划许可与建筑规范审批也不同。",
+    "optionZh": {
+      "A": "正确。室内工程本身与改作夜总会的用途改变有不同的规划结论。",
+      "B": "不存在题述“空置超过四年就无须许可”的规则，放弃原用途也不能自动豁免新用途。",
+      "C": "sui generis 表示不归入普通用途类别，并非无需许可的标签。",
+      "D": "错误地把本题普通室内非结构工程也当成需要规划许可的发展。",
+      "E": "办公室与夜总会的使用性质明显不同，题目所述改变具有实质性。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Town and Country Planning Act 1990，第 55(1)、55(2)(a) 条",
+          "url": "https://www.legislation.gov.uk/ukpga/1990/8/section/55"
+        },
+        {
+          "label": "GOV.UK：When is permission required?",
+          "url": "https://www.gov.uk/guidance/when-is-permission-required"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-014": {
+    "officialAnswer": "D",
+    "zh": "保释条件禁止联系女友，女友主动邀请不能修改法院条件。男子到访构成违反，警方可将其带到法院重新考虑保释。孩子生病及女友确认经过可供法院衡量，但既不自动取消违反，也不意味着必须一直还押至审判。",
+    "ruleZh": "违反本题的保释条件可导致逮捕和重新审查保释，违反条件本身不构成 Bail Act 下的独立罪名。",
+    "warning": "须区别违反联系限制与无合理理由不到庭；后者另有刑事责任规则。",
+    "optionZh": {
+      "A": "邀请来自女友并不能变更法院施加的禁止联系条件。",
+      "B": "探望患病孩子可解释背景，但不会自动消除违反既有条件的事实。",
+      "C": "本题单纯违反联系条件本身并非一个独立的违反保释罪。",
+      "D": "正确。法院将重新审查是否继续保释以及应适用何种条件。",
+      "E": "还押并非自动结果；法院仍可按原条件或变更条件准予保释。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "CPS：Bail，Breach of Conditions of Bail（Bail Act 1976 第 7 条）",
+          "url": "https://www.cps.gov.uk/prosecution-guidance/bail"
+        }
+      ]
+    }
+  },
+  "sra-flk2-original-015": {
+    "officialAnswer": "C",
+    "zh": "死者没有配偶或民事伴侣，遗产按无遗嘱继承规则由其子女继承。亲生儿子与依法收养的女儿均属其子女，且已成年，各分得一半。长期同居不使伴侣自动取得配偶份额；伴侣的另一名女儿也未因同住而成为死者的法定子女。",
+    "ruleZh": "无配偶或民事伴侣时，子女依无遗嘱继承法定信托继承；依法收养的子女与亲生子女同列。",
+    "warning": "这里判断的是自动法定继承资格，不能据此排除符合条件的人另行申请家庭及受扶养人财务供养。",
+    "optionZh": {
+      "A": "加入了没有婚姻或民事伴侣身份的同居伴侣，她不自动享有法定继承份额。",
+      "B": "伴侣的 23 岁女儿没有被死者收养，不能仅凭长期同住取得子女继承资格。",
+      "C": "正确。亲生儿子与收养的女儿均为死者的成年子女，共同继承。",
+      "D": "遗漏收养的女儿；收养赋予她法律上的子女身份。",
+      "E": "遗漏亲生儿子；先前关系所生不影响他的子女继承资格。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-21",
+      "sources": [
+        {
+          "label": "Administration of Estates Act 1925，第 46 条",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/23/section/46"
+        },
+        {
+          "label": "Adoption and Children Act 2002，第 67 条",
+          "url": "https://www.legislation.gov.uk/ukpga/2002/38/section/67"
+        }
+      ]
+    }
+  }
+}

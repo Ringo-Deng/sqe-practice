@@ -401,3 +401,5 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
 
 .question-answer-counts{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 18px;margin-top:16px;color:#738099;font-size:13px;line-height:1.6;font-variant-numeric:tabular-nums}
 .question-answer-counts b{font-weight:600;color:#405777}
+
+.supplementary-review-sources{margin:0 0 12px;color:#5d7292;font-size:13px;line-height:1.7}.supplementary-review-sources summary{cursor:pointer}.supplementary-review-sources p{margin:8px 0}.supplementary-review-sources ul{margin:6px 0;padding-left:20px}.supplementary-review-sources a{text-decoration:underline;overflow-wrap:anywhere}

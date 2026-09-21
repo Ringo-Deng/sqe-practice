@@ -20,6 +20,7 @@ import reviseTranslations from './revise-assessment-translations.json';
 import staticTranslations from './static-question-translations.json';
 import reviseReferences from './revise-assessment-references.json';
 import questionTextbookLinks from './question-textbook-links.json';
+import {applySraFlk2SupplementaryReview} from './sra-flk2-review-overlay';
 import textbookReviews from './contract-textbook-reviews.json';
 import type {Question,Explanation} from './study-types';
 import {classifyLegalQuestion} from './legal-syllabus';
@@ -60,6 +61,6 @@ export const assembledQuestions:FullQuestion[]=[...(officialQuestions as FullQue
  if(!review)return linked;
  const {explanation,quickPoints,...classification}=review;
  return {...linked,...classification,explanation:{...linked.explanation,...explanation},knowledge:linked.knowledge?{...linked.knowledge,...(quickPoints?{points:quickPoints}:{}),warning:{...linked.knowledge.warning,zh:explanation.warning??linked.knowledge.warning.zh}}:undefined};
-});
+}).map(applySraFlk2SupplementaryReview);
 export const questions:FullQuestion[]=assembledQuestions.map(classifyLegalQuestion);
 export function publicQuestions(){return questions.map(({explanation,knowledge,...q})=>q);}
