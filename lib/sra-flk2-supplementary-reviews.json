@@ -1430,5 +1430,1361 @@
         }
       ]
     }
+  },
+  "sra-flk2-pretested-061": {
+    "officialAnswer": "B",
+    "zh": "受托人擅自转出20万英镑，女友实际收取并用于自己消费。她知道男友负债、无力负担这笔赠与，还听他多次表示会挪用信托资金，却有意不询问来源。这样的警讯与刻意回避足以支持她在收款时的认知使保有款项有违良知，受益人可向她提出个人的 knowing receipt 请求；钱已花完不消灭个人责任，故选B。",
+    "ruleZh": "知情收受信托财产关注收款人取得财产时对违信转移的认知；故意回避明显疑点不能仅靠“没有亲眼看见”免责。",
+    "warning": "本题问针对收款人的个人请求，不是对已耗尽款项的物权追踪，也不要求证明她参与安排挪款。",
+    "optionZh": {
+      "A": "题干证明她收款及回避疑点，未证明她帮助受托人实施转款；不应把知情收受直接写成不诚实协助。",
+      "B": "正确。反复获悉挪用意向及异常财力仍刻意不问来源，可支持收受时的必要认知。",
+      "C": "她后来改变花钱用途，不会使最初的违信收款合法化。",
+      "D": "故意回避明显疑点不能简单等同于完全无认知。",
+      "E": "款项耗尽可能影响财产追踪，却不当然排除针对知情收款人的个人责任。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第61题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question61"
+        },
+        {
+          "label": "BCCI v Akindele：知情收受与良知标准",
+          "url": "https://www.bailii.org/ew/cases/EWCA/2000/502.html"
+        },
+        {
+          "label": "Byers v Saudi National Bank：个人知情收受请求",
+          "url": "https://supremecourt.uk/cases/uksc-2022-0048"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-062": {
+    "officialAnswer": "C",
+    "zh": "立遗嘱人可以先签名，再在两名同时在场的见证人面前确认该签名；两名见证人也不必彼此看见对方签字。但每一名见证人都须在立遗嘱人面前签署。年轻见证人签字时，立遗嘱人已去了厨房，所以第9条的执行要件未满足，选C。",
+    "ruleZh": "Wills Act 1837 第9条要求立遗嘱人向两名同时在场的见证人签署或确认签名，并要求各见证人在立遗嘱人面前签署。",
+    "warning": "不要求两名见证人同时签名，也不因没有日期或见证条款就自动无效。",
+    "optionZh": {
+      "A": "遗嘱不因单纯未写日期而不成立。",
+      "B": "立遗嘱人可在两名见证人面前确认已经作出的签名。",
+      "C": "正确。年轻见证人签字时立遗嘱人不在场。",
+      "D": "法律要求见证人面对立遗嘱人签署，并不要求相互见证签名。",
+      "E": "没有固定格式的见证条款不是本题的无效原因。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第62题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question62"
+        },
+        {
+          "label": "Wills Act 1837，第9条",
+          "url": "https://www.legislation.gov.uk/ukpga/Will4and1Vict/7/26/section/9"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-063": {
+    "officialAnswer": "A",
+    "zh": "双方口头约定立即起租、期限12个月、按月支付市价租金，并赋予艺术家独占占有权。符合不超过三年、立即生效及最佳租金等短期租赁例外，无须契据或双方签署书面合同即可设立法定租赁，选A。出租人在艺术家实际迁入前反悔，不会把已成立的租赁降为许可。",
+    "ruleZh": "Law of Property Act 1925 第54(2)条允许满足条件、期限不超过三年的即时短期租赁以口头方式设立。",
+    "warning": "“立即生效”看约定的租期起点；题设说的是即时起租，不以承租人已搬入为条件。",
+    "optionZh": {
+      "A": "正确。12个月、即时起租、按市价租金及独占占有，适用短期口头租赁例外。",
+      "B": "单方确认邮件并非形成本题租赁所需的双方签署土地合同；且已可依法成立法定租赁。",
+      "C": "没有双方签署的邮件不妨碍第54(2)条例外适用。",
+      "D": "未实际搬入不改变已约定立即开始的租赁性质。",
+      "E": "是否需要登记不是把口头即时短租变成衡平法租赁的理由。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第63题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question63"
+        },
+        {
+          "label": "Law of Property Act 1925，第54条",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/20/section/54"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-064": {
+    "officialAnswer": "C",
+    "zh": "报警电话紧接被指的袭击，报案人惊恐哭泣并躲在浴室，警员数分钟后仍见其情绪激动和面部伤痕。法官可据此认定她受到事件强烈影响，编造或歪曲的可能性可被排除，因此电话中的即时陈述可按 res gestae 例外采纳，选C。",
+    "ruleZh": "即时陈述是否属 res gestae，关键是事件和说话时的状态能否使编造或歪曲的可能性可被忽略。",
+    "warning": "伤痕能协助判断陈述的背景和可靠性，但“有佐证”本身不是该例外的法定判断标准。",
+    "optionZh": {
+      "A": "陈述人不出庭不当然排除符合 res gestae 的即时陈述。",
+      "B": "已录音的口头陈述不因没有另写书面证言而当然不可采。",
+      "C": "正确。紧接事件的极端情绪状态支持排除编造可能。",
+      "D": "现场伤痕有辅助意义，但不能以“存在佐证”取代该例外的核心检验。",
+      "E": "陈述可向接线员作出，不限于对警员说出。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第64题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question64"
+        },
+        {
+          "label": "CPS：Hearsay，Res Gestae",
+          "url": "https://www.cps.gov.uk/prosecution-guidance/hearsay"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-065": {
+    "officialAnswer": "C",
+    "zh": "三名共同登记所有人中一人死亡后，法定产权由两名存续共同所有人处理，死者遗产执行人无需作为转让人签署。买方将因转让文书中的限制性契约承担相应承诺，须签署含其承诺的转让书；她的儿子只是拟议信托的受益人，不是本次受让人。因此除两名存续所有人外只需买方签署，选C。",
+    "ruleZh": "死亡的共同登记所有人之个人代表不与存续所有人共同转让；转让文书载有受让人承诺时受让人也须签署。",
+    "warning": "衡平法上的按份共有，不会使死者遗产执行人成为共同法定产权的签字转让人。",
+    "optionZh": {
+      "A": "买方须就转让文书中的自身承诺签署。",
+      "B": "遗产执行人不是该共同产权的必要转让签署人，且遗漏买方。",
+      "C": "正确。两名存续转让人之外，买方签署其承诺。",
+      "D": "多加入了无须签署的遗产执行人。",
+      "E": "遗产执行人与并非本次受让人的成年儿子均不必签署。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第65题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question65"
+        },
+        {
+          "label": "HM Land Registry：死者共同登记所有人的产权承继",
+          "url": "https://www.gov.uk/government/publications/devolution-on-the-death-of-a-registered-proprietor/practice-guide-6-devolution-on-the-death-of-a-registered-proprietor"
+        },
+        {
+          "label": "HM Land Registry：TR1转让表填写指引",
+          "url": "https://www.gov.uk/government/publications/registered-titles-whole-transfer-tr1/guidance-completing-form-tr1-for-the-transfer-of-registered-property"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-066": {
+    "officialAnswer": "D",
+    "zh": "Trustee Act 2000 给受托人购买土地的法定权力限于英国境内土地；信托文书没有扩张该权力。唯一受托人把信托款投资于澳大利亚土地，即使有当地房地产经验、并采纳成年余留受益人的建议，仍属未经授权的投资，故选D。",
+    "ruleZh": "受托人购买土地的法定投资权力受地理范围限制；专业审慎义务不能取代取得投资权限。",
+    "warning": "须先问“有没有投资权限”，再讨论判断是否审慎；题干中的市场下跌也不自动证明事前疏忽。",
+    "optionZh": {
+      "A": "审慎经营人的一般说法不能授权购买法定范围外的土地。",
+      "B": "一名余留受益人建议投资，不等于所有享有权益者有效授权。",
+      "C": "长期持有潜力不解决投资权限不足。",
+      "D": "正确。澳大利亚土地不在第8条所允许的英国土地范围内。",
+      "E": "专业知识不当然意味着他应预见一年后的跌价；题目的确定缺陷是无权限。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第66题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question66"
+        },
+        {
+          "label": "Trustee Act 2000，第8条",
+          "url": "https://www.legislation.gov.uk/ukpga/2000/29/section/8"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-067": {
+    "officialAnswer": "A",
+    "zh": "普通袭击可由故意使他人预期即将遭受非法接触构成，无须真的击中或造成伤害。女子有意将靴子掷向邻居，邻居也确实预期会被击中而躲避；围栏及最终落空不妨碍成立，故选A。",
+    "ruleZh": "Common assault 的相关行为要件是使被害人实际预期即将遭受非法暴力；不以身体接触为必要。",
+    "warning": "只证明“一个合理人会害怕”还不够；题设明确该邻居本人也预期会被击中。",
+    "optionZh": {
+      "A": "正确。邻居本人实际预期会被靴子击中。",
+      "B": "普通袭击可无直接身体接触。",
+      "C": "靴子落空不排除使人预期遭受非法暴力。",
+      "D": "邻居预期的是靴子造成的接触；接触不必来自女子身体。",
+      "E": "合理人的预期可作背景，但本题决定性事实是实际被害人的预期。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第67题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question67"
+        },
+        {
+          "label": "CPS：Offences against the Person，Common Assault",
+          "url": "https://www.cps.gov.uk/legal-guidance/offences-against-person-incorporating-charging-standard"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-068": {
+    "officialAnswer": "A",
+    "zh": "房东已取得规划许可，并计划在租期届满时进行无法在租客继续占有下合理实施的重建，可按 Landlord and Tenant Act 1954 第30(1)(f)条反对续租。这一成立后属必须拒绝新租赁的理由；因该无过错重建理由被拒续租，租客原则上有第37条的法定补偿，故选A。",
+    "ruleZh": "第30(1)(f)条重建理由与第37条补偿相连；自有时间及原租期长度不是本题该理由的门槛。",
+    "warning": "是否真正具有实施重建的坚定意图仍需证据支持；规划许可和无法继续占有下施工是题设给出的支持事实。",
+    "optionZh": {
+      "A": "正确。符合重建理由时拒绝续租，并须处理法定补偿。",
+      "B": "漏掉因该理由拒绝续租时的补偿。",
+      "C": "题设的重建理由不是供法院任意酌定是否拒绝的普通因素。",
+      "D": "持有产权年限限制不能套用到第30(1)(f)条重建理由。",
+      "E": "12年原租期不排除以该重建理由反对续租。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第68题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question68"
+        },
+        {
+          "label": "Landlord and Tenant Act 1954，第30条",
+          "url": "https://www.legislation.gov.uk/ukpga/Eliz2/2-3/56/section/30"
+        },
+        {
+          "label": "Landlord and Tenant Act 1954，第37条",
+          "url": "https://www.legislation.gov.uk/ukpga/Eliz2/2-3/56/section/37"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-069": {
+    "officialAnswer": "A",
+    "zh": "被告不认罪，经治安法院审理后对定罪上诉至刑事法院，属于重新听取全部证据的上诉，而非只审书面理由或法律问题。通常由刑事法院法官与非职业治安法官共同审理，不设陪审团，故选A。",
+    "ruleZh": "治安法院定罪向 Crown Court 上诉，一般以 rehearing 方式审理事实和法律。",
+    "warning": "只审法律问题的 case stated 路径与本题向 Crown Court 提起的定罪上诉不同。",
+    "optionZh": {
+      "A": "正确。重新听取证据，由法官与治安法官共同审理。",
+      "B": "该上诉不由陪审团裁决。",
+      "C": "不是法官独坐进行这种事实重审。",
+      "D": "不会仅凭书面上诉理由决定，不听事实证据。",
+      "E": "只审经证明的法律问题不是此处的 Crown Court 上诉。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第69题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question69"
+        },
+        {
+          "label": "Magistrates’ Courts Act 1980，第108条",
+          "url": "https://www.legislation.gov.uk/ukpga/1980/43/section/108"
+        },
+        {
+          "label": "CPS：Magistrates’ court appeals",
+          "url": "https://www.cps.gov.uk/legal-guidance/appeals-magistrates-court"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-070": {
+    "officialAnswer": "B",
+    "zh": "两年前赠给女儿约90万英镑，为死亡前七年内的潜在免税转让；因未活过七年，其金额超过通常的免税额，赠与本身可能产生遗产税。即使遗嘱将余产给慈善机构而该部分可获豁免，也不能抹去先前赠与的税务后果。需提交 IHT400，选B。",
+    "ruleZh": "评估是否提交 IHT400，须计入死亡前七年的赠与及是否有遗产税应缴；慈善余产豁免不覆盖给女儿的生前赠与。",
+    "warning": "题目问申报表，不是单看死亡时账户余额；共同账户本身也不是无条件填 IHT400 的理由。",
+    "optionZh": {
+      "A": "不能仅以死亡时遗产低于300万英镑忽略七年内巨额赠与。",
+      "B": "正确。90万英镑生前赠与在两年后死亡时可能转为应税，须作完整申报。",
+      "C": "慈善豁免只针对符合条件的慈善赠与，不免除早前赠女儿的税。",
+      "D": "有共同账户不单独决定必须提交 IHT400。",
+      "E": "个人间赠与虽通常为潜在免税转让，但七年内死亡会使其纳入计算。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第70题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question70"
+        },
+        {
+          "label": "HMRC：Inheritance Tax gifts and seven-year rule",
+          "url": "https://www.gov.uk/inheritance-tax/gifts"
+        },
+        {
+          "label": "HMRC：IHT400申报要求",
+          "url": "https://www.gov.uk/government/publications/inheritance-tax-inheritance-tax-account-iht400"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-071": {
+    "officialAnswer": "D",
+    "zh": "房屋仍为未登记土地，邻居以契据、支付对价取得永久通行权，构成法定地役权。对未登记土地，法定地役权不以登记为成立或对抗条件，原则上对所有人有约束力，因此选D。题目不能把登记土地的 notice 或 D(iii) land charge 规则硬套进来。",
+    "ruleZh": "未登记土地上以契据设立的法定地役权属法律上的财产权利；需登记的土地负担规则主要针对特定衡平法权益。",
+    "warning": "本题问“是否必须登记”，不是问日后该土地自愿或强制首次登记时如何在登记簿中记载。",
+    "optionZh": {
+      "A": "D(iii) land charge 适用于特定衡平法地役权，不是题设契据设立的法定地役权。",
+      "B": "本次设立地役权不因这一理由触发房屋产权首次登记并要求 Charges Register notice。",
+      "C": "“通知原则”不是题设法定地役权的效力基础。",
+      "D": "正确。未登记土地上的法定地役权无需此种登记即可对抗后来取得产权者。",
+      "E": "题设没有由此触发首次登记；不能以 overriding interest 解释这里的结论。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第71题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question71"
+        },
+        {
+          "label": "Land Registration Act 2002：首次登记与可登记处分",
+          "url": "https://www.legislation.gov.uk/ukpga/2002/9/contents"
+        },
+        {
+          "label": "HM Land Registry：未登记土地的地役权",
+          "url": "https://www.gov.uk/government/publications/easements-pg62/practice-guide-62-easements"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-072": {
+    "officialAnswer": "A",
+    "zh": "测量师的含税发票开给律所，律所是该项服务的合同及增值税处理主体，属于 principal method，而不是以客户名义付款的 agency method。应先从律所营业账户支付整张发票的480英镑，再按规则处理客户预付费用及收费通知，故选A。",
+    "ruleZh": "判断第三方费用的 VAT 与付款方式要看服务、发票由谁取得；开给律所的发票按律所作为 principal 处理。",
+    "warning": "客户账户中预存1,500英镑，不意味着任何第三方发票都能直接从该账户付款。",
+    "optionZh": {
+      "A": "正确。发票开给律所，按 principal method 从营业账户支付含税总额。",
+      "B": "principal 方法下不能仅因有预付款就直接从客户账户支付这张律所发票。",
+      "C": "营业账户选择正确，但把律所取得服务误定为 agency method。",
+      "D": "账户与代理方法均不符。",
+      "E": "不能把一张开给律所的含税发票拆成客户代理支付净额、律所支付VAT。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第72题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question72"
+        },
+        {
+          "label": "HMRC：solicitors 的 VAT disbursements",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/vat-taxable-person/vtaxper46000"
+        },
+        {
+          "label": "SRA：Accounts Rules",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/accounts-rules/"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-073": {
+    "officialAnswer": "D",
+    "zh": "房屋登记在兄长一人名下，推定他也独享衡平权益。所谓“会在经济上照顾妹妹”并未承诺把房屋份额给她；免租居住、分担燃料费和地方税及家务，也不足以据此推断双方有共享房产权益的共同意图。因此妹妹未推翻单独受益所有的起点，选D。",
+    "ruleZh": "单独法定产权下主张 common intention constructive trust，须证明共享受益所有权的共同意图及依赖该意图的行为。",
+    "warning": "财务状况后来改善不负责否定已经产生的权益；本题首先欠缺共享产权的共同意图。",
+    "optionZh": {
+      "A": "谈及经济照顾与免租，并未表示转让或共享房屋受益权益。",
+      "B": "亲属、配偶或伴侣身份不是该信托的形式门槛。",
+      "C": "一般生活开支与家务不单独证明共享产权意图或所需依赖。",
+      "D": "正确。没有足够事实推翻兄长作为单独登记及受益所有人的起点。",
+      "E": "是否受损不能只按她后来离婚财产状况衡量；该项理由抓错重点。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第73题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question73"
+        },
+        {
+          "label": "HMRC：common intention constructive trusts 与单独产权",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg65423"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-074": {
+    "officialAnswer": "C",
+    "zh": "女子明知男子多次犯过盗窃、入室盗窃和抢劫，仍为协助这一范围内的犯罪而借车。男子后来独自用车实施入室盗窃，该罪正落在她有意协助的范围。帮助者不必到场，也不必事先知道精确时间地点或确定会犯哪一种罪，故选C。",
+    "ruleZh": "从犯责任要求有意协助或鼓励所实施的罪；有意协助一组可能罪行，而实际罪行属于该组，也可满足此要求。",
+    "warning": "仅预见风险不足以自动成立从犯；题设另明确写出她有意协助该类犯罪。",
+    "optionZh": {
+      "A": "提供车辆可在现场之外构成协助。",
+      "B": "不必预先知道入室盗窃的具体时间和地点。",
+      "C": "正确。入室盗窃落在她有意协助的既往犯罪类型之内。",
+      "D": "无需确信具体一定实施入室盗窃；有意协助的范围已包括它。",
+      "E": "不会对用车实施的任何犯罪一概负责，仍须与其协助意图相符。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第74题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question74"
+        },
+        {
+          "label": "R v Jogee，[2016] UKSC 8",
+          "url": "https://www.supremecourt.uk/cases/uksc-2015-0015"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-075": {
+    "officialAnswer": "B",
+    "zh": "树龄本身不决定砍树是否合法，须查地方机关记录中是否有 Tree Preservation Order 等限制或执法事项。邻里犬吠和砍树动机涉及卖方已知的纠纷，地方机关记录未必能揭示，应向卖方另行询问。因此需要地方机关检索和卖方问询，选B。",
+    "ruleZh": "地方机关检索核查树木保护等公法限制；与邻居的私人争议主要靠卖方披露与专门问询。",
+    "warning": "环境检索通常关注污染、洪水等环境风险，不能替代树木保护令查询或卖方的邻里纠纷答复。",
+    "optionZh": {
+      "A": "地方检索可查树木保护问题，却不能充分查清私人邻里纠纷。",
+      "B": "正确。分别覆盖砍树限制和卖方知悉的纠纷。",
+      "C": "环境检索不能替代向卖方核实与邻居争吵的事实。",
+      "D": "遗漏树木保护令的地方机关资料。",
+      "E": "单靠卖方不能替代对公法上的树木限制进行地方检索。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第75题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question75"
+        },
+        {
+          "label": "地方机关检索与树木保护令示例",
+          "url": "https://www.cheshireeast.gov.uk/planning/local_land_charges/about-searches.aspx"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-076": {
+    "officialAnswer": "A",
+    "zh": "未登记抵押可能使银行丧失原拟取得的保障，且潜在损失重大。律所发现自身差错，应及时向银行坦诚说明错误、影响及可采取的补救，并因律所自身利益与银行索赔利益可能冲突，建议银行取得独立法律意见，故选A。一次过失且员工仍胜任，不自动等于须立即向 SRA 报告。",
+    "ruleZh": "SRA Code 第7.11段要求出错时对客户坦诚；自身利益冲突时须考虑不能由本所给客户独立的索赔建议。",
+    "warning": "通知专业赔偿保险人可能另有内部义务，但不能代替首先告知受影响客户。",
+    "optionZh": {
+      "A": "正确。及时告知银行并建议就潜在损失取得独立意见。",
+      "B": "Legal Ombudsman 不是律所对自身疏失的首要主动报告对象。",
+      "C": "不能因一次登记遗漏就推定必须向SRA提交客户档案。",
+      "D": "保险资料不能代替解释错误及独立法律建议。",
+      "E": "退还费用不能解决抵押保障可能失效及客户损失。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第76题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question76"
+        },
+        {
+          "label": "SRA：出错后的补救与自身利益冲突",
+          "url": "https://www.sra.org.uk/solicitors/guidance/putting-matters-right-own-interest-conflicts/"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-077": {
+    "officialAnswer": "D",
+    "zh": "被告14岁，属12至14岁组。该年龄段的 detention and training order 仅可施加于 persistent offender；题设说这是她首次犯罪，不符合该门槛。因此即使八个月本身属于可用期限，也不能作此命令，选D。",
+    "ruleZh": "12至14岁青少年的 DTO 需符合持续犯罪者条件，并满足一般的拘禁刑门槛。",
+    "warning": "决定性障碍是年龄组与持续犯罪门槛，不是八个月期限或先前必须受过某种社区命令。",
+    "optionZh": {
+      "A": "DTO 可有超过六个月的期限，八个月不是因长度而无效。",
+      "B": "并非以先前已判 youth rehabilitation order 为普遍必要条件。",
+      "C": "第20条恶意伤害的可审判方式不是本题的年龄组障碍。",
+      "D": "正确。14岁且首次犯罪，不是 persistent offender。",
+      "E": "先前是否有 referral order 不是该年龄段 DTO 的法定替代门槛。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第77题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question77"
+        },
+        {
+          "label": "Sentencing Council：Detention and training order",
+          "url": "https://sentencingcouncil.org.uk/pronouncement-builder/detention-and-training-order/"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-078": {
+    "officialAnswer": "C",
+    "zh": "转让契据明确声明两人以衡平法共同共有，购房时各自出资多少不能推翻这一有效声明。兄长以 Signed For 邮寄书面分割通知，已送达共同住所并由清洁工签收；姐姐未实际看见，不阻止有效送达和分割。故她死亡前双方已按各半份额按份共有，选C。",
+    "ruleZh": "Law of Property Act 1925 第36(2)条允许以书面通知分割衡平法共同共有；第196条规范邮寄送达。",
+    "warning": "分割后的份额从原本平等的衡平共同共有变为各半按份共有，不按最初出资80:20重新分配。",
+    "optionZh": {
+      "A": "有效书面通知已送达，共同共有已被分割。",
+      "B": "共同共有不以各自50%固定份额描述，且这里已经分割。",
+      "C": "正确。收到书面通知后成为各半按份共有。",
+      "D": "既有明确共同共有声明，出资比例不直接重算为80:20。",
+      "E": "无需把购房款一半另设不同共有层级，题设无这种安排。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第78题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question78"
+        },
+        {
+          "label": "Law of Property Act 1925，第36条",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/20/section/36"
+        },
+        {
+          "label": "Law of Property Act 1925，第196条",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/20/section/196"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-079": {
+    "officialAnswer": "A",
+    "zh": "现有医疗报告在六个月前作成，说明认知功能会逐渐受损，不能单凭旧报告确认立新遗嘱当时的能力。拟变更对女儿的替代赠与又有潜在争议，应取得本人同意，请医师对当前立遗嘱能力作独立评估并保留记录，故选A。",
+    "ruleZh": "立遗嘱能力须在订立新遗嘱时判断；对高龄、认知受损或可能引起争议的遗嘱，应考虑同期医疗意见。",
+    "warning": "医学意见是重要证据，律师仍需与本人沟通、核实其理解遗嘱性质、财产及可能受益人。",
+    "optionZh": {
+      "A": "正确。经本人同意取得反映当前状态的医学评估。",
+      "B": "半年前报告不能替代作新遗嘱当时的能力评估。",
+      "C": "把旧报告附在遗嘱上，不能证明签署时有能力。",
+      "D": "妻子可提供事实背景，却不能替代本人能力判断或医学意见。",
+      "E": "仅确认是否有更新报告，不等于评估目前能否有效立遗嘱。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第79题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question79"
+        },
+        {
+          "label": "SRA：Drafting and preparation of wills",
+          "url": "https://www.sra.org.uk/solicitors/guidance/drafting-preparation-wills/"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-080": {
+    "officialAnswer": "B",
+    "zh": "受托人因信托持有公司股份才获董事职位。董事酬金属于利用受托地位取得的利益，信托文书未授权其自留，应向信托交代；但实际为履行董事职责支出的3,000英镑费用补偿不属于净利润，可以保留。因此选B。",
+    "ruleZh": "受托人不得未经授权从受托地位获利；合理实际支出与报酬、利润应分别处理。",
+    "warning": "其他董事或其他受托人的许可，不等于信托文书或有权受益人对私人获利的有效授权。",
+    "optionZh": {
+      "A": "董事酬金不能与实际费用补偿一并私留。",
+      "B": "正确。可保留真实费用补偿，不能私留因受托职位所得酬金。",
+      "C": "合理实际费用无需作为利润交出。",
+      "D": "公司其他董事无权解除受托人对信托的忠实义务。",
+      "E": "其他受托人同意不当然授权他保留受托地位带来的私人酬金。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第80题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question80"
+        },
+        {
+          "label": "Trustee Act 2000，第31条：费用",
+          "url": "https://www.legislation.gov.uk/ukpga/2000/29/section/31"
+        },
+        {
+          "label": "FHR European Ventures：受信人获利归属",
+          "url": "https://www.supremecourt.uk/cases/uksc-2013-0049"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-081": {
+    "officialAnswer": "A",
+    "zh": "空置住宅入室盗窃在题设下按 either-way 罪处理。被告拟作无罪答辩时，治安法官先判断治安法院审理是否适当；即使他们接受管辖，被告仍可选择 Crown Court 陪审团审理。故选A。",
+    "ruleZh": "Either-way 罪的审判地点先经过 allocation，再由被告在治安法院接受管辖时行使选择 Crown Court 审判的权利。",
+    "warning": "“希望陪审团审理”不能跳过治安法院的首次聆讯和管辖分配步骤。",
+    "optionZh": {
+      "A": "正确。法官先判断是否接受管辖，接受后被告仍可选择 Crown Court。",
+      "B": "住宅入室盗窃并非本题必然仅可起诉审判的罪。",
+      "C": "治安法院没有排他的审判管辖权。",
+      "D": "法官即使接受管辖，被告仍可选择陪审团审理。",
+      "E": "被告的选择权出现在治安法官决定接受管辖之后，而不是先让他任意选。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第81题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question81"
+        },
+        {
+          "label": "CPS：Either-way offences 与审判地点选择",
+          "url": "https://www.cps.gov.uk/about-cps/how-a-criminal-case-works"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-082": {
+    "officialAnswer": "E",
+    "zh": "交换合同后约定的完成日仍有效，买方无权单方面把日期顺延两周。按未经修改的 Standard Conditions of Sale，时间起初并非合同要素；若届时未完成，卖方可在完成日下午2时后送达 notice to complete，要求在十个工作日内完成，通知使时间成为要素，故选E。",
+    "ruleZh": "SCS 第6.8条：完成日违约后可送达完成通知；通知通常给予十个工作日并使 time of the essence。",
+    "warning": "送达通知并非自动延期到15或20天；逾原完成日也不自动立即没收定金。",
+    "optionZh": {
+      "A": "SCS 不自动把完成日改为交换后15个工作日。",
+      "B": "也不自动改为交换后20个工作日。",
+      "C": "原完成日时间并非当然为要素，卖方不能因一到当日就立即解除。",
+      "D": "逾期后不能直接没收定金；完成通知给的是十个工作日。",
+      "E": "正确。下午2时后可送达给予十个工作日的完成通知。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第82题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question82"
+        },
+        {
+          "label": "The Law Society：Standard Conditions of Sale（第五版2018修订）",
+          "url": "https://www.lawsociety.org.uk/topics/property/standard-conditions-of-sale"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-083": {
+    "officialAnswer": "D",
+    "zh": "给侄女的2万英镑遗赠以其年满18岁为条件，她虽曾满足年龄条件，却在立遗嘱人之前死亡，因此遗赠仍因受赠人先死而失效。Wills Act 1837 第33条的后代替代规则限于立遗嘱人的子女或更下代，不延及侄女；款项遂进入已赠给民事伴侣的剩余遗产，选D。",
+    "ruleZh": "受赠人在立遗嘱人前死亡通常使遗赠失效；第33条防失效规则只适用于立遗嘱人的后代，除非遗嘱另有安排。",
+    "warning": "“已满18岁”只满足年龄条件，并不让她在立遗嘱人死亡前先取得遗赠。",
+    "optionZh": {
+      "A": "侄女先于立遗嘱人死亡，遗赠不进入她本人的遗产。",
+      "B": "同理，其儿子不能依侄女的无遗嘱继承取得该遗赠。",
+      "C": "第33条不以侄女为适用对象。",
+      "D": "正确。失效的特定遗赠归入剩余遗产，由民事伴侣取得。",
+      "E": "遗嘱已有效处分剩余遗产，不产生相应的部分无遗嘱继承。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第83题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question83"
+        },
+        {
+          "label": "Wills Act 1837，第33条",
+          "url": "https://www.legislation.gov.uk/ukpga/Will4and1Vict/7/26/section/33"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-084": {
+    "officialAnswer": "C",
+    "zh": "房屋已登记，银行抵押完成后须尽快申请将法定押记登记，才能落实其拟取得的登记地位及检索优先顺位。对应的是对整项登记产权作出的 OS1 官方优先检索的保护期，应在其届满前递交登记申请，故选C。",
+    "ruleZh": "登记土地的法定抵押申请应在 OS1 的优先期内提交；K15 土地负担检索针对未登记土地，K16 破产检索另有用途。",
+    "warning": "两个月或 SDLT 期限不是本题抵押登记优先保护的截止点。",
+    "optionZh": {
+      "A": "K15 中央土地负担检索不控制此已登记产权抵押的优先期。",
+      "B": "没有题设所称完成后统一两个月的 OS1 替代期限。",
+      "C": "正确。须在 OS1 优先保护期届满前申请登记。",
+      "D": "K16 破产检索关注债务人状态，不是本项登记优先期。",
+      "E": "设立抵押的登记优先期不以 SDLT 付款期决定。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第84题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question84"
+        },
+        {
+          "label": "HM Land Registry：Official searches（PG12）",
+          "url": "https://www.gov.uk/government/publications/official-searches-and-outline-applications/practice-guide-12-official-searches-and-outline-applications"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-085": {
+    "officialAnswer": "C",
+    "zh": "第20条恶意致伤不要求行为人打算造成伤口或严重伤害；对造成某种身体伤害的实际预见即可满足 maliciously 的主观要件。女子扇耳光时意识到可能造成身体伤害，戒指实际割出伤口，故选C。",
+    "ruleZh": "s.20 OAPA 1861 的主观要件可以是对某种身体伤害的故意或主观鲁莽，不必预见实际发生的伤口程度。",
+    "warning": "须证明她当时预见某种身体伤害风险；单纯有意实施触碰本身并不足够。",
+    "optionZh": {
+      "A": "不必具体预见会形成割伤。",
+      "B": "不要求意图造成伤口。",
+      "C": "正确。她已意识到拍打可能造成某种身体伤害。",
+      "D": "不要求有意造成严重伤害；那是不同的更高主观标准。",
+      "E": "仅故意施力并造成伤口，不足以替代对某种身体伤害风险的主观认识。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第85题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question85"
+        },
+        {
+          "label": "CPS：Offences against the Person，s.20",
+          "url": "https://www.cps.gov.uk/legal-guidance/offences-against-person-incorporating-charging-standard"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-086": {
+    "officialAnswer": "B",
+    "zh": "原租户已将主租约转让给 A，故 A 现为自由地产买方在主租约下的直接租户。A 给 B 的是次租，B 转给 C，C 再给 D 的是下一层次租；这些人之间有各自的上下级租赁关系，不直接把 B、C、D 变为自由地产主的即时租户。故选B。",
+    "ruleZh": "转让主租约更换主租约的承租人；转租只在现有租赁之下建立一层新的租赁。",
+    "warning": "自由地产出售变更的是房东一方，不会把最下层占有人自动变成房东的直接承租人。",
+    "optionZh": {
+      "A": "原租户转让主租约后不再是题目要找的现时直接租户。",
+      "B": "正确。A 持有主租约，是新自由地产主的直接承租人。",
+      "C": "B 取得的是 A 授予的次租，且已转让给 C。",
+      "D": "C 是从 B 受让次租者，并非主租约承租人。",
+      "E": "D 是更下一层次租的承租人。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第86题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question86"
+        },
+        {
+          "label": "Law of Property Act 1925，第205条：lease 与 reversion 的定义",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/20/section/205"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-087": {
+    "officialAnswer": "E",
+    "zh": "女儿仍在世，可取自己的1.5万英镑份额；儿子先于立遗嘱人死亡，但留下在立遗嘱人死亡时仍在世的子女。Wills Act 1837 第33条通常让该孙辈代位取得本应给儿子的份额，除非遗嘱有相反意思。本题总额3万英镑，女儿和孙辈各得1.5万英镑，选E。",
+    "ruleZh": "第33条防失效规则保护先于立遗嘱人死亡的子女或更下代之在世后代，按该先亡受赠人原应得份额承接。",
+    "warning": "这里不是把儿子的份额放进其遗产，也不是让剩余遗产受赠人丈夫取得。",
+    "optionZh": {
+      "A": "丈夫并非该3万英镑特定遗赠的代位受益人。",
+      "B": "丈夫只受领遗嘱中的剩余遗产，不独得这笔遗赠。",
+      "C": "忽略了先亡儿子的在世子女可依第33条代位。",
+      "D": "先亡儿子的份额由其子女依法代位，而非先入儿子遗产。",
+      "E": "正确。女儿与孙辈分别取得1.5万英镑。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第87题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question87"
+        },
+        {
+          "label": "Wills Act 1837，第33条",
+          "url": "https://www.legislation.gov.uk/ukpga/Will4and1Vict/7/26/section/33"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-088": {
+    "officialAnswer": "B",
+    "zh": "Theft Act 1968 第2(1)(c)条规定，行为人相信不能采取合理步骤找到物主时，其占有不视为不诚实。男子在取车时确实持有这一信念，即使事实上错误，也针对盗窃的 dishonesty 要件构成抗辩基础，故选B。后来归还不改变当时可能永久剥夺的意图。",
+    "ruleZh": "第2(1)(c)条关注行为人真诚相信物主无法通过合理步骤找到；并非取决于他主观认为“普通人会觉得没问题”。",
+    "warning": "真诚信念与信念是否合理不同；不合理程度可作为判断其是否真的相信的证据。",
+    "optionZh": {
+      "A": "行为人自己对普通人道德评价的判断，不取代法律上的不诚实检验。",
+      "B": "正确。真诚相信合理步骤不能查到物主，落入第2(1)(c)条。",
+      "C": "仅自认有“道德权利”不等于法律上的权利。",
+      "D": "后来听劝归还，不能倒推取走时从未想永久剥夺。",
+      "E": "为朋友免费取得仍可能构成盗窃，不以自己获利为必要。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第88题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question88"
+        },
+        {
+          "label": "Theft Act 1968，第2条",
+          "url": "https://www.legislation.gov.uk/ukpga/1968/60/section/2"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-089": {
+    "officialAnswer": "C",
+    "zh": "转入个人账户的1.5万英镑中，先有3,000英镑用于清偿透支，已无法沿该部分追踪到房屋；余下1.2万英镑全数直接作为12万英镑购房首付款。受益人可把可追踪款项主张为购房价款的10%权益，并分享涨价，故选C。破产使财产请求尤其重要。",
+    "ruleZh": "违信资金可沿账户余额追踪至以其购买的替代财产；混合价款购入资产时可主张相应比例的物权份额。",
+    "warning": "10%是1.2万除以购房总价12万，不是1.2万除以现值15万；偿还透支的3,000英镑未进入房产。",
+    "optionZh": {
+      "A": "仅3,000英镑个人请求遗漏了可追踪到房屋的1.2万英镑。",
+      "B": "全部1.5万英镑未用于购房，不能全部以房屋担保。",
+      "C": "正确。可追踪的1.2万英镑占12万英镑购价的10%。",
+      "D": "8%是错误地用1.2万除以房屋现值15万。",
+      "E": "破产不消灭对可识别替代财产的物权请求。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第89题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question89"
+        },
+        {
+          "label": "Foskett v McKeown，[2000] UKHL 29",
+          "url": "https://www.bailii.org/uk/cases/UKHL/2000/29.html"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-090": {
+    "officialAnswer": "B",
+    "zh": "16岁少女与20岁男子被共同起诉同一 ABH 罪。两人首次出庭应在成人治安法院一同出现，由该法院处理后续审判地点和是否应分开审理等问题；不能因为少女未成年就把共同首次聆讯直接拆成少年法院和成人法院，故选B。",
+    "ruleZh": "未成年人通常在少年法院处理，但与成年人共同被起诉时，首次出庭可共同到成人治安法院；之后是否共同审判须另行判断。",
+    "warning": "本题只问 first appearance，不是在最终决定少女由哪一法院审判。",
+    "optionZh": {
+      "A": "共同被控的首次聆讯不在题设下直接分成两个法院。",
+      "B": "正确。共同在成人治安法院首次出庭。",
+      "C": "ABH共同指控不使两人首次出庭直接到 Crown Court。",
+      "D": "少年法院不能作为成年共同被告的首次审理法院。",
+      "E": "成年被告也不因共同指控而首次直接到 Crown Court。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第90题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question90"
+        },
+        {
+          "label": "CPS：Children as suspects and defendants",
+          "url": "https://www.cps.gov.uk/prosecution-guidance/children-suspects-and-defendants"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-091": {
+    "officialAnswer": "A",
+    "zh": "五名租户的款项是为同一服务费争议暂存于律所客户账户。争议解决后向各原付款人返还各自的1,000英镑，正与律所处理该受监管法律事务相连，并非把客户账户当作一般转账银行使用；不以律所同时代理租户为必要条件，故选A。",
+    "ruleZh": "SRA Accounts Rules 第3.3条要求客户账户收支与律所提供受监管服务相连，不得为无关款项提供银行便利。",
+    "warning": "返还作为争议标的而暂存的款项，与接受客户无关的第三方代付要求有区别。",
+    "optionZh": {
+      "A": "正确。款项的收取及返还均与所处理的服务费争议直接相连。",
+      "B": "律所不代理租户，不妨碍按争议处理结果返还他们各自付入的款项。",
+      "C": "客户事务处理可产生向第三方付款或退款的正当安排。",
+      "D": "这些退款恰与律所解决的服务费争议相连。",
+      "E": "关键是法律服务联系，不是退款速度快慢。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第91题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question91"
+        },
+        {
+          "label": "SRA Accounts Rules，第3.3条",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/accounts-rules/"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-092": {
+    "officialAnswer": "E",
+    "zh": "拍卖师承诺的返佣以律师安排遗产物品交由他拍卖为条件。律师利用受托办理遗产的职位获得私人利益，即使返佣记在她个人物品的佣金、数额仅约为遗产佣金5%、遗产没有显示直接损失，也不能私留未披露的利益，故选E。",
+    "ruleZh": "律师作为受信人不得在客户事务中取得未获有效授权的秘密利益；利益的记账名目或相对金额并非决定因素。",
+    "warning": "题目关键是利益因遗产委托而产生，不是个人物品能否与遗产物品同场拍卖。",
+    "optionZh": {
+      "A": "虽记在个人物品销售佣金上，返佣的条件仍是遗产业务。",
+      "B": "客户是否证明直接损失，不决定秘密利润是否须交代。",
+      "C": "返佣比例小也不产生自动豁免。",
+      "D": "同场拍卖可能引发管理问题，但不是必须交出这笔返佣的核心法律理由。",
+      "E": "正确。返佣来自利用遗产事务作出的拍卖委托。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第92题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question92"
+        },
+        {
+          "label": "FHR European Ventures v Cedar Capital，[2014] UKSC 45",
+          "url": "https://www.supremecourt.uk/cases/uksc-2013-0049"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-093": {
+    "officialAnswer": "A",
+    "zh": "卖方在生前已经交换有效房屋买卖合同，双方由此负有完成交易的合同义务。她在完成日前死亡并不使合同消灭；遗产执行人接手处理遗产，应按合同完成转让。儿子虽又是唯一受益人，不能因现在不需支付养老院费用而单方保留房屋，故选A。",
+    "ruleZh": "交换合同后产生有约束力的土地买卖义务；卖方死亡由其个人代表继续履行遗产义务。",
+    "warning": "遗产执行人与受益人身份重合，不让儿子获得无条件解除已签合同的权利。",
+    "optionZh": {
+      "A": "正确。儿子作为遗产执行人须履行母亲已交换的买卖合同。",
+      "B": "卖方死亡不会使有效合同在法律或衡平法上自动无效。",
+      "C": "受益人不能以内部遗产分配优先于买方既有合同权利。",
+      "D": "题设无允许执行人单方通知解除的条款或违约事由。",
+      "E": "身份兼具执行人与受益人，也不形成任意请法院终止合同的权利。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第93题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question93"
+        },
+        {
+          "label": "Law of Property (Miscellaneous Provisions) Act 1989，第2条：土地合同",
+          "url": "https://www.legislation.gov.uk/ukpga/1989/34/section/2"
+        },
+        {
+          "label": "Administration of Estates Act 1925，第1条：遗产归属个人代表",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/23/section/1"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-094": {
+    "officialAnswer": "A",
+    "zh": "两名无偿受托人未分散投资、未考虑法定投资标准或取得意见，可能违反受托义务；但信托文书用“在法律允许最大范围内”排除责任。Armitage v Nurse 确认清楚的免责条款可以涵盖疏忽乃至严重疏忽，却不能排除不诚实。题设特意说明两人真诚相信是在受益人利益下行事，故可依免责条款抗辩，选A。",
+    "ruleZh": "受托人免责条款的最低界限是不诚实；未报酬或设立时未商谈，不是本题决定因素。",
+    "warning": "“可免责”不表示投资行为合规；应先识别违责，再分别判断免责条款可否阻却赔偿。",
+    "optionZh": {
+      "A": "正确。条款足够宽，题设无不诚实事实。",
+      "B": "是否无偿任职不是该免责条款有效性的决定条件。",
+      "C": "她们未促成条款加入，不是允许免责的关键依据。",
+      "D": "受托人的法定谨慎责任并非在清楚条款下绝对不可排除。",
+      "E": "受益人未另签同意书不自动使设立人在信托文书中的条款失效。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第94题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question94"
+        },
+        {
+          "label": "Armitage v Nurse，[1997] EWCA Civ 1279",
+          "url": "https://www.bailii.org/ew/cases/EWCA/Civ/1997/1279.html"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-095": {
+    "officialAnswer": "C",
+    "zh": "未经同意封堵并另开窗违反禁止改建契约，房东已依 Law of Property Act 1925 第146条发出通知。该改建能够恢复时，须给租客合理时间补救；如其未补救，题设商业场所可通过和平重新进入行使没收权，无须先取得法院占有令，故选C。",
+    "ruleZh": "第146条对可补救的非租金违约要求通知及合理补救期间；条件满足后可依租约没收条款主张重新进入。",
+    "warning": "和平重新进入须确实和平且符合商业场所的具体法律条件；本题不涉及住宅驱逐。",
+    "optionZh": {
+      "A": "不能一取得法院占有令就忽略可补救违约的通知与合理时间。",
+      "B": "该改建违约并非必先取得法院许可才能起诉或重入的题型。",
+      "C": "正确。合理补救期届满仍不恢复，方可和平重入。",
+      "D": "届满后本题不必先另取得法院占有令。",
+      "E": "刚发第146条通知还不能立刻重入，须给合理补救时间。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第95题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question95"
+        },
+        {
+          "label": "Law of Property Act 1925，第146条",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/20/section/146"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-096": {
+    "officialAnswer": "B",
+    "zh": "题设已给出失去自控及陪审团可能认为同等背景下普通人会有类似反应；她并未因恐惧严重暴力而反应。因此关键在长期辱骂、种族言论和威胁是否构成极端严重的言行，并使她有可被认为正当的“受到严重不公对待”之感；题设明确后者，故选B。第54条还说明失控不必是即时反应。",
+    "ruleZh": "Coroners and Justice Act 2009 第54至55条：失去自控抗辩可基于极端严重情形下、正当的严重受屈感；并无即时反应硬性要求。",
+    "warning": "正当严重受屈感不是单靠被告主观不快；本题将其作为已给事实，仍须整体适用法定条件。",
+    "optionZh": {
+      "A": "法律明说失控不必紧接诱因发生。",
+      "B": "正确。此处的 qualifying trigger 在于正当的严重受屈感。",
+      "C": "无身体暴力排除了恐惧诱因，却不排除严重受屈诱因。",
+      "D": "理解自身行为不直接否定失去自控抗辩。",
+      "E": "刺击次数不决定法定 qualifying trigger 是否存在。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第96题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question96"
+        },
+        {
+          "label": "Coroners and Justice Act 2009，第54条",
+          "url": "https://www.legislation.gov.uk/ukpga/2009/25/section/54"
+        },
+        {
+          "label": "Coroners and Justice Act 2009，第55条",
+          "url": "https://www.legislation.gov.uk/ukpga/2009/25/section/55"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-097": {
+    "officialAnswer": "C",
+    "zh": "维护小区的持续费用义务可能影响买方持有成本及日后转售、再抵押。买卖完成前，产权调查报告（report on title）应把转让文书中的这类重要产权负担及实际影响解释给客户，并保留建议记录；若当年确已告知，应在该报告中找到，故选C。",
+    "ruleZh": "Report on title 汇总对买方重要的产权、契约、费用义务及交易风险，供客户在完成前作知情决定。",
+    "warning": "转让书会载有条款，但“条款存在”不等于律师已向客户解释其影响。",
+    "optionZh": {
+      "A": "转让书载明义务，通常不承担向买方解释及记录建议的功能。",
+      "B": "client care letter 主要载明服务、费用及投诉等安排。",
+      "C": "正确。产权报告应包含对维护义务的具体建议。",
+      "D": "律所标准业务条款不是这套房屋的产权风险报告。",
+      "E": "certificate of title 通常给贷款人作放款依据，不是给买方的完整建议书。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第97题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question97"
+        },
+        {
+          "label": "SRA：客户须获得可理解的信息",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/code-conduct-solicitors/"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-098": {
+    "officialAnswer": "B",
+    "zh": "控方举证完毕后，无案可答申请已获法官支持，意味着控方案件不足以让陪审团在法律上合理定罪。被告无需作供或继续抗辩；法官会指示陪审团作无罪裁决，被告获判无罪，故选B。",
+    "ruleZh": "在 Crown Court 成功提出 no case to answer，法官指示无罪裁决，案件不再进入正常辩方案件与陪审团自由评议阶段。",
+    "warning": "辩方选择不作供与此结果无关，因为成功申请后已不需辩方继续举证。",
+    "optionZh": {
+      "A": "控方案件在法律上不足，陪审团不会再自由评议定罪。",
+      "B": "正确。法官指示无罪裁决。",
+      "C": "无须继续审理，也不进入被告不作供的不利推论问题。",
+      "D": "本题是无罪判决，不是解散陪审团重审。",
+      "E": "该申请已在陪审团不在场时获准，无须对陪审团重复辩论。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第98题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question98"
+        },
+        {
+          "label": "CPS：judge directed acquittals 的定义",
+          "url": "https://www.cps.gov.uk/node/21737"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-099": {
+    "officialAnswer": "E",
+    "zh": "六年租期不符合可无契据设立的三年以内短租例外；双方只签署、未见证的书面文件也不符个人契据的执行要求，故没有六年法定租赁。但书面租约载齐条款并由双方签署，可作可强制履行的土地租赁合同；衡平法视应完成之事为已完成，形成六年衡平法租赁，选E。",
+    "ruleZh": "长期法定租赁通常须契据；符合1989年法第2条的书面签署合同可在衡平法上支持特定履行与衡平租赁。",
+    "warning": "之后按月付租、实际占用，不会把已约定的六年衡平租赁自动改成只有月租期的租赁。",
+    "optionZh": {
+      "A": "“视为完成”是衡平法效果，不会弥补欠缺契据而造出六年法定租赁。",
+      "B": "有效合同本身不等于已依法设立六年法定租赁。",
+      "C": "月付租金只是付款频率，不能抹去已签的六年固定期限。",
+      "D": "口头短租例外最长三年，不能适用于六年租期。",
+      "E": "正确。有效书面合同可成立六年衡平法租赁。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第99题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question99"
+        },
+        {
+          "label": "Law of Property Act 1925，第52及54条",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/20/contents"
+        },
+        {
+          "label": "Law of Property (Miscellaneous Provisions) Act 1989，第2条",
+          "url": "https://www.legislation.gov.uk/ukpga/1989/34/section/2"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-100": {
+    "officialAnswer": "C",
+    "zh": "遗产执行人取得死者股票的CGT成本以死亡日价值5万英镑计算，不沿用死者原买价3.5万。第二次销售净得6.5万，2025/26年度增益为1.5万；扣当年3,000英镑免税额，课税增益1.2万，按题定24%税率得2,880英镑，选C。2024/25年度另一次增益不挤占本年度免税额。",
+    "ruleZh": "遗产执行人的资产成本通常在死亡日按市价重置；年度免税额逐纳税年度计算，不能跨年度挪用。",
+    "warning": "题目已给2025/26年度税率与免税额，应按该事实计算，不以死者生前购入价再算一次。",
+    "optionZh": {
+      "A": "税额计算没有按本年度1.5万英镑增益减3,000英镑免税额。",
+      "B": "错误使用死者3.5万英镑原购价或混入其他年度数据。",
+      "C": "正确。（65,000－50,000－3,000）×24%=2,880。",
+      "D": "不应把死亡前上涨部分并入遗产执行人的本次增益。",
+      "E": "1.5万×24%漏扣本年度3,000英镑免税额。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第100题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question100"
+        },
+        {
+          "label": "HMRC：遗产执行人以死亡日市价为成本",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg30730"
+        },
+        {
+          "label": "HMRC：CGT年度免税额",
+          "url": "https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-101": {
+    "officialAnswer": "D",
+    "zh": "这份1985年租约虽在1996年前设立，但以 limited title guarantee 转让租赁权益时，1994年法第4条仍可能默示出承租人租约条款此前已获遵守的产权保证。房屋已因未修缮而违反维修契约，仅写“现状出售”不足以排除该默示保证；应在合同和转让文件中明确修改有关默示保证，故选D。",
+    "ruleZh": "Law of Property (Miscellaneous Provisions) Act 1994 第4条对租赁权益处分默示租约有效及遵守租约条款等产权保证，可在处分文件中明确调整。",
+    "warning": "limited title guarantee 不会自动抹去关于租客遵守维修契约的全部默示承诺。",
+    "optionZh": {
+      "A": "有限产权保证仍可能带入需修改的租赁履约默示保证。",
+      "B": "本题不是通过排除“最高诚信义务”解决维修契约违约。",
+      "C": "租约订于1996年前不使1994年法默示保证自动消失。",
+      "D": "正确。明文修改否则默示的租约条款遵守保证。",
+      "E": "1985年原授予的租约不会仅因1996年后转让变成新租约。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第101题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question101"
+        },
+        {
+          "label": "Law of Property (Miscellaneous Provisions) Act 1994，第4条",
+          "url": "https://www.legislation.gov.uk/ukpga/1994/36/section/4"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-102": {
+    "officialAnswer": "E",
+    "zh": "Fraud Act 2006 第2条要求不诚实地作出明知虚假的陈述，并意图为自己或他人获益、使他人损失或承担损失风险。即使行为在行业中常见、受雇主鼓励、自己未拿钱，雇主的商业利益仍可构成他人获益；只有若其确实不具备不诚实这一必要要件，才会就该罪获判无罪，故选E。",
+    "ruleZh": "False representation fraud 必须证明 dishonesty；预期获益可以属于他人，且不要求实际获利或实际损失。",
+    "warning": "“我认为这是行业惯例”是评估不诚实程度的事实背景，不自动等于法律上不诚实要件不存在。",
+    "optionZh": {
+      "A": "行业惯例不能自动使明知虚假的陈述合法。",
+      "B": "雇主鼓励不自动排除个人犯罪责任。",
+      "C": "获益可归雇主，不要求行为人自己收钱。",
+      "D": "为雇主争取商业优势已可满足为“他人”谋取利益的意图。",
+      "E": "正确。不诚实是该罪必须证明的独立要件。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第102题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question102"
+        },
+        {
+          "label": "Fraud Act 2006，第2条",
+          "url": "https://www.legislation.gov.uk/ukpga/2006/35/section/2"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-103": {
+    "officialAnswer": "E",
+    "zh": "长达22年的通行虽公开且频繁，但双方约定邻居许可男子走近路。以时效取得地役权必须是“作为权利”使用，即无暴力、无隐瞒且无土地所有人许可；许可使用属于 nec precario 条件不满足。邻居撤回许可后，既往年限不会倒变成无许可的权利使用，故选E。",
+    "ruleZh": "时效地役权通常要求至少20年 as of right 使用；获得所有人许可的使用不能据此取得权利。",
+    "warning": "未登记并非此题失败原因；核心是22年使用从一开始就是经许可。",
+    "optionZh": {
+      "A": "虽超过20年且非秘密，仍缺少“无许可”。",
+      "B": "邻居知晓使用不等于未经许可，不能单凭知晓推定地役权。",
+      "C": "道路可见并被经常使用，不消除许可障碍。",
+      "D": "未在登记簿记载不是本案时效取得失败的原因。",
+      "E": "正确。经邻居允许的使用不是 as of right。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第103题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question103"
+        },
+        {
+          "label": "HM Land Registry：Prescription easements（PG52）",
+          "url": "https://www.gov.uk/government/publications/easements-claimed-by-prescription-pg52/practice-guide-52-easements-claimed-by-prescription"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-104": {
+    "officialAnswer": "D",
+    "zh": "遗嘱未说明“表现最好”按股价涨幅、股息、利润或其他指标，也没有指定评估期间。在持有多家私人和上市公司股票的情况下，无法客观确定究竟哪五家公司及其股票属于信托财产。受托人、经纪人或各方以后自选标准不能补足立遗嘱时的标的确定性，故选D。",
+    "ruleZh": "有效明示信托须有确定或可客观确定的信托财产；含混的筛选标准会使标的无法识别。",
+    "warning": "受益人“存活并满18岁”可客观判断；本题有问题的是选五家公司股票的标准。",
+    "optionZh": {
+      "A": "私人/上市公司股份可以同在信托中，区别不清不是本案关键。",
+      "B": "受托人不能凭未授权的主观判断补写“表现最好”的衡量规则。",
+      "C": "经纪人可能有意见，但题设未给客观期间或指标让其确定标的。",
+      "D": "正确。缺少衡量方式和期间，信托标的无法确定。",
+      "E": "事后各方协商不能追溯弥补遗嘱条款原本的标的不确定。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第104题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question104"
+        },
+        {
+          "label": "SRA 官方第104题及答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question104"
+        },
+        {
+          "label": "HMRC：信托财产可识别性",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem1006"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-105": {
+    "officialAnswer": "A",
+    "zh": "SRA Code 第5.4段禁止律师成为名称包含“solicitors”或使人误认为是律师事务所的企业之成员，除非该企业本身是 SRA 授权机构。这里的跨专业 LLP 未获授权，所以不能要求把名称改成含“solicitors”；恰恰应避免这样命名，故选A。",
+    "ruleZh": "个人律师资格与企业的 SRA 授权是两回事；非授权企业不能借成员中的律师来使用“solicitors”名称。",
+    "warning": "不从事 reserved legal activities 不会为非授权企业使用受限制名称开例外。",
+    "optionZh": {
+      "A": "正确。LLP 本身未获 SRA 授权，不能改称含 solicitors。",
+      "B": "业务是否已存在或跨专业，不是该禁令的核心例外。",
+      "C": "有律师成为 LLP 成员也不赋予 LLP 授权地位。",
+      "D": "告知客户有律师可服务不能通过不合规名称实现。",
+      "E": "即使个人不办理保留业务，企业命名规则仍适用。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第105题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question105"
+        },
+        {
+          "label": "SRA Code of Conduct，第5.4段",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/code-conduct-solicitors/"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-106": {
+    "officialAnswer": "A",
+    "zh": "辩方指出警方可能以夸大证据及暗示认罪更易获保释的说法取得供述，提出 PACE 第76(2)(b)条的可靠性争议后，若控方仍要采纳该供述，就须证明排除所述不当取得情形的标准达到排除合理怀疑。举证责任在控方，不在被告；故选A。",
+    "ruleZh": "PACE 1984 第76条：供述可靠性被依条款质疑时，控方须以刑事标准证明供述并非因所称压迫或可能使其不可靠的事项取得。",
+    "warning": "本题问举证责任与标准，并未要求先最终裁定警方陈述必然使供述不可靠。",
+    "optionZh": {
+      "A": "正确。控方须达到排除合理怀疑标准。",
+      "B": "控方责任说对，但民事的优势证据标准过低。",
+      "C": "辩方可提出争议，不承担排除合理怀疑的证明责任。",
+      "D": "辩方也不承担优势证据的最终证明责任。",
+      "E": "第76条不是完全无举证责任的纯酌情权规则。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第106题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question106"
+        },
+        {
+          "label": "Police and Criminal Evidence Act 1984，第76条",
+          "url": "https://www.legislation.gov.uk/ukpga/1984/60/section/76"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-107": {
+    "officialAnswer": "D",
+    "zh": "父亲没有把登记法定产权转让给子女，而是宣布自己继续以受托人身份为子女持有房屋。这是土地明示信托声明，须以由能够声明信托的人签署的书面材料证明。写给子女的信可以满足书面形式，但只有父亲签署才满足关键形式要求，故选D。",
+    "ruleZh": "Law of Property Act 1925 第53(1)(b)条：土地权益的信托声明须由有权声明者签署的书面材料证明。",
+    "warning": "自我声明受托与把法定产权赠与他人是不同路径；前者不要求先签转让书。",
+    "optionZh": {
+      "A": "子女成年与否不决定父亲的土地信托声明形式。",
+      "B": "父亲自任受托人，毋须把法定产权先转到子女名下。",
+      "C": "两名受益人具体份额另可解释，不是本题形式要件。",
+      "D": "正确。父亲签署的书面信函是第53(1)(b)条关键。",
+      "E": "遗嘱是否另有赠与，与生前已声明的信托形式无关。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第107题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question107"
+        },
+        {
+          "label": "Law of Property Act 1925，第53条",
+          "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/20/section/53"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-108": {
+    "officialAnswer": "B",
+    "zh": "律师应受益人请求，向姑母书面确认六个月后会向她支付1万英镑，构成对第三人的明确律师承诺。即使后来找到遗嘱附录、受益人实际没有这笔遗赠，律师仍须履行自己作出的承诺；他本应在发出无条件付款承诺前核实可用资金及遗嘱，故选B。",
+    "ruleZh": "SRA Code 第1.3段要求律师履行自己给出的 undertakings，并在约定期限内完成；客户资金变化不自动改写无条件承诺。",
+    "warning": "题目问律师对姑母的承诺责任，不能仅按遗产最终该付给谁判断。",
+    "optionZh": {
+      "A": "善意签出而后情况有变，不自动解除无条件承诺。",
+      "B": "正确。致姑母的明确付款承诺仍约束律师。",
+      "C": "信中没有写“仅以实际收到遗赠为限”的条件，不能事后默示加入。",
+      "D": "遗产本身不向姑母支付，不等于律师个人承诺失效。",
+      "E": "遗漏附录说明过失，但责任基础是已经发出的明确承诺。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第108题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question108"
+        },
+        {
+          "label": "SRA Code of Conduct，第1.3段：undertakings",
+          "url": "https://www.sra.org.uk/solicitors/standards-regulations/code-conduct-solicitors/"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-109": {
+    "officialAnswer": "D",
+    "zh": "Turnbull 指示旨在提示陪审团谨慎评估指认被告就是犯罪人的目击辨认证据。证人虽见过并描述劫匪，却在正式视频辨认中未认出本案被告；控方不能把她的证据当作对该被告的肯定指认。因此就她的证据不适用该辨认指示，选D。",
+    "ruleZh": "Turnbull 指示的对象是证人实际识别被告为犯罪人的证据及其可靠性；仅有描述或参加辨认程序不足。",
+    "warning": "“未认出”不代表证人先前描述无任何证明价值，只是不能误当肯定指认被告。",
+    "optionZh": {
+      "A": "描述劫匪不等于指认本案被告。",
+      "B": "此前不认识劫匪，只说明不是熟人识别；仍没有认出被告。",
+      "C": "视野清楚不构成否定 Turnbull 的普遍理由；关键是没有肯定指认。",
+      "D": "正确。视频程序中未认出被告。",
+      "E": "参加过辨认程序不等于作出了肯定辨认。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第109题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question109"
+        },
+        {
+          "label": "Judicial College：Crown Court Compendium，Identification",
+          "url": "https://www.judiciary.uk/wp-content/uploads/2022/06/Crown-Court-Compendium-Part-I-Oct-25-Mar-26-update.pdf"
+        }
+      ]
+    }
+  },
+  "sra-flk2-pretested-110": {
+    "officialAnswer": "B",
+    "zh": "父亲将保单写入信托，指定女儿绝对享有权益，女儿在父亲尚未身故时已取得保单的既得受益权益。她先于父亲死亡，该权益并不回流父亲遗产，也不自动转给她的儿子，而是成为她遗产的一部分。父亲身故后保单升至10万英镑，全部收益依女儿遗嘱归其伴侣，故选B。",
+    "ruleZh": "绝对受益人的既得权益可在其先于被保险人死亡时归入本人遗产；其后保单给付价值不按两个死亡时点拆分归属。",
+    "warning": "女儿留下有效遗嘱，所以她的遗产按遗嘱而非无遗嘱继承规则分配。",
+    "optionZh": {
+      "A": "保单已设信托给女儿绝对享有，不因其先死回归父亲遗产。",
+      "B": "正确。女儿的既得权益进入其遗产，最终10万英镑整体按其遗嘱分配。",
+      "C": "女儿有遗嘱，不能按无遗嘱继承。",
+      "D": "既误用无遗嘱规则，也错误把后涨的2.5万英镑分给父亲。",
+      "E": "后涨价值随同保单权益归女儿遗产，不单独划给父亲。"
+    },
+    "supplementaryReview": {
+      "reviewedAt": "2026-09-22",
+      "sources": [
+        {
+          "label": "SRA 官方第110题与答案",
+          "url": "https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-sample-questions/flk2/question110"
+        },
+        {
+          "label": "HMRC：保单受益人先于被保险人死亡",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm20012"
+        }
+      ]
+    }
   }
 }

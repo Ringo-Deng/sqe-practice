@@ -37,11 +37,10 @@ const React=require('react');
 const api=require('../app/api/study/route.ts');
 async function post(body){const response=await api.POST(new Request('http://localhost/api/study',{method:'POST',headers:{'Content-Type':'application/json','x-study-action':'1'},body:JSON.stringify(body)}));assert.equal(response.status,200);return response.json();}
 async function main(){
- assert.deepEqual(Object.keys(reviews),raw.slice(0,60).map(q=>q.id));
+ assert.deepEqual(Object.keys(reviews),raw.map(q=>q.id));
  const snapshot=JSON.stringify(raw);
  for(const original of raw){
   const reviewed=applySraFlk2SupplementaryReview(original);
-  if(!reviews[original.id]){assert.equal(reviewed,original);continue;}
   const merged=questions.find(q=>q.id===original.id),review=reviews[original.id];
   assert.deepEqual({...reviewed,explanation:original.explanation},original,'Only explanation fields may change');
   for(const key of ['answer','source','sourceUrl','en','ruleEn'])assert.equal(reviewed.explanation[key],original.explanation[key]);
@@ -60,10 +59,10 @@ async function main(){
   for(const source of review.supplementaryReview.sources)assert.ok(html.includes(source.url.replaceAll('&','&amp;')));
  }
  assert.equal(JSON.stringify(raw),snapshot,'Raw source objects stay unchanged');
- assert.equal(questions.filter(q=>q.explanation.supplementaryReview).length,60);
- assert.equal(questions.filter(q=>q.id.startsWith('sra-flk2-')&&q.explanation.zh.includes('未提供逐项解析')).length,50);
+ assert.equal(questions.filter(q=>q.explanation.supplementaryReview).length,110);
+ assert.equal(questions.filter(q=>q.id.startsWith('sra-flk2-')&&q.explanation.zh.includes('未提供逐项解析')).length,0);
  assert.ok(publicQuestions().every(q=>!('explanation' in q)&&!('supplementaryReview' in q)));
- for(const q of [raw[0],raw[15],raw[21],raw[24],raw[26],raw[28],raw[29],raw[30],raw[31],raw[32],raw[36],raw[39],raw[40],raw[44],raw[45],raw[47],raw[48],raw[49],raw[53],raw[54],raw[56],raw[59]]){
+ for(const q of [raw[0],raw[15],raw[21],raw[24],raw[26],raw[28],raw[29],raw[30],raw[31],raw[32],raw[36],raw[39],raw[40],raw[44],raw[45],raw[47],raw[48],raw[49],raw[53],raw[54],raw[56],raw[59],raw[60],raw[69],raw[70],raw[79],raw[80],raw[89],raw[90],raw[99],raw[100],raw[109]]){
  const sessionId=randomUUID(),settings={action:'start',id:sessionId,mode:'practice',sourceId:'sra',sourceSet:q.sourceSet};
  let guest=applyGuestStudyAction(emptyGuestStudyState(),settings);
  let data=await post(settings);
@@ -79,6 +78,6 @@ async function main(){
  const restored=applyGuestStudyAction(guest.state,{action:'hydrate',sessionId});
  assert.equal(restored.data.questions.find(item=>item.id===q.id).explanation.zh,reviews[q.id].zh);
  }
- console.log('PASS: 60 source-aligned reviews, 300 option explanations, visible provenance, immutable official answers, guest/API reveal boundaries; 50 FLK2 placeholders remain.');
+ console.log('PASS: 110 source-aligned reviews, 550 option explanations, visible provenance, immutable official answers, guest/API reveal boundaries; no FLK2 placeholders remain.');
 }
 main().catch(error=>{console.error(error);process.exitCode=1;});
