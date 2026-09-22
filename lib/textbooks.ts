@@ -2,7 +2,7 @@ import catalog from './textbooks.json';
 import {mindMapBooks} from './mindmap-documents';
 import type {TextbookReference} from './study-types';
 
-export type Textbook={id:string;title:string;shortTitle:string;subjectId:string;version:string;pageCount:number;url?:string;sha256:string;pageUrlTemplate?:string;imported?:boolean;originalName?:string;sizeBytes?:number;createdAt?:number;pdfSlice?:{height:number;width:number;totalHeight:number}};
+export type Textbook={id:string;title:string;shortTitle:string;subjectId:string;subjectIds?:readonly string[];groups?:readonly ('FLK1'|'FLK2')[];version:string;pageCount:number;url?:string;sha256:string;pageUrlTemplate?:string;imported?:boolean;originalName?:string;sizeBytes?:number;createdAt?:number;pdfSlice?:{height:number;width:number;totalHeight:number}};
 export type LinkedTextbookReference=TextbookReference&{bookId:string;pageNumbers:number[]};
 export const textbooks:Textbook[]=catalog;
 export const textbookById=(id?:string)=>textbooks.find(book=>book.id===id)??mindMapBooks.find(book=>book.id===id);

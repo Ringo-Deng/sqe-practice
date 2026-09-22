@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports -- Isolated CommonJS loader verifies the TypeScript modules. */
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const ts=require('typescript');
@@ -6,10 +7,19 @@ const vm=require('node:vm');
 require.extensions['.ts']=(module,file)=>module._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText,file);
 const {textbooks,textbookById,textbookPageSource,parseTextbookReaderTarget}=require('../lib/textbooks.ts');
 const {mindMapBooks}=require('../lib/mindmap-documents.ts');
+const {bookMatchesCategory,bookSubjectIds}=require('../lib/library-books.ts');
 const {mindMapPageUrl,mindMapsForQuestion}=require('../lib/mindmaps.ts');
 const {mutateGuestTextbookBookmarks}=require('../lib/textbook-bookmarks.ts');
 assert.equal(textbooks.length,25,'Keep the existing textbook shelf intact');
 assert.equal(mindMapBooks.length,12);
+assert.equal(new Set([...textbooks,...mindMapBooks].map(book=>book.id)).size,37,'Bookshelf IDs remain unique');
+assert.equal(mindMapBooks.filter(book=>bookMatchesCategory(book,'maps')).length,12);
+assert.equal(mindMapBooks.filter(book=>bookMatchesCategory(book,'FLK1')).length,7);
+assert.equal(mindMapBooks.filter(book=>bookMatchesCategory(book,'FLK2')).length,7);
+assert.deepEqual(bookSubjectIds(mindMapBooks.find(book=>book.id==='mindmap-land-property')),['land','property-practice']);
+assert.deepEqual(bookSubjectIds(mindMapBooks.find(book=>book.id==='mindmap-taxation')),['business','wills']);
+assert(bookMatchesCategory(mindMapBooks.find(book=>book.id==='mindmap-ethics'),'FLK2'));
+assert.equal(textbooks.filter(book=>bookMatchesCategory(book,'maps')).length,0);
 let count=0;
 for(const book of mindMapBooks){
  assert.equal(textbookById(book.id),book);

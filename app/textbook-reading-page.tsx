@@ -13,7 +13,7 @@ function ReadingWorkspace({guest,target,directory=false}:{guest:boolean;target:T
  const bookmarks=useTextbookBookmarks(guest);
  const catalog=useTextbookCatalog(guest);
  const isMindMap=target.bookId.startsWith('mindmap-');
- const readerCatalog=isMindMap?{...catalog,books:mindMapBooks}:catalog;
+ const readerCatalog={...catalog,books:isMindMap?mindMapBooks:[...catalog.books,...mindMapBooks]};
  useEffect(()=>{document.title=`${textbookById(target.bookId)?.shortTitle??'教材'} · SQE Practice`;},[target.bookId]);
  return <main className="workspace textbook-library-workspace">
   <TextbookLibrary controller={annotations} bookmarks={bookmarks} catalog={readerCatalog} guest={guest} initial={target} kind={isMindMap?'mindmap':'textbook'} initialPanel={directory?'catalog':null}/>
