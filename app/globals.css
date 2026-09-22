@@ -298,6 +298,30 @@ html{scroll-padding-top:24px}.study-main{min-width:0;display:flex;flex-direction
 .textbook-page-placeholder{justify-content:flex-start;padding-top:clamp(72px,18dvh,160px)}.textbook-page-placeholder-status{position:sticky;top:24px;display:flex;align-items:center;justify-content:center;gap:9px;flex-wrap:wrap;max-width:min(560px,calc(100% - 32px));text-align:center}
 
 /* Learning history performance, grouped from subject to primary chapter. */
+.exam-countdown-card{display:grid;grid-template-columns:minmax(0,1fr) 220px;margin-bottom:22px;border:1px solid #dbe4f3;border-radius:16px;overflow:hidden;background:linear-gradient(120deg,#fff 0%,#f9fbff 68%,#edf3ff 100%);box-shadow:0 7px 25px #294a820a}
+.exam-countdown-main{padding:25px 29px 24px;min-width:0}
+.exam-countdown-kicker{display:flex;align-items:center;gap:7px;color:#5c79ad;font-size:11px;font-weight:700;letter-spacing:1.1px}
+.exam-countdown-main h2{margin:10px 0 5px;color:#273d60;font-size:21px;font-weight:650;letter-spacing:-.4px}
+.exam-countdown-main>p{margin:0;color:#75859e;font-size:13px;line-height:1.6}
+.exam-countdown-controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:20px}
+.exam-countdown-controls label{color:#536989;font-size:13px;font-weight:600}
+.exam-countdown-controls input{min-height:37px;padding:6px 11px;border:1px solid #d4dfef;border-radius:8px;background:#fff;color:#304c75;font:14px Arial,"PingFang SC",sans-serif;box-shadow:0 2px 5px #2e4a7308;color-scheme:light}
+.exam-countdown-controls input:focus-visible{outline:3px solid #a9bee9;outline-offset:2px}
+.exam-countdown-controls [data-slot=button]{height:35px;color:#687f9f}
+.exam-countdown-error{margin:9px 0 0!important;color:#a33c49!important;font-size:12px!important}
+.exam-countdown-result{position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;min-width:0;padding:23px 16px;color:#fff;text-align:center;background:linear-gradient(145deg,#4b70b3 0%,#28497f 100%);overflow:hidden}
+.exam-countdown-result:before{content:"";position:absolute;width:230px;height:230px;border:1px solid #ffffff1f;border-radius:50%;top:-118px;right:-90px;pointer-events:none}
+.exam-countdown-result:after{content:"";position:absolute;width:145px;height:145px;border:1px solid #ffffff16;border-radius:50%;bottom:-102px;left:-75px;pointer-events:none}
+.exam-countdown-result>*{position:relative;z-index:1}
+.exam-countdown-result-label{font-size:12px;font-weight:600;letter-spacing:1px;color:#d9e6ff}
+.exam-countdown-number-line{display:flex;align-items:baseline;gap:5px;line-height:1.1;margin:4px 0 2px}
+.exam-countdown-number{font-size:51px;font-weight:650;font-variant-numeric:tabular-nums;letter-spacing:-2px;line-height:1.15}
+.exam-countdown-number-line>span{font-size:15px;font-weight:600}
+.exam-countdown-result small{font-size:12px;color:#d8e5fc}
+.exam-countdown-card.empty .exam-countdown-number{font-size:48px;line-height:1.1;margin:4px 0}
+.exam-countdown-card.today .exam-countdown-result{background:linear-gradient(145deg,#547c87,#2b666f)}
+.exam-countdown-card.past .exam-countdown-result{background:linear-gradient(145deg,#637895,#415473)}
+@media(max-width:650px){.exam-countdown-card{grid-template-columns:1fr}.exam-countdown-main{padding:21px 20px 19px}.exam-countdown-main h2{font-size:19px}.exam-countdown-controls{margin-top:16px}.exam-countdown-result{min-height:117px;padding:14px 20px}.exam-countdown-number{font-size:38px}.exam-countdown-card.empty .exam-countdown-number{font-size:36px}}
 .history-breakdown{margin-bottom:26px;background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden}
 .subject-stat-list{padding:0 24px}
 .subject-stat-card{border-bottom:1px solid #e7ebf2}
