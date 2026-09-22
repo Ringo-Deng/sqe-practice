@@ -6,6 +6,8 @@ import {Dialog,DialogContent,DialogDescription,DialogFooter,DialogHeader,DialogT
 import {Input} from '@/components/ui/input';
 import {Label} from '@/components/ui/label';
 import {subjects,subjectById} from '@/lib/subjects';
+import {questions} from '@/lib/questions';
+import {useStudyTimeSetting,useSubjectStudyTime} from './use-study-time';
 import {bookMatchesCategory,bookSubjectIds,type BookFilter} from '@/lib/library-books';
 import {readReadingPositions,writeReadingPosition} from '@/lib/textbook-reading-position';
 import {TextbookReader} from './textbook-reader';
@@ -21,6 +23,7 @@ type LibraryPanel='catalog'|'notes'|'bookmarks';
 const bookFilters:{id:BookFilter;label:string}[]=[{id:'all',label:'全部'},{id:'FLK1',label:'FLK1'},{id:'FLK2',label:'FLK2'},{id:'maps',label:'导图'},{id:'mine',label:'我的'}];
 
 export function TextbookLibrary({controller,catalog,bookmarks,guest=false,initial,kind='textbook',initialPanel=null}:{controller:TextbookAnnotationsController;catalog:TextbookCatalogController;bookmarks:TextbookBookmarksController;guest?:boolean;initial?:TextbookReaderTarget;kind?:'textbook'|'mindmap';initialPanel?:LibraryPanel|null}){
+ const studyTimeSetting=useStudyTimeSetting();
  const isMindMap=kind==='mindmap';
  const[first]=catalog.books;
  const[selectedId,setSelectedId]=useState(first?.id??'');
@@ -38,6 +41,10 @@ export function TextbookLibrary({controller,catalog,bookmarks,guest=false,initia
  const[editBook,setEditBook]=useState<Textbook|null>(null),[editTitle,setEditTitle]=useState(''),[editSubject,setEditSubject]=useState('my-materials');
  const[importOpen,setImportOpen]=useState(false),[importFile,setImportFile]=useState<File|null>(null),[importName,setImportName]=useState('');
  const book=catalog.books.find(item=>item.id===selectedId)??first;
+ const sourceQuestionId=initial?.sourceQuestionId;
+ const linkedSubjectId=useMemo(()=>sourceQuestionId?questions.find(question=>question.id===sourceQuestionId)?.subjectId:null,[sourceQuestionId]);
+ const studySubjectId=linkedSubjectId??(book&&subjectById(book.subjectId)?book.subjectId:null);
+ const studyTimeError=useSubjectStudyTime(positionReady?studySubjectId:null,studyTimeSetting.enabled,studyTimeSetting.ready);
  const activeMindMap=!!book?.pdfSlice;
  const bookNotes=useMemo(()=>(controller.data?.annotations??[]).filter(item=>item.bookId===book?.id).sort((a,b)=>a.page-b.page||b.updatedAt-a.updatedAt),[controller.data?.annotations,book?.id]);
  const filteredNotes=useMemo(()=>{const term=noteQuery.trim().toLocaleLowerCase();return bookNotes.filter(note=>!term||`${note.quote} ${note.note} ${note.page}`.toLocaleLowerCase().includes(term));},[bookNotes,noteQuery]);
@@ -109,6 +116,7 @@ export function TextbookLibrary({controller,catalog,bookmarks,guest=false,initia
  }}>
   <h1 className="sr-only">{isMindMap?'思维导图阅读':'教材阅读'}</h1>
   {(controller.error||catalog.error)&&<div className="notice error" role="alert"><span>{controller.error||catalog.error}</span><Button variant="outline" disabled={controller.busy||controller.loading||catalog.busy||catalog.loading} onClick={()=>void Promise.all([controller.load(),catalog.load()])}>重新读取</Button></div>}
+  {studyTimeError&&<div className="notice error" role="alert">{studyTimeError}</div>}
   <div className={`textbook-library-layout ${panel??'reading'}-open`} style={{'--textbook-toolbar-height':`${toolbarHeight}px`} as CSSProperties}>
    <aside id="textbook-catalog-panel" className="textbook-catalog" aria-label="教材目录" hidden={panel!=='catalog'}>
     <div className="textbook-catalog-heading"><div><h2>{isMindMap?'思维导图':'我的书目'}</h2><span>{catalog.books.length}</span></div><div className="textbook-panel-heading-actions">{!isMindMap&&<Button size="sm" variant="outline" onClick={()=>setImportOpen(true)} disabled={catalog.busy}><FileUp size={14}/>导入</Button>}<Button size="icon" variant="ghost" aria-label="收起书目" onClick={closePanel}><X size={16}/></Button></div></div>
