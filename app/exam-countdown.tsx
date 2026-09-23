@@ -3,7 +3,7 @@
 import {useEffect,useState} from 'react';
 import {CalendarDays,X} from 'lucide-react';
 import {Button} from '@/components/ui/button';
-import {daysUntilExam,formatExamDate,validExamDate} from '@/lib/exam-countdown';
+import {daysUntilExam,validExamDate} from '@/lib/exam-countdown';
 
 const TARGET_DATE_KEY='sqe-practice:exam-target-date:v1';
 
@@ -43,20 +43,16 @@ export function ExamCountdown(){
 
  const days=targetDate?daysUntilExam(targetDate,today):null;
  const state=days===null?'empty':days>0?'future':days===0?'today':'past';
- return <section className={`exam-countdown-card ${state}`} aria-labelledby="exam-countdown-title">
-  <div className="exam-countdown-main">
-   <div className="exam-countdown-kicker"><CalendarDays size={16}/><span>我的考期计划</span></div>
-   <h2 id="exam-countdown-title">目标日倒计时</h2>
-   <p>选定计划考期，查看距离目标还有多少天。</p>
-   <div className="exam-countdown-controls">
-    <label htmlFor="exam-target-date">目标日期</label>
-    <input id="exam-target-date" type="date" value={targetDate??''} onChange={event=>update(event.target.value)} aria-describedby={error?'exam-countdown-error':undefined}/>
-    {targetDate&&<Button type="button" variant="ghost" size="sm" onClick={()=>update('')} aria-label="清除目标日期"><X size={15}/>清除</Button>}
-   </div>
-   {error&&<p id="exam-countdown-error" className="exam-countdown-error" role="alert">{error}</p>}
+ return <section className={`exam-countdown-card is-${state}`} aria-labelledby="exam-countdown-title">
+  <div className="exam-countdown-heading"><CalendarDays size={18}/><h2 id="exam-countdown-title">目标考期</h2></div>
+  <div className="exam-countdown-controls">
+   <label className="sr-only" htmlFor="exam-target-date">目标日期</label>
+   <input id="exam-target-date" type="date" value={targetDate??''} onChange={event=>update(event.target.value)} aria-describedby={error?'exam-countdown-error':undefined}/>
+   {targetDate&&<Button type="button" variant="ghost" size="icon" onClick={()=>update('')} aria-label="清除目标日期" title="清除目标日期"><X size={14}/></Button>}
   </div>
   <div className="exam-countdown-result" role="status" aria-live="polite">
-   {days===null?<><span className="exam-countdown-result-label">等待你的目标</span><strong className="exam-countdown-number">—</strong><small>设置日期后开始倒计时</small></>:<><span className="exam-countdown-result-label">{days>0?'距离目标日':days===0?'目标日已到':'目标日已过'}</span><div className="exam-countdown-number-line"><strong className="exam-countdown-number">{Math.abs(days)}</strong><span>天</span></div><small>{days===0?'今天是目标日':formatExamDate(targetDate!)}</small></>}
+   {days===null?<span className="exam-countdown-placeholder">设置日期，开始倒计时</span>:days===0?<span className="exam-countdown-today">今天是目标日</span>:<><span>{days>0?'距离目标还有':'目标日已过'}</span><strong>{Math.abs(days)}</strong><span>天</span></>}
   </div>
+  {error&&<p id="exam-countdown-error" className="exam-countdown-error" role="alert">{error}</p>}
  </section>;
 }
