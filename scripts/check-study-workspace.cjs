@@ -42,7 +42,7 @@ async function check(name,run){await run();checks++;console.log(`PASS ${name}`);
   assert.equal(restored.selected,'','An unsaved draft must not appear as an answer after an exam has finished');
  });
  await check('saved non-practice pages survive refresh without displaying a result screen',()=>{
-  for(const view of ['library','materials','wrong','memory','history']){
+  for(const view of ['library','materials','wrong','memory','plan','history']){
    const restored=restoreWorkspace(snapshot({view,summary:true}),data(finished));
    assert.equal(restored.view,view);assert.equal(restored.summary,false);
   }

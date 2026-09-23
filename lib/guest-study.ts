@@ -6,7 +6,7 @@ import {examDurationMs} from './study-timing';
 import {subjectById} from './subjects';
 import type {Session,StudyData} from './study-types';
 
-type GuestAnswerState={selected:string;answeredAt:number};
+type GuestAnswerState={selected:string;answeredAt:number;answeredAtEstimated?:boolean};
 type GuestSessionState={
  id:string;mode:Session['mode'];status:Session['status'];questionIds:string[];position:number;
  startedAt:number;finishedAt:number|null;answers:Record<string,GuestAnswerState>;
@@ -39,7 +39,9 @@ function sanitizeState(value:unknown):GuestStudyState{
    const selected=(answer as Partial<GuestAnswerState>).selected;
    const question=questionById.get(id);
    if(typeof selected!=='string'||(selected!==''&&!question?.options.some(option=>option.id===selected)))continue;
-   answers[id]={selected,answeredAt:finiteTime((answer as Partial<GuestAnswerState>).answeredAt,startedAt)};
+   const saved=answer as Partial<GuestAnswerState>;
+   const actualTime=finiteTime(saved.answeredAt,0);
+   answers[id]={selected,answeredAt:actualTime||startedAt,...(!actualTime||saved.answeredAtEstimated?{answeredAtEstimated:true}:{})};
   }
   const normalizedStatus:Session['status']=item.status==='finished'?'finished':'active';
   const position=Number.isInteger(item.position)?Math.max(0,Math.min(questionIds.length-1,Number(item.position))):0;
@@ -78,7 +80,7 @@ function studyPayload(state:GuestStudyState,requestedSessionId?:string|null):Stu
  const current=currentState?serialize(currentState):null;
  const graded=state.sessions.flatMap(session=>{
   if(session.mode==='exam'&&session.status!=='finished')return [];
-  return Object.entries(session.answers).map(([questionId,answer])=>({questionId,selected:answer.selected,correct:answer.selected!==''&&answer.selected===questionById.get(questionId)?.explanation.answer,answeredAt:answer.answeredAt,sessionId:session.id}));
+  return Object.entries(session.answers).map(([questionId,answer])=>({questionId,selected:answer.selected,correct:answer.selected!==''&&answer.selected===questionById.get(questionId)?.explanation.answer,answeredAt:answer.answeredAt,answeredAtEstimated:answer.answeredAtEstimated,sessionId:session.id}));
  }).sort((a,b)=>b.answeredAt-a.answeredAt||b.sessionId.localeCompare(a.sessionId));
  const mistakes:StudyData['mistakes']=[];
  for(const question of questions){
@@ -91,6 +93,8 @@ function studyPayload(state:GuestStudyState,requestedSessionId?:string|null):Stu
    const visible=current?.answers[question.id]&&(current.mode!=='exam'||current.status==='finished');
    return visible?question:unseen[index];
   }),
+  answerActivity:completedAnswers.filter(answer=>!answer.answeredAtEstimated).map(answer=>answer.answeredAt),
+  plannerScope:'guest',
   session:current,
   sessions:state.sessions.slice(0,MAX_RECENT_SESSIONS).map(serialize),
   questionStats:buildQuestionStudyStats(graded),

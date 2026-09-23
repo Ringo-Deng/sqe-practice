@@ -25,6 +25,7 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      - run: node scripts/check-weekly-plan.cjs && node scripts/check-study-workspace.cjs
       - run: pnpm run build:github-pages
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4

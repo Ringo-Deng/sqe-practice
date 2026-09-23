@@ -1,7 +1,7 @@
 import type {StudyData} from './study-types';
 import type {PracticeScope} from './next-chapter';
 
-export const STUDY_VIEWS=['library','practice','materials','wrong','memory','history','settings'] as const;
+export const STUDY_VIEWS=['library','practice','materials','wrong','memory','plan','history','settings'] as const;
 export type StudyView=typeof STUDY_VIEWS[number];
 export type WorkspaceSnapshot={
  version:1;view:StudyView;sessionId:string|null;sessionStatus:'active'|'finished'|null;
